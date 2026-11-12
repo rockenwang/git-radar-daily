@@ -5,9 +5,12 @@
 
 ## 看报告
 
-- 网页版（手机也能看）：**https://rockenwang.github.io/git-radar-daily/**
+- **归档首页**：**https://rockenwang.github.io/git-radar-daily/** —— 按日期列出每天的报告，带筛选框
+- **某一天的固定地址**：`https://rockenwang.github.io/git-radar-daily/YYYY-MM-DD.html`（例：<https://rockenwang.github.io/git-radar-daily/2026-11-12.html>）
 - 原始 HTML：本仓库 `reports/Git副业雷达_YYYY-MM-DD.html`
 - 每次运行的构建产物：Actions → 对应 run → Artifacts → `radar-report`
+
+每天一份，**互不覆盖**。归档首页有个搜索框，输入日期（`2026-11`）或项目名片段（`ppt`、`rust`）就能筛。
 
 ## 它每天做什么
 
@@ -15,7 +18,8 @@
 2. 用 `GITHUB_TOKEN` 走 GitHub API 抓 trending + 近 30 天新建高星项目
 3. 按「能不能变成钱」六维打分，出 8 个项目
 4. **免费机翻**补全中文（Google 公共端点 → MyMemory 兜底，不需任何 API key）
-5. 把报告提交回本仓库，并发布到 GitHub Pages
+5. 生成归档：`docs/YYYY-MM-DD.html` 每天一份 + `docs/index.html` 日期列表
+6. 把报告提交回本仓库，并发布到 GitHub Pages
 
 ## 关于翻译
 
