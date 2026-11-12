@@ -1,0 +1,1142 @@
+{
+ "date": "2026-11-12",
+ "picks": [
+  {
+   "full_name": "pengchujin/aerial-tv",
+   "owner": "pengchujin",
+   "owner_type": "User",
+   "name": "aerial-tv",
+   "desc": "给国产电视的一块干净桌面：参照 tvOS 设计的开源 Android TV 桌面，没有广告，开机自动接管。A tvOS-style launcher for Xiaomi, TCL and other China-market TVs.",
+   "lang": "Kotlin",
+   "stars": 11402,
+   "forks": 983,
+   "watchers": 18,
+   "open_issues": 372,
+   "license": "MIT",
+   "license_name": "MIT License",
+   "topics": [],
+   "created_at": "2026-10-20T09:13:06Z",
+   "pushed_at": "2026-11-12T02:11:57Z",
+   "updated_at": "2026-11-12T13:03:42Z",
+   "size_kb": 15332,
+   "archived": false,
+   "has_discussions": false,
+   "has_wiki": true,
+   "homepage": "https://aerial.qust.me",
+   "url": "https://github.com/pengchujin/aerial-tv",
+   "default_branch": "main",
+   "readme": "<div align=\"center\">\n\n<img src=\"docs/brand/icon.png\" width=\"96\" alt=\"Aerial 图标\">\n\n# Aerial\n\n**给国产电视的一块干净桌面。**\n\n参照 Apple TV 做的 Android TV 桌面：没有广告，没有推荐流，只有你的 App、壁纸和航拍屏保。<br>\n适合小米、TCL、创维、索尼等国产电视，也能装在盒子和投影仪上。开机自动进入，待机也不会被清理。\n\n**中文** · [English](README.en.md)\n\n<a href=\"https://aerial.qust.me\"><img alt=\"官网\" src=\"https://img.shields.io/badge/%E5%AE%98%E7%BD%91-1f6feb?style=for-the-badge&logo=safari&logoColor=white\"></a>\n<a href=\"https://github.com/pengchujin/aerial-tv/releases/latest\"><img alt=\"下载 APK\" src=\"https://img.shields.io/badge/%E4%B8%8B%E8%BD%BD%20APK-34a853?style=for-the-badge&logo=android&logoColor=white\"></a>\n<a href=\"#安装\"><img alt=\"安装\" src=\"https://img.shields.io/badge/%E5%AE%89%E8%A3%85-d97757?style=for-the-badge&logo=gnubash&logoColor=white\"></a>\n\n<a href=\"https://github.com/pengchujin/aerial-tv/releases/latest\"><img alt=\"版本\" src=\"https://img.shields.io/github/v/release/pengchujin/aerial-tv?style=flat-square&label=%E7%89%88%E6%9C%AC&color=2997ff\"></a>\n<a href=\"LICENSE\"><img alt=\"许可证 MIT\" src=\"https://img.shields.io/badge/%E8%AE%B8%E5%8F%AF%E8%AF%81-MIT-555555?style=flat-square\"></a>\n<img alt=\"Android TV 5.0+\" src=\"https://img.shields.io/badge/Android%20TV-5.0%2B-3ddc84?style=flat-square&logo=android&logoColor=white\">\n<a href=\"#lite\"><img alt=\"Lite 4.0–4.4 测试版\" src=\"https://img.shields.io/badge/Lite-4.0%E2%80%934.4%20%E6%B5%8B%E8%AF%95%E7%89%88-f5a623?style=flat-square&logo=android&logoColor=white\"></a>\n\n![Aerial 首页](site/img/home.jpg)\n\n| 电视自带的桌面 | 换上 Aerial 之后 |\n|:---:|:---:|\n| <img src=\"site/img/stock-xiaomi.jpg\" alt=\"电视自带的桌面：满屏剧集推荐、会员和限免角标\"> | <img src=\"site/img/home.jpg\" alt=\"Aerial 首页\"> |\n\n</div>\n\n## 功能\n\n<p align=\"center\">\n  <img src=\"site/img/focus.jpg\" width=\"49%\" alt=\"第一排的玻璃底板\">\n  <img src=\"site/img/grid.jpg\" width=\"49%\" alt=\"往下滚动后的应用网格，中间有一个文件夹\">\n</p>\n\n- **首页**：常用的一排 App 放在屏幕下方的玻璃底板上，往下是全部 App。小米「应用中心」「米家」这类藏起来的系统 App 也在。\n- **整理**：长按 OK 键（或按菜单键）可以移动、放进文件夹、隐藏、卸载，或者设成「开机时打开」（开机、待机醒来直接进这个 App 或信号源）。固定到主屏幕的 HDMI 可以选接的是 Apple TV、PlayStation、Switch、Xbox、电脑等，换成对应的图标，也能在手机上起名字。\n- **用手机整理**：扫电视上的二维码，手机上就是和电视一样的图标网格：按住拖动排序，点一下改名、换图标、放进文件夹或隐藏，也能把 HDMI 等信号源加到主屏幕。\n- **图标库**：常用 App 直接用做好的 16:9 磁贴图，一个 App 可以有好几张，在手机上点开 App 挑，每张都写着来源。图来自 [le5inioo](https://github.com/le5inioo) 画的一套（[#706](https://github.com/pengchujin/aerial-tv/issues/706)）、App 自己的 tvOS 版图标、Aerial 自己画的系统 App 图标和当贝桌面。\n- **控制中心**：在第一排按上键到右上角打开，有信号源、网络、设置、音量、亮度和个性化。\n- **屏保**：Apple TV 的 114 段航拍影片，电视支持时播 4K 或 4K 杜比视界，也可以换成照片、时钟或从手机添加的本地视频（[说明](docs/SCREENSAVER_VIDEOS.md)）。\n- **壁纸**：必应每日精选、14 张内置壁纸、用手机扫码传的照片和视频，或者航拍：停在主屏幕 10 秒后在磁贴后面播放，按任意键停在当前画面。\n- **个性化**：每排 4、5 或 6 个 App，单排或双排、时钟大小和位置、App 名称、焦点样式、按键声音，都能改。\n\n<p align=\"center\">\n  <img src=\"site/img/folder.jpg\" width=\"49%\" alt=\"打开的文件夹\">\n  <img src=\"site/img/control-center.jpg\" width=\"49%\" alt=\"控制中心\">\n</p>\n\n<p align=\"center\">\n  <img src=\"site/img/screensaver-aerial.jpg\" width=\"49%\" alt=\"航拍屏保\">\n  <img src=\"site/img/columns.jpg\" width=\"49%\" alt=\"个性化：每排 App 选 4、5 或 6 个\">\n</p>\n\n## 安装\n\n不用 root，不动系统应用，随时能还原。电脑和电视连同一个网络。\n\n### 1. 打开电视的 ADB 调试\n\n| 电视 | 怎么打开 |\n|---|---|\n| **小米 / Redmi** | 设置 → 关于 → 连续按「产品型号/产品类型」进入开发者模式，再到 设置 → 账号与安全，打开「ADB 调试」和「安装未知来源的应用」 |\n| **TCL / 雷鸟** | 设置 → 关于 → 本机信息，快速按遥控器「上下左右」，在底部的「更多」里打开 ADB |\n| **海尔 / 模卡** | 按电视机身上的信号源键，再用遥控器按「左左上右」，在工厂菜单里打开「ADB 调试开关」，别动其他选项 |\n| **海信 / Vidda** | 设置 → 声音，关闭杜比全景声；在 专业音响设置 → 声音平衡 里快速交替按「确认」「菜单」，左上角出现 M 后按「菜单」进工厂菜单，把「选项」里的 To Fac 从 U 改成 M 后重启，别动其他选项；再到 设置 → 全部设置，连按「菜单」打开原生设置，连按版本号后在开发者选项里打开「USB 调试」和「无线调试」。工厂菜单按错有风险，反复改 To Fac 可能让 USB 失灵、要重置电视，只改一次（[详细](docs/devices/adb-by-brand.md)） |\n| **OPPO（含 S1）** | 设置 → 系统 → 关于本机 → 设备型号，按「上上右右」再按确认；再到 设置 → 系统 → 开发者选项，打开「USB 调试」。IP 在 设置 → 网络 → 已连接的网络 最下面 |\n| **其他 Android TV** | 设置 → 设备偏好设置 → 关于 → 连按「内部版本号」7 次，再在开发者选项里打开「USB 调试」 |\n\n电视的 IP 在「设置 → 网络 → 已连接的网络」里。第一次连接时，有 USB 调试开关的电视会问是否允许调试，选「始终允许」；只有无线调试的电视不弹这个窗，见下一段。\n\n**只有无线调试、没有 USB 调试 / 网络调试（ADB 调试）开关的 Android 11+ 电视，第一次要先配对**（例如索尼 BRAVIA 的 Android 14，#747）：这类电视不提供旧的明文端口，不能直接 `adb connect <IP>:5555`。在电视上打开 设置 → 系统 → 开发者选项 → **无线调试** → **使用配对码配对设备**，把配对码屏幕上的 IP:端口和 6 位配对码输入电脑：\n\n```bas",
+   "gained": 0,
+   "since": "created<30d",
+   "source": "search_new",
+   "score": 100,
+   "detail": {
+    "lic": 25,
+    "easy": 18,
+    "zh": 15,
+    "demand": 20,
+    "deliver": 7,
+    "fresh": 10,
+    "adj": 8
+   },
+   "grade": "S",
+   "grade_word": "今晚就能动手",
+   "form": "引擎库",
+   "velocity": 495.7391304347826,
+   "_gaps": [
+    [
+     "没有一键部署",
+     "没有一键部署",
+     "补一个 Dockerfile + compose，别人一条命令跑起来"
+    ]
+   ],
+   "gaps_short": [
+    "没有一键部署"
+   ],
+   "risk": "",
+   "suspect": "",
+   "pitch": {
+    "gap_key": "只有代码没有界面",
+    "change": "包一层网页界面，让不会写代码的人点两下就能用",
+    "buyer": "接单的设计师和电商美工",
+    "buyer_tag": "设计",
+    "deliver": "做成带界面的成品，按份卖（发网盘，附中文说明）",
+    "deliver_alt": "接单代跑：客户给需求，你出结果",
+    "hours": 6,
+    "gap_key_word": "缺一键部署"
+   },
+   "plain": "给国产电视的一块干净桌面：参照 tvOS 设计的开源 Android TV 桌面，没有广告，开机自动接管。A tvOS-style launcher for Xiaomi, TCL and other China-market TVs.",
+   "analy": {
+    "en": "给国产电视的一块干净桌面：参照 tvOS 设计的开源 Android TV 桌面，没有广告，开机自动接管。A tvOS-style launcher for Xiaomi, TCL and other China-market TVs.",
+    "zh": "给国产电视的一块干净桌面：参照 tvOS 设计的开源 Android TV 桌面，没有广告，开机自动接管。 适用于小米、TCL 和其他中国市场电视的 tvOS 风格启动器。",
+    "plain": "说白了，这是一堆已经写好的能力，但没有界面，得有人包一层壳才能给普通人用。它干的事是：给国产电视的一块干净桌面：参照 tvOS 设计的开源 Android TV 桌面，没有广告，开机自动接管。 适用于小米、TCL 和其他中国市场电视的 tvOS 风格启动器。",
+    "usage": [
+     "接单时用它出初稿，客户改的是稿子不是空白页",
+     "接到同类需求时拿它当底子，省掉搭骨架的两三天",
+     "包一层网页界面，做成给非技术人用的成品"
+    ],
+    "how": [
+     "按 README 装依赖（这一步最容易卡住）",
+     "跑一个作者给的示例，确认能出结果",
+     "把自己的数据/需求换成示例里的输入"
+    ],
+    "gap": "包一层网页界面，让不会写代码的人点两下就能用",
+    "buyer": "接单的设计师和电商美工",
+    "why": "接单的设计师和电商美工不是不会做，是懒得为这一步花两三天试错。你把「包一层网页界面，让不会写代码的人点两下就能用」替他们做完，他们花的钱远少于自己折腾的时间。",
+    "self": "接到类似需求直接拿它当底子，省掉搭骨架的两三天；顺手把它当成自己的技术储备，下次报价敢往上抬。",
+    "pack": "包一层网页界面，录一段 3 分钟演示，按份卖；买家买的不是代码，是「不用装环境」。落地上就按这条走：做成带界面的成品，按份卖（发网盘，附中文说明）。",
+    "_auto": true,
+    "_src": "mt"
+   },
+   "_bucket": "",
+   "seen_times": 0,
+   "seen_first": "",
+   "seen_last": ""
+  },
+  {
+   "full_name": "l0ng-ai/openidea",
+   "owner": "l0ng-ai",
+   "owner_type": "User",
+   "name": "openidea",
+   "desc": "The IDE you know, rebuilt in Rust. IntelliJ IDEA–style keymap, tool windows and search-everywhere in a fast native app: editor, code insight, debugger, Git, terminal, database and HTTP clients for 60+ languages.",
+   "lang": "TypeScript",
+   "stars": 8708,
+   "forks": 780,
+   "watchers": 36,
+   "open_issues": 169,
+   "license": "Apache-2.0",
+   "license_name": "Apache License 2.0",
+   "topics": [
+    "code-editor",
+    "cross-platform",
+    "dap",
+    "database-client",
+    "debugger",
+    "desktop-app",
+    "developer-tools",
+    "git",
+    "http-client",
+    "ide",
+    "intellij",
+    "lsp",
+    "rust",
+    "tauri",
+    "terminal"
+   ],
+   "created_at": "2026-10-21T12:23:14Z",
+   "pushed_at": "2026-11-12T13:12:56Z",
+   "updated_at": "2026-11-12T13:14:38Z",
+   "size_kb": 85341,
+   "archived": false,
+   "has_discussions": true,
+   "has_wiki": false,
+   "homepage": "https://openidea.sh",
+   "url": "https://github.com/l0ng-ai/openidea",
+   "default_branch": "main",
+   "readme": "<p align=\"center\">\n  <picture>\n    <source media=\"(prefers-color-scheme: dark)\" srcset=\"src-tauri/icons/source/openidea-wordmark-dark.svg\">\n    <img src=\"src-tauri/icons/source/openidea-wordmark.svg\" alt=\"OpenIDEA\" height=\"56\">\n  </picture>\n</p>\n\n<p align=\"center\">\n  The IDE you know, rebuilt in Rust.\n</p>\n\n<p align=\"center\">\n  <a href=\"https://github.com/l0ng-ai/openidea/releases/latest\"><b>Download</b></a>\n  &nbsp;·&nbsp;\n  <a href=\"https://openidea.sh\">Docs</a>\n  &nbsp;·&nbsp;\n  <a href=\"#benchmark\">Benchmark</a>\n  &nbsp;·&nbsp;\n  <a href=\"#plugins\">Plugins</a>\n  &nbsp;·&nbsp;\n  <a href=\"#community\">Community</a>\n  &nbsp;·&nbsp;\n  <a href=\"#sponsor\">Sponsor</a>\n</p>\n\nhttps://github.com/user-attachments/assets/234dd54c-1255-4b3a-b35c-533d78d737c0\n\nOpenIDEA brings the IntelliJ IDEA way of working — its keymap, its tool windows,\nits search-everything habits — to a native app with a Rust core.\n\nEditor, code insight, debugger, Git, terminal, database and HTTP clients,\nfor 60+ languages. Builds for macOS, Windows and Linux.\n\n## Benchmark\n\nOpening [freqtrade](https://github.com/freqtrade/freqtrade) (Python, ~770 files)\nwith warm caches, median of 5 runs:\n\n|                             | OpenIDEA          | IntelliJ IDEA 2026.2.3 |\n| --------------------------- | ----------------- | ---------------------- |\n| Window with the project     | **0.9 s**         | 3.1 s                  |\n| Ready (CPU settled)         | **1.1 s**         | 13.2 s                 |\n| Memory (USS, all processes) | **169 MB**        | 2011 MB                |\n| CPU time until ready        | **2.4 s**         | 47.9 s                 |\n| Idle CPU                    | **4 %** of a core | 7 % of a core          |\n| Quit                        | **0.3 s**         | 5.9 s                  |\n\nA release build of OpenIDEA from `main` and IDEA with default settings and plugins, on\nWindows 11, 32-core AMD, 62 GB RAM.\nIDEA analyses Python more deeply, so \"ready\" doesn't mean the same work on\nboth sides. Both are measured from the outside, the same way: see\n[`perf/compare`](perf/compare) to run it on your machine and projects.\n\n## Plugins\n\nPlugins add actions, completion, quick fixes, tool windows, custom editors,\nthemes, file icons and languages. They run as sandboxed WebAssembly components;\nthemes, icon themes and languages need no code at all.\n\nInstall them from Settings › Plugins, or start your own with\n`openidea-plugin new` — see [Writing OpenIDEA plugins](https://openidea.sh/en/plugins) and\nthe [official plugins](plugins/official). The plugin API is still a preview.\n\n## Community\n\n- [Discord](https://discord.gg/2Zy4yn7gP) — questions, feedback and release news.\n- WeChat group — scan to join:\n\n  <img src=\".github/assets/wechat-group.png\" alt=\"WeChat group QR code\" width=\"200\">\n\n- Contributing: see [CONTRIBUTING.md](CONTRIBUTING.md) and the [contributor docs](https://openidea.sh/en/contribute/setup).\n\n## Sponsor\n\nIf OpenIDEA saves you time, you can support its development with Alipay or WeChat Pay.\n\n<table>\n  <tr>\n    <td align=\"center\"><img src=\".github/assets/sponsor-alipay.png\" alt=\"Alipay QR code\" width=\"200\"><br>Alipay</td>\n    <td align=\"center\"><img src=\".github/assets/sponsor-wechat.png\" alt=\"WeChat Pay QR code\" width=\"200\"><br>WeChat Pay</td>\n  </tr>\n</table>\n\n## License\n\n[Apache 2.0](LICENSE). Bundled third-party assets are listed in [`THIRD_PARTY_LICENSES.md`](THIRD_PARTY_LICENSES.md).\n\n<sub>Not affiliated with JetBrains. IntelliJ IDEA is a trademark of JetBrains s.r.o.</sub>\n",
+   "gained": 0,
+   "since": "created<30d",
+   "source": "search_new",
+   "score": 79,
+   "detail": {
+    "lic": 25,
+    "easy": 20,
+    "zh": 0,
+    "demand": 20,
+    "deliver": 4,
+    "fresh": 10,
+    "adj": 0
+   },
+   "grade": "A",
+   "grade_word": "改一改能卖",
+   "form": "web应用",
+   "velocity": 395.8181818181818,
+   "_gaps": [
+    [
+     "没有中文上手文档",
+     "没有中文上手文档",
+     "把 README 翻成中文，配一张三步跑通图"
+    ],
+    [
+     "没有中文界面",
+     "没有中文界面",
+     "把界面文案和按钮全翻成中文，截一套中文版演示图"
+    ],
+    [
+     "没有一键部署",
+     "没有一键部署",
+     "补一个 Dockerfile + compose，别人一条命令跑起来"
+    ]
+   ],
+   "gaps_short": [
+    "没有中文上手文档",
+    "没有中文界面",
+    "没有一键部署"
+   ],
+   "risk": "",
+   "suspect": "",
+   "pitch": {
+    "gap_key": "没有中文界面",
+    "change": "把界面文案和按钮全翻成中文，再截一套中文版演示图当商品图",
+    "buyer": "想有个自己工具但不会写代码的人",
+    "buyer_tag": "通用",
+    "deliver": "打包部署到客户自己的服务器/域名，收一次部署费",
+    "deliver_alt": "做成在线服务，按月收使用费",
+    "hours": 4,
+    "gap_key_word": "缺中文界面"
+   },
+   "plain": "The IDE you know, rebuilt in Rust. IntelliJ IDEA–style keymap, tool windows and search-everywhere in a fast native app: editor, code insight, debugger, Git, terminal, database and HTTP clients for 60+ languages.",
+   "analy": {
+    "en": "The IDE you know, rebuilt in Rust. IntelliJ IDEA–style keymap, tool windows and search-everywhere in a fast native app: editor, code insight, debugger, Git, terminal, database and HTTP clients for 60+ languages.",
+    "zh": "您熟悉的 IDE，以 Rust 语言重新构建。一款快速的本地应用程序，具备 IntelliJ IDEA 风格的键盘映射、工具窗口和“全局搜索”功能：编辑器、代码提示、调试器、Git、终端、数据库和 HTTP 客户端，支持 60 多种语言。",
+    "plain": "说白了，这是一个打开网页就能用的在线小工具，不用装任何东西。它干的事是：您熟悉的 IDE，以 Rust 语言重新构建。一款快速的本地应用程序，具备 IntelliJ IDEA 风格的键盘映射、工具窗口和“全局搜索”功能：编辑器、代码提示、调试器、Git、终端、数据库和 HTTP 客户端，支持 60 多种语言。",
+    "usage": [
+     "直接打开当工具用，省掉装软件那一步",
+     "部署到自己的域名，做成一个能对外收钱的服务",
+     "挂在自己号里当「免费小工具」，用来引流"
+    ],
+    "how": [
+     "打开作者给的网址（或自己部署一份）",
+     "按界面提示把内容填进去",
+     "选样式/导出，拿到成品"
+    ],
+    "gap": "把界面文案和按钮全翻成中文，再截一套中文版演示图当商品图",
+    "buyer": "想有个自己工具但不会写代码的人",
+    "why": "想有个自己工具但不会写代码的人不是不会做，是懒得为这一步花两三天试错。你把「把界面文案和按钮全翻成中文，再截一套中文版演示图当商品图」替他们做完，他们花的钱远少于自己折腾的时间。",
+    "self": "自己干活时当外挂：重复的排版、出图、整理交给它，一次省十几分钟。用熟之后你会清楚自己哪一步最该自动化——这个认知比工具本身值钱。",
+    "pack": "汉化 + 一套中文模板 + 部署教程，打包成 zip 发网盘；主图用「改前 vs 改后」对比，标题写用户能搜的词。落地上就按这条走：打包部署到客户自己的服务器/域名，收一次部署费。",
+    "_auto": true,
+    "_src": "mt"
+   },
+   "_bucket": "",
+   "seen_times": 0,
+   "seen_first": "",
+   "seen_last": ""
+  },
+  {
+   "full_name": "CopilotKit/OpenBot",
+   "owner": "CopilotKit",
+   "owner_type": "Organization",
+   "name": "OpenBot",
+   "desc": "Open-source AI coworkers that each get a computer of their own: a browser, files and tools, with every action decided before it happens and recorded after. Bring any AG-UI agent.",
+   "lang": "TypeScript",
+   "stars": 11250,
+   "forks": 1394,
+   "watchers": 40,
+   "open_issues": 81,
+   "license": "MIT",
+   "license_name": "MIT License",
+   "topics": [
+    "ag-ui",
+    "agent-governance",
+    "ai-agents",
+    "browser-automation",
+    "copilotkit",
+    "generative-ui",
+    "mcp"
+   ],
+   "created_at": "2026-08-17T00:44:59Z",
+   "pushed_at": "2026-11-12T07:59:52Z",
+   "updated_at": "2026-11-12T13:07:15Z",
+   "size_kb": 45557,
+   "archived": false,
+   "has_discussions": false,
+   "has_wiki": true,
+   "homepage": "open.bot",
+   "url": "https://github.com/CopilotKit/OpenBot",
+   "default_branch": "main",
+   "readme": "<div align=\"center\">\n\n<img src=\"app/src/assets/openbot-logo.png\" alt=\"\" width=\"72\">\n\n# OpenBot\n\n### AI coworkers. Ready for the enterprise.\n\nA modular, self-hostable workspace for AI coworkers.<br>\nChoose your models. Bring your agents. Own your infrastructure.\n\n[open.bot](https://open.bot) · [Docs](docs/README.md) · [Deploy on Kubernetes](#deploy-on-kubernetes) · [Run from source](#run-from-source)\n\n[![GitHub Trending: #3 Repository Of The Day](https://trendshift.io/api/badge/repositories/175080)](https://trendshift.io/repositories/175080)\n[![Trendshift: #3 Repository Of The Day](https://trendshift.io/api/badge/trendshift/repositories/175080/daily)](https://trendshift.io/repositories/175080)\n\n<br>\n\n[![Download for Mac (Apple silicon)](https://img.shields.io/github/v/release/CopilotKit/OpenBot?style=for-the-badge&labelColor=3A3466&logo=data%3Aimage%2Fsvg%2Bxml%3Bbase64%2CPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI%2BPHBhdGggZmlsbD0iI2ZmZiIgZD0iTTExIDNoMnYxMC4ybDMuNi0zLjZMMTggMTFsLTYgNi02LTYgMS40LTEuNCAzLjYgMy42ek01IDE5aDE0djJINXoiLz48L3N2Zz4%3D&label=Download%20for%20Mac%20%28Apple%20silicon%29&color=6E6AE0)](https://downloads.copilotkit.ai/latest/OpenBot-mac-arm64.dmg)\n[![Download for Mac (Intel)](https://img.shields.io/github/v/release/CopilotKit/OpenBot?style=for-the-badge&labelColor=3A3466&logo=data%3Aimage%2Fsvg%2Bxml%3Bbase64%2CPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI%2BPHBhdGggZmlsbD0iI2ZmZiIgZD0iTTExIDNoMnYxMC4ybDMuNi0zLjZMMTggMTFsLTYgNi02LTYgMS40LTEuNCAzLjYgMy42ek01IDE5aDE0djJINXoiLz48L3N2Zz4%3D&label=Download%20for%20Mac%20%28Intel%29&color=4A7CC8)](https://downloads.copilotkit.ai/latest/OpenBot-mac-x64.dmg)\n[![Download for Windows](https://img.shields.io/github/v/release/CopilotKit/OpenBot?style=for-the-badge&labelColor=3A3466&logo=data%3Aimage%2Fsvg%2Bxml%3Bbase64%2CPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI%2BPHBhdGggZmlsbD0iI2ZmZiIgZD0iTTExIDNoMnYxMC4ybDMuNi0zLjZMMTggMTFsLTYgNi02LTYgMS40LTEuNCAzLjYgMy42ek01IDE5aDE0djJINXoiLz48L3N2Zz4%3D&label=Download%20for%20Windows&color=9A5CC6)](https://downloads.copilotkit.ai/latest/OpenBot-windows-x64-setup.exe)\n\n<sub>Notarized .dmg for Apple silicon and Intel Macs · signed installer for Windows x64 · no terminal or developer tools needed · [Release notes](https://github.com/CopilotKit/OpenBot/releases/latest)</sub>\n\n<br>\n\n[![OpenBot for Business: get early access](https://img.shields.io/badge/OpenBot_for_Business-Get_early_access_%E2%86%92-D14B9C?style=for-the-badge&labelColor=3A3466)](https://dashboard.operations.copilotkit.ai/early-access/openbot?platform=business&ref=github&utm_source=github&utm_medium=readme&utm_campaign=openbot-early-access)\n\n<sub>From [CopilotKit](https://www.copilotkit.ai), creators of [AG-UI](https://github.com/ag-ui-protocol/ag-ui).</sub>\n\n</div>\n\nhttps://github.com/user-attachments/assets/c60f07da-8b6d-46eb-a573-17fc1e65a644\n\n<p align=\"center\"><sub>Watch a Bot use its browser and tools, answer with interactive results, and wait for your approval before it sends. Take over when it needs you, and connect the agents you already run.</sub></p>\n\n## Getting started\n\n### On your laptop\n\nThe easiest way to get started is with the fully self-contained app that runs on your laptop, combining the OpenBot frontend and Docker-based backend in one application.\n\n[Mac / Apple silicon](https://downloads.copilotkit.ai/latest/OpenBot-mac-arm64.dmg) · [Mac / Intel](https://downloads.copilotkit.ai/latest/OpenBot-mac-x64.dmg) · [Windows](https://downloads.copilotkit.ai/latest/OpenBot-windows-x64-setup.exe)\n\n[Run from source](#run-from-source)\n\n### For your team\n\n**OpenBot for Business** brings your agents into one workspace with company sign-in, tool permissions, approvals, and audit. Deploy on your infrastructure or work with our engineers on hosting and customization.\n\n[**Get early access to OpenBot for Business →**](https://dashboard.operations.copilotkit.",
+   "gained": 291,
+   "since": "daily",
+   "source": "trending",
+   "score": 72,
+   "detail": {
+    "lic": 25,
+    "easy": 20,
+    "zh": 0,
+    "demand": 18,
+    "deliver": 4,
+    "fresh": 5,
+    "adj": 0
+   },
+   "grade": "A",
+   "grade_word": "改一改能卖",
+   "form": "web应用",
+   "velocity": 291.0,
+   "_gaps": [
+    [
+     "没有中文上手文档",
+     "没有中文上手文档",
+     "把 README 翻成中文，配一张三步跑通图"
+    ]
+   ],
+   "gaps_short": [
+    "没有中文上手文档"
+   ],
+   "risk": "",
+   "suspect": "",
+   "pitch": {
+    "gap_key": "没有在线演示",
+    "change": "部署一个公开 demo，让人先玩再决定买不买",
+    "buyer": "想有个自己工具但不会写代码的人",
+    "buyer_tag": "通用",
+    "deliver": "做成在线服务，按月收使用费",
+    "deliver_alt": "连部署带教一次，做成「一天陪跑」按次收",
+    "hours": 3,
+    "gap_key_word": "缺中文上手文档"
+   },
+   "plain": "Open-source AI coworkers that each get a computer of their own: a browser, files and tools, with every action decided before it happens and recorded after. Bring any AG-UI agent.",
+   "analy": {
+    "en": "Open-source AI coworkers that each get a computer of their own: a browser, files and tools, with every action decided before it happens and recorded after. Bring any AG-UI agent.",
+    "zh": "开源人工智能同事每人都有一台自己的计算机：浏览器、文件和工具，每一个动作在发生之前就决定并在发生之后记录。带上任何 AG-UI 代理。",
+    "plain": "说白了，这是一个打开网页就能用的在线小工具，不用装任何东西。它干的事是：开源人工智能同事每人都有一台自己的计算机：浏览器、文件和工具，每一个动作在发生之前就决定并在发生之后记录。带上任何 AG-UI 代理。",
+    "usage": [
+     "直接打开当工具用，省掉装软件那一步",
+     "部署到自己的域名，做成一个能对外收钱的服务",
+     "挂在自己号里当「免费小工具」，用来引流"
+    ],
+    "how": [
+     "打开作者给的网址（或自己部署一份）",
+     "按界面提示把内容填进去",
+     "选样式/导出，拿到成品"
+    ],
+    "gap": "部署一个公开 demo，让人先玩再决定买不买",
+    "buyer": "想有个自己工具但不会写代码的人",
+    "why": "想有个自己工具但不会写代码的人不是不会做，是懒得为这一步花两三天试错。你把「部署一个公开 demo，让人先玩再决定买不买」替他们做完，他们花的钱远少于自己折腾的时间。",
+    "self": "自己干活时当外挂：重复的排版、出图、整理交给它，一次省十几分钟。用熟之后你会清楚自己哪一步最该自动化——这个认知比工具本身值钱。",
+    "pack": "汉化 + 一套中文模板 + 部署教程，打包成 zip 发网盘；主图用「改前 vs 改后」对比，标题写用户能搜的词。落地上就按这条走：做成在线服务，按月收使用费。",
+    "_auto": true,
+    "_src": "mt"
+   },
+   "_bucket": "",
+   "seen_times": 0,
+   "seen_first": "",
+   "seen_last": ""
+  },
+  {
+   "full_name": "mattpocock/skills",
+   "owner": "mattpocock",
+   "owner_type": "User",
+   "name": "skills",
+   "desc": "Skills for Real Engineers. Straight from my .agents directory.",
+   "lang": "Shell",
+   "stars": 322588,
+   "forks": 27055,
+   "watchers": 1656,
+   "open_issues": 238,
+   "license": "MIT",
+   "license_name": "MIT License",
+   "topics": [],
+   "created_at": "2026-02-03T11:15:53Z",
+   "pushed_at": "2026-11-12T12:11:43Z",
+   "updated_at": "2026-11-12T13:14:43Z",
+   "size_kb": 2322,
+   "archived": false,
+   "has_discussions": true,
+   "has_wiki": false,
+   "homepage": "https://aihero.dev/skills",
+   "url": "https://github.com/mattpocock/skills",
+   "default_branch": "main",
+   "readme": "<p>\n  <a href=\"https://www.aihero.dev/s/skills-newsletter\">\n    <picture>\n      <source media=\"(prefers-color-scheme: dark)\" srcset=\"https://res.cloudinary.com/total-typescript/image/upload/v1777382277/skills-repo-dark_2x.png\">\n      <source media=\"(prefers-color-scheme: light)\" srcset=\"https://res.cloudinary.com/total-typescript/image/upload/v1777382277/skill-repo-light_2x.png\">\n      <img alt=\"Skills\" src=\"https://res.cloudinary.com/total-typescript/image/upload/v1777382277/skill-repo-light_2x.png\" width=\"369\">\n    </picture>\n  </a>\n</p>\n\n# Skills For Real Engineers\n\n[![skills.sh](https://skills.sh/b/mattpocock/skills)](https://skills.sh/mattpocock/skills)\n\nMy agent skills that I use every day to do real engineering - not vibe coding.\n\nDeveloping real applications is hard. Approaches like GSD, BMAD, and Spec-Kit try to help by owning the process. But while doing so, they take away your control and make bugs in the process hard to resolve.\n\nThese skills are designed to be small, easy to adapt, and composable. They work with any model. They're based on decades of engineering experience. Hack around with them. Make them your own. Enjoy.\n\nIf you want to keep up with changes to these skills, and any new ones I create, you can join ~60,000 other devs on my newsletter:\n\n[Sign Up To The Newsletter](https://www.aihero.dev/s/skills-newsletter)\n\n## Installation (30-second setup)\n\nA plugin updates itself. [skills.sh](https://skills.sh/mattpocock/skills) copies editable files into your project, and you update them by hand. Pick one per agent, because installing both gives you every skill twice.\n\n### 1. Get the skills\n\n<details>\n<summary><strong>Claude Code</strong></summary>\n\n```bash\nclaude plugin install mattpocock-skills@claude-plugins-official\n```\n\nUpdates itself by default.\n\n</details>\n\n<details>\n<summary><strong>Codex</strong></summary>\n\n```bash\ncodex plugin marketplace add mattpocock/skills\ncodex plugin add mattpocock-skills@mattpocock\n```\n\nUpdates itself at startup.\n\n</details>\n\n<details>\n<summary><strong>GitHub Copilot</strong> (CLI and VS Code)</summary>\n\n```bash\ncopilot plugin marketplace add mattpocock/skills\ncopilot plugin install mattpocock-skills@mattpocock\n```\n\nThen, once, add to `~/.copilot/settings.json`:\n\n```json\n{\n  \"extraKnownMarketplaces\": {\n    \"mattpocock\": { \"source\": { \"source\": \"github\", \"repo\": \"mattpocock/skills\" }, \"autoUpdate\": true }\n  }\n}\n```\n\nIn VS Code, run **Chat: Install Plugin From Source** and enter `https://github.com/mattpocock/skills`. It updates daily.\n\n</details>\n\n<details>\n<summary><strong>Gemini CLI</strong> (manual updates)</summary>\n\n```bash\ngemini skills install https://github.com/mattpocock/skills.git --path skills/engineering\ngemini skills install https://github.com/mattpocock/skills.git --path skills/productivity\n```\n\nRe-run both commands to update.\n\n</details>\n\n<details>\n<summary><strong>Any other agent, or editable files</strong> (manual updates)</summary>\n\n```bash\nnpx skills@latest add mattpocock/skills -a <agent>  # cursor, opencode, devin, windsurf, amp, pi; omit -a to choose\n```\n\nWhen the installer asks which skills to take, include `setup-matt-pocock-skills`. To update, run `npx skills@latest update`, and re-run `add` to pick up new skills.\n\n</details>\n\n### 2. Run `/setup-matt-pocock-skills`\n\nIn your agent, run it once per repo. It will:\n\n- Ask you which issue tracker you want to use (GitHub, GitLab, local files, or anything else you describe)\n- Ask you what labels you apply to tickets when you triage them (`/triage` uses labels)\n- Ask you where you want to save any docs we create\n\n### 3. Bam - you're ready to go.\n\n## Why These Skills Exist\n\nI built these skills as a way to fix common failure modes I see with Claude Code, Codex, and other coding agents.\n\n### #1: The Agent Didn't Do What I Want\n\n> \"No-one knows exactly what they want\"\n>\n> David Thomas & Andrew Hunt, [The Pragmatic Programmer](https://www.amazon.co.uk/Pragmatic-Programmer-Anniversary-Journey-Mastery/dp/B0833F1T3V)\n\n",
+   "gained": 9575,
+   "since": "weekly",
+   "source": "trending",
+   "score": 70,
+   "detail": {
+    "lic": 25,
+    "easy": 20,
+    "zh": 0,
+    "demand": 14,
+    "deliver": 10,
+    "fresh": 1,
+    "adj": 0
+   },
+   "grade": "A",
+   "grade_word": "改一改能卖",
+   "form": "Agent技能",
+   "velocity": 1367.857142857143,
+   "_gaps": [
+    [
+     "没有中文上手文档",
+     "没有中文上手文档",
+     "把 README 翻成中文，配一张三步跑通图"
+    ],
+    [
+     "没有一键部署",
+     "没有一键部署",
+     "补一个 Dockerfile + compose，别人一条命令跑起来"
+    ]
+   ],
+   "gaps_short": [
+    "没有中文上手文档",
+    "没有一键部署"
+   ],
+   "risk": "体量太大，改源码成本高，建议只做外围服务",
+   "suspect": "",
+   "pitch": {
+    "gap_key": "只有英文指令",
+    "change": "改写成中文指令版，加 3 个真实场景的开场白",
+    "buyer": "天天用 AI 干活、但不知道装什么的人",
+    "buyer_tag": "通用",
+    "deliver": "打包成技能文件，配使用教程一起卖",
+    "deliver_alt": "做成付费专栏的一章，当引流钩子",
+    "hours": 1,
+    "gap_key_word": "缺中文上手文档"
+   },
+   "plain": "Skills for Real Engineers. Straight from my .agents directory.",
+   "analy": {
+    "en": "Skills for Real Engineers. Straight from my .agents directory.",
+    "zh": "真正工程师的技能。直接来自我的 .agents 目录。",
+    "plain": "说白了，这是一份写给 AI 的操作手册，装进 AI 工具后它就知道按你的规矩干活。它干的事是：真正工程师的技能。直接来自我的 .agents 目录。",
+    "usage": [
+     "装进常用的 AI 工具，让它按行规干活，不用每次重写要求",
+     "改造成中文版，卖给不会写提示词的人",
+     "当课程或付费专栏的核心案例，边讲边演示"
+    ],
+    "how": [
+     "把技能文件放进 AI 工具的技能目录",
+     "在对话里说一句触发词",
+     "按它给的步骤走，不满意就补一句要求"
+    ],
+    "gap": "改写成中文指令版，加 3 个真实场景的开场白",
+    "buyer": "天天用 AI 干活、但不知道装什么的人",
+    "why": "天天用 AI 干活、但不知道装什么的人不是不会做，是懒得为这一步花两三天试错。你把「改写成中文指令版，加 3 个真实场景的开场白」替他们做完，他们花的钱远少于自己折腾的时间。",
+    "self": "装进自己常用的 AI 工具里，写东西、做分析时不用每次从头描述要求，输出的东西还稳定。",
+    "pack": "整理成可直接安装的技能包 + 使用截图，配一节教程一起卖；也可以做成付费专栏的一章当引流钩子。落地上就按这条走：打包成技能文件，配使用教程一起卖。",
+    "_auto": true,
+    "_src": "mt"
+   },
+   "_bucket": "",
+   "seen_times": 0,
+   "seen_first": "",
+   "seen_last": ""
+  },
+  {
+   "full_name": "milind-soni/OpenMausBot",
+   "owner": "milind-soni",
+   "owner_type": "User",
+   "name": "OpenMausBot",
+   "desc": "Open-source Grok Bot alternative with a virtual machine that bots can use",
+   "lang": "TypeScript",
+   "stars": 21550,
+   "forks": 3000,
+   "watchers": 49,
+   "open_issues": 1101,
+   "license": "Apache-2.0",
+   "license_name": "Apache License 2.0",
+   "topics": [
+    "ai-agents",
+    "claude-code",
+    "codex",
+    "computer-use",
+    "docker",
+    "electron",
+    "grok",
+    "grok-bot",
+    "grok-bot-alternative",
+    "self-hosted",
+    "typescript"
+   ],
+   "created_at": "2026-08-11T18:58:55Z",
+   "pushed_at": "2026-11-12T07:08:53Z",
+   "updated_at": "2026-11-12T13:04:54Z",
+   "size_kb": 522861,
+   "archived": false,
+   "has_discussions": false,
+   "has_wiki": true,
+   "homepage": "https://www.mausbot.com/",
+   "url": "https://github.com/milind-soni/OpenMausBot",
+   "default_branch": "main",
+   "readme": "<div align=\"center\">\n\n# OpenMausBot\n\n**The open-source Grok Bot alternative: your own team of AI bots, in a chat app.**\n\n[**openmausbot.com**](https://www.openmausbot.com) &nbsp;·&nbsp; [Download](https://www.openmausbot.com/download) &nbsp;·&nbsp; [Open source Grok Bot alternative, compared](https://www.openmausbot.com/blog/grok-bot-vs-openmausbot)\n\n<sub>OpenMausBot is an open-source Grok Bot alternative: an independent project inspired by **Grok Bot**, and the open-source alternative to **Meta Muse**, **OpenAI dots** and **Cue by Manus** — bring-your-own-agent, local-first, on the models you already have. Also known as **MausBot**; formerly **OpenGrokBot**. Not affiliated with xAI, Meta, OpenAI or Manus.</sub>\n\nEvery bot in the sidebar is a real agent — Claude or Codex running locally under the hood — with its own\npersonality, its own model, its own cloud computer, and its own connected apps.\nTalk to them like contacts. Watch them work. Approve what matters.\n\n![TypeScript](https://img.shields.io/badge/TypeScript-strict-3178C6?logo=typescript&logoColor=white)\n![React](https://img.shields.io/badge/React-19-61DAFB?logo=react&logoColor=black)\n![Electron](https://img.shields.io/badge/Electron-macOS%20%C2%B7%20Windows%20%C2%B7%20Ubuntu-2B2E3A?logo=electron&logoColor=9FEAF9)\n![Agents](https://img.shields.io/badge/agents-Claude%20·%20Codex-d97757)\n[![Release](https://img.shields.io/github/v/release/milind-soni/OpenMausBot?label=release&color=1084fe&cacheSeconds=300)](https://github.com/milind-soni/OpenMausBot/releases/latest)\n![PRs](https://img.shields.io/badge/PRs-welcome-38d591)\n\n<br>\n\n<a href=\"https://github.com/milind-soni/OpenMausBot/releases/latest/download/OpenMausBot.dmg\">\n  <img src=\"https://img.shields.io/github/v/release/milind-soni/OpenMausBot?style=for-the-badge&label=%E2%AC%87%EF%B8%8F%20%20Download%20for%20Mac%20%28Apple%20silicon%29&labelColor=070707&color=1084fe&cacheSeconds=300\" alt=\"Download the latest OpenMausBot for Mac with Apple silicon (.dmg)\" height=\"40\">\n</a>\n&nbsp;\n<a href=\"https://github.com/milind-soni/OpenMausBot/releases/latest/download/OpenMausBot-intel.dmg\">\n  <img src=\"https://img.shields.io/github/v/release/milind-soni/OpenMausBot?style=for-the-badge&label=%E2%AC%87%EF%B8%8F%20%20Download%20for%20Mac%20%28Intel%29&labelColor=070707&color=2a9d8f&cacheSeconds=300\" alt=\"Download the latest OpenMausBot for Intel Macs (.dmg)\" height=\"40\">\n</a>\n&nbsp;\n<a href=\"https://github.com/milind-soni/OpenMausBot/releases/latest/download/OpenMausBot-setup.exe\">\n  <img src=\"https://img.shields.io/github/v/release/milind-soni/OpenMausBot?style=for-the-badge&label=%E2%AC%87%EF%B8%8F%20%20Download%20for%20Windows&labelColor=070707&color=4cc2ff&cacheSeconds=300\" alt=\"Download the latest OpenMausBot for Windows (.exe)\" height=\"40\">\n</a>\n&nbsp;\n<a href=\"https://github.com/milind-soni/OpenMausBot/releases/latest/download/OpenMausBot-amd64.deb\">\n  <img src=\"https://img.shields.io/github/v/release/milind-soni/OpenMausBot?style=for-the-badge&label=%E2%AC%87%EF%B8%8F%20%20Download%20for%20Ubuntu&labelColor=070707&color=e95420&cacheSeconds=300\" alt=\"Download the latest OpenMausBot for Ubuntu (.deb)\" height=\"40\">\n</a>\n\n<sub>[latest release](https://github.com/milind-soni/OpenMausBot/releases/latest) &nbsp;·&nbsp; macOS: Apple silicon & Intel · signed & notarized .dmg &nbsp;·&nbsp; Windows: x64 installer &nbsp;·&nbsp; Ubuntu 24.04 x64: .deb or AppImage beta &nbsp;·&nbsp; [all releases](https://github.com/milind-soni/OpenMausBot/releases)</sub>\n\n<br>\n\n<a href=\"https://github.com/sponsors/milind-soni\">\n  <img src=\"https://img.shields.io/badge/%E2%9D%A4%EF%B8%8F%20%20Support%20OpenMausBot-GitHub%20Sponsors-38d591?style=for-the-badge&labelColor=070707\" alt=\"Support OpenMausBot via GitHub Sponsors\" height=\"40\">\n</a>\n\n<br>\n<br>\n\n<sub>Powered by <a href=\"https://boat.dev\">boat.dev</a></sub>\n<br>\n<a href=\"https://boat.dev\">\n  <picture>\n    <source media=\"(prefers-color-scheme: dark)\" srcset=\"docs/assets/sponsors/boat-logo-white.svg\">\n   ",
+   "gained": 9257,
+   "since": "weekly",
+   "source": "trending",
+   "score": 70,
+   "detail": {
+    "lic": 25,
+    "easy": 20,
+    "zh": 0,
+    "demand": 20,
+    "deliver": 2,
+    "fresh": 3,
+    "adj": 0
+   },
+   "grade": "A",
+   "grade_word": "改一改能卖",
+   "form": "web应用",
+   "velocity": 1322.4285714285713,
+   "_gaps": [
+    [
+     "没有中文上手文档",
+     "没有中文上手文档",
+     "把 README 翻成中文，配一张三步跑通图"
+    ],
+    [
+     "没有一键部署",
+     "没有一键部署",
+     "补一个 Dockerfile + compose，别人一条命令跑起来"
+    ]
+   ],
+   "gaps_short": [
+    "没有中文上手文档",
+    "没有一键部署"
+   ],
+   "risk": "",
+   "suspect": "",
+   "pitch": {
+    "gap_key": "没有行业预设",
+    "change": "做 10 个行业预设（餐饮/教培/门店），一键套用",
+    "buyer": "要上线个小站但没预算请开发的人",
+    "buyer_tag": "通用",
+    "deliver": "连部署带教一次，做成「一天陪跑」按次收",
+    "deliver_alt": "换成客户自己的数据跑一遍，按场景收定制费",
+    "hours": 7,
+    "gap_key_word": "缺中文上手文档"
+   },
+   "plain": "Open-source Grok Bot alternative with a virtual machine that bots can use",
+   "analy": {
+    "en": "Open-source Grok Bot alternative with a virtual machine that bots can use",
+    "zh": "开源 Grok Bot 替代品，带有机器人可以使用的虚拟机",
+    "plain": "说白了，这是一个打开网页就能用的在线小工具，不用装任何东西。它干的事是：开源 Grok Bot 替代品，带有机器人可以使用的虚拟机",
+    "usage": [
+     "直接打开当工具用，省掉装软件那一步",
+     "部署到自己的域名，做成一个能对外收钱的服务",
+     "挂在自己号里当「免费小工具」，用来引流"
+    ],
+    "how": [
+     "打开作者给的网址（或自己部署一份）",
+     "按界面提示把内容填进去",
+     "选样式/导出，拿到成品"
+    ],
+    "gap": "做 10 个行业预设（餐饮/教培/门店），一键套用",
+    "buyer": "要上线个小站但没预算请开发的人",
+    "why": "要上线个小站但没预算请开发的人不是不会做，是懒得为这一步花两三天试错。你把「做 10 个行业预设（餐饮/教培/门店），一键套用」替他们做完，他们花的钱远少于自己折腾的时间。",
+    "self": "自己干活时当外挂：重复的排版、出图、整理交给它，一次省十几分钟。用熟之后你会清楚自己哪一步最该自动化——这个认知比工具本身值钱。",
+    "pack": "汉化 + 一套中文模板 + 部署教程，打包成 zip 发网盘；主图用「改前 vs 改后」对比，标题写用户能搜的词。落地上就按这条走：连部署带教一次，做成「一天陪跑」按次收。",
+    "_auto": true,
+    "_src": "mt"
+   },
+   "_bucket": "",
+   "seen_times": 0,
+   "seen_first": "",
+   "seen_last": ""
+  },
+  {
+   "full_name": "pookjw/HermesEnabler",
+   "owner": "pookjw",
+   "owner_type": "User",
+   "name": "HermesEnabler",
+   "desc": "Enable Hermès Watch Faces on any Apple Watch devices",
+   "lang": "Objective-C",
+   "stars": 1361,
+   "forks": 127,
+   "watchers": 4,
+   "open_issues": 51,
+   "license": "MIT",
+   "license_name": "MIT License",
+   "topics": [],
+   "created_at": "2024-12-14T11:32:03Z",
+   "pushed_at": "2026-11-12T04:11:27Z",
+   "updated_at": "2026-11-12T13:09:35Z",
+   "size_kb": 4379,
+   "archived": false,
+   "has_discussions": false,
+   "has_wiki": true,
+   "homepage": "",
+   "url": "https://github.com/pookjw/HermesEnabler",
+   "default_branch": "main",
+   "readme": "# HermesEnabler 2\n\n[English](README.md) · [한국어](README.ko.md) · [简体中文](README.zh-CN.md) · [繁體中文](README.zh-TW.md) · [日本語](README.ja.md) · [Español](README.es.md) · [Français](README.fr.md) · [Deutsch](README.de.md) · [Português](README.pt.md)\n\n![](image.png)\n\n> Supported only on watchOS 27.0 through 27.3 beta 1.\n\n## Installation\n\n### Install the IPA\n\n1. Download the IPA from [Releases](https://github.com/pookjw/HermesEnabler/releases).\n2. Install it with [Sideloadly](https://sideloadly.io).\n3. On your iPhone, open the **Watch** app and install **HermesEnabler2** from **My Watch → Apps**.\n4. Open **HermesEnabler2** on your Apple Watch and follow the steps in the app.\n\n### Build with Xcode\n\n1. Open [HermesEnabler2.xcodeproj](HermesEnabler2.xcodeproj) in Xcode.\n2. Select your Apple Watch as the run destination and click **Run**.\n3. Open **HermesEnabler2** on your Apple Watch and follow the steps in the app.\n\n## Cautions\n\n- In Sideloadly, disable **Use automatic bundle ID** and use a fixed Bundle Identifier. Keep the same Bundle Identifier and Apple ID for every update so the app can retain its existing data and backup.\n- Before deleting the app, always restore your MobileGestalt backup through the HermesEnabler2 app.\n\n## Credits\n\nThis project incorporates code from [Gester](https://github.com/sasobhabha/Gester).\n\nUse at your own risk.\n",
+   "gained": 390,
+   "since": "daily",
+   "source": "trending",
+   "score": 70,
+   "detail": {
+    "lic": 25,
+    "easy": 14,
+    "zh": 0,
+    "demand": 20,
+    "deliver": 10,
+    "fresh": 1,
+    "adj": 0
+   },
+   "grade": "A",
+   "grade_word": "改一改能卖",
+   "form": "引擎库",
+   "velocity": 390.0,
+   "_gaps": [
+    [
+     "没有中文上手文档",
+     "没有中文上手文档",
+     "把 README 翻成中文，配一张三步跑通图"
+    ],
+    [
+     "没有一键部署",
+     "没有一键部署",
+     "补一个 Dockerfile + compose，别人一条命令跑起来"
+    ],
+    [
+     "没有在线演示",
+     "没有在线演示",
+     "部署一个公开 demo 站，让人先玩再买单"
+    ]
+   ],
+   "gaps_short": [
+    "没有中文上手文档",
+    "没有一键部署",
+    "没有在线演示"
+   ],
+   "risk": "",
+   "suspect": "",
+   "pitch": {
+    "gap_key": "没有中文上手文档",
+    "change": "把 README 翻成中文，配一张「三步跑通」流程图",
+    "buyer": "要用这套能力但搞不定环境的人",
+    "buyer_tag": "通用",
+    "deliver": "接单代跑：客户给需求，你出结果",
+    "deliver_alt": "做成中文教程 + 成品包，走知识付费",
+    "hours": 4,
+    "gap_key_word": "缺中文上手文档"
+   },
+   "plain": "Enable Hermès Watch Faces on any Apple Watch devices",
+   "analy": {
+    "en": "Enable Hermès Watch Faces on any Apple Watch devices",
+    "zh": "在任何 Apple Watch 设备上启用爱马仕表盘",
+    "plain": "说白了，这是一堆已经写好的能力，但没有界面，得有人包一层壳才能给普通人用。它干的事是：在任何 Apple Watch 设备上启用爱马仕表盘",
+    "usage": [
+     "接到同类需求时拿它当底子，省掉搭骨架的两三天",
+     "包一层网页界面，做成给非技术人用的成品",
+     "集成进自己的项目，跳过从零写这一段"
+    ],
+    "how": [
+     "按 README 装依赖（这一步最容易卡住）",
+     "跑一个作者给的示例，确认能出结果",
+     "把自己的数据/需求换成示例里的输入"
+    ],
+    "gap": "把 README 翻成中文，配一张「三步跑通」流程图",
+    "buyer": "要用这套能力但搞不定环境的人",
+    "why": "要用这套能力但搞不定环境的人不是不会做，是懒得为这一步花两三天试错。你把「把 README 翻成中文，配一张「三步跑通」流程图」替他们做完，他们花的钱远少于自己折腾的时间。",
+    "self": "接到类似需求直接拿它当底子，省掉搭骨架的两三天；顺手把它当成自己的技术储备，下次报价敢往上抬。",
+    "pack": "包一层网页界面，录一段 3 分钟演示，按份卖；买家买的不是代码，是「不用装环境」。落地上就按这条走：接单代跑：客户给需求，你出结果。",
+    "_auto": true,
+    "_src": "mt"
+   },
+   "_bucket": "",
+   "seen_times": 0,
+   "seen_first": "",
+   "seen_last": ""
+  },
+  {
+   "full_name": "D4Vinci/Scrapling",
+   "owner": "D4Vinci",
+   "owner_type": "User",
+   "name": "Scrapling",
+   "desc": "🕷️ The BEST Web Scraping framework that handles everything from a single request to a full-scale crawl! Don't be shy, join here: https://discord.gg/EMgGbDceNQ and follow here for daily tips and tricks: https://x.com/Scrapling_dev",
+   "lang": "Python",
+   "stars": 101954,
+   "forks": 10611,
+   "watchers": 354,
+   "open_issues": 25,
+   "license": "BSD-3-Clause",
+   "license_name": "BSD 3-Clause \"New\" or \"Revised\" License",
+   "topics": [
+    "ai",
+    "ai-scraping",
+    "automation",
+    "crawler",
+    "crawling",
+    "crawling-python",
+    "data",
+    "data-extraction",
+    "mcp",
+    "mcp-server",
+    "playwright",
+    "python",
+    "scraping",
+    "selectors",
+    "stealth",
+    "web-scraper",
+    "web-scraping",
+    "web-scraping-python",
+    "webscraping",
+    "xpath"
+   ],
+   "created_at": "2024-10-13T20:29:53Z",
+   "pushed_at": "2026-11-11T19:16:10Z",
+   "updated_at": "2026-11-12T13:13:26Z",
+   "size_kb": 16302,
+   "archived": false,
+   "has_discussions": true,
+   "has_wiki": true,
+   "homepage": "https://scrapling.readthedocs.io/en/latest/",
+   "url": "https://github.com/D4Vinci/Scrapling",
+   "default_branch": "main",
+   "readme": "<!-- mcp-name: io.github.D4Vinci/Scrapling -->\n\n<h1 align=\"center\">\n    <a href=\"https://scrapling.readthedocs.io\">\n        <picture>\n          <source media=\"(prefers-color-scheme: dark)\" srcset=\"https://raw.githubusercontent.com/D4Vinci/Scrapling/main/docs/assets/cover_dark.svg?sanitize=true\">\n          <img alt=\"Scrapling Poster\" src=\"https://raw.githubusercontent.com/D4Vinci/Scrapling/main/docs/assets/cover_light.svg?sanitize=true\">\n        </picture>\n    </a>\n    <br>\n    <small>Effortless Web Scraping for the Modern Web</small>\n</h1>\n\n<p align=\"center\">\n    <a href=\"https://trendshift.io/repositories/14244\" target=\"_blank\"><img src=\"https://trendshift.io/api/badge/repositories/14244\" alt=\"D4Vinci%2FScrapling | Trendshift\" style=\"width: 250px; height: 55px;\" width=\"250\" height=\"55\"/></a>\n    <a href=\"https://www.star-history.com/d4vinci/scrapling\"><img src=\"https://api.star-history.com/badge?repo=D4Vinci/Scrapling&type=rank\" alt=\"Star History Rank\" style=\"height: 55px;\" height=\"55\"/></a>\n    <br/>\n    <a href=\"https://github.com/D4Vinci/Scrapling/blob/main/docs/README_AR.md\"><img alt=\"README بالعربية\" title=\"README بالعربية\" src=\"https://img.shields.io/badge/Arabic-DFE0E5\"></a>\n    <a href=\"https://github.com/D4Vinci/Scrapling/blob/main/docs/README_ES.md\"><img alt=\"README en Español\" src=\"https://img.shields.io/badge/Español-DFE0E5\"></a>\n    <a href=\"https://github.com/D4Vinci/Scrapling/blob/main/docs/README_PT_BR.md\"><img alt=\"README em Português (Brasil)\" src=\"https://img.shields.io/badge/Português%20(Brasil)-DFE0E5\"></a>\n    <a href=\"https://github.com/D4Vinci/Scrapling/blob/main/docs/README_FR.md\"><img alt=\"README en Français\" src=\"https://img.shields.io/badge/Français-DFE0E5\"></a>\n    <a href=\"https://github.com/D4Vinci/Scrapling/blob/main/docs/README_DE.md\"><img alt=\"README auf Deutsch\" src=\"https://img.shields.io/badge/Deutsch-DFE0E5\"></a>\n    <a href=\"https://github.com/D4Vinci/Scrapling/blob/main/docs/README_CN.md\"><img alt=\"简体中文版自述文件\" src=\"https://img.shields.io/badge/简体中文-DFE0E5\"></a>\n    <a href=\"https://github.com/D4Vinci/Scrapling/blob/main/docs/README_JP.md\"><img alt=\"日本語のREADME\" src=\"https://img.shields.io/badge/日本語-DFE0E5\"></a>\n    <a href=\"https://github.com/D4Vinci/Scrapling/blob/main/docs/README_RU.md\"><img alt=\"Русская версия README\" src=\"https://img.shields.io/badge/Русский-DFE0E5\"></a>\n    <a href=\"https://github.com/D4Vinci/Scrapling/blob/main/docs/README_KR.md\"><img alt=\"한국어 README\" src=\"https://img.shields.io/badge/한국어-DFE0E5\"></a>\n    <br/>\n    <a href=\"https://github.com/D4Vinci/Scrapling/actions/workflows/tests.yml\" alt=\"Tests\">\n        <img alt=\"Tests\" src=\"https://github.com/D4Vinci/Scrapling/actions/workflows/tests.yml/badge.svg\"></a>\n    <a href=\"https://badge.fury.io/py/Scrapling\" alt=\"PyPI version\">\n        <img alt=\"PyPI version\" src=\"https://badge.fury.io/py/Scrapling.svg\"></a>\n    <a href=\"https://hub.docker.com/r/pyd4vinci/scrapling\" target=\"_blank\">\n        <img alt=\"Docker Pulls\" src=\"https://img.shields.io/docker/pulls/pyd4vinci/scrapling?labelColor=%20%23FDB062&logo=Docker&labelColor=%20%23528bff\"></a>\n    <a href=\"https://clickpy.clickhouse.com/dashboard/scrapling\" rel=\"nofollow\"><img src=\"https://img.shields.io/pypi/dm/scrapling\" alt=\"PyPI package downloads\"></a>\n    <a href=\"https://scrapling.readthedocs.io/en/latest/ai/agent-skill.html\" alt=\"AI Agent Skill\">\n        <img alt=\"Static Badge\" src=\"https://img.shields.io/badge/Skill-black?style=flat&label=Agent&link=https%3A%2F%2Fscrapling.readthedocs.io%2Fen%2Flatest%2Fai%2Fagent-skill.html\"></a>\n    <a href=\"https://clawhub.ai/D4Vinci/scrapling-official\" alt=\"OpenClaw Skill\">\n        <img alt=\"OpenClaw Skill\" src=\"https://img.shields.io/badge/Clawhub-darkred?style=flat&label=OpenClaw&link=https%3A%2F%2Fclawhub.ai%2FD4Vinci%2Fscrapling-official\"></a>\n    <br/>\n    <a href=\"https://discord.gg/EMgGbDceNQ\" alt=\"Discord\" target=\"_blank\">\n      <img alt=\"Discord\" src=\"https://img.shields.io/discord/1360786381042880532?style=social&lo",
+   "gained": 5814,
+   "since": "weekly",
+   "source": "trending",
+   "score": 69,
+   "detail": {
+    "lic": 25,
+    "easy": 20,
+    "zh": 0,
+    "demand": 14,
+    "deliver": 7,
+    "fresh": 1,
+    "adj": 2
+   },
+   "grade": "A",
+   "grade_word": "改一改能卖",
+   "form": "引擎库",
+   "velocity": 830.5714285714286,
+   "_gaps": [
+    [
+     "没有中文上手文档",
+     "没有中文上手文档",
+     "把 README 翻成中文，配一张三步跑通图"
+    ],
+    [
+     "没有中文界面",
+     "没有中文界面",
+     "把界面文案和按钮全翻成中文，截一套中文版演示图"
+    ]
+   ],
+   "gaps_short": [
+    "没有中文上手文档",
+    "没有中文界面"
+   ],
+   "risk": "体量太大，改源码成本高，建议只做外围服务",
+   "suspect": "",
+   "pitch": {
+    "gap_key": "没有现成案例",
+    "change": "补 3 个真实场景示例，每个都能直接跑出结果",
+    "buyer": "要做数据但不会写代码的人",
+    "buyer_tag": "数据",
+    "deliver": "做成中文教程 + 成品包，走知识付费",
+    "deliver_alt": "封装成 API 出租，按调用量收费",
+    "hours": 1,
+    "gap_key_word": "缺中文上手文档"
+   },
+   "plain": "The BEST Web Scraping framework that handles everything from a single request to a full-scale crawl! Don't be shy, join here: https://discord.gg/EMgGbDceNQ and follow here for daily tips and tricks: https://x.com/Scrapling_dev",
+   "analy": {
+    "en": "The BEST Web Scraping framework that handles everything from a single request to a full-scale crawl! Don't be shy, join here: https://discord.gg/EMgGbDceNQ and follow here for daily tips and tricks: https://x.com/Scrapling_dev",
+    "zh": "最好的网络抓取框架，可以处理从单个请求到全面抓取的所有内容！不要害羞，加入这里：https://discord.gg/EMgGbDceNQ 并按照此处获取日常提示和技巧：https://x.com/Scrapling_dev",
+    "plain": "说白了，这是一堆已经写好的能力，但没有界面，得有人包一层壳才能给普通人用。它干的事是：最好的网络抓取框架，可以处理从单个请求到全面抓取的所有内容！不要害羞，加入这里：https://discord.gg/EMgGbDceNQ 并按照此处获取日常提示和技巧：https://x.com/Scrapling_dev",
+    "usage": [
+     "把手工统计的活换成一次配置、长期自动跑",
+     "接到同类需求时拿它当底子，省掉搭骨架的两三天",
+     "包一层网页界面，做成给非技术人用的成品"
+    ],
+    "how": [
+     "按 README 装依赖（这一步最容易卡住）",
+     "跑一个作者给的示例，确认能出结果",
+     "把自己的数据/需求换成示例里的输入"
+    ],
+    "gap": "补 3 个真实场景示例，每个都能直接跑出结果",
+    "buyer": "要做数据但不会写代码的人",
+    "why": "要做数据但不会写代码的人不是不会做，是懒得为这一步花两三天试错。你把「补 3 个真实场景示例，每个都能直接跑出结果」替他们做完，他们花的钱远少于自己折腾的时间。",
+    "self": "接到类似需求直接拿它当底子，省掉搭骨架的两三天；顺手把它当成自己的技术储备，下次报价敢往上抬。",
+    "pack": "包一层网页界面，录一段 3 分钟演示，按份卖；买家买的不是代码，是「不用装环境」。落地上就按这条走：做成中文教程 + 成品包，走知识付费。",
+    "_auto": true,
+    "_src": "mt"
+   },
+   "_bucket": "",
+   "seen_times": 0,
+   "seen_first": "",
+   "seen_last": ""
+  },
+  {
+   "full_name": "meta/astryx",
+   "owner": "meta",
+   "owner_type": "Organization",
+   "name": "astryx",
+   "desc": "An open source design system that's fully customizable and agent ready",
+   "lang": "TypeScript",
+   "stars": 25977,
+   "forks": 2018,
+   "watchers": 98,
+   "open_issues": 632,
+   "license": "MIT",
+   "license_name": "MIT License",
+   "topics": [],
+   "created_at": "2026-01-09T16:20:32Z",
+   "pushed_at": "2026-11-12T13:10:51Z",
+   "updated_at": "2026-11-12T13:13:31Z",
+   "size_kb": 1342568,
+   "archived": false,
+   "has_discussions": true,
+   "has_wiki": true,
+   "homepage": "http://astryx.atmeta.com",
+   "url": "https://github.com/meta/astryx",
+   "default_branch": "main",
+   "readme": "<!-- SYNC CONTRACT: Architecture changes require documentation updates. -->\n\n<div align=\"center\">\n\n<img src=\"https://lookaside.facebook.com/assets/astryx/Astryx-Banner.png\" alt=\"Astryx\" width=\"100%\" />\n\n# Astryx\n\nAn open source design system that's fully customizable and built for how we build now: <br/> by people and the agents working alongside them.\n\n**Currently in Beta** · Built on [React 19+](https://react.dev) and [StyleX](https://stylexjs.com)\n\n[![npm version](https://img.shields.io/npm/v/@astryxdesign/core?label=npm&color=cb3837&logo=npm)](https://www.npmjs.com/package/@astryxdesign/core)\n[![license MIT](https://img.shields.io/npm/l/@astryxdesign/core?color=blue)](LICENSE)\n[![PRs welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/meta/astryx/wiki/Contributing)\n\n[![Docs](https://img.shields.io/badge/Docs-astryx.atmeta.com-6741d9?logo=readthedocs&logoColor=white)](https://astryx.atmeta.com)\n[![Storybook](https://img.shields.io/badge/Storybook-live-ff4785?logo=storybook&logoColor=white)](https://astryx.atmeta.com/storybook/)\n[![Sandbox](https://img.shields.io/badge/Sandbox-playground-A9792B)](https://astryx.atmeta.com/sandbox/)\n\n**[Docs](https://astryx.atmeta.com)** · **[Storybook](https://astryx.atmeta.com/storybook/)** · **[Sandbox](https://astryx.atmeta.com/sandbox/)** · **[Contributing](https://github.com/meta/astryx/wiki/Contributing)** · **[Discord](https://discord.com/invite/XnsUcFykEP)**\n\n</div>\n\n## Overview\n\nAstryx is an open source design system that grew inside Meta over the last eight years, where it became the most-used and largest design system in the company — powering 13,000+ apps and shaped by the engineers, designers, and product teams who depend on it every day.\n\nIt ships 150+ accessible components, brand-level theming, dark mode, ready-to-ship templates, and a CLI as one cohesive system. You import pre-built CSS and use typed React components — no build plugin, no styling library to adopt — and both people and AI assistants build with the same tooling.\n\n**What makes Astryx different:**\n\n- **Open internals.** Components are built to be composed at any level, not locked behind a closed top-level API. The building blocks you'd reach for are exported directly, and when you need to go deeper, swizzle ejects a component's full source into your project to own.\n- **No styling lock-in.** Astryx authors its styles with StyleX, but that's invisible to consumers. Override with `className` using Tailwind, CSS modules, or plain CSS — whatever your project already uses.\n- **Customize without wrapping.** A theme is a set of CSS custom property overrides, so a designer can make Astryx unmistakably theirs without forking or wrapping component source.\n- **Built for people and agents.** The API, docs, and CLI are designed together so a person and an AI assistant build the same way, from the same reference.\n\n## Getting Started\n\nAstryx requires **React 19** or later (`react` and `react-dom` are peer dependencies of `@astryxdesign/core`).\n\nInstall Astryx, a theme, and its peer dependencies:\n\n```bash\n# npm\nnpm install @astryxdesign/core @astryxdesign/theme-neutral @stylexjs/stylex\nnpm install -D @astryxdesign/cli\n\n# pnpm\npnpm add @astryxdesign/core @astryxdesign/theme-neutral @stylexjs/stylex\npnpm add -D @astryxdesign/cli\n\n# yarn\nyarn add @astryxdesign/core @astryxdesign/theme-neutral @stylexjs/stylex\nyarn add -D @astryxdesign/cli\n```\n\nYou can also install the CLI once for your computer, so `astryx` works in any folder and every coding agent knows Astryx; in a project, it still runs that project's own version:\n\n```bash\nnpm i -g @astryxdesign/cli\n```\n\nProject install, global install, or both? `astryx docs global/project-global-or-both` compares them (both is recommended), and `astryx docs global` explains how global mode works.\n\nThe simplest setup is a few CSS imports plus a theme provider — no build plugin, no PostCSS or Babel config. See the **[@astryxdesign/core README](packages/core/READ",
+   "gained": 1789,
+   "since": "daily",
+   "source": "trending",
+   "score": 68,
+   "detail": {
+    "lic": 25,
+    "easy": 20,
+    "zh": 0,
+    "demand": 20,
+    "deliver": 2,
+    "fresh": 1,
+    "adj": 0
+   },
+   "grade": "A",
+   "grade_word": "改一改能卖",
+   "form": "web应用",
+   "velocity": 1789.0,
+   "_gaps": [
+    [
+     "没有中文上手文档",
+     "没有中文上手文档",
+     "把 README 翻成中文，配一张三步跑通图"
+    ]
+   ],
+   "gaps_short": [
+    "没有中文上手文档"
+   ],
+   "risk": "大厂项目，路线不由你定，只能做外围（部署/中文化/模板）",
+   "suspect": "",
+   "pitch": {
+    "gap_key": "出东西了带不走",
+    "change": "加一个一键导出（图/PDF/Excel），让人能直接拿去用",
+    "buyer": "接单的设计师和电商美工",
+    "buyer_tag": "设计",
+    "deliver": "换成客户自己的数据跑一遍，按场景收定制费",
+    "deliver_alt": "换成客户自己的数据跑一遍，按场景收定制费",
+    "hours": 6,
+    "gap_key_word": "缺中文上手文档"
+   },
+   "plain": "An open source design system that's fully customizable and agent ready",
+   "analy": {
+    "en": "An open source design system that's fully customizable and agent ready",
+    "zh": "完全可定制且可供代理使用的开源设计系统",
+    "plain": "说白了，这是一个打开网页就能用的在线小工具，不用装任何东西。它干的事是：完全可定制且可供代理使用的开源设计系统",
+    "usage": [
+     "接单时用它出初稿，客户改的是稿子不是空白页",
+     "直接打开当工具用，省掉装软件那一步",
+     "部署到自己的域名，做成一个能对外收钱的服务"
+    ],
+    "how": [
+     "打开作者给的网址（或自己部署一份）",
+     "按界面提示把内容填进去",
+     "选样式/导出，拿到成品"
+    ],
+    "gap": "加一个一键导出（图/PDF/Excel），让人能直接拿去用",
+    "buyer": "接单的设计师和电商美工",
+    "why": "接单的设计师和电商美工不是不会做，是懒得为这一步花两三天试错。你把「加一个一键导出（图/PDF/Excel），让人能直接拿去用」替他们做完，他们花的钱远少于自己折腾的时间。",
+    "self": "自己干活时当外挂：重复的排版、出图、整理交给它，一次省十几分钟。用熟之后你会清楚自己哪一步最该自动化——这个认知比工具本身值钱。",
+    "pack": "汉化 + 一套中文模板 + 部署教程，打包成 zip 发网盘；主图用「改前 vs 改后」对比，标题写用户能搜的词。落地上就按这条走：换成客户自己的数据跑一遍，按场景收定制费。",
+    "_auto": true,
+    "_src": "mt"
+   },
+   "_bucket": "",
+   "seen_times": 0,
+   "seen_first": "",
+   "seen_last": ""
+  }
+ ],
+ "dropped": [
+  {
+   "full_name": "anthropics/skills",
+   "stars": 193487,
+   "reason": "综合 48 分（C 级），名额满了"
+  },
+  {
+   "full_name": "anthropics/skills",
+   "stars": 193487,
+   "reason": "综合 48 分（C 级），名额有限，这一期没进",
+   "score": 48
+  },
+  {
+   "full_name": "ggml-org/llama.cpp",
+   "stars": 134281,
+   "reason": "综合 55 分（B 级），名额满了"
+  },
+  {
+   "full_name": "ggml-org/llama.cpp",
+   "stars": 134281,
+   "reason": "综合 55 分（B 级），名额有限，这一期没进",
+   "score": 55
+  },
+  {
+   "full_name": "nodejs/node",
+   "stars": 123507,
+   "reason": "综合 35 分（C 级），名额满了"
+  },
+  {
+   "full_name": "nodejs/node",
+   "stars": 123507,
+   "reason": "综合 35 分（C 级），名额有限，这一期没进",
+   "score": 35
+  },
+  {
+   "full_name": "addyosmani/agent-skills",
+   "stars": 116362,
+   "reason": "综合 66 分（A 级），名额满了"
+  },
+  {
+   "full_name": "addyosmani/agent-skills",
+   "stars": 116362,
+   "reason": "综合 66 分（A 级），名额有限，这一期没进",
+   "score": 66
+  },
+  {
+   "full_name": "nvm-sh/nvm",
+   "stars": 95930,
+   "reason": "综合 60 分（B 级），名额满了"
+  },
+  {
+   "full_name": "nvm-sh/nvm",
+   "stars": 95930,
+   "reason": "综合 60 分（B 级），名额有限，这一期没进",
+   "score": 60
+  },
+  {
+   "full_name": "zed-industries/zed",
+   "stars": 94795,
+   "reason": "综合 37 分（C 级），名额满了"
+  },
+  {
+   "full_name": "zed-industries/zed",
+   "stars": 94795,
+   "reason": "综合 37 分（C 级），名额有限，这一期没进",
+   "score": 37
+  },
+  {
+   "full_name": "cloudflare/security-audit-skill",
+   "stars": 70808,
+   "reason": "综合 60 分（B 级），名额满了"
+  },
+  {
+   "full_name": "cloudflare/security-audit-skill",
+   "stars": 70808,
+   "reason": "综合 60 分（B 级），名额有限，这一期没进",
+   "score": 60
+  },
+  {
+   "full_name": "Alishahryar1/free-claude-code",
+   "stars": 68894,
+   "reason": "综合 56 分（B 级），名额满了"
+  },
+  {
+   "full_name": "Alishahryar1/free-claude-code",
+   "stars": 68894,
+   "reason": "综合 56 分（B 级），名额有限，这一期没进",
+   "score": 56
+  },
+  {
+   "full_name": "Gathin23/cleanyourtv",
+   "stars": 56801,
+   "reason": "综合 56 分（B 级），名额满了"
+  },
+  {
+   "full_name": "Gathin23/cleanyourtv",
+   "stars": 56801,
+   "reason": "综合 56 分（B 级），名额有限，这一期没进",
+   "score": 56
+  },
+  {
+   "full_name": "vercel-labs/agent-browser",
+   "stars": 50187,
+   "reason": "综合 56 分（B 级），名额满了"
+  },
+  {
+   "full_name": "vercel-labs/agent-browser",
+   "stars": 50187,
+   "reason": "综合 56 分（B 级），名额有限，这一期没进",
+   "score": 56
+  },
+  {
+   "full_name": "QwenLM/qwen-code",
+   "stars": 29578,
+   "reason": "综合 60 分（B 级），名额满了"
+  },
+  {
+   "full_name": "QwenLM/qwen-code",
+   "stars": 29578,
+   "reason": "综合 60 分（B 级），名额有限，这一期没进",
+   "score": 60
+  },
+  {
+   "full_name": "storytold/craft-anything",
+   "stars": 29349,
+   "reason": "综合 64 分（B 级），名额满了"
+  },
+  {
+   "full_name": "storytold/craft-anything",
+   "stars": 29349,
+   "reason": "综合 64 分（B 级），名额有限，这一期没进",
+   "score": 64
+  },
+  {
+   "full_name": "deepseek-ai/DeepInfer",
+   "stars": 25896,
+   "reason": "综合 57 分（B 级），名额满了"
+  },
+  {
+   "full_name": "deepseek-ai/DeepInfer",
+   "stars": 25896,
+   "reason": "综合 57 分（B 级），名额有限，这一期没进",
+   "score": 57
+  },
+  {
+   "full_name": "google/skills",
+   "stars": 24011,
+   "reason": "综合 57 分（B 级），名额满了"
+  },
+  {
+   "full_name": "google/skills",
+   "stars": 24011,
+   "reason": "综合 57 分（B 级），名额有限，这一期没进",
+   "score": 57
+  },
+  {
+   "full_name": "deepseek-ai/dsh-superagent-prototype",
+   "stars": 22669,
+   "reason": "综合 67 分（A 级），名额满了"
+  },
+  {
+   "full_name": "deepseek-ai/dsh-superagent-prototype",
+   "stars": 22669,
+   "reason": "综合 67 分（A 级），名额有限，这一期没进",
+   "score": 67
+  },
+  {
+   "full_name": "vercel-labs/agent-desktop",
+   "stars": 22510,
+   "reason": "综合 56 分（B 级），名额满了"
+  },
+  {
+   "full_name": "vercel-labs/agent-desktop",
+   "stars": 22510,
+   "reason": "综合 56 分（B 级），名额有限，这一期没进",
+   "score": 56
+  },
+  {
+   "full_name": "ccch1mneyyy/dsh-Go",
+   "stars": 20410,
+   "reason": "综合 61 分（B 级），名额满了"
+  },
+  {
+   "full_name": "ccch1mneyyy/dsh-Go",
+   "stars": 20410,
+   "reason": "综合 61 分（B 级），名额有限，这一期没进",
+   "score": 61
+  },
+  {
+   "full_name": "Zagitta/gpu-unlock",
+   "stars": 18857,
+   "reason": "综合 44 分（C 级），名额满了"
+  },
+  {
+   "full_name": "Zagitta/gpu-unlock",
+   "stars": 18857,
+   "reason": "综合 44 分（C 级），名额有限，这一期没进",
+   "score": 44
+  },
+  {
+   "full_name": "google-deepmind/mujoco",
+   "stars": 17722,
+   "reason": "综合 60 分（B 级），名额满了"
+  },
+  {
+   "full_name": "google-deepmind/mujoco",
+   "stars": 17722,
+   "reason": "综合 60 分（B 级），名额有限，这一期没进",
+   "score": 60
+  },
+  {
+   "full_name": "heydamir/unslop",
+   "stars": 14882,
+   "reason": "综合 68 分（A 级），名额满了"
+  },
+  {
+   "full_name": "heydamir/unslop",
+   "stars": 14882,
+   "reason": "综合 68 分（A 级），名额有限，这一期没进",
+   "score": 68
+  },
+  {
+   "full_name": "we-promise/sure",
+   "stars": 13508,
+   "reason": "综合 48 分（C 级），名额满了"
+  },
+  {
+   "full_name": "we-promise/sure",
+   "stars": 13508,
+   "reason": "综合 48 分（C 级），名额有限，这一期没进",
+   "score": 48
+  },
+  {
+   "full_name": "NVIDIA/auto-ontology",
+   "stars": 12116,
+   "reason": "综合 65 分（A 级），名额满了"
+  },
+  {
+   "full_name": "NVIDIA/auto-ontology",
+   "stars": 12116,
+   "reason": "综合 65 分（A 级），名额有限，这一期没进",
+   "score": 65
+  },
+  {
+   "full_name": "openai/codex-security",
+   "stars": 12107,
+   "reason": "综合 64 分（B 级），名额满了"
+  },
+  {
+   "full_name": "openai/codex-security",
+   "stars": 12107,
+   "reason": "综合 64 分（B 级），名额有限，这一期没进",
+   "score": 64
+  },
+  {
+   "full_name": "amosblomqvist/learnharness",
+   "stars": 8889,
+   "reason": "综合 62 分（B 级），名额满了"
+  },
+  {
+   "full_name": "amosblomqvist/learnharness",
+   "stars": 8889,
+   "reason": "综合 62 分（B 级），名额有限，这一期没进",
+   "score": 62
+  },
+  {
+   "full_name": "GoogleChrome/modern-web-guidance-src",
+   "stars": 2282,
+   "reason": "综合 68 分（A 级），名额满了"
+  },
+  {
+   "full_name": "GoogleChrome/modern-web-guidance-src",
+   "stars": 2282,
+   "reason": "综合 68 分（A 级），名额有限，这一期没进",
+   "score": 68
+  },
+  {
+   "full_name": "ashhart/TensorFold",
+   "stars": 1837,
+   "reason": "综合 52 分（B 级），名额满了"
+  },
+  {
+   "full_name": "ashhart/TensorFold",
+   "stars": 1837,
+   "reason": "综合 52 分（B 级），名额有限，这一期没进",
+   "score": 52
+  }
+ ],
+ "scanned": 64,
+ "mode": "FULL",
+ "degraded": false,
+ "focus": null,
+ "focus_tab": null,
+ "pools": {
+  "daily": 64,
+  "focus": 0
+ },
+ "cooldown": {
+  "days": 7,
+  "relaxed": false,
+  "reused": 0
+ }
+}

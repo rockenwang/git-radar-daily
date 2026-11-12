@@ -1,0 +1,887 @@
+{
+ "mode": "FULL",
+ "degraded": false,
+ "focus": null,
+ "scanned": 64,
+ "pools": {
+  "daily": 64,
+  "focus": 0
+ },
+ "daily": {
+  "picks": [
+   {
+    "full_name": "pengchujin/aerial-tv",
+    "owner": "pengchujin",
+    "owner_type": "User",
+    "name": "aerial-tv",
+    "desc": "给国产电视的一块干净桌面：参照 tvOS 设计的开源 Android TV 桌面，没有广告，开机自动接管。A tvOS-style launcher for Xiaomi, TCL and other China-market TVs.",
+    "lang": "Kotlin",
+    "stars": 11402,
+    "forks": 983,
+    "watchers": 18,
+    "open_issues": 372,
+    "license": "MIT",
+    "license_name": "MIT License",
+    "topics": [],
+    "created_at": "2026-10-20T09:13:06Z",
+    "pushed_at": "2026-11-12T02:11:57Z",
+    "updated_at": "2026-11-12T13:03:42Z",
+    "size_kb": 15332,
+    "archived": false,
+    "has_discussions": false,
+    "has_wiki": true,
+    "homepage": "https://aerial.qust.me",
+    "url": "https://github.com/pengchujin/aerial-tv",
+    "default_branch": "main",
+    "gained": 0,
+    "since": "created<30d",
+    "source": "search_new",
+    "score": 100,
+    "grade": "S",
+    "grade_word": "今晚就能动手",
+    "form": "引擎库",
+    "velocity": 495.7391304347826,
+    "_gaps": [
+     [
+      "没有一键部署",
+      "没有一键部署",
+      "补一个 Dockerfile + compose，别人一条命令跑起来"
+     ]
+    ],
+    "gaps_short": [
+     "没有一键部署"
+    ],
+    "risk": "",
+    "suspect": "",
+    "pitch": {
+     "gap_key": "只有代码没有界面",
+     "change": "包一层网页界面，让不会写代码的人点两下就能用",
+     "buyer": "接单的设计师和电商美工",
+     "buyer_tag": "设计",
+     "deliver": "做成带界面的成品，按份卖（发网盘，附中文说明）",
+     "deliver_alt": "接单代跑：客户给需求，你出结果",
+     "hours": 6,
+     "gap_key_word": "缺一键部署"
+    },
+    "plain": "给国产电视的一块干净桌面：参照 tvOS 设计的开源 Android TV 桌面，没有广告，开机自动接管。A tvOS-style launcher for Xiaomi, TCL and other China-market TVs.",
+    "_bucket": "",
+    "seen_times": 0,
+    "seen_first": "",
+    "seen_last": "",
+    "analy": {
+     "zh": "给国产电视的一块干净桌面：参照 tvOS 设计的开源 Android TV 桌面，没有广告，开机自动接管。 适用于小米、TCL 和其他中国市场电视的 tvOS 风格启动器。",
+     "plain": "说白了，这是一堆已经写好的能力，但没有界面，得有人包一层壳才能给普通人用。它干的事是：给国产电视的一块干净桌面：参照 tvOS 设计的开源 Android TV 桌面，没有广告，开机自动接管。 适用于小米、TCL 和其他中国市场电视的 tvOS 风格启动器。",
+     "gap": "包一层网页界面，让不会写代码的人点两下就能用",
+     "buyer": "接单的设计师和电商美工",
+     "_auto": true,
+     "_src": "mt"
+    }
+   },
+   {
+    "full_name": "l0ng-ai/openidea",
+    "owner": "l0ng-ai",
+    "owner_type": "User",
+    "name": "openidea",
+    "desc": "The IDE you know, rebuilt in Rust. IntelliJ IDEA–style keymap, tool windows and search-everywhere in a fast native app: editor, code insight, debugger, Git, terminal, database and HTTP clients for 60+ languages.",
+    "lang": "TypeScript",
+    "stars": 8708,
+    "forks": 780,
+    "watchers": 36,
+    "open_issues": 169,
+    "license": "Apache-2.0",
+    "license_name": "Apache License 2.0",
+    "topics": [
+     "code-editor",
+     "cross-platform",
+     "dap",
+     "database-client",
+     "debugger",
+     "desktop-app",
+     "developer-tools",
+     "git",
+     "http-client",
+     "ide",
+     "intellij",
+     "lsp",
+     "rust",
+     "tauri",
+     "terminal"
+    ],
+    "created_at": "2026-10-21T12:23:14Z",
+    "pushed_at": "2026-11-12T13:12:56Z",
+    "updated_at": "2026-11-12T13:14:38Z",
+    "size_kb": 85341,
+    "archived": false,
+    "has_discussions": true,
+    "has_wiki": false,
+    "homepage": "https://openidea.sh",
+    "url": "https://github.com/l0ng-ai/openidea",
+    "default_branch": "main",
+    "gained": 0,
+    "since": "created<30d",
+    "source": "search_new",
+    "score": 79,
+    "grade": "A",
+    "grade_word": "改一改能卖",
+    "form": "web应用",
+    "velocity": 395.8181818181818,
+    "_gaps": [
+     [
+      "没有中文上手文档",
+      "没有中文上手文档",
+      "把 README 翻成中文，配一张三步跑通图"
+     ],
+     [
+      "没有中文界面",
+      "没有中文界面",
+      "把界面文案和按钮全翻成中文，截一套中文版演示图"
+     ],
+     [
+      "没有一键部署",
+      "没有一键部署",
+      "补一个 Dockerfile + compose，别人一条命令跑起来"
+     ]
+    ],
+    "gaps_short": [
+     "没有中文上手文档",
+     "没有中文界面",
+     "没有一键部署"
+    ],
+    "risk": "",
+    "suspect": "",
+    "pitch": {
+     "gap_key": "没有中文界面",
+     "change": "把界面文案和按钮全翻成中文，再截一套中文版演示图当商品图",
+     "buyer": "想有个自己工具但不会写代码的人",
+     "buyer_tag": "通用",
+     "deliver": "打包部署到客户自己的服务器/域名，收一次部署费",
+     "deliver_alt": "做成在线服务，按月收使用费",
+     "hours": 4,
+     "gap_key_word": "缺中文界面"
+    },
+    "plain": "The IDE you know, rebuilt in Rust. IntelliJ IDEA–style keymap, tool windows and search-everywhere in a fast native app: editor, code insight, debugger, Git, terminal, database and HTTP clients for 60+ languages.",
+    "_bucket": "",
+    "seen_times": 0,
+    "seen_first": "",
+    "seen_last": "",
+    "analy": {
+     "zh": "您熟悉的 IDE，以 Rust 语言重新构建。一款快速的本地应用程序，具备 IntelliJ IDEA 风格的键盘映射、工具窗口和“全局搜索”功能：编辑器、代码提示、调试器、Git、终端、数据库和 HTTP 客户端，支持 60 多种语言。",
+     "plain": "说白了，这是一个打开网页就能用的在线小工具，不用装任何东西。它干的事是：您熟悉的 IDE，以 Rust 语言重新构建。一款快速的本地应用程序，具备 IntelliJ IDEA 风格的键盘映射、工具窗口和“全局搜索”功能：编辑器、代码提示、调试器、Git、终端、数据库和 HTTP 客户端，支持 60 多种语言。",
+     "gap": "把界面文案和按钮全翻成中文，再截一套中文版演示图当商品图",
+     "buyer": "想有个自己工具但不会写代码的人",
+     "_auto": true,
+     "_src": "mt"
+    }
+   },
+   {
+    "full_name": "CopilotKit/OpenBot",
+    "owner": "CopilotKit",
+    "owner_type": "Organization",
+    "name": "OpenBot",
+    "desc": "Open-source AI coworkers that each get a computer of their own: a browser, files and tools, with every action decided before it happens and recorded after. Bring any AG-UI agent.",
+    "lang": "TypeScript",
+    "stars": 11250,
+    "forks": 1394,
+    "watchers": 40,
+    "open_issues": 81,
+    "license": "MIT",
+    "license_name": "MIT License",
+    "topics": [
+     "ag-ui",
+     "agent-governance",
+     "ai-agents",
+     "browser-automation",
+     "copilotkit",
+     "generative-ui",
+     "mcp"
+    ],
+    "created_at": "2026-08-17T00:44:59Z",
+    "pushed_at": "2026-11-12T07:59:52Z",
+    "updated_at": "2026-11-12T13:07:15Z",
+    "size_kb": 45557,
+    "archived": false,
+    "has_discussions": false,
+    "has_wiki": true,
+    "homepage": "open.bot",
+    "url": "https://github.com/CopilotKit/OpenBot",
+    "default_branch": "main",
+    "gained": 291,
+    "since": "daily",
+    "source": "trending",
+    "score": 72,
+    "grade": "A",
+    "grade_word": "改一改能卖",
+    "form": "web应用",
+    "velocity": 291.0,
+    "_gaps": [
+     [
+      "没有中文上手文档",
+      "没有中文上手文档",
+      "把 README 翻成中文，配一张三步跑通图"
+     ]
+    ],
+    "gaps_short": [
+     "没有中文上手文档"
+    ],
+    "risk": "",
+    "suspect": "",
+    "pitch": {
+     "gap_key": "没有在线演示",
+     "change": "部署一个公开 demo，让人先玩再决定买不买",
+     "buyer": "想有个自己工具但不会写代码的人",
+     "buyer_tag": "通用",
+     "deliver": "做成在线服务，按月收使用费",
+     "deliver_alt": "连部署带教一次，做成「一天陪跑」按次收",
+     "hours": 3,
+     "gap_key_word": "缺中文上手文档"
+    },
+    "plain": "Open-source AI coworkers that each get a computer of their own: a browser, files and tools, with every action decided before it happens and recorded after. Bring any AG-UI agent.",
+    "_bucket": "",
+    "seen_times": 0,
+    "seen_first": "",
+    "seen_last": "",
+    "analy": {
+     "zh": "开源人工智能同事每人都有一台自己的计算机：浏览器、文件和工具，每一个动作在发生之前就决定并在发生之后记录。带上任何 AG-UI 代理。",
+     "plain": "说白了，这是一个打开网页就能用的在线小工具，不用装任何东西。它干的事是：开源人工智能同事每人都有一台自己的计算机：浏览器、文件和工具，每一个动作在发生之前就决定并在发生之后记录。带上任何 AG-UI 代理。",
+     "gap": "部署一个公开 demo，让人先玩再决定买不买",
+     "buyer": "想有个自己工具但不会写代码的人",
+     "_auto": true,
+     "_src": "mt"
+    }
+   },
+   {
+    "full_name": "mattpocock/skills",
+    "owner": "mattpocock",
+    "owner_type": "User",
+    "name": "skills",
+    "desc": "Skills for Real Engineers. Straight from my .agents directory.",
+    "lang": "Shell",
+    "stars": 322588,
+    "forks": 27055,
+    "watchers": 1656,
+    "open_issues": 238,
+    "license": "MIT",
+    "license_name": "MIT License",
+    "topics": [],
+    "created_at": "2026-02-03T11:15:53Z",
+    "pushed_at": "2026-11-12T12:11:43Z",
+    "updated_at": "2026-11-12T13:14:43Z",
+    "size_kb": 2322,
+    "archived": false,
+    "has_discussions": true,
+    "has_wiki": false,
+    "homepage": "https://aihero.dev/skills",
+    "url": "https://github.com/mattpocock/skills",
+    "default_branch": "main",
+    "gained": 9575,
+    "since": "weekly",
+    "source": "trending",
+    "score": 70,
+    "grade": "A",
+    "grade_word": "改一改能卖",
+    "form": "Agent技能",
+    "velocity": 1367.857142857143,
+    "_gaps": [
+     [
+      "没有中文上手文档",
+      "没有中文上手文档",
+      "把 README 翻成中文，配一张三步跑通图"
+     ],
+     [
+      "没有一键部署",
+      "没有一键部署",
+      "补一个 Dockerfile + compose，别人一条命令跑起来"
+     ]
+    ],
+    "gaps_short": [
+     "没有中文上手文档",
+     "没有一键部署"
+    ],
+    "risk": "体量太大，改源码成本高，建议只做外围服务",
+    "suspect": "",
+    "pitch": {
+     "gap_key": "只有英文指令",
+     "change": "改写成中文指令版，加 3 个真实场景的开场白",
+     "buyer": "天天用 AI 干活、但不知道装什么的人",
+     "buyer_tag": "通用",
+     "deliver": "打包成技能文件，配使用教程一起卖",
+     "deliver_alt": "做成付费专栏的一章，当引流钩子",
+     "hours": 1,
+     "gap_key_word": "缺中文上手文档"
+    },
+    "plain": "Skills for Real Engineers. Straight from my .agents directory.",
+    "_bucket": "",
+    "seen_times": 0,
+    "seen_first": "",
+    "seen_last": "",
+    "analy": {
+     "zh": "真正工程师的技能。直接来自我的 .agents 目录。",
+     "plain": "说白了，这是一份写给 AI 的操作手册，装进 AI 工具后它就知道按你的规矩干活。它干的事是：真正工程师的技能。直接来自我的 .agents 目录。",
+     "gap": "改写成中文指令版，加 3 个真实场景的开场白",
+     "buyer": "天天用 AI 干活、但不知道装什么的人",
+     "_auto": true,
+     "_src": "mt"
+    }
+   },
+   {
+    "full_name": "milind-soni/OpenMausBot",
+    "owner": "milind-soni",
+    "owner_type": "User",
+    "name": "OpenMausBot",
+    "desc": "Open-source Grok Bot alternative with a virtual machine that bots can use",
+    "lang": "TypeScript",
+    "stars": 21550,
+    "forks": 3000,
+    "watchers": 49,
+    "open_issues": 1101,
+    "license": "Apache-2.0",
+    "license_name": "Apache License 2.0",
+    "topics": [
+     "ai-agents",
+     "claude-code",
+     "codex",
+     "computer-use",
+     "docker",
+     "electron",
+     "grok",
+     "grok-bot",
+     "grok-bot-alternative",
+     "self-hosted",
+     "typescript"
+    ],
+    "created_at": "2026-08-11T18:58:55Z",
+    "pushed_at": "2026-11-12T07:08:53Z",
+    "updated_at": "2026-11-12T13:04:54Z",
+    "size_kb": 522861,
+    "archived": false,
+    "has_discussions": false,
+    "has_wiki": true,
+    "homepage": "https://www.mausbot.com/",
+    "url": "https://github.com/milind-soni/OpenMausBot",
+    "default_branch": "main",
+    "gained": 9257,
+    "since": "weekly",
+    "source": "trending",
+    "score": 70,
+    "grade": "A",
+    "grade_word": "改一改能卖",
+    "form": "web应用",
+    "velocity": 1322.4285714285713,
+    "_gaps": [
+     [
+      "没有中文上手文档",
+      "没有中文上手文档",
+      "把 README 翻成中文，配一张三步跑通图"
+     ],
+     [
+      "没有一键部署",
+      "没有一键部署",
+      "补一个 Dockerfile + compose，别人一条命令跑起来"
+     ]
+    ],
+    "gaps_short": [
+     "没有中文上手文档",
+     "没有一键部署"
+    ],
+    "risk": "",
+    "suspect": "",
+    "pitch": {
+     "gap_key": "没有行业预设",
+     "change": "做 10 个行业预设（餐饮/教培/门店），一键套用",
+     "buyer": "要上线个小站但没预算请开发的人",
+     "buyer_tag": "通用",
+     "deliver": "连部署带教一次，做成「一天陪跑」按次收",
+     "deliver_alt": "换成客户自己的数据跑一遍，按场景收定制费",
+     "hours": 7,
+     "gap_key_word": "缺中文上手文档"
+    },
+    "plain": "Open-source Grok Bot alternative with a virtual machine that bots can use",
+    "_bucket": "",
+    "seen_times": 0,
+    "seen_first": "",
+    "seen_last": "",
+    "analy": {
+     "zh": "开源 Grok Bot 替代品，带有机器人可以使用的虚拟机",
+     "plain": "说白了，这是一个打开网页就能用的在线小工具，不用装任何东西。它干的事是：开源 Grok Bot 替代品，带有机器人可以使用的虚拟机",
+     "gap": "做 10 个行业预设（餐饮/教培/门店），一键套用",
+     "buyer": "要上线个小站但没预算请开发的人",
+     "_auto": true,
+     "_src": "mt"
+    }
+   },
+   {
+    "full_name": "pookjw/HermesEnabler",
+    "owner": "pookjw",
+    "owner_type": "User",
+    "name": "HermesEnabler",
+    "desc": "Enable Hermès Watch Faces on any Apple Watch devices",
+    "lang": "Objective-C",
+    "stars": 1361,
+    "forks": 127,
+    "watchers": 4,
+    "open_issues": 51,
+    "license": "MIT",
+    "license_name": "MIT License",
+    "topics": [],
+    "created_at": "2024-12-14T11:32:03Z",
+    "pushed_at": "2026-11-12T04:11:27Z",
+    "updated_at": "2026-11-12T13:09:35Z",
+    "size_kb": 4379,
+    "archived": false,
+    "has_discussions": false,
+    "has_wiki": true,
+    "homepage": "",
+    "url": "https://github.com/pookjw/HermesEnabler",
+    "default_branch": "main",
+    "gained": 390,
+    "since": "daily",
+    "source": "trending",
+    "score": 70,
+    "grade": "A",
+    "grade_word": "改一改能卖",
+    "form": "引擎库",
+    "velocity": 390.0,
+    "_gaps": [
+     [
+      "没有中文上手文档",
+      "没有中文上手文档",
+      "把 README 翻成中文，配一张三步跑通图"
+     ],
+     [
+      "没有一键部署",
+      "没有一键部署",
+      "补一个 Dockerfile + compose，别人一条命令跑起来"
+     ],
+     [
+      "没有在线演示",
+      "没有在线演示",
+      "部署一个公开 demo 站，让人先玩再买单"
+     ]
+    ],
+    "gaps_short": [
+     "没有中文上手文档",
+     "没有一键部署",
+     "没有在线演示"
+    ],
+    "risk": "",
+    "suspect": "",
+    "pitch": {
+     "gap_key": "没有中文上手文档",
+     "change": "把 README 翻成中文，配一张「三步跑通」流程图",
+     "buyer": "要用这套能力但搞不定环境的人",
+     "buyer_tag": "通用",
+     "deliver": "接单代跑：客户给需求，你出结果",
+     "deliver_alt": "做成中文教程 + 成品包，走知识付费",
+     "hours": 4,
+     "gap_key_word": "缺中文上手文档"
+    },
+    "plain": "Enable Hermès Watch Faces on any Apple Watch devices",
+    "_bucket": "",
+    "seen_times": 0,
+    "seen_first": "",
+    "seen_last": "",
+    "analy": {
+     "zh": "在任何 Apple Watch 设备上启用爱马仕表盘",
+     "plain": "说白了，这是一堆已经写好的能力，但没有界面，得有人包一层壳才能给普通人用。它干的事是：在任何 Apple Watch 设备上启用爱马仕表盘",
+     "gap": "把 README 翻成中文，配一张「三步跑通」流程图",
+     "buyer": "要用这套能力但搞不定环境的人",
+     "_auto": true,
+     "_src": "mt"
+    }
+   },
+   {
+    "full_name": "D4Vinci/Scrapling",
+    "owner": "D4Vinci",
+    "owner_type": "User",
+    "name": "Scrapling",
+    "desc": "🕷️ The BEST Web Scraping framework that handles everything from a single request to a full-scale crawl! Don't be shy, join here: https://discord.gg/EMgGbDceNQ and follow here for daily tips and tricks: https://x.com/Scrapling_dev",
+    "lang": "Python",
+    "stars": 101954,
+    "forks": 10611,
+    "watchers": 354,
+    "open_issues": 25,
+    "license": "BSD-3-Clause",
+    "license_name": "BSD 3-Clause \"New\" or \"Revised\" License",
+    "topics": [
+     "ai",
+     "ai-scraping",
+     "automation",
+     "crawler",
+     "crawling",
+     "crawling-python",
+     "data",
+     "data-extraction",
+     "mcp",
+     "mcp-server",
+     "playwright",
+     "python",
+     "scraping",
+     "selectors",
+     "stealth",
+     "web-scraper",
+     "web-scraping",
+     "web-scraping-python",
+     "webscraping",
+     "xpath"
+    ],
+    "created_at": "2024-10-13T20:29:53Z",
+    "pushed_at": "2026-11-11T19:16:10Z",
+    "updated_at": "2026-11-12T13:13:26Z",
+    "size_kb": 16302,
+    "archived": false,
+    "has_discussions": true,
+    "has_wiki": true,
+    "homepage": "https://scrapling.readthedocs.io/en/latest/",
+    "url": "https://github.com/D4Vinci/Scrapling",
+    "default_branch": "main",
+    "gained": 5814,
+    "since": "weekly",
+    "source": "trending",
+    "score": 69,
+    "grade": "A",
+    "grade_word": "改一改能卖",
+    "form": "引擎库",
+    "velocity": 830.5714285714286,
+    "_gaps": [
+     [
+      "没有中文上手文档",
+      "没有中文上手文档",
+      "把 README 翻成中文，配一张三步跑通图"
+     ],
+     [
+      "没有中文界面",
+      "没有中文界面",
+      "把界面文案和按钮全翻成中文，截一套中文版演示图"
+     ]
+    ],
+    "gaps_short": [
+     "没有中文上手文档",
+     "没有中文界面"
+    ],
+    "risk": "体量太大，改源码成本高，建议只做外围服务",
+    "suspect": "",
+    "pitch": {
+     "gap_key": "没有现成案例",
+     "change": "补 3 个真实场景示例，每个都能直接跑出结果",
+     "buyer": "要做数据但不会写代码的人",
+     "buyer_tag": "数据",
+     "deliver": "做成中文教程 + 成品包，走知识付费",
+     "deliver_alt": "封装成 API 出租，按调用量收费",
+     "hours": 1,
+     "gap_key_word": "缺中文上手文档"
+    },
+    "plain": "The BEST Web Scraping framework that handles everything from a single request to a full-scale crawl! Don't be shy, join here: https://discord.gg/EMgGbDceNQ and follow here for daily tips and tricks: https://x.com/Scrapling_dev",
+    "_bucket": "",
+    "seen_times": 0,
+    "seen_first": "",
+    "seen_last": "",
+    "analy": {
+     "zh": "最好的网络抓取框架，可以处理从单个请求到全面抓取的所有内容！不要害羞，加入这里：https://discord.gg/EMgGbDceNQ 并按照此处获取日常提示和技巧：https://x.com/Scrapling_dev",
+     "plain": "说白了，这是一堆已经写好的能力，但没有界面，得有人包一层壳才能给普通人用。它干的事是：最好的网络抓取框架，可以处理从单个请求到全面抓取的所有内容！不要害羞，加入这里：https://discord.gg/EMgGbDceNQ 并按照此处获取日常提示和技巧：https://x.com/Scrapling_dev",
+     "gap": "补 3 个真实场景示例，每个都能直接跑出结果",
+     "buyer": "要做数据但不会写代码的人",
+     "_auto": true,
+     "_src": "mt"
+    }
+   },
+   {
+    "full_name": "meta/astryx",
+    "owner": "meta",
+    "owner_type": "Organization",
+    "name": "astryx",
+    "desc": "An open source design system that's fully customizable and agent ready",
+    "lang": "TypeScript",
+    "stars": 25977,
+    "forks": 2018,
+    "watchers": 98,
+    "open_issues": 632,
+    "license": "MIT",
+    "license_name": "MIT License",
+    "topics": [],
+    "created_at": "2026-01-09T16:20:32Z",
+    "pushed_at": "2026-11-12T13:10:51Z",
+    "updated_at": "2026-11-12T13:13:31Z",
+    "size_kb": 1342568,
+    "archived": false,
+    "has_discussions": true,
+    "has_wiki": true,
+    "homepage": "http://astryx.atmeta.com",
+    "url": "https://github.com/meta/astryx",
+    "default_branch": "main",
+    "gained": 1789,
+    "since": "daily",
+    "source": "trending",
+    "score": 68,
+    "grade": "A",
+    "grade_word": "改一改能卖",
+    "form": "web应用",
+    "velocity": 1789.0,
+    "_gaps": [
+     [
+      "没有中文上手文档",
+      "没有中文上手文档",
+      "把 README 翻成中文，配一张三步跑通图"
+     ]
+    ],
+    "gaps_short": [
+     "没有中文上手文档"
+    ],
+    "risk": "大厂项目，路线不由你定，只能做外围（部署/中文化/模板）",
+    "suspect": "",
+    "pitch": {
+     "gap_key": "出东西了带不走",
+     "change": "加一个一键导出（图/PDF/Excel），让人能直接拿去用",
+     "buyer": "接单的设计师和电商美工",
+     "buyer_tag": "设计",
+     "deliver": "换成客户自己的数据跑一遍，按场景收定制费",
+     "deliver_alt": "换成客户自己的数据跑一遍，按场景收定制费",
+     "hours": 6,
+     "gap_key_word": "缺中文上手文档"
+    },
+    "plain": "An open source design system that's fully customizable and agent ready",
+    "_bucket": "",
+    "seen_times": 0,
+    "seen_first": "",
+    "seen_last": "",
+    "analy": {
+     "zh": "完全可定制且可供代理使用的开源设计系统",
+     "plain": "说白了，这是一个打开网页就能用的在线小工具，不用装任何东西。它干的事是：完全可定制且可供代理使用的开源设计系统",
+     "gap": "加一个一键导出（图/PDF/Excel），让人能直接拿去用",
+     "buyer": "接单的设计师和电商美工",
+     "_auto": true,
+     "_src": "mt"
+    }
+   }
+  ],
+  "dropped": [
+   {
+    "full_name": "anthropics/skills",
+    "stars": 193487,
+    "reason": "综合 48 分（C 级），名额满了"
+   },
+   {
+    "full_name": "anthropics/skills",
+    "stars": 193487,
+    "reason": "综合 48 分（C 级），名额有限，这一期没进",
+    "score": 48
+   },
+   {
+    "full_name": "ggml-org/llama.cpp",
+    "stars": 134281,
+    "reason": "综合 55 分（B 级），名额满了"
+   },
+   {
+    "full_name": "ggml-org/llama.cpp",
+    "stars": 134281,
+    "reason": "综合 55 分（B 级），名额有限，这一期没进",
+    "score": 55
+   },
+   {
+    "full_name": "nodejs/node",
+    "stars": 123507,
+    "reason": "综合 35 分（C 级），名额满了"
+   },
+   {
+    "full_name": "nodejs/node",
+    "stars": 123507,
+    "reason": "综合 35 分（C 级），名额有限，这一期没进",
+    "score": 35
+   },
+   {
+    "full_name": "addyosmani/agent-skills",
+    "stars": 116362,
+    "reason": "综合 66 分（A 级），名额满了"
+   },
+   {
+    "full_name": "addyosmani/agent-skills",
+    "stars": 116362,
+    "reason": "综合 66 分（A 级），名额有限，这一期没进",
+    "score": 66
+   },
+   {
+    "full_name": "nvm-sh/nvm",
+    "stars": 95930,
+    "reason": "综合 60 分（B 级），名额满了"
+   },
+   {
+    "full_name": "nvm-sh/nvm",
+    "stars": 95930,
+    "reason": "综合 60 分（B 级），名额有限，这一期没进",
+    "score": 60
+   },
+   {
+    "full_name": "zed-industries/zed",
+    "stars": 94795,
+    "reason": "综合 37 分（C 级），名额满了"
+   },
+   {
+    "full_name": "zed-industries/zed",
+    "stars": 94795,
+    "reason": "综合 37 分（C 级），名额有限，这一期没进",
+    "score": 37
+   },
+   {
+    "full_name": "cloudflare/security-audit-skill",
+    "stars": 70808,
+    "reason": "综合 60 分（B 级），名额满了"
+   },
+   {
+    "full_name": "cloudflare/security-audit-skill",
+    "stars": 70808,
+    "reason": "综合 60 分（B 级），名额有限，这一期没进",
+    "score": 60
+   },
+   {
+    "full_name": "Alishahryar1/free-claude-code",
+    "stars": 68894,
+    "reason": "综合 56 分（B 级），名额满了"
+   },
+   {
+    "full_name": "Alishahryar1/free-claude-code",
+    "stars": 68894,
+    "reason": "综合 56 分（B 级），名额有限，这一期没进",
+    "score": 56
+   },
+   {
+    "full_name": "Gathin23/cleanyourtv",
+    "stars": 56801,
+    "reason": "综合 56 分（B 级），名额满了"
+   },
+   {
+    "full_name": "Gathin23/cleanyourtv",
+    "stars": 56801,
+    "reason": "综合 56 分（B 级），名额有限，这一期没进",
+    "score": 56
+   },
+   {
+    "full_name": "vercel-labs/agent-browser",
+    "stars": 50187,
+    "reason": "综合 56 分（B 级），名额满了"
+   },
+   {
+    "full_name": "vercel-labs/agent-browser",
+    "stars": 50187,
+    "reason": "综合 56 分（B 级），名额有限，这一期没进",
+    "score": 56
+   },
+   {
+    "full_name": "QwenLM/qwen-code",
+    "stars": 29578,
+    "reason": "综合 60 分（B 级），名额满了"
+   },
+   {
+    "full_name": "QwenLM/qwen-code",
+    "stars": 29578,
+    "reason": "综合 60 分（B 级），名额有限，这一期没进",
+    "score": 60
+   },
+   {
+    "full_name": "storytold/craft-anything",
+    "stars": 29349,
+    "reason": "综合 64 分（B 级），名额满了"
+   },
+   {
+    "full_name": "storytold/craft-anything",
+    "stars": 29349,
+    "reason": "综合 64 分（B 级），名额有限，这一期没进",
+    "score": 64
+   },
+   {
+    "full_name": "deepseek-ai/DeepInfer",
+    "stars": 25896,
+    "reason": "综合 57 分（B 级），名额满了"
+   },
+   {
+    "full_name": "deepseek-ai/DeepInfer",
+    "stars": 25896,
+    "reason": "综合 57 分（B 级），名额有限，这一期没进",
+    "score": 57
+   },
+   {
+    "full_name": "google/skills",
+    "stars": 24011,
+    "reason": "综合 57 分（B 级），名额满了"
+   },
+   {
+    "full_name": "google/skills",
+    "stars": 24011,
+    "reason": "综合 57 分（B 级），名额有限，这一期没进",
+    "score": 57
+   },
+   {
+    "full_name": "deepseek-ai/dsh-superagent-prototype",
+    "stars": 22669,
+    "reason": "综合 67 分（A 级），名额满了"
+   },
+   {
+    "full_name": "deepseek-ai/dsh-superagent-prototype",
+    "stars": 22669,
+    "reason": "综合 67 分（A 级），名额有限，这一期没进",
+    "score": 67
+   },
+   {
+    "full_name": "vercel-labs/agent-desktop",
+    "stars": 22510,
+    "reason": "综合 56 分（B 级），名额满了"
+   },
+   {
+    "full_name": "vercel-labs/agent-desktop",
+    "stars": 22510,
+    "reason": "综合 56 分（B 级），名额有限，这一期没进",
+    "score": 56
+   },
+   {
+    "full_name": "ccch1mneyyy/dsh-Go",
+    "stars": 20410,
+    "reason": "综合 61 分（B 级），名额满了"
+   },
+   {
+    "full_name": "ccch1mneyyy/dsh-Go",
+    "stars": 20410,
+    "reason": "综合 61 分（B 级），名额有限，这一期没进",
+    "score": 61
+   },
+   {
+    "full_name": "Zagitta/gpu-unlock",
+    "stars": 18857,
+    "reason": "综合 44 分（C 级），名额满了"
+   },
+   {
+    "full_name": "Zagitta/gpu-unlock",
+    "stars": 18857,
+    "reason": "综合 44 分（C 级），名额有限，这一期没进",
+    "score": 44
+   },
+   {
+    "full_name": "google-deepmind/mujoco",
+    "stars": 17722,
+    "reason": "综合 60 分（B 级），名额满了"
+   },
+   {
+    "full_name": "google-deepmind/mujoco",
+    "stars": 17722,
+    "reason": "综合 60 分（B 级），名额有限，这一期没进",
+    "score": 60
+   },
+   {
+    "full_name": "heydamir/unslop",
+    "stars": 14882,
+    "reason": "综合 68 分（A 级），名额满了"
+   },
+   {
+    "full_name": "heydamir/unslop",
+    "stars": 14882,
+    "reason": "综合 68 分（A 级），名额有限，这一期没进",
+    "score": 68
+   }
+  ]
+ },
+ "focus_tab": {
+  "key": null,
+  "pool": 0,
+  "buckets": {}
+ },
+ "deep": [],
+ "date": "2026-11-12",
+ "archived_at": "2026-11-12T13:15:53"
+}
