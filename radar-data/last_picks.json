@@ -8,16 +8,16 @@
    "name": "aerial-tv",
    "desc": "给国产电视的一块干净桌面：参照 tvOS 设计的开源 Android TV 桌面，没有广告，开机自动接管。A tvOS-style launcher for Xiaomi, TCL and other China-market TVs.",
    "lang": "Kotlin",
-   "stars": 11402,
+   "stars": 11405,
    "forks": 983,
    "watchers": 18,
-   "open_issues": 372,
+   "open_issues": 374,
    "license": "MIT",
    "license_name": "MIT License",
    "topics": [],
    "created_at": "2026-10-20T09:13:06Z",
    "pushed_at": "2026-11-12T02:11:57Z",
-   "updated_at": "2026-11-12T13:03:42Z",
+   "updated_at": "2026-11-12T13:24:25Z",
    "size_kb": 15332,
    "archived": false,
    "has_discussions": false,
@@ -42,7 +42,7 @@
    "grade": "S",
    "grade_word": "今晚就能动手",
    "form": "引擎库",
-   "velocity": 495.7391304347826,
+   "velocity": 495.8695652173913,
    "_gaps": [
     [
      "没有一键部署",
@@ -89,9 +89,9 @@
     "_src": "mt"
    },
    "_bucket": "",
-   "seen_times": 0,
-   "seen_first": "",
-   "seen_last": ""
+   "seen_times": 1,
+   "seen_first": "2026-11-12",
+   "seen_last": "2026-11-12"
   },
   {
    "full_name": "l0ng-ai/openidea",
@@ -100,10 +100,10 @@
    "name": "openidea",
    "desc": "The IDE you know, rebuilt in Rust. IntelliJ IDEA–style keymap, tool windows and search-everywhere in a fast native app: editor, code insight, debugger, Git, terminal, database and HTTP clients for 60+ languages.",
    "lang": "TypeScript",
-   "stars": 8708,
+   "stars": 8711,
    "forks": 780,
    "watchers": 36,
-   "open_issues": 169,
+   "open_issues": 170,
    "license": "Apache-2.0",
    "license_name": "Apache License 2.0",
    "topics": [
@@ -124,8 +124,8 @@
     "terminal"
    ],
    "created_at": "2026-10-21T12:23:14Z",
-   "pushed_at": "2026-11-12T13:12:56Z",
-   "updated_at": "2026-11-12T13:14:38Z",
+   "pushed_at": "2026-11-12T13:29:26Z",
+   "updated_at": "2026-11-12T13:36:38Z",
    "size_kb": 85341,
    "archived": false,
    "has_discussions": true,
@@ -150,7 +150,7 @@
    "grade": "A",
    "grade_word": "改一改能卖",
    "form": "web应用",
-   "velocity": 395.8181818181818,
+   "velocity": 395.95454545454544,
    "_gaps": [
     [
      "没有中文上手文档",
@@ -209,9 +209,9 @@
     "_src": "mt"
    },
    "_bucket": "",
-   "seen_times": 0,
-   "seen_first": "",
-   "seen_last": ""
+   "seen_times": 1,
+   "seen_first": "2026-11-12",
+   "seen_last": "2026-11-12"
   },
   {
    "full_name": "CopilotKit/OpenBot",
@@ -220,8 +220,8 @@
    "name": "OpenBot",
    "desc": "Open-source AI coworkers that each get a computer of their own: a browser, files and tools, with every action decided before it happens and recorded after. Bring any AG-UI agent.",
    "lang": "TypeScript",
-   "stars": 11250,
-   "forks": 1394,
+   "stars": 11266,
+   "forks": 1397,
    "watchers": 40,
    "open_issues": 81,
    "license": "MIT",
@@ -237,7 +237,7 @@
    ],
    "created_at": "2026-08-17T00:44:59Z",
    "pushed_at": "2026-11-12T07:59:52Z",
-   "updated_at": "2026-11-12T13:07:15Z",
+   "updated_at": "2026-11-12T13:37:46Z",
    "size_kb": 45557,
    "archived": false,
    "has_discussions": false,
@@ -309,9 +309,9 @@
     "_src": "mt"
    },
    "_bucket": "",
-   "seen_times": 0,
-   "seen_first": "",
-   "seen_last": ""
+   "seen_times": 1,
+   "seen_first": "2026-11-12",
+   "seen_last": "2026-11-12"
   },
   {
    "full_name": "mattpocock/skills",
@@ -320,8 +320,8 @@
    "name": "skills",
    "desc": "Skills for Real Engineers. Straight from my .agents directory.",
    "lang": "Shell",
-   "stars": 322588,
-   "forks": 27055,
+   "stars": 322607,
+   "forks": 27056,
    "watchers": 1656,
    "open_issues": 238,
    "license": "MIT",
@@ -329,7 +329,7 @@
    "topics": [],
    "created_at": "2026-02-03T11:15:53Z",
    "pushed_at": "2026-11-12T12:11:43Z",
-   "updated_at": "2026-11-12T13:14:43Z",
+   "updated_at": "2026-11-12T13:38:00Z",
    "size_kb": 2322,
    "archived": false,
    "has_discussions": true,
@@ -407,9 +407,9 @@
     "_src": "mt"
    },
    "_bucket": "",
-   "seen_times": 0,
-   "seen_first": "",
-   "seen_last": ""
+   "seen_times": 1,
+   "seen_first": "2026-11-12",
+   "seen_last": "2026-11-12"
   },
   {
    "full_name": "milind-soni/OpenMausBot",
@@ -418,10 +418,10 @@
    "name": "OpenMausBot",
    "desc": "Open-source Grok Bot alternative with a virtual machine that bots can use",
    "lang": "TypeScript",
-   "stars": 21550,
+   "stars": 21558,
    "forks": 3000,
    "watchers": 49,
-   "open_issues": 1101,
+   "open_issues": 1104,
    "license": "Apache-2.0",
    "license_name": "Apache License 2.0",
    "topics": [
@@ -439,7 +439,7 @@
    ],
    "created_at": "2026-08-11T18:58:55Z",
    "pushed_at": "2026-11-12T07:08:53Z",
-   "updated_at": "2026-11-12T13:04:54Z",
+   "updated_at": "2026-11-12T13:38:43Z",
    "size_kb": 522861,
    "archived": false,
    "has_discussions": false,
@@ -517,9 +517,9 @@
     "_src": "mt"
    },
    "_bucket": "",
-   "seen_times": 0,
-   "seen_first": "",
-   "seen_last": ""
+   "seen_times": 1,
+   "seen_first": "2026-11-12",
+   "seen_last": "2026-11-12"
   },
   {
    "full_name": "pookjw/HermesEnabler",
@@ -528,8 +528,8 @@
    "name": "HermesEnabler",
    "desc": "Enable Hermès Watch Faces on any Apple Watch devices",
    "lang": "Objective-C",
-   "stars": 1361,
-   "forks": 127,
+   "stars": 1375,
+   "forks": 128,
    "watchers": 4,
    "open_issues": 51,
    "license": "MIT",
@@ -537,7 +537,7 @@
    "topics": [],
    "created_at": "2024-12-14T11:32:03Z",
    "pushed_at": "2026-11-12T04:11:27Z",
-   "updated_at": "2026-11-12T13:09:35Z",
+   "updated_at": "2026-11-12T13:39:16Z",
    "size_kb": 4379,
    "archived": false,
    "has_discussions": false,
@@ -621,9 +621,9 @@
     "_src": "mt"
    },
    "_bucket": "",
-   "seen_times": 0,
-   "seen_first": "",
-   "seen_last": ""
+   "seen_times": 1,
+   "seen_first": "2026-11-12",
+   "seen_last": "2026-11-12"
   },
   {
    "full_name": "D4Vinci/Scrapling",
@@ -632,8 +632,8 @@
    "name": "Scrapling",
    "desc": "🕷️ The BEST Web Scraping framework that handles everything from a single request to a full-scale crawl! Don't be shy, join here: https://discord.gg/EMgGbDceNQ and follow here for daily tips and tricks: https://x.com/Scrapling_dev",
    "lang": "Python",
-   "stars": 101954,
-   "forks": 10611,
+   "stars": 101959,
+   "forks": 10612,
    "watchers": 354,
    "open_issues": 25,
    "license": "BSD-3-Clause",
@@ -662,7 +662,7 @@
    ],
    "created_at": "2024-10-13T20:29:53Z",
    "pushed_at": "2026-11-11T19:16:10Z",
-   "updated_at": "2026-11-12T13:13:26Z",
+   "updated_at": "2026-11-12T13:35:04Z",
    "size_kb": 16302,
    "archived": false,
    "has_discussions": true,
@@ -740,9 +740,9 @@
     "_src": "mt"
    },
    "_bucket": "",
-   "seen_times": 0,
-   "seen_first": "",
-   "seen_last": ""
+   "seen_times": 1,
+   "seen_first": "2026-11-12",
+   "seen_last": "2026-11-12"
   },
   {
    "full_name": "meta/astryx",
@@ -751,16 +751,16 @@
    "name": "astryx",
    "desc": "An open source design system that's fully customizable and agent ready",
    "lang": "TypeScript",
-   "stars": 25977,
-   "forks": 2018,
+   "stars": 26010,
+   "forks": 2021,
    "watchers": 98,
-   "open_issues": 632,
+   "open_issues": 629,
    "license": "MIT",
    "license_name": "MIT License",
    "topics": [],
    "created_at": "2026-01-09T16:20:32Z",
-   "pushed_at": "2026-11-12T13:10:51Z",
-   "updated_at": "2026-11-12T13:13:31Z",
+   "pushed_at": "2026-11-12T13:39:26Z",
+   "updated_at": "2026-11-12T13:39:27Z",
    "size_kb": 1342568,
    "archived": false,
    "has_discussions": true,
@@ -832,64 +832,64 @@
     "_src": "mt"
    },
    "_bucket": "",
-   "seen_times": 0,
-   "seen_first": "",
-   "seen_last": ""
+   "seen_times": 1,
+   "seen_first": "2026-11-12",
+   "seen_last": "2026-11-12"
   }
  ],
  "dropped": [
   {
    "full_name": "anthropics/skills",
-   "stars": 193487,
+   "stars": 193495,
    "reason": "综合 48 分（C 级），名额满了"
   },
   {
    "full_name": "anthropics/skills",
-   "stars": 193487,
+   "stars": 193495,
    "reason": "综合 48 分（C 级），名额有限，这一期没进",
    "score": 48
   },
   {
    "full_name": "ggml-org/llama.cpp",
-   "stars": 134281,
+   "stars": 134291,
    "reason": "综合 55 分（B 级），名额满了"
   },
   {
    "full_name": "ggml-org/llama.cpp",
-   "stars": 134281,
+   "stars": 134291,
    "reason": "综合 55 分（B 级），名额有限，这一期没进",
    "score": 55
   },
   {
    "full_name": "nodejs/node",
-   "stars": 123507,
+   "stars": 123515,
    "reason": "综合 35 分（C 级），名额满了"
   },
   {
    "full_name": "nodejs/node",
-   "stars": 123507,
+   "stars": 123515,
    "reason": "综合 35 分（C 级），名额有限，这一期没进",
    "score": 35
   },
   {
    "full_name": "addyosmani/agent-skills",
-   "stars": 116362,
+   "stars": 116378,
    "reason": "综合 66 分（A 级），名额满了"
   },
   {
    "full_name": "addyosmani/agent-skills",
-   "stars": 116362,
+   "stars": 116378,
    "reason": "综合 66 分（A 级），名额有限，这一期没进",
    "score": 66
   },
   {
    "full_name": "nvm-sh/nvm",
-   "stars": 95930,
+   "stars": 95936,
    "reason": "综合 60 分（B 级），名额满了"
   },
   {
    "full_name": "nvm-sh/nvm",
-   "stars": 95930,
+   "stars": 95936,
    "reason": "综合 60 分（B 级），名额有限，这一期没进",
    "score": 60
   },
@@ -906,34 +906,34 @@
   },
   {
    "full_name": "cloudflare/security-audit-skill",
-   "stars": 70808,
+   "stars": 70818,
    "reason": "综合 60 分（B 级），名额满了"
   },
   {
    "full_name": "cloudflare/security-audit-skill",
-   "stars": 70808,
+   "stars": 70818,
    "reason": "综合 60 分（B 级），名额有限，这一期没进",
    "score": 60
   },
   {
    "full_name": "Alishahryar1/free-claude-code",
-   "stars": 68894,
+   "stars": 68918,
    "reason": "综合 56 分（B 级），名额满了"
   },
   {
    "full_name": "Alishahryar1/free-claude-code",
-   "stars": 68894,
+   "stars": 68918,
    "reason": "综合 56 分（B 级），名额有限，这一期没进",
    "score": 56
   },
   {
    "full_name": "Gathin23/cleanyourtv",
-   "stars": 56801,
+   "stars": 56812,
    "reason": "综合 56 分（B 级），名额满了"
   },
   {
    "full_name": "Gathin23/cleanyourtv",
-   "stars": 56801,
+   "stars": 56812,
    "reason": "综合 56 分（B 级），名额有限，这一期没进",
    "score": 56
   },
@@ -950,23 +950,23 @@
   },
   {
    "full_name": "QwenLM/qwen-code",
-   "stars": 29578,
+   "stars": 29586,
    "reason": "综合 60 分（B 级），名额满了"
   },
   {
    "full_name": "QwenLM/qwen-code",
-   "stars": 29578,
+   "stars": 29586,
    "reason": "综合 60 分（B 级），名额有限，这一期没进",
    "score": 60
   },
   {
    "full_name": "storytold/craft-anything",
-   "stars": 29349,
+   "stars": 29374,
    "reason": "综合 64 分（B 级），名额满了"
   },
   {
    "full_name": "storytold/craft-anything",
-   "stars": 29349,
+   "stars": 29374,
    "reason": "综合 64 分（B 级），名额有限，这一期没进",
    "score": 64
   },
@@ -983,144 +983,144 @@
   },
   {
    "full_name": "google/skills",
-   "stars": 24011,
+   "stars": 24012,
    "reason": "综合 57 分（B 级），名额满了"
   },
   {
    "full_name": "google/skills",
-   "stars": 24011,
+   "stars": 24012,
    "reason": "综合 57 分（B 级），名额有限，这一期没进",
    "score": 57
   },
   {
    "full_name": "deepseek-ai/dsh-superagent-prototype",
-   "stars": 22669,
+   "stars": 22671,
    "reason": "综合 67 分（A 级），名额满了"
   },
   {
    "full_name": "deepseek-ai/dsh-superagent-prototype",
-   "stars": 22669,
+   "stars": 22671,
    "reason": "综合 67 分（A 级），名额有限，这一期没进",
    "score": 67
   },
   {
    "full_name": "vercel-labs/agent-desktop",
-   "stars": 22510,
+   "stars": 22518,
    "reason": "综合 56 分（B 级），名额满了"
   },
   {
    "full_name": "vercel-labs/agent-desktop",
-   "stars": 22510,
+   "stars": 22518,
    "reason": "综合 56 分（B 级），名额有限，这一期没进",
    "score": 56
   },
   {
    "full_name": "ccch1mneyyy/dsh-Go",
-   "stars": 20410,
+   "stars": 20424,
    "reason": "综合 61 分（B 级），名额满了"
   },
   {
    "full_name": "ccch1mneyyy/dsh-Go",
-   "stars": 20410,
+   "stars": 20424,
    "reason": "综合 61 分（B 级），名额有限，这一期没进",
    "score": 61
   },
   {
    "full_name": "Zagitta/gpu-unlock",
-   "stars": 18857,
+   "stars": 18860,
    "reason": "综合 44 分（C 级），名额满了"
   },
   {
    "full_name": "Zagitta/gpu-unlock",
-   "stars": 18857,
+   "stars": 18860,
    "reason": "综合 44 分（C 级），名额有限，这一期没进",
    "score": 44
   },
   {
    "full_name": "google-deepmind/mujoco",
-   "stars": 17722,
+   "stars": 17724,
    "reason": "综合 60 分（B 级），名额满了"
   },
   {
    "full_name": "google-deepmind/mujoco",
-   "stars": 17722,
+   "stars": 17724,
    "reason": "综合 60 分（B 级），名额有限，这一期没进",
    "score": 60
   },
   {
    "full_name": "heydamir/unslop",
-   "stars": 14882,
+   "stars": 14900,
    "reason": "综合 68 分（A 级），名额满了"
   },
   {
    "full_name": "heydamir/unslop",
-   "stars": 14882,
+   "stars": 14900,
    "reason": "综合 68 分（A 级），名额有限，这一期没进",
    "score": 68
   },
   {
    "full_name": "we-promise/sure",
-   "stars": 13508,
+   "stars": 13534,
    "reason": "综合 48 分（C 级），名额满了"
   },
   {
    "full_name": "we-promise/sure",
-   "stars": 13508,
+   "stars": 13534,
    "reason": "综合 48 分（C 级），名额有限，这一期没进",
    "score": 48
   },
   {
-   "full_name": "NVIDIA/auto-ontology",
-   "stars": 12116,
-   "reason": "综合 65 分（A 级），名额满了"
-  },
-  {
-   "full_name": "NVIDIA/auto-ontology",
-   "stars": 12116,
-   "reason": "综合 65 分（A 级），名额有限，这一期没进",
-   "score": 65
-  },
-  {
    "full_name": "openai/codex-security",
-   "stars": 12107,
+   "stars": 12119,
    "reason": "综合 64 分（B 级），名额满了"
   },
   {
    "full_name": "openai/codex-security",
-   "stars": 12107,
+   "stars": 12119,
    "reason": "综合 64 分（B 级），名额有限，这一期没进",
    "score": 64
   },
   {
+   "full_name": "NVIDIA/auto-ontology",
+   "stars": 12118,
+   "reason": "综合 65 分（A 级），名额满了"
+  },
+  {
+   "full_name": "NVIDIA/auto-ontology",
+   "stars": 12118,
+   "reason": "综合 65 分（A 级），名额有限，这一期没进",
+   "score": 65
+  },
+  {
    "full_name": "amosblomqvist/learnharness",
-   "stars": 8889,
+   "stars": 8892,
    "reason": "综合 62 分（B 级），名额满了"
   },
   {
    "full_name": "amosblomqvist/learnharness",
-   "stars": 8889,
+   "stars": 8892,
    "reason": "综合 62 分（B 级），名额有限，这一期没进",
    "score": 62
   },
   {
    "full_name": "GoogleChrome/modern-web-guidance-src",
-   "stars": 2282,
+   "stars": 2306,
    "reason": "综合 68 分（A 级），名额满了"
   },
   {
    "full_name": "GoogleChrome/modern-web-guidance-src",
-   "stars": 2282,
+   "stars": 2306,
    "reason": "综合 68 分（A 级），名额有限，这一期没进",
    "score": 68
   },
   {
    "full_name": "ashhart/TensorFold",
-   "stars": 1837,
+   "stars": 1843,
    "reason": "综合 52 分（B 级），名额满了"
   },
   {
    "full_name": "ashhart/TensorFold",
-   "stars": 1837,
+   "stars": 1843,
    "reason": "综合 52 分（B 级），名额有限，这一期没进",
    "score": 52
   }
