@@ -1,5 +1,0 @@
-{
-  "_说明": "把下面 gh_token 换成你自己的 GitHub token（免费，30 秒）。不填也能跑，只是走匿名、慢一些。",
-  "_在哪申请": "https://github.com/settings/tokens  →  Generate new token (classic)  →  勾 public_repo 即可",
-  "gh_token": ""
-}
