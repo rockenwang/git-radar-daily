@@ -1,0 +1,871 @@
+{
+ "mode": "FULL",
+ "degraded": false,
+ "focus": null,
+ "scanned": 64,
+ "pools": {
+  "daily": 64,
+  "focus": 0
+ },
+ "daily": {
+  "picks": [
+   {
+    "full_name": "GoogleChrome/modern-web-guidance-src",
+    "owner": "GoogleChrome",
+    "owner_type": "Organization",
+    "name": "modern-web-guidance-src",
+    "desc": "Keep your coding agent up to date with the latest web best practices",
+    "lang": "TypeScript",
+    "stars": 3682,
+    "forks": 225,
+    "watchers": 44,
+    "open_issues": 385,
+    "license": "Apache-2.0",
+    "license_name": "Apache License 2.0",
+    "topics": [],
+    "created_at": "2026-01-27T20:22:24Z",
+    "pushed_at": "2026-11-13T06:34:46Z",
+    "updated_at": "2026-11-13T07:38:59Z",
+    "size_kb": 181153,
+    "archived": false,
+    "has_discussions": false,
+    "has_wiki": false,
+    "homepage": "https://goo.gle/modern-web-guidance",
+    "url": "https://github.com/GoogleChrome/modern-web-guidance-src",
+    "default_branch": "main",
+    "gained": 1376,
+    "since": "since_last",
+    "source": "trending",
+    "score": 68,
+    "grade": "A",
+    "grade_word": "改一改能卖",
+    "form": "引擎库",
+    "velocity": 12.740484429065743,
+    "_gaps": [
+     [
+      "没有中文上手文档",
+      "没有中文上手文档",
+      "把 README 翻成中文，配一张三步跑通图"
+     ],
+     [
+      "没有中文界面",
+      "没有中文界面",
+      "把界面文案和按钮全翻成中文，截一套中文版演示图"
+     ],
+     [
+      "没有一键部署",
+      "没有一键部署",
+      "补一个 Dockerfile + compose，别人一条命令跑起来"
+     ]
+    ],
+    "gaps_short": [
+     "没有中文上手文档",
+     "没有中文界面",
+     "没有一键部署"
+    ],
+    "risk": "",
+    "suspect": "",
+    "pitch": {
+     "gap_key": "没有中文上手文档",
+     "change": "把 README 翻成中文，配一张「三步跑通」流程图",
+     "buyer": "要用这套能力但搞不定环境的人",
+     "buyer_tag": "通用",
+     "deliver": "做成带界面的成品，按份卖（发网盘，附中文说明）",
+     "deliver_alt": "接单代跑：客户给需求，你出结果",
+     "hours": 7,
+     "gap_key_word": "缺中文上手文档"
+    },
+    "plain": "Keep your coding agent up to date with the latest web best practices",
+    "_bucket": "",
+    "seen_times": 0,
+    "seen_first": "",
+    "seen_last": "",
+    "analy": {
+     "zh": "让您的编码代理始终掌握最新的网络最佳实践",
+     "plain": "说白了，这是一堆已经写好的能力，但没有界面，得有人包一层壳才能给普通人用。它干的事是：让您的编码代理始终掌握最新的网络最佳实践",
+     "gap": "把 README 翻成中文，配一张「三步跑通」流程图",
+     "buyer": "要用这套能力但搞不定环境的人",
+     "_auto": true,
+     "_src": "mt"
+    }
+   },
+   {
+    "full_name": "heydamir/unslop",
+    "owner": "heydamir",
+    "owner_type": "User",
+    "name": "unslop",
+    "desc": "A Claude skill that turns vibecoded, AI-looking UI into a designed interface",
+    "lang": "JavaScript",
+    "stars": 15295,
+    "forks": 870,
+    "watchers": 17,
+    "open_issues": 8,
+    "license": "CC-BY-4.0",
+    "license_name": "Creative Commons Attribution 4.0 International",
+    "topics": [],
+    "created_at": "2026-10-29T15:41:21Z",
+    "pushed_at": "2026-11-08T21:18:33Z",
+    "updated_at": "2026-11-13T07:39:38Z",
+    "size_kb": 2305,
+    "archived": false,
+    "has_discussions": false,
+    "has_wiki": false,
+    "homepage": "",
+    "url": "https://github.com/heydamir/unslop",
+    "default_branch": "main",
+    "gained": 395,
+    "since": "since_last",
+    "source": "search_new",
+    "score": 68,
+    "grade": "A",
+    "grade_word": "改一改能卖",
+    "form": "Agent技能",
+    "velocity": 1092.5,
+    "_gaps": [
+     [
+      "没有中文上手文档",
+      "没有中文上手文档",
+      "把 README 翻成中文，配一张三步跑通图"
+     ],
+     [
+      "没有一键部署",
+      "没有一键部署",
+      "补一个 Dockerfile + compose，别人一条命令跑起来"
+     ]
+    ],
+    "gaps_short": [
+     "没有中文上手文档",
+     "没有一键部署"
+    ],
+    "risk": "",
+    "suspect": "星速可疑：14 天涨到 15,295 星（日均 1,092），先观察一周看有没有真实用户再动手",
+    "pitch": {
+     "gap_key": "只有英文指令",
+     "change": "改写成中文指令版，加 3 个真实场景的开场白",
+     "buyer": "接单的设计师和电商美工",
+     "buyer_tag": "设计",
+     "deliver": "打包成技能文件，配使用教程一起卖",
+     "deliver_alt": "做成付费专栏的一章，当引流钩子",
+     "hours": 2,
+     "gap_key_word": "缺中文上手文档"
+    },
+    "plain": "A Claude skill that turns vibecoded, AI-looking UI into a designed interface",
+    "_bucket": "",
+    "seen_times": 0,
+    "seen_first": "",
+    "seen_last": "",
+    "analy": {
+     "zh": "一种 Claude 技能，可将采用氛围编码、看起来像 AI 的 UI 转换为经过设计的界面",
+     "plain": "说白了，这是一份写给 AI 的操作手册，装进 AI 工具后它就知道按你的规矩干活。它干的事是：一种 Claude 技能，可将采用氛围编码、看起来像 AI 的 UI 转换为经过设计的界面",
+     "gap": "改写成中文指令版，加 3 个真实场景的开场白",
+     "buyer": "接单的设计师和电商美工",
+     "_auto": true,
+     "_src": "mt"
+    }
+   },
+   {
+    "full_name": "deepseek-ai/dsh-superagent-prototype",
+    "owner": "deepseek-ai",
+    "owner_type": "Organization",
+    "name": "dsh-superagent-prototype",
+    "desc": "Towards a More Autonomous Agent System",
+    "lang": "TypeScript",
+    "stars": 22872,
+    "forks": 2779,
+    "watchers": 172,
+    "open_issues": 0,
+    "license": "MIT",
+    "license_name": "MIT License",
+    "topics": [],
+    "created_at": "2026-10-31T09:32:46Z",
+    "pushed_at": "2026-11-03T09:29:14Z",
+    "updated_at": "2026-11-13T07:39:41Z",
+    "size_kb": 37,
+    "archived": false,
+    "has_discussions": false,
+    "has_wiki": false,
+    "homepage": "",
+    "url": "https://github.com/deepseek-ai/dsh-superagent-prototype",
+    "default_branch": "main",
+    "gained": 201,
+    "since": "since_last",
+    "source": "search_new",
+    "score": 67,
+    "grade": "A",
+    "grade_word": "改一改能卖",
+    "form": "web应用",
+    "velocity": 1906.0,
+    "_gaps": [
+     [
+      "没有中文上手文档",
+      "没有中文上手文档",
+      "把 README 翻成中文，配一张三步跑通图"
+     ],
+     [
+      "没有一键部署",
+      "没有一键部署",
+      "补一个 Dockerfile + compose，别人一条命令跑起来"
+     ],
+     [
+      "没有在线演示",
+      "没有在线演示",
+      "部署一个公开 demo 站，让人先玩再买单"
+     ]
+    ],
+    "gaps_short": [
+     "没有中文上手文档",
+     "没有一键部署",
+     "没有在线演示"
+    ],
+    "risk": "大厂项目，路线不由你定，只能做外围（部署/中文化/模板）",
+    "suspect": "星速可疑：12 天涨到 22,872 星（日均 1,906），先观察一周看有没有真实用户再动手",
+    "pitch": {
+     "gap_key": "没有在线演示",
+     "change": "部署一个公开 demo，让人先玩再决定买不买",
+     "buyer": "想有个自己工具但不会写代码的人",
+     "buyer_tag": "通用",
+     "deliver": "打包部署到客户自己的服务器/域名，收一次部署费",
+     "deliver_alt": "做成在线服务，按月收使用费",
+     "hours": 3,
+     "gap_key_word": "缺在线演示"
+    },
+    "plain": "Towards a More Autonomous Agent System",
+    "_bucket": "",
+    "seen_times": 0,
+    "seen_first": "",
+    "seen_last": "",
+    "analy": {
+     "zh": "迈向更自主的代理系统",
+     "plain": "说白了，这是一个打开网页就能用的在线小工具，不用装任何东西。它干的事是：迈向更自主的代理系统",
+     "gap": "部署一个公开 demo，让人先玩再决定买不买",
+     "buyer": "想有个自己工具但不会写代码的人",
+     "_auto": true,
+     "_src": "mt"
+    }
+   },
+   {
+    "full_name": "addyosmani/agent-skills",
+    "owner": "addyosmani",
+    "owner_type": "User",
+    "name": "agent-skills",
+    "desc": "Production-grade engineering skills for AI coding agents.",
+    "lang": "JavaScript",
+    "stars": 116871,
+    "forks": 12221,
+    "watchers": 574,
+    "open_issues": 137,
+    "license": "MIT",
+    "license_name": "MIT License",
+    "topics": [
+     "agent-skills",
+     "antigravity",
+     "claude-code",
+     "codex",
+     "cursor",
+     "skills"
+    ],
+    "created_at": "2026-02-15T20:20:26Z",
+    "pushed_at": "2026-11-01T19:24:49Z",
+    "updated_at": "2026-11-13T07:38:49Z",
+    "size_kb": 1943,
+    "archived": false,
+    "has_discussions": false,
+    "has_wiki": true,
+    "homepage": "https://skills.addy.ie",
+    "url": "https://github.com/addyosmani/agent-skills",
+    "default_branch": "main",
+    "gained": 816,
+    "since": "daily",
+    "source": "trending",
+    "score": 66,
+    "grade": "A",
+    "grade_word": "改一改能卖",
+    "form": "Agent技能",
+    "velocity": 816.0,
+    "_gaps": [
+     [
+      "没有中文上手文档",
+      "没有中文上手文档",
+      "把 README 翻成中文，配一张三步跑通图"
+     ],
+     [
+      "没有一键部署",
+      "没有一键部署",
+      "补一个 Dockerfile + compose，别人一条命令跑起来"
+     ]
+    ],
+    "gaps_short": [
+     "没有中文上手文档",
+     "没有一键部署"
+    ],
+    "risk": "体量太大，改源码成本高，建议只做外围服务",
+    "suspect": "",
+    "pitch": {
+     "gap_key": "没有打包成技能",
+     "change": "整理成可直接安装的技能包，附使用截图",
+     "buyer": "天天用 AI 干活、但不知道装什么的人",
+     "buyer_tag": "通用",
+     "deliver": "做成付费专栏的一章，当引流钩子",
+     "deliver_alt": "接企业内训，教团队把这套装上",
+     "hours": 2,
+     "gap_key_word": "缺中文上手文档"
+    },
+    "plain": "Production-grade engineering skills for AI coding agents.",
+    "_bucket": "",
+    "seen_times": 0,
+    "seen_first": "",
+    "seen_last": "",
+    "analy": {
+     "zh": "适用于 AI 编码代理的生产级工程技能。",
+     "plain": "说白了，这是一份写给 AI 的操作手册，装进 AI 工具后它就知道按你的规矩干活。它干的事是：适用于 AI 编码代理的生产级工程技能。",
+     "gap": "整理成可直接安装的技能包，附使用截图",
+     "buyer": "天天用 AI 干活、但不知道装什么的人",
+     "_auto": true,
+     "_src": "mt"
+    }
+   },
+   {
+    "full_name": "NVIDIA/auto-ontology",
+    "owner": "NVIDIA",
+    "owner_type": "Organization",
+    "name": "auto-ontology",
+    "desc": "Auto Ontology is a Python framework for building semantic, graph-based reasoning layers over data. It enables deterministic query generation, better context retrieval, and more explainable AI for LLM and agent workflows.",
+    "lang": "Python",
+    "stars": 12353,
+    "forks": 1015,
+    "watchers": 53,
+    "open_issues": 121,
+    "license": "Apache-2.0",
+    "license_name": "Apache License 2.0",
+    "topics": [],
+    "created_at": "2026-04-27T21:45:56Z",
+    "pushed_at": "2026-11-13T04:12:37Z",
+    "updated_at": "2026-11-13T07:37:39Z",
+    "size_kb": 22307,
+    "archived": false,
+    "has_discussions": false,
+    "has_wiki": true,
+    "homepage": "",
+    "url": "https://github.com/NVIDIA/auto-ontology",
+    "default_branch": "main",
+    "gained": 5802,
+    "since": "weekly",
+    "source": "trending",
+    "score": 65,
+    "grade": "A",
+    "grade_word": "改一改能卖",
+    "form": "web应用",
+    "velocity": 828.8571428571429,
+    "_gaps": [
+     [
+      "没有中文上手文档",
+      "没有中文上手文档",
+      "把 README 翻成中文，配一张三步跑通图"
+     ]
+    ],
+    "gaps_short": [
+     "没有中文上手文档"
+    ],
+    "risk": "",
+    "suspect": "",
+    "pitch": {
+     "gap_key": "没有中文界面",
+     "change": "把界面文案和按钮全翻成中文，再截一套中文版演示图当商品图",
+     "buyer": "想有个自己工具但不会写代码的人",
+     "buyer_tag": "通用",
+     "deliver": "做成在线服务，按月收使用费",
+     "deliver_alt": "连部署带教一次，做成「一天陪跑」按次收",
+     "hours": 2,
+     "gap_key_word": "缺中文上手文档"
+    },
+    "plain": "Auto Ontology is a Python framework for building semantic, graph-based reasoning layers over data. It enables deterministic query generation, better context retrieval, and more explainable AI for LLM and agent workflows.",
+    "_bucket": "",
+    "seen_times": 0,
+    "seen_first": "",
+    "seen_last": "",
+    "analy": {
+     "zh": "Auto Ontology是一个Python框架，用于在数据之上构建基于图的语义推理层。它支持确定性查询生成、更好的上下文检索，以及更具可解释性的 AI，适用于 LLM 和代理工作流。",
+     "plain": "说白了，这是一个打开网页就能用的在线小工具，不用装任何东西。它干的事是：Auto Ontology是一个Python框架，用于在数据之上构建基于图的语义推理层。它支持确定性查询生成、更好的上下文检索，以及更具可解释性的 AI，适用于 LLM 和代理工作流。",
+     "gap": "把界面文案和按钮全翻成中文，再截一套中文版演示图当商品图",
+     "buyer": "想有个自己工具但不会写代码的人",
+     "_auto": true,
+     "_src": "mt"
+    }
+   },
+   {
+    "full_name": "storytold/craft-anything",
+    "owner": "storytold",
+    "owner_type": "Organization",
+    "name": "craft-anything",
+    "desc": "Craft Anything: understand how any software works, and craft your own.",
+    "lang": "Rust",
+    "stars": 30511,
+    "forks": 6228,
+    "watchers": 135,
+    "open_issues": 359,
+    "license": "Apache-2.0",
+    "license_name": "Apache License 2.0",
+    "topics": [],
+    "created_at": "2026-10-31T14:50:00Z",
+    "pushed_at": "2026-11-12T19:50:17Z",
+    "updated_at": "2026-11-13T07:38:28Z",
+    "size_kb": 16651,
+    "archived": false,
+    "has_discussions": false,
+    "has_wiki": true,
+    "homepage": "",
+    "url": "https://github.com/storytold/craft-anything",
+    "default_branch": "main",
+    "gained": 1137,
+    "since": "since_last",
+    "source": "search_new",
+    "score": 64,
+    "grade": "B",
+    "grade_word": "值得研究",
+    "form": "引擎库",
+    "velocity": 2542.5833333333335,
+    "_gaps": [
+     [
+      "没有中文上手文档",
+      "没有中文上手文档",
+      "把 README 翻成中文，配一张三步跑通图"
+     ],
+     [
+      "没有一键部署",
+      "没有一键部署",
+      "补一个 Dockerfile + compose，别人一条命令跑起来"
+     ],
+     [
+      "没有在线演示",
+      "没有在线演示",
+      "部署一个公开 demo 站，让人先玩再买单"
+     ]
+    ],
+    "gaps_short": [
+     "没有中文上手文档",
+     "没有一键部署",
+     "没有在线演示"
+    ],
+    "risk": "大厂项目，路线不由你定，只能做外围（部署/中文化/模板）",
+    "suspect": "星速可疑：12 天涨到 30,511 星（日均 2,542），先观察一周看有没有真实用户再动手",
+    "pitch": {
+     "gap_key": "只有代码没有界面",
+     "change": "包一层网页界面，让不会写代码的人点两下就能用",
+     "buyer": "要用这套能力但搞不定环境的人",
+     "buyer_tag": "通用",
+     "deliver": "接单代跑：客户给需求，你出结果",
+     "deliver_alt": "做成中文教程 + 成品包，走知识付费",
+     "hours": 8,
+     "gap_key_word": "缺中文上手文档"
+    },
+    "plain": "Craft Anything: understand how any software works, and craft your own.",
+    "_bucket": "",
+    "seen_times": 0,
+    "seen_first": "",
+    "seen_last": "",
+    "analy": {
+     "zh": "打造任何东西：了解任何软件的运作方式，并打造您自己的软件。",
+     "plain": "说白了，这是一堆已经写好的能力，但没有界面，得有人包一层壳才能给普通人用。它干的事是：打造任何东西：了解任何软件的运作方式，并打造您自己的软件。",
+     "gap": "包一层网页界面，让不会写代码的人点两下就能用",
+     "buyer": "要用这套能力但搞不定环境的人",
+     "_auto": true,
+     "_src": "mt"
+    }
+   },
+   {
+    "full_name": "openai/codex-security",
+    "owner": "openai",
+    "owner_type": "Organization",
+    "name": "codex-security",
+    "desc": "OpenAI's Codex Security CLI and TypeScript SDK for finding, validating, and fixing security vulnerabilities. npm: https://www.npmjs.com/package/@openai/codex-security",
+    "lang": "TypeScript",
+    "stars": 12676,
+    "forks": 991,
+    "watchers": 45,
+    "open_issues": 146,
+    "license": "Apache-2.0",
+    "license_name": "Apache License 2.0",
+    "topics": [
+     "ai-security",
+     "application-security",
+     "cli",
+     "code-scanning",
+     "codex",
+     "codex-security",
+     "cybersecurity",
+     "devsecops",
+     "nodejs",
+     "npm",
+     "openai",
+     "sdk",
+     "security",
+     "typescript",
+     "vulnerability-scanning"
+    ],
+    "created_at": "2026-07-13T22:00:13Z",
+    "pushed_at": "2026-11-13T06:12:10Z",
+    "updated_at": "2026-11-13T07:35:15Z",
+    "size_kb": 83030,
+    "archived": false,
+    "has_discussions": false,
+    "has_wiki": false,
+    "homepage": "https://developers.openai.com/codex/security",
+    "url": "https://github.com/openai/codex-security",
+    "default_branch": "main",
+    "gained": 643,
+    "since": "daily",
+    "source": "trending",
+    "score": 64,
+    "grade": "B",
+    "grade_word": "值得研究",
+    "form": "命令行",
+    "velocity": 643.0,
+    "_gaps": [
+     [
+      "没有中文上手文档",
+      "没有中文上手文档",
+      "把 README 翻成中文，配一张三步跑通图"
+     ],
+     [
+      "没有一键部署",
+      "没有一键部署",
+      "补一个 Dockerfile + compose，别人一条命令跑起来"
+     ]
+    ],
+    "gaps_short": [
+     "没有中文上手文档",
+     "没有一键部署"
+    ],
+    "risk": "",
+    "suspect": "",
+    "pitch": {
+     "gap_key": "要敲一长串参数",
+     "change": "封装成双击就能跑的脚本，把参数做成填空",
+     "buyer": "需要这套能力但装不上的人",
+     "buyer_tag": "通用",
+     "deliver": "做成图文教程 + 现成脚本包，一次付费长期用",
+     "deliver_alt": "接单代跑，按次收费",
+     "hours": 5,
+     "gap_key_word": "缺中文上手文档"
+    },
+    "plain": "OpenAI's Codex Security CLI and TypeScript SDK for finding, validating, and fixing security vulnerabilities. npm: https://www.npmjs.com/package/@openai/codex-security",
+    "_bucket": "",
+    "seen_times": 0,
+    "seen_first": "",
+    "seen_last": "",
+    "analy": {
+     "zh": "OpenAI 的 Codex Security CLI 和 TypeScript SDK，用于查找、验证和修复安全漏洞。npm：https://www.npmjs.com/package/@openai/codex-security",
+     "plain": "说白了，这是一个要在黑框里敲命令才动起来的工具，功能硬，但上手要人带。它干的事是：OpenAI 的 Codex Security CLI 和 TypeScript SDK，用于查找、验证和修复安全漏洞。npm：https://www.npmjs.com/package/@openai/codex-security",
+     "gap": "封装成双击就能跑的脚本，把参数做成填空",
+     "buyer": "需要这套能力但装不上的人",
+     "_auto": true,
+     "_src": "mt"
+    }
+   },
+   {
+    "full_name": "amosblomqvist/learnharness",
+    "owner": "amosblomqvist",
+    "owner_type": "User",
+    "name": "learnharness",
+    "desc": "Agent harness for learning difficult things.",
+    "lang": "TypeScript",
+    "stars": 9097,
+    "forks": 1214,
+    "watchers": 34,
+    "open_issues": 493,
+    "license": "AGPL-3.0",
+    "license_name": "GNU Affero General Public License v3.0",
+    "topics": [],
+    "created_at": "2026-10-16T19:35:33Z",
+    "pushed_at": "2026-11-12T01:49:30Z",
+    "updated_at": "2026-11-13T07:34:20Z",
+    "size_kb": 13083,
+    "archived": false,
+    "has_discussions": true,
+    "has_wiki": false,
+    "homepage": "learnharness.ai",
+    "url": "https://github.com/amosblomqvist/learnharness",
+    "default_branch": "main",
+    "gained": 205,
+    "since": "since_last",
+    "source": "search_new",
+    "score": 62,
+    "grade": "B",
+    "grade_word": "值得研究",
+    "form": "web应用",
+    "velocity": 336.9259259259259,
+    "_gaps": [
+     [
+      "没有中文上手文档",
+      "没有中文上手文档",
+      "把 README 翻成中文，配一张三步跑通图"
+     ],
+     [
+      "没有一键部署",
+      "没有一键部署",
+      "补一个 Dockerfile + compose，别人一条命令跑起来"
+     ]
+    ],
+    "gaps_short": [
+     "没有中文上手文档",
+     "没有一键部署"
+    ],
+    "risk": "AGPL：连做成网络服务都算分发，必须开源，商用最麻烦",
+    "suspect": "",
+    "pitch": {
+     "gap_key": "没有行业预设",
+     "change": "做 10 个行业预设（餐饮/教培/门店），一键套用",
+     "buyer": "要上线个小站但没预算请开发的人",
+     "buyer_tag": "通用",
+     "deliver": "连部署带教一次，做成「一天陪跑」按次收",
+     "deliver_alt": "换成客户自己的数据跑一遍，按场景收定制费",
+     "hours": 2,
+     "gap_key_word": "缺中文上手文档"
+    },
+    "plain": "Agent harness for learning difficult things.",
+    "_bucket": "",
+    "seen_times": 0,
+    "seen_first": "",
+    "seen_last": "",
+    "analy": {
+     "zh": "用于学习难点的代理线束。",
+     "plain": "说白了，这是一个打开网页就能用的在线小工具，不用装任何东西。它干的事是：用于学习难点的代理线束。",
+     "gap": "做 10 个行业预设（餐饮/教培/门店），一键套用",
+     "buyer": "要上线个小站但没预算请开发的人",
+     "_auto": true,
+     "_src": "mt"
+    }
+   }
+  ],
+  "dropped": [
+   {
+    "full_name": "mattpocock/skills",
+    "stars": 323251,
+    "reason": "1 天前（2026-11-12）推过，冷却 7 天内不重推"
+   },
+   {
+    "full_name": "mattpocock/skills",
+    "stars": 323251,
+    "reason": "综合 70 分（A 级），名额有限，这一期没进",
+    "score": 70
+   },
+   {
+    "full_name": "anthropics/skills",
+    "stars": 193838,
+    "reason": "综合 48 分（C 级），名额满了"
+   },
+   {
+    "full_name": "anthropics/skills",
+    "stars": 193838,
+    "reason": "综合 48 分（C 级），名额有限，这一期没进",
+    "score": 48
+   },
+   {
+    "full_name": "ggml-org/llama.cpp",
+    "stars": 134730,
+    "reason": "综合 55 分（B 级），名额满了"
+   },
+   {
+    "full_name": "ggml-org/llama.cpp",
+    "stars": 134730,
+    "reason": "综合 55 分（B 级），名额有限，这一期没进",
+    "score": 55
+   },
+   {
+    "full_name": "nodejs/node",
+    "stars": 123657,
+    "reason": "综合 35 分（C 级），名额满了"
+   },
+   {
+    "full_name": "nodejs/node",
+    "stars": 123657,
+    "reason": "综合 35 分（C 级），名额有限，这一期没进",
+    "score": 35
+   },
+   {
+    "full_name": "D4Vinci/Scrapling",
+    "stars": 102292,
+    "reason": "1 天前（2026-11-12）推过，冷却 7 天内不重推"
+   },
+   {
+    "full_name": "D4Vinci/Scrapling",
+    "stars": 102292,
+    "reason": "综合 69 分（A 级），名额有限，这一期没进",
+    "score": 69
+   },
+   {
+    "full_name": "nvm-sh/nvm",
+    "stars": 96066,
+    "reason": "综合 60 分（B 级），名额满了"
+   },
+   {
+    "full_name": "nvm-sh/nvm",
+    "stars": 96066,
+    "reason": "综合 60 分（B 级），名额有限，这一期没进",
+    "score": 60
+   },
+   {
+    "full_name": "zed-industries/zed",
+    "stars": 94883,
+    "reason": "综合 37 分（C 级），名额满了"
+   },
+   {
+    "full_name": "zed-industries/zed",
+    "stars": 94883,
+    "reason": "综合 37 分（C 级），名额有限，这一期没进",
+    "score": 37
+   },
+   {
+    "full_name": "cloudflare/security-audit-skill",
+    "stars": 71395,
+    "reason": "综合 60 分（B 级），名额满了"
+   },
+   {
+    "full_name": "cloudflare/security-audit-skill",
+    "stars": 71395,
+    "reason": "综合 60 分（B 级），名额有限，这一期没进",
+    "score": 60
+   },
+   {
+    "full_name": "Alishahryar1/free-claude-code",
+    "stars": 69567,
+    "reason": "综合 56 分（B 级），名额满了"
+   },
+   {
+    "full_name": "Alishahryar1/free-claude-code",
+    "stars": 69567,
+    "reason": "综合 56 分（B 级），名额有限，这一期没进",
+    "score": 56
+   },
+   {
+    "full_name": "Gathin23/cleanyourtv",
+    "stars": 57133,
+    "reason": "综合 56 分（B 级），名额满了"
+   },
+   {
+    "full_name": "Gathin23/cleanyourtv",
+    "stars": 57133,
+    "reason": "综合 56 分（B 级），名额有限，这一期没进",
+    "score": 56
+   },
+   {
+    "full_name": "vercel-labs/agent-browser",
+    "stars": 50447,
+    "reason": "综合 56 分（B 级），名额满了"
+   },
+   {
+    "full_name": "vercel-labs/agent-browser",
+    "stars": 50447,
+    "reason": "综合 56 分（B 级），名额有限，这一期没进",
+    "score": 56
+   },
+   {
+    "full_name": "QwenLM/qwen-code",
+    "stars": 29996,
+    "reason": "综合 60 分（B 级），名额满了"
+   },
+   {
+    "full_name": "QwenLM/qwen-code",
+    "stars": 29996,
+    "reason": "综合 60 分（B 级），名额有限，这一期没进",
+    "score": 60
+   },
+   {
+    "full_name": "meta/astryx",
+    "stars": 26917,
+    "reason": "1 天前（2026-11-12）推过，冷却 7 天内不重推"
+   },
+   {
+    "full_name": "meta/astryx",
+    "stars": 26917,
+    "reason": "综合 68 分（A 级），名额有限，这一期没进",
+    "score": 68
+   },
+   {
+    "full_name": "deepseek-ai/DeepInfer",
+    "stars": 25927,
+    "reason": "综合 57 分（B 级），名额满了"
+   },
+   {
+    "full_name": "deepseek-ai/DeepInfer",
+    "stars": 25927,
+    "reason": "综合 57 分（B 级），名额有限，这一期没进",
+    "score": 57
+   },
+   {
+    "full_name": "google/skills",
+    "stars": 24102,
+    "reason": "综合 57 分（B 级），名额满了"
+   },
+   {
+    "full_name": "google/skills",
+    "stars": 24102,
+    "reason": "综合 57 分（B 级），名额有限，这一期没进",
+    "score": 57
+   },
+   {
+    "full_name": "vercel-labs/agent-desktop",
+    "stars": 22912,
+    "reason": "综合 56 分（B 级），名额满了"
+   },
+   {
+    "full_name": "vercel-labs/agent-desktop",
+    "stars": 22912,
+    "reason": "综合 56 分（B 级），名额有限，这一期没进",
+    "score": 56
+   },
+   {
+    "full_name": "milind-soni/OpenMausBot",
+    "stars": 21868,
+    "reason": "1 天前（2026-11-12）推过，冷却 7 天内不重推"
+   },
+   {
+    "full_name": "milind-soni/OpenMausBot",
+    "stars": 21868,
+    "reason": "综合 70 分（A 级），名额有限，这一期没进",
+    "score": 70
+   },
+   {
+    "full_name": "ccch1mneyyy/dsh-Go",
+    "stars": 21178,
+    "reason": "综合 61 分（B 级），名额满了"
+   },
+   {
+    "full_name": "ccch1mneyyy/dsh-Go",
+    "stars": 21178,
+    "reason": "综合 61 分（B 级），名额有限，这一期没进",
+    "score": 61
+   },
+   {
+    "full_name": "Zagitta/gpu-unlock",
+    "stars": 19031,
+    "reason": "综合 44 分（C 级），名额满了"
+   },
+   {
+    "full_name": "Zagitta/gpu-unlock",
+    "stars": 19031,
+    "reason": "综合 44 分（C 级），名额有限，这一期没进",
+    "score": 44
+   },
+   {
+    "full_name": "google-deepmind/mujoco",
+    "stars": 17804,
+    "reason": "综合 60 分（B 级），名额满了"
+   },
+   {
+    "full_name": "google-deepmind/mujoco",
+    "stars": 17804,
+    "reason": "综合 60 分（B 级），名额有限，这一期没进",
+    "score": 60
+   }
+  ]
+ },
+ "focus_tab": {
+  "key": null,
+  "pool": 0,
+  "buckets": {}
+ },
+ "deep": [],
+ "date": "2026-11-13",
+ "archived_at": "2026-11-13T07:40:08"
+}

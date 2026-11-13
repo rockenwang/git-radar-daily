@@ -103,7 +103,111 @@
    ],
    "stars": 26010,
    "focus": ""
+  },
+  "GoogleChrome/modern-web-guidance-src": {
+   "first": "2026-11-13",
+   "dates": [
+    "2026-11-13"
+   ],
+   "times": 1,
+   "last": "2026-11-13",
+   "tabs": [
+    "daily"
+   ],
+   "stars": 3682,
+   "focus": ""
+  },
+  "heydamir/unslop": {
+   "first": "2026-11-13",
+   "dates": [
+    "2026-11-13"
+   ],
+   "times": 1,
+   "last": "2026-11-13",
+   "tabs": [
+    "daily"
+   ],
+   "stars": 15295,
+   "focus": ""
+  },
+  "deepseek-ai/dsh-superagent-prototype": {
+   "first": "2026-11-13",
+   "dates": [
+    "2026-11-13"
+   ],
+   "times": 1,
+   "last": "2026-11-13",
+   "tabs": [
+    "daily"
+   ],
+   "stars": 22872,
+   "focus": ""
+  },
+  "addyosmani/agent-skills": {
+   "first": "2026-11-13",
+   "dates": [
+    "2026-11-13"
+   ],
+   "times": 1,
+   "last": "2026-11-13",
+   "tabs": [
+    "daily"
+   ],
+   "stars": 116871,
+   "focus": ""
+  },
+  "NVIDIA/auto-ontology": {
+   "first": "2026-11-13",
+   "dates": [
+    "2026-11-13"
+   ],
+   "times": 1,
+   "last": "2026-11-13",
+   "tabs": [
+    "daily"
+   ],
+   "stars": 12353,
+   "focus": ""
+  },
+  "storytold/craft-anything": {
+   "first": "2026-11-13",
+   "dates": [
+    "2026-11-13"
+   ],
+   "times": 1,
+   "last": "2026-11-13",
+   "tabs": [
+    "daily"
+   ],
+   "stars": 30511,
+   "focus": ""
+  },
+  "openai/codex-security": {
+   "first": "2026-11-13",
+   "dates": [
+    "2026-11-13"
+   ],
+   "times": 1,
+   "last": "2026-11-13",
+   "tabs": [
+    "daily"
+   ],
+   "stars": 12676,
+   "focus": ""
+  },
+  "amosblomqvist/learnharness": {
+   "first": "2026-11-13",
+   "dates": [
+    "2026-11-13"
+   ],
+   "times": 1,
+   "last": "2026-11-13",
+   "tabs": [
+    "daily"
+   ],
+   "stars": 9097,
+   "focus": ""
   }
  },
- "updated_at": "2026-11-12T13:40:07"
+ "updated_at": "2026-11-13T07:40:08"
 }

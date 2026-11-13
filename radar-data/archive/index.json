@@ -18,7 +18,26 @@
     "D4Vinci/Scrapling",
     "meta/astryx"
    ]
+  },
+  {
+   "date": "2026-11-13",
+   "mode": "FULL",
+   "focus": "",
+   "scanned": 64,
+   "daily": 8,
+   "focus_n": 0,
+   "deep": 0,
+   "names": [
+    "GoogleChrome/modern-web-guidance-src",
+    "heydamir/unslop",
+    "deepseek-ai/dsh-superagent-prototype",
+    "addyosmani/agent-skills",
+    "NVIDIA/auto-ontology",
+    "storytold/craft-anything",
+    "openai/codex-security",
+    "amosblomqvist/learnharness"
+   ]
   }
  ],
- "updated_at": "2026-11-12T13:40:07"
+ "updated_at": "2026-11-13T07:40:08"
 }
