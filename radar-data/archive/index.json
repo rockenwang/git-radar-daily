@@ -37,7 +37,26 @@
     "openai/codex-security",
     "amosblomqvist/learnharness"
    ]
+  },
+  {
+   "date": "2026-11-14",
+   "mode": "FULL",
+   "focus": "",
+   "scanned": 66,
+   "daily": 8,
+   "focus_n": 0,
+   "deep": 0,
+   "names": [
+    "google/elephant-goldfish-model",
+    "ZhuLinsen/daily_stock_analysis",
+    "wangzan101/Mika",
+    "backnotprop/plannotator",
+    "louislam/uptime-kuma",
+    "tradermonty/claude-trading-skills",
+    "alibaba/open-code-review",
+    "ccch1mneyyy/dsh-Go"
+   ]
   }
  ],
- "updated_at": "2026-11-13T07:40:08"
+ "updated_at": "2026-11-14T07:25:56"
 }

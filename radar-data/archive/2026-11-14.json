@@ -1,0 +1,917 @@
+{
+ "mode": "FULL",
+ "degraded": false,
+ "focus": null,
+ "scanned": 66,
+ "pools": {
+  "daily": 66,
+  "focus": 0
+ },
+ "daily": {
+  "picks": [
+   {
+    "full_name": "google/elephant-goldfish-model",
+    "owner": "google",
+    "owner_type": "Organization",
+    "name": "elephant-goldfish-model",
+    "desc": "Open-source plugin for designing and reviewing software with agents",
+    "lang": "Python",
+    "stars": 18737,
+    "forks": 1399,
+    "watchers": 76,
+    "open_issues": 104,
+    "license": "Apache-2.0",
+    "license_name": "Apache License 2.0",
+    "topics": [
+     "agent-skills",
+     "ai-agents",
+     "antigravity",
+     "claude-code",
+     "claude-code-plugin",
+     "claude-skills",
+     "codex",
+     "codex-plugin",
+     "coding-agents",
+     "context-engineering",
+     "developer-tools",
+     "gemini",
+     "llm",
+     "multi-agent",
+     "prompt-engineering",
+     "spec-driven-development"
+    ],
+    "created_at": "2026-09-13T16:31:06Z",
+    "pushed_at": "2026-11-14T03:30:16Z",
+    "updated_at": "2026-11-14T07:11:19Z",
+    "size_kb": 15141,
+    "archived": false,
+    "has_discussions": true,
+    "has_wiki": false,
+    "homepage": "https://egm.dev",
+    "url": "https://github.com/google/elephant-goldfish-model",
+    "default_branch": "main",
+    "gained": 5560,
+    "since": "weekly",
+    "source": "trending",
+    "score": 85,
+    "grade": "S",
+    "grade_word": "今晚就能动手",
+    "form": "Agent技能",
+    "velocity": 794.2857142857143,
+    "_gaps": [
+     [
+      "没有中文上手文档",
+      "没有中文上手文档",
+      "把 README 翻成中文，配一张三步跑通图"
+     ],
+     [
+      "没有一键部署",
+      "没有一键部署",
+      "补一个 Dockerfile + compose，别人一条命令跑起来"
+     ]
+    ],
+    "gaps_short": [
+     "没有中文上手文档",
+     "没有一键部署"
+    ],
+    "risk": "",
+    "suspect": "",
+    "pitch": {
+     "gap_key": "只有英文指令",
+     "change": "改写成中文指令版，加 3 个真实场景的开场白",
+     "buyer": "接单的设计师和电商美工",
+     "buyer_tag": "设计",
+     "deliver": "打包成技能文件，配使用教程一起卖",
+     "deliver_alt": "做成付费专栏的一章，当引流钩子",
+     "hours": 1,
+     "gap_key_word": "缺中文上手文档"
+    },
+    "plain": "Open-source plugin for designing and reviewing software with agents",
+    "_bucket": "",
+    "seen_times": 0,
+    "seen_first": "",
+    "seen_last": "",
+    "analy": {
+     "zh": "用于与代理一起设计和审查软件的开源插件",
+     "plain": "说白了，这是一份写给 AI 的操作手册，装进 AI 工具后它就知道按你的规矩干活。它干的事是：用于与代理一起设计和审查软件的开源插件",
+     "gap": "改写成中文指令版，加 3 个真实场景的开场白",
+     "buyer": "接单的设计师和电商美工",
+     "_auto": true,
+     "_src": "mt"
+    }
+   },
+   {
+    "full_name": "ZhuLinsen/daily_stock_analysis",
+    "owner": "ZhuLinsen",
+    "owner_type": "User",
+    "name": "daily_stock_analysis",
+    "desc": "LLM 驱动的多市场股票智能分析系统：多源行情、实时新闻、决策看板与自动推送，支持零成本定时运行。  LLM-powered multi-market stock analysis system with multi-source market data, real-time news, decision dashboard, automated notifications, and cost-free scheduled runs.",
+    "lang": "Python",
+    "stars": 71890,
+    "forks": 57367,
+    "watchers": 284,
+    "open_issues": 55,
+    "license": "MIT",
+    "license_name": "MIT License",
+    "topics": [
+     "a-stock",
+     "ai-agent",
+     "aigc",
+     "llm",
+     "quant",
+     "quantitative-finance",
+     "quantitative-trading"
+    ],
+    "created_at": "2026-01-10T06:43:20Z",
+    "pushed_at": "2026-11-14T07:25:13Z",
+    "updated_at": "2026-11-14T07:22:31Z",
+    "size_kb": 122068,
+    "archived": false,
+    "has_discussions": false,
+    "has_wiki": false,
+    "homepage": "https://dsa.zhulinsen.tech",
+    "url": "https://github.com/ZhuLinsen/daily_stock_analysis",
+    "default_branch": "main",
+    "gained": 256,
+    "since": "daily",
+    "source": "trending",
+    "score": 76,
+    "grade": "A",
+    "grade_word": "改一改能卖",
+    "form": "web应用",
+    "velocity": 256.0,
+    "_gaps": [
+     [
+      "没有中文界面",
+      "没有中文界面",
+      "把界面文案和按钮全翻成中文，截一套中文版演示图"
+     ]
+    ],
+    "gaps_short": [
+     "没有中文界面"
+    ],
+    "risk": "体量太大，改源码成本高，建议只做外围服务",
+    "suspect": "",
+    "pitch": {
+     "gap_key": "没有中文界面",
+     "change": "把界面文案和按钮全翻成中文，再截一套中文版演示图当商品图",
+     "buyer": "要做数据但不会写代码的人",
+     "buyer_tag": "数据",
+     "deliver": "打包部署到客户自己的服务器/域名，收一次部署费",
+     "deliver_alt": "做成在线服务，按月收使用费",
+     "hours": 4,
+     "gap_key_word": "缺中文界面"
+    },
+    "plain": "LLM 驱动的多市场股票智能分析系统：多源行情、实时新闻、决策看板与自动推送，支持零成本定时运行。  LLM-powered multi-market stock analysis system with multi-source market data, real-time news, decision dashboard, automated notifications, and cost-free scheduled runs.",
+    "_bucket": "",
+    "seen_times": 0,
+    "seen_first": "",
+    "seen_last": "",
+    "analy": {
+     "zh": "LLM 驱动的多市场股票智能分析系统：多源行情、实时新闻、决策看板与自动推送，支持零成本定时运行。 由法学硕士支持的多市场股票分析系统，具有多源市场数据、实时新闻、决策仪表板、自动通知和免费计划运行。",
+     "plain": "说白了，这是一个打开网页就能用的在线小工具，不用装任何东西。它干的事是：LLM 驱动的多市场股票智能分析系统：多源行情、实时新闻、决策看板与自动推送，支持零成本定时运行。 由法学硕士支持的多市场股票分析系统，具有多源市场数据、实时新闻、决策仪表板、自动通知和免费计划运行。",
+     "gap": "把界面文案和按钮全翻成中文，再截一套中文版演示图当商品图",
+     "buyer": "要做数据但不会写代码的人",
+     "_auto": true,
+     "_src": "mt"
+    }
+   },
+   {
+    "full_name": "wangzan101/Mika",
+    "owner": "wangzan101",
+    "owner_type": "User",
+    "name": "Mika",
+    "desc": "An on-device AI agent for Android that operates apps and the web to get things done for you.",
+    "lang": "Kotlin",
+    "stars": 8549,
+    "forks": 1955,
+    "watchers": 14,
+    "open_issues": 136,
+    "license": "Apache-2.0",
+    "license_name": "Apache License 2.0",
+    "topics": [
+     "accessibility",
+     "ai-agent",
+     "android",
+     "automation",
+     "jetpack-compose",
+     "kotlin",
+     "llm",
+     "mobile-agent"
+    ],
+    "created_at": "2026-10-29T14:34:07Z",
+    "pushed_at": "2026-11-13T18:16:22Z",
+    "updated_at": "2026-11-14T07:17:36Z",
+    "size_kb": 201069,
+    "archived": false,
+    "has_discussions": false,
+    "has_wiki": true,
+    "homepage": "https://mikaphone.com",
+    "url": "https://github.com/wangzan101/Mika",
+    "default_branch": "main",
+    "gained": 0,
+    "since": "created<30d",
+    "source": "search_new",
+    "score": 75,
+    "grade": "A",
+    "grade_word": "改一改能卖",
+    "form": "引擎库",
+    "velocity": 569.9333333333333,
+    "_gaps": [
+     [
+      "没有中文上手文档",
+      "没有中文上手文档",
+      "把 README 翻成中文，配一张三步跑通图"
+     ],
+     [
+      "没有中文界面",
+      "没有中文界面",
+      "把界面文案和按钮全翻成中文，截一套中文版演示图"
+     ],
+     [
+      "没有一键部署",
+      "没有一键部署",
+      "补一个 Dockerfile + compose，别人一条命令跑起来"
+     ]
+    ],
+    "gaps_short": [
+     "没有中文上手文档",
+     "没有中文界面",
+     "没有一键部署"
+    ],
+    "risk": "",
+    "suspect": "",
+    "pitch": {
+     "gap_key": "没有中文上手文档",
+     "change": "把 README 翻成中文，配一张「三步跑通」流程图",
+     "buyer": "要用这套能力但搞不定环境的人",
+     "buyer_tag": "通用",
+     "deliver": "做成带界面的成品，按份卖（发网盘，附中文说明）",
+     "deliver_alt": "接单代跑：客户给需求，你出结果",
+     "hours": 10,
+     "gap_key_word": "缺中文上手文档"
+    },
+    "plain": "An on-device AI agent for Android that operates apps and the web to get things done for you.",
+    "_bucket": "",
+    "seen_times": 0,
+    "seen_first": "",
+    "seen_last": "",
+    "analy": {
+     "zh": "一款适用于 Android 的设备端 AI 代理，可操作应用程序和网页为您完成任务。",
+     "plain": "说白了，这是一堆已经写好的能力，但没有界面，得有人包一层壳才能给普通人用。它干的事是：一款适用于 Android 的设备端 AI 代理，可操作应用程序和网页为您完成任务。",
+     "gap": "把 README 翻成中文，配一张「三步跑通」流程图",
+     "buyer": "要用这套能力但搞不定环境的人",
+     "_auto": true,
+     "_src": "mt"
+    }
+   },
+   {
+    "full_name": "backnotprop/plannotator",
+    "owner": "backnotprop",
+    "owner_type": "User",
+    "name": "plannotator",
+    "desc": "The workspace to stay in the loop and on top of agents - shape, decide, plan, annotate, review code, share with team, and send all feedback to agents with one click. ",
+    "lang": "TypeScript",
+    "stars": 10574,
+    "forks": 791,
+    "watchers": 24,
+    "open_issues": 212,
+    "license": "Apache-2.0",
+    "license_name": "Apache License 2.0",
+    "topics": [
+     "agents",
+     "claude-code",
+     "code-review",
+     "codex",
+     "obsidian",
+     "opencode",
+     "pi-mono",
+     "plan-mode",
+     "skills"
+    ],
+    "created_at": "2025-12-28T02:09:40Z",
+    "pushed_at": "2026-11-14T07:22:46Z",
+    "updated_at": "2026-11-14T07:23:53Z",
+    "size_kb": 353834,
+    "archived": false,
+    "has_discussions": true,
+    "has_wiki": true,
+    "homepage": "https://plannotator.ai",
+    "url": "https://github.com/backnotprop/plannotator",
+    "default_branch": "main",
+    "gained": 108,
+    "since": "daily",
+    "source": "trending",
+    "score": 68,
+    "grade": "A",
+    "grade_word": "改一改能卖",
+    "form": "Agent技能",
+    "velocity": 108.0,
+    "_gaps": [
+     [
+      "没有中文上手文档",
+      "没有中文上手文档",
+      "把 README 翻成中文，配一张三步跑通图"
+     ],
+     [
+      "没有一键部署",
+      "没有一键部署",
+      "补一个 Dockerfile + compose，别人一条命令跑起来"
+     ]
+    ],
+    "gaps_short": [
+     "没有中文上手文档",
+     "没有一键部署"
+    ],
+    "risk": "",
+    "suspect": "",
+    "pitch": {
+     "gap_key": "没有打包成技能",
+     "change": "整理成可直接安装的技能包，附使用截图",
+     "buyer": "天天用 AI 干活、但不知道装什么的人",
+     "buyer_tag": "通用",
+     "deliver": "做成付费专栏的一章，当引流钩子",
+     "deliver_alt": "接企业内训，教团队把这套装上",
+     "hours": 6,
+     "gap_key_word": "缺中文上手文档"
+    },
+    "plain": "The workspace to stay in the loop and on top of agents - shape, decide, plan, annotate, review code, share with team, and send all feedback to agents with one click.",
+    "_bucket": "",
+    "seen_times": 0,
+    "seen_first": "",
+    "seen_last": "",
+    "analy": {
+     "zh": "保持在循环中并在座席之上的工作区 - 塑造、决定、计划、注释、审查代码、与团队共享以及一键将所有反馈发送给座席。",
+     "plain": "说白了，这是一份写给 AI 的操作手册，装进 AI 工具后它就知道按你的规矩干活。它干的事是：保持在循环中并在座席之上的工作区 - 塑造、决定、计划、注释、审查代码、与团队共享以及一键将所有反馈发送给座席。",
+     "gap": "整理成可直接安装的技能包，附使用截图",
+     "buyer": "天天用 AI 干活、但不知道装什么的人",
+     "_auto": true,
+     "_src": "mt"
+    }
+   },
+   {
+    "full_name": "louislam/uptime-kuma",
+    "owner": "louislam",
+    "owner_type": "User",
+    "name": "uptime-kuma",
+    "desc": "A fancy self-hosted monitoring tool",
+    "lang": "JavaScript",
+    "stars": 93970,
+    "forks": 8728,
+    "watchers": 317,
+    "open_issues": 855,
+    "license": "MIT",
+    "license_name": "MIT License",
+    "topics": [
+     "docker",
+     "monitor",
+     "monitoring",
+     "responsive",
+     "self-hosted",
+     "selfhosted",
+     "single-page-app",
+     "socket-io",
+     "uptime",
+     "uptime-monitoring",
+     "webapp",
+     "websocket"
+    ],
+    "created_at": "2021-07-03T01:02:42Z",
+    "pushed_at": "2026-11-14T00:04:41Z",
+    "updated_at": "2026-11-14T07:22:56Z",
+    "size_kb": 39765,
+    "archived": false,
+    "has_discussions": false,
+    "has_wiki": true,
+    "homepage": "https://uptime.kuma.pet",
+    "url": "https://github.com/louislam/uptime-kuma",
+    "default_branch": "master",
+    "gained": 71,
+    "since": "daily",
+    "source": "trending",
+    "score": 68,
+    "grade": "A",
+    "grade_word": "改一改能卖",
+    "form": "web应用",
+    "velocity": 71.0,
+    "_gaps": [
+     [
+      "没有中文上手文档",
+      "没有中文上手文档",
+      "把 README 翻成中文，配一张三步跑通图"
+     ],
+     [
+      "没有中文界面",
+      "没有中文界面",
+      "把界面文案和按钮全翻成中文，截一套中文版演示图"
+     ]
+    ],
+    "gaps_short": [
+     "没有中文上手文档",
+     "没有中文界面"
+    ],
+    "risk": "体量太大，改源码成本高，建议只做外围服务",
+    "suspect": "",
+    "pitch": {
+     "gap_key": "没有在线演示",
+     "change": "部署一个公开 demo，让人先玩再决定买不买",
+     "buyer": "想有个自己工具但不会写代码的人",
+     "buyer_tag": "通用",
+     "deliver": "做成在线服务，按月收使用费",
+     "deliver_alt": "连部署带教一次，做成「一天陪跑」按次收",
+     "hours": 2,
+     "gap_key_word": "缺中文上手文档"
+    },
+    "plain": "A fancy self-hosted monitoring tool",
+    "_bucket": "",
+    "seen_times": 0,
+    "seen_first": "",
+    "seen_last": "",
+    "analy": {
+     "zh": "一个精美的自托管监控工具",
+     "plain": "说白了，这是一个打开网页就能用的在线小工具，不用装任何东西。它干的事是：一个精美的自托管监控工具",
+     "gap": "部署一个公开 demo，让人先玩再决定买不买",
+     "buyer": "想有个自己工具但不会写代码的人",
+     "_auto": true,
+     "_src": "mt"
+    }
+   },
+   {
+    "full_name": "tradermonty/claude-trading-skills",
+    "owner": "tradermonty",
+    "owner_type": "User",
+    "name": "claude-trading-skills",
+    "desc": "Claude Code skills for equity investors and traders — market analysis, technical charting, economic calendars, screeners, and trading strategy development.",
+    "lang": "Python",
+    "stars": 4314,
+    "forks": 881,
+    "watchers": 42,
+    "open_issues": 86,
+    "license": "MIT",
+    "license_name": "MIT License",
+    "topics": [],
+    "created_at": "2025-10-19T16:37:29Z",
+    "pushed_at": "2026-11-14T06:03:59Z",
+    "updated_at": "2026-11-14T07:11:32Z",
+    "size_kb": 74129,
+    "archived": false,
+    "has_discussions": false,
+    "has_wiki": true,
+    "homepage": "https://tradermonty.github.io/claude-trading-skills/",
+    "url": "https://github.com/tradermonty/claude-trading-skills",
+    "default_branch": "main",
+    "gained": 69,
+    "since": "daily",
+    "source": "trending",
+    "score": 68,
+    "grade": "A",
+    "grade_word": "改一改能卖",
+    "form": "Agent技能",
+    "velocity": 69.0,
+    "_gaps": [
+     [
+      "没有中文上手文档",
+      "没有中文上手文档",
+      "把 README 翻成中文，配一张三步跑通图"
+     ],
+     [
+      "没有一键部署",
+      "没有一键部署",
+      "补一个 Dockerfile + compose，别人一条命令跑起来"
+     ]
+    ],
+    "gaps_short": [
+     "没有中文上手文档",
+     "没有一键部署"
+    ],
+    "risk": "",
+    "suspect": "",
+    "pitch": {
+     "gap_key": "没有效果对比",
+     "change": "做前后对比案例，让人一眼看出差别",
+     "buyer": "天天用 AI 干活、但不知道装什么的人",
+     "buyer_tag": "通用",
+     "deliver": "接企业内训，教团队把这套装上",
+     "deliver_alt": "做成定制版：按客户业务流程改一遍，单独报价",
+     "hours": 4,
+     "gap_key_word": "缺中文上手文档"
+    },
+    "plain": "Claude Code skills for equity investors and traders — market analysis, technical charting, economic calendars, screeners, and trading strategy development.",
+    "_bucket": "",
+    "seen_times": 0,
+    "seen_first": "",
+    "seen_last": "",
+    "analy": {
+     "zh": "克劳德代码为股票投资者和交易者提供的技能——市场分析、技术图表、经济日历、筛选器和交易策略开发。",
+     "plain": "说白了，这是一份写给 AI 的操作手册，装进 AI 工具后它就知道按你的规矩干活。它干的事是：克劳德代码为股票投资者和交易者提供的技能——市场分析、技术图表、经济日历、筛选器和交易策略开发。",
+     "gap": "做前后对比案例，让人一眼看出差别",
+     "buyer": "天天用 AI 干活、但不知道装什么的人",
+     "_auto": true,
+     "_src": "mt"
+    }
+   },
+   {
+    "full_name": "alibaba/open-code-review",
+    "owner": "alibaba",
+    "owner_type": "Organization",
+    "name": "open-code-review",
+    "desc": "Secure, fast, efficient, battle-tested at Alibaba's scale. Hybrid architecture code review tool: deterministic pipelines + LLM Agent, precise line-level comments, built-in multi-language ruleset (NPE, thread-safety, XSS, SQL injection), OpenAI & Anthropic compatible.",
+    "lang": "Go",
+    "stars": 50866,
+    "forks": 3787,
+    "watchers": 145,
+    "open_issues": 340,
+    "license": "Apache-2.0",
+    "license_name": "Apache License 2.0",
+    "topics": [
+     "agent",
+     "agent-skills",
+     "code-review",
+     "code-review-assistant",
+     "harness",
+     "repository-level-context"
+    ],
+    "created_at": "2026-05-18T02:16:36Z",
+    "pushed_at": "2026-11-14T05:39:05Z",
+    "updated_at": "2026-11-14T07:25:32Z",
+    "size_kb": 54666,
+    "archived": false,
+    "has_discussions": true,
+    "has_wiki": false,
+    "homepage": "https://open-codereview.ai",
+    "url": "https://github.com/alibaba/open-code-review",
+    "default_branch": "main",
+    "gained": 215,
+    "since": "daily",
+    "source": "trending",
+    "score": 64,
+    "grade": "B",
+    "grade_word": "值得研究",
+    "form": "Agent技能",
+    "velocity": 215.0,
+    "_gaps": [
+     [
+      "没有中文上手文档",
+      "没有中文上手文档",
+      "把 README 翻成中文，配一张三步跑通图"
+     ],
+     [
+      "没有一键部署",
+      "没有一键部署",
+      "补一个 Dockerfile + compose，别人一条命令跑起来"
+     ]
+    ],
+    "gaps_short": [
+     "没有中文上手文档",
+     "没有一键部署"
+    ],
+    "risk": "大厂项目，路线不由你定，只能做外围（部署/中文化/模板）",
+    "suspect": "",
+    "pitch": {
+     "gap_key": "场景全是国外的",
+     "change": "把示例换成国内的活（公众号/小红书/电商），别用国外 demo",
+     "buyer": "买了 AI 会员却只用来聊天的人",
+     "buyer_tag": "通用",
+     "deliver": "做成定制版：按客户业务流程改一遍，单独报价",
+     "deliver_alt": "做成定制版：按客户业务流程改一遍，单独报价",
+     "hours": 4,
+     "gap_key_word": "缺中文上手文档"
+    },
+    "plain": "Secure, fast, efficient, battle-tested at Alibaba's scale. Hybrid architecture code review tool: deterministic pipelines + LLM Agent, precise line-level comments, built-in multi-language ruleset (NPE, thread-safety, XSS, SQL injection), OpenAI & Anthropic compatible.",
+    "_bucket": "",
+    "seen_times": 0,
+    "seen_first": "",
+    "seen_last": "",
+    "analy": {
+     "zh": "安全、快速、高效，在阿里巴巴的规模下经过实战检验。混合架构代码审查工具：确定性管道 + LLM 代理、精确的行级注释、内置多语言规则集（NPE、线程安全、XSS、SQL 注入），兼容 OpenAI 和 Anthropic。",
+     "plain": "说白了，这是一份写给 AI 的操作手册，装进 AI 工具后它就知道按你的规矩干活。它干的事是：安全、快速、高效，在阿里巴巴的规模下经过实战检验。混合架构代码审查工具：确定性管道 + LLM 代理、精确的行级注释、内置多语言规则集（NPE、线程安全、XSS、SQL 注入），兼容 OpenAI 和 Anthropic。",
+     "gap": "把示例换成国内的活（公众号/小红书/电商），别用国外 demo",
+     "buyer": "买了 AI 会员却只用来聊天的人",
+     "_auto": true,
+     "_src": "mt"
+    }
+   },
+   {
+    "full_name": "ccch1mneyyy/dsh-Go",
+    "owner": "ccch1mneyyy",
+    "owner_type": "User",
+    "name": "dsh-Go",
+    "desc": "dsh-go — DeepSeek Harness 装进口袋：手机本机运行，也能遥控你的电脑。",
+    "lang": "Dart",
+    "stars": 22089,
+    "forks": 1024,
+    "watchers": 44,
+    "open_issues": 579,
+    "license": "AGPL-3.0",
+    "license_name": "GNU Affero General Public License v3.0",
+    "topics": [
+     "ai-agent",
+     "android",
+     "android-app",
+     "coding-agent",
+     "deepseek",
+     "deepseek-harness",
+     "dsh",
+     "dsh-plugin",
+     "dsh-tui",
+     "flutter",
+     "llm"
+    ],
+    "created_at": "2026-10-25T08:09:52Z",
+    "pushed_at": "2026-11-14T07:19:03Z",
+    "updated_at": "2026-11-14T07:22:18Z",
+    "size_kb": 645907,
+    "archived": false,
+    "has_discussions": false,
+    "has_wiki": false,
+    "homepage": "",
+    "url": "https://github.com/ccch1mneyyy/dsh-Go",
+    "default_branch": "main",
+    "gained": 911,
+    "since": "since_last",
+    "source": "search_new",
+    "score": 61,
+    "grade": "B",
+    "grade_word": "值得研究",
+    "form": "引擎库",
+    "velocity": 1162.578947368421,
+    "_gaps": [
+     [
+      "没有中文上手文档",
+      "没有中文上手文档",
+      "把 README 翻成中文，配一张三步跑通图"
+     ],
+     [
+      "没有一键部署",
+      "没有一键部署",
+      "补一个 Dockerfile + compose，别人一条命令跑起来"
+     ],
+     [
+      "没有在线演示",
+      "没有在线演示",
+      "部署一个公开 demo 站，让人先玩再买单"
+     ]
+    ],
+    "gaps_short": [
+     "没有中文上手文档",
+     "没有一键部署",
+     "没有在线演示"
+    ],
+    "risk": "AGPL：连做成网络服务都算分发，必须开源，商用最麻烦",
+    "suspect": "星速可疑：19 天涨到 22,089 星（日均 1,162），先观察一周看有没有真实用户再动手",
+    "pitch": {
+     "gap_key": "只有代码没有界面",
+     "change": "包一层网页界面，让不会写代码的人点两下就能用",
+     "buyer": "要用这套能力但搞不定环境的人",
+     "buyer_tag": "通用",
+     "deliver": "接单代跑：客户给需求，你出结果",
+     "deliver_alt": "做成中文教程 + 成品包，走知识付费",
+     "hours": 8,
+     "gap_key_word": "缺中文上手文档"
+    },
+    "plain": "dsh-go — DeepSeek Harness 装进口袋：手机本机运行，也能遥控你的电脑。",
+    "_bucket": "",
+    "seen_times": 0,
+    "seen_first": "",
+    "seen_last": "",
+    "analy": {
+     "zh": "dsh-go — DeepSeek Harness 装进口袋：手机本机运行，也能遥控你的电脑。",
+     "plain": "说白了，这是一堆已经写好的能力，但没有界面，得有人包一层壳才能给普通人用。它干的事是：dsh-go — DeepSeek Harness 装进口袋：手机本机运行，也能遥控你的电脑。",
+     "gap": "包一层网页界面，让不会写代码的人点两下就能用",
+     "buyer": "要用这套能力但搞不定环境的人",
+     "_auto": true,
+     "_src": "mt"
+    }
+   }
+  ],
+  "dropped": [
+   {
+    "full_name": "mattpocock/skills",
+    "stars": 323983,
+    "reason": "2 天前（2026-11-12）推过，冷却 7 天内不重推"
+   },
+   {
+    "full_name": "mattpocock/skills",
+    "stars": 323983,
+    "reason": "综合 70 分（A 级），名额有限，这一期没进",
+    "score": 70
+   },
+   {
+    "full_name": "anthropics/skills",
+    "stars": 194246,
+    "reason": "综合 48 分（C 级），名额满了"
+   },
+   {
+    "full_name": "anthropics/skills",
+    "stars": 194246,
+    "reason": "综合 48 分（C 级），名额有限，这一期没进",
+    "score": 48
+   },
+   {
+    "full_name": "addyosmani/agent-skills",
+    "stars": 117249,
+    "reason": "1 天前（2026-11-13）推过，冷却 7 天内不重推"
+   },
+   {
+    "full_name": "addyosmani/agent-skills",
+    "stars": 117249,
+    "reason": "综合 68 分（A 级），名额有限，这一期没进",
+    "score": 68
+   },
+   {
+    "full_name": "sherlock-project/sherlock",
+    "stars": 111334,
+    "reason": "综合 59 分（B 级），名额满了"
+   },
+   {
+    "full_name": "sherlock-project/sherlock",
+    "stars": 111334,
+    "reason": "综合 59 分（B 级），名额有限，这一期没进",
+    "score": 59
+   },
+   {
+    "full_name": "zed-industries/zed",
+    "stars": 94987,
+    "reason": "综合 37 分（C 级），名额满了"
+   },
+   {
+    "full_name": "zed-industries/zed",
+    "stars": 94987,
+    "reason": "综合 37 分（C 级），名额有限，这一期没进",
+    "score": 37
+   },
+   {
+    "full_name": "lobehub/lobehub",
+    "stars": 85462,
+    "reason": "综合 43 分（C 级），名额满了"
+   },
+   {
+    "full_name": "lobehub/lobehub",
+    "stars": 85462,
+    "reason": "综合 43 分（C 级），名额有限，这一期没进",
+    "score": 43
+   },
+   {
+    "full_name": "cloudflare/security-audit-skill",
+    "stars": 72080,
+    "reason": "综合 60 分（B 级），名额满了"
+   },
+   {
+    "full_name": "cloudflare/security-audit-skill",
+    "stars": 72080,
+    "reason": "综合 60 分（B 级），名额有限，这一期没进",
+    "score": 60
+   },
+   {
+    "full_name": "Gathin23/cleanyourtv",
+    "stars": 57531,
+    "reason": "综合 56 分（B 级），名额满了"
+   },
+   {
+    "full_name": "Gathin23/cleanyourtv",
+    "stars": 57531,
+    "reason": "综合 56 分（B 级），名额有限，这一期没进",
+    "score": 56
+   },
+   {
+    "full_name": "ChromeDevTools/chrome-devtools-mcp",
+    "stars": 55699,
+    "reason": "综合 59 分（B 级），名额满了"
+   },
+   {
+    "full_name": "ChromeDevTools/chrome-devtools-mcp",
+    "stars": 55699,
+    "reason": "综合 59 分（B 级），名额有限，这一期没进",
+    "score": 59
+   },
+   {
+    "full_name": "vercel-labs/agent-browser",
+    "stars": 50828,
+    "reason": "综合 56 分（B 级），名额满了"
+   },
+   {
+    "full_name": "vercel-labs/agent-browser",
+    "stars": 50828,
+    "reason": "综合 56 分（B 级），名额有限，这一期没进",
+    "score": 56
+   },
+   {
+    "full_name": "block/buzz",
+    "stars": 37366,
+    "reason": "综合 52 分（B 级），名额满了"
+   },
+   {
+    "full_name": "block/buzz",
+    "stars": 37366,
+    "reason": "综合 52 分（B 级），名额有限，这一期没进",
+    "score": 52
+   },
+   {
+    "full_name": "deepseek-ai/DeepInfer",
+    "stars": 25986,
+    "reason": "综合 57 分（B 级），名额满了"
+   },
+   {
+    "full_name": "deepseek-ai/DeepInfer",
+    "stars": 25986,
+    "reason": "综合 57 分（B 级），名额有限，这一期没进",
+    "score": 57
+   },
+   {
+    "full_name": "vercel-labs/agent-desktop",
+    "stars": 23439,
+    "reason": "综合 56 分（B 级），名额满了"
+   },
+   {
+    "full_name": "vercel-labs/agent-desktop",
+    "stars": 23439,
+    "reason": "综合 56 分（B 级），名额有限，这一期没进",
+    "score": 56
+   },
+   {
+    "full_name": "milind-soni/OpenMausBot",
+    "stars": 22333,
+    "reason": "2 天前（2026-11-12）推过，冷却 7 天内不重推"
+   },
+   {
+    "full_name": "milind-soni/OpenMausBot",
+    "stars": 22333,
+    "reason": "综合 70 分（A 级），名额有限，这一期没进",
+    "score": 70
+   },
+   {
+    "full_name": "anthropics/claude-quickstarts",
+    "reason": "纯清单/合集，没有可运行的代码，不能交付",
+    "stars": 20890
+   },
+   {
+    "full_name": "Zagitta/gpu-unlock",
+    "stars": 19287,
+    "reason": "综合 44 分（C 级），名额满了"
+   },
+   {
+    "full_name": "Zagitta/gpu-unlock",
+    "stars": 19287,
+    "reason": "综合 44 分（C 级），名额有限，这一期没进",
+    "score": 44
+   },
+   {
+    "full_name": "google-deepmind/mujoco",
+    "stars": 17907,
+    "reason": "综合 60 分（B 级），名额满了"
+   },
+   {
+    "full_name": "google-deepmind/mujoco",
+    "stars": 17907,
+    "reason": "综合 60 分（B 级），名额有限，这一期没进",
+    "score": 60
+   },
+   {
+    "full_name": "we-promise/sure",
+    "stars": 14895,
+    "reason": "综合 48 分（C 级），名额满了"
+   },
+   {
+    "full_name": "we-promise/sure",
+    "stars": 14895,
+    "reason": "综合 48 分（C 级），名额有限，这一期没进",
+    "score": 48
+   },
+   {
+    "full_name": "openai/codex-security",
+    "stars": 13283,
+    "reason": "1 天前（2026-11-13）推过，冷却 7 天内不重推"
+   },
+   {
+    "full_name": "openai/codex-security",
+    "stars": 13283,
+    "reason": "综合 64 分（B 级），名额有限，这一期没进",
+    "score": 64
+   },
+   {
+    "full_name": "NVIDIA/auto-ontology",
+    "stars": 12638,
+    "reason": "1 天前（2026-11-13）推过，冷却 7 天内不重推"
+   },
+   {
+    "full_name": "NVIDIA/auto-ontology",
+    "stars": 12638,
+    "reason": "综合 65 分（A 级），名额有限，这一期没进",
+    "score": 65
+   },
+   {
+    "full_name": "tailscale/tailcat",
+    "stars": 9580,
+    "reason": "综合 60 分（B 级），名额满了"
+   }
+  ]
+ },
+ "focus_tab": {
+  "key": null,
+  "pool": 0,
+  "buckets": {}
+ },
+ "deep": [],
+ "date": "2026-11-14",
+ "archived_at": "2026-11-14T07:25:56"
+}
