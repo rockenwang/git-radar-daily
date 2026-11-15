@@ -56,7 +56,26 @@
     "alibaba/open-code-review",
     "ccch1mneyyy/dsh-Go"
    ]
+  },
+  {
+   "date": "2026-11-15",
+   "mode": "FULL",
+   "focus": "",
+   "scanned": 65,
+   "daily": 8,
+   "focus_n": 0,
+   "deep": 0,
+   "names": [
+    "rddmwmddr/android-ad-cleaner",
+    "JuneYaooo/rea-video",
+    "Jakeschincariol/day-trader-skill",
+    "janestreet/agent_skills",
+    "xiaoyang111222/cn-math-taxonomy",
+    "unclebob/ub-mode",
+    "JuliusBrussee/caveman",
+    "ag-ui-protocol/ag-ui"
+   ]
   }
  ],
- "updated_at": "2026-11-14T07:25:56"
+ "updated_at": "2026-11-15T07:37:30"
 }

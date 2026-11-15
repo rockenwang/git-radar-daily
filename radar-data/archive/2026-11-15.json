@@ -1,0 +1,909 @@
+{
+ "mode": "FULL",
+ "degraded": false,
+ "focus": null,
+ "scanned": 65,
+ "pools": {
+  "daily": 65,
+  "focus": 0
+ },
+ "daily": {
+  "picks": [
+   {
+    "full_name": "rddmwmddr/android-ad-cleaner",
+    "owner": "rddmwmddr",
+    "owner_type": "User",
+    "name": "android-ad-cleaner",
+    "desc": "关掉国产安卓手机系统里的广告、热搜、资讯推荐和营销推送。不 root，可还原，支持 AI 智能体一键执行。",
+    "lang": "Python",
+    "stars": 8070,
+    "forks": 701,
+    "watchers": 16,
+    "open_issues": 196,
+    "license": "MIT",
+    "license_name": "MIT License",
+    "topics": [
+     "adb",
+     "ai-agent",
+     "android",
+     "coloros",
+     "debloat",
+     "hyperos",
+     "magicos",
+     "originos"
+    ],
+    "created_at": "2026-10-24T05:35:47Z",
+    "pushed_at": "2026-11-15T07:33:42Z",
+    "updated_at": "2026-11-15T07:30:38Z",
+    "size_kb": 26713,
+    "archived": false,
+    "has_discussions": false,
+    "has_wiki": false,
+    "homepage": "",
+    "url": "https://github.com/rddmwmddr/android-ad-cleaner",
+    "default_branch": "main",
+    "gained": 0,
+    "since": "created<30d",
+    "source": "search_new",
+    "score": 97,
+    "grade": "S",
+    "grade_word": "今晚就能动手",
+    "form": "引擎库",
+    "velocity": 366.8181818181818,
+    "_gaps": [
+     [
+      "没有一键部署",
+      "没有一键部署",
+      "补一个 Dockerfile + compose，别人一条命令跑起来"
+     ],
+     [
+      "没有在线演示",
+      "没有在线演示",
+      "部署一个公开 demo 站，让人先玩再买单"
+     ]
+    ],
+    "gaps_short": [
+     "没有一键部署",
+     "没有在线演示"
+    ],
+    "risk": "",
+    "suspect": "",
+    "pitch": {
+     "gap_key": "只有代码没有界面",
+     "change": "包一层网页界面，让不会写代码的人点两下就能用",
+     "buyer": "要用这套能力但搞不定环境的人",
+     "buyer_tag": "通用",
+     "deliver": "做成带界面的成品，按份卖（发网盘，附中文说明）",
+     "deliver_alt": "接单代跑：客户给需求，你出结果",
+     "hours": 2,
+     "gap_key_word": "缺一键部署"
+    },
+    "plain": "关掉国产安卓手机系统里的广告、热搜、资讯推荐和营销推送。不 root，可还原，支持 AI 智能体一键执行。",
+    "_bucket": "",
+    "seen_times": 0,
+    "seen_first": "",
+    "seen_last": "",
+    "analy": {
+     "zh": "关掉国产安卓手机系统里的广告、热搜、资讯推荐和营销推送。 不 root，可还原，支持 AI 智能体一键执行。",
+     "plain": "说白了，这是一堆已经写好的能力，但没有界面，得有人包一层壳才能给普通人用。它干的事是：关掉国产安卓手机系统里的广告、热搜、资讯推荐和营销推送。 不 root，可还原，支持 AI 智能体一键执行。",
+     "gap": "包一层网页界面，让不会写代码的人点两下就能用",
+     "buyer": "要用这套能力但搞不定环境的人",
+     "_auto": true,
+     "_src": "mt"
+    }
+   },
+   {
+    "full_name": "JuneYaooo/rea-video",
+    "owner": "JuneYaooo",
+    "owner_type": "User",
+    "name": "rea-video",
+    "desc": "Reverse-engineer any video, shot by shot: filmed, AI-generated or coded, and how to remake it. Breakdowns in the open VIDEO.md format. 逆向一切视频，逐个镜头看是拍的、AI 生成的还是代码做的，再告诉你怎么复刻；拆解结果按 VIDEO.md 格式输出。",
+    "lang": "Python",
+    "stars": 8751,
+    "forks": 1288,
+    "watchers": 18,
+    "open_issues": 5,
+    "license": "Apache-2.0",
+    "license_name": "Apache License 2.0",
+    "topics": [
+     "agent-skills",
+     "ai-video",
+     "aigc-detection",
+     "claude-code",
+     "codex",
+     "ffmpeg",
+     "prompt-engineering",
+     "remotion",
+     "reverse-engineering",
+     "short-video",
+     "shot-detection",
+     "subtitles",
+     "video-analysis",
+     "video-breakdown",
+     "video-editing",
+     "video-generation",
+     "videomd",
+     "vlm"
+    ],
+    "created_at": "2026-10-29T16:15:01Z",
+    "pushed_at": "2026-11-15T04:12:51Z",
+    "updated_at": "2026-11-15T07:37:17Z",
+    "size_kb": 157070,
+    "archived": false,
+    "has_discussions": true,
+    "has_wiki": false,
+    "homepage": "https://www.reavideo.ai/",
+    "url": "https://github.com/JuneYaooo/rea-video",
+    "default_branch": "main",
+    "gained": 0,
+    "since": "created<30d",
+    "source": "search_new",
+    "score": 87,
+    "grade": "S",
+    "grade_word": "今晚就能动手",
+    "form": "Agent技能",
+    "velocity": 546.9375,
+    "_gaps": [
+     [
+      "没有中文上手文档",
+      "没有中文上手文档",
+      "把 README 翻成中文，配一张三步跑通图"
+     ],
+     [
+      "没有一键部署",
+      "没有一键部署",
+      "补一个 Dockerfile + compose，别人一条命令跑起来"
+     ]
+    ],
+    "gaps_short": [
+     "没有中文上手文档",
+     "没有一键部署"
+    ],
+    "risk": "",
+    "suspect": "",
+    "pitch": {
+     "gap_key": "只有英文指令",
+     "change": "改写成中文指令版，加 3 个真实场景的开场白",
+     "buyer": "做短视频的剪辑号",
+     "buyer_tag": "视频",
+     "deliver": "打包成技能文件，配使用教程一起卖",
+     "deliver_alt": "做成付费专栏的一章，当引流钩子",
+     "hours": 5,
+     "gap_key_word": "缺中文上手文档"
+    },
+    "plain": "Reverse-engineer any video, shot by shot: filmed, AI-generated or coded, and how to remake it. Breakdowns in the open VIDEO.md format. 逆向一切视频，逐个镜头看是拍的、AI 生成的还是代码做的，再告诉你怎么复刻；拆解结果按 VIDEO.md 格式输出。",
+    "_bucket": "",
+    "seen_times": 0,
+    "seen_first": "",
+    "seen_last": "",
+    "analy": {
+     "zh": "对任何视频进行逆向工程，逐个镜头：拍摄、人工智能生成或编码，以及如何重新制作它。 以开放的 VIDEO.md 格式提供的明细。 逆向一切视频，逐个镜头看是拍的、AI 生成的还是代码做的，再告诉你怎么复刻；拆解结果按 VIDEO.md 格式输出。",
+     "plain": "说白了，这是一份写给 AI 的操作手册，装进 AI 工具后它就知道按你的规矩干活。它干的事是：对任何视频进行逆向工程，逐个镜头：拍摄、人工智能生成或编码，以及如何重新制作它。 以开放的 VIDEO.md 格式提供的明细。 逆向一切视频，逐个镜头看是拍的、AI 生成的还是代码做的，再告诉你怎么复刻；拆解结果按 VIDEO.md 格式输出。",
+     "gap": "改写成中文指令版，加 3 个真实场景的开场白",
+     "buyer": "做短视频的剪辑号",
+     "_auto": true,
+     "_src": "mt"
+    }
+   },
+   {
+    "full_name": "Jakeschincariol/day-trader-skill",
+    "owner": "Jakeschincariol",
+    "owner_type": "User",
+    "name": "day-trader-skill",
+    "desc": "11 Claude skills for day trading: scan thousands of charts, track breaking news, time every entry and exit, and replay every outcome before you risk a dollar.",
+    "lang": "Python",
+    "stars": 7866,
+    "forks": 1884,
+    "watchers": 106,
+    "open_issues": 61,
+    "license": "MIT",
+    "license_name": "MIT License",
+    "topics": [
+     "backtesting",
+     "claude",
+     "claude-skills",
+     "day-trading",
+     "stock-market"
+    ],
+    "created_at": "2026-10-20T14:17:54Z",
+    "pushed_at": "2026-10-20T14:18:00Z",
+    "updated_at": "2026-11-15T07:25:40Z",
+    "size_kb": 414,
+    "archived": false,
+    "has_discussions": false,
+    "has_wiki": true,
+    "homepage": "",
+    "url": "https://github.com/Jakeschincariol/day-trader-skill",
+    "default_branch": "main",
+    "gained": 0,
+    "since": "created<30d",
+    "source": "search_new",
+    "score": 81,
+    "grade": "S",
+    "grade_word": "今晚就能动手",
+    "form": "Agent技能",
+    "velocity": 314.64,
+    "_gaps": [
+     [
+      "没有中文上手文档",
+      "没有中文上手文档",
+      "把 README 翻成中文，配一张三步跑通图"
+     ],
+     [
+      "没有一键部署",
+      "没有一键部署",
+      "补一个 Dockerfile + compose，别人一条命令跑起来"
+     ]
+    ],
+    "gaps_short": [
+     "没有中文上手文档",
+     "没有一键部署"
+    ],
+    "risk": "",
+    "suspect": "",
+    "pitch": {
+     "gap_key": "没有打包成技能",
+     "change": "整理成可直接安装的技能包，附使用截图",
+     "buyer": "天天用 AI 干活、但不知道装什么的人",
+     "buyer_tag": "通用",
+     "deliver": "做成付费专栏的一章，当引流钩子",
+     "deliver_alt": "接企业内训，教团队把这套装上",
+     "hours": 2,
+     "gap_key_word": "缺中文上手文档"
+    },
+    "plain": "11 Claude skills for day trading: scan thousands of charts, track breaking news, time every entry and exit, and replay every outcome before you risk a dollar.",
+    "_bucket": "",
+    "seen_times": 0,
+    "seen_first": "",
+    "seen_last": "",
+    "analy": {
+     "zh": "克劳德的 11 条日内交易技巧：扫描数千张图表、跟踪突发新闻、为每次入场和出场计时，并在冒险之前重播每个结果。",
+     "plain": "说白了，这是一份写给 AI 的操作手册，装进 AI 工具后它就知道按你的规矩干活。它干的事是：克劳德的 11 条日内交易技巧：扫描数千张图表、跟踪突发新闻、为每次入场和出场计时，并在冒险之前重播每个结果。",
+     "gap": "整理成可直接安装的技能包，附使用截图",
+     "buyer": "天天用 AI 干活、但不知道装什么的人",
+     "_auto": true,
+     "_src": "mt"
+    }
+   },
+   {
+    "full_name": "janestreet/agent_skills",
+    "owner": "janestreet",
+    "owner_type": "Organization",
+    "name": "agent_skills",
+    "desc": "Agent skills",
+    "lang": "",
+    "stars": 8705,
+    "forks": 579,
+    "watchers": 48,
+    "open_issues": 13,
+    "license": "MIT",
+    "license_name": "MIT License",
+    "topics": [],
+    "created_at": "2026-11-03T16:50:21Z",
+    "pushed_at": "2026-11-03T18:14:13Z",
+    "updated_at": "2026-11-15T07:34:01Z",
+    "size_kb": 6,
+    "archived": false,
+    "has_discussions": false,
+    "has_wiki": false,
+    "homepage": "",
+    "url": "https://github.com/janestreet/agent_skills",
+    "default_branch": "master",
+    "gained": 0,
+    "since": "created<30d",
+    "source": "search_new",
+    "score": 69,
+    "grade": "A",
+    "grade_word": "改一改能卖",
+    "form": "Agent技能",
+    "velocity": 791.3636363636364,
+    "_gaps": [
+     [
+      "没有中文上手文档",
+      "没有中文上手文档",
+      "把 README 翻成中文，配一张三步跑通图"
+     ],
+     [
+      "没有一键部署",
+      "没有一键部署",
+      "补一个 Dockerfile + compose，别人一条命令跑起来"
+     ],
+     [
+      "没有在线演示",
+      "没有在线演示",
+      "部署一个公开 demo 站，让人先玩再买单"
+     ]
+    ],
+    "gaps_short": [
+     "没有中文上手文档",
+     "没有一键部署",
+     "没有在线演示"
+    ],
+    "risk": "",
+    "suspect": "星速可疑：11 天涨到 8,705 星（日均 791），先观察一周看有没有真实用户再动手",
+    "pitch": {
+     "gap_key": "没有效果对比",
+     "change": "做前后对比案例，让人一眼看出差别",
+     "buyer": "天天用 AI 干活、但不知道装什么的人",
+     "buyer_tag": "通用",
+     "deliver": "接企业内训，教团队把这套装上",
+     "deliver_alt": "做成定制版：按客户业务流程改一遍，单独报价",
+     "hours": 4,
+     "gap_key_word": "缺中文上手文档"
+    },
+    "plain": "Agent skills",
+    "_bucket": "",
+    "seen_times": 0,
+    "seen_first": "",
+    "seen_last": "",
+    "analy": {
+     "zh": "代理技巧",
+     "plain": "说白了，这是一份写给 AI 的操作手册，装进 AI 工具后它就知道按你的规矩干活。它干的事是：代理技巧",
+     "gap": "做前后对比案例，让人一眼看出差别",
+     "buyer": "天天用 AI 干活、但不知道装什么的人",
+     "_auto": true,
+     "_src": "mt"
+    }
+   },
+   {
+    "full_name": "xiaoyang111222/cn-math-taxonomy",
+    "owner": "xiaoyang111222",
+    "owner_type": "User",
+    "name": "cn-math-taxonomy",
+    "desc": "数学（小学到高中）、英语（三年级到高中）、初中物理的知识图谱：1644 个知识点、2403 条先修边、6723 道题，对齐课标，附自适应前置诊断。",
+    "lang": "Python",
+    "stars": 8083,
+    "forks": 2165,
+    "watchers": 39,
+    "open_issues": 33,
+    "license": "NOASSERTION",
+    "license_name": "Other",
+    "topics": [
+     "chinese",
+     "curriculum",
+     "diagnostic",
+     "edtech",
+     "education",
+     "elementary-school",
+     "english",
+     "high-school",
+     "junior-high-school",
+     "k12",
+     "knowledge-graph",
+     "math",
+     "mathematics",
+     "middle-school",
+     "open-data",
+     "primary-school"
+    ],
+    "created_at": "2026-10-18T09:04:43Z",
+    "pushed_at": "2026-11-14T13:00:00Z",
+    "updated_at": "2026-11-15T07:19:53Z",
+    "size_kb": 46320,
+    "archived": false,
+    "has_discussions": false,
+    "has_wiki": true,
+    "homepage": "https://math.pansgo.com/",
+    "url": "https://github.com/xiaoyang111222/cn-math-taxonomy",
+    "default_branch": "main",
+    "gained": 0,
+    "since": "created<30d",
+    "source": "search_new",
+    "score": 69,
+    "grade": "A",
+    "grade_word": "改一改能卖",
+    "form": "引擎库",
+    "velocity": 299.3703703703704,
+    "_gaps": [
+     [
+      "没有一键部署",
+      "没有一键部署",
+      "补一个 Dockerfile + compose，别人一条命令跑起来"
+     ]
+    ],
+    "gaps_short": [
+     "没有一键部署"
+    ],
+    "risk": "许可证不明，动手前去 README 确认一遍",
+    "suspect": "",
+    "pitch": {
+     "gap_key": "没有中文上手文档",
+     "change": "把 README 翻成中文，配一张「三步跑通」流程图",
+     "buyer": "小微企业老板和会计",
+     "buyer_tag": "财税",
+     "deliver": "接单代跑：客户给需求，你出结果",
+     "deliver_alt": "做成中文教程 + 成品包，走知识付费",
+     "hours": 2,
+     "gap_key_word": "缺一键部署"
+    },
+    "plain": "数学（小学到高中）、英语（三年级到高中）、初中物理的知识图谱：1644 个知识点、2403 条先修边、6723 道题，对齐课标，附自适应前置诊断。",
+    "_bucket": "",
+    "seen_times": 0,
+    "seen_first": "",
+    "seen_last": "",
+    "analy": {
+     "zh": "数学（小学到高中）、英语（三年级到高中）、初中物理的知识图谱：1644 个知识点、2403 条先修边、6723 道题，对齐课标，附自适应前置诊断。",
+     "plain": "说白了，这是一堆已经写好的能力，但没有界面，得有人包一层壳才能给普通人用。它干的事是：数学（小学到高中）、英语（三年级到高中）、初中物理的知识图谱：1644 个知识点、2403 条先修边、6723 道题，对齐课标，附自适应前置诊断。",
+     "gap": "把 README 翻成中文，配一张「三步跑通」流程图",
+     "buyer": "小微企业老板和会计",
+     "_auto": true,
+     "_src": "rule"
+    }
+   },
+   {
+    "full_name": "unclebob/ub-mode",
+    "owner": "unclebob",
+    "owner_type": "User",
+    "name": "ub-mode",
+    "desc": "",
+    "lang": "",
+    "stars": 7978,
+    "forks": 455,
+    "watchers": 63,
+    "open_issues": 12,
+    "license": "MIT",
+    "license_name": "MIT License",
+    "topics": [],
+    "created_at": "2026-10-25T16:04:09Z",
+    "pushed_at": "2026-11-02T15:08:31Z",
+    "updated_at": "2026-11-15T07:13:24Z",
+    "size_kb": 2,
+    "archived": false,
+    "has_discussions": false,
+    "has_wiki": true,
+    "homepage": "",
+    "url": "https://github.com/unclebob/ub-mode",
+    "default_branch": "master",
+    "gained": 0,
+    "since": "created<30d",
+    "source": "search_new",
+    "score": 69,
+    "grade": "A",
+    "grade_word": "改一改能卖",
+    "form": "引擎库",
+    "velocity": 398.9,
+    "_gaps": [
+     [
+      "没有中文上手文档",
+      "没有中文上手文档",
+      "把 README 翻成中文，配一张三步跑通图"
+     ],
+     [
+      "没有一键部署",
+      "没有一键部署",
+      "补一个 Dockerfile + compose，别人一条命令跑起来"
+     ],
+     [
+      "没有在线演示",
+      "没有在线演示",
+      "部署一个公开 demo 站，让人先玩再买单"
+     ]
+    ],
+    "gaps_short": [
+     "没有中文上手文档",
+     "没有一键部署",
+     "没有在线演示"
+    ],
+    "risk": "",
+    "suspect": "",
+    "pitch": {
+     "gap_key": "没有现成案例",
+     "change": "补 3 个真实场景示例，每个都能直接跑出结果",
+     "buyer": "要用这套能力但搞不定环境的人",
+     "buyer_tag": "通用",
+     "deliver": "做成中文教程 + 成品包，走知识付费",
+     "deliver_alt": "封装成 API 出租，按调用量收费",
+     "hours": 4,
+     "gap_key_word": "缺中文上手文档"
+    },
+    "plain": "作者没写简介，得打开仓库才知道是什么",
+    "_bucket": "",
+    "seen_times": 0,
+    "seen_first": "",
+    "seen_last": "",
+    "analy": {
+     "zh": "`ub-mode` 是一种代理技能，在编写或更改代码时强制执行规范的软件工程原则。它大致基于的规则（`poteto-mode` / `pstack`）的部分内容，经过简化并与确定性质量门工具相结合：",
+     "plain": "说白了，这是一堆已经写好的能力，但没有界面，得有人包一层壳才能给普通人用。它干的事是：`ub-mode` 是一种代理技能，在编写或更改代码时强制执行规范的软件工程原则。它大致基于的规则（`poteto-mode` / `pstack`）的部分内容，经过简化并与确定性质量门工具相结合：",
+     "gap": "补 3 个真实场景示例，每个都能直接跑出结果",
+     "buyer": "要用这套能力但搞不定环境的人",
+     "_auto": true,
+     "_src": "mt"
+    }
+   },
+   {
+    "full_name": "JuliusBrussee/caveman",
+    "owner": "JuliusBrussee",
+    "owner_type": "User",
+    "name": "caveman",
+    "desc": "🪨 why use many token when few token do trick. Viral skill + proxy for coding agents that cuts 65% of tokens by talking like a caveman.",
+    "lang": "Go",
+    "stars": 120191,
+    "forks": 7007,
+    "watchers": 259,
+    "open_issues": 88,
+    "license": "Apache-2.0",
+    "license_name": "Apache License 2.0",
+    "topics": [
+     "ai",
+     "anthropic",
+     "caveman",
+     "claude",
+     "claude-code",
+     "llm",
+     "meme",
+     "prompt-engineering",
+     "skill",
+     "tokens"
+    ],
+    "created_at": "2026-04-04T10:03:00Z",
+    "pushed_at": "2026-11-15T07:19:16Z",
+    "updated_at": "2026-11-15T07:36:52Z",
+    "size_kb": 21974,
+    "archived": false,
+    "has_discussions": true,
+    "has_wiki": true,
+    "homepage": "https://docs.caveman.so/caveman",
+    "url": "https://github.com/JuliusBrussee/caveman",
+    "default_branch": "main",
+    "gained": 227,
+    "since": "daily",
+    "source": "trending",
+    "score": 67,
+    "grade": "A",
+    "grade_word": "改一改能卖",
+    "form": "Agent技能",
+    "velocity": 227.0,
+    "_gaps": [
+     [
+      "没有中文上手文档",
+      "没有中文上手文档",
+      "把 README 翻成中文，配一张三步跑通图"
+     ],
+     [
+      "没有一键部署",
+      "没有一键部署",
+      "补一个 Dockerfile + compose，别人一条命令跑起来"
+     ]
+    ],
+    "gaps_short": [
+     "没有中文上手文档",
+     "没有一键部署"
+    ],
+    "risk": "体量太大，改源码成本高，建议只做外围服务",
+    "suspect": "",
+    "pitch": {
+     "gap_key": "场景全是国外的",
+     "change": "把示例换成国内的活（公众号/小红书/电商），别用国外 demo",
+     "buyer": "买了 AI 会员却只用来聊天的人",
+     "buyer_tag": "通用",
+     "deliver": "做成定制版：按客户业务流程改一遍，单独报价",
+     "deliver_alt": "做成定制版：按客户业务流程改一遍，单独报价",
+     "hours": 2,
+     "gap_key_word": "缺中文上手文档"
+    },
+    "plain": "why use many token when few token do trick. Viral skill + proxy for coding agents that cuts 65% of tokens by talking like a caveman.",
+    "_bucket": "",
+    "seen_times": 0,
+    "seen_first": "",
+    "seen_last": "",
+    "analy": {
+     "zh": "当很少的令牌可以欺骗时为什么要使用很多令牌。病毒式技能 + 编码代理的代理，通过像穴居人一样说话来减少 65% 的代币。",
+     "plain": "说白了，这是一份写给 AI 的操作手册，装进 AI 工具后它就知道按你的规矩干活。它干的事是：当很少的令牌可以欺骗时为什么要使用很多令牌。病毒式技能 + 编码代理的代理，通过像穴居人一样说话来减少 65% 的代币。",
+     "gap": "把示例换成国内的活（公众号/小红书/电商），别用国外 demo",
+     "buyer": "买了 AI 会员却只用来聊天的人",
+     "_auto": true,
+     "_src": "mt"
+    }
+   },
+   {
+    "full_name": "ag-ui-protocol/ag-ui",
+    "owner": "ag-ui-protocol",
+    "owner_type": "Organization",
+    "name": "ag-ui",
+    "desc": "AG-UI: the Agent-User Interaction Protocol. Bring Agents into Frontend Applications.",
+    "lang": "TypeScript",
+    "stars": 17472,
+    "forks": 1724,
+    "watchers": 97,
+    "open_issues": 591,
+    "license": "MIT",
+    "license_name": "MIT License",
+    "topics": [
+     "ag-ui-protocol",
+     "agent-frontend",
+     "agent-ui",
+     "agentic-workflow",
+     "ai-agents"
+    ],
+    "created_at": "2025-05-07T12:49:37Z",
+    "pushed_at": "2026-11-15T02:26:33Z",
+    "updated_at": "2026-11-15T07:36:12Z",
+    "size_kb": 89109,
+    "archived": false,
+    "has_discussions": true,
+    "has_wiki": true,
+    "homepage": "https://ag-ui.com",
+    "url": "https://github.com/ag-ui-protocol/ag-ui",
+    "default_branch": "main",
+    "gained": 9,
+    "since": "daily",
+    "source": "trending",
+    "score": 64,
+    "grade": "B",
+    "grade_word": "值得研究",
+    "form": "引擎库",
+    "velocity": 9.0,
+    "_gaps": [
+     [
+      "没有中文上手文档",
+      "没有中文上手文档",
+      "把 README 翻成中文，配一张三步跑通图"
+     ],
+     [
+      "没有一键部署",
+      "没有一键部署",
+      "补一个 Dockerfile + compose，别人一条命令跑起来"
+     ]
+    ],
+    "gaps_short": [
+     "没有中文上手文档",
+     "没有一键部署"
+    ],
+    "risk": "",
+    "suspect": "",
+    "pitch": {
+     "gap_key": "环境装不上",
+     "change": "打包成 Docker 镜像或一键脚本，把依赖全封死",
+     "buyer": "接外包时缺一个现成轮子的人",
+     "buyer_tag": "通用",
+     "deliver": "封装成 API 出租，按调用量收费",
+     "deliver_alt": "封装成 API 出租，按调用量收费",
+     "hours": 4,
+     "gap_key_word": "缺中文上手文档"
+    },
+    "plain": "AG-UI: the Agent-User Interaction Protocol. Bring Agents into Frontend Applications.",
+    "_bucket": "",
+    "seen_times": 0,
+    "seen_first": "",
+    "seen_last": "",
+    "analy": {
+     "zh": "AG-UI：代理-用户交互协议。将代理引入前端应用程序。",
+     "plain": "说白了，这是一堆已经写好的能力，但没有界面，得有人包一层壳才能给普通人用。它干的事是：AG-UI：代理-用户交互协议。将代理引入前端应用程序。",
+     "gap": "打包成 Docker 镜像或一键脚本，把依赖全封死",
+     "buyer": "接外包时缺一个现成轮子的人",
+     "_auto": true,
+     "_src": "mt"
+    }
+   }
+  ],
+  "dropped": [
+   {
+    "full_name": "anthropics/skills",
+    "stars": 194753,
+    "reason": "综合 48 分（C 级），名额满了"
+   },
+   {
+    "full_name": "anthropics/skills",
+    "stars": 194753,
+    "reason": "综合 48 分（C 级），名额有限，这一期没进",
+    "score": 48
+   },
+   {
+    "full_name": "addyosmani/agent-skills",
+    "stars": 117672,
+    "reason": "2 天前（2026-11-13）推过，冷却 7 天内不重推"
+   },
+   {
+    "full_name": "addyosmani/agent-skills",
+    "stars": 117672,
+    "reason": "综合 68 分（A 级），名额有限，这一期没进",
+    "score": 68
+   },
+   {
+    "full_name": "sherlock-project/sherlock",
+    "stars": 111938,
+    "reason": "综合 59 分（B 级），名额满了"
+   },
+   {
+    "full_name": "sherlock-project/sherlock",
+    "stars": 111938,
+    "reason": "综合 59 分（B 级），名额有限，这一期没进",
+    "score": 59
+   },
+   {
+    "full_name": "louislam/uptime-kuma",
+    "stars": 94330,
+    "reason": "1 天前（2026-11-14）推过，冷却 7 天内不重推"
+   },
+   {
+    "full_name": "louislam/uptime-kuma",
+    "stars": 94330,
+    "reason": "综合 68 分（A 级），名额有限，这一期没进",
+    "score": 68
+   },
+   {
+    "full_name": "ZhuLinsen/daily_stock_analysis",
+    "stars": 72322,
+    "reason": "1 天前（2026-11-14）推过，冷却 7 天内不重推"
+   },
+   {
+    "full_name": "ZhuLinsen/daily_stock_analysis",
+    "stars": 72322,
+    "reason": "综合 76 分（A 级），名额有限，这一期没进",
+    "score": 76
+   },
+   {
+    "full_name": "Gathin23/cleanyourtv",
+    "stars": 57975,
+    "reason": "综合 56 分（B 级），名额满了"
+   },
+   {
+    "full_name": "Gathin23/cleanyourtv",
+    "stars": 57975,
+    "reason": "综合 56 分（B 级），名额有限，这一期没进",
+    "score": 56
+   },
+   {
+    "full_name": "ChromeDevTools/chrome-devtools-mcp",
+    "stars": 56481,
+    "reason": "综合 59 分（B 级），名额满了"
+   },
+   {
+    "full_name": "ChromeDevTools/chrome-devtools-mcp",
+    "stars": 56481,
+    "reason": "综合 59 分（B 级），名额有限，这一期没进",
+    "score": 59
+   },
+   {
+    "full_name": "alibaba/open-code-review",
+    "stars": 51589,
+    "reason": "1 天前（2026-11-14）推过，冷却 7 天内不重推"
+   },
+   {
+    "full_name": "alibaba/open-code-review",
+    "stars": 51589,
+    "reason": "综合 62 分（B 级），名额有限，这一期没进",
+    "score": 62
+   },
+   {
+    "full_name": "vercel-labs/agent-browser",
+    "stars": 51317,
+    "reason": "综合 56 分（B 级），名额满了"
+   },
+   {
+    "full_name": "vercel-labs/agent-browser",
+    "stars": 51317,
+    "reason": "综合 56 分（B 级），名额有限，这一期没进",
+    "score": 56
+   },
+   {
+    "full_name": "QwenLM/qwen-code",
+    "stars": 30427,
+    "reason": "综合 60 分（B 级），名额满了"
+   },
+   {
+    "full_name": "QwenLM/qwen-code",
+    "stars": 30427,
+    "reason": "综合 60 分（B 级），名额有限，这一期没进",
+    "score": 60
+   },
+   {
+    "full_name": "meta/astryx",
+    "stars": 28323,
+    "reason": "3 天前（2026-11-12）推过，冷却 7 天内不重推"
+   },
+   {
+    "full_name": "meta/astryx",
+    "stars": 28323,
+    "reason": "综合 68 分（A 级），名额有限，这一期没进",
+    "score": 68
+   },
+   {
+    "full_name": "dream-num/univer",
+    "stars": 25106,
+    "reason": "综合 62 分（B 级），名额满了"
+   },
+   {
+    "full_name": "dream-num/univer",
+    "stars": 25106,
+    "reason": "综合 62 分（B 级），名额有限，这一期没进",
+    "score": 62
+   },
+   {
+    "full_name": "milind-soni/OpenMausBot",
+    "stars": 22914,
+    "reason": "3 天前（2026-11-12）推过，冷却 7 天内不重推"
+   },
+   {
+    "full_name": "milind-soni/OpenMausBot",
+    "stars": 22914,
+    "reason": "综合 70 分（A 级），名额有限，这一期没进",
+    "score": 70
+   },
+   {
+    "full_name": "anthropics/claude-quickstarts",
+    "reason": "纯清单/合集，没有可运行的代码，不能交付",
+    "stars": 21008
+   },
+   {
+    "full_name": "Zagitta/gpu-unlock",
+    "stars": 19599,
+    "reason": "综合 44 分（C 级），名额满了"
+   },
+   {
+    "full_name": "Zagitta/gpu-unlock",
+    "stars": 19599,
+    "reason": "综合 44 分（C 级），名额有限，这一期没进",
+    "score": 44
+   },
+   {
+    "full_name": "google/elephant-goldfish-model",
+    "stars": 19318,
+    "reason": "1 天前（2026-11-14）推过，冷却 7 天内不重推"
+   },
+   {
+    "full_name": "google/elephant-goldfish-model",
+    "stars": 19318,
+    "reason": "综合 85 分（S 级），名额有限，这一期没进",
+    "score": 85
+   },
+   {
+    "full_name": "google-deepmind/mujoco",
+    "stars": 18010,
+    "reason": "综合 60 分（B 级），名额满了"
+   },
+   {
+    "full_name": "google-deepmind/mujoco",
+    "stars": 18010,
+    "reason": "综合 60 分（B 级），名额有限，这一期没进",
+    "score": 60
+   },
+   {
+    "full_name": "we-promise/sure",
+    "stars": 15441,
+    "reason": "综合 48 分（C 级），名额满了"
+   },
+   {
+    "full_name": "we-promise/sure",
+    "stars": 15441,
+    "reason": "综合 48 分（C 级），名额有限，这一期没进",
+    "score": 48
+   },
+   {
+    "full_name": "backnotprop/plannotator",
+    "stars": 11380,
+    "reason": "1 天前（2026-11-14）推过，冷却 7 天内不重推"
+   },
+   {
+    "full_name": "backnotprop/plannotator",
+    "stars": 11380,
+    "reason": "综合 68 分（A 级），名额有限，这一期没进",
+    "score": 68
+   },
+   {
+    "full_name": "anefzaoui/misterdownloadmanager",
+    "stars": 9750,
+    "reason": "综合 59 分（B 级），名额满了"
+   },
+   {
+    "full_name": "anefzaoui/misterdownloadmanager",
+    "stars": 9750,
+    "reason": "综合 59 分（B 级），名额有限，这一期没进",
+    "score": 59
+   },
+   {
+    "full_name": "zortos293/Lichii",
+    "stars": 9238,
+    "reason": "综合 47 分（C 级），名额满了"
+   }
+  ]
+ },
+ "focus_tab": {
+  "key": null,
+  "pool": 0,
+  "buckets": {}
+ },
+ "deep": [],
+ "date": "2026-11-15",
+ "archived_at": "2026-11-15T07:37:30"
+}

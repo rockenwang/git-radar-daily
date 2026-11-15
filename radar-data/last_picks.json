@@ -1,65 +1,174 @@
 {
- "date": "2026-11-14",
+ "date": "2026-11-15",
  "picks": [
   {
-   "full_name": "google/elephant-goldfish-model",
-   "owner": "google",
-   "owner_type": "Organization",
-   "name": "elephant-goldfish-model",
-   "desc": "Open-source plugin for designing and reviewing software with agents",
+   "full_name": "rddmwmddr/android-ad-cleaner",
+   "owner": "rddmwmddr",
+   "owner_type": "User",
+   "name": "android-ad-cleaner",
+   "desc": "关掉国产安卓手机系统里的广告、热搜、资讯推荐和营销推送。不 root，可还原，支持 AI 智能体一键执行。",
    "lang": "Python",
-   "stars": 18737,
-   "forks": 1399,
-   "watchers": 76,
-   "open_issues": 104,
+   "stars": 8070,
+   "forks": 701,
+   "watchers": 16,
+   "open_issues": 196,
+   "license": "MIT",
+   "license_name": "MIT License",
+   "topics": [
+    "adb",
+    "ai-agent",
+    "android",
+    "coloros",
+    "debloat",
+    "hyperos",
+    "magicos",
+    "originos"
+   ],
+   "created_at": "2026-10-24T05:35:47Z",
+   "pushed_at": "2026-11-15T07:33:42Z",
+   "updated_at": "2026-11-15T07:30:38Z",
+   "size_kb": 26713,
+   "archived": false,
+   "has_discussions": false,
+   "has_wiki": false,
+   "homepage": "",
+   "url": "https://github.com/rddmwmddr/android-ad-cleaner",
+   "default_branch": "main",
+   "readme": "# 肉呆去广告\n\n关掉国产安卓手机系统里的广告、热搜、资讯推荐和营销推送。\n\n介绍页：**https://rddmwmddr.github.io/android-ad-cleaner/**\n\n如果大家有其他需求可以加VX和电报群：\n\nhttps://t.me/+A5X3Mxzs-Cg3NjYx\n\n<img width=\"1080\" height=\"1596\" alt=\"IMG_7235\" src=\"https://github.com/user-attachments/assets/6197911c-7b6d-47eb-a698-107b99865aee\" />\n\n\n## 下载桌面客户端\n\n插上手机，点几下按钮。不需要 Python，也不需要 AI 工具。\n\n> **v0.4.4 · 2026-11-13**：这一版给一加 16 与真我 GT5 Pro 补了机型脚本，修好了长列表页只关最后一段、vivo 锁屏段一直没生效等几处问题；引擎里把各机型脚本里重复的段体与导航收成共用一份，用起来不变。0.4.1 及以前没有应用内更新，要先手动装一次 0.4.2；从 0.4.2 起可以在 App 里检查、下载并安装更新，手机版仍需在系统弹窗里确认；0.2.7 起的客户端左下角会提示新版；请重新下载，已有备份会保留。详见 [更新记录](CHANGELOG.md)，错误日志上报说明见 [这里](docs/12-错误日志上报.md)。官网：https://ahuamiao.com/sites/other/android-ad-removal-intro.html\n\n此前版本已处理 Windows 本地页面超时、荣耀截图越界、通知渠道误操作风险、vivo 快应用与备份问题。各 Issue 的处理范围和待验证项见 [社区问题处理记录](docs/09-社区问题处理.md)。0.4.2 起 Mac / Windows 客户端也能连纯血鸿蒙手机，这条通道还没有在鸿蒙真机上复测，见 [鸿蒙接入说明](harmony/README.md)。\n\n| 设备 | 下载 | 说明 |\n|---|---|---|\n| Mac · Apple 芯片（M1 及以后） | [AndroidAdCleaner-0.4.4-mac-arm64.dmg](https://github.com/rddmwmddr/android-ad-cleaner/releases/download/v0.4.4/AndroidAdCleaner-0.4.4-mac-arm64.dmg) | 已签名、通过苹果公证，双击就能打开 |\n| Mac · Intel 芯片（macOS 11 及以上） | [AndroidAdCleaner-0.4.4-mac-intel.dmg](https://github.com/rddmwmddr/android-ad-cleaner/releases/download/v0.4.4/AndroidAdCleaner-0.4.4-mac-intel.dmg) | 同上 |\n| Windows 10 / 11 · 安装版 | [AndroidAdCleaner-0.4.4-windows-setup.exe](https://github.com/rddmwmddr/android-ad-cleaner/releases/download/v0.4.4/AndroidAdCleaner-0.4.4-windows-setup.exe) | 弹「Windows 已保护你的电脑」时点「更多信息」→「仍要运行」；和旧版共用安装标识，会原地升级 |\n| Windows 10 / 11 · 免安装 | [AndroidAdCleaner-0.4.4-windows-portable.zip](https://github.com/rddmwmddr/android-ad-cleaner/releases/download/v0.4.4/AndroidAdCleaner-0.4.4-windows-portable.zip) | 解压后双击 `AndroidAdCleaner.exe`；不会替换、也不会卸载已安装的旧版 |\n| 安卓手机 · 手机版（安卓 11 及以上） | [AndroidAdCleaner-0.4.4-android-arm64.apk](https://github.com/rddmwmddr/android-ad-cleaner/releases/download/v0.4.4/AndroidAdCleaner-0.4.4-android-arm64.apk) | 不用连电脑，安装和授权见[手机版教程](docs/手机版教程/README.md) |\n\n不知道 Mac 是哪种芯片：左上角苹果图标 → 关于本机，「芯片」写 Apple M 开头的选 Apple 芯片。所有版本：[Releases](https://github.com/rddmwmddr/android-ad-cleaner/releases)；国内下载走 [Gitee](https://gitee.com/rddmw/android-ad-cleaner/releases)，不用登录（Windows 安装版只在 GitHub 上）。国内走 Gitee 时拿到的是 Windows 免安装版，它不会替换已安装的旧版：要顶掉旧版，用安装版覆盖安装，或先在 Windows「设置」的应用列表里卸载旧的「安卓去广告」（0.3.2 及更早版本装的名字）再删掉旧快捷方式；卸载只删程序目录，数据与备份保留；免安装版启动时若发现旧版还在，也会在界面里提示一次。用法：[docs/08-桌面客户端.md](docs/08-桌面客户端.md)。\n\n> 手机版是不用连电脑的安卓 App（见下面[用法五](#五种用法)）：安装包在上面的表里，安装、授权与还原步骤见[手机版教程](docs/手机版教程/README.md)；想自己构建看 [android/](android/README.md)。\n\n| | |\n|---|---|\n| <img src=\"images/gui-1-connect.png\" alt=\"连接手机\"><br>**1 连接手机**：插线即认出手机，内置开启 USB 调试的图文教程 | <img src=\"images/gui-3-detect.png\" alt=\"检测\"><br>**2 检测**：型号、系统版本、机型脚本、快应用、广告组件 |\n| <img src=\"images/gui-4-choose.png\" alt=\"选择\"><br>**3 选择要关的**：营销通知按渠道勾选，服务类默认不勾 | <img src=\"images/gui-6-run.png\" alt=\"执行\"><br>**4 执行**：进度条和实时日志 |\n| <img src=\"images/gui-7-done.png\" alt=\"完成\"><br>**5 完成**：每一步的结果，最后提醒关闭开发者模式 | <img src=\"images/gui-8-feedback.png\" alt=\"反馈\"><br>**反馈**：自动附诊断信息，一键提交 GitHub Issue |\n\n---\n\n\n- 不 root，不解锁，不刷机，系统更新不受影响。\n- 只拨系统和 App 自带的开关。挂起广告包这一步要机主点头，一条命令可以还原。\n- 搜索、负一屏卡片、应用商店的安装和更新、天气预警、快递提醒，这些功能保留。\n\n<p align=\"center\"><img src=\"images/store-before.png\" width=\"560\" alt=\"改之前：软件商店首页满屏推荐\"></p>\n<p align=\"center\">改之前：OPPO 软件商店首页。轮播图、必备、必玩、福利标签，全是推广位。</p>\n\n---\n\n## 处理哪些东西\n\n| 类别 | 例子 | 怎么处理 |\n|---|---|---|\n| 系统广告 | 个性化广告、广告跟踪（OAID）、智能推荐服务 | 系统设置里的开关 |\n| 热搜和资讯 | 下拉搜索的热榜、负一屏资讯、浏览器信息流 | 各 App 设置里的开关，浏览器切到简洁首页 |\n| 推广位 | 商店的轮播、开屏、悬浮活动、签到福利 | 商店「服务管理」里的开关 |\n| 营销推送 | 各 App 的「内容与营销」「活动优惠」通知 | 按渠道关，同一个 App 的订单、快递、更新通知保留 |\n| 广告组件 | `com.opos.ads`、`com.miui.systemAdSolution` 等 | `pm suspend` 挂起，要机主同意 |\n| 快应用 | 广告里一点就跳进去的「免安装小程序」 | `quickapp` 检测，`quickapp off` 关闭，见 [docs/07-快应用.md](docs/07-快应用.md) |\n\n## 不做的事\n\n- 不卸载、不停用系统应用（`pm uninstall`、`pm disable-user` 都不用）。\n- 不改 system 分区，不装模块。\n- 不替你同意任何 App 的用户协议。遇到协议页，点「取消」或「以后再说」。\n- 不截账号页和手机号页。\n\n---\n\n## 五种用法\n\n<p align=\"center\"><img src=\"images/ways.png\" width=\"460\" alt=\"用法示意\"></p>\n\n> 用法一要先在手机上打开开",
+   "gained": 0,
+   "since": "created<30d",
+   "source": "search_new",
+   "score": 97,
+   "detail": {
+    "lic": 25,
+    "easy": 20,
+    "zh": 15,
+    "demand": 20,
+    "deliver": 7,
+    "fresh": 10,
+    "adj": 0
+   },
+   "grade": "S",
+   "grade_word": "今晚就能动手",
+   "form": "引擎库",
+   "velocity": 366.8181818181818,
+   "_gaps": [
+    [
+     "没有一键部署",
+     "没有一键部署",
+     "补一个 Dockerfile + compose，别人一条命令跑起来"
+    ],
+    [
+     "没有在线演示",
+     "没有在线演示",
+     "部署一个公开 demo 站，让人先玩再买单"
+    ]
+   ],
+   "gaps_short": [
+    "没有一键部署",
+    "没有在线演示"
+   ],
+   "risk": "",
+   "suspect": "",
+   "pitch": {
+    "gap_key": "只有代码没有界面",
+    "change": "包一层网页界面，让不会写代码的人点两下就能用",
+    "buyer": "要用这套能力但搞不定环境的人",
+    "buyer_tag": "通用",
+    "deliver": "做成带界面的成品，按份卖（发网盘，附中文说明）",
+    "deliver_alt": "接单代跑：客户给需求，你出结果",
+    "hours": 2,
+    "gap_key_word": "缺一键部署"
+   },
+   "plain": "关掉国产安卓手机系统里的广告、热搜、资讯推荐和营销推送。不 root，可还原，支持 AI 智能体一键执行。",
+   "analy": {
+    "en": "关掉国产安卓手机系统里的广告、热搜、资讯推荐和营销推送。不 root，可还原，支持 AI 智能体一键执行。",
+    "zh": "关掉国产安卓手机系统里的广告、热搜、资讯推荐和营销推送。 不 root，可还原，支持 AI 智能体一键执行。",
+    "plain": "说白了，这是一堆已经写好的能力，但没有界面，得有人包一层壳才能给普通人用。它干的事是：关掉国产安卓手机系统里的广告、热搜、资讯推荐和营销推送。 不 root，可还原，支持 AI 智能体一键执行。",
+    "usage": [
+     "接到同类需求时拿它当底子，省掉搭骨架的两三天",
+     "包一层网页界面，做成给非技术人用的成品",
+     "集成进自己的项目，跳过从零写这一段"
+    ],
+    "how": [
+     "按 README 装依赖（这一步最容易卡住）",
+     "跑一个作者给的示例，确认能出结果",
+     "把自己的数据/需求换成示例里的输入"
+    ],
+    "gap": "包一层网页界面，让不会写代码的人点两下就能用",
+    "buyer": "要用这套能力但搞不定环境的人",
+    "why": "要用这套能力但搞不定环境的人不是不会做，是懒得为这一步花两三天试错。你把「包一层网页界面，让不会写代码的人点两下就能用」替他们做完，他们花的钱远少于自己折腾的时间。",
+    "self": "接到类似需求直接拿它当底子，省掉搭骨架的两三天；顺手把它当成自己的技术储备，下次报价敢往上抬。",
+    "pack": "包一层网页界面，录一段 3 分钟演示，按份卖；买家买的不是代码，是「不用装环境」。落地上就按这条走：做成带界面的成品，按份卖（发网盘，附中文说明）。",
+    "_auto": true,
+    "_src": "mt"
+   },
+   "_bucket": "",
+   "seen_times": 0,
+   "seen_first": "",
+   "seen_last": ""
+  },
+  {
+   "full_name": "JuneYaooo/rea-video",
+   "owner": "JuneYaooo",
+   "owner_type": "User",
+   "name": "rea-video",
+   "desc": "Reverse-engineer any video, shot by shot: filmed, AI-generated or coded, and how to remake it. Breakdowns in the open VIDEO.md format. 逆向一切视频，逐个镜头看是拍的、AI 生成的还是代码做的，再告诉你怎么复刻；拆解结果按 VIDEO.md 格式输出。",
+   "lang": "Python",
+   "stars": 8751,
+   "forks": 1288,
+   "watchers": 18,
+   "open_issues": 5,
    "license": "Apache-2.0",
    "license_name": "Apache License 2.0",
    "topics": [
     "agent-skills",
-    "ai-agents",
-    "antigravity",
+    "ai-video",
+    "aigc-detection",
     "claude-code",
-    "claude-code-plugin",
-    "claude-skills",
     "codex",
-    "codex-plugin",
-    "coding-agents",
-    "context-engineering",
-    "developer-tools",
-    "gemini",
-    "llm",
-    "multi-agent",
+    "ffmpeg",
     "prompt-engineering",
-    "spec-driven-development"
+    "remotion",
+    "reverse-engineering",
+    "short-video",
+    "shot-detection",
+    "subtitles",
+    "video-analysis",
+    "video-breakdown",
+    "video-editing",
+    "video-generation",
+    "videomd",
+    "vlm"
    ],
-   "created_at": "2026-09-13T16:31:06Z",
-   "pushed_at": "2026-11-14T03:30:16Z",
-   "updated_at": "2026-11-14T07:11:19Z",
-   "size_kb": 15141,
+   "created_at": "2026-10-29T16:15:01Z",
+   "pushed_at": "2026-11-15T04:12:51Z",
+   "updated_at": "2026-11-15T07:37:17Z",
+   "size_kb": 157070,
    "archived": false,
    "has_discussions": true,
    "has_wiki": false,
-   "homepage": "https://egm.dev",
-   "url": "https://github.com/google/elephant-goldfish-model",
+   "homepage": "https://www.reavideo.ai/",
+   "url": "https://github.com/JuneYaooo/rea-video",
    "default_branch": "main",
-   "readme": "<p align=\"center\">\n  <a href=\"https://egm.dev\"><img src=\"docs/assets/readme-header.svg\" width=\"480\" height=\"116\" alt=\"Elephant-Goldfish Model\"></a>\n</p>\n\n<p align=\"center\">Design with an elephant. Review with a goldfish.</p>\n\n<p align=\"center\">\n  <a href=\"#install\">Install</a> &ensp;·&ensp;\n  <a href=\"#try-your-first-design\">Quickstart</a> &ensp;·&ensp;\n  <a href=\"docs/getting_started.md\">Documentation</a> &ensp;·&ensp;\n  <a href=\"https://egm.dev\">Website</a>\n</p>\n\n<br>\n\nDevelop ideas with context and review documents with fresh eyes. EGM is an open-source plugin for AI assistants.\n\n**Elephant** holds your project context and drafts the specification. **Goldfish** reviewers examine the draft and referenced source material without the earlier conversation, helping expose unstated assumptions and blind spots. **You** make the architectural trade-offs and approve the specification before implementing.\n\nThe built-in draft and design-review workflow targets software specifications. For other documents, choose reviewers and standards with `/egm-review-loop`. Bootstrap and drift reporting apply to software codebases.\n\nhttps://github.com/user-attachments/assets/93c799a2-10a3-4266-af02-eb79dd33a9a2\n\n## Install\n\nChoose your coding agent. Install the complete plugin so its skills can read the reviewer prompts and document standards.\n\n### ChatGPT and Codex desktop\n\nOpen the [published EGM plugin](https://chatgpt.com/plugins/plugins_6aeb90f47ec88191a3c107e01d3eb357) in the desktop app and install it. This listing is desktop-only. For Codex CLI, use the commands below.\n\n### Antigravity CLI\n\n```sh\nagy plugin install https://github.com/google/elephant-goldfish-model\n```\n\nFor the **Antigravity App** and **Antigravity for IDEs** (Visual Studio Code extension), run `/plugin` or see the [installation instructions](docs/harnesses.md#antigravity-app-and-antigravity-for-ides).\n\n### Claude Code\n\n```sh\nclaude plugin marketplace add google/elephant-goldfish-model\nclaude plugin install egm@egm\n```\n\n### Codex CLI\n\n```sh\ncodex plugin marketplace add google/elephant-goldfish-model\ncodex plugin add egm@egm\n```\n\nStart a new session after installation. For **Claude Cowork** and **ChatGPT Work**, see the [setup guide](docs/harnesses.md).\n\n## Try a 60-second review on existing code\n\nReview an existing design document, README, or PR plan against the live code. You do not need to write a new specification. The commands below use the `/egm:` prefix for Antigravity (agy CLI) and Claude Code. In Codex, select the corresponding EGM skill from the skill picker.\n\n<img src=\"skills/egm-review/assets/icon.svg\" width=\"20\" height=\"20\" align=\"top\" alt=\"\"> **Review an existing document**\n\n```text\n/egm:egm-review docs/designs/webhooks.md\n```\n\nUse the path to your design doc, or to a PR plan saved as Markdown. Fresh reviewers check the design, its clarity, its fit with the code, and its implementation plan.\n\n<img src=\"skills/egm-drift-report/assets/icon.svg\" width=\"20\" height=\"20\" align=\"top\" alt=\"\"> **Check for drift**\n\n```text\n/egm:egm-drift-report docs/designs/\n```\n\nThe agent compares each document in the folder with the current source code and reports where they diverge. You decide whether to update the document or the code.\n\n## Try your first design\n\nOpen your project in your coding agent and choose a feature that needs design decisions. This example adds webhook delivery: what should happen when a delivery fails, or the same event arrives twice?\n\nThe commands below are shown without a prefix. In Antigravity (agy CLI) and Claude Code, add the `/egm:` prefix, for example `/egm:egm-brainstorm`. On agy CLI 1.4.10 an unprefixed name is completed to the prefixed command ([#220](https://github.com/google/elephant-goldfish-model/issues/220)), but 1.4.8 does not ([#196](https://github.com/google/elephant-goldfish-model/issues/196)), so keep the prefix. In Codex, select the corresponding EGM skill from the skill picker. Brainstorming and review require a session that can create fre",
-   "gained": 5560,
-   "since": "weekly",
-   "source": "trending",
-   "score": 85,
+   "readme": "<div align=\"center\">\n\n<picture>\n  <source media=\"(prefers-color-scheme: dark)\" srcset=\"docs/brand/logo-light.svg\">\n  <img src=\"docs/brand/logo-dark.svg\" width=\"400\" alt=\"rea-video\">\n</picture>\n\nReverse-engineer any video.\n\nShot by shot: was it filmed, AI-generated or coded, and how to remake it.\n\nEvery breakdown is written in **[VIDEO.md](https://videomd.github.io/videomd/)**, an open format that agents read layer by layer.\n\n[Website](https://www.reavideo.ai) | [中文](i18n/README_zh.md) | English | [Русский](i18n/README_ru.md) | [日本語](i18n/README_ja.md) | [한국어](i18n/README_ko.md) | [Español](i18n/README_es.md) | [Português](i18n/README_pt.md) | [Français](i18n/README_fr.md) | [Deutsch](i18n/README_de.md) | [Tiếng Việt](i18n/README_vi.md) | [বাংলা](i18n/README_bn.md)\n\n[![Stars](https://img.shields.io/github/stars/JuneYaooo/rea-video?style=flat)](https://github.com/JuneYaooo/rea-video/stargazers)\n![Python](https://img.shields.io/badge/python-%E2%89%A53.10-blue)\n![Agent](https://img.shields.io/badge/runs%20in-Claude%20Code%20%7C%20Codex-8A2BE2)\n[![Output: VIDEO.md](https://img.shields.io/badge/output-VIDEO.md-3d4fd6)](https://videomd.github.io/videomd/)\n\n<a href=\"https://trendshift.io/repositories/334878\" target=\"_blank\"><img src=\"https://trendshift.io/api/badge/trendshift/repositories/334878/daily\" alt=\"JuneYaooo/rea-video | Trendshift\" width=\"250\" height=\"55\"></a>\n\n[![Visit our website](https://img.shields.io/badge/Visit%20our%20website-6644D8?style=for-the-badge)](https://www.reavideo.ai) [![Join our Discord](https://img.shields.io/badge/Join%20our%20Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white)](https://discord.gg/dZj8D3GqWT) [![WeChat group](https://img.shields.io/badge/WeChat%20group-07C160?style=for-the-badge&logo=wechat&logoColor=white)](i18n/README_zh.md#社区) [![Follow on X](https://img.shields.io/badge/Follow%20%40yao__june12106-000000?style=for-the-badge&logo=x&logoColor=white)](https://x.com/yao_june12106)\n\n⭐ *Help more people find rea-video. Star this repo!*\n\n<img src=\"docs/cases/demo.gif\" width=\"440\" alt=\"Left: TikTok original shot on a phone; right: someone's AI remake with a different product\">\n\nLeft: a TikTok ad shot on a phone. Right: an AI remake with another product. rea-video's verdict: the left is all live footage, one set and two camera positions; the right is all AI, 8 shots across 3 generations.\n\n</div>\n\n## Quick start\n\nrea-video is built for AI agents. In Claude Code, Codex or any agent that can run commands, say:\n\n```text\nInstall https://github.com/JuneYaooo/rea-video, then break down this video: /path/to/video.mp4\n```\n\nThe agent installs the CLI, learns the workflow and runs the whole thing. You need ffmpeg and Python 3.10+.\n\nBreakdowns are fully upgraded. Each one gives you two outputs:\n\n- **Report** (`report.html` / PDF), for you: more reader-friendly, with a clearer structure, easier to learn from and to understand how the video was made and how to remake it.\n- **[VIDEO.md](https://videomd.github.io/videomd/)**, for your AI: layered, so the AI reads only what a question needs and uses fewer tokens.\n\nYou can also hook up a video-capable model (Gemini or Doubao both work) by giving the agent its endpoint and key. That makes the live/AI/3D calls more accurate and adds a reverse-engineered prompt for every shot. It works fine without one; if your agent can see images, it checks the uncertain shots itself.\n\n> Reports are written in whichever language you ask in (Chinese or English). The example reports below are in English.\n\n## What it can break down\n\n| Video type | Examples | What you get |\n|---|---|---|\n| Live footage | Talking-head, tabletop, handheld product demo, vlog, store visit | Setups and camera positions, framing, camera moves, lighting (12 setups with gear lists), color grade |\n| AI video | Text/image-to-video, AI short drama, AI music video | Evidence, a reverse-engineered prompt per shot, how to batch into generations and which model to use |\n| Avatar | A portrait driven by ",
+   "gained": 0,
+   "since": "created<30d",
+   "source": "search_new",
+   "score": 87,
    "detail": {
     "lic": 25,
     "easy": 20,
-    "zh": 0,
-    "demand": 20,
-    "deliver": 7,
-    "fresh": 5,
+    "zh": 8,
+    "demand": 14,
+    "deliver": 2,
+    "fresh": 10,
     "adj": 8
    },
    "grade": "S",
    "grade_word": "今晚就能动手",
    "form": "Agent技能",
-   "velocity": 794.2857142857143,
+   "velocity": 546.9375,
    "_gaps": [
     [
      "没有中文上手文档",
@@ -81,20 +190,20 @@
    "pitch": {
     "gap_key": "只有英文指令",
     "change": "改写成中文指令版，加 3 个真实场景的开场白",
-    "buyer": "接单的设计师和电商美工",
-    "buyer_tag": "设计",
+    "buyer": "做短视频的剪辑号",
+    "buyer_tag": "视频",
     "deliver": "打包成技能文件，配使用教程一起卖",
     "deliver_alt": "做成付费专栏的一章，当引流钩子",
-    "hours": 1,
+    "hours": 5,
     "gap_key_word": "缺中文上手文档"
    },
-   "plain": "Open-source plugin for designing and reviewing software with agents",
+   "plain": "Reverse-engineer any video, shot by shot: filmed, AI-generated or coded, and how to remake it. Breakdowns in the open VIDEO.md format. 逆向一切视频，逐个镜头看是拍的、AI 生成的还是代码做的，再告诉你怎么复刻；拆解结果按 VIDEO.md 格式输出。",
    "analy": {
-    "en": "Open-source plugin for designing and reviewing software with agents",
-    "zh": "用于与代理一起设计和审查软件的开源插件",
-    "plain": "说白了，这是一份写给 AI 的操作手册，装进 AI 工具后它就知道按你的规矩干活。它干的事是：用于与代理一起设计和审查软件的开源插件",
+    "en": "Reverse-engineer any video, shot by shot: filmed, AI-generated or coded, and how to remake it. Breakdowns in the open VIDEO.md format. 逆向一切视频，逐个镜头看是拍的、AI 生成的还是代码做的，再告诉你怎么复刻；拆解结果按 VIDEO.md 格式输出。",
+    "zh": "对任何视频进行逆向工程，逐个镜头：拍摄、人工智能生成或编码，以及如何重新制作它。 以开放的 VIDEO.md 格式提供的明细。 逆向一切视频，逐个镜头看是拍的、AI 生成的还是代码做的，再告诉你怎么复刻；拆解结果按 VIDEO.md 格式输出。",
+    "plain": "说白了，这是一份写给 AI 的操作手册，装进 AI 工具后它就知道按你的规矩干活。它干的事是：对任何视频进行逆向工程，逐个镜头：拍摄、人工智能生成或编码，以及如何重新制作它。 以开放的 VIDEO.md 格式提供的明细。 逆向一切视频，逐个镜头看是拍的、AI 生成的还是代码做的，再告诉你怎么复刻；拆解结果按 VIDEO.md 格式输出。",
     "usage": [
-     "接单时用它出初稿，客户改的是稿子不是空白页",
+     "批量出素材/封面/字幕，一个晚上干完一周的量",
      "装进常用的 AI 工具，让它按行规干活，不用每次重写要求",
      "改造成中文版，卖给不会写提示词的人"
     ],
@@ -104,8 +213,8 @@
      "按它给的步骤走，不满意就补一句要求"
     ],
     "gap": "改写成中文指令版，加 3 个真实场景的开场白",
-    "buyer": "接单的设计师和电商美工",
-    "why": "接单的设计师和电商美工不是不会做，是懒得为这一步花两三天试错。你把「改写成中文指令版，加 3 个真实场景的开场白」替他们做完，他们花的钱远少于自己折腾的时间。",
+    "buyer": "做短视频的剪辑号",
+    "why": "做短视频的剪辑号不是不会做，是懒得为这一步花两三天试错。你把「改写成中文指令版，加 3 个真实场景的开场白」替他们做完，他们花的钱远少于自己折腾的时间。",
     "self": "装进自己常用的 AI 工具里，写东西、做分析时不用每次从头描述要求，输出的东西还稳定。",
     "pack": "整理成可直接安装的技能包 + 使用截图，配一节教程一起卖；也可以做成付费专栏的一章当引流钩子。落地上就按这条走：打包成技能文件，配使用教程一起卖。",
     "_auto": true,
@@ -117,270 +226,53 @@
    "seen_last": ""
   },
   {
-   "full_name": "ZhuLinsen/daily_stock_analysis",
-   "owner": "ZhuLinsen",
+   "full_name": "Jakeschincariol/day-trader-skill",
+   "owner": "Jakeschincariol",
    "owner_type": "User",
-   "name": "daily_stock_analysis",
-   "desc": "LLM 驱动的多市场股票智能分析系统：多源行情、实时新闻、决策看板与自动推送，支持零成本定时运行。  LLM-powered multi-market stock analysis system with multi-source market data, real-time news, decision dashboard, automated notifications, and cost-free scheduled runs.",
+   "name": "day-trader-skill",
+   "desc": "11 Claude skills for day trading: scan thousands of charts, track breaking news, time every entry and exit, and replay every outcome before you risk a dollar.",
    "lang": "Python",
-   "stars": 71890,
-   "forks": 57367,
-   "watchers": 284,
-   "open_issues": 55,
+   "stars": 7866,
+   "forks": 1884,
+   "watchers": 106,
+   "open_issues": 61,
    "license": "MIT",
    "license_name": "MIT License",
    "topics": [
-    "a-stock",
-    "ai-agent",
-    "aigc",
-    "llm",
-    "quant",
-    "quantitative-finance",
-    "quantitative-trading"
+    "backtesting",
+    "claude",
+    "claude-skills",
+    "day-trading",
+    "stock-market"
    ],
-   "created_at": "2026-01-10T06:43:20Z",
-   "pushed_at": "2026-11-14T07:25:13Z",
-   "updated_at": "2026-11-14T07:22:31Z",
-   "size_kb": 122068,
-   "archived": false,
-   "has_discussions": false,
-   "has_wiki": false,
-   "homepage": "https://dsa.zhulinsen.tech",
-   "url": "https://github.com/ZhuLinsen/daily_stock_analysis",
-   "default_branch": "main",
-   "readme": "<div align=\"center\">\n\n# 📈 股票智能分析系统\n\n[![GitHub stars](https://img.shields.io/github/stars/ZhuLinsen/daily_stock_analysis?style=social)](https://github.com/ZhuLinsen/daily_stock_analysis/stargazers)\n[![arXiv](https://img.shields.io/badge/arXiv-2608.26990-b31b1b.svg)](https://arxiv.org/abs/2608.26990)\n[![CI](https://github.com/ZhuLinsen/daily_stock_analysis/actions/workflows/ci.yml/badge.svg)](https://github.com/ZhuLinsen/daily_stock_analysis/actions/workflows/ci.yml)\n[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)\n[![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/downloads/)\n[![GitHub Actions](https://img.shields.io/badge/GitHub%20Actions-Ready-2088FF?logo=github-actions&logoColor=white)](https://github.com/features/actions)\n[![Docker](https://img.shields.io/badge/Docker-Ready-2496ED?logo=docker&logoColor=white)](https://hub.docker.com/r/zhulinsen/daily_stock_analysis)\n\n<p align=\"center\">\n  <a href=\"https://trendshift.io/repositories/18527?utm_source=repository-badge&amp;utm_medium=badge&amp;utm_campaign=badge-repository-18527\" target=\"_blank\" rel=\"noopener noreferrer\"><img src=\"https://trendshift.io/api/badge/repositories/18527\" alt=\"ZhuLinsen%2Fdaily_stock_analysis | Trendshift\" width=\"250\" height=\"55\"/></a>&nbsp;<a href=\"https://hellogithub.com/repository/ZhuLinsen/daily_stock_analysis\" target=\"_blank\"><img src=\"https://api.hellogithub.com/v1/widgets/recommend.svg?rid=6daa16e405ce46ed97b4a57706aeb29f&claim_uid=pfiJMqhR9uvDGlT&theme=neutral\" alt=\"Featured｜HelloGitHub\" width=\"230\" /></a>\n</p>\n\n> 🤖 基于 AI 大模型的 A股/港股/美股/日股/韩股/台股自选股智能分析系统，每日自动分析并推送「决策仪表盘」到企业微信/飞书/Telegram/Discord/Slack/邮箱\n\n[**产品预览**](#-产品预览) · [**功能特性**](#-功能特性) · [**快速开始**](#-快速开始) · [**推送效果**](#-推送效果) · [**文档中心**](docs/INDEX.md) · [**完整指南**](docs/full-guide.md)\n\n简体中文 | [English](docs/README_EN.md) | [繁體中文](docs/README_CHT.md)\n\n</div>\n\n<details open>\n<summary><strong>💖 赞助商 (Sponsors)</strong></summary>\n<hr>\n<div align=\"center\">\n  <p><a href=\"https://modelflare.dev/sign-up?utm_source=github&amp;utm_campaign=daily_stock_analysis\"><img src=\"./docs/assets/modelflare_banner_zh.png\" alt=\"Modelflare\" width=\"720\"></a><br>感谢 <strong>Modelflare</strong> 赞助本项目！由美国 Havenbyte LLC 运营，满血稳定不掺水，低成本接入 GPT、Claude、Gemini、Grok 及 40+ 图片/视频模型。指定 OpenAI 分组提供 <strong>65% / 75% / 85% 每日缓存命中率保障</strong>；单笔充值 <strong>US$20 解锁 GPT 0.015x</strong>，<strong>US$50 解锁 Claude 0.03x</strong>。<a href=\"https://modelflare.dev/sign-up?utm_source=github&amp;utm_campaign=daily_stock_analysis\">专属链接注册</a></p>\n  <hr>\n  <p>\n    <a href=\"https://serpapi.com/github-daily-stock-analysis\" target=\"_blank\"><img src=\"./docs/assets/serpapi_banner_zh.png\" alt=\"轻松抓取搜索引擎上的实时金融新闻数据 - SerpApi\" width=\"300\" height=\"141\" style=\"width: 300px; height: 141px; object-fit: contain;\"></a>\n  </p>\n</div>\n</details>\n\n\n## 🖥️ 产品预览\n\n<p align=\"center\">\n  <a href=\"docs/assets/readme_workspace_tour_20260510.gif\"><img src=\"docs/assets/readme_workspace_preview.gif\" alt=\"DSA Web 工作台演示\" width=\"640\"></a><br>\n  <sub>点击动图查看完整演示</sub>\n</p>\n\n## ✨ 功能特性\n\n| 能力 | 覆盖内容 |\n|------|------|\n| AI 决策报告 | 核心结论、评分、趋势、买卖点位、风险警报、催化因素、操作检查清单 |\n| 多市场数据聚合 | 覆盖 A股、港股、美股、日股、韩股、台股和 ETF，支持行情、K 线、技术指标、新闻、公告、基本面与报告辅助数据；不同市场的数据源和能力边界见 [市场支持边界](docs/market-support.md) |\n| Web / 桌面工作台 | 手动分析、任务进度、历史报告、完整 Markdown、回测、持仓、配置管理、浅色 / 深色主题 |\n| Agent 策略问股 | 多轮追问，支持均线、缠论、波浪、趋势、热点、事件、成长、预期等 15 种内置策略，覆盖 Web/Bot/API |\n| 智能导入与补全 | 图片、CSV/Excel、剪贴板导入；股票代码/名称/拼音/别名补全 |\n| 自动化与推送 | GitHub Actions、Docker、本地定时任务、FastAPI 服务和企业微信/飞书/Telegram/Discord/Slack/邮件推送 |\n\n> 功能细节、字段契约、基本面 P0 超时语义、交易纪律、数据源优先级、Web/API 行为请看 [完整配置与部署指南](docs/full-guide.md)。\n\n### 技术栈与数据来源\n\n| 类型 | 支持 |\n|------|------|\n| AI 模型 | [Modelflare](https://modelflare.dev/sign-up?utm_source=github&utm_campaign=daily_stock_analysis)、[AIHubMix](https://inferera.com/?aff=CfMq)、Gemini、OpenAI 兼容、DeepSeek、通义千问、Claude、Ollama 本地模型等 |\n| 行情数据 | [TickPlus（推荐）](http://www.tickplus.org/register?reg=5433cf922395)、AkShare、Tushare、Pytdx、Baostock、YFin",
-   "gained": 256,
-   "since": "daily",
-   "source": "trending",
-   "score": 76,
-   "detail": {
-    "lic": 25,
-    "easy": 20,
-    "zh": 8,
-    "demand": 12,
-    "deliver": 2,
-    "fresh": 1,
-    "adj": 8
-   },
-   "grade": "A",
-   "grade_word": "改一改能卖",
-   "form": "web应用",
-   "velocity": 256.0,
-   "_gaps": [
-    [
-     "没有中文界面",
-     "没有中文界面",
-     "把界面文案和按钮全翻成中文，截一套中文版演示图"
-    ]
-   ],
-   "gaps_short": [
-    "没有中文界面"
-   ],
-   "risk": "体量太大，改源码成本高，建议只做外围服务",
-   "suspect": "",
-   "pitch": {
-    "gap_key": "没有中文界面",
-    "change": "把界面文案和按钮全翻成中文，再截一套中文版演示图当商品图",
-    "buyer": "要做数据但不会写代码的人",
-    "buyer_tag": "数据",
-    "deliver": "打包部署到客户自己的服务器/域名，收一次部署费",
-    "deliver_alt": "做成在线服务，按月收使用费",
-    "hours": 4,
-    "gap_key_word": "缺中文界面"
-   },
-   "plain": "LLM 驱动的多市场股票智能分析系统：多源行情、实时新闻、决策看板与自动推送，支持零成本定时运行。  LLM-powered multi-market stock analysis system with multi-source market data, real-time news, decision dashboard, automated notifications, and cost-free scheduled runs.",
-   "analy": {
-    "en": "LLM 驱动的多市场股票智能分析系统：多源行情、实时新闻、决策看板与自动推送，支持零成本定时运行。 LLM-powered multi-market stock analysis system with multi-source market data, real-time news, decision dashboard, automated notifications, and cost-free scheduled runs.",
-    "zh": "LLM 驱动的多市场股票智能分析系统：多源行情、实时新闻、决策看板与自动推送，支持零成本定时运行。 由法学硕士支持的多市场股票分析系统，具有多源市场数据、实时新闻、决策仪表板、自动通知和免费计划运行。",
-    "plain": "说白了，这是一个打开网页就能用的在线小工具，不用装任何东西。它干的事是：LLM 驱动的多市场股票智能分析系统：多源行情、实时新闻、决策看板与自动推送，支持零成本定时运行。 由法学硕士支持的多市场股票分析系统，具有多源市场数据、实时新闻、决策仪表板、自动通知和免费计划运行。",
-    "usage": [
-     "把手工统计的活换成一次配置、长期自动跑",
-     "直接打开当工具用，省掉装软件那一步",
-     "部署到自己的域名，做成一个能对外收钱的服务"
-    ],
-    "how": [
-     "打开作者给的网址（或自己部署一份）",
-     "按界面提示把内容填进去",
-     "选样式/导出，拿到成品"
-    ],
-    "gap": "把界面文案和按钮全翻成中文，再截一套中文版演示图当商品图",
-    "buyer": "要做数据但不会写代码的人",
-    "why": "要做数据但不会写代码的人不是不会做，是懒得为这一步花两三天试错。你把「把界面文案和按钮全翻成中文，再截一套中文版演示图当商品图」替他们做完，他们花的钱远少于自己折腾的时间。",
-    "self": "自己干活时当外挂：重复的排版、出图、整理交给它，一次省十几分钟。用熟之后你会清楚自己哪一步最该自动化——这个认知比工具本身值钱。",
-    "pack": "汉化 + 一套中文模板 + 部署教程，打包成 zip 发网盘；主图用「改前 vs 改后」对比，标题写用户能搜的词。落地上就按这条走：打包部署到客户自己的服务器/域名，收一次部署费。",
-    "_auto": true,
-    "_src": "mt"
-   },
-   "_bucket": "",
-   "seen_times": 0,
-   "seen_first": "",
-   "seen_last": ""
-  },
-  {
-   "full_name": "wangzan101/Mika",
-   "owner": "wangzan101",
-   "owner_type": "User",
-   "name": "Mika",
-   "desc": "An on-device AI agent for Android that operates apps and the web to get things done for you.",
-   "lang": "Kotlin",
-   "stars": 8549,
-   "forks": 1955,
-   "watchers": 14,
-   "open_issues": 136,
-   "license": "Apache-2.0",
-   "license_name": "Apache License 2.0",
-   "topics": [
-    "accessibility",
-    "ai-agent",
-    "android",
-    "automation",
-    "jetpack-compose",
-    "kotlin",
-    "llm",
-    "mobile-agent"
-   ],
-   "created_at": "2026-10-29T14:34:07Z",
-   "pushed_at": "2026-11-13T18:16:22Z",
-   "updated_at": "2026-11-14T07:17:36Z",
-   "size_kb": 201069,
+   "created_at": "2026-10-20T14:17:54Z",
+   "pushed_at": "2026-10-20T14:18:00Z",
+   "updated_at": "2026-11-15T07:25:40Z",
+   "size_kb": 414,
    "archived": false,
    "has_discussions": false,
    "has_wiki": true,
-   "homepage": "https://mikaphone.com",
-   "url": "https://github.com/wangzan101/Mika",
+   "homepage": "",
+   "url": "https://github.com/Jakeschincariol/day-trader-skill",
    "default_branch": "main",
-   "readme": "<div align=\"center\">\n\n<img src=\"docs/media/logo.png\" alt=\"Mika\" width=\"88\" />\n\n# Mika\n\n**An AI assistant on your phone: say what you need, and it works your apps and the web until it's done.**\n\nIt works on a hidden background screen, so you can keep using your phone.\n\n<a href=\"https://github.com/wangzan101/Mika/releases/latest\"><img src=\"https://img.shields.io/badge/Download%20APK-Android%2011%2B-2ea043?style=for-the-badge&logo=android&logoColor=white\" alt=\"Download APK\" /></a>\n\n<a href=\"https://github.com/wangzan101/Mika/stargazers\"><img src=\"https://img.shields.io/github/stars/wangzan101/Mika?style=flat&logo=github&label=Star&color=1f6feb\" alt=\"stars\" /></a>\n<a href=\"https://github.com/wangzan101/Mika/releases\"><img src=\"https://img.shields.io/github/downloads/wangzan101/Mika/total?label=downloads&color=2ea043\" alt=\"downloads\" /></a>\n<a href=\"https://github.com/wangzan101/Mika/releases/latest\"><img src=\"https://img.shields.io/github/v/release/wangzan101/Mika?include_prereleases&label=version\" alt=\"version\" /></a>\n<a href=\"LICENSE\"><img src=\"https://img.shields.io/badge/license-Apache--2.0-lightgrey\" alt=\"license\" /></a>\n\n<br/>\n\n<a href=\"https://trendshift.io/repositories/326940#achievements\"><img src=\"https://trendshift.io/api/badge/trendshift/repositories/326940/daily?language=Kotlin\" alt=\"#1 Kotlin Repository of the Day\" width=\"250\" height=\"55\" /></a>\n<a href=\"https://trendshift.io/repositories/326940#achievements\"><img src=\"https://trendshift.io/api/badge/trendshift/repositories/326940/weekly?language=Kotlin\" alt=\"#1 Kotlin Repository of the Week\" width=\"250\" height=\"55\" /></a>\n<a href=\"https://trendshift.io/repositories/326940#achievements\"><img src=\"https://trendshift.io/api/badge/trendshift/repositories/326940/daily\" alt=\"#5 Repository of the Day\" width=\"250\" height=\"55\" /></a>\n\n<br/>\n\nEnglish · [简体中文](docs/readme/README.zh-CN.md) · [繁體中文](docs/readme/README.zh-Hant.md) · [日本語](docs/readme/README.ja.md) · [한국어](docs/readme/README.ko.md) · [Español](docs/readme/README.es.md)\n\n<br/>\n\n<img src=\"docs/media/wechat-send-side.gif\" alt=\"From one sentence, Mika opens WeChat on its background screen, finds the contact and sends the message\" width=\"640\" />\n\n<sub>\"Send a message to File Transfer\": Mika's chat on the left, each step on its background screen on the right (4× speed; chat list blurred)</sub>\n\n</div>\n\n## Get things done with one sentence\n\n<table>\n<tr>\n<td align=\"center\" width=\"33%\"><img src=\"docs/media/wechat-group.gif\" width=\"230\" alt=\"Reads through a WeChat group and summarizes today's chat\" /><br/><b>\"What did the group talk about today?\"</b><br/><sub>Scrolls through the chat in the background, then sums it up</sub></td>\n<td align=\"center\" width=\"33%\"><img src=\"docs/media/amazon-cart.gif\" width=\"230\" alt=\"Picks a charger on a shopping site and adds it to the cart\" /><br/><b>\"A charger under $30, rated 4.5 stars or more\"</b><br/><sub>Adds the pick to the cart and stops before checkout</sub></td>\n<td align=\"center\" width=\"33%\"><img src=\"docs/media/xhs-summary.gif\" width=\"230\" alt=\"Summarizes a creator's recent posts\" /><br/><b>\"What has this creator posted lately?\"</b><br/><sub>Opens the app, reads post by post, then sums it up</sub></td>\n</tr>\n</table>\n\n<details>\n<summary>More demos</summary>\n\n<table>\n<tr>\n<td align=\"center\" width=\"33%\"><img src=\"docs/media/boss-greet.gif\" width=\"230\" alt=\"Greets recruiters for 3 jobs on a job site\" /><br/>Greets recruiters for 3 jobs on a job site</td>\n<td align=\"center\" width=\"33%\"><img src=\"docs/media/google-flights.gif\" width=\"230\" alt=\"Finds the cheapest nonstop flight\" /><br/>Finds the cheapest nonstop from San Francisco to New York</td>\n<td align=\"center\" width=\"33%\"><img src=\"docs/media/hacker-news.gif\" width=\"230\" alt=\"Reads out the top 5 stories and their points\" /><br/>Reads out the top 5 stories on a news site</td>\n</tr>\n<tr>\n<td align=\"center\"><img src=\"docs/media/job-greet.jpg\" width=\"230\" alt=\"Finds jobs and greets recruiters\" /><br/>Finds jobs and greets recruiters</t",
+   "readme": "# The Day Trader skill\n\n11 Claude skills for day trading: scan thousands of charts, track breaking news, time every entry and exit, and replay every outcome before you risk a dollar.\n\nFree, MIT, no signup, no API key. The tools are plain Python that read free\npublic data: Yahoo Finance charts, Nasdaq Trader's symbol lists, SEC EDGAR\nand the House Clerk.\n\nOne scans thousands of charts for setups. Another tracks breaking news on\nevery stock you watch. One watches a setup bar by bar and tells you the moment\nto get in, and another sets your stop and your target before you do. And the\ncraziest one is the Time Machine: before you risk a dollar, it replays the\nrest of the session 10,000 times from the stock's own recent bars, plus every\npast day the same setup fired, and tells you the honest odds.\n\nAnd no trade goes through until you say yes. Nothing in this pack can place\nan order on its own. Paper trading is the default.\n\n> **Looking for the original Trader skill?** Copy an investor's 13F, the\n> stock screener, tax lots and rebalancing live in\n> [github.com/Jakeschincariol/trader-skill](https://github.com/Jakeschincariol/trader-skill).\n> This repo is its day-trading sequel: the Trader skill v2.\n\n## Install\n\nPaste this into Claude:\n\n```\nhttps://github.com/Jakeschincariol/day-trader-skill\n\ninstall skill\n```\n\nOr as a plugin, in Claude Code:\n\n```\n/plugin marketplace add Jakeschincariol/day-trader-skill\n/plugin install day-trader-skill@day-trader-skill\n```\n\nClaude Code namespaces plugin skills, so installed as a plugin they show up as\n`/day-trader-skill:trader-scanner` and so on. Copy the folders instead if you want\nplain `/trader-scanner`:\n\n```bash\ngit clone https://github.com/Jakeschincariol/day-trader-skill.git\ncp -r day-trader-skill/trader-* ~/.claude/skills/\n```\n\nProject-local instead of global: copy the same folders into your repo's\n`.claude/skills/`. No Claude Code at all? Paste any single `SKILL.md` at the\ntop of a chat and it runs as a mode. You lose the Python tools, but the method\nworks.\n\nThe tools need Python 3.8 or newer. Nothing to pip install. The SEC tools\n(news filings, the analyst) ask you to identify yourself: put your name and\nemail in `trader/config.json` (`\"sec_user_agent\": \"Your Name you@example.com\"`)\nor in the `SEC_USER_AGENT` environment variable.\n\n## The eleven\n\n| command | job | what it does |\n| --- | --- | --- |\n| `/trader-scanner` | Chart Scanner | Scans thousands of charts for setups: opening-range breakouts, flags, oversold bounces. |\n| `/trader-news` | News Monitor | Tracks breaking news on every stock you watch and flags what moves it. |\n| `/trader-entry` | Entry Timer | Watches a setup bar by bar and tells you the moment to get in. |\n| `/trader-exit` | Exit Planner | Sets your stop and your target before you enter, so you know when to get out. |\n| `/trader-timemachine` | Time Machine | Replays every possible outcome of a trade before you risk a dollar: 10,000 simulated sessions plus every past time the setup fired. |\n| `/trader-risk` | Risk Manager | Checks every trade against your limits and stops anything over them. |\n| `/trader-budget` | Budget Manager | Sizes every position to your budget and your max loss per trade. |\n| `/trader-broker` | Order Executor | Sends approved orders to your broker, paper trading by default, never without your yes. |\n| `/trader-alerts` | Price Alerts | Rings when a price, a stop or the opening bell hits. |\n| `/trader-analyst` | Earnings Analyst | Reads earnings reports and sums up what changed. |\n| `/trader-pelosi` | Pelosi Tracker | Reads Congress's stock-trade disclosures the minute they are filed. |\n\n## How to use it\n\nEverything lands in a `trader/` folder in your project, and each skill reads\nwhat the last one wrote:\n\n```\nscanner -> news -> entry -> exit -> timemachine -> budget -> risk -> broker   (one trade)\nalerts: stop, target, flat by the close                                       (while it is open)\nnews / analyst / pelosi                                       ",
    "gained": 0,
    "since": "created<30d",
    "source": "search_new",
-   "score": 75,
+   "score": 81,
    "detail": {
     "lic": 25,
     "easy": 20,
     "zh": 0,
-    "demand": 18,
-    "deliver": 2,
+    "demand": 16,
+    "deliver": 10,
     "fresh": 10,
     "adj": 0
    },
-   "grade": "A",
-   "grade_word": "改一改能卖",
-   "form": "引擎库",
-   "velocity": 569.9333333333333,
-   "_gaps": [
-    [
-     "没有中文上手文档",
-     "没有中文上手文档",
-     "把 README 翻成中文，配一张三步跑通图"
-    ],
-    [
-     "没有中文界面",
-     "没有中文界面",
-     "把界面文案和按钮全翻成中文，截一套中文版演示图"
-    ],
-    [
-     "没有一键部署",
-     "没有一键部署",
-     "补一个 Dockerfile + compose，别人一条命令跑起来"
-    ]
-   ],
-   "gaps_short": [
-    "没有中文上手文档",
-    "没有中文界面",
-    "没有一键部署"
-   ],
-   "risk": "",
-   "suspect": "",
-   "pitch": {
-    "gap_key": "没有中文上手文档",
-    "change": "把 README 翻成中文，配一张「三步跑通」流程图",
-    "buyer": "要用这套能力但搞不定环境的人",
-    "buyer_tag": "通用",
-    "deliver": "做成带界面的成品，按份卖（发网盘，附中文说明）",
-    "deliver_alt": "接单代跑：客户给需求，你出结果",
-    "hours": 10,
-    "gap_key_word": "缺中文上手文档"
-   },
-   "plain": "An on-device AI agent for Android that operates apps and the web to get things done for you.",
-   "analy": {
-    "en": "An on-device AI agent for Android that operates apps and the web to get things done for you.",
-    "zh": "一款适用于 Android 的设备端 AI 代理，可操作应用程序和网页为您完成任务。",
-    "plain": "说白了，这是一堆已经写好的能力，但没有界面，得有人包一层壳才能给普通人用。它干的事是：一款适用于 Android 的设备端 AI 代理，可操作应用程序和网页为您完成任务。",
-    "usage": [
-     "接到同类需求时拿它当底子，省掉搭骨架的两三天",
-     "包一层网页界面，做成给非技术人用的成品",
-     "集成进自己的项目，跳过从零写这一段"
-    ],
-    "how": [
-     "按 README 装依赖（这一步最容易卡住）",
-     "跑一个作者给的示例，确认能出结果",
-     "把自己的数据/需求换成示例里的输入"
-    ],
-    "gap": "把 README 翻成中文，配一张「三步跑通」流程图",
-    "buyer": "要用这套能力但搞不定环境的人",
-    "why": "要用这套能力但搞不定环境的人不是不会做，是懒得为这一步花两三天试错。你把「把 README 翻成中文，配一张「三步跑通」流程图」替他们做完，他们花的钱远少于自己折腾的时间。",
-    "self": "接到类似需求直接拿它当底子，省掉搭骨架的两三天；顺手把它当成自己的技术储备，下次报价敢往上抬。",
-    "pack": "包一层网页界面，录一段 3 分钟演示，按份卖；买家买的不是代码，是「不用装环境」。落地上就按这条走：做成带界面的成品，按份卖（发网盘，附中文说明）。",
-    "_auto": true,
-    "_src": "mt"
-   },
-   "_bucket": "",
-   "seen_times": 0,
-   "seen_first": "",
-   "seen_last": ""
-  },
-  {
-   "full_name": "backnotprop/plannotator",
-   "owner": "backnotprop",
-   "owner_type": "User",
-   "name": "plannotator",
-   "desc": "The workspace to stay in the loop and on top of agents - shape, decide, plan, annotate, review code, share with team, and send all feedback to agents with one click. ",
-   "lang": "TypeScript",
-   "stars": 10574,
-   "forks": 791,
-   "watchers": 24,
-   "open_issues": 212,
-   "license": "Apache-2.0",
-   "license_name": "Apache License 2.0",
-   "topics": [
-    "agents",
-    "claude-code",
-    "code-review",
-    "codex",
-    "obsidian",
-    "opencode",
-    "pi-mono",
-    "plan-mode",
-    "skills"
-   ],
-   "created_at": "2025-12-28T02:09:40Z",
-   "pushed_at": "2026-11-14T07:22:46Z",
-   "updated_at": "2026-11-14T07:23:53Z",
-   "size_kb": 353834,
-   "archived": false,
-   "has_discussions": true,
-   "has_wiki": true,
-   "homepage": "https://plannotator.ai",
-   "url": "https://github.com/backnotprop/plannotator",
-   "default_branch": "main",
-   "readme": "<p align=\"center\">\n  <img src=\".github/assets/banner.webp\" alt=\"Plannotator\" width=\"640\" />\n</p>\n\n\n\n<p align=\"center\">\n  <strong>Everything you need to annotate and stay in the loop with your agents</strong><br/>\n  <strong>Inbox Surface • Artifacts • Code Review</strong><br/>\n  <sub>Annotate plans, specs, markdown, HTML, and other interactive artifacts. Review diffs and PRs. Send feedback to your agent.</sub>\n</p>\n\n<p align=\"center\">\n  <img src=\".github/assets/icons/amp.svg\" alt=\"Amp\" title=\"Amp\" height=\"28\" />&nbsp;&nbsp;\n  <img src=\".github/assets/icons/claude.svg\" alt=\"Claude Code\" title=\"Claude Code\" height=\"28\" />&nbsp;&nbsp;\n  <img src=\".github/assets/icons/codex.png\" alt=\"Codex\" title=\"Codex\" height=\"28\" />&nbsp;&nbsp;\n  <picture>\n    <source media=\"(prefers-color-scheme: dark)\" srcset=\".github/assets/icons/copilot-dark.svg\" />\n    <img src=\".github/assets/icons/copilot-light.svg\" alt=\"Copilot CLI\" title=\"Copilot CLI\" height=\"28\" />\n  </picture>&nbsp;&nbsp;\n  <img src=\".github/assets/icons/droid.png\" alt=\"Droid\" title=\"Droid\" height=\"28\" />&nbsp;&nbsp;\n  <img src=\".github/assets/icons/gemini.png\" alt=\"Gemini CLI\" title=\"Gemini CLI\" height=\"28\" />&nbsp;&nbsp;\n  <img src=\".github/assets/icons/kiro.svg\" alt=\"Kiro\" title=\"Kiro\" height=\"28\" />&nbsp;&nbsp;\n  <picture>\n    <source media=\"(prefers-color-scheme: dark)\" srcset=\".github/assets/icons/opencode-dark.svg\" />\n    <img src=\".github/assets/icons/opencode-light.svg\" alt=\"OpenCode\" title=\"OpenCode\" height=\"28\" />\n  </picture>&nbsp;&nbsp;\n  <picture>\n    <source media=\"(prefers-color-scheme: dark)\" srcset=\".github/assets/icons/pi-dark.svg\" />\n    <img src=\".github/assets/icons/pi-light.svg\" alt=\"Pi\" title=\"Pi\" height=\"28\" />\n  </picture>\n</p>\n\n<p align=\"center\">\n  <a href=\"#plannotator-inbox\">Plannotator Inbox</a> · <a href=\"https://plannotator.ai/\">Official site</a> · <a href=\"https://plannotator.ai/code-review\">Code Review</a> · <a href=\"https://github.com/plannotator/effective-html\">Visual HTML Skills</a> · <a href=\"#herdr-annotate-plannotator-in-the-terminal\">Herdr Annotate</a> · <a href=\"https://www.youtube.com/watch?v=a_AT7cEN_9I\">(Legacy) Plan Mode</a>\n</p>\n\n# Plannotator\n\n**⭐️ NEW:** [Plannotator Inbox](https://plannotator.ai/inbox/) is the missing review layer between you and multi-agent work. It surfaces decisions, prototypes, variations, plans, and everything you need to stay in the loop. Works with all coding agents and personal assistants.\n\nPlannotator is a local, browser-based review surface for AI coding agents: Claude Code, Codex, Copilot CLI, Gemini CLI, OpenCode, Kiro, Droid, Amp, DeepSeek Harness, and Pi. Plannotator Inbox also works with personal assistants (Grok Bot, Muse, Hermes, OpenClaw).\n\n**It plugs directly into your agent** through plugins, hooks and commands. When the agent proposes a decision, plan, html, or finishes working, the app opens in your browser and you mark it up, comment, and send feedback directly to the agent for it to act on it.\n\n<table>\n<tr>\n<td width=\"40%\" valign=\"middle\">\n\n### Review documents, plans, and agent messages\n\nAnnotate plans, specs, messages, html, then send the feedback to your agent. \n\n<p><strong>Demo:</strong> <a href=\"https://youtu.be/XqFun9XCXPw\">Plan review with Pi</a></p>\n\n</td>\n<td width=\"60%\">\n\n<img src=\".github/assets/annotate.webp\" alt=\"Annotate UI with inline annotations\" width=\"100%\" />\n\n</td>\n</tr>\n<tr>\n<td width=\"40%\" valign=\"middle\">\n\n### Code Review\n\nReview local changes or remote PRs. Comment on diffs, suggest code. Your comments go back to the agent. Works with Git, GitButler, Jujutsu (`jj`), Perforce (`p4`), GitHub, and GitLab.\n\n</td>\n<td width=\"60%\">\n\n<img src=\".github/assets/review.webp\" alt=\"Code review with file tree and side-by-side diff\" width=\"100%\" />\n\n</td>\n</tr>\n</table>\n\n<p align=\"center\">\n  <sub><strong>AI built in:</strong> ask AI about anything you're reviewing,<br/>or launch AI reviews that post comments to the diff.</sub>\n</p>\n\n## Annotate HTML Artifacts\n\n<p align=\"center\">\n  <img ",
-   "gained": 108,
-   "since": "daily",
-   "source": "trending",
-   "score": 68,
-   "detail": {
-    "lic": 25,
-    "easy": 20,
-    "zh": 0,
-    "demand": 20,
-    "deliver": 2,
-    "fresh": 1,
-    "adj": 0
-   },
-   "grade": "A",
-   "grade_word": "改一改能卖",
+   "grade": "S",
+   "grade_word": "今晚就能动手",
    "form": "Agent技能",
-   "velocity": 108.0,
+   "velocity": 314.64,
    "_gaps": [
     [
      "没有中文上手文档",
@@ -406,14 +298,14 @@
     "buyer_tag": "通用",
     "deliver": "做成付费专栏的一章，当引流钩子",
     "deliver_alt": "接企业内训，教团队把这套装上",
-    "hours": 6,
+    "hours": 2,
     "gap_key_word": "缺中文上手文档"
    },
-   "plain": "The workspace to stay in the loop and on top of agents - shape, decide, plan, annotate, review code, share with team, and send all feedback to agents with one click.",
+   "plain": "11 Claude skills for day trading: scan thousands of charts, track breaking news, time every entry and exit, and replay every outcome before you risk a dollar.",
    "analy": {
-    "en": "The workspace to stay in the loop and on top of agents - shape, decide, plan, annotate, review code, share with team, and send all feedback to agents with one click.",
-    "zh": "保持在循环中并在座席之上的工作区 - 塑造、决定、计划、注释、审查代码、与团队共享以及一键将所有反馈发送给座席。",
-    "plain": "说白了，这是一份写给 AI 的操作手册，装进 AI 工具后它就知道按你的规矩干活。它干的事是：保持在循环中并在座席之上的工作区 - 塑造、决定、计划、注释、审查代码、与团队共享以及一键将所有反馈发送给座席。",
+    "en": "11 Claude skills for day trading: scan thousands of charts, track breaking news, time every entry and exit, and replay every outcome before you risk a dollar.",
+    "zh": "克劳德的 11 条日内交易技巧：扫描数千张图表、跟踪突发新闻、为每次入场和出场计时，并在冒险之前重播每个结果。",
+    "plain": "说白了，这是一份写给 AI 的操作手册，装进 AI 工具后它就知道按你的规矩干活。它干的事是：克劳德的 11 条日内交易技巧：扫描数千张图表、跟踪突发新闻、为每次入场和出场计时，并在冒险之前重播每个结果。",
     "usage": [
      "装进常用的 AI 工具，让它按行规干活，不用每次重写要求",
      "改造成中文版，卖给不会写提示词的人",
@@ -438,158 +330,47 @@
    "seen_last": ""
   },
   {
-   "full_name": "louislam/uptime-kuma",
-   "owner": "louislam",
-   "owner_type": "User",
-   "name": "uptime-kuma",
-   "desc": "A fancy self-hosted monitoring tool",
-   "lang": "JavaScript",
-   "stars": 93970,
-   "forks": 8728,
-   "watchers": 317,
-   "open_issues": 855,
-   "license": "MIT",
-   "license_name": "MIT License",
-   "topics": [
-    "docker",
-    "monitor",
-    "monitoring",
-    "responsive",
-    "self-hosted",
-    "selfhosted",
-    "single-page-app",
-    "socket-io",
-    "uptime",
-    "uptime-monitoring",
-    "webapp",
-    "websocket"
-   ],
-   "created_at": "2021-07-03T01:02:42Z",
-   "pushed_at": "2026-11-14T00:04:41Z",
-   "updated_at": "2026-11-14T07:22:56Z",
-   "size_kb": 39765,
-   "archived": false,
-   "has_discussions": false,
-   "has_wiki": true,
-   "homepage": "https://uptime.kuma.pet",
-   "url": "https://github.com/louislam/uptime-kuma",
-   "default_branch": "master",
-   "readme": "<div align=\"center\" width=\"100%\">\n    <img src=\"./public/icon.svg\" width=\"128\" alt=\"Uptime Kuma Logo\" />\n</div>\n\n# Uptime Kuma\n\nUptime Kuma is an easy-to-use self-hosted monitoring tool.\n\n<a target=\"_blank\" href=\"https://github.com/louislam/uptime-kuma\"><img src=\"https://img.shields.io/github/stars/louislam/uptime-kuma?style=flat\" /></a> <a target=\"_blank\" href=\"https://hub.docker.com/r/louislam/uptime-kuma\"><img src=\"https://img.shields.io/docker/pulls/louislam/uptime-kuma\" /></a> <a target=\"_blank\" href=\"https://hub.docker.com/r/louislam/uptime-kuma\"><img src=\"https://img.shields.io/docker/v/louislam/uptime-kuma/2?label=docker%20image%20ver.\" /></a> <a target=\"_blank\" href=\"https://github.com/louislam/uptime-kuma\"><img src=\"https://img.shields.io/github/last-commit/louislam/uptime-kuma\" /></a> <a target=\"_blank\" href=\"https://opencollective.com/uptime-kuma\"><img src=\"https://opencollective.com/uptime-kuma/total/badge.svg?label=Open%20Collective%20Backers&color=brightgreen\" /></a>\n[![GitHub Sponsors](https://img.shields.io/github/sponsors/louislam?label=GitHub%20Sponsors)](https://github.com/sponsors/louislam)\n\n<img src=\"https://user-images.githubusercontent.com/1336778/212262296-e6205815-ad62-488c-83ec-a5b0d0689f7c.jpg\" width=\"700\" alt=\"Uptime Kuma Dashboard Screenshot\" />\n\n## 🥔 Live Demo\n\nTry it!\n\nDemo Server (Location: Frankfurt - Germany): <https://demo.kuma.pet/start-demo>\n\nIt is a temporary live demo, all data will be deleted after 10 minutes. Sponsored by [Uptime Kuma Sponsors](https://github.com/louislam/uptime-kuma#%EF%B8%8F-sponsors).\n\n> [!WARNING]\n> Be careful - the top result in Google, uptimekuma.co, is not our official website, we don't control the website. I recommend following the installation guide in this GitHub repo.\n\n## ⭐ Features\n\n- Monitoring uptime for HTTP(s) / TCP / HTTP(s) Keyword / HTTP(s) Json Query / Websocket / Ping / DNS Record / Push / Steam Game Server / Docker Containers\n- Fancy, Reactive, Fast UI/UX\n- Notifications via Telegram, Discord, Gotify, Slack, Pushover, Email (SMTP), and [90+ notification services, click here for the full list](https://github.com/louislam/uptime-kuma/tree/master/src/components/notifications)\n- 20-second intervals\n- [Multi Languages](https://github.com/louislam/uptime-kuma/tree/master/src/lang)\n- Multiple status pages\n- Map status pages to specific domains\n- Ping chart\n- Certificate info\n- Proxy support\n- 2FA support\n\n## 🔧 How to Install\n\n### 🐳 Docker Compose\n\n```bash\nmkdir uptime-kuma\ncd uptime-kuma\ncurl -o compose.yaml https://raw.githubusercontent.com/louislam/uptime-kuma/master/compose.yaml\ndocker compose up -d\n```\n\nUptime Kuma is now running on all network interfaces (e.g. http://localhost:3001 or http://your-ip:3001).\n\n> [!WARNING]\n> File Systems like **NFS** (Network File System) are **NOT** supported. Please map to a local directory or volume.\n\n### 🐳 Docker Command\n\n```bash\ndocker run -d --restart=always -p 3001:3001 -v uptime-kuma:/app/data --name uptime-kuma louislam/uptime-kuma:2\n```\n\nUptime Kuma is now running on all network interfaces (e.g. http://localhost:3001 or http://your-ip:3001).\n\nIf you want to limit exposure to localhost only:\n\n```bash\ndocker run ... -p 127.0.0.1:3001:3001 ...\n```\n\n### 💪🏻 Non-Docker\n\nRequirements:\n\n- Platform\n  - ✅ Major Linux distros such as Debian, Ubuntu, Fedora and ArchLinux etc.\n  - ✅ Windows 10 (x64), Windows Server 2012 R2 (x64) or higher\n  - ❌ FreeBSD / OpenBSD / NetBSD\n  - ❌ Replit / Heroku\n- [Node.js](https://nodejs.org/en/download/) >= 20.4\n- [Git](https://git-scm.com/downloads)\n- [pm2](https://pm2.keymetrics.io/) - For running Uptime Kuma in the background\n\n```bash\ngit clone https://github.com/louislam/uptime-kuma.git\ncd uptime-kuma\nnpm run setup\n\n# Option 1. Try it\nnode server/server.js\n\n# (Recommended) Option 2. Run in the background using PM2\n# Install PM2 if you don't have it:\nnpm install pm2 -g && pm2 install pm2-logrotate\n\n# Start Server\npm2 start server/server.js --name uptime-kuma\n```\n\nUptime Kuma is now runn",
-   "gained": 71,
-   "since": "daily",
-   "source": "trending",
-   "score": 68,
-   "detail": {
-    "lic": 25,
-    "easy": 20,
-    "zh": 0,
-    "demand": 18,
-    "deliver": 4,
-    "fresh": 1,
-    "adj": 0
-   },
-   "grade": "A",
-   "grade_word": "改一改能卖",
-   "form": "web应用",
-   "velocity": 71.0,
-   "_gaps": [
-    [
-     "没有中文上手文档",
-     "没有中文上手文档",
-     "把 README 翻成中文，配一张三步跑通图"
-    ],
-    [
-     "没有中文界面",
-     "没有中文界面",
-     "把界面文案和按钮全翻成中文，截一套中文版演示图"
-    ]
-   ],
-   "gaps_short": [
-    "没有中文上手文档",
-    "没有中文界面"
-   ],
-   "risk": "体量太大，改源码成本高，建议只做外围服务",
-   "suspect": "",
-   "pitch": {
-    "gap_key": "没有在线演示",
-    "change": "部署一个公开 demo，让人先玩再决定买不买",
-    "buyer": "想有个自己工具但不会写代码的人",
-    "buyer_tag": "通用",
-    "deliver": "做成在线服务，按月收使用费",
-    "deliver_alt": "连部署带教一次，做成「一天陪跑」按次收",
-    "hours": 2,
-    "gap_key_word": "缺中文上手文档"
-   },
-   "plain": "A fancy self-hosted monitoring tool",
-   "analy": {
-    "en": "A fancy self-hosted monitoring tool",
-    "zh": "一个精美的自托管监控工具",
-    "plain": "说白了，这是一个打开网页就能用的在线小工具，不用装任何东西。它干的事是：一个精美的自托管监控工具",
-    "usage": [
-     "直接打开当工具用，省掉装软件那一步",
-     "部署到自己的域名，做成一个能对外收钱的服务",
-     "挂在自己号里当「免费小工具」，用来引流"
-    ],
-    "how": [
-     "打开作者给的网址（或自己部署一份）",
-     "按界面提示把内容填进去",
-     "选样式/导出，拿到成品"
-    ],
-    "gap": "部署一个公开 demo，让人先玩再决定买不买",
-    "buyer": "想有个自己工具但不会写代码的人",
-    "why": "想有个自己工具但不会写代码的人不是不会做，是懒得为这一步花两三天试错。你把「部署一个公开 demo，让人先玩再决定买不买」替他们做完，他们花的钱远少于自己折腾的时间。",
-    "self": "自己干活时当外挂：重复的排版、出图、整理交给它，一次省十几分钟。用熟之后你会清楚自己哪一步最该自动化——这个认知比工具本身值钱。",
-    "pack": "汉化 + 一套中文模板 + 部署教程，打包成 zip 发网盘；主图用「改前 vs 改后」对比，标题写用户能搜的词。落地上就按这条走：做成在线服务，按月收使用费。",
-    "_auto": true,
-    "_src": "mt"
-   },
-   "_bucket": "",
-   "seen_times": 0,
-   "seen_first": "",
-   "seen_last": ""
-  },
-  {
-   "full_name": "tradermonty/claude-trading-skills",
-   "owner": "tradermonty",
-   "owner_type": "User",
-   "name": "claude-trading-skills",
-   "desc": "Claude Code skills for equity investors and traders — market analysis, technical charting, economic calendars, screeners, and trading strategy development.",
-   "lang": "Python",
-   "stars": 4314,
-   "forks": 881,
-   "watchers": 42,
-   "open_issues": 86,
+   "full_name": "janestreet/agent_skills",
+   "owner": "janestreet",
+   "owner_type": "Organization",
+   "name": "agent_skills",
+   "desc": "Agent skills",
+   "lang": "",
+   "stars": 8705,
+   "forks": 579,
+   "watchers": 48,
+   "open_issues": 13,
    "license": "MIT",
    "license_name": "MIT License",
    "topics": [],
-   "created_at": "2025-10-19T16:37:29Z",
-   "pushed_at": "2026-11-14T06:03:59Z",
-   "updated_at": "2026-11-14T07:11:32Z",
-   "size_kb": 74129,
+   "created_at": "2026-11-03T16:50:21Z",
+   "pushed_at": "2026-11-03T18:14:13Z",
+   "updated_at": "2026-11-15T07:34:01Z",
+   "size_kb": 6,
    "archived": false,
    "has_discussions": false,
-   "has_wiki": true,
-   "homepage": "https://tradermonty.github.io/claude-trading-skills/",
-   "url": "https://github.com/tradermonty/claude-trading-skills",
-   "default_branch": "main",
-   "readme": "# Claude Trading Skills\n\nClaude Trading Skills started as a personal project to use AI to improve my own trading process.\n\nClaude Trading Skills is a Claude Skills-based trading workflow toolkit for time-constrained individual investors.\n\nIt is designed for investors who use long-term investing, ETFs, and dividend stocks as their core, while using disciplined swing trading as a satellite strategy when market conditions are favorable.\n\nThe goal is not to outsource buy/sell decisions to AI. The goal is to structure market review, risk management, trade planning, journaling, and continuous improvement. It is open source because the workflows, checklists, and review habits behind better trading decisions can improve through shared practice.\n\nThis is not a signal service or a promise of profitability. It is a toolkit for traders who want to build a better decision process.\n\nThe project follows a **first for self, open for others** stance: it is built first as a practical workflow the author uses, then shared openly for others who face similar constraints.\n\n📖 **Documentation site:** <https://tradermonty.github.io/claude-trading-skills/>\n\n**Project vision:** [`PROJECT_VISION.md`](PROJECT_VISION.md)\n\n日本語版READMEは[`README.ja.md`](README.ja.md)をご覧ください。\n\n## Disclaimer\n\nThis repository is for educational, research, and process-improvement purposes only. It is not financial advice, investment advisory service, tax advice, legal advice, a signal service, or a broker execution platform. Trading and investing involve risk, including loss of principal. Past performance, backtests, screens, reports, and AI-generated analysis do not guarantee future results. All trading decisions, position sizing, tax/regulatory compliance, and broker usage are the user's responsibility.\n\nThe project is provided under the MIT License, **AS IS, WITHOUT WARRANTY**.\n\n## Who This Is For\n\nThis repository is designed for:\n\n- Time-constrained individual investors\n- Long-term investors who also want disciplined swing-trading upside\n- Dividend and ETF investors who want structured portfolio review\n- Traders who want to manage risk before finding trade candidates\n- Investors who want to journal and improve their decision process\n\nIt is not designed for fully automated trading, signal outsourcing, or short-term scalping.\n\n## Recommended Starting Path\n\nNew users should start with one of these operational workflows. Each link points to a machine-readable manifest under [`workflows/`](workflows/) that names the exact skills, decision gates, and artifacts in order.\n\n| Goal | Workflow | Anchor Skills | API Profile |\n| --- | --- | --- | --- |\n| 15-minute daily market check | [`market-regime-daily`](workflows/market-regime-daily.yaml) | market-breadth-analyzer, uptrend-analyzer, exposure-coach | No API for basic path |\n| Weekly long-term portfolio review | [`core-portfolio-weekly`](workflows/core-portfolio-weekly.yaml) ([sample](examples/workflows/core-portfolio-weekly/sample-run/)) | portfolio-manager, kanchi-dividend-review-monitor, trader-memory-core | Alpaca required; manual CSV is a degraded fallback |\n| Find swing candidates only when risk is allowed | [`swing-opportunity-daily`](workflows/swing-opportunity-daily.yaml) ([sample](examples/workflows/swing-opportunity-daily/sample-run/)) | vcp-screener, drawdown-circuit-breaker, technical-analyst, position-sizer, trader-memory-core, pre-trade-discipline-gate | FMP for screeners; local state for risk and discipline gates |\n| Record and learn from every closed trade | [`trade-memory-loop`](workflows/trade-memory-loop.yaml) | trader-memory-core, signal-postmortem | No API for manual path |\n| Review monthly performance and adjust rules | [`monthly-performance-review`](workflows/monthly-performance-review.yaml) ([sample](examples/workflows/monthly-performance-review/sample-run/)) | trader-memory-core, signal-postmortem, backtest-expert | No API for manual path |\n\nSee [`workflows/README.md`](workflows/README.md) for how to read a man",
-   "gained": 69,
-   "since": "daily",
-   "source": "trending",
-   "score": 68,
+   "has_wiki": false,
+   "homepage": "",
+   "url": "https://github.com/janestreet/agent_skills",
+   "default_branch": "master",
+   "readme": "# Agent skills from Jane Street\n\nA collection of skills for AI agents and chatbots.\nEach skill is a directory containing a `SKILL.md` file\nwith instructions for the agent.\n\n## Skills\n\n- **socratic-tutor** — turns an LLM into a strict personal tutor that teaches a\n  topic of your choice using the Socratic method: a diagnostic, a skill map with\n  levels 0-5, one question at a time, spaced review, and a final assessment.\n\n## How to use\n\nWith a coding agent that supports the common `SKILL.md` format, copy the skill\ndirectory into your agent's skills folder, then ask the agent to use it\n(\"teach me X\").\n\nWith a plain chatbot, paste the body of the skill's `SKILL.md` into the chat\n(or into a custom/system prompt), followed by what you want it to do.\n",
+   "gained": 0,
+   "since": "created<30d",
+   "source": "search_new",
+   "score": 69,
    "detail": {
     "lic": 25,
-    "easy": 20,
+    "easy": 14,
     "zh": 0,
-    "demand": 18,
-    "deliver": 4,
-    "fresh": 1,
+    "demand": 10,
+    "deliver": 10,
+    "fresh": 10,
     "adj": 0
    },
    "grade": "A",
    "grade_word": "改一改能卖",
    "form": "Agent技能",
-   "velocity": 69.0,
+   "velocity": 791.3636363636364,
    "_gaps": [
     [
      "没有中文上手文档",
@@ -600,14 +381,20 @@
      "没有一键部署",
      "没有一键部署",
      "补一个 Dockerfile + compose，别人一条命令跑起来"
+    ],
+    [
+     "没有在线演示",
+     "没有在线演示",
+     "部署一个公开 demo 站，让人先玩再买单"
     ]
    ],
    "gaps_short": [
     "没有中文上手文档",
-    "没有一键部署"
+    "没有一键部署",
+    "没有在线演示"
    ],
    "risk": "",
-   "suspect": "",
+   "suspect": "星速可疑：11 天涨到 8,705 星（日均 791），先观察一周看有没有真实用户再动手",
    "pitch": {
     "gap_key": "没有效果对比",
     "change": "做前后对比案例，让人一眼看出差别",
@@ -618,11 +405,11 @@
     "hours": 4,
     "gap_key_word": "缺中文上手文档"
    },
-   "plain": "Claude Code skills for equity investors and traders — market analysis, technical charting, economic calendars, screeners, and trading strategy development.",
+   "plain": "Agent skills",
    "analy": {
-    "en": "Claude Code skills for equity investors and traders — market analysis, technical charting, economic calendars, screeners, and trading strategy development.",
-    "zh": "克劳德代码为股票投资者和交易者提供的技能——市场分析、技术图表、经济日历、筛选器和交易策略开发。",
-    "plain": "说白了，这是一份写给 AI 的操作手册，装进 AI 工具后它就知道按你的规矩干活。它干的事是：克劳德代码为股票投资者和交易者提供的技能——市场分析、技术图表、经济日历、筛选器和交易策略开发。",
+    "en": "Agent skills",
+    "zh": "代理技巧",
+    "plain": "说白了，这是一份写给 AI 的操作手册，装进 AI 工具后它就知道按你的规矩干活。它干的事是：代理技巧",
     "usage": [
      "装进常用的 AI 工具，让它按行规干活，不用每次重写要求",
      "改造成中文版，卖给不会写提示词的人",
@@ -647,54 +434,271 @@
    "seen_last": ""
   },
   {
-   "full_name": "alibaba/open-code-review",
-   "owner": "alibaba",
-   "owner_type": "Organization",
-   "name": "open-code-review",
-   "desc": "Secure, fast, efficient, battle-tested at Alibaba's scale. Hybrid architecture code review tool: deterministic pipelines + LLM Agent, precise line-level comments, built-in multi-language ruleset (NPE, thread-safety, XSS, SQL injection), OpenAI & Anthropic compatible.",
+   "full_name": "xiaoyang111222/cn-math-taxonomy",
+   "owner": "xiaoyang111222",
+   "owner_type": "User",
+   "name": "cn-math-taxonomy",
+   "desc": "数学（小学到高中）、英语（三年级到高中）、初中物理的知识图谱：1644 个知识点、2403 条先修边、6723 道题，对齐课标，附自适应前置诊断。",
+   "lang": "Python",
+   "stars": 8083,
+   "forks": 2165,
+   "watchers": 39,
+   "open_issues": 33,
+   "license": "NOASSERTION",
+   "license_name": "Other",
+   "topics": [
+    "chinese",
+    "curriculum",
+    "diagnostic",
+    "edtech",
+    "education",
+    "elementary-school",
+    "english",
+    "high-school",
+    "junior-high-school",
+    "k12",
+    "knowledge-graph",
+    "math",
+    "mathematics",
+    "middle-school",
+    "open-data",
+    "primary-school"
+   ],
+   "created_at": "2026-10-18T09:04:43Z",
+   "pushed_at": "2026-11-14T13:00:00Z",
+   "updated_at": "2026-11-15T07:19:53Z",
+   "size_kb": 46320,
+   "archived": false,
+   "has_discussions": false,
+   "has_wiki": true,
+   "homepage": "https://math.pansgo.com/",
+   "url": "https://github.com/xiaoyang111222/cn-math-taxonomy",
+   "default_branch": "main",
+   "readme": "# 中小学·高中知识图谱（数学 + 语文 + 科学 + 英语 + 物理 + 历史 + 地理 + 生物 + 化学）\n\n对齐《义务教育数学课程标准（2022 年版 2025 年修订）》（教育部《中小学课程方案和课程标准日常修订版》，教材〔2025〕1 号）、《普通高中数学课程标准（2017年版2025年修订）》的**必修和选择性必修**，以及《义务教育英语课程标准（2022年版）》一级、二级和三级（7–9 年级）和《普通高中英语课程标准（2017年版2025年修订）》的必修、选择性必修。数学教材是人教版一–九、人教 A 版（2019）必修两册和选择性必修三册；英语按人教 PEP（三年级起点，根据2022年版课程标准修订的新版）三上到六上（四下按 2026 春 pep4x_2026 densify；五下新版未上线暂按现行 peps5x densify；六下按现行 peps6x densify）、人教版 Go for it! 新版七上到九上（九下新版未上线，暂按旧版九年级全一册第 9–14 单元等），以及人教版（2019）高中必修三册和选择性必修四册。初中物理按人教版新版（根据2022年版课程标准修订）八年级上册、八年级下册、九年级全一册，对齐《义务教育物理课程标准（2022年版2025年修订）》；高中物理按人教版（2019年审定）必修第一至三册和选择性必修第一至三册，对齐《普通高中物理课程标准（2017年版2020年修订）》。附**自适应前置诊断**与题库。数学答错会沿先修边从高中、初中一直回溯到具体的小学知识点。英语单独成图，不和数学连边；初中英语会连回小学英语，高中英语主要连回初中英语。物理也单独成图，用到的数学写在知识点的 `mathLinks` 字段里，不算先修边。仓库名仍是 `cn-math-taxonomy`。初中生物按人教版七至八年级单独成图，对齐《义务教育生物学课程标准（2022年版）》第四学段内容要求的公开转述；六三制九年级没有生物课。初中化学按人教版九年级上、下册单独成图，对齐《义务教育化学课程标准（2022年版）》第四学段内容要求的公开转述；六三制化学在九年级开设，不建七、八年级化学点，也不采用五四制全一册。高中化学必修第一册、必修第二册、选择性必修第一册《化学反应原理》、选择性必修第二册《物质结构与性质》和选择性必修第三册《有机化学基础》按人教版印刷目录成图，对齐《普通高中化学课程标准（2017年版）》相关内容要求的公开转述。初中语文按统编版七至九年级并入已有语文学科（仍是 `subject=chinese`，编号 `cnc_j`），对齐《义务教育语文课程标准（2022年版）》第四学段学段要求的公开转述（2026-11-06 对照人教社电子书印刷页 14–16；该节没有【内容要求】标题，也未取得教育部 PDF）；小学语文仍是 `cnc_p`。没有高中语文。\n\n**范围：数学高中做到必修和选择性必修，并且只用人民教育出版社 A 版（2019）；英语做到三年级到高中（人教版 2019 必修三册、选择性必修四册）；语文做到小学一至六年级和初中七至九年级（统编版），没有高中语文。** 7.3「复数的三角表示」仍按教材选学处理，没有单独建点。定积分不在选择性必修的内容要求里，没有建点。英语不出听力和口语题。\n\n[![License: CC BY-NC 4.0](https://img.shields.io/badge/License-CC%20BY--NC%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc/4.0/)\n[![在线试用](https://img.shields.io/badge/%E5%9C%A8%E7%BA%BF%E8%AF%95%E7%94%A8-math.pansgo.com-2ea44f)](https://math.pansgo.com/)\n[![GitHub Pages 备份](https://img.shields.io/badge/备份-GitHub%20Pages-lightgrey)](https://xiaoyang111222.github.io/cn-math-taxonomy/)\n\n> **商业授权：** 本项目采用 CC BY-NC 4.0，个人学习、教学、研究可免费使用；**商业使用（付费课程、付费 App、机构收费服务等）需单独授权**，请通过 X 私信 [@hassanyehiaa](https://x.com/hassanyehiaa)、邮箱 [499749204@qq.com](mailto:499749204@qq.com) 或在本仓库 [提交 Issue](https://github.com/xiaoyang111222/cn-math-taxonomy/issues) 联系，条款见文末「许可证 / License」。\n\n**[→ 在线试用诊断（演示：配方法）](https://math.pansgo.com/diagnose/?target=cnm_221&demo=1)** · [首页](https://math.pansgo.com/) · [知识图谱](https://math.pansgo.com/explore/) · [诊断工具](https://math.pansgo.com/diagnose/) · [GitHub Pages 备份](https://xiaoyang111222.github.io/cn-math-taxonomy/)\n\n![首页：三步说明、实时统计和年级入口](screenshots/06-home.png)\n\n![知识图谱：配方法附近的先修（向上 2 层，向下 1 层）](screenshots/07-explore-221.png)\n\n![诊断结果示例：配方法 → 回溯到完全平方公式](screenshots/03-result.png)\n\n![知识图谱：高中「函数的概念」附近的先修](screenshots/21-explore-h027.png)\n\n![诊断：高中函数概念回溯到初中二次函数](screenshots/23-diagnose-h027.png)\n\n![知识图谱：选择性必修「导数的概念」](screenshots/28-explore-der.png)\n\n![诊断：选择性必修第二册整册筛查](screenshots/30-diagnose-xuanbi2.png)\n\n| | 知识点 | 先修边 | 课标条目 | 题库 |\n| --- | ---: | ---: | ---: | ---: |\n| 小学（1–6 年级） | 284 | 459（小学内部） | 77（第一至三学段；2026-10-21 按 2025 修订版补齐 4 条） | 1136 |\n| 初中（7–9 年级） | 315 | 563（初中内部，未改） | 157（第四学段） | 1407 |\n| 高中必修 | 143 | 144（高中内部） | 48（2017 必修，2026-11-06 记 2020 年修订版 PDF 印刷页，转述） | 572 |\n| 高中选择性必修 | 128 | 148（选择性必修内部） | 32（2017 选择性必修，2026-11-06 记 2020 年修订版 PDF 印刷页，转述） | 512 |\n| 数学合计 | 870 | 1459（另有初中→小学 45、必修跨学段 54、选择性必修跨模块 46） | 314 | 3627 |\n| 小学英语（3–6 年级） | 275 | 368（hard 117，soft 251；不与数学相连） | 35（2022 一级、二级：语音词汇语法记印刷页 19–21，日常表达和读写仍待核） | 1100 |\n| 初中英语（7–9 年级） | 257 | 361（hard 117，soft 244；其中 29 条硬边指向小学英语） | 37（2022 三级：语音词汇语法记印刷页 19–21，日常表达和读写仍待核） | 1028 |\n| 高中英语（必修三册、选择性必修四册） | 259 | 299（hard 44，soft 255；其中 22 条指向初中英语） | 44（2017：语音词汇语法记 2020 年修订版 PDF 表4–6，日常表达和读写仍待核） | 1036 |\n| 初中物理（八上、八下、九年级全一册） | 92 | 123（hard 100，soft 23；不与数学相连，另有 34 条 `mathLinks`） | 89（2022年版2025年修订，OCR 后校对） | 368 |\n| 高中物理（必修三册、选择性必修三册） | 177 | 514（hard 277，soft 237；其中 105 条指向初中物理；不与数学相连，另有 64 条 `mathLinks`） | 108（2017年版2020年修订：内容要求 87 + 学生必做实验 21，待核） | 708 |\n| 小学语文（1–6 年级） | 493 | 656（hard 268，soft 388；只在语文内部） | 20（2022 语文第一至第三学段，转述；人教社电子书印刷页 7–13，未对教育部 PDF） | 1972 |\n| 初中语文（7–9 年级） | 189 | 243（hard 59，soft 184；其中 19 条硬边指向小学语文） | 12（2022 语文第四学段，转述；人教社电子书印刷页 14–16，未对教育部 PDF） | 75",
+   "gained": 0,
+   "since": "created<30d",
+   "source": "search_new",
+   "score": 69,
+   "detail": {
+    "lic": 8,
+    "easy": 20,
+    "zh": 15,
+    "demand": 12,
+    "deliver": 4,
+    "fresh": 10,
+    "adj": 0
+   },
+   "grade": "A",
+   "grade_word": "改一改能卖",
+   "form": "引擎库",
+   "velocity": 299.3703703703704,
+   "_gaps": [
+    [
+     "没有一键部署",
+     "没有一键部署",
+     "补一个 Dockerfile + compose，别人一条命令跑起来"
+    ]
+   ],
+   "gaps_short": [
+    "没有一键部署"
+   ],
+   "risk": "许可证不明，动手前去 README 确认一遍",
+   "suspect": "",
+   "pitch": {
+    "gap_key": "没有中文上手文档",
+    "change": "把 README 翻成中文，配一张「三步跑通」流程图",
+    "buyer": "小微企业老板和会计",
+    "buyer_tag": "财税",
+    "deliver": "接单代跑：客户给需求，你出结果",
+    "deliver_alt": "做成中文教程 + 成品包，走知识付费",
+    "hours": 2,
+    "gap_key_word": "缺一键部署"
+   },
+   "plain": "数学（小学到高中）、英语（三年级到高中）、初中物理的知识图谱：1644 个知识点、2403 条先修边、6723 道题，对齐课标，附自适应前置诊断。",
+   "analy": {
+    "en": "数学（小学到高中）、英语（三年级到高中）、初中物理的知识图谱：1644 个知识点、2403 条先修边、6723 道题，对齐课标，附自适应前置诊断。",
+    "zh": "数学（小学到高中）、英语（三年级到高中）、初中物理的知识图谱：1644 个知识点、2403 条先修边、6723 道题，对齐课标，附自适应前置诊断。",
+    "plain": "说白了，这是一堆已经写好的能力，但没有界面，得有人包一层壳才能给普通人用。它干的事是：数学（小学到高中）、英语（三年级到高中）、初中物理的知识图谱：1644 个知识点、2403 条先修边、6723 道题，对齐课标，附自适应前置诊断。",
+    "usage": [
+     "把重复的票据/报表处理变成一键",
+     "接到同类需求时拿它当底子，省掉搭骨架的两三天",
+     "包一层网页界面，做成给非技术人用的成品"
+    ],
+    "how": [
+     "按 README 装依赖（这一步最容易卡住）",
+     "跑一个作者给的示例，确认能出结果",
+     "把自己的数据/需求换成示例里的输入"
+    ],
+    "gap": "把 README 翻成中文，配一张「三步跑通」流程图",
+    "buyer": "小微企业老板和会计",
+    "why": "小微企业老板和会计不是不会做，是懒得为这一步花两三天试错。你把「把 README 翻成中文，配一张「三步跑通」流程图」替他们做完，他们花的钱远少于自己折腾的时间。",
+    "self": "接到类似需求直接拿它当底子，省掉搭骨架的两三天；顺手把它当成自己的技术储备，下次报价敢往上抬。",
+    "pack": "包一层网页界面，录一段 3 分钟演示，按份卖；买家买的不是代码，是「不用装环境」。落地上就按这条走：接单代跑：客户给需求，你出结果。",
+    "_auto": true,
+    "_src": "rule"
+   },
+   "_bucket": "",
+   "seen_times": 0,
+   "seen_first": "",
+   "seen_last": ""
+  },
+  {
+   "full_name": "unclebob/ub-mode",
+   "owner": "unclebob",
+   "owner_type": "User",
+   "name": "ub-mode",
+   "desc": "",
+   "lang": "",
+   "stars": 7978,
+   "forks": 455,
+   "watchers": 63,
+   "open_issues": 12,
+   "license": "MIT",
+   "license_name": "MIT License",
+   "topics": [],
+   "created_at": "2026-10-25T16:04:09Z",
+   "pushed_at": "2026-11-02T15:08:31Z",
+   "updated_at": "2026-11-15T07:13:24Z",
+   "size_kb": 2,
+   "archived": false,
+   "has_discussions": false,
+   "has_wiki": true,
+   "homepage": "",
+   "url": "https://github.com/unclebob/ub-mode",
+   "default_branch": "master",
+   "readme": "# ub-mode\n\n`ub-mode` is an agent skill that enforces disciplined software engineering principles when writing or changing code. It is loosely based on portions of [@poteto](https://github.com/poteto)'s rules (`poteto-mode` / `pstack`), reduced and paired with deterministic quality-gate tools:\n\n1. **First Make it Work** — Laziness Protocol, Foundational Thinking, TDD, Redesign From First Principles, Attack the Premise, Subtract Before You Add, Outcome-Oriented Execution, Build the Lever, and Architecture (Model the Domain, Boundary Discipline, Type System Discipline, Make Operations Idempotent, Separate Before Serializing Shared State).\n2. **Then Make it Right** — Fix Root Causes, Sequence Work into Verifiable Units, Test Behavior (Not Implementation), [Crapper](https://github.com/unclebob/crapper) (`CRAP < 10`), [Dryer](https://github.com/unclebob/dryer) (duplication `< 0.8`), [Mutator](https://github.com/unclebob/mutator) (cover the uncovered, kill the survivors, delete dead code), and Refactoring.\n3. **Practice** — Keep a Log, Guard the Context Window, Worktree Cleanup, and Commit and Push in small ordered commits.\n\n## Companion Tool Repositories\n\n`ub-mode` relies on deterministic quality-gate tools to enforce structure, complexity, duplication, and test thoroughness:\n\n- [unclebob/crapper](https://github.com/unclebob/crapper) — Computes cyclomatic complexity, test coverage, and CRAP score per function so every function stays under the CRAP threshold (`< 10`).\n- [unclebob/dryer](https://github.com/unclebob/dryer) — Detects structural code duplication so duplicate blocks (`>= 0.8` similarity) are eliminated.\n- [unclebob/mutator](https://github.com/unclebob/mutator) — Runs mutation testing to expose uncovered code and surviving mutants that tests fail to catch.\n- [unclebob/uml-viewer](https://github.com/unclebob/uml-viewer) — Visualizes components, coverage, CRAP, mutation scores, and dependency directions.\n\n## Installation\n\nCopy `SKILL.md` into your agent's skills directory as `ub-mode/SKILL.md` (for example `~/.grok/skills/ub-mode/SKILL.md`, `~/.claude/skills/ub-mode/SKILL.md`, or `~/.cursor/skills/ub-mode/SKILL.md`), then invoke `/ub-mode`.\n",
+   "gained": 0,
+   "since": "created<30d",
+   "source": "search_new",
+   "score": 69,
+   "detail": {
+    "lic": 25,
+    "easy": 14,
+    "zh": 0,
+    "demand": 10,
+    "deliver": 10,
+    "fresh": 10,
+    "adj": 0
+   },
+   "grade": "A",
+   "grade_word": "改一改能卖",
+   "form": "引擎库",
+   "velocity": 398.9,
+   "_gaps": [
+    [
+     "没有中文上手文档",
+     "没有中文上手文档",
+     "把 README 翻成中文，配一张三步跑通图"
+    ],
+    [
+     "没有一键部署",
+     "没有一键部署",
+     "补一个 Dockerfile + compose，别人一条命令跑起来"
+    ],
+    [
+     "没有在线演示",
+     "没有在线演示",
+     "部署一个公开 demo 站，让人先玩再买单"
+    ]
+   ],
+   "gaps_short": [
+    "没有中文上手文档",
+    "没有一键部署",
+    "没有在线演示"
+   ],
+   "risk": "",
+   "suspect": "",
+   "pitch": {
+    "gap_key": "没有现成案例",
+    "change": "补 3 个真实场景示例，每个都能直接跑出结果",
+    "buyer": "要用这套能力但搞不定环境的人",
+    "buyer_tag": "通用",
+    "deliver": "做成中文教程 + 成品包，走知识付费",
+    "deliver_alt": "封装成 API 出租，按调用量收费",
+    "hours": 4,
+    "gap_key_word": "缺中文上手文档"
+   },
+   "plain": "作者没写简介，得打开仓库才知道是什么",
+   "analy": {
+    "en": "`ub-mode` is an agent skill that enforces disciplined software engineering principles when writing or changing code. It is loosely based on portions of 's rules (`poteto-mode` / `pstack`), reduced and paired with deterministic quality-gate tools:",
+    "zh": "`ub-mode` 是一种代理技能，在编写或更改代码时强制执行规范的软件工程原则。它大致基于的规则（`poteto-mode` / `pstack`）的部分内容，经过简化并与确定性质量门工具相结合：",
+    "plain": "说白了，这是一堆已经写好的能力，但没有界面，得有人包一层壳才能给普通人用。它干的事是：`ub-mode` 是一种代理技能，在编写或更改代码时强制执行规范的软件工程原则。它大致基于的规则（`poteto-mode` / `pstack`）的部分内容，经过简化并与确定性质量门工具相结合：",
+    "usage": [
+     "接到同类需求时拿它当底子，省掉搭骨架的两三天",
+     "包一层网页界面，做成给非技术人用的成品",
+     "集成进自己的项目，跳过从零写这一段"
+    ],
+    "how": [
+     "按 README 装依赖（这一步最容易卡住）",
+     "跑一个作者给的示例，确认能出结果",
+     "把自己的数据/需求换成示例里的输入"
+    ],
+    "gap": "补 3 个真实场景示例，每个都能直接跑出结果",
+    "buyer": "要用这套能力但搞不定环境的人",
+    "why": "要用这套能力但搞不定环境的人不是不会做，是懒得为这一步花两三天试错。你把「补 3 个真实场景示例，每个都能直接跑出结果」替他们做完，他们花的钱远少于自己折腾的时间。",
+    "self": "接到类似需求直接拿它当底子，省掉搭骨架的两三天；顺手把它当成自己的技术储备，下次报价敢往上抬。",
+    "pack": "包一层网页界面，录一段 3 分钟演示，按份卖；买家买的不是代码，是「不用装环境」。落地上就按这条走：做成中文教程 + 成品包，走知识付费。",
+    "_auto": true,
+    "_src": "mt"
+   },
+   "_bucket": "",
+   "seen_times": 0,
+   "seen_first": "",
+   "seen_last": ""
+  },
+  {
+   "full_name": "JuliusBrussee/caveman",
+   "owner": "JuliusBrussee",
+   "owner_type": "User",
+   "name": "caveman",
+   "desc": "🪨 why use many token when few token do trick. Viral skill + proxy for coding agents that cuts 65% of tokens by talking like a caveman.",
    "lang": "Go",
-   "stars": 50866,
-   "forks": 3787,
-   "watchers": 145,
-   "open_issues": 340,
+   "stars": 120191,
+   "forks": 7007,
+   "watchers": 259,
+   "open_issues": 88,
    "license": "Apache-2.0",
    "license_name": "Apache License 2.0",
    "topics": [
-    "agent",
-    "agent-skills",
-    "code-review",
-    "code-review-assistant",
-    "harness",
-    "repository-level-context"
+    "ai",
+    "anthropic",
+    "caveman",
+    "claude",
+    "claude-code",
+    "llm",
+    "meme",
+    "prompt-engineering",
+    "skill",
+    "tokens"
    ],
-   "created_at": "2026-05-18T02:16:36Z",
-   "pushed_at": "2026-11-14T05:39:05Z",
-   "updated_at": "2026-11-14T07:25:32Z",
-   "size_kb": 54666,
+   "created_at": "2026-04-04T10:03:00Z",
+   "pushed_at": "2026-11-15T07:19:16Z",
+   "updated_at": "2026-11-15T07:36:52Z",
+   "size_kb": 21974,
    "archived": false,
    "has_discussions": true,
-   "has_wiki": false,
-   "homepage": "https://open-codereview.ai",
-   "url": "https://github.com/alibaba/open-code-review",
+   "has_wiki": true,
+   "homepage": "https://docs.caveman.so/caveman",
+   "url": "https://github.com/JuliusBrussee/caveman",
    "default_branch": "main",
-   "readme": "<div align=\"center\">\n  <a href=\"https://open-codereview.ai\">\n    <img src=\"imgs/logo-core.svg\" alt=\"OpenCodeReview logo\" width=\"180\" />\n  </a>\n  <h1>OpenCodeReview</h1>\n</div>\n\n<p align=\"center\">\n  <a href=\"https://trendshift.io/repositories/41087?utm_source=repository-badge&amp;utm_medium=badge&amp;utm_campaign=badge-repository-41087\" target=\"_blank\" rel=\"noopener noreferrer\">\n    <img src=\"https://trendshift.io/api/badge/repositories/41087\" alt=\"alibaba%2Fopen-code-review | Trendshift\" style=\"width: 280px; height: 60px;\" width=\"280\" height=\"60\" />\n  </a>\n</p>\n<p align=\"center\">\n  <a href=\"https://trendshift.io/repositories/41087\" target=\"_blank\">\n    <img src=\"https://trendshift.io/api/badge/trendshift/repositories/41087/weekly\" alt=\"alibaba%2Fopen-code-review | Trendshift\" style=\"width: 280px; height: 60px;\" width=\"280\" height=\"60\" />\n  </a>\n  <a href=\"https://trendshift.io/repositories/41087\" target=\"_blank\">\n    <img src=\"https://trendshift.io/api/badge/trendshift/repositories/41087/monthly?language=Go\" alt=\"alibaba%2Fopen-code-review | Trendshift\" style=\"width: 280px; height: 60px;\" width=\"280\" height=\"60\" />\n  </a>\n</p>\n<p align=\"center\">\n  <a href=\"https://www.npmjs.com/package/@alibaba-group/open-code-review\"><img alt=\"npm\" src=\"https://img.shields.io/npm/v/@alibaba-group/open-code-review?style=flat-square\" /></a>\n  <a href=\"https://github.com/alibaba/open-code-review/actions/workflows/release.yml\"><img alt=\"Build status\" src=\"https://img.shields.io/github/actions/workflow/status/alibaba/open-code-review/release.yml?style=flat-square\" /></a>\n  <a href=\"https://github.com/alibaba/open-code-review/blob/main/LICENSE\"><img alt=\"License\" src=\"https://img.shields.io/github/license/alibaba/open-code-review?style=flat-square\" /></a>\n  <a href=\"https://deepwiki.com/alibaba/open-code-review\"><img alt=\"Ask DeepWiki\" src=\"https://img.shields.io/badge/Ask-DeepWiki-blue?style=flat-square\" /></a>\n  <a href=\"https://www.bestpractices.dev/projects/13328\"><img alt=\"OpenSSF Best Practices\" src=\"https://img.shields.io/badge/OpenSSF-Gold-D4AF37?style=flat-square\" /></a>\n</p>\n<p align=\"center\">\n  <a href=\"#supported-platforms\"><img alt=\"Windows\" src=\"https://img.shields.io/badge/Windows-supported-blue.svg\" /></a>\n  <a href=\"#supported-platforms\"><img alt=\"macOS\" src=\"https://img.shields.io/badge/macOS-supported-blue.svg\" /></a>\n  <a href=\"#supported-platforms\"><img alt=\"Linux\" src=\"https://img.shields.io/badge/Linux-supported-blue.svg\" /></a>\n  <a href=\"#supported-agents\"><img alt=\"Claude Code\" src=\"https://img.shields.io/badge/Claude_Code-supported-blueviolet.svg\" /></a>\n  <a href=\"#supported-agents\"><img alt=\"Codex\" src=\"https://img.shields.io/badge/Codex-supported-blueviolet.svg\" /></a>\n  <a href=\"#supported-agents\"><img alt=\"Cursor\" src=\"https://img.shields.io/badge/Cursor-supported-blueviolet.svg\" /></a>\n  <a href=\"#supported-agents\"><img alt=\"Kimi Code\" src=\"https://img.shields.io/badge/Kimi_Code-supported-blueviolet.svg\" /></a>\n</p>\n<p align=\"center\">\n  English | <a href=\"docs/i18n/README.zh-CN.md\">简体中文</a> | <a href=\"docs/i18n/README.ja-JP.md\">日本語</a> | <a href=\"docs/i18n/README.ko-KR.md\">한국어</a> | <a href=\"docs/i18n/README.ru-RU.md\">Русский</a>\n</p>\n\n---\n\n## What is Open Code Review?\n\nOpen Code Review is an AI-powered code review CLI tool. It originated as Alibaba Group's internal official AI code review assistant — over the past two years, it has served tens of thousands of developers and identified millions of code defects. After thorough validation at massive scale, we incubated it into an open source project for the community. Simply configure a model endpoint to get started.\n\nIt reads Git diffs, sends changed files to a configurable LLM via an agent with tool-use capabilities, and generates structured review comments with line-level precision. The agent can read full file contents, search the codebase, inspect other changed files for context, and produce deep reviews — not just surface-level diff feedback. Beyond diff review,",
-   "gained": 215,
+   "readme": "<div align=\"center\">\n\n## New: Caveman Code. Free.\n\n**The most efficient coding agent.** Same model, same work, smaller bill.\n\n<table>\n<tr>\n<td align=\"center\"><h3>21% cheaper</h3>than Codex<br><sub>Terminal-Bench 4, per solved task</sub></td>\n<td align=\"center\"><h3>14% cheaper</h3>than Claude Code<br><sub>Terminal-Bench 4, 97 vs 83 solved</sub></td>\n<td align=\"center\"><h3>76% cheaper</h3>than Claude Code<br><sub>full workday, 4 connected apps</sub></td>\n</tr>\n</table>\n\n<sub>Same model on both sides: GPT-6.1 Sol against Codex, Opus 5.5 against Claude Code. Our own runs, November 2026, at list prices. <a href=\"https://caveman.so/code\">How we measured</a></sub>\n\nEvery coding agent in one window. Free on the subscriptions and keys you already have.\n\n**[Download Caveman Code for Mac](https://caveman.so/download) · [Read the launch post](https://caveman.so/news/introducing-caveman-code)**\n\n---\n\n<img src=\"docs/assets/caveman-logo-banner.png\" alt=\"Caveman\" width=\"720\">\n\n# why many token when few do trick\n\n**Caveman make your AI agent say less and read less. Code stay exact. Brain still big.**\n\n<a href=\"https://github.com/JuliusBrussee/caveman/stargazers\"><img src=\"https://img.shields.io/github/stars/JuliusBrussee/caveman?style=flat-square&color=F0A63C&label=stars\" alt=\"GitHub stars\"></a>\n<a href=\"https://www.npmjs.com/package/@caveman-ai/cli\"><img src=\"https://img.shields.io/npm/dm/@caveman-ai/cli?style=flat-square&color=F0A63C&label=cli%20downloads\" alt=\"npm downloads\"></a>\n<a href=\"./INSTALL.md\"><img src=\"https://img.shields.io/badge/works_with-30%2B_agents-orange?style=flat-square\" alt=\"30+ agents\"></a>\n<a href=\"#license\"><img src=\"https://img.shields.io/badge/license-Apache--2.0-green?style=flat-square\" alt=\"License\"></a>\n\n<table>\n<tr>\n<td align=\"center\" width=\"25%\"><h3>33.2% fewer</h3>input tokens, whole sessions<br><sub><a href=\"#read-less-332-fewer-input-tokens\">54 Claude Code runs</a>, 18 of 18 answers right</sub></td>\n<td align=\"center\" width=\"25%\"><h3>54% cheaper</h3>with Auto, same score<br><sub><a href=\"#auto-54-cheaper-same-score\">85 coding tasks</a> vs Opus 5.5 at xhigh, interim</sub></td>\n<td align=\"center\" width=\"25%\"><h3>397 → 76</h3>tokens for one test run<br><sub><a href=\"#blocks-code-mode-script-written-once\">Blocks</a> vs <code>| tail -20</code></sub></td>\n<td align=\"center\" width=\"25%\"><h3>1.4 to 2.4× cheaper</h3>with caveman-style output<br><sub><a href=\"https://arxiv.org/abs/2606.24083\">Adobe Research</a>, eight models</sub></td>\n</tr>\n</table>\n\nCited by **[Adobe Research](https://arxiv.org/abs/2606.24083)** · A/B tested by **[JetBrains](https://blog.jetbrains.com/ai/2026/07/speak-to-ai-agents-like-cavemen-tosave-tokens/)** · Remade for Elasticsearch on **[Elasticsearch Labs](https://www.elastic.co/search-labs/blog/elastic-caveman-ai-token-reduction)**<br>\n**#1** on [Hacker News](https://news.ycombinator.com/item?id=47647455) · **#1** on GitHub Trending · *\"No way this actually works.\"* [ThePrimeagen](https://www.youtube.com/watch?v=L29q2LRiMRc)\n\n**[Install](#install) · [Six rocks](#six-rocks-one-install) · [Proof](#proof) · [Say less](#say-less-the-caveman-voice) · [Read less](#read-less-332-fewer-input-tokens) · [Auto](#auto-54-cheaper-same-score) · [Blocks](#blocks-code-mode-script-written-once) · [Commands](#commands) · [Caveman Cloud](#caveman-cloud)**\n\n</div>\n\n---\n\n<table>\n<tr>\n<th width=\"50%\">Normal agent · 63 tokens</th>\n<th width=\"50%\"><img src=\"docs/assets/dancing-rock.svg\" width=\"18\" height=\"18\" alt=\"\"> Caveman agent · 20 tokens</th>\n</tr>\n<tr>\n<td valign=\"top\">\n\n> The reason your React component is re-rendering is likely because you're creating a new object reference on each render cycle. When you pass an inline object as a prop, React's shallow comparison sees it as a different object every time, which triggers a re-render. I'd recommend using useMemo to memoize the object.\n\n</td>\n<td valign=\"top\">\n\n> New object ref each render, so React re-renders. Wrap the prop in `useMemo`.\n\n</td>\n</tr>\n</table>\n",
+   "gained": 227,
    "since": "daily",
    "source": "trending",
-   "score": 64,
+   "score": 67,
    "detail": {
     "lic": 25,
     "easy": 20,
     "zh": 0,
-    "demand": 20,
-    "deliver": 4,
-    "fresh": 3,
-    "adj": -8
+    "demand": 14,
+    "deliver": 7,
+    "fresh": 1,
+    "adj": 0
    },
-   "grade": "B",
-   "grade_word": "值得研究",
+   "grade": "A",
+   "grade_word": "改一改能卖",
    "form": "Agent技能",
-   "velocity": 215.0,
+   "velocity": 227.0,
    "_gaps": [
     [
      "没有中文上手文档",
@@ -711,7 +715,7 @@
     "没有中文上手文档",
     "没有一键部署"
    ],
-   "risk": "大厂项目，路线不由你定，只能做外围（部署/中文化/模板）",
+   "risk": "体量太大，改源码成本高，建议只做外围服务",
    "suspect": "",
    "pitch": {
     "gap_key": "场景全是国外的",
@@ -720,14 +724,14 @@
     "buyer_tag": "通用",
     "deliver": "做成定制版：按客户业务流程改一遍，单独报价",
     "deliver_alt": "做成定制版：按客户业务流程改一遍，单独报价",
-    "hours": 4,
+    "hours": 2,
     "gap_key_word": "缺中文上手文档"
    },
-   "plain": "Secure, fast, efficient, battle-tested at Alibaba's scale. Hybrid architecture code review tool: deterministic pipelines + LLM Agent, precise line-level comments, built-in multi-language ruleset (NPE, thread-safety, XSS, SQL injection), OpenAI & Anthropic compatible.",
+   "plain": "why use many token when few token do trick. Viral skill + proxy for coding agents that cuts 65% of tokens by talking like a caveman.",
    "analy": {
-    "en": "Secure, fast, efficient, battle-tested at Alibaba's scale. Hybrid architecture code review tool: deterministic pipelines + LLM Agent, precise line-level comments, built-in multi-language ruleset (NPE, thread-safety, XSS, SQL injection), OpenAI & Anthropic compatible.",
-    "zh": "安全、快速、高效，在阿里巴巴的规模下经过实战检验。混合架构代码审查工具：确定性管道 + LLM 代理、精确的行级注释、内置多语言规则集（NPE、线程安全、XSS、SQL 注入），兼容 OpenAI 和 Anthropic。",
-    "plain": "说白了，这是一份写给 AI 的操作手册，装进 AI 工具后它就知道按你的规矩干活。它干的事是：安全、快速、高效，在阿里巴巴的规模下经过实战检验。混合架构代码审查工具：确定性管道 + LLM 代理、精确的行级注释、内置多语言规则集（NPE、线程安全、XSS、SQL 注入），兼容 OpenAI 和 Anthropic。",
+    "en": "why use many token when few token do trick. Viral skill + proxy for coding agents that cuts 65% of tokens by talking like a caveman.",
+    "zh": "当很少的令牌可以欺骗时为什么要使用很多令牌。病毒式技能 + 编码代理的代理，通过像穴居人一样说话来减少 65% 的代币。",
+    "plain": "说白了，这是一份写给 AI 的操作手册，装进 AI 工具后它就知道按你的规矩干活。它干的事是：当很少的令牌可以欺骗时为什么要使用很多令牌。病毒式技能 + 编码代理的代理，通过像穴居人一样说话来减少 65% 的代币。",
     "usage": [
      "装进常用的 AI 工具，让它按行规干活，不用每次重写要求",
      "改造成中文版，卖给不会写提示词的人",
@@ -752,59 +756,53 @@
    "seen_last": ""
   },
   {
-   "full_name": "ccch1mneyyy/dsh-Go",
-   "owner": "ccch1mneyyy",
-   "owner_type": "User",
-   "name": "dsh-Go",
-   "desc": "dsh-go — DeepSeek Harness 装进口袋：手机本机运行，也能遥控你的电脑。",
-   "lang": "Dart",
-   "stars": 22089,
-   "forks": 1024,
-   "watchers": 44,
-   "open_issues": 579,
-   "license": "AGPL-3.0",
-   "license_name": "GNU Affero General Public License v3.0",
+   "full_name": "ag-ui-protocol/ag-ui",
+   "owner": "ag-ui-protocol",
+   "owner_type": "Organization",
+   "name": "ag-ui",
+   "desc": "AG-UI: the Agent-User Interaction Protocol. Bring Agents into Frontend Applications.",
+   "lang": "TypeScript",
+   "stars": 17472,
+   "forks": 1724,
+   "watchers": 97,
+   "open_issues": 591,
+   "license": "MIT",
+   "license_name": "MIT License",
    "topics": [
-    "ai-agent",
-    "android",
-    "android-app",
-    "coding-agent",
-    "deepseek",
-    "deepseek-harness",
-    "dsh",
-    "dsh-plugin",
-    "dsh-tui",
-    "flutter",
-    "llm"
+    "ag-ui-protocol",
+    "agent-frontend",
+    "agent-ui",
+    "agentic-workflow",
+    "ai-agents"
    ],
-   "created_at": "2026-10-25T08:09:52Z",
-   "pushed_at": "2026-11-14T07:19:03Z",
-   "updated_at": "2026-11-14T07:22:18Z",
-   "size_kb": 645907,
+   "created_at": "2025-05-07T12:49:37Z",
+   "pushed_at": "2026-11-15T02:26:33Z",
+   "updated_at": "2026-11-15T07:36:12Z",
+   "size_kb": 89109,
    "archived": false,
-   "has_discussions": false,
-   "has_wiki": false,
-   "homepage": "",
-   "url": "https://github.com/ccch1mneyyy/dsh-Go",
+   "has_discussions": true,
+   "has_wiki": true,
+   "homepage": "https://ag-ui.com",
+   "url": "https://github.com/ag-ui-protocol/ag-ui",
    "default_branch": "main",
-   "readme": "<p align=\"center\">\n  <b>简体中文</b> · <a href=\"README.en.md\">English</a>\n</p>\n\n<p align=\"center\">\n  <picture>\n    <source media=\"(prefers-color-scheme: dark)\" srcset=\"docs/assets/hero-zh-dark.webp\">\n    <img src=\"docs/assets/hero-zh-light.webp\" alt=\"DSH Go：把 DeepSeek Harness 装进口袋\" width=\"100%\">\n  </picture>\n</p>\n\n<p align=\"center\">\n  DeepSeek Harness 的 Android 客户端。手机上直接跑，也能遥控你电脑上的 DSH。\n</p>\n\n<p align=\"center\">\n  <a href=\"https://github.com/ccch1mneyyy/dsh-go/releases/latest\"><img alt=\"Android 8+\" src=\"https://img.shields.io/badge/Android-8%2B-4B67B4?style=flat-square&logo=android&logoColor=white&labelColor=2B3245\"></a>\n  <a href=\"LICENSE\"><img alt=\"许可证 AGPL-3.0\" src=\"https://img.shields.io/badge/%E8%AE%B8%E5%8F%AF%E8%AF%81-AGPL--3.0-4B67B4?style=flat-square&labelColor=2B3245\"></a>\n  <a href=\"https://forum.dshtui.com\"><img alt=\"论坛\" src=\"https://img.shields.io/badge/%E8%AE%BA%E5%9D%9B-forum.dshtui.com-4B67B4?style=flat-square&labelColor=2B3245\"></a>\n  <a href=\"https://qm.qq.com/q/OEy2RqZnqY\"><img alt=\"QQ 群 1132118290\" src=\"https://img.shields.io/badge/QQ%20%E7%BE%A4-1132118290-4B67B4?style=flat-square&logo=tencentqq&logoColor=white&labelColor=2B3245\"></a>\n</p>\n\n<p align=\"center\">\n  <a href=\"https://trendshift.io/repositories/319451\"><img src=\"https://trendshift.io/api/badge/trendshift/repositories/319451/daily\" alt=\"DSH Go：Trendshift 全语言日榜第一（2026-10-30）\" width=\"250\" height=\"55\"></a><br>\n  <sub>Trendshift 全语言日榜 #1 · 2026-10-30</sub>\n</p>\n\n<br>\n\n<h3 align=\"center\">Deepy 和鲸娘，陪你干活</h3>\n\n<p align=\"center\">干活时敲代码，做完来个空翻，等你确认会举手。打开「App 外显示」，它们还会跟你到桌面。</p>\n\n<p align=\"center\">\n  <picture><source media=\"(prefers-color-scheme: dark)\" srcset=\"docs/assets/pet-deepy-typing-zh-dark.gif\"><img src=\"docs/assets/pet-deepy-typing-zh-light.gif\" width=\"168\" alt=\"Deepy 敲代码\"></picture> <picture><source media=\"(prefers-color-scheme: dark)\" srcset=\"docs/assets/pet-deepy-happy-zh-dark.gif\"><img src=\"docs/assets/pet-deepy-happy-zh-light.gif\" width=\"168\" alt=\"Deepy 完成\"></picture> <picture><source media=\"(prefers-color-scheme: dark)\" srcset=\"docs/assets/pet-deepy-notification-zh-dark.gif\"><img src=\"docs/assets/pet-deepy-notification-zh-light.gif\" width=\"168\" alt=\"Deepy 等你确认\"></picture> <picture><source media=\"(prefers-color-scheme: dark)\" srcset=\"docs/assets/pet-deepy-sleeping-zh-dark.gif\"><img src=\"docs/assets/pet-deepy-sleeping-zh-light.gif\" width=\"168\" alt=\"Deepy 睡觉\"></picture>\n</p>\n\n<p align=\"center\">\n  <picture><source media=\"(prefers-color-scheme: dark)\" srcset=\"docs/assets/pet-girl-typing-zh-dark.gif\"><img src=\"docs/assets/pet-girl-typing-zh-light.gif\" width=\"168\" alt=\"鲸娘 敲代码\"></picture> <picture><source media=\"(prefers-color-scheme: dark)\" srcset=\"docs/assets/pet-girl-happy-zh-dark.gif\"><img src=\"docs/assets/pet-girl-happy-zh-light.gif\" width=\"168\" alt=\"鲸娘 完成\"></picture> <picture><source media=\"(prefers-color-scheme: dark)\" srcset=\"docs/assets/pet-girl-notification-zh-dark.gif\"><img src=\"docs/assets/pet-girl-notification-zh-light.gif\" width=\"168\" alt=\"鲸娘 等你确认\"></picture> <picture><source media=\"(prefers-color-scheme: dark)\" srcset=\"docs/assets/pet-girl-sleeping-zh-dark.gif\"><img src=\"docs/assets/pet-girl-sleeping-zh-light.gif\" width=\"168\" alt=\"鲸娘 睡觉\"></picture>\n</p>\n\n<br>\n\n<a id=\"download\"></a>\n<h3 align=\"center\">下载 DSH Go</h3>\n\n<p align=\"center\">从 GitHub Releases 或官网下载页获取最新版 APK，常见手机选 arm64 包。</p>\n\n<p align=\"center\">\n  <a href=\"https://github.com/ccch1mneyyy/dsh-go/releases/latest\"><img alt=\"从 GitHub Releases 下载\" src=\"https://img.shields.io/badge/GitHub%20Releases-%E4%B8%8B%E8%BD%BD%20APK-4B67B4?style=for-the-badge&logo=github&logoColor=white&labelColor=2B3245\"></a>&emsp;<a href=\"https://go.dshtui.com/download\"><img alt=\"从官网下载页下载\" src=\"https://img.shields.io/badge/go.dshtui.com-%E5%AE%98%E7%BD%91%E4%B8%8B%E8%BD%BD-4B67B4?style=for-the-badge&labelColor=2B3245\"></a>\n</p>\n\n<p align=\"center\">\n  <b>感谢大家对 DSH Go 的支持和喜爱，我将尽快适配 iOS 和鸿蒙！大家 Star 点得越多，我适配得越快哦 hhh</b>\n</p>\n\n<p align=\"center\">\n  <a href=\"https://github.com/ccch1mneyyy/dsh-go/stargazers\"><img alt=\"G",
-   "gained": 911,
-   "since": "since_last",
-   "source": "search_new",
-   "score": 61,
+   "readme": "\n# <img src=\"https://github.com/user-attachments/assets/ebc0dd08-8732-4519-9b6c-452ce54d8058\" alt=\"ag-ui Logo\" width=\"22\"/> AG-UI: The Agent-User Interaction Protocol\n\n\nAG-UI is an open, lightweight, event-based protocol that standardizes how AI agents connect to user-facing applications.\nBuilt for simplicity and flexibility, it enables seamless integration between AI agents, real time user context, and user interfaces.\n\n---\n\n<div align=\"center\">\n<a href=\"https://trendshift.io/repositories/27961?utm_source=repository-badge&utm_medium=badge&utm_campaign=badge-repository-27961\" target=\"_blank\" rel=\"noopener noreferrer\"><img src=\"https://trendshift.io/api/badge/repositories/27961\" alt=\"ag-ui-protocol%2Fag-ui | Trendshift\" width=\"250\" height=\"55\"/></a>\n<a href=\"https://trendshift.io/repositories/27961?utm_source=trendshift-badge&utm_medium=badge&utm_campaign=badge-trendshift-27961\" target=\"_blank\" rel=\"noopener noreferrer\"><img src=\"https://trendshift.io/api/badge/trendshift/repositories/27961/daily\" alt=\"ag-ui-protocol%2Fag-ui | Trendshift\" width=\"250\" height=\"55\"/></a>\n</div>\n\n<br>\n\n\n[![Version](https://img.shields.io/npm/v/@ag-ui/core?label=Version&color=6963ff&logo=npm&logoColor=white)](https://www.npmjs.com/package/@ag-ui/core)\n![MIT](https://img.shields.io/github/license/copilotkit/copilotkit?color=%236963ff&label=License)\n![Discord](https://img.shields.io/discord/1379082175625953370?logo=discord&logoColor=%23FFFFFF&label=Discord&color=%236963ff)\n\n<a href=\"https://discord.gg/Jd3FzfdJa8\" target=\"_blank\"> Join our Discord → </a> &nbsp;&nbsp;&nbsp; <a href=\"https://ag-ui.com/\" target=\"_blank\"> Read the Docs → </a> &nbsp;&nbsp;&nbsp; <a href=\"https://dojo.ag-ui.com/\" target=\"_blank\"> Go to the AG-UI Dojo → </a> &nbsp;&nbsp;&nbsp; <a href=\"https://x.com/CopilotKit\" target=\"_blank\"> Follow us → </a>\n\n<img width=\"1600\" height=\"680\" alt=\"1600x680\" src=\"https://github.com/user-attachments/assets/00ec7366-713e-443f-a8f0-8db52ad28ef4\" />\n\n\n\n## 🚀 Getting Started\nCreate a new AG-UI application in seconds:\n```bash\nnpx create-ag-ui-app my-agent-app\n```\n\n<h3> Useful Links:</h3>\n\n- [The AG-UI Dojo](https://dojo.ag-ui.com/)\n- [Build AG-UI-powered applications(Quickstart)](https://docs.ag-ui.com/quickstart/applications)\n- [Build new AG-UI framework integrations (Quickstart)](https://go.copilotkit.ai/agui-contribute)\n- [Book a call to discuss an AG-UI integration with a new framework](https://calendly.com/markus-copilotkit/ag-ui)\n- [Join the Discord Community](https://discord.gg/Jd3FzfdJa8)\n\n## What is AG-UI?\n\nAG-UI is an open, lightweight, event-based protocol for agent-human interaction, designed for simplicity & flexibility:\n\n- During agent executions, agent backends **emit events _compatible_ with one of AG-UI's ~16 standard event types**\n- Agent backends can **accept one of a few simple AG-UI compatible inputs** as arguments\n\n**AG-UI includes a flexible middleware layer** that ensures compatibility across diverse environments:\n\n- Works with **any event transport** (SSE, WebSockets, webhooks, etc.)\n- Allows for **loose event format matching**, enabling broad agent and app interoperability\n\nIt also ships with a **reference HTTP implementation** and **default connector** to help teams get started fast.\n\n\n[Learn more about the specs →](https://go.copilotkit.ai/ag-ui-introduction)\n\n\n## Why AG-UI?\n\nAG-UI was developed based on real-world requirements and practical experience building in-app agent interactions.\n\n\n## Where does AGUI fit in the agentic protocol stack?\nAG-UI is complementary to the other 2 top agentic protocols\n- MCP gives agents tools\n- A2A allows agents to communicate with other agents\n- AG-UI brings agents into user-facing applications\n\n<div align=\"center\">\n  <img width=\"2048\" height=\"1182\" alt=\"The Agent Protocol Stack\" src=\"https://github.com/user-attachments/assets/41138f71-50be-4812-98aa-20e0ad595716\" />\n</div>\n\n## 🚀 Features\n\n- 💬 Real-time agentic chat with streaming\n- 🔄 Bi-directional state synchronization\n- 🧩 Generative UI",
+   "gained": 9,
+   "since": "daily",
+   "source": "trending",
+   "score": 64,
    "detail": {
-    "lic": 5,
-    "easy": 16,
-    "zh": 8,
+    "lic": 25,
+    "easy": 20,
+    "zh": 0,
     "demand": 20,
-    "deliver": 2,
-    "fresh": 10,
-    "adj": 0
+    "deliver": 4,
+    "fresh": 1,
+    "adj": -6
    },
    "grade": "B",
    "grade_word": "值得研究",
    "form": "引擎库",
-   "velocity": 1162.578947368421,
+   "velocity": 9.0,
    "_gaps": [
     [
      "没有中文上手文档",
@@ -815,35 +813,29 @@
      "没有一键部署",
      "没有一键部署",
      "补一个 Dockerfile + compose，别人一条命令跑起来"
-    ],
-    [
-     "没有在线演示",
-     "没有在线演示",
-     "部署一个公开 demo 站，让人先玩再买单"
     ]
    ],
    "gaps_short": [
     "没有中文上手文档",
-    "没有一键部署",
-    "没有在线演示"
+    "没有一键部署"
    ],
-   "risk": "AGPL：连做成网络服务都算分发，必须开源，商用最麻烦",
-   "suspect": "星速可疑：19 天涨到 22,089 星（日均 1,162），先观察一周看有没有真实用户再动手",
+   "risk": "",
+   "suspect": "",
    "pitch": {
-    "gap_key": "只有代码没有界面",
-    "change": "包一层网页界面，让不会写代码的人点两下就能用",
-    "buyer": "要用这套能力但搞不定环境的人",
+    "gap_key": "环境装不上",
+    "change": "打包成 Docker 镜像或一键脚本，把依赖全封死",
+    "buyer": "接外包时缺一个现成轮子的人",
     "buyer_tag": "通用",
-    "deliver": "接单代跑：客户给需求，你出结果",
-    "deliver_alt": "做成中文教程 + 成品包，走知识付费",
-    "hours": 8,
+    "deliver": "封装成 API 出租，按调用量收费",
+    "deliver_alt": "封装成 API 出租，按调用量收费",
+    "hours": 4,
     "gap_key_word": "缺中文上手文档"
    },
-   "plain": "dsh-go — DeepSeek Harness 装进口袋：手机本机运行，也能遥控你的电脑。",
+   "plain": "AG-UI: the Agent-User Interaction Protocol. Bring Agents into Frontend Applications.",
    "analy": {
-    "en": "dsh-go — DeepSeek Harness 装进口袋：手机本机运行，也能遥控你的电脑。",
-    "zh": "dsh-go — DeepSeek Harness 装进口袋：手机本机运行，也能遥控你的电脑。",
-    "plain": "说白了，这是一堆已经写好的能力，但没有界面，得有人包一层壳才能给普通人用。它干的事是：dsh-go — DeepSeek Harness 装进口袋：手机本机运行，也能遥控你的电脑。",
+    "en": "AG-UI: the Agent-User Interaction Protocol. Bring Agents into Frontend Applications.",
+    "zh": "AG-UI：代理-用户交互协议。将代理引入前端应用程序。",
+    "plain": "说白了，这是一堆已经写好的能力，但没有界面，得有人包一层壳才能给普通人用。它干的事是：AG-UI：代理-用户交互协议。将代理引入前端应用程序。",
     "usage": [
      "接到同类需求时拿它当底子，省掉搭骨架的两三天",
      "包一层网页界面，做成给非技术人用的成品",
@@ -854,11 +846,11 @@
      "跑一个作者给的示例，确认能出结果",
      "把自己的数据/需求换成示例里的输入"
     ],
-    "gap": "包一层网页界面，让不会写代码的人点两下就能用",
-    "buyer": "要用这套能力但搞不定环境的人",
-    "why": "要用这套能力但搞不定环境的人不是不会做，是懒得为这一步花两三天试错。你把「包一层网页界面，让不会写代码的人点两下就能用」替他们做完，他们花的钱远少于自己折腾的时间。",
+    "gap": "打包成 Docker 镜像或一键脚本，把依赖全封死",
+    "buyer": "接外包时缺一个现成轮子的人",
+    "why": "接外包时缺一个现成轮子的人不是不会做，是懒得为这一步花两三天试错。你把「打包成 Docker 镜像或一键脚本，把依赖全封死」替他们做完，他们花的钱远少于自己折腾的时间。",
     "self": "接到类似需求直接拿它当底子，省掉搭骨架的两三天；顺手把它当成自己的技术储备，下次报价敢往上抬。",
-    "pack": "包一层网页界面，录一段 3 分钟演示，按份卖；买家买的不是代码，是「不用装环境」。落地上就按这条走：接单代跑：客户给需求，你出结果。",
+    "pack": "包一层网页界面，录一段 3 分钟演示，按份卖；买家买的不是代码，是「不用装环境」。落地上就按这条走：封装成 API 出租，按调用量收费。",
     "_auto": true,
     "_src": "mt"
    },
@@ -870,293 +862,293 @@
  ],
  "dropped": [
   {
-   "full_name": "mattpocock/skills",
-   "stars": 323983,
-   "reason": "2 天前（2026-11-12）推过，冷却 7 天内不重推"
-  },
-  {
-   "full_name": "mattpocock/skills",
-   "stars": 323983,
-   "reason": "综合 70 分（A 级），名额有限，这一期没进",
-   "score": 70
-  },
-  {
    "full_name": "anthropics/skills",
-   "stars": 194246,
+   "stars": 194753,
    "reason": "综合 48 分（C 级），名额满了"
   },
   {
    "full_name": "anthropics/skills",
-   "stars": 194246,
+   "stars": 194753,
    "reason": "综合 48 分（C 级），名额有限，这一期没进",
    "score": 48
   },
   {
    "full_name": "addyosmani/agent-skills",
-   "stars": 117249,
-   "reason": "1 天前（2026-11-13）推过，冷却 7 天内不重推"
+   "stars": 117672,
+   "reason": "2 天前（2026-11-13）推过，冷却 7 天内不重推"
   },
   {
    "full_name": "addyosmani/agent-skills",
-   "stars": 117249,
+   "stars": 117672,
    "reason": "综合 68 分（A 级），名额有限，这一期没进",
    "score": 68
   },
   {
    "full_name": "sherlock-project/sherlock",
-   "stars": 111334,
+   "stars": 111938,
    "reason": "综合 59 分（B 级），名额满了"
   },
   {
    "full_name": "sherlock-project/sherlock",
-   "stars": 111334,
+   "stars": 111938,
    "reason": "综合 59 分（B 级），名额有限，这一期没进",
    "score": 59
   },
   {
-   "full_name": "zed-industries/zed",
-   "stars": 94987,
-   "reason": "综合 37 分（C 级），名额满了"
+   "full_name": "louislam/uptime-kuma",
+   "stars": 94330,
+   "reason": "1 天前（2026-11-14）推过，冷却 7 天内不重推"
   },
   {
-   "full_name": "zed-industries/zed",
-   "stars": 94987,
-   "reason": "综合 37 分（C 级），名额有限，这一期没进",
-   "score": 37
+   "full_name": "louislam/uptime-kuma",
+   "stars": 94330,
+   "reason": "综合 68 分（A 级），名额有限，这一期没进",
+   "score": 68
   },
   {
-   "full_name": "lobehub/lobehub",
-   "stars": 85462,
-   "reason": "综合 43 分（C 级），名额满了"
+   "full_name": "ZhuLinsen/daily_stock_analysis",
+   "stars": 72322,
+   "reason": "1 天前（2026-11-14）推过，冷却 7 天内不重推"
   },
   {
-   "full_name": "lobehub/lobehub",
-   "stars": 85462,
-   "reason": "综合 43 分（C 级），名额有限，这一期没进",
-   "score": 43
-  },
-  {
-   "full_name": "cloudflare/security-audit-skill",
-   "stars": 72080,
-   "reason": "综合 60 分（B 级），名额满了"
-  },
-  {
-   "full_name": "cloudflare/security-audit-skill",
-   "stars": 72080,
-   "reason": "综合 60 分（B 级），名额有限，这一期没进",
-   "score": 60
+   "full_name": "ZhuLinsen/daily_stock_analysis",
+   "stars": 72322,
+   "reason": "综合 76 分（A 级），名额有限，这一期没进",
+   "score": 76
   },
   {
    "full_name": "Gathin23/cleanyourtv",
-   "stars": 57531,
+   "stars": 57975,
    "reason": "综合 56 分（B 级），名额满了"
   },
   {
    "full_name": "Gathin23/cleanyourtv",
-   "stars": 57531,
+   "stars": 57975,
    "reason": "综合 56 分（B 级），名额有限，这一期没进",
    "score": 56
   },
   {
    "full_name": "ChromeDevTools/chrome-devtools-mcp",
-   "stars": 55699,
+   "stars": 56481,
    "reason": "综合 59 分（B 级），名额满了"
   },
   {
    "full_name": "ChromeDevTools/chrome-devtools-mcp",
-   "stars": 55699,
+   "stars": 56481,
    "reason": "综合 59 分（B 级），名额有限，这一期没进",
    "score": 59
   },
   {
+   "full_name": "alibaba/open-code-review",
+   "stars": 51589,
+   "reason": "1 天前（2026-11-14）推过，冷却 7 天内不重推"
+  },
+  {
+   "full_name": "alibaba/open-code-review",
+   "stars": 51589,
+   "reason": "综合 62 分（B 级），名额有限，这一期没进",
+   "score": 62
+  },
+  {
    "full_name": "vercel-labs/agent-browser",
-   "stars": 50828,
+   "stars": 51317,
    "reason": "综合 56 分（B 级），名额满了"
   },
   {
    "full_name": "vercel-labs/agent-browser",
-   "stars": 50828,
+   "stars": 51317,
    "reason": "综合 56 分（B 级），名额有限，这一期没进",
    "score": 56
   },
   {
-   "full_name": "block/buzz",
-   "stars": 37366,
-   "reason": "综合 52 分（B 级），名额满了"
+   "full_name": "QwenLM/qwen-code",
+   "stars": 30427,
+   "reason": "综合 60 分（B 级），名额满了"
   },
   {
-   "full_name": "block/buzz",
-   "stars": 37366,
-   "reason": "综合 52 分（B 级），名额有限，这一期没进",
-   "score": 52
+   "full_name": "QwenLM/qwen-code",
+   "stars": 30427,
+   "reason": "综合 60 分（B 级），名额有限，这一期没进",
+   "score": 60
   },
   {
-   "full_name": "deepseek-ai/DeepInfer",
-   "stars": 25986,
-   "reason": "综合 57 分（B 级），名额满了"
+   "full_name": "meta/astryx",
+   "stars": 28323,
+   "reason": "3 天前（2026-11-12）推过，冷却 7 天内不重推"
   },
   {
-   "full_name": "deepseek-ai/DeepInfer",
-   "stars": 25986,
-   "reason": "综合 57 分（B 级），名额有限，这一期没进",
-   "score": 57
+   "full_name": "meta/astryx",
+   "stars": 28323,
+   "reason": "综合 68 分（A 级），名额有限，这一期没进",
+   "score": 68
   },
   {
-   "full_name": "vercel-labs/agent-desktop",
-   "stars": 23439,
-   "reason": "综合 56 分（B 级），名额满了"
+   "full_name": "dream-num/univer",
+   "stars": 25106,
+   "reason": "综合 62 分（B 级），名额满了"
   },
   {
-   "full_name": "vercel-labs/agent-desktop",
-   "stars": 23439,
-   "reason": "综合 56 分（B 级），名额有限，这一期没进",
-   "score": 56
-  },
-  {
-   "full_name": "milind-soni/OpenMausBot",
-   "stars": 22333,
-   "reason": "2 天前（2026-11-12）推过，冷却 7 天内不重推"
+   "full_name": "dream-num/univer",
+   "stars": 25106,
+   "reason": "综合 62 分（B 级），名额有限，这一期没进",
+   "score": 62
   },
   {
    "full_name": "milind-soni/OpenMausBot",
-   "stars": 22333,
+   "stars": 22914,
+   "reason": "3 天前（2026-11-12）推过，冷却 7 天内不重推"
+  },
+  {
+   "full_name": "milind-soni/OpenMausBot",
+   "stars": 22914,
    "reason": "综合 70 分（A 级），名额有限，这一期没进",
    "score": 70
   },
   {
    "full_name": "anthropics/claude-quickstarts",
    "reason": "纯清单/合集，没有可运行的代码，不能交付",
-   "stars": 20890
+   "stars": 21008
   },
   {
    "full_name": "Zagitta/gpu-unlock",
-   "stars": 19287,
+   "stars": 19599,
    "reason": "综合 44 分（C 级），名额满了"
   },
   {
    "full_name": "Zagitta/gpu-unlock",
-   "stars": 19287,
+   "stars": 19599,
    "reason": "综合 44 分（C 级），名额有限，这一期没进",
    "score": 44
   },
   {
+   "full_name": "google/elephant-goldfish-model",
+   "stars": 19318,
+   "reason": "1 天前（2026-11-14）推过，冷却 7 天内不重推"
+  },
+  {
+   "full_name": "google/elephant-goldfish-model",
+   "stars": 19318,
+   "reason": "综合 85 分（S 级），名额有限，这一期没进",
+   "score": 85
+  },
+  {
    "full_name": "google-deepmind/mujoco",
-   "stars": 17907,
+   "stars": 18010,
    "reason": "综合 60 分（B 级），名额满了"
   },
   {
    "full_name": "google-deepmind/mujoco",
-   "stars": 17907,
+   "stars": 18010,
    "reason": "综合 60 分（B 级），名额有限，这一期没进",
    "score": 60
   },
   {
    "full_name": "we-promise/sure",
-   "stars": 14895,
+   "stars": 15441,
    "reason": "综合 48 分（C 级），名额满了"
   },
   {
    "full_name": "we-promise/sure",
-   "stars": 14895,
+   "stars": 15441,
    "reason": "综合 48 分（C 级），名额有限，这一期没进",
    "score": 48
   },
   {
-   "full_name": "openai/codex-security",
-   "stars": 13283,
-   "reason": "1 天前（2026-11-13）推过，冷却 7 天内不重推"
+   "full_name": "backnotprop/plannotator",
+   "stars": 11380,
+   "reason": "1 天前（2026-11-14）推过，冷却 7 天内不重推"
   },
   {
-   "full_name": "openai/codex-security",
-   "stars": 13283,
-   "reason": "综合 64 分（B 级），名额有限，这一期没进",
-   "score": 64
-  },
-  {
-   "full_name": "NVIDIA/auto-ontology",
-   "stars": 12638,
-   "reason": "1 天前（2026-11-13）推过，冷却 7 天内不重推"
-  },
-  {
-   "full_name": "NVIDIA/auto-ontology",
-   "stars": 12638,
-   "reason": "综合 65 分（A 级），名额有限，这一期没进",
-   "score": 65
-  },
-  {
-   "full_name": "tailscale/tailcat",
-   "stars": 9580,
-   "reason": "综合 60 分（B 级），名额满了"
-  },
-  {
-   "full_name": "tailscale/tailcat",
-   "stars": 9580,
-   "reason": "综合 60 分（B 级），名额有限，这一期没进",
-   "score": 60
+   "full_name": "backnotprop/plannotator",
+   "stars": 11380,
+   "reason": "综合 68 分（A 级），名额有限，这一期没进",
+   "score": 68
   },
   {
    "full_name": "anefzaoui/misterdownloadmanager",
-   "stars": 9145,
+   "stars": 9750,
    "reason": "综合 59 分（B 级），名额满了"
   },
   {
    "full_name": "anefzaoui/misterdownloadmanager",
-   "stars": 9145,
+   "stars": 9750,
    "reason": "综合 59 分（B 级），名额有限，这一期没进",
    "score": 59
   },
   {
    "full_name": "zortos293/Lichii",
-   "stars": 9032,
+   "stars": 9238,
    "reason": "综合 47 分（C 级），名额满了"
   },
   {
    "full_name": "zortos293/Lichii",
-   "stars": 9032,
+   "stars": 9238,
    "reason": "综合 47 分（C 级），名额有限，这一期没进",
    "score": 47
   },
   {
    "full_name": "Minireel/HGhub",
-   "stars": 8831,
+   "stars": 8863,
    "reason": "综合 61 分（B 级），名额满了"
   },
   {
    "full_name": "Minireel/HGhub",
-   "stars": 8831,
+   "stars": 8863,
    "reason": "综合 61 分（B 级），名额有限，这一期没进",
    "score": 61
   },
   {
    "full_name": "GoogleChrome/modern-web-guidance-src",
-   "stars": 5103,
-   "reason": "1 天前（2026-11-13）推过，冷却 7 天内不重推"
+   "stars": 6327,
+   "reason": "2 天前（2026-11-13）推过，冷却 7 天内不重推"
   },
   {
    "full_name": "GoogleChrome/modern-web-guidance-src",
-   "stars": 5103,
+   "stars": 6327,
+   "reason": "综合 68 分（A 级），名额有限，这一期没进",
+   "score": 68
+  },
+  {
+   "full_name": "martin-olivier/airgorah",
+   "stars": 6043,
+   "reason": "综合 62 分（B 级），名额满了"
+  },
+  {
+   "full_name": "martin-olivier/airgorah",
+   "stars": 6043,
+   "reason": "综合 62 分（B 级），名额有限，这一期没进",
+   "score": 62
+  },
+  {
+   "full_name": "tradermonty/claude-trading-skills",
+   "stars": 5020,
+   "reason": "1 天前（2026-11-14）推过，冷却 7 天内不重推"
+  },
+  {
+   "full_name": "tradermonty/claude-trading-skills",
+   "stars": 5020,
    "reason": "综合 68 分（A 级），名额有限，这一期没进",
    "score": 68
   },
   {
    "full_name": "Likely7/Veyra-NRVideo",
-   "stars": 1728,
+   "stars": 2434,
    "reason": "综合 40 分（C 级），名额满了"
   },
   {
    "full_name": "Likely7/Veyra-NRVideo",
-   "stars": 1728,
+   "stars": 2434,
    "reason": "综合 40 分（C 级），名额有限，这一期没进",
    "score": 40
   }
  ],
- "scanned": 66,
+ "scanned": 65,
  "mode": "FULL",
  "degraded": false,
  "focus": null,
  "focus_tab": null,
  "pools": {
-  "daily": 66,
+  "daily": 65,
   "focus": 0
  },
  "cooldown": {
