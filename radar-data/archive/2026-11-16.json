@@ -1,0 +1,918 @@
+{
+ "mode": "FULL",
+ "degraded": false,
+ "focus": null,
+ "scanned": 62,
+ "pools": {
+  "daily": 62,
+  "focus": 0
+ },
+ "daily": {
+  "picks": [
+   {
+    "full_name": "simbasjungles/free-my-tv",
+    "owner": "simbasjungles",
+    "owner_type": "User",
+    "name": "free-my-tv",
+    "desc": "A fast, ad-free home screen for Google TV, LG webOS and Samsung Tizen. One button to undo.",
+    "lang": "Java",
+    "stars": 6433,
+    "forks": 1144,
+    "watchers": 17,
+    "open_issues": 116,
+    "license": "MIT",
+    "license_name": "MIT License",
+    "topics": [
+     "android-tv",
+     "claude-code",
+     "google-tv",
+     "home-screen",
+     "launcher",
+     "no-ads",
+     "open-source",
+     "samsung-tizen",
+     "tizen",
+     "tmdb",
+     "webos"
+    ],
+    "created_at": "2026-10-19T19:29:01Z",
+    "pushed_at": "2026-11-13T02:31:41Z",
+    "updated_at": "2026-11-16T07:00:38Z",
+    "size_kb": 21697,
+    "archived": false,
+    "has_discussions": false,
+    "has_wiki": true,
+    "homepage": "https://freemytv.io",
+    "url": "https://github.com/simbasjungles/free-my-tv",
+    "default_branch": "main",
+    "gained": 0,
+    "since": "created<30d",
+    "source": "search_new",
+    "score": 78,
+    "grade": "A",
+    "grade_word": "改一改能卖",
+    "form": "引擎库",
+    "velocity": 238.25925925925927,
+    "_gaps": [
+     [
+      "没有中文上手文档",
+      "没有中文上手文档",
+      "把 README 翻成中文，配一张三步跑通图"
+     ],
+     [
+      "没有中文界面",
+      "没有中文界面",
+      "把界面文案和按钮全翻成中文，截一套中文版演示图"
+     ],
+     [
+      "没有一键部署",
+      "没有一键部署",
+      "补一个 Dockerfile + compose，别人一条命令跑起来"
+     ]
+    ],
+    "gaps_short": [
+     "没有中文上手文档",
+     "没有中文界面",
+     "没有一键部署"
+    ],
+    "risk": "",
+    "suspect": "",
+    "pitch": {
+     "gap_key": "没有中文上手文档",
+     "change": "把 README 翻成中文，配一张「三步跑通」流程图",
+     "buyer": "要用这套能力但搞不定环境的人",
+     "buyer_tag": "通用",
+     "deliver": "做成带界面的成品，按份卖（发网盘，附中文说明）",
+     "deliver_alt": "接单代跑：客户给需求，你出结果",
+     "hours": 5,
+     "gap_key_word": "缺中文上手文档"
+    },
+    "plain": "A fast, ad-free home screen for Google TV, LG webOS and Samsung Tizen. One button to undo.",
+    "_bucket": "",
+    "seen_times": 0,
+    "seen_first": "",
+    "seen_last": "",
+    "analy": {
+     "zh": "适用于 Google TV、LG webOS 和三星 Tizen 的快速、无广告主屏幕。一键撤销。",
+     "plain": "说白了，这是一堆已经写好的能力，但没有界面，得有人包一层壳才能给普通人用。它干的事是：适用于 Google TV、LG webOS 和三星 Tizen 的快速、无广告主屏幕。一键撤销。",
+     "gap": "把 README 翻成中文，配一张「三步跑通」流程图",
+     "buyer": "要用这套能力但搞不定环境的人",
+     "_auto": true,
+     "_src": "mt"
+    }
+   },
+   {
+    "full_name": "libracoder/kiri",
+    "owner": "libracoder",
+    "owner_type": "User",
+    "name": "kiri",
+    "desc": "A small, fast container runtime for macOS, Windows and Linux with free Ngrok alternative",
+    "lang": "Rust",
+    "stars": 7343,
+    "forks": 324,
+    "watchers": 24,
+    "open_issues": 135,
+    "license": "Apache-2.0",
+    "license_name": "Apache License 2.0",
+    "topics": [
+     "containers",
+     "docker",
+     "kubernetes",
+     "linux",
+     "macos",
+     "oci",
+     "windows"
+    ],
+    "created_at": "2026-11-02T16:11:30Z",
+    "pushed_at": "2026-11-16T07:04:44Z",
+    "updated_at": "2026-11-16T07:42:32Z",
+    "size_kb": 2164,
+    "archived": false,
+    "has_discussions": true,
+    "has_wiki": false,
+    "homepage": "https://runkiri.com",
+    "url": "https://github.com/libracoder/kiri",
+    "default_branch": "main",
+    "gained": 0,
+    "since": "created<30d",
+    "source": "search_new",
+    "score": 76,
+    "grade": "A",
+    "grade_word": "改一改能卖",
+    "form": "引擎库",
+    "velocity": 564.8461538461538,
+    "_gaps": [
+     [
+      "没有中文上手文档",
+      "没有中文上手文档",
+      "把 README 翻成中文，配一张三步跑通图"
+     ]
+    ],
+    "gaps_short": [
+     "没有中文上手文档"
+    ],
+    "risk": "",
+    "suspect": "",
+    "pitch": {
+     "gap_key": "只有代码没有界面",
+     "change": "包一层网页界面，让不会写代码的人点两下就能用",
+     "buyer": "要用这套能力但搞不定环境的人",
+     "buyer_tag": "通用",
+     "deliver": "接单代跑：客户给需求，你出结果",
+     "deliver_alt": "做成中文教程 + 成品包，走知识付费",
+     "hours": 7,
+     "gap_key_word": "缺中文上手文档"
+    },
+    "plain": "A small, fast container runtime for macOS, Windows and Linux with free Ngrok alternative",
+    "_bucket": "",
+    "seen_times": 0,
+    "seen_first": "",
+    "seen_last": "",
+    "analy": {
+     "zh": "适用于macOS、Windows和Linux的小型快速容器运行时，提供免费的Ngrok替代方案",
+     "plain": "说白了，这是一堆已经写好的能力，但没有界面，得有人包一层壳才能给普通人用。它干的事是：适用于macOS、Windows和Linux的小型快速容器运行时，提供免费的Ngrok替代方案",
+     "gap": "包一层网页界面，让不会写代码的人点两下就能用",
+     "buyer": "要用这套能力但搞不定环境的人",
+     "_auto": true,
+     "_src": "mt"
+    }
+   },
+   {
+    "full_name": "valentderah/totk-pc-recomp",
+    "owner": "valentderah",
+    "owner_type": "User",
+    "name": "totk-pc-recomp",
+    "desc": "Static recompilation of The Legend of Zelda: Tears of the Kingdom to native Windows and Linux x86-64, with a Vulkan renderer. Game files not included.",
+    "lang": "C",
+    "stars": 7430,
+    "forks": 597,
+    "watchers": 88,
+    "open_issues": 373,
+    "license": "MIT",
+    "license_name": "MIT License",
+    "topics": [
+     "game",
+     "linux",
+     "port",
+     "recompilation",
+     "windows"
+    ],
+    "created_at": "2026-10-29T12:32:46Z",
+    "pushed_at": "2026-11-15T16:21:28Z",
+    "updated_at": "2026-11-16T07:41:49Z",
+    "size_kb": 4560,
+    "archived": false,
+    "has_discussions": true,
+    "has_wiki": false,
+    "homepage": "",
+    "url": "https://github.com/valentderah/totk-pc-recomp",
+    "default_branch": "main",
+    "gained": 0,
+    "since": "created<30d",
+    "source": "search_new",
+    "score": 75,
+    "grade": "A",
+    "grade_word": "改一改能卖",
+    "form": "引擎库",
+    "velocity": 437.05882352941177,
+    "_gaps": [
+     [
+      "没有中文上手文档",
+      "没有中文上手文档",
+      "把 README 翻成中文，配一张三步跑通图"
+     ],
+     [
+      "没有一键部署",
+      "没有一键部署",
+      "补一个 Dockerfile + compose，别人一条命令跑起来"
+     ],
+     [
+      "没有在线演示",
+      "没有在线演示",
+      "部署一个公开 demo 站，让人先玩再买单"
+     ]
+    ],
+    "gaps_short": [
+     "没有中文上手文档",
+     "没有一键部署",
+     "没有在线演示"
+    ],
+    "risk": "",
+    "suspect": "",
+    "pitch": {
+     "gap_key": "没有现成案例",
+     "change": "补 3 个真实场景示例，每个都能直接跑出结果",
+     "buyer": "接外包时缺一个现成轮子的人",
+     "buyer_tag": "通用",
+     "deliver": "做成中文教程 + 成品包，走知识付费",
+     "deliver_alt": "封装成 API 出租，按调用量收费",
+     "hours": 7,
+     "gap_key_word": "缺中文上手文档"
+    },
+    "plain": "Static recompilation of The Legend of Zelda: Tears of the Kingdom to native Windows and Linux x86-64, with a Vulkan renderer. Game files not included.",
+    "_bucket": "",
+    "seen_times": 0,
+    "seen_first": "",
+    "seen_last": "",
+    "analy": {
+     "zh": "将《塞尔达传说：王国之泪》静态重新编译为原生Windows和Linux x86-64版本，并采用Vulkan渲染器。不包含游戏文件。",
+     "plain": "说白了，这是一堆已经写好的能力，但没有界面，得有人包一层壳才能给普通人用。它干的事是：将《塞尔达传说：王国之泪》静态重新编译为原生Windows和Linux x86-64版本，并采用Vulkan渲染器。不包含游戏文件。",
+     "gap": "补 3 个真实场景示例，每个都能直接跑出结果",
+     "buyer": "接外包时缺一个现成轮子的人",
+     "_auto": true,
+     "_src": "mt"
+    }
+   },
+   {
+    "full_name": "LNPANDY/NX2Apple",
+    "owner": "LNPANDY",
+    "owner_type": "User",
+    "name": "NX2Apple",
+    "desc": "Play your own Switch games on iPhone/iPad — one-click macOS app, no terminal. | 把 Switch 游戏装进 iPhone：图形界面一键构建，不用命令行。Bring your own game.",
+    "lang": "Swift",
+    "stars": 7312,
+    "forks": 904,
+    "watchers": 17,
+    "open_issues": 216,
+    "license": "MIT",
+    "license_name": "MIT License",
+    "topics": [
+     "apple-silicon",
+     "custom-format",
+     "homebrew",
+     "ios",
+     "ipa",
+     "ipad",
+     "ipados",
+     "iphone",
+     "metal",
+     "native-port",
+     "nintendo-switch",
+     "nxnative",
+     "romfs",
+     "switch-games"
+    ],
+    "created_at": "2026-10-20T18:16:07Z",
+    "pushed_at": "2026-11-16T07:15:39Z",
+    "updated_at": "2026-11-16T07:31:48Z",
+    "size_kb": 271355,
+    "archived": false,
+    "has_discussions": true,
+    "has_wiki": true,
+    "homepage": "https://github.com/LNPANDY/NX2Apple#readme",
+    "url": "https://github.com/LNPANDY/NX2Apple",
+    "default_branch": "main",
+    "gained": 0,
+    "since": "created<30d",
+    "source": "search_new",
+    "score": 75,
+    "grade": "A",
+    "grade_word": "改一改能卖",
+    "form": "web应用",
+    "velocity": 281.2307692307692,
+    "_gaps": [
+     [
+      "没有中文上手文档",
+      "没有中文上手文档",
+      "把 README 翻成中文，配一张三步跑通图"
+     ],
+     [
+      "没有一键部署",
+      "没有一键部署",
+      "补一个 Dockerfile + compose，别人一条命令跑起来"
+     ]
+    ],
+    "gaps_short": [
+     "没有中文上手文档",
+     "没有一键部署"
+    ],
+    "risk": "",
+    "suspect": "",
+    "pitch": {
+     "gap_key": "没有中文界面",
+     "change": "把界面文案和按钮全翻成中文，再截一套中文版演示图当商品图",
+     "buyer": "想有个自己工具但不会写代码的人",
+     "buyer_tag": "通用",
+     "deliver": "打包部署到客户自己的服务器/域名，收一次部署费",
+     "deliver_alt": "做成在线服务，按月收使用费",
+     "hours": 9,
+     "gap_key_word": "缺中文上手文档"
+    },
+    "plain": "Play your own Switch games on iPhone/iPad — one-click macOS app, no terminal. | 把 Switch 游戏装进 iPhone：图形界面一键构建，不用命令行。Bring your own game.",
+    "_bucket": "",
+    "seen_times": 0,
+    "seen_first": "",
+    "seen_last": "",
+    "analy": {
+     "zh": "在 iPhone/iPad 上畅玩您的 Switch 游戏——一键式 macOS 应用，无需终端。 | 把 Switch 游戏装进 iPhone：图形界面一键构建，不用命令行。 自带游戏。",
+     "plain": "说白了，这是一个打开网页就能用的在线小工具，不用装任何东西。它干的事是：在 iPhone/iPad 上畅玩您的 Switch 游戏——一键式 macOS 应用，无需终端。 | 把 Switch 游戏装进 iPhone：图形界面一键构建，不用命令行。 自带游戏。",
+     "gap": "把界面文案和按钮全翻成中文，再截一套中文版演示图当商品图",
+     "buyer": "想有个自己工具但不会写代码的人",
+     "_auto": true,
+     "_src": "mt"
+    }
+   },
+   {
+    "full_name": "google-labs-code/stitch-skills",
+    "owner": "google-labs-code",
+    "owner_type": "Organization",
+    "name": "stitch-skills",
+    "desc": "A library of Agent Skills designed to work with the Stitch MCP server. Each skill follows the Agent Skills open standard, for compatibility with coding agents such as Antigravity, Gemini CLI, Claude Code, Cursor.",
+    "lang": "TypeScript",
+    "stars": 9482,
+    "forks": 1179,
+    "watchers": 85,
+    "open_issues": 19,
+    "license": "Apache-2.0",
+    "license_name": "Apache License 2.0",
+    "topics": [],
+    "created_at": "2026-01-16T17:17:17Z",
+    "pushed_at": "2026-08-17T20:20:23Z",
+    "updated_at": "2026-11-16T07:41:11Z",
+    "size_kb": 248,
+    "archived": false,
+    "has_discussions": false,
+    "has_wiki": true,
+    "homepage": "https://stitch.withgoogle.com/docs/mcp/setup",
+    "url": "https://github.com/google-labs-code/stitch-skills",
+    "default_branch": "main",
+    "gained": 247,
+    "since": "daily",
+    "source": "trending",
+    "score": 74,
+    "grade": "A",
+    "grade_word": "改一改能卖",
+    "form": "Agent技能",
+    "velocity": 247.0,
+    "_gaps": [
+     [
+      "没有中文上手文档",
+      "没有中文上手文档",
+      "把 README 翻成中文，配一张三步跑通图"
+     ],
+     [
+      "没有一键部署",
+      "没有一键部署",
+      "补一个 Dockerfile + compose，别人一条命令跑起来"
+     ]
+    ],
+    "gaps_short": [
+     "没有中文上手文档",
+     "没有一键部署"
+    ],
+    "risk": "",
+    "suspect": "",
+    "pitch": {
+     "gap_key": "只有英文指令",
+     "change": "改写成中文指令版，加 3 个真实场景的开场白",
+     "buyer": "接单的设计师和电商美工",
+     "buyer_tag": "设计",
+     "deliver": "打包成技能文件，配使用教程一起卖",
+     "deliver_alt": "做成付费专栏的一章，当引流钩子",
+     "hours": 3,
+     "gap_key_word": "缺中文上手文档"
+    },
+    "plain": "A library of Agent Skills designed to work with the Stitch MCP server. Each skill follows the Agent Skills open standard, for compatibility with coding agents such as Antigravity, Gemini CLI, Claude Code, Cursor.",
+    "_bucket": "",
+    "seen_times": 0,
+    "seen_first": "",
+    "seen_last": "",
+    "analy": {
+     "zh": "一个专为与 Stitch MCP 服务器配合使用而设计的 Agent Skills 库。每项技能均遵循 Agent Skills 开放标准，以兼容 Antigravity、Gemini CLI、Claude Code、Cursor 等编码代理。",
+     "plain": "说白了，这是一份写给 AI 的操作手册，装进 AI 工具后它就知道按你的规矩干活。它干的事是：一个专为与 Stitch MCP 服务器配合使用而设计的 Agent Skills 库。每项技能均遵循 Agent Skills 开放标准，以兼容 Antigravity、Gemini CLI、Claude Code、Cursor 等编码代理。",
+     "gap": "改写成中文指令版，加 3 个真实场景的开场白",
+     "buyer": "接单的设计师和电商美工",
+     "_auto": true,
+     "_src": "mt"
+    }
+   },
+   {
+    "full_name": "patch-gg/pixelfx",
+    "owner": "patch-gg",
+    "owner_type": "Organization",
+    "name": "pixelfx",
+    "desc": "244 pixel art effects, every one a small piece of code. Plus a Claude Code skill to make your own.",
+    "lang": "JavaScript",
+    "stars": 7640,
+    "forks": 999,
+    "watchers": 22,
+    "open_issues": 13,
+    "license": "MIT",
+    "license_name": "MIT License",
+    "topics": [
+     "agent-skills",
+     "animation",
+     "canvas",
+     "claude-code-plugin",
+     "gamedev",
+     "pixel-art",
+     "sprite-sheet",
+     "vfx"
+    ],
+    "created_at": "2026-10-30T06:43:25Z",
+    "pushed_at": "2026-11-13T08:43:39Z",
+    "updated_at": "2026-11-16T07:34:48Z",
+    "size_kb": 25365,
+    "archived": false,
+    "has_discussions": false,
+    "has_wiki": true,
+    "homepage": "https://patch-gg.github.io/pixelfx/",
+    "url": "https://github.com/patch-gg/pixelfx",
+    "default_branch": "main",
+    "gained": 0,
+    "since": "created<30d",
+    "source": "search_new",
+    "score": 74,
+    "grade": "A",
+    "grade_word": "改一改能卖",
+    "form": "Agent技能",
+    "velocity": 449.4117647058824,
+    "_gaps": [
+     [
+      "没有中文上手文档",
+      "没有中文上手文档",
+      "把 README 翻成中文，配一张三步跑通图"
+     ],
+     [
+      "没有一键部署",
+      "没有一键部署",
+      "补一个 Dockerfile + compose，别人一条命令跑起来"
+     ]
+    ],
+    "gaps_short": [
+     "没有中文上手文档",
+     "没有一键部署"
+    ],
+    "risk": "",
+    "suspect": "",
+    "pitch": {
+     "gap_key": "没有打包成技能",
+     "change": "整理成可直接安装的技能包，附使用截图",
+     "buyer": "天天用 AI 干活、但不知道装什么的人",
+     "buyer_tag": "通用",
+     "deliver": "做成付费专栏的一章，当引流钩子",
+     "deliver_alt": "接企业内训，教团队把这套装上",
+     "hours": 2,
+     "gap_key_word": "缺中文上手文档"
+    },
+    "plain": "244 pixel art effects, every one a small piece of code. Plus a Claude Code skill to make your own.",
+    "_bucket": "",
+    "seen_times": 0,
+    "seen_first": "",
+    "seen_last": "",
+    "analy": {
+     "zh": "244 种像素艺术效果，每种效果都是一段小代码。此外，还有一项 Claude Code 技能，让您能够自行创作。",
+     "plain": "说白了，这是一份写给 AI 的操作手册，装进 AI 工具后它就知道按你的规矩干活。它干的事是：244 种像素艺术效果，每种效果都是一段小代码。此外，还有一项 Claude Code 技能，让您能够自行创作。",
+     "gap": "整理成可直接安装的技能包，附使用截图",
+     "buyer": "天天用 AI 干活、但不知道装什么的人",
+     "_auto": true,
+     "_src": "mt"
+    }
+   },
+   {
+    "full_name": "anhao/ai-pose-gallery-zh",
+    "owner": "anhao",
+    "owner_type": "User",
+    "name": "ai-pose-gallery-zh",
+    "desc": "中文版 AI 姿势参考图库 · 1439 组 / 2878 张图片 / 完整汉化 · 零依赖静态画廊",
+    "lang": "TypeScript",
+    "stars": 7057,
+    "forks": 1798,
+    "watchers": 16,
+    "open_issues": 17,
+    "license": "NOASSERTION",
+    "license_name": "Other",
+    "topics": [
+     "ai-art",
+     "chinese",
+     "cloudflare-pages",
+     "gallery",
+     "i18n",
+     "pose",
+     "reference-images",
+     "static-site"
+    ],
+    "created_at": "2026-10-27T12:24:37Z",
+    "pushed_at": "2026-11-04T08:09:10Z",
+    "updated_at": "2026-11-16T07:38:28Z",
+    "size_kb": 1170001,
+    "archived": false,
+    "has_discussions": false,
+    "has_wiki": true,
+    "homepage": "https://ai-pose-gallery.anhao.app",
+    "url": "https://github.com/anhao/ai-pose-gallery-zh",
+    "default_branch": "main",
+    "gained": 0,
+    "since": "created<30d",
+    "source": "search_new",
+    "score": 73,
+    "grade": "A",
+    "grade_word": "改一改能卖",
+    "form": "web应用",
+    "velocity": 371.42105263157896,
+    "_gaps": [
+     [
+      "没有一键部署",
+      "没有一键部署",
+      "补一个 Dockerfile + compose，别人一条命令跑起来"
+     ]
+    ],
+    "gaps_short": [
+     "没有一键部署"
+    ],
+    "risk": "许可证不明，动手前去 README 确认一遍",
+    "suspect": "",
+    "pitch": {
+     "gap_key": "没有在线演示",
+     "change": "部署一个公开 demo，让人先玩再决定买不买",
+     "buyer": "接单的设计师和电商美工",
+     "buyer_tag": "设计",
+     "deliver": "做成在线服务，按月收使用费",
+     "deliver_alt": "连部署带教一次，做成「一天陪跑」按次收",
+     "hours": 7,
+     "gap_key_word": "缺一键部署"
+    },
+    "plain": "中文版 AI 姿势参考图库 · 1439 组 / 2878 张图片 / 完整汉化 · 零依赖静态画廊",
+    "_bucket": "",
+    "seen_times": 0,
+    "seen_first": "",
+    "seen_last": "",
+    "analy": {
+     "zh": "中文版 AI 姿势参考图库 · 1439 组 / 2878 张图片 / 完整汉化 · 零依赖静态画廊",
+     "plain": "说白了，这是一个打开网页就能用的在线小工具，不用装任何东西。它干的事是：中文版 AI 姿势参考图库 · 1439 组 / 2878 张图片 / 完整汉化 · 零依赖静态画廊",
+     "gap": "部署一个公开 demo，让人先玩再决定买不买",
+     "buyer": "接单的设计师和电商美工",
+     "_auto": true,
+     "_src": "rule"
+    }
+   },
+   {
+    "full_name": "elementalsouls/Claude-BugHunter",
+    "owner": "elementalsouls",
+    "owner_type": "User",
+    "name": "Claude-BugHunter",
+    "desc": "A Claude Code skill bundle for bug hunting and external red-team work - 82 skills, 15 slash commands, 681 disclosed-report patterns curated across 24 core vulnerability classes, plus enterprise identity + infrastructure attack matrices.",
+    "lang": "Python",
+    "stars": 6790,
+    "forks": 1046,
+    "watchers": 41,
+    "open_issues": 46,
+    "license": "MIT",
+    "license_name": "MIT License",
+    "topics": [
+     "ai-security",
+     "anthropic",
+     "application-security",
+     "bug-bounty",
+     "bugbounty",
+     "bugcrowd",
+     "claude",
+     "claude-code",
+     "claude-skills",
+     "ethical-hacking",
+     "hackerone",
+     "offensive-security",
+     "pentesting",
+     "red-team",
+     "security-tools",
+     "web-security"
+    ],
+    "created_at": "2026-05-05T11:22:32Z",
+    "pushed_at": "2026-11-15T11:59:53Z",
+    "updated_at": "2026-11-16T07:42:13Z",
+    "size_kb": 3990,
+    "archived": false,
+    "has_discussions": true,
+    "has_wiki": false,
+    "homepage": "https://elementalsouls.github.io/Claude-BugHunter",
+    "url": "https://github.com/elementalsouls/Claude-BugHunter",
+    "default_branch": "main",
+    "gained": 98,
+    "since": "daily",
+    "source": "trending",
+    "score": 70,
+    "grade": "A",
+    "grade_word": "改一改能卖",
+    "form": "Agent技能",
+    "velocity": 98.0,
+    "_gaps": [
+     [
+      "没有中文上手文档",
+      "没有中文上手文档",
+      "把 README 翻成中文，配一张三步跑通图"
+     ],
+     [
+      "没有中文界面",
+      "没有中文界面",
+      "把界面文案和按钮全翻成中文，截一套中文版演示图"
+     ],
+     [
+      "没有一键部署",
+      "没有一键部署",
+      "补一个 Dockerfile + compose，别人一条命令跑起来"
+     ]
+    ],
+    "gaps_short": [
+     "没有中文上手文档",
+     "没有中文界面",
+     "没有一键部署"
+    ],
+    "risk": "",
+    "suspect": "",
+    "pitch": {
+     "gap_key": "没有效果对比",
+     "change": "做前后对比案例，让人一眼看出差别",
+     "buyer": "天天用 AI 干活、但不知道装什么的人",
+     "buyer_tag": "通用",
+     "deliver": "接企业内训，教团队把这套装上",
+     "deliver_alt": "做成定制版：按客户业务流程改一遍，单独报价",
+     "hours": 1,
+     "gap_key_word": "缺中文上手文档"
+    },
+    "plain": "A Claude Code skill bundle for bug hunting and external red-team work - 82 skills, 15 slash commands, 681 disclosed-report patterns curated across 24 core vulnerability classes, plus enterprise identity + infrastructure attack matrices.",
+    "_bucket": "",
+    "seen_times": 0,
+    "seen_first": "",
+    "seen_last": "",
+    "analy": {
+     "zh": "一个用于漏洞挖掘和外部红队工作的Claude Code技能包——82项技能、15个斜杠命令、681个披露报告模式（涵盖24个核心漏洞类别），以及企业身份+基础设施攻击矩阵。",
+     "plain": "说白了，这是一份写给 AI 的操作手册，装进 AI 工具后它就知道按你的规矩干活。它干的事是：一个用于漏洞挖掘和外部红队工作的Claude Code技能包——82项技能、15个斜杠命令、681个披露报告模式（涵盖24个核心漏洞类别），以及企业身份+基础设施攻击矩阵。",
+     "gap": "做前后对比案例，让人一眼看出差别",
+     "buyer": "天天用 AI 干活、但不知道装什么的人",
+     "_auto": true,
+     "_src": "mt"
+    }
+   }
+  ],
+  "dropped": [
+   {
+    "full_name": "anthropics/skills",
+    "stars": 195534,
+    "reason": "综合 48 分（C 级），名额满了"
+   },
+   {
+    "full_name": "anthropics/skills",
+    "stars": 195534,
+    "reason": "综合 48 分（C 级），名额有限，这一期没进",
+    "score": 48
+   },
+   {
+    "full_name": "addyosmani/agent-skills",
+    "stars": 118063,
+    "reason": "3 天前（2026-11-13）推过，冷却 7 天内不重推"
+   },
+   {
+    "full_name": "addyosmani/agent-skills",
+    "stars": 118063,
+    "reason": "综合 68 分（A 级），名额有限，这一期没进",
+    "score": 68
+   },
+   {
+    "full_name": "sherlock-project/sherlock",
+    "stars": 112720,
+    "reason": "综合 59 分（B 级），名额满了"
+   },
+   {
+    "full_name": "sherlock-project/sherlock",
+    "stars": 112720,
+    "reason": "综合 59 分（B 级），名额有限，这一期没进",
+    "score": 59
+   },
+   {
+    "full_name": "ZhuLinsen/daily_stock_analysis",
+    "stars": 72621,
+    "reason": "2 天前（2026-11-14）推过，冷却 7 天内不重推"
+   },
+   {
+    "full_name": "ZhuLinsen/daily_stock_analysis",
+    "stars": 72621,
+    "reason": "综合 76 分（A 级），名额有限，这一期没进",
+    "score": 76
+   },
+   {
+    "full_name": "ChromeDevTools/chrome-devtools-mcp",
+    "stars": 57251,
+    "reason": "综合 59 分（B 级），名额满了"
+   },
+   {
+    "full_name": "ChromeDevTools/chrome-devtools-mcp",
+    "stars": 57251,
+    "reason": "综合 59 分（B 级），名额有限，这一期没进",
+    "score": 59
+   },
+   {
+    "full_name": "alibaba/open-code-review",
+    "stars": 52448,
+    "reason": "2 天前（2026-11-14）推过，冷却 7 天内不重推"
+   },
+   {
+    "full_name": "alibaba/open-code-review",
+    "stars": 52448,
+    "reason": "综合 62 分（B 级），名额有限，这一期没进",
+    "score": 62
+   },
+   {
+    "full_name": "vercel-labs/agent-browser",
+    "stars": 51768,
+    "reason": "综合 56 分（B 级），名额满了"
+   },
+   {
+    "full_name": "vercel-labs/agent-browser",
+    "stars": 51768,
+    "reason": "综合 56 分（B 级），名额有限，这一期没进",
+    "score": 56
+   },
+   {
+    "full_name": "meta/astryx",
+    "stars": 29133,
+    "reason": "4 天前（2026-11-12）推过，冷却 7 天内不重推"
+   },
+   {
+    "full_name": "meta/astryx",
+    "stars": 29133,
+    "reason": "综合 68 分（A 级），名额有限，这一期没进",
+    "score": 68
+   },
+   {
+    "full_name": "dream-num/univer",
+    "stars": 26644,
+    "reason": "综合 62 分（B 级），名额满了"
+   },
+   {
+    "full_name": "dream-num/univer",
+    "stars": 26644,
+    "reason": "综合 62 分（B 级），名额有限，这一期没进",
+    "score": 62
+   },
+   {
+    "full_name": "milind-soni/OpenMausBot",
+    "stars": 23701,
+    "reason": "4 天前（2026-11-12）推过，冷却 7 天内不重推"
+   },
+   {
+    "full_name": "milind-soni/OpenMausBot",
+    "stars": 23701,
+    "reason": "综合 70 分（A 级），名额有限，这一期没进",
+    "score": 70
+   },
+   {
+    "full_name": "google/elephant-goldfish-model",
+    "stars": 19975,
+    "reason": "2 天前（2026-11-14）推过，冷却 7 天内不重推"
+   },
+   {
+    "full_name": "google/elephant-goldfish-model",
+    "stars": 19975,
+    "reason": "综合 85 分（S 级），名额有限，这一期没进",
+    "score": 85
+   },
+   {
+    "full_name": "Zagitta/gpu-unlock",
+    "stars": 19765,
+    "reason": "综合 44 分（C 级），名额满了"
+   },
+   {
+    "full_name": "Zagitta/gpu-unlock",
+    "stars": 19765,
+    "reason": "综合 44 分（C 级），名额有限，这一期没进",
+    "score": 44
+   },
+   {
+    "full_name": "ag-ui-protocol/ag-ui",
+    "stars": 18178,
+    "reason": "1 天前（2026-11-15）推过，冷却 7 天内不重推"
+   },
+   {
+    "full_name": "ag-ui-protocol/ag-ui",
+    "stars": 18178,
+    "reason": "综合 64 分（B 级），名额有限，这一期没进",
+    "score": 64
+   },
+   {
+    "full_name": "google-deepmind/mujoco",
+    "stars": 18112,
+    "reason": "综合 60 分（B 级），名额满了"
+   },
+   {
+    "full_name": "google-deepmind/mujoco",
+    "stars": 18112,
+    "reason": "综合 60 分（B 级），名额有限，这一期没进",
+    "score": 60
+   },
+   {
+    "full_name": "ggml-org/ggml",
+    "stars": 16011,
+    "reason": "综合 62 分（B 级），名额满了"
+   },
+   {
+    "full_name": "ggml-org/ggml",
+    "stars": 16011,
+    "reason": "综合 62 分（B 级），名额有限，这一期没进",
+    "score": 62
+   },
+   {
+    "full_name": "we-promise/sure",
+    "stars": 15807,
+    "reason": "综合 48 分（C 级），名额满了"
+   },
+   {
+    "full_name": "we-promise/sure",
+    "stars": 15807,
+    "reason": "综合 48 分（C 级），名额有限，这一期没进",
+    "score": 48
+   },
+   {
+    "full_name": "backnotprop/plannotator",
+    "stars": 12079,
+    "reason": "2 天前（2026-11-14）推过，冷却 7 天内不重推"
+   },
+   {
+    "full_name": "backnotprop/plannotator",
+    "stars": 12079,
+    "reason": "综合 68 分（A 级），名额有限，这一期没进",
+    "score": 68
+   },
+   {
+    "full_name": "anefzaoui/misterdownloadmanager",
+    "stars": 10719,
+    "reason": "综合 53 分（B 级），名额满了"
+   },
+   {
+    "full_name": "anefzaoui/misterdownloadmanager",
+    "stars": 10719,
+    "reason": "综合 53 分（B 级），名额有限，这一期没进",
+    "score": 53
+   },
+   {
+    "full_name": "zortos293/Lichii",
+    "stars": 9417,
+    "reason": "综合 47 分（C 级），名额满了"
+   },
+   {
+    "full_name": "zortos293/Lichii",
+    "stars": 9417,
+    "reason": "综合 47 分（C 级），名额有限，这一期没进",
+    "score": 47
+   },
+   {
+    "full_name": "Minireel/HGhub",
+    "stars": 9214,
+    "reason": "综合 61 分（B 级），名额满了"
+   },
+   {
+    "full_name": "Minireel/HGhub",
+    "stars": 9214,
+    "reason": "综合 61 分（B 级），名额有限，这一期没进",
+    "score": 61
+   }
+  ]
+ },
+ "focus_tab": {
+  "key": null,
+  "pool": 0,
+  "buckets": {}
+ },
+ "deep": [],
+ "date": "2026-11-16",
+ "archived_at": "2026-11-16T07:43:13"
+}

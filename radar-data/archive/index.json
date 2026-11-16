@@ -75,7 +75,26 @@
     "JuliusBrussee/caveman",
     "ag-ui-protocol/ag-ui"
    ]
+  },
+  {
+   "date": "2026-11-16",
+   "mode": "FULL",
+   "focus": "",
+   "scanned": 62,
+   "daily": 8,
+   "focus_n": 0,
+   "deep": 0,
+   "names": [
+    "simbasjungles/free-my-tv",
+    "libracoder/kiri",
+    "valentderah/totk-pc-recomp",
+    "LNPANDY/NX2Apple",
+    "google-labs-code/stitch-skills",
+    "patch-gg/pixelfx",
+    "anhao/ai-pose-gallery-zh",
+    "elementalsouls/Claude-BugHunter"
+   ]
   }
  ],
- "updated_at": "2026-11-15T07:37:30"
+ "updated_at": "2026-11-16T07:43:13"
 }
