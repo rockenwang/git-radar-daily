@@ -519,7 +519,111 @@
    ],
    "stars": 6790,
    "focus": ""
+  },
+  "RoutineMiku/apkstart": {
+   "first": "2026-11-17",
+   "dates": [
+    "2026-11-17"
+   ],
+   "times": 1,
+   "last": "2026-11-17",
+   "tabs": [
+    "daily"
+   ],
+   "stars": 6945,
+   "focus": ""
+  },
+  "Lee-xeo/Claude-Cage": {
+   "first": "2026-11-17",
+   "dates": [
+    "2026-11-17"
+   ],
+   "times": 1,
+   "last": "2026-11-17",
+   "tabs": [
+    "daily"
+   ],
+   "stars": 6222,
+   "focus": ""
+  },
+  "getarcaneapp/arcane": {
+   "first": "2026-11-17",
+   "dates": [
+    "2026-11-17"
+   ],
+   "times": 1,
+   "last": "2026-11-17",
+   "tabs": [
+    "daily"
+   ],
+   "stars": 8965,
+   "focus": ""
+  },
+  "kajisho5/ffmpeg-skill": {
+   "first": "2026-11-17",
+   "dates": [
+    "2026-11-17"
+   ],
+   "times": 1,
+   "last": "2026-11-17",
+   "tabs": [
+    "daily"
+   ],
+   "stars": 7324,
+   "focus": ""
+  },
+  "NVIDIA/SkillEvaluator": {
+   "first": "2026-11-17",
+   "dates": [
+    "2026-11-17"
+   ],
+   "times": 1,
+   "last": "2026-11-17",
+   "tabs": [
+    "daily"
+   ],
+   "stars": 3057,
+   "focus": ""
+  },
+  "google-research/paper-orchestra": {
+   "first": "2026-11-17",
+   "dates": [
+    "2026-11-17"
+   ],
+   "times": 1,
+   "last": "2026-11-17",
+   "tabs": [
+    "daily"
+   ],
+   "stars": 1947,
+   "focus": ""
+  },
+  "dream-num/univer": {
+   "first": "2026-11-17",
+   "dates": [
+    "2026-11-17"
+   ],
+   "times": 1,
+   "last": "2026-11-17",
+   "tabs": [
+    "daily"
+   ],
+   "stars": 28557,
+   "focus": ""
+  },
+  "mvanhorn/last30days-skill": {
+   "first": "2026-11-17",
+   "dates": [
+    "2026-11-17"
+   ],
+   "times": 1,
+   "last": "2026-11-17",
+   "tabs": [
+    "daily"
+   ],
+   "stars": 68429,
+   "focus": ""
   }
  },
- "updated_at": "2026-11-16T07:43:13"
+ "updated_at": "2026-11-17T08:52:49"
 }

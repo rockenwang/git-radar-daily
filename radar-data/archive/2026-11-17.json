@@ -1,0 +1,943 @@
+{
+ "mode": "FULL",
+ "degraded": false,
+ "focus": null,
+ "scanned": 67,
+ "pools": {
+  "daily": 67,
+  "focus": 0
+ },
+ "daily": {
+  "picks": [
+   {
+    "full_name": "RoutineMiku/apkstart",
+    "owner": "RoutineMiku",
+    "owner_type": "User",
+    "name": "apkstart",
+    "desc": "Windows 上的安卓应用运行器：双击 APK 即装，应用以独立窗口与桌面图标运行，自持 QEMU 运行时",
+    "lang": "JavaScript",
+    "stars": 6945,
+    "forks": 651,
+    "watchers": 16,
+    "open_issues": 90,
+    "license": "MIT",
+    "license_name": "MIT License",
+    "topics": [
+     "android",
+     "android-x86",
+     "apk",
+     "electron",
+     "emulator",
+     "freeform",
+     "qemu",
+     "windows",
+     "wsa"
+    ],
+    "created_at": "2026-10-29T13:44:03Z",
+    "pushed_at": "2026-11-17T07:15:12Z",
+    "updated_at": "2026-11-17T08:50:16Z",
+    "size_kb": 14354,
+    "archived": false,
+    "has_discussions": false,
+    "has_wiki": false,
+    "homepage": "",
+    "url": "https://github.com/RoutineMiku/apkstart",
+    "default_branch": "main",
+    "gained": 0,
+    "since": "created<30d",
+    "source": "search_new",
+    "score": 95,
+    "grade": "S",
+    "grade_word": "今晚就能动手",
+    "form": "web应用",
+    "velocity": 385.8333333333333,
+    "_gaps": [
+     [
+      "没有一键部署",
+      "没有一键部署",
+      "补一个 Dockerfile + compose，别人一条命令跑起来"
+     ],
+     [
+      "没有在线演示",
+      "没有在线演示",
+      "部署一个公开 demo 站，让人先玩再买单"
+     ]
+    ],
+    "gaps_short": [
+     "没有一键部署",
+     "没有在线演示"
+    ],
+    "risk": "",
+    "suspect": "",
+    "pitch": {
+     "gap_key": "没有在线演示",
+     "change": "部署一个公开 demo，让人先玩再决定买不买",
+     "buyer": "想有个自己工具但不会写代码的人",
+     "buyer_tag": "通用",
+     "deliver": "打包部署到客户自己的服务器/域名，收一次部署费",
+     "deliver_alt": "做成在线服务，按月收使用费",
+     "hours": 2,
+     "gap_key_word": "缺在线演示"
+    },
+    "plain": "Windows 上的安卓应用运行器：双击 APK 即装，应用以独立窗口与桌面图标运行，自持 QEMU 运行时",
+    "_bucket": "",
+    "seen_times": 0,
+    "seen_first": "",
+    "seen_last": "",
+    "analy": {
+     "zh": "Windows 上的安卓应用运行器：双击 APK 即装，应用以独立窗口与桌面图标运行，自持 QEMU 运行时",
+     "plain": "说白了，这是一个打开网页就能用的在线小工具，不用装任何东西。它干的事是：Windows 上的安卓应用运行器：双击 APK 即装，应用以独立窗口与桌面图标运行，自持 QEMU 运行时",
+     "gap": "部署一个公开 demo，让人先玩再决定买不买",
+     "buyer": "想有个自己工具但不会写代码的人",
+     "_auto": true,
+     "_src": "mt"
+    }
+   },
+   {
+    "full_name": "Lee-xeo/Claude-Cage",
+    "owner": "Lee-xeo",
+    "owner_type": "User",
+    "name": "Claude-Cage",
+    "desc": "Cage：为 Claude 特化的轻量化虚拟机，彻底杜绝网络泄露。多平台适配，支持多账号管理、远程部署、移动端操控。",
+    "lang": "Go",
+    "stars": 6222,
+    "forks": 715,
+    "watchers": 11,
+    "open_issues": 198,
+    "license": "MIT",
+    "license_name": "MIT License",
+    "topics": [],
+    "created_at": "2026-10-31T15:07:08Z",
+    "pushed_at": "2026-11-17T08:48:27Z",
+    "updated_at": "2026-11-17T08:51:41Z",
+    "size_kb": 53315,
+    "archived": false,
+    "has_discussions": false,
+    "has_wiki": true,
+    "homepage": "https://lee-xeo.github.io/Claude-Cage/",
+    "url": "https://github.com/Lee-xeo/Claude-Cage",
+    "default_branch": "main",
+    "gained": 0,
+    "since": "created<30d",
+    "source": "search_new",
+    "score": 87,
+    "grade": "S",
+    "grade_word": "今晚就能动手",
+    "form": "引擎库",
+    "velocity": 388.875,
+    "_gaps": [
+     [
+      "没有一键部署",
+      "没有一键部署",
+      "补一个 Dockerfile + compose，别人一条命令跑起来"
+     ]
+    ],
+    "gaps_short": [
+     "没有一键部署"
+    ],
+    "risk": "",
+    "suspect": "",
+    "pitch": {
+     "gap_key": "只有代码没有界面",
+     "change": "包一层网页界面，让不会写代码的人点两下就能用",
+     "buyer": "要用这套能力但搞不定环境的人",
+     "buyer_tag": "通用",
+     "deliver": "做成带界面的成品，按份卖（发网盘，附中文说明）",
+     "deliver_alt": "接单代跑：客户给需求，你出结果",
+     "hours": 5,
+     "gap_key_word": "缺一键部署"
+    },
+    "plain": "Cage：为 Claude 特化的轻量化虚拟机，彻底杜绝网络泄露。多平台适配，支持多账号管理、远程部署、移动端操控。",
+    "_bucket": "",
+    "seen_times": 0,
+    "seen_first": "",
+    "seen_last": "",
+    "analy": {
+     "zh": "Cage：为 Claude 特化的轻量化虚拟机，彻底杜绝网络泄露。 多平台适配，支持多账号管理、远程部署、移动端操控。",
+     "plain": "说白了，这是一堆已经写好的能力，但没有界面，得有人包一层壳才能给普通人用。它干的事是：Cage：为 Claude 特化的轻量化虚拟机，彻底杜绝网络泄露。 多平台适配，支持多账号管理、远程部署、移动端操控。",
+     "gap": "包一层网页界面，让不会写代码的人点两下就能用",
+     "buyer": "要用这套能力但搞不定环境的人",
+     "_auto": true,
+     "_src": "mt"
+    }
+   },
+   {
+    "full_name": "getarcaneapp/arcane",
+    "owner": "getarcaneapp",
+    "owner_type": "Organization",
+    "name": "arcane",
+    "desc": "Modern Docker Management, Designed for Everyone",
+    "lang": "Go",
+    "stars": 8965,
+    "forks": 463,
+    "watchers": 17,
+    "open_issues": 8,
+    "license": "BSD-3-Clause",
+    "license_name": "BSD 3-Clause \"New\" or \"Revised\" License",
+    "topics": [
+     "compose",
+     "container-management",
+     "containers",
+     "docker",
+     "docker-compose",
+     "docker-management",
+     "go",
+     "self-hosted",
+     "sveltekit",
+     "typescript",
+     "web-ui"
+    ],
+    "created_at": "2025-04-19T00:43:29Z",
+    "pushed_at": "2026-11-17T05:32:06Z",
+    "updated_at": "2026-11-17T08:52:12Z",
+    "size_kb": 81106,
+    "archived": false,
+    "has_discussions": true,
+    "has_wiki": false,
+    "homepage": "https://getarcane.app",
+    "url": "https://github.com/getarcaneapp/arcane",
+    "default_branch": "main",
+    "gained": 46,
+    "since": "daily",
+    "source": "trending",
+    "score": 72,
+    "grade": "A",
+    "grade_word": "改一改能卖",
+    "form": "引擎库",
+    "velocity": 46.0,
+    "_gaps": [
+     [
+      "没有中文上手文档",
+      "没有中文上手文档",
+      "把 README 翻成中文，配一张三步跑通图"
+     ],
+     [
+      "没有中文界面",
+      "没有中文界面",
+      "把界面文案和按钮全翻成中文，截一套中文版演示图"
+     ]
+    ],
+    "gaps_short": [
+     "没有中文上手文档",
+     "没有中文界面"
+    ],
+    "risk": "",
+    "suspect": "",
+    "pitch": {
+     "gap_key": "没有中文上手文档",
+     "change": "把 README 翻成中文，配一张「三步跑通」流程图",
+     "buyer": "接单的设计师和电商美工",
+     "buyer_tag": "设计",
+     "deliver": "接单代跑：客户给需求，你出结果",
+     "deliver_alt": "做成中文教程 + 成品包，走知识付费",
+     "hours": 4,
+     "gap_key_word": "缺中文上手文档"
+    },
+    "plain": "Modern Docker Management, Designed for Everyone",
+    "_bucket": "",
+    "seen_times": 0,
+    "seen_first": "",
+    "seen_last": "",
+    "analy": {
+     "zh": "现代Docker管理，专为所有人设计",
+     "plain": "说白了，这是一堆已经写好的能力，但没有界面，得有人包一层壳才能给普通人用。它干的事是：现代Docker管理，专为所有人设计",
+     "gap": "把 README 翻成中文，配一张「三步跑通」流程图",
+     "buyer": "接单的设计师和电商美工",
+     "_auto": true,
+     "_src": "mt"
+    }
+   },
+   {
+    "full_name": "kajisho5/ffmpeg-skill",
+    "owner": "kajisho5",
+    "owner_type": "User",
+    "name": "ffmpeg-skill",
+    "desc": "Local video editor for coding agents: 42 FFmpeg tools with a machine-readable contract and an MCP server, for Claude Code, Cursor and Codex. Cut, captions, reframe, loudness, platform exports. No cloud, no API keys.",
+    "lang": "Python",
+    "stars": 7324,
+    "forks": 664,
+    "watchers": 13,
+    "open_issues": 35,
+    "license": "MIT",
+    "license_name": "MIT License",
+    "topics": [
+     "agent-skills",
+     "ai-agents",
+     "audio-processing",
+     "captions",
+     "claude-code",
+     "codex",
+     "coding-agent",
+     "cursor",
+     "ffmpeg",
+     "gemini-cli-extension",
+     "loudness-normalization",
+     "mcp",
+     "mcp-server",
+     "model-context-protocol",
+     "python",
+     "subtitles",
+     "transcoding",
+     "video",
+     "video-editing",
+     "whisper"
+    ],
+    "created_at": "2026-09-03T14:33:38Z",
+    "pushed_at": "2026-11-16T01:08:43Z",
+    "updated_at": "2026-11-17T08:51:40Z",
+    "size_kb": 40342,
+    "archived": false,
+    "has_discussions": true,
+    "has_wiki": true,
+    "homepage": "https://www.npmjs.com/package/ffmpeg-skill",
+    "url": "https://github.com/kajisho5/ffmpeg-skill",
+    "default_branch": "main",
+    "gained": 367,
+    "since": "daily",
+    "source": "trending",
+    "score": 70,
+    "grade": "A",
+    "grade_word": "改一改能卖",
+    "form": "Agent技能",
+    "velocity": 367.0,
+    "_gaps": [
+     [
+      "没有中文上手文档",
+      "没有中文上手文档",
+      "把 README 翻成中文，配一张三步跑通图"
+     ],
+     [
+      "没有中文界面",
+      "没有中文界面",
+      "把界面文案和按钮全翻成中文，截一套中文版演示图"
+     ],
+     [
+      "没有一键部署",
+      "没有一键部署",
+      "补一个 Dockerfile + compose，别人一条命令跑起来"
+     ]
+    ],
+    "gaps_short": [
+     "没有中文上手文档",
+     "没有中文界面",
+     "没有一键部署"
+    ],
+    "risk": "",
+    "suspect": "",
+    "pitch": {
+     "gap_key": "只有英文指令",
+     "change": "改写成中文指令版，加 3 个真实场景的开场白",
+     "buyer": "做短视频的剪辑号",
+     "buyer_tag": "视频",
+     "deliver": "打包成技能文件，配使用教程一起卖",
+     "deliver_alt": "做成付费专栏的一章，当引流钩子",
+     "hours": 1,
+     "gap_key_word": "缺中文上手文档"
+    },
+    "plain": "Local video editor for coding agents: 42 FFmpeg tools with a machine-readable contract and an MCP server, for Claude Code, Cursor and Codex. Cut, captions, reframe, loudness, platform exports. No cloud, no API keys.",
+    "_bucket": "",
+    "seen_times": 0,
+    "seen_first": "",
+    "seen_last": "",
+    "analy": {
+     "zh": "面向编码代理的本地视频编辑器：42 款 FFmpeg 工具，配备机器可读合约和 MCP 服务器，适用于 Claude Code、Cursor 和 Codex。剪辑、字幕、重新构图、音量、平台导出。无需云端，无需 API 密钥。",
+     "plain": "说白了，这是一份写给 AI 的操作手册，装进 AI 工具后它就知道按你的规矩干活。它干的事是：面向编码代理的本地视频编辑器：42 款 FFmpeg 工具，配备机器可读合约和 MCP 服务器，适用于 Claude Code、Cursor 和 Codex。剪辑、字幕、重新构图、音量、平台导出。无需云端，无需 API 密钥。",
+     "gap": "改写成中文指令版，加 3 个真实场景的开场白",
+     "buyer": "做短视频的剪辑号",
+     "_auto": true,
+     "_src": "mt"
+    }
+   },
+   {
+    "full_name": "NVIDIA/SkillEvaluator",
+    "owner": "NVIDIA",
+    "owner_type": "Organization",
+    "name": "SkillEvaluator",
+    "desc": "Multi-tier framework for evaluating AI agent skills and plugins with quality gates, semantic overlap detection, synthetic evaluation dataset generation, and live agent evaluation that measures how skills affect agent behavior.",
+    "lang": "Python",
+    "stars": 3057,
+    "forks": 435,
+    "watchers": 5,
+    "open_issues": 61,
+    "license": "Apache-2.0",
+    "license_name": "Apache License 2.0",
+    "topics": [
+     "agent-evaluation",
+     "agent-plugins",
+     "agent-security",
+     "agent-skills",
+     "agentic-ai",
+     "benchmark",
+     "claude-code",
+     "codex",
+     "evaluate",
+     "evaluation",
+     "plugin",
+     "plugin-evaluation",
+     "security-scanner",
+     "skill-eval",
+     "skill-evals",
+     "skill-evaluation",
+     "skill-evaluator",
+     "skills"
+    ],
+    "created_at": "2026-06-24T02:32:26Z",
+    "pushed_at": "2026-11-17T08:49:33Z",
+    "updated_at": "2026-11-17T08:52:02Z",
+    "size_kb": 25385,
+    "archived": false,
+    "has_discussions": true,
+    "has_wiki": true,
+    "homepage": "https://docs.nvidia.com/skills/skillevaluator/",
+    "url": "https://github.com/NVIDIA/SkillEvaluator",
+    "default_branch": "main",
+    "gained": 1053,
+    "since": "since_last",
+    "source": "trending",
+    "score": 69,
+    "grade": "A",
+    "grade_word": "改一改能卖",
+    "form": "Agent技能",
+    "velocity": 20.938356164383563,
+    "_gaps": [
+     [
+      "没有中文上手文档",
+      "没有中文上手文档",
+      "把 README 翻成中文，配一张三步跑通图"
+     ],
+     [
+      "没有一键部署",
+      "没有一键部署",
+      "补一个 Dockerfile + compose，别人一条命令跑起来"
+     ]
+    ],
+    "gaps_short": [
+     "没有中文上手文档",
+     "没有一键部署"
+    ],
+    "risk": "",
+    "suspect": "",
+    "pitch": {
+     "gap_key": "没有打包成技能",
+     "change": "整理成可直接安装的技能包，附使用截图",
+     "buyer": "天天用 AI 干活、但不知道装什么的人",
+     "buyer_tag": "通用",
+     "deliver": "做成付费专栏的一章，当引流钩子",
+     "deliver_alt": "接企业内训，教团队把这套装上",
+     "hours": 1,
+     "gap_key_word": "缺中文上手文档"
+    },
+    "plain": "Multi-tier framework for evaluating AI agent skills and plugins with quality gates, semantic overlap detection, synthetic evaluation dataset generation, and live agent evaluation that measures how skills affect agent behavior.",
+    "_bucket": "",
+    "seen_times": 0,
+    "seen_first": "",
+    "seen_last": "",
+    "analy": {
+     "zh": "用于评估 AI 代理技能和插件的多层框架，包括质量关卡、语义重叠检测、合成评估数据集生成以及实时代理评估，后者用于衡量技能如何影响代理行为。",
+     "plain": "说白了，这是一份写给 AI 的操作手册，装进 AI 工具后它就知道按你的规矩干活。它干的事是：用于评估 AI 代理技能和插件的多层框架，包括质量关卡、语义重叠检测、合成评估数据集生成以及实时代理评估，后者用于衡量技能如何影响代理行为。",
+     "gap": "整理成可直接安装的技能包，附使用截图",
+     "buyer": "天天用 AI 干活、但不知道装什么的人",
+     "_auto": true,
+     "_src": "mt"
+    }
+   },
+   {
+    "full_name": "google-research/paper-orchestra",
+    "owner": "google-research",
+    "owner_type": "Organization",
+    "name": "paper-orchestra",
+    "desc": "PaperOrchestra is a multi-agent framework for automated AI research paper writing.",
+    "lang": "Python",
+    "stars": 1947,
+    "forks": 302,
+    "watchers": 20,
+    "open_issues": 35,
+    "license": "Apache-2.0",
+    "license_name": "Apache License 2.0",
+    "topics": [
+     "ai-research-assistant",
+     "multi-agent-systems"
+    ],
+    "created_at": "2026-05-01T18:07:52Z",
+    "pushed_at": "2026-11-15T18:08:08Z",
+    "updated_at": "2026-11-17T08:51:30Z",
+    "size_kb": 2059,
+    "archived": false,
+    "has_discussions": false,
+    "has_wiki": true,
+    "homepage": "https://yiwen-song.github.io/paper_orchestra/",
+    "url": "https://github.com/google-research/paper-orchestra",
+    "default_branch": "main",
+    "gained": 313,
+    "since": "daily",
+    "source": "trending",
+    "score": 68,
+    "grade": "A",
+    "grade_word": "改一改能卖",
+    "form": "web应用",
+    "velocity": 313.0,
+    "_gaps": [
+     [
+      "没有中文上手文档",
+      "没有中文上手文档",
+      "把 README 翻成中文，配一张三步跑通图"
+     ],
+     [
+      "没有一键部署",
+      "没有一键部署",
+      "补一个 Dockerfile + compose，别人一条命令跑起来"
+     ]
+    ],
+    "gaps_short": [
+     "没有中文上手文档",
+     "没有一键部署"
+    ],
+    "risk": "",
+    "suspect": "",
+    "pitch": {
+     "gap_key": "没有中文界面",
+     "change": "把界面文案和按钮全翻成中文，再截一套中文版演示图当商品图",
+     "buyer": "想有个自己工具但不会写代码的人",
+     "buyer_tag": "通用",
+     "deliver": "做成在线服务，按月收使用费",
+     "deliver_alt": "连部署带教一次，做成「一天陪跑」按次收",
+     "hours": 2,
+     "gap_key_word": "缺中文上手文档"
+    },
+    "plain": "PaperOrchestra is a multi-agent framework for automated AI research paper writing.",
+    "_bucket": "",
+    "seen_times": 0,
+    "seen_first": "",
+    "seen_last": "",
+    "analy": {
+     "zh": "PaperOrchestra 是一个用于自动撰写人工智能研究论文的多智能体框架。",
+     "plain": "说白了，这是一个打开网页就能用的在线小工具，不用装任何东西。它干的事是：PaperOrchestra 是一个用于自动撰写人工智能研究论文的多智能体框架。",
+     "gap": "把界面文案和按钮全翻成中文，再截一套中文版演示图当商品图",
+     "buyer": "想有个自己工具但不会写代码的人",
+     "_auto": true,
+     "_src": "mt"
+    }
+   },
+   {
+    "full_name": "dream-num/univer",
+    "owner": "dream-num",
+    "owner_type": "Organization",
+    "name": "univer",
+    "desc": "Build your own AI office with Univer Office SDK. Bring editing, calculation, collaboration, and file processing into your product for people and AI agents. Built on an extensible open-source core.",
+    "lang": "TypeScript",
+    "stars": 28557,
+    "forks": 2580,
+    "watchers": 722,
+    "open_issues": 214,
+    "license": "Apache-2.0",
+    "license_name": "Apache License 2.0",
+    "topics": [
+     "board",
+     "collaboration",
+     "doc",
+     "docx",
+     "excel",
+     "offce365",
+     "office",
+     "pdf",
+     "ppt",
+     "pptx",
+     "presentation",
+     "sdk",
+     "sheet",
+     "slides",
+     "spreadsheet",
+     "univer",
+     "word",
+     "wordprocessor",
+     "workspace",
+     "xlsx"
+    ],
+    "created_at": "2022-09-29T12:09:14Z",
+    "pushed_at": "2026-11-17T08:50:03Z",
+    "updated_at": "2026-11-17T08:48:57Z",
+    "size_kb": 191054,
+    "archived": false,
+    "has_discussions": true,
+    "has_wiki": true,
+    "homepage": "https://univer.ai",
+    "url": "https://github.com/dream-num/univer",
+    "default_branch": "dev",
+    "gained": 1913,
+    "since": "since_last",
+    "source": "trending",
+    "score": 62,
+    "grade": "B",
+    "grade_word": "值得研究",
+    "form": "引擎库",
+    "velocity": 0,
+    "_gaps": [
+     [
+      "没有中文上手文档",
+      "没有中文上手文档",
+      "把 README 翻成中文，配一张三步跑通图"
+     ],
+     [
+      "没有一键部署",
+      "没有一键部署",
+      "补一个 Dockerfile + compose，别人一条命令跑起来"
+     ]
+    ],
+    "gaps_short": [
+     "没有中文上手文档",
+     "没有一键部署"
+    ],
+    "risk": "大厂项目，路线不由你定，只能做外围（部署/中文化/模板）",
+    "suspect": "",
+    "pitch": {
+     "gap_key": "没有现成案例",
+     "change": "补 3 个真实场景示例，每个都能直接跑出结果",
+     "buyer": "要做数据但不会写代码的人",
+     "buyer_tag": "数据",
+     "deliver": "做成中文教程 + 成品包，走知识付费",
+     "deliver_alt": "封装成 API 出租，按调用量收费",
+     "hours": 6,
+     "gap_key_word": "缺中文上手文档"
+    },
+    "plain": "Build your own AI office with Univer Office SDK. Bring editing, calculation, collaboration, and file processing into your product for people and AI agents. Built on an extensible open-source core.",
+    "_bucket": "",
+    "seen_times": 0,
+    "seen_first": "",
+    "seen_last": "",
+    "analy": {
+     "zh": "使用 Univer Office SDK 构建您自己的 AI Office。将编辑、计算、协作和文件处理功能集成到您的产品中，供人和 AI 代理使用。基于可扩展的开源核心构建。",
+     "plain": "说白了，这是一堆已经写好的能力，但没有界面，得有人包一层壳才能给普通人用。它干的事是：使用 Univer Office SDK 构建您自己的 AI Office。将编辑、计算、协作和文件处理功能集成到您的产品中，供人和 AI 代理使用。基于可扩展的开源核心构建。",
+     "gap": "补 3 个真实场景示例，每个都能直接跑出结果",
+     "buyer": "要做数据但不会写代码的人",
+     "_auto": true,
+     "_src": "mt"
+    }
+   },
+   {
+    "full_name": "mvanhorn/last30days-skill",
+    "owner": "mvanhorn",
+    "owner_type": "User",
+    "name": "last30days-skill",
+    "desc": "AI agent skill that researches any topic across Reddit, X, YouTube, HN, Polymarket, and the web - then synthesizes a grounded summary",
+    "lang": "Python",
+    "stars": 68429,
+    "forks": 6088,
+    "watchers": 220,
+    "open_issues": 37,
+    "license": "MIT",
+    "license_name": "MIT License",
+    "topics": [
+     "ai-prompts",
+     "ai-skill",
+     "bluesky",
+     "claude",
+     "claude-code",
+     "clawhub",
+     "deep-research",
+     "hackernews",
+     "instagram",
+     "openclaw",
+     "polymarket",
+     "recency",
+     "reddit",
+     "research",
+     "social-media",
+     "tiktok",
+     "trends",
+     "twitter",
+     "web-search",
+     "youtube"
+    ],
+    "created_at": "2026-01-23T20:37:37Z",
+    "pushed_at": "2026-11-17T02:38:27Z",
+    "updated_at": "2026-11-17T08:52:08Z",
+    "size_kb": 57226,
+    "archived": false,
+    "has_discussions": false,
+    "has_wiki": false,
+    "homepage": "",
+    "url": "https://github.com/mvanhorn/last30days-skill",
+    "default_branch": "main",
+    "gained": 135,
+    "since": "daily",
+    "source": "trending",
+    "score": 62,
+    "grade": "B",
+    "grade_word": "值得研究",
+    "form": "Agent技能",
+    "velocity": 135.0,
+    "_gaps": [
+     [
+      "没有中文上手文档",
+      "没有中文上手文档",
+      "把 README 翻成中文，配一张三步跑通图"
+     ],
+     [
+      "没有一键部署",
+      "没有一键部署",
+      "补一个 Dockerfile + compose，别人一条命令跑起来"
+     ]
+    ],
+    "gaps_short": [
+     "没有中文上手文档",
+     "没有一键部署"
+    ],
+    "risk": "体量太大，改源码成本高，建议只做外围服务",
+    "suspect": "",
+    "pitch": {
+     "gap_key": "没有效果对比",
+     "change": "做前后对比案例，让人一眼看出差别",
+     "buyer": "天天用 AI 干活、但不知道装什么的人",
+     "buyer_tag": "通用",
+     "deliver": "接企业内训，教团队把这套装上",
+     "deliver_alt": "做成定制版：按客户业务流程改一遍，单独报价",
+     "hours": 4,
+     "gap_key_word": "缺中文上手文档"
+    },
+    "plain": "AI agent skill that researches any topic across Reddit, X, YouTube, HN, Polymarket, and the web - then synthesizes a grounded summary",
+    "_bucket": "",
+    "seen_times": 0,
+    "seen_first": "",
+    "seen_last": "",
+    "analy": {
+     "zh": "AI 代理技能，可在 Reddit、X、YouTube、HN、Polymarket 和网络上研究任何主题，然后综合生成有事实依据的摘要",
+     "plain": "说白了，这是一份写给 AI 的操作手册，装进 AI 工具后它就知道按你的规矩干活。它干的事是：AI 代理技能，可在 Reddit、X、YouTube、HN、Polymarket 和网络上研究任何主题，然后综合生成有事实依据的摘要",
+     "gap": "做前后对比案例，让人一眼看出差别",
+     "buyer": "天天用 AI 干活、但不知道装什么的人",
+     "_auto": true,
+     "_src": "mt"
+    }
+   }
+  ],
+  "dropped": [
+   {
+    "full_name": "anthropics/skills",
+    "stars": 196298,
+    "reason": "综合 48 分（C 级），名额满了"
+   },
+   {
+    "full_name": "anthropics/skills",
+    "stars": 196298,
+    "reason": "综合 48 分（C 级），名额有限，这一期没进",
+    "score": 48
+   },
+   {
+    "full_name": "addyosmani/agent-skills",
+    "stars": 118465,
+    "reason": "4 天前（2026-11-13）推过，冷却 7 天内不重推"
+   },
+   {
+    "full_name": "addyosmani/agent-skills",
+    "stars": 118465,
+    "reason": "综合 68 分（A 级），名额有限，这一期没进",
+    "score": 68
+   },
+   {
+    "full_name": "sherlock-project/sherlock",
+    "stars": 113424,
+    "reason": "综合 59 分（B 级），名额满了"
+   },
+   {
+    "full_name": "sherlock-project/sherlock",
+    "stars": 113424,
+    "reason": "综合 59 分（B 级），名额有限，这一期没进",
+    "score": 59
+   },
+   {
+    "full_name": "sveltejs/svelte",
+    "stars": 89146,
+    "reason": "综合 54 分（B 级），名额满了"
+   },
+   {
+    "full_name": "sveltejs/svelte",
+    "stars": 89146,
+    "reason": "综合 54 分（B 级），名额有限，这一期没进",
+    "score": 54
+   },
+   {
+    "full_name": "ZhuLinsen/daily_stock_analysis",
+    "stars": 72943,
+    "reason": "3 天前（2026-11-14）推过，冷却 7 天内不重推"
+   },
+   {
+    "full_name": "ZhuLinsen/daily_stock_analysis",
+    "stars": 72943,
+    "reason": "综合 76 分（A 级），名额有限，这一期没进",
+    "score": 76
+   },
+   {
+    "full_name": "ChromeDevTools/chrome-devtools-mcp",
+    "stars": 57867,
+    "reason": "综合 59 分（B 级），名额满了"
+   },
+   {
+    "full_name": "ChromeDevTools/chrome-devtools-mcp",
+    "stars": 57867,
+    "reason": "综合 59 分（B 级），名额有限，这一期没进",
+    "score": 59
+   },
+   {
+    "full_name": "alibaba/open-code-review",
+    "stars": 53247,
+    "reason": "3 天前（2026-11-14）推过，冷却 7 天内不重推"
+   },
+   {
+    "full_name": "alibaba/open-code-review",
+    "stars": 53247,
+    "reason": "综合 62 分（B 级），名额有限，这一期没进",
+    "score": 62
+   },
+   {
+    "full_name": "vercel-labs/agent-browser",
+    "stars": 52187,
+    "reason": "综合 56 分（B 级），名额满了"
+   },
+   {
+    "full_name": "vercel-labs/agent-browser",
+    "stars": 52187,
+    "reason": "综合 56 分（B 级），名额有限，这一期没进",
+    "score": 56
+   },
+   {
+    "full_name": "QwenLM/qwen-code",
+    "stars": 30693,
+    "reason": "综合 60 分（B 级），名额满了"
+   },
+   {
+    "full_name": "QwenLM/qwen-code",
+    "stars": 30693,
+    "reason": "综合 60 分（B 级），名额有限，这一期没进",
+    "score": 60
+   },
+   {
+    "full_name": "meta/astryx",
+    "stars": 29837,
+    "reason": "5 天前（2026-11-12）推过，冷却 7 天内不重推"
+   },
+   {
+    "full_name": "meta/astryx",
+    "stars": 29837,
+    "reason": "综合 68 分（A 级），名额有限，这一期没进",
+    "score": 68
+   },
+   {
+    "full_name": "google/elephant-goldfish-model",
+    "stars": 20538,
+    "reason": "3 天前（2026-11-14）推过，冷却 7 天内不重推"
+   },
+   {
+    "full_name": "google/elephant-goldfish-model",
+    "stars": 20538,
+    "reason": "综合 77 分（A 级），名额有限，这一期没进",
+    "score": 77
+   },
+   {
+    "full_name": "ag-ui-protocol/ag-ui",
+    "stars": 19596,
+    "reason": "2 天前（2026-11-15）推过，冷却 7 天内不重推"
+   },
+   {
+    "full_name": "ag-ui-protocol/ag-ui",
+    "stars": 19596,
+    "reason": "综合 64 分（B 级），名额有限，这一期没进",
+    "score": 64
+   },
+   {
+    "full_name": "google-deepmind/mujoco",
+    "stars": 18220,
+    "reason": "综合 60 分（B 级），名额满了"
+   },
+   {
+    "full_name": "google-deepmind/mujoco",
+    "stars": 18220,
+    "reason": "综合 60 分（B 级），名额有限，这一期没进",
+    "score": 60
+   },
+   {
+    "full_name": "we-promise/sure",
+    "stars": 16104,
+    "reason": "综合 48 分（C 级），名额满了"
+   },
+   {
+    "full_name": "we-promise/sure",
+    "stars": 16104,
+    "reason": "综合 48 分（C 级），名额有限，这一期没进",
+    "score": 48
+   },
+   {
+    "full_name": "openai/codex-security",
+    "stars": 13846,
+    "reason": "4 天前（2026-11-13）推过，冷却 7 天内不重推"
+   },
+   {
+    "full_name": "openai/codex-security",
+    "stars": 13846,
+    "reason": "综合 64 分（B 级），名额有限，这一期没进",
+    "score": 64
+   },
+   {
+    "full_name": "backnotprop/plannotator",
+    "stars": 12828,
+    "reason": "3 天前（2026-11-14）推过，冷却 7 天内不重推"
+   },
+   {
+    "full_name": "backnotprop/plannotator",
+    "stars": 12828,
+    "reason": "综合 68 分（A 级），名额有限，这一期没进",
+    "score": 68
+   },
+   {
+    "full_name": "anefzaoui/misterdownloadmanager",
+    "stars": 11378,
+    "reason": "综合 53 分（B 级），名额满了"
+   },
+   {
+    "full_name": "anefzaoui/misterdownloadmanager",
+    "stars": 11378,
+    "reason": "综合 53 分（B 级），名额有限，这一期没进",
+    "score": 53
+   },
+   {
+    "full_name": "google-labs-code/stitch-skills",
+    "stars": 9872,
+    "reason": "1 天前（2026-11-16）推过，冷却 7 天内不重推"
+   },
+   {
+    "full_name": "google-labs-code/stitch-skills",
+    "stars": 9872,
+    "reason": "综合 74 分（A 级），名额有限，这一期没进",
+    "score": 74
+   },
+   {
+    "full_name": "Minireel/HGhub",
+    "stars": 9670,
+    "reason": "综合 61 分（B 级），名额满了"
+   },
+   {
+    "full_name": "Minireel/HGhub",
+    "stars": 9670,
+    "reason": "综合 61 分（B 级），名额有限，这一期没进",
+    "score": 61
+   },
+   {
+    "full_name": "zortos293/Lichii",
+    "stars": 9544,
+    "reason": "综合 47 分（C 级），名额满了"
+   },
+   {
+    "full_name": "zortos293/Lichii",
+    "stars": 9544,
+    "reason": "综合 47 分（C 级），名额有限，这一期没进",
+    "score": 47
+   }
+  ]
+ },
+ "focus_tab": {
+  "key": null,
+  "pool": 0,
+  "buckets": {}
+ },
+ "deep": [],
+ "date": "2026-11-17",
+ "archived_at": "2026-11-17T08:52:49"
+}

@@ -94,7 +94,26 @@
     "anhao/ai-pose-gallery-zh",
     "elementalsouls/Claude-BugHunter"
    ]
+  },
+  {
+   "date": "2026-11-17",
+   "mode": "FULL",
+   "focus": "",
+   "scanned": 67,
+   "daily": 8,
+   "focus_n": 0,
+   "deep": 0,
+   "names": [
+    "RoutineMiku/apkstart",
+    "Lee-xeo/Claude-Cage",
+    "getarcaneapp/arcane",
+    "kajisho5/ffmpeg-skill",
+    "NVIDIA/SkillEvaluator",
+    "google-research/paper-orchestra",
+    "dream-num/univer",
+    "mvanhorn/last30days-skill"
+   ]
   }
  ],
- "updated_at": "2026-11-16T07:43:13"
+ "updated_at": "2026-11-17T08:52:49"
 }
