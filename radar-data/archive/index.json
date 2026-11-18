@@ -113,7 +113,26 @@
     "dream-num/univer",
     "mvanhorn/last30days-skill"
    ]
+  },
+  {
+   "date": "2026-11-18",
+   "mode": "FULL",
+   "focus": "",
+   "scanned": 65,
+   "daily": 8,
+   "focus_n": 0,
+   "deep": 0,
+   "names": [
+    "KKKKhazix/agent-autoloop",
+    "qybaihe/bla",
+    "affaan-m/ECC",
+    "Minireel/HGhub",
+    "ChromeDevTools/chrome-devtools-mcp",
+    "anefzaoui/misterdownloadmanager",
+    "jingyaogong/minimind",
+    "huami-dev/GestaltX"
+   ]
   }
  ],
- "updated_at": "2026-11-17T08:52:49"
+ "updated_at": "2026-11-18T08:17:43"
 }

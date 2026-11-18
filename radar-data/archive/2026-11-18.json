@@ -1,0 +1,917 @@
+{
+ "mode": "FULL",
+ "degraded": false,
+ "focus": null,
+ "scanned": 65,
+ "pools": {
+  "daily": 65,
+  "focus": 0
+ },
+ "daily": {
+  "picks": [
+   {
+    "full_name": "KKKKhazix/agent-autoloop",
+    "owner": "KKKKhazix",
+    "owner_type": "User",
+    "name": "agent-autoloop",
+    "desc": "让你的命令行 Agent 在后台自己接活、自己跟进到底；平时不烦你，遇到拿不准的事才发卡片找你拍板。",
+    "lang": "TypeScript",
+    "stars": 5847,
+    "forks": 1078,
+    "watchers": 11,
+    "open_issues": 3,
+    "license": "MIT",
+    "license_name": "MIT License",
+    "topics": [
+     "ai-agents",
+     "automation",
+     "claude-code",
+     "cli",
+     "codex",
+     "event-driven",
+     "mcp",
+     "nodejs",
+     "self-hosted",
+     "typescript",
+     "workflow"
+    ],
+    "created_at": "2026-11-03T08:02:11Z",
+    "pushed_at": "2026-11-18T01:23:27Z",
+    "updated_at": "2026-11-18T08:11:44Z",
+    "size_kb": 1035,
+    "archived": false,
+    "has_discussions": true,
+    "has_wiki": false,
+    "homepage": "",
+    "url": "https://github.com/KKKKhazix/agent-autoloop",
+    "default_branch": "main",
+    "gained": 0,
+    "since": "created<30d",
+    "source": "search_new",
+    "score": 94,
+    "grade": "S",
+    "grade_word": "今晚就能动手",
+    "form": "命令行",
+    "velocity": 389.8,
+    "_gaps": [
+     [
+      "没有一键部署",
+      "没有一键部署",
+      "补一个 Dockerfile + compose，别人一条命令跑起来"
+     ],
+     [
+      "没有在线演示",
+      "没有在线演示",
+      "部署一个公开 demo 站，让人先玩再买单"
+     ]
+    ],
+    "gaps_short": [
+     "没有一键部署",
+     "没有在线演示"
+    ],
+    "risk": "",
+    "suspect": "",
+    "pitch": {
+     "gap_key": "要敲一长串参数",
+     "change": "封装成双击就能跑的脚本，把参数做成填空",
+     "buyer": "需要这套能力但装不上的人",
+     "buyer_tag": "通用",
+     "deliver": "做成图文教程 + 现成脚本包，一次付费长期用",
+     "deliver_alt": "接单代跑，按次收费",
+     "hours": 2,
+     "gap_key_word": "缺一键部署"
+    },
+    "plain": "让你的命令行 Agent 在后台自己接活、自己跟进到底；平时不烦你，遇到拿不准的事才发卡片找你拍板。",
+    "_bucket": "",
+    "seen_times": 0,
+    "seen_first": "",
+    "seen_last": "",
+    "analy": {
+     "zh": "让你的命令行 Agent 在后台自己接活、自己跟进到底；平时不烦你，遇到拿不准的事才发卡片找你拍板。",
+     "plain": "说白了，这是一个要在黑框里敲命令才动起来的工具，功能硬，但上手要人带。它干的事是：让你的命令行 Agent 在后台自己接活、自己跟进到底；平时不烦你，遇到拿不准的事才发卡片找你拍板。",
+     "gap": "封装成双击就能跑的脚本，把参数做成填空",
+     "buyer": "需要这套能力但装不上的人",
+     "_auto": true,
+     "_src": "mt"
+    }
+   },
+   {
+    "full_name": "qybaihe/bla",
+    "owner": "qybaihe",
+    "owner_type": "User",
+    "name": "bla",
+    "desc": "🛡️ BLA (bla-agents / Blind LLM Agents) — Open-source Blue Defense MCP server & CLI protecting JS/TS, Electron ASAR, WASM, Python, Native Binaries, SQLite, GGUF/Safetensors & Android DEX against AI reverse-engineering agents (REA).",
+    "lang": "TypeScript",
+    "stars": 6090,
+    "forks": 757,
+    "watchers": 31,
+    "open_issues": 6,
+    "license": "MIT",
+    "license_name": "MIT License",
+    "topics": [
+     "adversarial-ai",
+     "ai-security",
+     "android-security",
+     "binary-protection",
+     "claude-code",
+     "codex",
+     "cursor",
+     "electron-security",
+     "gguf",
+     "ghidra",
+     "llm-security",
+     "mcp",
+     "mcp-server",
+     "obfuscation",
+     "python-security",
+     "reverse-engineering",
+     "safetensors",
+     "software-protection",
+     "webassembly"
+    ],
+    "created_at": "2026-10-25T05:25:45Z",
+    "pushed_at": "2026-11-18T08:12:51Z",
+    "updated_at": "2026-11-18T08:12:45Z",
+    "size_kb": 4613,
+    "archived": false,
+    "has_discussions": true,
+    "has_wiki": true,
+    "homepage": "https://bla.tools",
+    "url": "https://github.com/qybaihe/bla",
+    "default_branch": "main",
+    "gained": 0,
+    "since": "created<30d",
+    "source": "search_new",
+    "score": 79,
+    "grade": "A",
+    "grade_word": "改一改能卖",
+    "form": "模型数据",
+    "velocity": 253.75,
+    "_gaps": [
+     [
+      "没有中文上手文档",
+      "没有中文上手文档",
+      "把 README 翻成中文，配一张三步跑通图"
+     ],
+     [
+      "没有一键部署",
+      "没有一键部署",
+      "补一个 Dockerfile + compose，别人一条命令跑起来"
+     ]
+    ],
+    "gaps_short": [
+     "没有中文上手文档",
+     "没有一键部署"
+    ],
+    "risk": "",
+    "suspect": "",
+    "pitch": {
+     "gap_key": "部署门槛太高",
+     "change": "做成一键安装包，环境和参数全预设好",
+     "buyer": "要跑模型但搞不定环境和参数的人",
+     "buyer_tag": "通用",
+     "deliver": "做成一键安装包 + 中文说明书",
+     "deliver_alt": "按调用次数做代跑服务",
+     "hours": 2,
+     "gap_key_word": "缺中文上手文档"
+    },
+    "plain": "BLA (bla-agents / Blind LLM Agents) — Open-source Blue Defense MCP server & CLI protecting JS/TS, Electron ASAR, WASM, Python, Native Binaries, SQLite, GGUF/Safetensors & Android DEX against AI reverse-engineering agents (REA).",
+    "_bucket": "",
+    "seen_times": 0,
+    "seen_first": "",
+    "seen_last": "",
+    "analy": {
+     "zh": "BLA（BLA 代理/盲 LLM 代理）— 开源 Blue Defense MCP 服务器和 CLI，保护 JS/TS、Electron ASAR、WASM、Python、原生二进制文件、SQLite、GGUF/Safetensors 和 Android DEX 免受 AI 反向工程代理 (REA) 的侵害。",
+     "plain": "说白了，这是一个能跑 AI 的模型或数据集，得自己配环境才能动。它干的事是：BLA（BLA 代理/盲 LLM 代理）— 开源 Blue Defense MCP 服务器和 CLI，保护 JS/TS、Electron ASAR、WASM、Python、原生二进制文件、SQLite、GGUF/Safetensors 和 Android DEX 免受 AI 反向工程代理 (REA) 的侵害。",
+     "gap": "做成一键安装包，环境和参数全预设好",
+     "buyer": "要跑模型但搞不定环境和参数的人",
+     "_auto": true,
+     "_src": "mt"
+    }
+   },
+   {
+    "full_name": "affaan-m/ECC",
+    "owner": "affaan-m",
+    "owner_type": "User",
+    "name": "ECC",
+    "desc": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.",
+    "lang": "JavaScript",
+    "stars": 305878,
+    "forks": 45016,
+    "watchers": 1500,
+    "open_issues": 162,
+    "license": "MIT",
+    "license_name": "MIT License",
+    "topics": [
+     "ai-agents",
+     "anthropic",
+     "claude",
+     "claude-code",
+     "developer-tools",
+     "llm",
+     "mcp",
+     "productivity"
+    ],
+    "created_at": "2026-01-18T00:51:51Z",
+    "pushed_at": "2026-11-17T06:41:46Z",
+    "updated_at": "2026-11-18T08:16:43Z",
+    "size_kb": 64399,
+    "archived": false,
+    "has_discussions": true,
+    "has_wiki": true,
+    "homepage": "https://ecc.tools",
+    "url": "https://github.com/affaan-m/ECC",
+    "default_branch": "main",
+    "gained": 883,
+    "since": "daily",
+    "source": "trending",
+    "score": 64,
+    "grade": "B",
+    "grade_word": "值得研究",
+    "form": "Agent技能",
+    "velocity": 883.0,
+    "_gaps": [
+     [
+      "没有中文上手文档",
+      "没有中文上手文档",
+      "把 README 翻成中文，配一张三步跑通图"
+     ],
+     [
+      "没有一键部署",
+      "没有一键部署",
+      "补一个 Dockerfile + compose，别人一条命令跑起来"
+     ]
+    ],
+    "gaps_short": [
+     "没有中文上手文档",
+     "没有一键部署"
+    ],
+    "risk": "体量太大，改源码成本高，建议只做外围服务",
+    "suspect": "",
+    "pitch": {
+     "gap_key": "只有英文指令",
+     "change": "改写成中文指令版，加 3 个真实场景的开场白",
+     "buyer": "天天用 AI 干活、但不知道装什么的人",
+     "buyer_tag": "通用",
+     "deliver": "打包成技能文件，配使用教程一起卖",
+     "deliver_alt": "做成付费专栏的一章，当引流钩子",
+     "hours": 3,
+     "gap_key_word": "缺中文上手文档"
+    },
+    "plain": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.",
+    "_bucket": "",
+    "seen_times": 0,
+    "seen_first": "",
+    "seen_last": "",
+    "analy": {
+     "zh": "代理工具性能优化系统。针对Claude Code、Codex、Opencode、Cursor等工具的技能、直觉、记忆、安全性和研究先行开发。",
+     "plain": "说白了，这是一份写给 AI 的操作手册，装进 AI 工具后它就知道按你的规矩干活。它干的事是：代理工具性能优化系统。针对Claude Code、Codex、Opencode、Cursor等工具的技能、直觉、记忆、安全性和研究先行开发。",
+     "gap": "改写成中文指令版，加 3 个真实场景的开场白",
+     "buyer": "天天用 AI 干活、但不知道装什么的人",
+     "_auto": true,
+     "_src": "mt"
+    }
+   },
+   {
+    "full_name": "Minireel/HGhub",
+    "owner": "Minireel",
+    "owner_type": "Organization",
+    "name": "HGhub",
+    "desc": "Plug-in media player",
+    "lang": "Rust",
+    "stars": 9952,
+    "forks": 8443,
+    "watchers": 44,
+    "open_issues": 6,
+    "license": "NOASSERTION",
+    "license_name": "Other",
+    "topics": [
+     "android",
+     "drama",
+     "free",
+     "movie-web-app",
+     "reels",
+     "windows"
+    ],
+    "created_at": "2026-11-03T14:04:27Z",
+    "pushed_at": "2026-11-18T08:15:33Z",
+    "updated_at": "2026-11-18T08:16:51Z",
+    "size_kb": 2339,
+    "archived": false,
+    "has_discussions": false,
+    "has_wiki": false,
+    "homepage": "https://minireel.github.io/HGhub/",
+    "url": "https://github.com/Minireel/HGhub",
+    "default_branch": "main",
+    "gained": 282,
+    "since": "since_last",
+    "source": "search_new",
+    "score": 61,
+    "grade": "B",
+    "grade_word": "值得研究",
+    "form": "web应用",
+    "velocity": 710.8571428571429,
+    "_gaps": [
+     [
+      "没有中文界面",
+      "没有中文界面",
+      "把界面文案和按钮全翻成中文，截一套中文版演示图"
+     ],
+     [
+      "没有一键部署",
+      "没有一键部署",
+      "补一个 Dockerfile + compose，别人一条命令跑起来"
+     ]
+    ],
+    "gaps_short": [
+     "没有中文界面",
+     "没有一键部署"
+    ],
+    "risk": "许可证不明，动手前去 README 确认一遍",
+    "suspect": "星速可疑：14 天涨到 9,952 星（日均 710），先观察一周看有没有真实用户再动手",
+    "pitch": {
+     "gap_key": "没有中文界面",
+     "change": "把界面文案和按钮全翻成中文，再截一套中文版演示图当商品图",
+     "buyer": "想有个自己工具但不会写代码的人",
+     "buyer_tag": "通用",
+     "deliver": "打包部署到客户自己的服务器/域名，收一次部署费",
+     "deliver_alt": "做成在线服务，按月收使用费",
+     "hours": 8,
+     "gap_key_word": "缺中文界面"
+    },
+    "plain": "Plug-in media player",
+    "_bucket": "",
+    "seen_times": 0,
+    "seen_first": "",
+    "seen_last": "",
+    "analy": {
+     "zh": "插件式媒体播放器",
+     "plain": "说白了，这是一个打开网页就能用的在线小工具，不用装任何东西。它干的事是：插件式媒体播放器",
+     "gap": "把界面文案和按钮全翻成中文，再截一套中文版演示图当商品图",
+     "buyer": "想有个自己工具但不会写代码的人",
+     "_auto": true,
+     "_src": "mt"
+    }
+   },
+   {
+    "full_name": "ChromeDevTools/chrome-devtools-mcp",
+    "owner": "ChromeDevTools",
+    "owner_type": "Organization",
+    "name": "chrome-devtools-mcp",
+    "desc": "Chrome DevTools for coding agents",
+    "lang": "TypeScript",
+    "stars": 58120,
+    "forks": 4873,
+    "watchers": 256,
+    "open_issues": 143,
+    "license": "Apache-2.0",
+    "license_name": "Apache License 2.0",
+    "topics": [
+     "browser",
+     "chrome",
+     "chrome-devtools",
+     "debugging",
+     "devtools",
+     "mcp",
+     "mcp-server",
+     "puppeteer"
+    ],
+    "created_at": "2025-09-11T10:39:55Z",
+    "pushed_at": "2026-11-18T05:14:01Z",
+    "updated_at": "2026-11-18T08:16:28Z",
+    "size_kb": 13658,
+    "archived": false,
+    "has_discussions": true,
+    "has_wiki": false,
+    "homepage": "https://developer.chrome.com/docs/devtools/agents",
+    "url": "https://github.com/ChromeDevTools/chrome-devtools-mcp",
+    "default_branch": "main",
+    "gained": 2948,
+    "since": "weekly",
+    "source": "trending",
+    "score": 59,
+    "grade": "B",
+    "grade_word": "值得研究",
+    "form": "引擎库",
+    "velocity": 421.14285714285717,
+    "_gaps": [
+     [
+      "没有中文上手文档",
+      "没有中文上手文档",
+      "把 README 翻成中文，配一张三步跑通图"
+     ],
+     [
+      "没有一键部署",
+      "没有一键部署",
+      "补一个 Dockerfile + compose，别人一条命令跑起来"
+     ]
+    ],
+    "gaps_short": [
+     "没有中文上手文档",
+     "没有一键部署"
+    ],
+    "risk": "大厂项目，路线不由你定，只能做外围（部署/中文化/模板）",
+    "suspect": "",
+    "pitch": {
+     "gap_key": "没有中文上手文档",
+     "change": "把 README 翻成中文，配一张「三步跑通」流程图",
+     "buyer": "要用这套能力但搞不定环境的人",
+     "buyer_tag": "通用",
+     "deliver": "做成带界面的成品，按份卖（发网盘，附中文说明）",
+     "deliver_alt": "接单代跑：客户给需求，你出结果",
+     "hours": 2,
+     "gap_key_word": "缺中文上手文档"
+    },
+    "plain": "Chrome DevTools for coding agents",
+    "_bucket": "",
+    "seen_times": 0,
+    "seen_first": "",
+    "seen_last": "",
+    "analy": {
+     "zh": "适用于编码代理的 Chrome DevTools",
+     "plain": "说白了，这是一堆已经写好的能力，但没有界面，得有人包一层壳才能给普通人用。它干的事是：适用于编码代理的 Chrome DevTools",
+     "gap": "把 README 翻成中文，配一张「三步跑通」流程图",
+     "buyer": "要用这套能力但搞不定环境的人",
+     "_auto": true,
+     "_src": "mt"
+    }
+   },
+   {
+    "full_name": "anefzaoui/misterdownloadmanager",
+    "owner": "anefzaoui",
+    "owner_type": "User",
+    "name": "misterdownloadmanager",
+    "desc": "misterdownloadmanager: The ultimate open-source, clean-room download manager written from scratch in pure Rust for Windows, Mac, and Linux",
+    "lang": "Rust",
+    "stars": 12467,
+    "forks": 1058,
+    "watchers": 62,
+    "open_issues": 77,
+    "license": "GPL-3.0",
+    "license_name": "GNU General Public License v3.0",
+    "topics": [
+     "bittorrent-client",
+     "debrid",
+     "download-accelerator",
+     "download-manager",
+     "downloadmanager",
+     "egui",
+     "file-downloader",
+     "gallery-dl",
+     "idm",
+     "idm-alternative",
+     "internet-download-manager",
+     "m3u8-downloader",
+     "magnet",
+     "playlist-downloader",
+     "real-debrid",
+     "rust",
+     "torrent-client",
+     "video-downloader",
+     "youtube-downloader",
+     "yt-dlp"
+    ],
+    "created_at": "2026-10-29T01:25:19Z",
+    "pushed_at": "2026-11-18T08:17:11Z",
+    "updated_at": "2026-11-18T08:14:48Z",
+    "size_kb": 638363,
+    "archived": false,
+    "has_discussions": true,
+    "has_wiki": false,
+    "homepage": "https://misterdownloadmanager.com",
+    "url": "https://github.com/anefzaoui/misterdownloadmanager",
+    "default_branch": "main",
+    "gained": 1089,
+    "since": "since_last",
+    "source": "search_new",
+    "score": 59,
+    "grade": "B",
+    "grade_word": "值得研究",
+    "form": "引擎库",
+    "velocity": 623.35,
+    "_gaps": [
+     [
+      "没有中文上手文档",
+      "没有中文上手文档",
+      "把 README 翻成中文，配一张三步跑通图"
+     ],
+     [
+      "没有一键部署",
+      "没有一键部署",
+      "补一个 Dockerfile + compose，别人一条命令跑起来"
+     ]
+    ],
+    "gaps_short": [
+     "没有中文上手文档",
+     "没有一键部署"
+    ],
+    "risk": "GPL：改了必须开源，卖闭源产品有法律风险",
+    "suspect": "",
+    "pitch": {
+     "gap_key": "只有代码没有界面",
+     "change": "包一层网页界面，让不会写代码的人点两下就能用",
+     "buyer": "做短视频的剪辑号",
+     "buyer_tag": "视频",
+     "deliver": "接单代跑：客户给需求，你出结果",
+     "deliver_alt": "做成中文教程 + 成品包，走知识付费",
+     "hours": 11,
+     "gap_key_word": "缺中文上手文档"
+    },
+    "plain": "misterdownloadmanager: The ultimate open-source, clean-room download manager written from scratch in pure Rust for Windows, Mac, and Linux",
+    "_bucket": "",
+    "seen_times": 0,
+    "seen_first": "",
+    "seen_last": "",
+    "analy": {
+     "zh": "misterdownloadmanager：终极开源、无污染下载管理器，完全使用纯 Rust 语言从头编写，适用于 Windows、Mac 和 Linux",
+     "plain": "说白了，这是一堆已经写好的能力，但没有界面，得有人包一层壳才能给普通人用。它干的事是：misterdownloadmanager：终极开源、无污染下载管理器，完全使用纯 Rust 语言从头编写，适用于 Windows、Mac 和 Linux",
+     "gap": "包一层网页界面，让不会写代码的人点两下就能用",
+     "buyer": "做短视频的剪辑号",
+     "_auto": true,
+     "_src": "mt"
+    }
+   },
+   {
+    "full_name": "jingyaogong/minimind",
+    "owner": "jingyaogong",
+    "owner_type": "User",
+    "name": "minimind",
+    "desc": "🧠 Train a 64M-parameter LLM from scratch in just 2h!",
+    "lang": "Python",
+    "stars": 66298,
+    "forks": 8692,
+    "watchers": 293,
+    "open_issues": 62,
+    "license": "Apache-2.0",
+    "license_name": "Apache License 2.0",
+    "topics": [
+     "artificial-intelligence",
+     "large-language-model"
+    ],
+    "created_at": "2024-07-27T04:34:12Z",
+    "pushed_at": "2026-11-18T06:08:58Z",
+    "updated_at": "2026-11-18T08:16:25Z",
+    "size_kb": 39482,
+    "archived": false,
+    "has_discussions": true,
+    "has_wiki": true,
+    "homepage": "https://jingyaogong.github.io/minimind",
+    "url": "https://github.com/jingyaogong/minimind",
+    "default_branch": "master",
+    "gained": 192,
+    "since": "daily",
+    "source": "trending",
+    "score": 59,
+    "grade": "B",
+    "grade_word": "值得研究",
+    "form": "web应用",
+    "velocity": 192.0,
+    "_gaps": [
+     [
+      "没有一键部署",
+      "没有一键部署",
+      "补一个 Dockerfile + compose，别人一条命令跑起来"
+     ]
+    ],
+    "gaps_short": [
+     "没有一键部署"
+    ],
+    "risk": "体量太大，改源码成本高，建议只做外围服务",
+    "suspect": "",
+    "pitch": {
+     "gap_key": "没有在线演示",
+     "change": "部署一个公开 demo，让人先玩再决定买不买",
+     "buyer": "想有个自己工具但不会写代码的人",
+     "buyer_tag": "通用",
+     "deliver": "做成在线服务，按月收使用费",
+     "deliver_alt": "连部署带教一次，做成「一天陪跑」按次收",
+     "hours": 1,
+     "gap_key_word": "缺一键部署"
+    },
+    "plain": "Train a 64M-parameter LLM from scratch in just 2h!",
+    "_bucket": "",
+    "seen_times": 0,
+    "seen_first": "",
+    "seen_last": "",
+    "analy": {
+     "zh": "仅需 2 小时即可从零开始训练一个 6400 万参数的 LLM！",
+     "plain": "说白了，这是一个打开网页就能用的在线小工具，不用装任何东西。它干的事是：仅需 2 小时即可从零开始训练一个 6400 万参数的 LLM！",
+     "gap": "部署一个公开 demo，让人先玩再决定买不买",
+     "buyer": "想有个自己工具但不会写代码的人",
+     "_auto": true,
+     "_src": "mt"
+    }
+   },
+   {
+    "full_name": "huami-dev/GestaltX",
+    "owner": "huami-dev",
+    "owner_type": "User",
+    "name": "GestaltX",
+    "desc": "An MobileGestalt editor for iOS 27.x, featuring region-code tweaks, device presets, backups.",
+    "lang": "Swift",
+    "stars": 8212,
+    "forks": 2705,
+    "watchers": 22,
+    "open_issues": 101,
+    "license": "GPL-3.0",
+    "license_name": "GNU General Public License v3.0",
+    "topics": [],
+    "created_at": "2026-11-09T05:15:48Z",
+    "pushed_at": "2026-11-17T02:00:13Z",
+    "updated_at": "2026-11-18T08:15:16Z",
+    "size_kb": 1999,
+    "archived": false,
+    "has_discussions": false,
+    "has_wiki": true,
+    "homepage": "",
+    "url": "https://github.com/huami-dev/GestaltX",
+    "default_branch": "main",
+    "gained": 0,
+    "since": "created<30d",
+    "source": "search_new",
+    "score": 59,
+    "grade": "B",
+    "grade_word": "值得研究",
+    "form": "web应用",
+    "velocity": 912.4444444444445,
+    "_gaps": [
+     [
+      "没有中文上手文档",
+      "没有中文上手文档",
+      "把 README 翻成中文，配一张三步跑通图"
+     ],
+     [
+      "没有一键部署",
+      "没有一键部署",
+      "补一个 Dockerfile + compose，别人一条命令跑起来"
+     ],
+     [
+      "没有在线演示",
+      "没有在线演示",
+      "部署一个公开 demo 站，让人先玩再买单"
+     ]
+    ],
+    "gaps_short": [
+     "没有中文上手文档",
+     "没有一键部署",
+     "没有在线演示"
+    ],
+    "risk": "GPL：改了必须开源，卖闭源产品有法律风险",
+    "suspect": "星速可疑：9 天涨到 8,212 星（日均 912），先观察一周看有没有真实用户再动手",
+    "pitch": {
+     "gap_key": "没有行业预设",
+     "change": "做 10 个行业预设（餐饮/教培/门店），一键套用",
+     "buyer": "要上线个小站但没预算请开发的人",
+     "buyer_tag": "通用",
+     "deliver": "连部署带教一次，做成「一天陪跑」按次收",
+     "deliver_alt": "换成客户自己的数据跑一遍，按场景收定制费",
+     "hours": 6,
+     "gap_key_word": "缺中文上手文档"
+    },
+    "plain": "An MobileGestalt editor for iOS 27.x, featuring region-code tweaks, device presets, backups.",
+    "_bucket": "",
+    "seen_times": 0,
+    "seen_first": "",
+    "seen_last": "",
+    "analy": {
+     "zh": "适用于 iOS 27.x 的 MobileGestalt 编辑器，具备区域代码调整、设备预设、备份等功能。",
+     "plain": "说白了，这是一个打开网页就能用的在线小工具，不用装任何东西。它干的事是：适用于 iOS 27.x 的 MobileGestalt 编辑器，具备区域代码调整、设备预设、备份等功能。",
+     "gap": "做 10 个行业预设（餐饮/教培/门店），一键套用",
+     "buyer": "要上线个小站但没预算请开发的人",
+     "_auto": true,
+     "_src": "mt"
+    }
+   }
+  ],
+  "dropped": [
+   {
+    "full_name": "obra/superpowers",
+    "stars": 319585,
+    "reason": "综合 55 分（B 级），名额满了"
+   },
+   {
+    "full_name": "obra/superpowers",
+    "stars": 319585,
+    "reason": "综合 55 分（B 级），名额有限，这一期没进",
+    "score": 55
+   },
+   {
+    "full_name": "anthropics/skills",
+    "stars": 196918,
+    "reason": "综合 48 分（C 级），名额满了"
+   },
+   {
+    "full_name": "anthropics/skills",
+    "stars": 196918,
+    "reason": "综合 48 分（C 级），名额有限，这一期没进",
+    "score": 48
+   },
+   {
+    "full_name": "addyosmani/agent-skills",
+    "stars": 118752,
+    "reason": "5 天前（2026-11-13）推过，冷却 7 天内不重推"
+   },
+   {
+    "full_name": "addyosmani/agent-skills",
+    "stars": 118752,
+    "reason": "综合 68 分（A 级），名额有限，这一期没进",
+    "score": 68
+   },
+   {
+    "full_name": "sveltejs/svelte",
+    "stars": 89590,
+    "reason": "综合 54 分（B 级），名额满了"
+   },
+   {
+    "full_name": "sveltejs/svelte",
+    "stars": 89590,
+    "reason": "综合 54 分（B 级），名额有限，这一期没进",
+    "score": 54
+   },
+   {
+    "full_name": "ZhuLinsen/daily_stock_analysis",
+    "stars": 73200,
+    "reason": "4 天前（2026-11-14）推过，冷却 7 天内不重推"
+   },
+   {
+    "full_name": "ZhuLinsen/daily_stock_analysis",
+    "stars": 73200,
+    "reason": "综合 76 分（A 级），名额有限，这一期没进",
+    "score": 76
+   },
+   {
+    "full_name": "mvanhorn/last30days-skill",
+    "stars": 69434,
+    "reason": "1 天前（2026-11-17）推过，冷却 7 天内不重推"
+   },
+   {
+    "full_name": "mvanhorn/last30days-skill",
+    "stars": 69434,
+    "reason": "综合 62 分（B 级），名额有限，这一期没进",
+    "score": 62
+   },
+   {
+    "full_name": "alibaba/open-code-review",
+    "stars": 53994,
+    "reason": "4 天前（2026-11-14）推过，冷却 7 天内不重推"
+   },
+   {
+    "full_name": "alibaba/open-code-review",
+    "stars": 53994,
+    "reason": "综合 62 分（B 级），名额有限，这一期没进",
+    "score": 62
+   },
+   {
+    "full_name": "vercel-labs/agent-browser",
+    "stars": 52476,
+    "reason": "综合 56 分（B 级），名额满了"
+   },
+   {
+    "full_name": "vercel-labs/agent-browser",
+    "stars": 52476,
+    "reason": "综合 56 分（B 级），名额有限，这一期没进",
+    "score": 56
+   },
+   {
+    "full_name": "storytold/craft-anything",
+    "stars": 36169,
+    "reason": "5 天前（2026-11-13）推过，冷却 7 天内不重推"
+   },
+   {
+    "full_name": "storytold/craft-anything",
+    "stars": 36169,
+    "reason": "综合 64 分（B 级），名额有限，这一期没进",
+    "score": 64
+   },
+   {
+    "full_name": "meta/astryx",
+    "stars": 30323,
+    "reason": "6 天前（2026-11-12）推过，冷却 7 天内不重推"
+   },
+   {
+    "full_name": "meta/astryx",
+    "stars": 30323,
+    "reason": "综合 68 分（A 级），名额有限，这一期没进",
+    "score": 68
+   },
+   {
+    "full_name": "dream-num/univer",
+    "stars": 29579,
+    "reason": "1 天前（2026-11-17）推过，冷却 7 天内不重推"
+   },
+   {
+    "full_name": "dream-num/univer",
+    "stars": 29579,
+    "reason": "综合 62 分（B 级），名额有限，这一期没进",
+    "score": 62
+   },
+   {
+    "full_name": "ag-ui-protocol/ag-ui",
+    "stars": 20191,
+    "reason": "3 天前（2026-11-15）推过，冷却 7 天内不重推"
+   },
+   {
+    "full_name": "ag-ui-protocol/ag-ui",
+    "stars": 20191,
+    "reason": "综合 56 分（B 级），名额有限，这一期没进",
+    "score": 56
+   },
+   {
+    "full_name": "cursor/plugins",
+    "stars": 17004,
+    "reason": "综合 56 分（B 级），名额满了"
+   },
+   {
+    "full_name": "cursor/plugins",
+    "stars": 17004,
+    "reason": "综合 56 分（B 级），名额有限，这一期没进",
+    "score": 56
+   },
+   {
+    "full_name": "we-promise/sure",
+    "stars": 16339,
+    "reason": "综合 48 分（C 级），名额满了"
+   },
+   {
+    "full_name": "we-promise/sure",
+    "stars": 16339,
+    "reason": "综合 48 分（C 级），名额有限，这一期没进",
+    "score": 48
+   },
+   {
+    "full_name": "openai/codex-security",
+    "stars": 14016,
+    "reason": "5 天前（2026-11-13）推过，冷却 7 天内不重推"
+   },
+   {
+    "full_name": "openai/codex-security",
+    "stars": 14016,
+    "reason": "综合 64 分（B 级），名额有限，这一期没进",
+    "score": 64
+   },
+   {
+    "full_name": "backnotprop/plannotator",
+    "stars": 13209,
+    "reason": "4 天前（2026-11-14）推过，冷却 7 天内不重推"
+   },
+   {
+    "full_name": "backnotprop/plannotator",
+    "stars": 13209,
+    "reason": "综合 68 分（A 级），名额有限，这一期没进",
+    "score": 68
+   },
+   {
+    "full_name": "google-labs-code/stitch-skills",
+    "stars": 10229,
+    "reason": "2 天前（2026-11-16）推过，冷却 7 天内不重推"
+   },
+   {
+    "full_name": "google-labs-code/stitch-skills",
+    "stars": 10229,
+    "reason": "综合 76 分（A 级），名额有限，这一期没进",
+    "score": 76
+   },
+   {
+    "full_name": "elementalsouls/Claude-BugHunter",
+    "stars": 10033,
+    "reason": "2 天前（2026-11-16）推过，冷却 7 天内不重推"
+   },
+   {
+    "full_name": "elementalsouls/Claude-BugHunter",
+    "stars": 10033,
+    "reason": "综合 64 分（B 级），名额有限，这一期没进",
+    "score": 64
+   },
+   {
+    "full_name": "zortos293/Lichii",
+    "stars": 9678,
+    "reason": "综合 47 分（C 级），名额满了"
+   },
+   {
+    "full_name": "zortos293/Lichii",
+    "stars": 9678,
+    "reason": "综合 47 分（C 级），名额有限，这一期没进",
+    "score": 47
+   },
+   {
+    "full_name": "getarcaneapp/arcane",
+    "stars": 9510,
+    "reason": "1 天前（2026-11-17）推过，冷却 7 天内不重推"
+   },
+   {
+    "full_name": "getarcaneapp/arcane",
+    "stars": 9510,
+    "reason": "综合 72 分（A 级），名额有限，这一期没进",
+    "score": 72
+   }
+  ]
+ },
+ "focus_tab": {
+  "key": null,
+  "pool": 0,
+  "buckets": {}
+ },
+ "deep": [],
+ "date": "2026-11-18",
+ "archived_at": "2026-11-18T08:17:43"
+}
