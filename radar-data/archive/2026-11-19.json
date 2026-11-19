@@ -1,0 +1,902 @@
+{
+ "mode": "FULL",
+ "degraded": false,
+ "focus": null,
+ "scanned": 72,
+ "pools": {
+  "daily": 72,
+  "focus": 0
+ },
+ "daily": {
+  "picks": [
+   {
+    "full_name": "l0ng-ai/openidea",
+    "owner": "l0ng-ai",
+    "owner_type": "User",
+    "name": "openidea",
+    "desc": "The IDE you know, rebuilt in Rust. IntelliJ IDEA–style keymap, tool windows and search-everywhere in a fast native app: editor, code insight, debugger, Git, terminal, database and HTTP clients for 60+ languages.",
+    "lang": "TypeScript",
+    "stars": 9452,
+    "forks": 882,
+    "watchers": 37,
+    "open_issues": 203,
+    "license": "Apache-2.0",
+    "license_name": "Apache License 2.0",
+    "topics": [
+     "code-editor",
+     "cross-platform",
+     "dap",
+     "database-client",
+     "debugger",
+     "desktop-app",
+     "developer-tools",
+     "git",
+     "http-client",
+     "ide",
+     "intellij",
+     "lsp",
+     "rust",
+     "tauri",
+     "terminal"
+    ],
+    "created_at": "2026-10-21T12:23:14Z",
+    "pushed_at": "2026-11-19T07:49:30Z",
+    "updated_at": "2026-11-19T08:26:01Z",
+    "size_kb": 114681,
+    "archived": false,
+    "has_discussions": true,
+    "has_wiki": false,
+    "homepage": "https://openidea.sh",
+    "url": "https://github.com/l0ng-ai/openidea",
+    "default_branch": "main",
+    "gained": 0,
+    "since": "created<30d",
+    "source": "search_new",
+    "score": 77,
+    "grade": "A",
+    "grade_word": "改一改能卖",
+    "form": "web应用",
+    "velocity": 337.57142857142856,
+    "_gaps": [
+     [
+      "没有中文上手文档",
+      "没有中文上手文档",
+      "把 README 翻成中文，配一张三步跑通图"
+     ],
+     [
+      "没有一键部署",
+      "没有一键部署",
+      "补一个 Dockerfile + compose，别人一条命令跑起来"
+     ]
+    ],
+    "gaps_short": [
+     "没有中文上手文档",
+     "没有一键部署"
+    ],
+    "risk": "",
+    "suspect": "",
+    "pitch": {
+     "gap_key": "没有中文界面",
+     "change": "把界面文案和按钮全翻成中文，再截一套中文版演示图当商品图",
+     "buyer": "想有个自己工具但不会写代码的人",
+     "buyer_tag": "通用",
+     "deliver": "打包部署到客户自己的服务器/域名，收一次部署费",
+     "deliver_alt": "做成在线服务，按月收使用费",
+     "hours": 4,
+     "gap_key_word": "缺中文上手文档"
+    },
+    "plain": "The IDE you know, rebuilt in Rust. IntelliJ IDEA–style keymap, tool windows and search-everywhere in a fast native app: editor, code insight, debugger, Git, terminal, database and HTTP clients for 60+ languages.",
+    "_bucket": "",
+    "seen_times": 1,
+    "seen_first": "2026-11-12",
+    "seen_last": "2026-11-12",
+    "analy": {
+     "zh": "你知道的 IDE，是用 Rust 重建的。 IntelliJ IDEA 风格的键盘映射、工具窗口和搜索在快速本机应用程序中随处可见：编辑器、代码洞察、调试器、Git、终端、数据库和 HTTP 客户端，支持 60 多种语言。",
+     "plain": "说白了，这是一个打开网页就能用的在线小工具，不用装任何东西。它干的事是：你知道的 IDE，是用 Rust 重建的。 IntelliJ IDEA 风格的键盘映射、工具窗口和搜索在快速本机应用程序中随处可见：编辑器、代码洞察、调试器、Git、终端、数据库和 HTTP 客户端，支持 60 多种语言。",
+     "gap": "把界面文案和按钮全翻成中文，再截一套中文版演示图当商品图",
+     "buyer": "想有个自己工具但不会写代码的人",
+     "_auto": true,
+     "_src": "mt"
+    }
+   },
+   {
+    "full_name": "meta/astryx",
+    "owner": "meta",
+    "owner_type": "Organization",
+    "name": "astryx",
+    "desc": "An open source design system that's fully customizable and agent ready",
+    "lang": "TypeScript",
+    "stars": 30712,
+    "forks": 2406,
+    "watchers": 105,
+    "open_issues": 1053,
+    "license": "MIT",
+    "license_name": "MIT License",
+    "topics": [],
+    "created_at": "2026-01-09T16:20:32Z",
+    "pushed_at": "2026-11-19T08:27:37Z",
+    "updated_at": "2026-11-19T08:21:58Z",
+    "size_kb": 1422532,
+    "archived": false,
+    "has_discussions": true,
+    "has_wiki": true,
+    "homepage": "http://astryx.atmeta.com",
+    "url": "https://github.com/meta/astryx",
+    "default_branch": "main",
+    "gained": 6250,
+    "since": "weekly",
+    "source": "trending",
+    "score": 68,
+    "grade": "A",
+    "grade_word": "改一改能卖",
+    "form": "web应用",
+    "velocity": 892.8571428571429,
+    "_gaps": [
+     [
+      "没有中文上手文档",
+      "没有中文上手文档",
+      "把 README 翻成中文，配一张三步跑通图"
+     ]
+    ],
+    "gaps_short": [
+     "没有中文上手文档"
+    ],
+    "risk": "大厂项目，路线不由你定，只能做外围（部署/中文化/模板）",
+    "suspect": "",
+    "pitch": {
+     "gap_key": "没有在线演示",
+     "change": "部署一个公开 demo，让人先玩再决定买不买",
+     "buyer": "接单的设计师和电商美工",
+     "buyer_tag": "设计",
+     "deliver": "做成在线服务，按月收使用费",
+     "deliver_alt": "连部署带教一次，做成「一天陪跑」按次收",
+     "hours": 6,
+     "gap_key_word": "缺中文上手文档"
+    },
+    "plain": "An open source design system that's fully customizable and agent ready",
+    "_bucket": "",
+    "seen_times": 1,
+    "seen_first": "2026-11-12",
+    "seen_last": "2026-11-12",
+    "analy": {
+     "zh": "完全可定制且可供代理使用的开源设计系统",
+     "plain": "说白了，这是一个打开网页就能用的在线小工具，不用装任何东西。它干的事是：完全可定制且可供代理使用的开源设计系统",
+     "gap": "部署一个公开 demo，让人先玩再决定买不买",
+     "buyer": "接单的设计师和电商美工",
+     "_auto": true,
+     "_src": "mt"
+    }
+   },
+   {
+    "full_name": "openvinotoolkit/openvino",
+    "owner": "openvinotoolkit",
+    "owner_type": "Organization",
+    "name": "openvino",
+    "desc": "OpenVINO™ is an open source toolkit for optimizing and deploying AI inference",
+    "lang": "C++",
+    "stars": 11421,
+    "forks": 3609,
+    "watchers": 193,
+    "open_issues": 1154,
+    "license": "Apache-2.0",
+    "license_name": "Apache License 2.0",
+    "topics": [
+     "ai",
+     "computer-vision",
+     "deep-learning",
+     "deploy-ai",
+     "diffusion-models",
+     "generative-ai",
+     "good-first-issue",
+     "inference",
+     "llm-inference",
+     "natural-language-processing",
+     "nlp",
+     "openvino",
+     "optimize-ai",
+     "performance-boost",
+     "recommendation-system",
+     "speech-recognition",
+     "stable-diffusion",
+     "transformers",
+     "yolo"
+    ],
+    "created_at": "2018-10-15T10:54:40Z",
+    "pushed_at": "2026-11-19T08:23:54Z",
+    "updated_at": "2026-11-19T08:20:34Z",
+    "size_kb": 1040049,
+    "archived": false,
+    "has_discussions": true,
+    "has_wiki": true,
+    "homepage": "https://docs.openvino.ai",
+    "url": "https://github.com/openvinotoolkit/openvino",
+    "default_branch": "master",
+    "gained": 24,
+    "since": "daily",
+    "source": "trending",
+    "score": 68,
+    "grade": "A",
+    "grade_word": "改一改能卖",
+    "form": "引擎库",
+    "velocity": 24.0,
+    "_gaps": [
+     [
+      "没有中文上手文档",
+      "没有中文上手文档",
+      "把 README 翻成中文，配一张三步跑通图"
+     ],
+     [
+      "没有一键部署",
+      "没有一键部署",
+      "补一个 Dockerfile + compose，别人一条命令跑起来"
+     ]
+    ],
+    "gaps_short": [
+     "没有中文上手文档",
+     "没有一键部署"
+    ],
+    "risk": "",
+    "suspect": "",
+    "pitch": {
+     "gap_key": "没有中文上手文档",
+     "change": "把 README 翻成中文，配一张「三步跑通」流程图",
+     "buyer": "做短视频的剪辑号",
+     "buyer_tag": "视频",
+     "deliver": "做成带界面的成品，按份卖（发网盘，附中文说明）",
+     "deliver_alt": "接单代跑：客户给需求，你出结果",
+     "hours": 12,
+     "gap_key_word": "缺中文上手文档"
+    },
+    "plain": "OpenVINO™ is an open source toolkit for optimizing and deploying AI inference",
+    "_bucket": "",
+    "seen_times": 0,
+    "seen_first": "",
+    "seen_last": "",
+    "analy": {
+     "zh": "OpenVINO™ 是一个用于优化和部署 AI 推理的开源工具包",
+     "plain": "说白了，这是一堆已经写好的能力，但没有界面，得有人包一层壳才能给普通人用。它干的事是：OpenVINO™ 是一个用于优化和部署 AI 推理的开源工具包",
+     "gap": "把 README 翻成中文，配一张「三步跑通」流程图",
+     "buyer": "做短视频的剪辑号",
+     "_auto": true,
+     "_src": "mt"
+    }
+   },
+   {
+    "full_name": "appwrite/appwrite",
+    "owner": "appwrite",
+    "owner_type": "Organization",
+    "name": "appwrite",
+    "desc": "The open-source cloud for agents & devs. Including Auth, Databases, Storage, Functions, Messaging, Hosting, Realtime, WAF and more",
+    "lang": "TypeScript",
+    "stars": 58343,
+    "forks": 5891,
+    "watchers": 448,
+    "open_issues": 738,
+    "license": "BSD-3-Clause",
+    "license_name": "BSD 3-Clause \"New\" or \"Revised\" License",
+    "topics": [
+     "android",
+     "appwrite",
+     "backend",
+     "backend-as-a-service",
+     "docker",
+     "firebase",
+     "firewall",
+     "flutter",
+     "hosting",
+     "ios",
+     "javascript",
+     "nextjs",
+     "react",
+     "react-native",
+     "reactnative",
+     "self-hosted",
+     "selfhosted",
+     "supabase",
+     "swift",
+     "web"
+    ],
+    "created_at": "2019-04-08T16:36:25Z",
+    "pushed_at": "2026-11-19T08:24:35Z",
+    "updated_at": "2026-11-19T08:23:32Z",
+    "size_kb": 1204011,
+    "archived": false,
+    "has_discussions": true,
+    "has_wiki": false,
+    "homepage": "https://appwrite.io",
+    "url": "https://github.com/appwrite/appwrite",
+    "default_branch": "main",
+    "gained": 232,
+    "since": "daily",
+    "source": "trending",
+    "score": 60,
+    "grade": "B",
+    "grade_word": "值得研究",
+    "form": "web应用",
+    "velocity": 232.0,
+    "_gaps": [
+     [
+      "没有中文上手文档",
+      "没有中文上手文档",
+      "把 README 翻成中文，配一张三步跑通图"
+     ]
+    ],
+    "gaps_short": [
+     "没有中文上手文档"
+    ],
+    "risk": "大厂项目，路线不由你定，只能做外围（部署/中文化/模板）",
+    "suspect": "",
+    "pitch": {
+     "gap_key": "没有行业预设",
+     "change": "做 10 个行业预设（餐饮/教培/门店），一键套用",
+     "buyer": "想有个自己工具但不会写代码的人",
+     "buyer_tag": "通用",
+     "deliver": "连部署带教一次，做成「一天陪跑」按次收",
+     "deliver_alt": "换成客户自己的数据跑一遍，按场景收定制费",
+     "hours": 6,
+     "gap_key_word": "缺中文上手文档"
+    },
+    "plain": "The open-source cloud for agents & devs. Including Auth, Databases, Storage, Functions, Messaging, Hosting, Realtime, WAF and more",
+    "_bucket": "",
+    "seen_times": 0,
+    "seen_first": "",
+    "seen_last": "",
+    "analy": {
+     "zh": "面向代理和开发人员的开源云。包括身份验证、数据库、存储、功能、消息传递、托管、实时、WAF 等",
+     "plain": "说白了，这是一个打开网页就能用的在线小工具，不用装任何东西。它干的事是：面向代理和开发人员的开源云。包括身份验证、数据库、存储、功能、消息传递、托管、实时、WAF 等",
+     "gap": "做 10 个行业预设（餐饮/教培/门店），一键套用",
+     "buyer": "想有个自己工具但不会写代码的人",
+     "_auto": true,
+     "_src": "mt"
+    }
+   },
+   {
+    "full_name": "nvm-sh/nvm",
+    "owner": "nvm-sh",
+    "owner_type": "Organization",
+    "name": "nvm",
+    "desc": "Node Version Manager - POSIX-compliant bash script to manage multiple active node.js versions.",
+    "lang": "Shell",
+    "stars": 96206,
+    "forks": 10794,
+    "watchers": 1128,
+    "open_issues": 367,
+    "license": "MIT",
+    "license_name": "MIT License",
+    "topics": [
+     "bash",
+     "install",
+     "lts",
+     "node",
+     "node-js",
+     "nodejs",
+     "nvm",
+     "nvmrc",
+     "posix",
+     "posix-compliant",
+     "shell",
+     "version-manager",
+     "zsh"
+    ],
+    "created_at": "2010-04-15T17:47:47Z",
+    "pushed_at": "2026-11-19T06:30:50Z",
+    "updated_at": "2026-11-19T08:23:32Z",
+    "size_kb": 5362,
+    "archived": false,
+    "has_discussions": false,
+    "has_wiki": false,
+    "homepage": "",
+    "url": "https://github.com/nvm-sh/nvm",
+    "default_branch": "master",
+    "gained": 237,
+    "since": "daily",
+    "source": "trending",
+    "score": 57,
+    "grade": "B",
+    "grade_word": "值得研究",
+    "form": "命令行",
+    "velocity": 237.0,
+    "_gaps": [
+     [
+      "没有中文上手文档",
+      "没有中文上手文档",
+      "把 README 翻成中文，配一张三步跑通图"
+     ],
+     [
+      "没有在线演示",
+      "没有在线演示",
+      "部署一个公开 demo 站，让人先玩再买单"
+     ]
+    ],
+    "gaps_short": [
+     "没有中文上手文档",
+     "没有在线演示"
+    ],
+    "risk": "大厂项目，路线不由你定，只能做外围（部署/中文化/模板）",
+    "suspect": "",
+    "pitch": {
+     "gap_key": "要敲一长串参数",
+     "change": "封装成双击就能跑的脚本，把参数做成填空",
+     "buyer": "需要这套能力但装不上的人",
+     "buyer_tag": "通用",
+     "deliver": "做成图文教程 + 现成脚本包，一次付费长期用",
+     "deliver_alt": "接单代跑，按次收费",
+     "hours": 1,
+     "gap_key_word": "缺中文上手文档"
+    },
+    "plain": "Node Version Manager - POSIX-compliant bash script to manage multiple active node.js versions.",
+    "_bucket": "",
+    "seen_times": 0,
+    "seen_first": "",
+    "seen_last": "",
+    "analy": {
+     "zh": "Node Version Manager - 符合 POSIX 标准的 bash 脚本，用于管理多个活动的 Node.js 版本。",
+     "plain": "说白了，这是一个要在黑框里敲命令才动起来的工具，功能硬，但上手要人带。它干的事是：Node Version Manager - 符合 POSIX 标准的 bash 脚本，用于管理多个活动的 Node.js 版本。",
+     "gap": "封装成双击就能跑的脚本，把参数做成填空",
+     "buyer": "需要这套能力但装不上的人",
+     "_auto": true,
+     "_src": "mt"
+    }
+   },
+   {
+    "full_name": "vercel-labs/agent-browser",
+    "owner": "vercel-labs",
+    "owner_type": "Organization",
+    "name": "agent-browser",
+    "desc": "Browser automation CLI for AI agents",
+    "lang": "Rust",
+    "stars": 52728,
+    "forks": 3691,
+    "watchers": 114,
+    "open_issues": 596,
+    "license": "Apache-2.0",
+    "license_name": "Apache License 2.0",
+    "topics": [],
+    "created_at": "2026-01-11T05:38:15Z",
+    "pushed_at": "2026-11-19T04:58:11Z",
+    "updated_at": "2026-11-19T08:26:44Z",
+    "size_kb": 36380,
+    "archived": false,
+    "has_discussions": true,
+    "has_wiki": true,
+    "homepage": "https://agent-browser.dev",
+    "url": "https://github.com/vercel-labs/agent-browser",
+    "default_branch": "main",
+    "gained": 2987,
+    "since": "weekly",
+    "source": "trending",
+    "score": 56,
+    "grade": "B",
+    "grade_word": "值得研究",
+    "form": "命令行",
+    "velocity": 426.7142857142857,
+    "_gaps": [
+     [
+      "没有中文上手文档",
+      "没有中文上手文档",
+      "把 README 翻成中文，配一张三步跑通图"
+     ],
+     [
+      "没有一键部署",
+      "没有一键部署",
+      "补一个 Dockerfile + compose，别人一条命令跑起来"
+     ]
+    ],
+    "gaps_short": [
+     "没有中文上手文档",
+     "没有一键部署"
+    ],
+    "risk": "大厂项目，路线不由你定，只能做外围（部署/中文化/模板）",
+    "suspect": "",
+    "pitch": {
+     "gap_key": "没有中文说明",
+     "change": "写一份「从装到出结果」的图文，每步配截图",
+     "buyer": "需要这套能力但装不上的人",
+     "buyer_tag": "通用",
+     "deliver": "接单代跑，按次收费",
+     "deliver_alt": "改成一键工具卖，附中文说明书",
+     "hours": 7,
+     "gap_key_word": "缺中文上手文档"
+    },
+    "plain": "Browser automation CLI for AI agents",
+    "_bucket": "",
+    "seen_times": 0,
+    "seen_first": "",
+    "seen_last": "",
+    "analy": {
+     "zh": "用于 AI 代理的浏览器自动化 CLI",
+     "plain": "说白了，这是一个要在黑框里敲命令才动起来的工具，功能硬，但上手要人带。它干的事是：用于 AI 代理的浏览器自动化 CLI",
+     "gap": "写一份「从装到出结果」的图文，每步配截图",
+     "buyer": "需要这套能力但装不上的人",
+     "_auto": true,
+     "_src": "mt"
+    }
+   },
+   {
+    "full_name": "cursor/plugins",
+    "owner": "cursor",
+    "owner_type": "Organization",
+    "name": "plugins",
+    "desc": "Cursor plugin specification and official plugins",
+    "lang": "TypeScript",
+    "stars": 17358,
+    "forks": 1914,
+    "watchers": 79,
+    "open_issues": 681,
+    "license": "",
+    "license_name": "",
+    "topics": [],
+    "created_at": "2026-01-23T01:57:42Z",
+    "pushed_at": "2026-11-19T06:52:20Z",
+    "updated_at": "2026-11-19T08:26:39Z",
+    "size_kb": 19147,
+    "archived": false,
+    "has_discussions": false,
+    "has_wiki": true,
+    "homepage": "",
+    "url": "https://github.com/cursor/plugins",
+    "default_branch": "main",
+    "gained": 354,
+    "since": "since_last",
+    "source": "trending",
+    "score": 56,
+    "grade": "B",
+    "grade_word": "值得研究",
+    "form": "引擎库",
+    "velocity": 57.86,
+    "_gaps": [
+     [
+      "没有中文上手文档",
+      "没有中文上手文档",
+      "把 README 翻成中文，配一张三步跑通图"
+     ],
+     [
+      "没有一键部署",
+      "没有一键部署",
+      "补一个 Dockerfile + compose，别人一条命令跑起来"
+     ],
+     [
+      "没有在线演示",
+      "没有在线演示",
+      "部署一个公开 demo 站，让人先玩再买单"
+     ]
+    ],
+    "gaps_short": [
+     "没有中文上手文档",
+     "没有一键部署",
+     "没有在线演示"
+    ],
+    "risk": "没有 LICENSE 文件，严格说不能商用",
+    "suspect": "",
+    "pitch": {
+     "gap_key": "只有代码没有界面",
+     "change": "包一层网页界面，让不会写代码的人点两下就能用",
+     "buyer": "要用这套能力但搞不定环境的人",
+     "buyer_tag": "通用",
+     "deliver": "接单代跑：客户给需求，你出结果",
+     "deliver_alt": "做成中文教程 + 成品包，走知识付费",
+     "hours": 3,
+     "gap_key_word": "缺中文上手文档"
+    },
+    "plain": "Cursor plugin specification and official plugins",
+    "_bucket": "",
+    "seen_times": 0,
+    "seen_first": "",
+    "seen_last": "",
+    "analy": {
+     "zh": "光标插件规范和官方插件",
+     "plain": "说白了，这是一堆已经写好的能力，但没有界面，得有人包一层壳才能给普通人用。它干的事是：光标插件规范和官方插件",
+     "gap": "包一层网页界面，让不会写代码的人点两下就能用",
+     "buyer": "要用这套能力但搞不定环境的人",
+     "_auto": true,
+     "_src": "mt"
+    }
+   },
+   {
+    "full_name": "jquery/jquery",
+    "owner": "jquery",
+    "owner_type": "Organization",
+    "name": "jquery",
+    "desc": "jQuery JavaScript Library",
+    "lang": "JavaScript",
+    "stars": 60077,
+    "forks": 20714,
+    "watchers": 3114,
+    "open_issues": 95,
+    "license": "MIT",
+    "license_name": "MIT License",
+    "topics": [
+     "jquery"
+    ],
+    "created_at": "2009-04-03T15:20:14Z",
+    "pushed_at": "2026-11-17T19:00:49Z",
+    "updated_at": "2026-11-19T08:16:39Z",
+    "size_kb": 36835,
+    "archived": false,
+    "has_discussions": true,
+    "has_wiki": true,
+    "homepage": "https://jquery.com",
+    "url": "https://github.com/jquery/jquery",
+    "default_branch": "main",
+    "gained": 266,
+    "since": "daily",
+    "source": "trending",
+    "score": 56,
+    "grade": "B",
+    "grade_word": "值得研究",
+    "form": "web应用",
+    "velocity": 266.0,
+    "_gaps": [
+     [
+      "没有中文上手文档",
+      "没有中文上手文档",
+      "把 README 翻成中文，配一张三步跑通图"
+     ],
+     [
+      "没有一键部署",
+      "没有一键部署",
+      "补一个 Dockerfile + compose，别人一条命令跑起来"
+     ]
+    ],
+    "gaps_short": [
+     "没有中文上手文档",
+     "没有一键部署"
+    ],
+    "risk": "大厂项目，路线不由你定，只能做外围（部署/中文化/模板）",
+    "suspect": "",
+    "pitch": {
+     "gap_key": "出东西了带不走",
+     "change": "加一个一键导出（图/PDF/Excel），让人能直接拿去用",
+     "buyer": "要上线个小站但没预算请开发的人",
+     "buyer_tag": "通用",
+     "deliver": "换成客户自己的数据跑一遍，按场景收定制费",
+     "deliver_alt": "换成客户自己的数据跑一遍，按场景收定制费",
+     "hours": 1,
+     "gap_key_word": "缺中文上手文档"
+    },
+    "plain": "jQuery JavaScript Library",
+    "_bucket": "",
+    "seen_times": 0,
+    "seen_first": "",
+    "seen_last": "",
+    "analy": {
+     "zh": "jQuery JavaScript 库",
+     "plain": "说白了，这是一个打开网页就能用的在线小工具，不用装任何东西。它干的事是：jQuery JavaScript 库",
+     "gap": "加一个一键导出（图/PDF/Excel），让人能直接拿去用",
+     "buyer": "要上线个小站但没预算请开发的人",
+     "_auto": true,
+     "_src": "mt"
+    }
+   }
+  ],
+  "dropped": [
+   {
+    "full_name": "obra/superpowers",
+    "stars": 321535,
+    "reason": "综合 55 分（B 级），名额满了"
+   },
+   {
+    "full_name": "obra/superpowers",
+    "stars": 321535,
+    "reason": "综合 55 分（B 级），名额有限，这一期没进",
+    "score": 55
+   },
+   {
+    "full_name": "affaan-m/ECC",
+    "stars": 306807,
+    "reason": "1 天前（2026-11-18）推过，冷却 7 天内不重推"
+   },
+   {
+    "full_name": "affaan-m/ECC",
+    "stars": 306807,
+    "reason": "综合 64 分（B 级），名额有限，这一期没进",
+    "score": 64
+   },
+   {
+    "full_name": "n8n-io/n8n",
+    "stars": 211290,
+    "reason": "综合 35 分（C 级），名额满了"
+   },
+   {
+    "full_name": "n8n-io/n8n",
+    "stars": 211290,
+    "reason": "综合 35 分（C 级），名额有限，这一期没进",
+    "score": 35
+   },
+   {
+    "full_name": "anthropics/skills",
+    "stars": 197398,
+    "reason": "综合 48 分（C 级），名额满了"
+   },
+   {
+    "full_name": "anthropics/skills",
+    "stars": 197398,
+    "reason": "综合 48 分（C 级），名额有限，这一期没进",
+    "score": 48
+   },
+   {
+    "full_name": "punkpeye/awesome-mcp-servers",
+    "reason": "纯清单/合集，没有可运行的代码，不能交付",
+    "stars": 98163
+   },
+   {
+    "full_name": "astral-sh/uv",
+    "stars": 92341,
+    "reason": "综合 54 分（B 级），名额满了"
+   },
+   {
+    "full_name": "astral-sh/uv",
+    "stars": 92341,
+    "reason": "综合 54 分（B 级），名额有限，这一期没进",
+    "score": 54
+   },
+   {
+    "full_name": "sveltejs/svelte",
+    "stars": 89717,
+    "reason": "综合 54 分（B 级），名额满了"
+   },
+   {
+    "full_name": "sveltejs/svelte",
+    "stars": 89717,
+    "reason": "综合 54 分（B 级），名额有限，这一期没进",
+    "score": 54
+   },
+   {
+    "full_name": "ZhuLinsen/daily_stock_analysis",
+    "stars": 73421,
+    "reason": "5 天前（2026-11-14）推过，冷却 7 天内不重推"
+   },
+   {
+    "full_name": "ZhuLinsen/daily_stock_analysis",
+    "stars": 73421,
+    "reason": "综合 76 分（A 级），名额有限，这一期没进",
+    "score": 76
+   },
+   {
+    "full_name": "mvanhorn/last30days-skill",
+    "stars": 70353,
+    "reason": "2 天前（2026-11-17）推过，冷却 7 天内不重推"
+   },
+   {
+    "full_name": "mvanhorn/last30days-skill",
+    "stars": 70353,
+    "reason": "综合 62 分（B 级），名额有限，这一期没进",
+    "score": 62
+   },
+   {
+    "full_name": "HKUDS/CLI-Anything",
+    "stars": 60075,
+    "reason": "综合 54 分（B 级），名额满了"
+   },
+   {
+    "full_name": "HKUDS/CLI-Anything",
+    "stars": 60075,
+    "reason": "综合 54 分（B 级），名额有限，这一期没进",
+    "score": 54
+   },
+   {
+    "full_name": "ChromeDevTools/chrome-devtools-mcp",
+    "stars": 58266,
+    "reason": "1 天前（2026-11-18）推过，冷却 7 天内不重推"
+   },
+   {
+    "full_name": "ChromeDevTools/chrome-devtools-mcp",
+    "stars": 58266,
+    "reason": "综合 59 分（B 级），名额有限，这一期没进",
+    "score": 59
+   },
+   {
+    "full_name": "alibaba/open-code-review",
+    "stars": 54252,
+    "reason": "5 天前（2026-11-14）推过，冷却 7 天内不重推"
+   },
+   {
+    "full_name": "alibaba/open-code-review",
+    "stars": 54252,
+    "reason": "综合 62 分（B 级），名额有限，这一期没进",
+    "score": 62
+   },
+   {
+    "full_name": "solidjs/solid",
+    "stars": 36708,
+    "reason": "综合 56 分（B 级），名额满了"
+   },
+   {
+    "full_name": "solidjs/solid",
+    "stars": 36708,
+    "reason": "综合 56 分（B 级），名额有限，这一期没进",
+    "score": 56
+   },
+   {
+    "full_name": "dream-num/univer",
+    "stars": 30166,
+    "reason": "2 天前（2026-11-17）推过，冷却 7 天内不重推"
+   },
+   {
+    "full_name": "dream-num/univer",
+    "stars": 30166,
+    "reason": "综合 62 分（B 级），名额有限，这一期没进",
+    "score": 62
+   },
+   {
+    "full_name": "ag-ui-protocol/ag-ui",
+    "stars": 20525,
+    "reason": "4 天前（2026-11-15）推过，冷却 7 天内不重推"
+   },
+   {
+    "full_name": "ag-ui-protocol/ag-ui",
+    "stars": 20525,
+    "reason": "综合 56 分（B 级），名额有限，这一期没进",
+    "score": 56
+   },
+   {
+    "full_name": "we-promise/sure",
+    "stars": 16577,
+    "reason": "综合 48 分（C 级），名额满了"
+   },
+   {
+    "full_name": "we-promise/sure",
+    "stars": 16577,
+    "reason": "综合 48 分（C 级），名额有限，这一期没进",
+    "score": 48
+   },
+   {
+    "full_name": "openai/codex-security",
+    "stars": 14149,
+    "reason": "6 天前（2026-11-13）推过，冷却 7 天内不重推"
+   },
+   {
+    "full_name": "openai/codex-security",
+    "stars": 14149,
+    "reason": "综合 64 分（B 级），名额有限，这一期没进",
+    "score": 64
+   },
+   {
+    "full_name": "backnotprop/plannotator",
+    "stars": 13547,
+    "reason": "5 天前（2026-11-14）推过，冷却 7 天内不重推"
+   },
+   {
+    "full_name": "backnotprop/plannotator",
+    "stars": 13547,
+    "reason": "综合 68 分（A 级），名额有限，这一期没进",
+    "score": 68
+   },
+   {
+    "full_name": "google-labs-code/stitch-skills",
+    "stars": 10528,
+    "reason": "3 天前（2026-11-16）推过，冷却 7 天内不重推"
+   },
+   {
+    "full_name": "google-labs-code/stitch-skills",
+    "stars": 10528,
+    "reason": "综合 76 分（A 级），名额有限，这一期没进",
+    "score": 76
+   },
+   {
+    "full_name": "getarcaneapp/arcane",
+    "stars": 9980,
+    "reason": "2 天前（2026-11-17）推过，冷却 7 天内不重推"
+   },
+   {
+    "full_name": "getarcaneapp/arcane",
+    "stars": 9980,
+    "reason": "综合 72 分（A 级），名额有限，这一期没进",
+    "score": 72
+   },
+   {
+    "full_name": "zortos293/Lichii",
+    "stars": 9766,
+    "reason": "综合 47 分（C 级），名额满了"
+   }
+  ]
+ },
+ "focus_tab": {
+  "key": null,
+  "pool": 0,
+  "buckets": {}
+ },
+ "deep": [],
+ "date": "2026-11-19",
+ "archived_at": "2026-11-19T08:28:48"
+}

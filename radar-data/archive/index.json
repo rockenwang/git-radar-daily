@@ -132,7 +132,26 @@
     "jingyaogong/minimind",
     "huami-dev/GestaltX"
    ]
+  },
+  {
+   "date": "2026-11-19",
+   "mode": "FULL",
+   "focus": "",
+   "scanned": 72,
+   "daily": 8,
+   "focus_n": 0,
+   "deep": 0,
+   "names": [
+    "l0ng-ai/openidea",
+    "meta/astryx",
+    "openvinotoolkit/openvino",
+    "appwrite/appwrite",
+    "nvm-sh/nvm",
+    "vercel-labs/agent-browser",
+    "cursor/plugins",
+    "jquery/jquery"
+   ]
   }
  ],
- "updated_at": "2026-11-18T08:17:43"
+ "updated_at": "2026-11-19T08:28:48"
 }

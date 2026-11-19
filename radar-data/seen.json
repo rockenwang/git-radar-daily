@@ -16,14 +16,15 @@
   "l0ng-ai/openidea": {
    "first": "2026-11-12",
    "dates": [
-    "2026-11-12"
+    "2026-11-12",
+    "2026-11-19"
    ],
-   "times": 1,
-   "last": "2026-11-12",
+   "times": 2,
+   "last": "2026-11-19",
    "tabs": [
     "daily"
    ],
-   "stars": 8711,
+   "stars": 9452,
    "focus": ""
   },
   "CopilotKit/OpenBot": {
@@ -94,14 +95,15 @@
   "meta/astryx": {
    "first": "2026-11-12",
    "dates": [
-    "2026-11-12"
+    "2026-11-12",
+    "2026-11-19"
    ],
-   "times": 1,
-   "last": "2026-11-12",
+   "times": 2,
+   "last": "2026-11-19",
    "tabs": [
     "daily"
    ],
-   "stars": 26010,
+   "stars": 30712,
    "focus": ""
   },
   "GoogleChrome/modern-web-guidance-src": {
@@ -727,7 +729,85 @@
    ],
    "stars": 8212,
    "focus": ""
+  },
+  "openvinotoolkit/openvino": {
+   "first": "2026-11-19",
+   "dates": [
+    "2026-11-19"
+   ],
+   "times": 1,
+   "last": "2026-11-19",
+   "tabs": [
+    "daily"
+   ],
+   "stars": 11421,
+   "focus": ""
+  },
+  "appwrite/appwrite": {
+   "first": "2026-11-19",
+   "dates": [
+    "2026-11-19"
+   ],
+   "times": 1,
+   "last": "2026-11-19",
+   "tabs": [
+    "daily"
+   ],
+   "stars": 58343,
+   "focus": ""
+  },
+  "nvm-sh/nvm": {
+   "first": "2026-11-19",
+   "dates": [
+    "2026-11-19"
+   ],
+   "times": 1,
+   "last": "2026-11-19",
+   "tabs": [
+    "daily"
+   ],
+   "stars": 96206,
+   "focus": ""
+  },
+  "vercel-labs/agent-browser": {
+   "first": "2026-11-19",
+   "dates": [
+    "2026-11-19"
+   ],
+   "times": 1,
+   "last": "2026-11-19",
+   "tabs": [
+    "daily"
+   ],
+   "stars": 52728,
+   "focus": ""
+  },
+  "cursor/plugins": {
+   "first": "2026-11-19",
+   "dates": [
+    "2026-11-19"
+   ],
+   "times": 1,
+   "last": "2026-11-19",
+   "tabs": [
+    "daily"
+   ],
+   "stars": 17358,
+   "focus": ""
+  },
+  "jquery/jquery": {
+   "first": "2026-11-19",
+   "dates": [
+    "2026-11-19"
+   ],
+   "times": 1,
+   "last": "2026-11-19",
+   "tabs": [
+    "daily"
+   ],
+   "stars": 60077,
+   "focus": ""
   }
  },
- "updated_at": "2026-11-18T08:17:43"
+ "updated_at": "2026-11-19T08:28:48"
 }
