@@ -151,7 +151,26 @@
     "cursor/plugins",
     "jquery/jquery"
    ]
+  },
+  {
+   "date": "2026-11-20",
+   "mode": "FULL",
+   "focus": "",
+   "scanned": 67,
+   "daily": 8,
+   "focus_n": 0,
+   "deep": 0,
+   "names": [
+    "zhouxiaoka/autoclip",
+    "vercel-labs/ui",
+    "pookjw/HermesEnabler",
+    "cathrynlavery/diagram-design",
+    "mjmirza/app-store-compliance",
+    "GoogleChrome/modern-web-guidance-src",
+    "heydamir/unslop",
+    "deepseek-ai/dsh-superagent-prototype"
+   ]
   }
  ],
- "updated_at": "2026-11-19T08:28:48"
+ "updated_at": "2026-11-20T08:09:51"
 }

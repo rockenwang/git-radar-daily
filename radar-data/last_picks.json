@@ -1,70 +1,65 @@
 {
- "date": "2026-11-19",
+ "date": "2026-11-20",
  "picks": [
   {
-   "full_name": "l0ng-ai/openidea",
-   "owner": "l0ng-ai",
+   "full_name": "zhouxiaoka/autoclip",
+   "owner": "zhouxiaoka",
    "owner_type": "User",
-   "name": "openidea",
-   "desc": "The IDE you know, rebuilt in Rust. IntelliJ IDEA–style keymap, tool windows and search-everywhere in a fast native app: editor, code insight, debugger, Git, terminal, database and HTTP clients for 60+ languages.",
-   "lang": "TypeScript",
-   "stars": 9452,
-   "forks": 882,
-   "watchers": 37,
-   "open_issues": 203,
-   "license": "Apache-2.0",
-   "license_name": "Apache License 2.0",
+   "name": "autoclip",
+   "desc": "AutoClip｜一个链接，一键出片。开源 AI 视频剪辑桌面工具，将播客、访谈、课程等长视频自动剪成短视频，生成字幕、封面和发布文案，适配抖音、小红书、TikTok、Reels 与 YouTube Shorts。Open-source AI video clipping & content repurposing.",
+   "lang": "Python",
+   "stars": 11663,
+   "forks": 1968,
+   "watchers": 48,
+   "open_issues": 46,
+   "license": "MIT",
+   "license_name": "MIT License",
    "topics": [
-    "code-editor",
-    "cross-platform",
-    "dap",
-    "database-client",
-    "debugger",
+    "ai-agent",
+    "ai-video-editor",
+    "content-repurposing",
     "desktop-app",
-    "developer-tools",
-    "git",
-    "http-client",
-    "ide",
-    "intellij",
-    "lsp",
-    "rust",
-    "tauri",
-    "terminal"
+    "douyin",
+    "instagram-reels",
+    "mcp",
+    "open-source",
+    "podcast",
+    "subtitles",
+    "tiktok",
+    "video-clipping",
+    "video-editing-software",
+    "xiaohongshu",
+    "youtube-shorts"
    ],
-   "created_at": "2026-10-21T12:23:14Z",
-   "pushed_at": "2026-11-19T07:49:30Z",
-   "updated_at": "2026-11-19T08:26:01Z",
-   "size_kb": 114681,
+   "created_at": "2025-07-08T04:51:15Z",
+   "pushed_at": "2026-11-20T07:05:58Z",
+   "updated_at": "2026-11-20T08:09:09Z",
+   "size_kb": 112214,
    "archived": false,
    "has_discussions": true,
    "has_wiki": false,
-   "homepage": "https://openidea.sh",
-   "url": "https://github.com/l0ng-ai/openidea",
+   "homepage": "https://zhouxiaoka.github.io/autoclip_intro/",
+   "url": "https://github.com/zhouxiaoka/autoclip",
    "default_branch": "main",
-   "readme": "<p align=\"center\">\n  <picture>\n    <source media=\"(prefers-color-scheme: dark)\" srcset=\"src-tauri/icons/source/openidea-wordmark-dark.svg\">\n    <img src=\"src-tauri/icons/source/openidea-wordmark.svg\" alt=\"OpenIDEA\" height=\"56\">\n  </picture>\n</p>\n\n<p align=\"center\">\n  The IDE you know, rebuilt in Rust.\n</p>\n\n<p align=\"center\">\n  English · <a href=\"README.zh-CN.md\">简体中文</a> · <a href=\"README.tr.md\">Türkçe</a>\n</p>\n\n<p align=\"center\">\n  <a href=\"https://github.com/l0ng-ai/openidea/releases/latest\"><b>Download</b></a>\n  &nbsp;·&nbsp;\n  <a href=\"https://openidea.sh\">Docs</a>\n  &nbsp;·&nbsp;\n  <a href=\"#benchmark\">Benchmark</a>\n  &nbsp;·&nbsp;\n  <a href=\"#plugins\">Plugins</a>\n  &nbsp;·&nbsp;\n  <a href=\"#community\">Community</a>\n</p>\n\nhttps://github.com/user-attachments/assets/234dd54c-1255-4b3a-b35c-533d78d737c0\n\nOpenIDEA brings the IntelliJ IDEA way of working — its keymap, its tool windows,\nits search-everything habits — to a native app with a Rust core.\n\nEditor, code insight, debugger, Git, terminal, database and HTTP clients,\nfor 60+ languages. Builds for macOS, Windows and Linux.\n\n## Benchmark\n\nOpening [freqtrade](https://github.com/freqtrade/freqtrade) (Python, ~770 files)\nwith warm caches, median of 5 runs:\n\n|                             | OpenIDEA          | IntelliJ IDEA 2026.2.3 |\n| --------------------------- | ----------------- | ---------------------- |\n| Window with the project     | **0.9 s**         | 3.1 s                  |\n| Ready (CPU settled)         | **1.1 s**         | 13.2 s                 |\n| Memory (USS, all processes) | **169 MB**        | 2011 MB                |\n| CPU time until ready        | **2.4 s**         | 47.9 s                 |\n| Idle CPU                    | **4 %** of a core | 7 % of a core          |\n| Quit                        | **0.3 s**         | 5.9 s                  |\n\nA release build of OpenIDEA from `main` and IDEA with default settings and plugins, on\nWindows 11, 32-core AMD, 62 GB RAM.\nIDEA analyses Python more deeply, so \"ready\" doesn't mean the same work on\nboth sides. Both are measured from the outside, the same way: see\n[`perf/compare`](perf/compare) to run it on your machine and projects.\n\n## Plugins\n\nPlugins add actions, completion, quick fixes, tool windows, custom editors,\nthemes, file icons and languages. They run as sandboxed WebAssembly components;\nthemes, icon themes and languages need no code at all.\n\nInstall them from Settings › Plugins, or start your own with\n`openidea-plugin new` — see [Writing OpenIDEA plugins](https://openidea.sh/en/plugins) and\nthe [official plugins](plugins/official). The plugin API is still a preview.\n\n## Community\n\n- [Discord](https://discord.gg/2Zy4yn7gP) — questions, feedback and release news.\n- WeChat group — scan to join:\n\n  <img src=\".github/assets/wechat-group-3.png\" alt=\"WeChat group QR code\" width=\"200\">\n\n- Contributing: see [CONTRIBUTING.md](CONTRIBUTING.md) and the [contributor docs](https://openidea.sh/en/contribute/setup).\n\n## License\n\n[Apache 2.0](LICENSE). Bundled third-party assets are listed in [`THIRD_PARTY_LICENSES.md`](THIRD_PARTY_LICENSES.md).\n\n<sub>Not affiliated with JetBrains. IntelliJ IDEA is a trademark of JetBrains s.r.o.</sub>\n",
-   "gained": 0,
-   "since": "created<30d",
-   "source": "search_new",
-   "score": 77,
+   "readme": "<!-- mcp-name: io.github.zhouxiaoka/autoclip-mcp -->\n\n<div align=\"center\">\n\n<img src=\"src-tauri/icons/128x128.png\" alt=\"AutoClip\" width=\"72\" height=\"72\">\n\n# AutoClip\n\n### 一个链接，一键出片\n\n开源，在你的电脑上剪辑与渲染。贴一个链接，选好平台，生成 <b>视频、封面和发布文案</b>，<br>\n适配抖音、小红书、TikTok、Reels、YouTube Shorts、B 站与 YouTube。<br>\n软件免费，云端模型按量计费；需要调整时可进入编辑器。\n\n<p>\n  <a href=\"https://github.com/zhouxiaoka/autoclip/releases/latest\"><img src=\"https://img.shields.io/github/v/release/zhouxiaoka/autoclip?style=flat-square\" alt=\"GitHub release\"></a>\n  <a href=\"https://github.com/zhouxiaoka/autoclip/stargazers\"><img src=\"https://img.shields.io/github/stars/zhouxiaoka/autoclip?style=flat-square\" alt=\"GitHub stars\"></a>\n  <a href=\"https://github.com/zhouxiaoka/autoclip/releases\"><img src=\"https://img.shields.io/github/downloads/zhouxiaoka/autoclip/total?style=flat-square\" alt=\"Downloads\"></a>\n  <a href=\"LICENSE\"><img src=\"https://img.shields.io/badge/License-MIT-blue?style=flat-square\" alt=\"License: MIT\"></a>\n</p>\n\n<a href=\"https://trendshift.io/repositories/25801\"><img src=\"https://trendshift.io/api/badge/repositories/25801\" alt=\"AutoClip — GitHub Trending\" width=\"250\" height=\"55\"></a>\n\n**[官网](https://zhouxiaoka.github.io/autoclip_intro/)** · **[下载桌面版](https://github.com/zhouxiaoka/autoclip/releases/latest)** · [案例库](https://zhouxiaoka.github.io/autoclip_intro/cases/) · [研究](docs/research/2026-10-what-drives-views/article-zh.md) · [快速开始](#快速开始) · [文档](#文档) · [问题反馈](https://github.com/zhouxiaoka/autoclip/issues/new/choose)\n\n**简体中文** · [English](README-EN.md) · [日本語](README-JA.md) · [한국어](README-KO.md) · [Español](README-ES.md) · [Português](README-PT.md) · [Русский](README-RU.md) · [Français](README-FR.md)\n\n</div>\n\n**[最新正式版](https://github.com/zhouxiaoka/autoclip/releases/latest)**，桌面、CLI 与 MCP 同步更新。版本以 `autoclip --version` 和 MCP `get_version` 为准。一键出片、字幕分页、人物取景与长视频队列修复见 [更新日志](CHANGELOG.md)。旧版用户请升级。\n\n## 真实成片\n\n点击截图或「播放」直接观看完整成片；下方语言指成片字幕语言。这里精选 6 条，展开可看另外 10 条。\n\n### 竖版 · 访谈式与满屏播客式\n\n<table width=\"100%\">\n<tr>\n<td align=\"center\" valign=\"top\" width=\"25%\">\n<a href=\"https://pub-3fb92949b9c2480b89feec5ec03f3540.r2.dev/cases/gates-ezra/01.mp4?v=2026-10-01g\"><img src=\"docs/images/demos/gates-ezra-01.jpg\" width=\"180\" alt=\"Bill Gates — AI测试时竟会装傻？\"></a><br>\n<strong>Bill Gates</strong><br>\n访谈式 · 抖音 · 中文<br>\n<a href=\"https://pub-3fb92949b9c2480b89feec5ec03f3540.r2.dev/cases/gates-ezra/01.mp4?v=2026-10-01g\">▶ 播放 1:01</a> · <a href=\"https://www.youtube.com/watch?v=A_156w0aYtU\">原片</a>\n</td>\n<td align=\"center\" valign=\"top\" width=\"25%\">\n<a href=\"https://pub-3fb92949b9c2480b89feec5ec03f3540.r2.dev/cases/ai-labs-debate/01.mp4?v=2026-10-01g\"><img src=\"docs/images/demos/ai-labs-debate-01.jpg\" width=\"180\" alt=\"AI Experts Debate — We&#x27;re Driving Toward a Cliff in the Fog\"></a><br>\n<strong>AI Experts Debate</strong><br>\n访谈式 · Shorts · 英文<br>\n<a href=\"https://pub-3fb92949b9c2480b89feec5ec03f3540.r2.dev/cases/ai-labs-debate/01.mp4?v=2026-10-01g\">▶ 播放 1:25</a> · <a href=\"https://www.youtube.com/watch?v=OhOmLqR5nN4\">原片</a>\n</td>\n<td align=\"center\" valign=\"top\" width=\"25%\">\n<a href=\"https://pub-3fb92949b9c2480b89feec5ec03f3540.r2.dev/cases/robbins-36months/01.mp4?v=2026-10-01g\"><img src=\"docs/images/demos/robbins-36months-01.jpg\" width=\"180\" alt=\"Tony Robbins — 风险极小，回报极大？\"></a><br>\n<strong>Tony Robbins</strong><br>\n满屏播客 · 抖音 · 中文<br>\n<a href=\"https://pub-3fb92949b9c2480b89feec5ec03f3540.r2.dev/cases/robbins-36months/01.mp4?v=2026-10-01g\">▶ 播放 1:45</a> · <a href=\"https://www.youtube.com/watch?v=DuRcrbP3kag\">原片</a>\n</td>\n<td align=\"center\" valign=\"top\" width=\"25%\">\n<a href=\"https://pub-3fb92949b9c2480b89feec5ec03f3540.r2.dev/cases/garfield-poehler/01.mp4?v=2026-10-01g\"><img src=\"docs/images/demos/garfield-poehler-01.jpg\" width=\"180\" alt=\"Andrew Garfield × Amy Poehler — I Love Competition—but Hate Fake Casualness\"></a><br>\n<strong>Andrew Garfield × Amy Poehler</strong><br>\n满屏播客 · Shorts · 英文<br>\n<a href=\"https://pub-3fb92949b9c2480b89feec5ec03f3540.r2.dev/cases/garfield-poehler/01.mp4?v=2026-10-01g\">▶ 播放 1:01</a",
+   "gained": 126,
+   "since": "daily",
+   "source": "trending",
+   "score": 85,
    "detail": {
     "lic": 25,
     "easy": 20,
-    "zh": 0,
-    "demand": 20,
+    "zh": 15,
+    "demand": 14,
     "deliver": 2,
-    "fresh": 10,
-    "adj": 0
+    "fresh": 1,
+    "adj": 8
    },
-   "grade": "A",
-   "grade_word": "改一改能卖",
+   "grade": "S",
+   "grade_word": "今晚就能动手",
    "form": "web应用",
-   "velocity": 337.57142857142856,
+   "velocity": 126.0,
    "_gaps": [
-    [
-     "没有中文上手文档",
-     "没有中文上手文档",
-     "把 README 翻成中文，配一张三步跑通图"
-    ],
     [
      "没有一键部署",
      "没有一键部署",
@@ -72,7 +67,6 @@
     ]
    ],
    "gaps_short": [
-    "没有中文上手文档",
     "没有一键部署"
    ],
    "risk": "",
@@ -80,112 +74,20 @@
    "pitch": {
     "gap_key": "没有中文界面",
     "change": "把界面文案和按钮全翻成中文，再截一套中文版演示图当商品图",
-    "buyer": "想有个自己工具但不会写代码的人",
-    "buyer_tag": "通用",
+    "buyer": "做短视频的剪辑号",
+    "buyer_tag": "视频",
     "deliver": "打包部署到客户自己的服务器/域名，收一次部署费",
     "deliver_alt": "做成在线服务，按月收使用费",
-    "hours": 4,
-    "gap_key_word": "缺中文上手文档"
+    "hours": 3,
+    "gap_key_word": "缺一键部署"
    },
-   "plain": "The IDE you know, rebuilt in Rust. IntelliJ IDEA–style keymap, tool windows and search-everywhere in a fast native app: editor, code insight, debugger, Git, terminal, database and HTTP clients for 60+ languages.",
+   "plain": "AutoClip｜一个链接，一键出片。开源 AI 视频剪辑桌面工具，将播客、访谈、课程等长视频自动剪成短视频，生成字幕、封面和发布文案，适配抖音、小红书、TikTok、Reels 与 YouTube Shorts。Open-source AI video clipping & content repurposing.",
    "analy": {
-    "en": "The IDE you know, rebuilt in Rust. IntelliJ IDEA–style keymap, tool windows and search-everywhere in a fast native app: editor, code insight, debugger, Git, terminal, database and HTTP clients for 60+ languages.",
-    "zh": "你知道的 IDE，是用 Rust 重建的。 IntelliJ IDEA 风格的键盘映射、工具窗口和搜索在快速本机应用程序中随处可见：编辑器、代码洞察、调试器、Git、终端、数据库和 HTTP 客户端，支持 60 多种语言。",
-    "plain": "说白了，这是一个打开网页就能用的在线小工具，不用装任何东西。它干的事是：你知道的 IDE，是用 Rust 重建的。 IntelliJ IDEA 风格的键盘映射、工具窗口和搜索在快速本机应用程序中随处可见：编辑器、代码洞察、调试器、Git、终端、数据库和 HTTP 客户端，支持 60 多种语言。",
+    "en": "AutoClip｜一个链接，一键出片。开源 AI 视频剪辑桌面工具，将播客、访谈、课程等长视频自动剪成短视频，生成字幕、封面和发布文案，适配抖音、小红书、TikTok、Reels 与 YouTube Shorts。Open-source AI video clipping & content repurposing.",
+    "zh": "AutoClip｜一个链接，一键出片。 开源 AI 视频剪辑桌面工具，将播客、访谈、课程等长视频自动剪成短视频，生成字幕、封面和发布文案，适配抖音、小红书、TikTok、Reels 与 YouTube Shorts。 开源 AI 视频剪辑和内容再利用。",
+    "plain": "说白了，这是一个打开网页就能用的在线小工具，不用装任何东西。它干的事是：AutoClip｜一个链接，一键出片。 开源 AI 视频剪辑桌面工具，将播客、访谈、课程等长视频自动剪成短视频，生成字幕、封面和发布文案，适配抖音、小红书、TikTok、Reels 与 YouTube Shorts。 开源 AI 视频剪辑和内容再利用。",
     "usage": [
-     "直接打开当工具用，省掉装软件那一步",
-     "部署到自己的域名，做成一个能对外收钱的服务",
-     "挂在自己号里当「免费小工具」，用来引流"
-    ],
-    "how": [
-     "打开作者给的网址（或自己部署一份）",
-     "按界面提示把内容填进去",
-     "选样式/导出，拿到成品"
-    ],
-    "gap": "把界面文案和按钮全翻成中文，再截一套中文版演示图当商品图",
-    "buyer": "想有个自己工具但不会写代码的人",
-    "why": "想有个自己工具但不会写代码的人不是不会做，是懒得为这一步花两三天试错。你把「把界面文案和按钮全翻成中文，再截一套中文版演示图当商品图」替他们做完，他们花的钱远少于自己折腾的时间。",
-    "self": "自己干活时当外挂：重复的排版、出图、整理交给它，一次省十几分钟。用熟之后你会清楚自己哪一步最该自动化——这个认知比工具本身值钱。",
-    "pack": "汉化 + 一套中文模板 + 部署教程，打包成 zip 发网盘；主图用「改前 vs 改后」对比，标题写用户能搜的词。落地上就按这条走：打包部署到客户自己的服务器/域名，收一次部署费。",
-    "_auto": true,
-    "_src": "mt"
-   },
-   "_bucket": "",
-   "seen_times": 1,
-   "seen_first": "2026-11-12",
-   "seen_last": "2026-11-12"
-  },
-  {
-   "full_name": "meta/astryx",
-   "owner": "meta",
-   "owner_type": "Organization",
-   "name": "astryx",
-   "desc": "An open source design system that's fully customizable and agent ready",
-   "lang": "TypeScript",
-   "stars": 30712,
-   "forks": 2406,
-   "watchers": 105,
-   "open_issues": 1053,
-   "license": "MIT",
-   "license_name": "MIT License",
-   "topics": [],
-   "created_at": "2026-01-09T16:20:32Z",
-   "pushed_at": "2026-11-19T08:27:37Z",
-   "updated_at": "2026-11-19T08:21:58Z",
-   "size_kb": 1422532,
-   "archived": false,
-   "has_discussions": true,
-   "has_wiki": true,
-   "homepage": "http://astryx.atmeta.com",
-   "url": "https://github.com/meta/astryx",
-   "default_branch": "main",
-   "readme": "<!-- SYNC CONTRACT: Architecture changes require documentation updates. -->\n\n<div align=\"center\">\n\n<img src=\"https://lookaside.facebook.com/assets/astryx/Astryx-Banner.png\" alt=\"Astryx\" width=\"100%\" />\n\n# Astryx\n\nAn open source design system that's fully customizable and built for how we build now: <br/> by people and the agents working alongside them.\n\n**Currently in Beta** · Built on [React 19+](https://react.dev) and [StyleX](https://stylexjs.com)\n\n[![npm version](https://img.shields.io/npm/v/@astryxdesign/core?label=npm&color=cb3837&logo=npm)](https://www.npmjs.com/package/@astryxdesign/core)\n[![license MIT](https://img.shields.io/npm/l/@astryxdesign/core?color=blue)](LICENSE)\n[![PRs welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/meta/astryx/wiki/Contributing)\n\n[![Docs](https://img.shields.io/badge/Docs-astryx.atmeta.com-6741d9?logo=readthedocs&logoColor=white)](https://astryx.atmeta.com)\n[![Storybook](https://img.shields.io/badge/Storybook-live-ff4785?logo=storybook&logoColor=white)](https://astryx.atmeta.com/storybook/)\n[![Sandbox](https://img.shields.io/badge/Sandbox-playground-A9792B)](https://astryx.atmeta.com/sandbox/)\n\n**[Docs](https://astryx.atmeta.com)** · **[Storybook](https://astryx.atmeta.com/storybook/)** · **[Sandbox](https://astryx.atmeta.com/sandbox/)** · **[Contributing](https://github.com/meta/astryx/wiki/Contributing)** · **[Discord](https://discord.com/invite/XnsUcFykEP)**\n\n</div>\n\n## Overview\n\nAstryx is an open source design system that grew inside Meta over the last eight years, where it became the most-used and largest design system in the company — powering 13,000+ apps and shaped by the engineers, designers, and product teams who depend on it every day.\n\nIt ships 150+ accessible components, brand-level theming, dark mode, ready-to-ship templates, and a CLI as one cohesive system. You import pre-built CSS and use typed React components — no build plugin, no styling library to adopt — and both people and AI assistants build with the same tooling.\n\n**What makes Astryx different:**\n\n- **Open internals.** Components are built to be composed at any level, not locked behind a closed top-level API. The building blocks you'd reach for are exported directly, and when you need to go deeper, swizzle ejects a component's full source into your project to own.\n- **No styling lock-in.** Astryx authors its styles with StyleX, but that's invisible to consumers. Override with `className` using Tailwind, CSS modules, or plain CSS — whatever your project already uses.\n- **Customize without wrapping.** A theme is a set of CSS custom property overrides, so a designer can make Astryx unmistakably theirs without forking or wrapping component source.\n- **Built for people and agents.** The API, docs, and CLI are designed together so a person and an AI assistant build the same way, from the same reference.\n\n## Getting Started\n\nAstryx requires **React 19** or later (`react` and `react-dom` are peer dependencies of `@astryxdesign/core`).\n\nInstall Astryx, a theme, and its peer dependencies:\n\n```bash\n# npm\nnpm install @astryxdesign/core @astryxdesign/theme-neutral @stylexjs/stylex\nnpm install -D @astryxdesign/cli\n\n# pnpm\npnpm add @astryxdesign/core @astryxdesign/theme-neutral @stylexjs/stylex\npnpm add -D @astryxdesign/cli\n\n# yarn\nyarn add @astryxdesign/core @astryxdesign/theme-neutral @stylexjs/stylex\nyarn add -D @astryxdesign/cli\n```\n\nThen finish setup with `init`, once, before you write UI. It asks no questions, prints the getting-started steps (styles, theme), and saves the Astryx guide to `AGENTS.md`/`CLAUDE.md` so you and your agents build with Astryx instead of guessing:\n\n```bash\nnpx @astryxdesign/cli init   # or: pnpm exec astryx init / yarn astryx init\n```\n\nYou can also install the CLI once for your computer, so `astryx` works in any folder and every coding agent knows Astryx; in a project, it still runs that project's own version:\n\n```bash\nnpm i -g @astryxdesign/cli\n```\n\nProject in",
-   "gained": 6250,
-   "since": "weekly",
-   "source": "trending",
-   "score": 68,
-   "detail": {
-    "lic": 25,
-    "easy": 20,
-    "zh": 0,
-    "demand": 20,
-    "deliver": 2,
-    "fresh": 1,
-    "adj": 0
-   },
-   "grade": "A",
-   "grade_word": "改一改能卖",
-   "form": "web应用",
-   "velocity": 892.8571428571429,
-   "_gaps": [
-    [
-     "没有中文上手文档",
-     "没有中文上手文档",
-     "把 README 翻成中文，配一张三步跑通图"
-    ]
-   ],
-   "gaps_short": [
-    "没有中文上手文档"
-   ],
-   "risk": "大厂项目，路线不由你定，只能做外围（部署/中文化/模板）",
-   "suspect": "",
-   "pitch": {
-    "gap_key": "没有在线演示",
-    "change": "部署一个公开 demo，让人先玩再决定买不买",
-    "buyer": "接单的设计师和电商美工",
-    "buyer_tag": "设计",
-    "deliver": "做成在线服务，按月收使用费",
-    "deliver_alt": "连部署带教一次，做成「一天陪跑」按次收",
-    "hours": 6,
-    "gap_key_word": "缺中文上手文档"
-   },
-   "plain": "An open source design system that's fully customizable and agent ready",
-   "analy": {
-    "en": "An open source design system that's fully customizable and agent ready",
-    "zh": "完全可定制且可供代理使用的开源设计系统",
-    "plain": "说白了，这是一个打开网页就能用的在线小工具，不用装任何东西。它干的事是：完全可定制且可供代理使用的开源设计系统",
-    "usage": [
-     "接单时用它出初稿，客户改的是稿子不是空白页",
+     "批量出素材/封面/字幕，一个晚上干完一周的量",
      "直接打开当工具用，省掉装软件那一步",
      "部署到自己的域名，做成一个能对外收钱的服务"
     ],
@@ -194,129 +96,11 @@
      "按界面提示把内容填进去",
      "选样式/导出，拿到成品"
     ],
-    "gap": "部署一个公开 demo，让人先玩再决定买不买",
-    "buyer": "接单的设计师和电商美工",
-    "why": "接单的设计师和电商美工不是不会做，是懒得为这一步花两三天试错。你把「部署一个公开 demo，让人先玩再决定买不买」替他们做完，他们花的钱远少于自己折腾的时间。",
+    "gap": "把界面文案和按钮全翻成中文，再截一套中文版演示图当商品图",
+    "buyer": "做短视频的剪辑号",
+    "why": "做短视频的剪辑号不是不会做，是懒得为这一步花两三天试错。你把「把界面文案和按钮全翻成中文，再截一套中文版演示图当商品图」替他们做完，他们花的钱远少于自己折腾的时间。",
     "self": "自己干活时当外挂：重复的排版、出图、整理交给它，一次省十几分钟。用熟之后你会清楚自己哪一步最该自动化——这个认知比工具本身值钱。",
-    "pack": "汉化 + 一套中文模板 + 部署教程，打包成 zip 发网盘；主图用「改前 vs 改后」对比，标题写用户能搜的词。落地上就按这条走：做成在线服务，按月收使用费。",
-    "_auto": true,
-    "_src": "mt"
-   },
-   "_bucket": "",
-   "seen_times": 1,
-   "seen_first": "2026-11-12",
-   "seen_last": "2026-11-12"
-  },
-  {
-   "full_name": "openvinotoolkit/openvino",
-   "owner": "openvinotoolkit",
-   "owner_type": "Organization",
-   "name": "openvino",
-   "desc": "OpenVINO™ is an open source toolkit for optimizing and deploying AI inference",
-   "lang": "C++",
-   "stars": 11421,
-   "forks": 3609,
-   "watchers": 193,
-   "open_issues": 1154,
-   "license": "Apache-2.0",
-   "license_name": "Apache License 2.0",
-   "topics": [
-    "ai",
-    "computer-vision",
-    "deep-learning",
-    "deploy-ai",
-    "diffusion-models",
-    "generative-ai",
-    "good-first-issue",
-    "inference",
-    "llm-inference",
-    "natural-language-processing",
-    "nlp",
-    "openvino",
-    "optimize-ai",
-    "performance-boost",
-    "recommendation-system",
-    "speech-recognition",
-    "stable-diffusion",
-    "transformers",
-    "yolo"
-   ],
-   "created_at": "2018-10-15T10:54:40Z",
-   "pushed_at": "2026-11-19T08:23:54Z",
-   "updated_at": "2026-11-19T08:20:34Z",
-   "size_kb": 1040049,
-   "archived": false,
-   "has_discussions": true,
-   "has_wiki": true,
-   "homepage": "https://docs.openvino.ai",
-   "url": "https://github.com/openvinotoolkit/openvino",
-   "default_branch": "master",
-   "readme": "<div align=\"center\">\n<img src=\"https://storage.openvinotoolkit.org/assets/branding/openvino-logo-transparent-white-outline.svg\" width=\"400px\" alt=\"OpenVINO\">\n\n<h3 align=\"center\">\nOpen-source software toolkit for optimizing and deploying deep learning models.\n</h3>\n\n<p align=\"center\">\n <a href=\"https://docs.openvino.ai/2026/index.html\"><b>Documentation</b></a> • <a href=\"https://blog.openvino.ai\"><b>Blog</b></a> • <a href=\"https://docs.openvino.ai/2026/about-openvino/key-features.html\"><b>Key Features</b></a> • <a href=\"https://docs.openvino.ai/2026/get-started/learn-openvino.html\"><b>Tutorials</b></a> • <a href=\"https://docs.openvino.ai/2026/about-openvino/openvino-ecosystem/openvino-integrations.html\"><b>Integrations</b></a> • <a href=\"https://www.intel.com/content/www/us/en/developer/tools/openvino-toolkit/model-hub.html\"><b>Benchmarks</b></a> • <a href=\"https://github.com/openvinotoolkit/openvino.genai\"><b>Generative AI</b></a>\n</p>\n\n[![PyPI Status](https://badge.fury.io/py/openvino.svg)](https://badge.fury.io/py/openvino)\n[![NPM](https://img.shields.io/npm/v/openvino-node)](https://www.npmjs.com/package/openvino-node)\n[![Anaconda Status](https://anaconda.org/conda-forge/openvino/badges/version.svg)](https://anaconda.org/conda-forge/openvino)\n[![brew Status](https://img.shields.io/homebrew/v/openvino)](https://formulae.brew.sh/formula/openvino)\n\n[![PyPI Downloads](https://static.pepy.tech/badge/openvino)](https://pepy.tech/project/openvino)\n[![Anaconda Downloads](https://anaconda.org/conda-forge/libopenvino/badges/downloads.svg)](https://anaconda.org/conda-forge/openvino/files)\n[![brew Downloads](https://img.shields.io/homebrew/installs/dy/openvino)](https://formulae.brew.sh/formula/openvino)\n </div>\n\n\n- **Inference Optimization**: Boost deep learning performance in computer vision, automatic speech recognition, generative AI, natural language processing with large and small language models, and many other common tasks.\n- **Flexible Model Support**: Use models trained with popular frameworks such as PyTorch, TensorFlow, ONNX, Keras, PaddlePaddle, and JAX/Flax. Directly integrate models built with transformers and diffusers from the Hugging Face Hub using Optimum Intel. Convert and deploy models without original frameworks.\n- **Broad Platform Compatibility**: Reduce resource demands and efficiently deploy on a range of platforms from edge to cloud. OpenVINO™ supports inference on CPU (x86, ARM), GPU (Intel integrated & discrete GPU) and AI accelerators (Intel NPU).\n- **Community and Ecosystem**: Join an active community contributing to the enhancement of deep learning performance across various domains.\n\nCheck out the [OpenVINO Cheat Sheet](https://docs.openvino.ai/2026/_static/download/OpenVINO_Quick_Start_Guide.pdf) and [Key Features](https://docs.openvino.ai/2026/about-openvino/key-features.html) for a quick reference.\n\n\n## Installation\n\n[Get your preferred distribution of OpenVINO](https://docs.openvino.ai/2026/get-started/install-openvino.html) or use this command for quick installation:\n\n```sh\npip install -U openvino\n```\n\n### Verify Installation\n\nAfter installation, you can verify OpenVINO is installed correctly by running:\n\n```python\nimport openvino as ov\nprint(ov.__version__)\n```\n\nCheck [system requirements](https://docs.openvino.ai/2026/about-openvino/release-notes-openvino/system-requirements.html) and [supported devices](https://docs.openvino.ai/2026/documentation/compatibility-and-support/supported-devices.html) for detailed information.\n\n## Tutorials and Examples\n\n[OpenVINO Quickstart example](https://docs.openvino.ai/2026/get-started.html) will walk you through the basics of deploying your first model.\n\nLearn how to optimize and deploy popular models with the [OpenVINO Notebooks](https://github.com/openvinotoolkit/openvino_notebooks) 📚:\n- [Create an LLM-powered Chatbot using OpenVINO](https://github.com/openvinotoolkit/openvino_notebooks/blob/latest/notebooks/llm-chatbot/llm-chatbot-generate-api.ipynb)\n- [YOLOv",
-   "gained": 24,
-   "since": "daily",
-   "source": "trending",
-   "score": 68,
-   "detail": {
-    "lic": 25,
-    "easy": 12,
-    "zh": 0,
-    "demand": 20,
-    "deliver": 2,
-    "fresh": 1,
-    "adj": 8
-   },
-   "grade": "A",
-   "grade_word": "改一改能卖",
-   "form": "引擎库",
-   "velocity": 24.0,
-   "_gaps": [
-    [
-     "没有中文上手文档",
-     "没有中文上手文档",
-     "把 README 翻成中文，配一张三步跑通图"
-    ],
-    [
-     "没有一键部署",
-     "没有一键部署",
-     "补一个 Dockerfile + compose，别人一条命令跑起来"
-    ]
-   ],
-   "gaps_short": [
-    "没有中文上手文档",
-    "没有一键部署"
-   ],
-   "risk": "",
-   "suspect": "",
-   "pitch": {
-    "gap_key": "没有中文上手文档",
-    "change": "把 README 翻成中文，配一张「三步跑通」流程图",
-    "buyer": "做短视频的剪辑号",
-    "buyer_tag": "视频",
-    "deliver": "做成带界面的成品，按份卖（发网盘，附中文说明）",
-    "deliver_alt": "接单代跑：客户给需求，你出结果",
-    "hours": 12,
-    "gap_key_word": "缺中文上手文档"
-   },
-   "plain": "OpenVINO™ is an open source toolkit for optimizing and deploying AI inference",
-   "analy": {
-    "en": "OpenVINO™ is an open source toolkit for optimizing and deploying AI inference",
-    "zh": "OpenVINO™ 是一个用于优化和部署 AI 推理的开源工具包",
-    "plain": "说白了，这是一堆已经写好的能力，但没有界面，得有人包一层壳才能给普通人用。它干的事是：OpenVINO™ 是一个用于优化和部署 AI 推理的开源工具包",
-    "usage": [
-     "批量出素材/封面/字幕，一个晚上干完一周的量",
-     "接到同类需求时拿它当底子，省掉搭骨架的两三天",
-     "包一层网页界面，做成给非技术人用的成品"
-    ],
-    "how": [
-     "按 README 装依赖（这一步最容易卡住）",
-     "跑一个作者给的示例，确认能出结果",
-     "把自己的数据/需求换成示例里的输入"
-    ],
-    "gap": "把 README 翻成中文，配一张「三步跑通」流程图",
-    "buyer": "做短视频的剪辑号",
-    "why": "做短视频的剪辑号不是不会做，是懒得为这一步花两三天试错。你把「把 README 翻成中文，配一张「三步跑通」流程图」替他们做完，他们花的钱远少于自己折腾的时间。",
-    "self": "接到类似需求直接拿它当底子，省掉搭骨架的两三天；顺手把它当成自己的技术储备，下次报价敢往上抬。",
-    "pack": "包一层网页界面，录一段 3 分钟演示，按份卖；买家买的不是代码，是「不用装环境」。落地上就按这条走：做成带界面的成品，按份卖（发网盘，附中文说明）。",
+    "pack": "汉化 + 一套中文模板 + 部署教程，打包成 zip 发网盘；主图用「改前 vs 改后」对比，标题写用户能搜的词。落地上就按这条走：打包部署到客户自己的服务器/域名，收一次部署费。",
     "_auto": true,
     "_src": "mt"
    },
@@ -326,95 +110,103 @@
    "seen_last": ""
   },
   {
-   "full_name": "appwrite/appwrite",
-   "owner": "appwrite",
+   "full_name": "vercel-labs/ui",
+   "owner": "vercel-labs",
    "owner_type": "Organization",
-   "name": "appwrite",
-   "desc": "The open-source cloud for agents & devs. Including Auth, Databases, Storage, Functions, Messaging, Hosting, Realtime, WAF and more",
+   "name": "ui",
+   "desc": "A library of behaviors for agents to build the next generation of user interfaces.",
    "lang": "TypeScript",
-   "stars": 58343,
-   "forks": 5891,
-   "watchers": 448,
-   "open_issues": 738,
-   "license": "BSD-3-Clause",
-   "license_name": "BSD 3-Clause \"New\" or \"Revised\" License",
+   "stars": 6188,
+   "forks": 214,
+   "watchers": 8,
+   "open_issues": 68,
+   "license": "Apache-2.0",
+   "license_name": "Apache License 2.0",
    "topics": [
-    "android",
-    "appwrite",
-    "backend",
-    "backend-as-a-service",
-    "docker",
-    "firebase",
-    "firewall",
-    "flutter",
-    "hosting",
-    "ios",
-    "javascript",
-    "nextjs",
+    "accessibility",
+    "agent",
+    "agents",
+    "ai",
+    "aria",
+    "behaviors",
+    "component",
+    "component-library",
+    "headless",
+    "mcp",
     "react",
-    "react-native",
-    "reactnative",
-    "self-hosted",
-    "selfhosted",
-    "supabase",
-    "swift",
-    "web"
+    "solid",
+    "svelte",
+    "vue",
+    "web-components",
+    "webmcp"
    ],
-   "created_at": "2019-04-08T16:36:25Z",
-   "pushed_at": "2026-11-19T08:24:35Z",
-   "updated_at": "2026-11-19T08:23:32Z",
-   "size_kb": 1204011,
+   "created_at": "2026-10-26T17:39:27Z",
+   "pushed_at": "2026-11-20T07:30:26Z",
+   "updated_at": "2026-11-20T07:59:55Z",
+   "size_kb": 19075,
    "archived": false,
-   "has_discussions": true,
+   "has_discussions": false,
    "has_wiki": false,
-   "homepage": "https://appwrite.io",
-   "url": "https://github.com/appwrite/appwrite",
+   "homepage": "https://ui-sdk.dev",
+   "url": "https://github.com/vercel-labs/ui",
    "default_branch": "main",
-   "readme": "<img width=\"1920\" height=\"1080\" alt=\"image\" src=\"https://github.com/user-attachments/assets/55a81268-4ecc-46cd-bdf5-73f7e8662fee\" />\n\n<br />\n<p align=\"center\">\n    <h1>Appwrite</h1>\n    <b>The open-source cloud for agents and developers. Appwrite is an MCP and agent-first platform for building and scaling apps. Give your agents Auth, Databases, Storage, Functions, Messaging, Realtime, and Hosting, all in one place.</b>\n    <br />\n    <br />\n</p>\n\n[![Discord](https://img.shields.io/badge/chat-5865F2?style=flat-square&logo=discord&logoColor=white)](https://appwrite.io/discord)\n[![X](https://img.shields.io/badge/follow-000000?style=flat-square&logo=x&logoColor=white)](https://x.com/appwrite)\n[![Appwrite Cloud](https://img.shields.io/badge/Cloud-F02E65?style=flat-square&logo=icloud&logoColor=white)](https://cloud.appwrite.io)\n\nEnglish | [简体中文](README-CN.md)\n\nAppwrite is an MCP and agent-first, open-source platform for building and scaling apps. MCP is included, so coding agents can operate on a live Appwrite project. Appwrite is available as a managed cloud platform and can also be self-hosted on infrastructure you control.\n\nIt is designed for the AI agents in your workflow as well as for developers. Connect Cursor, Claude Code, Codex, and other agents through the hosted MCP server, or integrate an SDK into your app. Modular products stay unified from the first prototype to production scale.\n\nFind out more at [https://appwrite.io](https://appwrite.io).\n\nTable of Contents:\n\n- [Products](#products)\n- [Installation \\& Setup](#installation--setup)\n- [Self-Hosting](#self-hosting)\n  - [Unix](#unix)\n  - [Windows](#windows)\n    - [CMD](#cmd)\n    - [PowerShell](#powershell)\n  - [Docker API version mismatch](#docker-api-version-mismatch)\n  - [Upgrade from an Older Version](#upgrade-from-an-older-version)\n- [One-Click Setups](#one-click-setups)\n- [Getting Started](#getting-started)\n  - [Agents](#agents)\n  - [SDKs](#sdks)\n    - [Client](#client)\n    - [Server](#server)\n- [Architecture](#architecture)\n- [Contributing](#contributing)\n- [Security](#security)\n- [Follow Us](#follow-us)\n- [License](#license)\n\n\n## Products\n\n- **[Appwrite Auth](https://appwrite.io/docs/products/auth)** - Authenticate users securely with email, SMS, OAuth, anonymous sessions, and magic URLs.\n\n- **[Appwrite Databases](https://appwrite.io/docs/products/databases)** - Model, query, and scale with Appwrite databases or managed PostgreSQL and MySQL, so you can match your use case and team needs.\n\n- **[Appwrite Storage](https://appwrite.io/docs/products/storage)** - Store files with compression, encryption, image transformations, and access control.\n\n- **[Appwrite Functions](https://appwrite.io/docs/products/functions)** - Deploy serverless functions with secure isolated runtimes and event-driven execution.\n\n- **[Appwrite Sites](https://appwrite.io/docs/products/sites)** - Deploy static, SSR, and CSR frontends from Git with instant previews and Appwrite behind them.\n\n- **[Appwrite Messaging](https://appwrite.io/docs/products/messaging)** - Send email, SMS, and push notifications through a unified messaging service.\n\n- **[Appwrite Firewall](https://appwrite.io/docs/products/network)** - Protect apps with traffic rules, abuse controls, and edge security for every project.\n\n- **[Appwrite Realtime](https://appwrite.io/docs/apis/realtime)** - Subscribe and react to events across your project as they happen.\n\n- **[Appwrite MCP](https://appwrite.io/docs/tooling/ai/mcp-servers/api)** - Connect agents to your Appwrite project, APIs, and docs. MCP is included on Cloud, with no local install required.\n\n\n## Installation & Setup\n\nThe easiest way to get started with Appwrite is by [signing up for Appwrite Cloud](https://cloud.appwrite.io/). Cloud includes a [Free plan](https://appwrite.io/pricing) so you can start building immediately, with paid plans when you need to scale.\n\n## Self-Hosting\n\nAppwrite was designed from the ground up with self-hosting in mind. You can install and run Appw",
-   "gained": 232,
-   "since": "daily",
-   "source": "trending",
-   "score": 60,
+   "readme": "# UI SDK\n\nA library of behaviors for agents to build the next generation of user interfaces.\n\nKeyboard navigation, focus, selection, dismissal, popups, drag and drop and the ARIA they need live in `@ui-sdk/core`, with adapters for React, Vue, Svelte, Solid and Web Components.\n\n<picture>\n  <source media=\"(prefers-color-scheme: dark)\" srcset=\"./assets/behaviors-dark.svg\">\n  <img alt=\"An environment selector split into three behaviors: createPopup, createSelection and createTypeahead.\" src=\"./assets/behaviors-light.svg\">\n</picture>\n\n**[Read the docs](https://ui-sdk.dev/docs)**\n\n## Install\n\nUI SDK is in beta. Install core and the adapter for your framework:\n\n```bash\nnpm install @ui-sdk/react @ui-sdk/core\n```\n\nFor other frameworks, swap `@ui-sdk/react` for `@ui-sdk/vue`, `@ui-sdk/svelte`, `@ui-sdk/solid` or `@ui-sdk/web`.\n\nThen give your agent the UI SDK skill:\n\n```bash\nnpx skills@latest add vercel-labs/ui --skill ui-sdk\n```\n\n## Example\n\nEvery component in UI SDK is built from behaviors. You start by creating the primitive with behaviors.\n\nDon't worry, you don't need to learn how to write this. Your agents will. And we made them really good at it.\n\n```ts\nimport { createFocusRecovery, definePrimitive } from \"@ui-sdk/core\"\n\nconst searchField = definePrimitive({\n  name: \"search-field\",\n  state: () => ({ value: \"\" }),\n  api: (context) => ({\n    set: (value: string) => context.store.set({ value }),\n    recovery: createFocusRecovery({ fallback: () => context.element(\"input\") }),\n  }),\n  slots: (slot) => ({\n    input: slot({\n      attrs: (state) => ({ value: state.value }),\n      on: {\n        input: (event, { api }) =>\n          api.set((event.target as HTMLInputElement).value),\n      },\n    }),\n    clear: slot({\n      present: (state) => state.value !== \"\",\n      attrs: () => ({ type: \"button\" }),\n      press: ({ api }) => api.set(\"\"),\n      bind: (el, part) => part.api.recovery.bind(el, part),\n    }),\n  }),\n})\n\nexport { searchField }\n```\n\nThen render it in your framework with `createParts`. The parts are the same in all five.\n\n### React\n\n```tsx\nimport { createParts } from \"@ui-sdk/react/primitive\"\nimport { searchField } from \"./search-field\"\n\nconst parts = createParts(searchField, { input: \"input\", clear: \"button\" })\n\nconst SearchField = parts.Root\nconst SearchFieldInput = parts.Input\nconst SearchFieldClear = parts.Clear\n\nfunction Search() {\n  return (\n    <SearchField>\n      <SearchFieldInput placeholder=\"Search\" />\n      <SearchFieldClear>Clear</SearchFieldClear>\n    </SearchField>\n  )\n}\n\nexport { Search }\n```\n\n### Vue\n\n```vue\n<script setup lang=\"ts\">\nimport { createParts } from \"@ui-sdk/vue/primitive\"\nimport { searchField } from \"./search-field\"\n\nconst parts = createParts(searchField, { input: \"input\", clear: \"button\" })\n\nconst SearchField = parts.Root\nconst SearchFieldInput = parts.Input\nconst SearchFieldClear = parts.Clear\n</script>\n\n<template>\n  <SearchField>\n    <SearchFieldInput placeholder=\"Search\" />\n    <SearchFieldClear>Clear</SearchFieldClear>\n  </SearchField>\n</template>\n```\n\n### Svelte\n\n```svelte\n<script lang=\"ts\">\n  import { createParts } from \"@ui-sdk/svelte/primitive\"\n  import { searchField } from \"./search-field\"\n\n  const parts = createParts(searchField, { input: \"input\", clear: \"button\" })\n\n  const SearchField = parts.Root\n  const SearchFieldInput = parts.Input\n  const SearchFieldClear = parts.Clear\n</script>\n\n<SearchField>\n  <SearchFieldInput placeholder=\"Search\" />\n  <SearchFieldClear>Clear</SearchFieldClear>\n</SearchField>\n```\n\n### Solid\n\n```tsx\nimport { createParts } from \"@ui-sdk/solid/primitive\"\nimport { searchField } from \"./search-field\"\n\nconst parts = createParts(searchField, { input: \"input\", clear: \"button\" })\n\nconst SearchField = parts.Root\nconst SearchFieldInput = parts.Input\nconst SearchFieldClear = parts.Clear\n\nfunction Search() {\n  return (\n    <SearchField>\n      <SearchFieldInput placeholder=\"Search\" />\n      <SearchFieldClear>Clear</SearchFieldClear>\n    </SearchField>\n  )\n}\n\nexport { Search }\n```",
+   "gained": 0,
+   "since": "created<30d",
+   "source": "search_new",
+   "score": 80,
    "detail": {
     "lic": 25,
     "easy": 20,
     "zh": 0,
-    "demand": 20,
-    "deliver": 2,
-    "fresh": 1,
-    "adj": -8
+    "demand": 18,
+    "deliver": 7,
+    "fresh": 10,
+    "adj": 0
    },
-   "grade": "B",
-   "grade_word": "值得研究",
+   "grade": "S",
+   "grade_word": "今晚就能动手",
    "form": "web应用",
-   "velocity": 232.0,
+   "velocity": 257.8333333333333,
    "_gaps": [
     [
      "没有中文上手文档",
      "没有中文上手文档",
      "把 README 翻成中文，配一张三步跑通图"
+    ],
+    [
+     "没有中文界面",
+     "没有中文界面",
+     "把界面文案和按钮全翻成中文，截一套中文版演示图"
+    ],
+    [
+     "没有一键部署",
+     "没有一键部署",
+     "补一个 Dockerfile + compose，别人一条命令跑起来"
     ]
    ],
    "gaps_short": [
-    "没有中文上手文档"
+    "没有中文上手文档",
+    "没有中文界面",
+    "没有一键部署"
    ],
-   "risk": "大厂项目，路线不由你定，只能做外围（部署/中文化/模板）",
+   "risk": "",
    "suspect": "",
    "pitch": {
-    "gap_key": "没有行业预设",
-    "change": "做 10 个行业预设（餐饮/教培/门店），一键套用",
+    "gap_key": "没有在线演示",
+    "change": "部署一个公开 demo，让人先玩再决定买不买",
     "buyer": "想有个自己工具但不会写代码的人",
     "buyer_tag": "通用",
-    "deliver": "连部署带教一次，做成「一天陪跑」按次收",
-    "deliver_alt": "换成客户自己的数据跑一遍，按场景收定制费",
-    "hours": 6,
+    "deliver": "做成在线服务，按月收使用费",
+    "deliver_alt": "连部署带教一次，做成「一天陪跑」按次收",
+    "hours": 3,
     "gap_key_word": "缺中文上手文档"
    },
-   "plain": "The open-source cloud for agents & devs. Including Auth, Databases, Storage, Functions, Messaging, Hosting, Realtime, WAF and more",
+   "plain": "A library of behaviors for agents to build the next generation of user interfaces.",
    "analy": {
-    "en": "The open-source cloud for agents & devs. Including Auth, Databases, Storage, Functions, Messaging, Hosting, Realtime, WAF and more",
-    "zh": "面向代理和开发人员的开源云。包括身份验证、数据库、存储、功能、消息传递、托管、实时、WAF 等",
-    "plain": "说白了，这是一个打开网页就能用的在线小工具，不用装任何东西。它干的事是：面向代理和开发人员的开源云。包括身份验证、数据库、存储、功能、消息传递、托管、实时、WAF 等",
+    "en": "A library of behaviors for agents to build the next generation of user interfaces.",
+    "zh": "一个用于代理构建下一代用户界面的行为库。",
+    "plain": "说白了，这是一个打开网页就能用的在线小工具，不用装任何东西。它干的事是：一个用于代理构建下一代用户界面的行为库。",
     "usage": [
      "直接打开当工具用，省掉装软件那一步",
      "部署到自己的域名，做成一个能对外收钱的服务",
@@ -425,11 +217,11 @@
      "按界面提示把内容填进去",
      "选样式/导出，拿到成品"
     ],
-    "gap": "做 10 个行业预设（餐饮/教培/门店），一键套用",
+    "gap": "部署一个公开 demo，让人先玩再决定买不买",
     "buyer": "想有个自己工具但不会写代码的人",
-    "why": "想有个自己工具但不会写代码的人不是不会做，是懒得为这一步花两三天试错。你把「做 10 个行业预设（餐饮/教培/门店），一键套用」替他们做完，他们花的钱远少于自己折腾的时间。",
+    "why": "想有个自己工具但不会写代码的人不是不会做，是懒得为这一步花两三天试错。你把「部署一个公开 demo，让人先玩再决定买不买」替他们做完，他们花的钱远少于自己折腾的时间。",
     "self": "自己干活时当外挂：重复的排版、出图、整理交给它，一次省十几分钟。用熟之后你会清楚自己哪一步最该自动化——这个认知比工具本身值钱。",
-    "pack": "汉化 + 一套中文模板 + 部署教程，打包成 zip 发网盘；主图用「改前 vs 改后」对比，标题写用户能搜的词。落地上就按这条走：连部署带教一次，做成「一天陪跑」按次收。",
+    "pack": "汉化 + 一套中文模板 + 部署教程，打包成 zip 发网盘；主图用「改前 vs 改后」对比，标题写用户能搜的词。落地上就按这条走：做成在线服务，按月收使用费。",
     "_auto": true,
     "_src": "mt"
    },
@@ -439,257 +231,47 @@
    "seen_last": ""
   },
   {
-   "full_name": "nvm-sh/nvm",
-   "owner": "nvm-sh",
-   "owner_type": "Organization",
-   "name": "nvm",
-   "desc": "Node Version Manager - POSIX-compliant bash script to manage multiple active node.js versions.",
-   "lang": "Shell",
-   "stars": 96206,
-   "forks": 10794,
-   "watchers": 1128,
-   "open_issues": 367,
+   "full_name": "pookjw/HermesEnabler",
+   "owner": "pookjw",
+   "owner_type": "User",
+   "name": "HermesEnabler",
+   "desc": "Enable Hermès Watch Faces on any Apple Watch devices",
+   "lang": "Objective-C",
+   "stars": 2267,
+   "forks": 189,
+   "watchers": 15,
+   "open_issues": 84,
    "license": "MIT",
    "license_name": "MIT License",
-   "topics": [
-    "bash",
-    "install",
-    "lts",
-    "node",
-    "node-js",
-    "nodejs",
-    "nvm",
-    "nvmrc",
-    "posix",
-    "posix-compliant",
-    "shell",
-    "version-manager",
-    "zsh"
-   ],
-   "created_at": "2010-04-15T17:47:47Z",
-   "pushed_at": "2026-11-19T06:30:50Z",
-   "updated_at": "2026-11-19T08:23:32Z",
-   "size_kb": 5362,
+   "topics": [],
+   "created_at": "2024-12-14T11:32:03Z",
+   "pushed_at": "2026-11-19T02:24:27Z",
+   "updated_at": "2026-11-20T08:03:11Z",
+   "size_kb": 4494,
    "archived": false,
    "has_discussions": false,
-   "has_wiki": false,
-   "homepage": "",
-   "url": "https://github.com/nvm-sh/nvm",
-   "default_branch": "master",
-   "readme": "<a href=\"https://github.com/nvm-sh/logos\">\n  <picture>\n    <source media=\"(prefers-color-scheme: dark)\" srcset=\"https://raw.githubusercontent.com/nvm-sh/logos/HEAD/nvm-logo-white.svg\" />\n    <img src=\"https://raw.githubusercontent.com/nvm-sh/logos/HEAD/nvm-logo-color.svg\" height=\"50\" alt=\"nvm project logo\" />\n  </picture>\n</a>\n\n\n# Node Version Manager [![Tests](https://github.com/nvm-sh/nvm/actions/workflows/tests-fast.yml/badge.svg?branch=master)][3] [![nvm version](https://img.shields.io/badge/version-v0.41.0-yellow.svg)][4] [![CII Best Practices](https://bestpractices.dev/projects/684/badge)](https://bestpractices.dev/projects/684)\n\n<!-- To update this table of contents, ensure you have run `npm install` then `npm run doctoc` -->\n<!-- START doctoc generated TOC please keep comment here to allow auto update -->\n<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->\n## Table of Contents\n\n- [Intro](#intro)\n- [About](#about)\n- [Installing and Updating](#installing-and-updating)\n  - [Install & Update Script](#install--update-script)\n    - [Additional Notes](#additional-notes)\n    - [Installing in Docker](#installing-in-docker)\n      - [Installing in Docker for CICD-Jobs](#installing-in-docker-for-cicd-jobs)\n    - [Troubleshooting on Linux](#troubleshooting-on-linux)\n    - [Troubleshooting on macOS](#troubleshooting-on-macos)\n    - [Ansible](#ansible)\n  - [Verify Installation](#verify-installation)\n  - [Important Notes](#important-notes)\n  - [Git Install](#git-install)\n  - [Manual Install](#manual-install)\n  - [Manual Upgrade](#manual-upgrade)\n- [Usage](#usage)\n  - [Long-term Support](#long-term-support)\n  - [Version Categories](#version-categories)\n  - [Migrating Global Packages While Installing](#migrating-global-packages-while-installing)\n  - [Migrating Global Packages Between Installed Versions](#migrating-global-packages-between-installed-versions)\n  - [Offline Install](#offline-install)\n  - [Default Global Packages From File While Installing](#default-global-packages-from-file-while-installing)\n  - [io.js](#iojs)\n  - [System Version of Node](#system-version-of-node)\n  - [Listing Versions](#listing-versions)\n  - [Setting Custom Colors](#setting-custom-colors)\n    - [Persisting custom colors](#persisting-custom-colors)\n    - [Suppressing colorized output](#suppressing-colorized-output)\n  - [Restoring PATH](#restoring-path)\n  - [Set default node version](#set-default-node-version)\n  - [Use a mirror of node binaries](#use-a-mirror-of-node-binaries)\n    - [Pass Authorization header to mirror](#pass-authorization-header-to-mirror)\n  - [Platforms without official binaries](#platforms-without-official-binaries)\n  - [.nvmrc](#nvmrc)\n  - [Deeper Shell Integration](#deeper-shell-integration)\n    - [Calling `nvm use` automatically in a directory with a `.nvmrc` file](#calling-nvm-use-automatically-in-a-directory-with-a-nvmrc-file)\n      - [bash](#bash)\n      - [zsh](#zsh)\n      - [fish](#fish)\n- [Running Tests](#running-tests)\n- [Environment variables](#environment-variables)\n- [Bash Completion](#bash-completion)\n  - [Usage](#usage-1)\n- [Compatibility Issues](#compatibility-issues)\n- [Installing nvm on Alpine Linux](#installing-nvm-on-alpine-linux)\n  - [Alpine Linux 3.13+](#alpine-linux-313)\n  - [Alpine Linux 3.5 - 3.12](#alpine-linux-35---312)\n- [Uninstalling / Removal](#uninstalling--removal)\n  - [Manual Uninstall](#manual-uninstall)\n- [Docker For Development Environment](#docker-for-development-environment)\n- [Problems](#problems)\n- [macOS Troubleshooting](#macos-troubleshooting)\n- [WSL Troubleshooting](#wsl-troubleshooting)\n- [Maintainers](#maintainers)\n- [Project Support](#project-support)\n- [Enterprise Support](#enterprise-support)\n- [License](#license)\n- [Copyright notice](#copyright-notice)\n\n<!-- END doctoc generated TOC please keep comment here to allow auto update -->\n\n## Intro\n\n`nvm` allows you to quickly install and use different versions of [node](https://nodejs.org) via the command line.\n\n**Example:**\n```sh\n$ n",
-   "gained": 237,
-   "since": "daily",
-   "source": "trending",
-   "score": 57,
-   "detail": {
-    "lic": 25,
-    "easy": 20,
-    "zh": 0,
-    "demand": 12,
-    "deliver": 7,
-    "fresh": 1,
-    "adj": -8
-   },
-   "grade": "B",
-   "grade_word": "值得研究",
-   "form": "命令行",
-   "velocity": 237.0,
-   "_gaps": [
-    [
-     "没有中文上手文档",
-     "没有中文上手文档",
-     "把 README 翻成中文，配一张三步跑通图"
-    ],
-    [
-     "没有在线演示",
-     "没有在线演示",
-     "部署一个公开 demo 站，让人先玩再买单"
-    ]
-   ],
-   "gaps_short": [
-    "没有中文上手文档",
-    "没有在线演示"
-   ],
-   "risk": "大厂项目，路线不由你定，只能做外围（部署/中文化/模板）",
-   "suspect": "",
-   "pitch": {
-    "gap_key": "要敲一长串参数",
-    "change": "封装成双击就能跑的脚本，把参数做成填空",
-    "buyer": "需要这套能力但装不上的人",
-    "buyer_tag": "通用",
-    "deliver": "做成图文教程 + 现成脚本包，一次付费长期用",
-    "deliver_alt": "接单代跑，按次收费",
-    "hours": 1,
-    "gap_key_word": "缺中文上手文档"
-   },
-   "plain": "Node Version Manager - POSIX-compliant bash script to manage multiple active node.js versions.",
-   "analy": {
-    "en": "Node Version Manager - POSIX-compliant bash script to manage multiple active node.js versions.",
-    "zh": "Node Version Manager - 符合 POSIX 标准的 bash 脚本，用于管理多个活动的 Node.js 版本。",
-    "plain": "说白了，这是一个要在黑框里敲命令才动起来的工具，功能硬，但上手要人带。它干的事是：Node Version Manager - 符合 POSIX 标准的 bash 脚本，用于管理多个活动的 Node.js 版本。",
-    "usage": [
-     "把每天重复的那串命令固化成脚本，一条命令出结果",
-     "批量处理文件/图片/文档，一次跑完一整个文件夹",
-     "接单代跑：客户给素材，你出结果"
-    ],
-    "how": [
-     "装好运行环境",
-     "复制作者给的命令跑一遍",
-     "把参数换成自己的文件路径"
-    ],
-    "gap": "封装成双击就能跑的脚本，把参数做成填空",
-    "buyer": "需要这套能力但装不上的人",
-    "why": "需要这套能力但装不上的人不是不会做，是懒得为这一步花两三天试错。你把「封装成双击就能跑的脚本，把参数做成填空」替他们做完，他们花的钱远少于自己折腾的时间。",
-    "self": "把每天要重复敲的东西固化成脚本，以后一条命令出结果；攒下来的脚本就是你自己的工具库。",
-    "pack": "做成「双击就能跑」的包 + 图文教程，一次付费长期用；再开一个代跑通道接零散单。落地上就按这条走：做成图文教程 + 现成脚本包，一次付费长期用。",
-    "_auto": true,
-    "_src": "mt"
-   },
-   "_bucket": "",
-   "seen_times": 0,
-   "seen_first": "",
-   "seen_last": ""
-  },
-  {
-   "full_name": "vercel-labs/agent-browser",
-   "owner": "vercel-labs",
-   "owner_type": "Organization",
-   "name": "agent-browser",
-   "desc": "Browser automation CLI for AI agents",
-   "lang": "Rust",
-   "stars": 52728,
-   "forks": 3691,
-   "watchers": 114,
-   "open_issues": 596,
-   "license": "Apache-2.0",
-   "license_name": "Apache License 2.0",
-   "topics": [],
-   "created_at": "2026-01-11T05:38:15Z",
-   "pushed_at": "2026-11-19T04:58:11Z",
-   "updated_at": "2026-11-19T08:26:44Z",
-   "size_kb": 36380,
-   "archived": false,
-   "has_discussions": true,
    "has_wiki": true,
-   "homepage": "https://agent-browser.dev",
-   "url": "https://github.com/vercel-labs/agent-browser",
+   "homepage": "",
+   "url": "https://github.com/pookjw/HermesEnabler",
    "default_branch": "main",
-   "readme": "# agent-browser\n\nBrowser automation for AI agents: open pages, read them as an accessibility tree, and act on elements from the shell.\n\n<p>\n  <a href=\"https://vercel.com/labs#labs-products\"><img alt=\"Vercel Labs Product\" src=\"https://img.shields.io/badge/LABS-PRODUCT-0a0a0a.svg?style=for-the-badge&amp;logo=Vercel&amp;labelColor=000000\" height=\"28\"></a>\n  <a href=\"https://www.npmjs.com/package/agent-browser\"><img alt=\"npm version: agent-browser\" src=\"https://img.shields.io/npm/v/agent-browser.svg?style=for-the-badge&amp;labelColor=000000\" height=\"28\"></a>\n  <a href=\"https://github.com/vercel-labs/agent-browser/blob/main/LICENSE\"><img alt=\"License: Apache-2.0\" src=\"https://img.shields.io/github/license/vercel-labs/agent-browser.svg?style=for-the-badge&amp;labelColor=000000\" height=\"28\"></a>\n  <a href=\"https://www.npmjs.com/package/agent-browser\"><img alt=\"npm downloads per month: agent-browser\" src=\"https://img.shields.io/npm/dm/agent-browser.svg?style=for-the-badge&amp;labelColor=000000&amp;label=npm%20downloads\" height=\"28\"></a>\n  <a href=\"https://skills.sh/vercel-labs/agent-browser\"><img alt=\"skills.sh\" src=\"https://skills.sh/b/vercel-labs/agent-browser?style=for-the-badge\" height=\"28\"></a>\n</p>\n\nagent-browser is a native Rust CLI that gives an AI agent a browser it can drive one command at a time. `snapshot` returns the page as compact text with a ref such as `@e1` for each element. The agent acts on a ref, reads the page again to check the result, and repeats. The browser stays open between commands, so each step is one short shell call.\n\n## Install\n\n```bash\nnpm install -g agent-browser\nagent-browser install           # download Chrome for Testing (first time only)\n```\n\n- **Homebrew:** `brew install agent-browser`, then `agent-browser install`.\n- **Linux:** `agent-browser install --with-deps` also installs the browser's system libraries.\n- **No install:** `npx agent-browser open example.com`.\n\nProject installs, building from source, `upgrade`, and `doctor` are covered in [Installation](https://agent-browser.dev/installation).\n\n## Quick start\n\n```bash\nagent-browser open example.com\nagent-browser snapshot -i       # interactive elements, each with a ref\nagent-browser click @e1         # act on a ref from that snapshot\nagent-browser get url           # check the result\nagent-browser close\n```\n\nThe snapshot for `example.com`:\n\n```\n- link \"Learn more\" [ref=e1]\n```\n\n- Refs describe the page at the time of the snapshot. After navigation or a DOM change, take a new snapshot before using refs again.\n- CSS selectors, text, XPath, and semantic locators also work, for example `agent-browser find role button click --name \"Submit\"`. See [Selectors](https://agent-browser.dev/selectors).\n- A click fails, instead of reporting success, when the target is hidden, disabled, outside the viewport, or covered by another element such as a consent banner. Dismiss the covering element, take a new snapshot, and retry.\n\nThe full walkthrough is in the [quick start](https://agent-browser.dev/quick-start).\n\n## How it works\n\nThe CLI sends each command to a background daemon that starts on the first command and controls the browser over the Chrome DevTools Protocol. Each `--session` gets its own daemon and browser. By default, the daemon closes a headless browser and exits after one hour without commands, saving state first when [session persistence](https://agent-browser.dev/sessions) is configured.\n\nChrome for Testing is the default browser. You can also attach to a running Chrome with `--cdp` or `--auto-connect` ([CDP mode](https://agent-browser.dev/cdp-mode)), select the [Lightpanda](https://agent-browser.dev/engines/lightpanda) or [Obscura](https://agent-browser.dev/engines/obscura) engine with `--engine`, drive Mobile Safari in the [iOS Simulator](https://agent-browser.dev/ios), or use a cloud browser provider such as [Browserbase](https://agent-browser.dev/providers/browserbase), [Browserless](https://agent-browser.dev/providers/browserless), [Brows",
-   "gained": 2987,
+   "readme": "# HermesEnabler 2\n\n[English](README.md) · [Tiếng Việt](README.vi.md) · [한국어](README.ko.md) · [简体中文](README.zh-CN.md) · [繁體中文](README.zh-TW.md) · [日本語](README.ja.md) · [Español](README.es.md) · [Français](README.fr.md) · [Deutsch](README.de.md) · [Português](README.pt.md)\n\n![](image.png)\n\n> Supported on watchOS 27.0 through 27.3 beta 1.\n> If you’re using an unsupported watchOS version, use [Clocky](https://github.com/pookjw/Clocky).\n\n## Installation\n\n### macOS\n\nOn macOS you can install the prebuilt IPA with Sideloadly or build the app directly with Xcode. Either way, the iPhone must be paired with the target Apple Watch, and the Watch must run a supported watchOS version.\n\n#### Install the IPA\n\n1. Download the IPA from [Releases](https://github.com/pookjw/HermesEnabler/releases).\n2. Install [Sideloadly](https://sideloadly.io) on your Mac, connect your iPhone with a cable, and select it in Sideloadly.\n3. Drag the IPA into Sideloadly and enter your Apple ID. Turn off **Use automatic bundle ID**, set a fixed Bundle Identifier, and start signing.\n4. On the iPhone, open **Settings → General → VPN & Device Management** and trust your developer certificate.\n5. On the iPhone, open **Settings → Privacy & Security → Developer Mode**, turn it on, restart, and confirm.\n6. On the iPhone, open the **Watch** app, go to **My Watch → Apps**, and install **HermesEnabler2** on the Watch.\n7. On the Apple Watch, open **Settings → Privacy & Security → Developer Mode**, turn it on, restart, and confirm. If the option is not shown, install the Watch app first and check again.\n8. Open **HermesEnabler2** on your Apple Watch and follow the steps in the app.\n\n#### Build with Xcode\n\n1. Open [HermesEnabler2.xcodeproj](HermesEnabler2.xcodeproj) in Xcode.\n2. Select your Apple Watch as the run destination and click **Run**.\n3. Open **HermesEnabler2** on your Apple Watch and follow the steps in the app.\n\n### Windows\n\nWindows uses [WatchBridge](https://github.com/AdminZachary/iloader-for-windows), a community tool that prepares Developer Mode and installs an IPA containing both an iPhone host app and a Watch app. It is not affiliated with Apple or with this project.\n\n1. Install **Apple Mobile Device Service** by installing [iTunes](https://www.apple.com/itunes/) or the **Apple Devices** app from the Microsoft Store. WatchBridge needs it for USB and Wi-Fi communication. WebView2 is built into Windows 11.\n2. Make sure your iPhone is paired with the target Apple Watch. WatchBridge supports only one paired Watch at a time; if more than one is paired, the preparation step stops instead of guessing.\n3. Download `watchbridge-windows.zip` from [WatchBridge Releases](https://github.com/AdminZachary/iloader-for-windows/releases/latest), extract it, and run `WatchBridge.exe`. The executable is unsigned, so Windows SmartScreen may warn on first launch.\n4. Download the IPA from [Releases](https://github.com/pookjw/HermesEnabler/releases). Use the original IPA that contains both the iPhone host and the `Watch/*.app`; Watch-only packages are not supported.\n5. Connect the paired iPhone over USB and select it in WatchBridge.\n6. Pair the Watch and confirm the trust prompt on the Watch. Request the **Developer Mode** switch, then on the Watch open **Settings → Privacy & Security → Developer Mode**, turn it on, restart, and confirm. Return to WatchBridge and click **Check again**. WatchBridge does not enable Developer Mode or restart the Watch for you.\n7. Sign in with your Apple ID, select the HermesEnabler2 IPA, and start signing and installation. WatchBridge installs the iPhone host app first, then the Watch app.\n8. Open **HermesEnabler2** on your Apple Watch and follow the steps in the app.\n\n> Developer-mode preparation requires a USB connection. After pairing over USB once, installs and renewals can use Wi-Fi.\n\n## Cautions\n\n- watchOS 26 is not supported.\n- In Sideloadly, disable **Use automatic bundle ID** and use a fixed Bundle Identifier. Keep the same Bundle Identifier and A",
+   "gained": 904,
    "since": "weekly",
    "source": "trending",
-   "score": 56,
+   "score": 70,
    "detail": {
     "lic": 25,
     "easy": 14,
     "zh": 0,
     "demand": 20,
-    "deliver": 4,
-    "fresh": 1,
-    "adj": -8
-   },
-   "grade": "B",
-   "grade_word": "值得研究",
-   "form": "命令行",
-   "velocity": 426.7142857142857,
-   "_gaps": [
-    [
-     "没有中文上手文档",
-     "没有中文上手文档",
-     "把 README 翻成中文，配一张三步跑通图"
-    ],
-    [
-     "没有一键部署",
-     "没有一键部署",
-     "补一个 Dockerfile + compose，别人一条命令跑起来"
-    ]
-   ],
-   "gaps_short": [
-    "没有中文上手文档",
-    "没有一键部署"
-   ],
-   "risk": "大厂项目，路线不由你定，只能做外围（部署/中文化/模板）",
-   "suspect": "",
-   "pitch": {
-    "gap_key": "没有中文说明",
-    "change": "写一份「从装到出结果」的图文，每步配截图",
-    "buyer": "需要这套能力但装不上的人",
-    "buyer_tag": "通用",
-    "deliver": "接单代跑，按次收费",
-    "deliver_alt": "改成一键工具卖，附中文说明书",
-    "hours": 7,
-    "gap_key_word": "缺中文上手文档"
-   },
-   "plain": "Browser automation CLI for AI agents",
-   "analy": {
-    "en": "Browser automation CLI for AI agents",
-    "zh": "用于 AI 代理的浏览器自动化 CLI",
-    "plain": "说白了，这是一个要在黑框里敲命令才动起来的工具，功能硬，但上手要人带。它干的事是：用于 AI 代理的浏览器自动化 CLI",
-    "usage": [
-     "把每天重复的那串命令固化成脚本，一条命令出结果",
-     "批量处理文件/图片/文档，一次跑完一整个文件夹",
-     "接单代跑：客户给素材，你出结果"
-    ],
-    "how": [
-     "装好运行环境",
-     "复制作者给的命令跑一遍",
-     "把参数换成自己的文件路径"
-    ],
-    "gap": "写一份「从装到出结果」的图文，每步配截图",
-    "buyer": "需要这套能力但装不上的人",
-    "why": "需要这套能力但装不上的人不是不会做，是懒得为这一步花两三天试错。你把「写一份「从装到出结果」的图文，每步配截图」替他们做完，他们花的钱远少于自己折腾的时间。",
-    "self": "把每天要重复敲的东西固化成脚本，以后一条命令出结果；攒下来的脚本就是你自己的工具库。",
-    "pack": "做成「双击就能跑」的包 + 图文教程，一次付费长期用；再开一个代跑通道接零散单。落地上就按这条走：接单代跑，按次收费。",
-    "_auto": true,
-    "_src": "mt"
-   },
-   "_bucket": "",
-   "seen_times": 0,
-   "seen_first": "",
-   "seen_last": ""
-  },
-  {
-   "full_name": "cursor/plugins",
-   "owner": "cursor",
-   "owner_type": "Organization",
-   "name": "plugins",
-   "desc": "Cursor plugin specification and official plugins",
-   "lang": "TypeScript",
-   "stars": 17358,
-   "forks": 1914,
-   "watchers": 79,
-   "open_issues": 681,
-   "license": "",
-   "license_name": "",
-   "topics": [],
-   "created_at": "2026-01-23T01:57:42Z",
-   "pushed_at": "2026-11-19T06:52:20Z",
-   "updated_at": "2026-11-19T08:26:39Z",
-   "size_kb": 19147,
-   "archived": false,
-   "has_discussions": false,
-   "has_wiki": true,
-   "homepage": "",
-   "url": "https://github.com/cursor/plugins",
-   "default_branch": "main",
-   "readme": "# Cursor plugins\n\nOfficial Cursor plugins for popular developer tools, frameworks, and SaaS products. Each plugin is a standalone directory at the repository root with its own `.cursor-plugin/plugin.json` manifest.\n\n## Plugins\n\n| `name` | Plugin | Author | Category | `description` (from marketplace) |\n|:-------|:-------|:-------|:---------|:-------------------------------------|\n| `teaching` | [Teaching](teaching/) | Cursor | Utilities | Skill mapping, practice plans, and learning retrospectives. |\n| `continual-learning` | [Continual Learning](continual-learning/) | Eric Zakariasson | Developer Tools | Incremental transcript-driven memory updates for AGENTS.md using high-signal bullet points only. |\n| `cursor-team-kit` | [Cursor Team Kit](cursor-team-kit/) | Eric Zakariasson | Developer Tools | Internal team workflows for CI, code review, shipping, local automation, and verification. |\n| `thermos` | [Thermos](thermos/) | Cursor | Developer Tools | Thermo-nuclear branch review: deep security/correctness audits, harsh code-quality rubrics, parallel subagents, thermos orchestration, and optional merge-ready PR flows. |\n| `create-plugin` | [Create Plugin](create-plugin/) | Cursor | Developer Tools | Scaffold and validate new agent plugins. |\n| `ralph-loop` | [Ralph Loop](ralph-loop/) | Cursor | Developer Tools | Iterative self-referential AI loops using the Ralph Wiggum technique. |\n| `agent-compatibility` | [Agent Compatibility](agent-compatibility/) | Cursor | Developer Tools | CLI-backed repo compatibility scans plus agents that audit startup, validation, and docs against reality. |\n| `cli-for-agent` | [CLI for Agents](cli-for-agent/) | Eric Zakariasson | Developer Tools | Patterns for designing CLIs that coding agents can run reliably: flags, help with examples, pipelines, errors, idempotency, dry-run. |\n| `pr-review-canvas` | [PR Review Canvas](pr-review-canvas/) | Cursor | Developer Tools | Render PR diffs as review canvases grouped by importance. |\n| `docs-canvas` | [Docs Canvas](docs-canvas/) | Cursor | Developer Tools | Render documentation as a navigable canvas. |\n| `cursor-sdk` | [Cursor SDK](cursor-sdk/) | Cursor | Developer Tools | Build apps, scripts, and automations with the TypeScript SDK. |\n| `origin-apps` | [Origin Apps](origin-apps/) | Cursor | Developer Tools | Skills for building on the Cursor Origin API. Fetch the live spec first, then follow the Origin rules for credentials, scopes, webhooks, paging, and errors. Includes a skill that plans the port of an existing GitHub App. |\n| `orchestrate` | [Orchestrate](orchestrate/) | Cursor | Developer Tools | Fan large tasks out across parallel cloud agents with planners, workers, verifiers, and structured handoffs. |\n| `pstack` | [pstack](pstack/) | Lauren Tan | Developer Tools | if you want to go fast, go deep first. pstack helps you write less, but higher quality code. rigorous agent workflows you can parallelize with confidence. |\n| `dyl-stack` | [dyl-stack](dyl-stack/) | Dylan Gattey | Developer Tools | Dylan's agent style on top of pstack: root causes over symptom patches, The Algorithm before design, terse verified delivery, a PR review that fits in a paste, and Figma-to-UI with a visual judge. |\n| `advisor` | [Advisor](advisor/) | Cursor | Developer Tools | Consult a stronger model before major decisions, when stuck, and before declaring done. |\n| `grok-voice` | [Grok Voice](grok-voice/) | Eric Zakariasson | Developer Tools | Add Grok voice to an app: realtime speech-to-speech, speech-to-text dictation, text-to-speech read-aloud, and a log-driven fix loop for voice sessions. |\n| `gmail` | [Gmail](third_party/gmail/) | Cursor | Productivity | Search, read, draft, and manage email. |\n| `google-drive` | [Google Drive](third_party/google-drive/) | Cursor | Productivity | Search, read, create, and share files. |\n| `google-calendar` | [Google Calendar](third_party/google-calendar/) | Cursor | Productivity | Search events and schedule meetings. |\n| `google-docs` | [",
-   "gained": 354,
-   "since": "since_last",
-   "source": "trending",
-   "score": 56,
-   "detail": {
-    "lic": 8,
-    "easy": 20,
-    "zh": 0,
-    "demand": 20,
-    "deliver": 7,
+    "deliver": 10,
     "fresh": 1,
     "adj": 0
    },
-   "grade": "B",
-   "grade_word": "值得研究",
+   "grade": "A",
+   "grade_word": "改一改能卖",
    "form": "引擎库",
-   "velocity": 57.86,
+   "velocity": 129.14285714285714,
    "_gaps": [
     [
      "没有中文上手文档",
@@ -712,7 +294,343 @@
     "没有一键部署",
     "没有在线演示"
    ],
-   "risk": "没有 LICENSE 文件，严格说不能商用",
+   "risk": "",
+   "suspect": "",
+   "pitch": {
+    "gap_key": "没有中文上手文档",
+    "change": "把 README 翻成中文，配一张「三步跑通」流程图",
+    "buyer": "要用这套能力但搞不定环境的人",
+    "buyer_tag": "通用",
+    "deliver": "做成带界面的成品，按份卖（发网盘，附中文说明）",
+    "deliver_alt": "接单代跑：客户给需求，你出结果",
+    "hours": 4,
+    "gap_key_word": "缺中文上手文档"
+   },
+   "plain": "Enable Hermès Watch Faces on any Apple Watch devices",
+   "analy": {
+    "en": "Enable Hermès Watch Faces on any Apple Watch devices",
+    "zh": "在任何Apple Watch设备上启用爱马仕表盘",
+    "plain": "说白了，这是一堆已经写好的能力，但没有界面，得有人包一层壳才能给普通人用。它干的事是：在任何Apple Watch设备上启用爱马仕表盘",
+    "usage": [
+     "接到同类需求时拿它当底子，省掉搭骨架的两三天",
+     "包一层网页界面，做成给非技术人用的成品",
+     "集成进自己的项目，跳过从零写这一段"
+    ],
+    "how": [
+     "按 README 装依赖（这一步最容易卡住）",
+     "跑一个作者给的示例，确认能出结果",
+     "把自己的数据/需求换成示例里的输入"
+    ],
+    "gap": "把 README 翻成中文，配一张「三步跑通」流程图",
+    "buyer": "要用这套能力但搞不定环境的人",
+    "why": "要用这套能力但搞不定环境的人不是不会做，是懒得为这一步花两三天试错。你把「把 README 翻成中文，配一张「三步跑通」流程图」替他们做完，他们花的钱远少于自己折腾的时间。",
+    "self": "接到类似需求直接拿它当底子，省掉搭骨架的两三天；顺手把它当成自己的技术储备，下次报价敢往上抬。",
+    "pack": "包一层网页界面，录一段 3 分钟演示，按份卖；买家买的不是代码，是「不用装环境」。落地上就按这条走：做成带界面的成品，按份卖（发网盘，附中文说明）。",
+    "_auto": true,
+    "_src": "mt"
+   },
+   "_bucket": "",
+   "seen_times": 1,
+   "seen_first": "2026-11-12",
+   "seen_last": "2026-11-12"
+  },
+  {
+   "full_name": "cathrynlavery/diagram-design",
+   "owner": "cathrynlavery",
+   "owner_type": "User",
+   "name": "diagram-design",
+   "desc": "Editorial diagram design for Claude Code, Codex, GitHub Copilot, Cursor, Factory Droid, Qoder, and Pi. 45 diagram types. Self-contained HTML + SVG. No shadows. No Mermaid slop.",
+   "lang": "HTML",
+   "stars": 68873,
+   "forks": 4626,
+   "watchers": 161,
+   "open_issues": 41,
+   "license": "MIT",
+   "license_name": "MIT License",
+   "topics": [
+    "agent-skills",
+    "claude-code",
+    "codex",
+    "data-visualization",
+    "diagrams",
+    "drawio",
+    "mermaid",
+    "svg"
+   ],
+   "created_at": "2026-04-16T18:01:16Z",
+   "pushed_at": "2026-11-19T00:17:05Z",
+   "updated_at": "2026-11-20T08:06:29Z",
+   "size_kb": 39086,
+   "archived": false,
+   "has_discussions": false,
+   "has_wiki": true,
+   "homepage": "https://diagramdesign.dev",
+   "url": "https://github.com/cathrynlavery/diagram-design",
+   "default_branch": "main",
+   "readme": "<div align=\"center\">\n\n<h1>\n  <picture>\n    <source media=\"(prefers-color-scheme: dark)\" srcset=\"docs/hero/hero-dark.webp\">\n    <img alt=\"Diagram Design. Editorial diagrams your designer won't hate.\" src=\"docs/hero/hero-light.webp\">\n  </picture>\n</h1>\n\n**An agent skill that draws diagrams as one self-contained HTML + SVG file, in your brand.<br>51 diagram types. No shadows. No Mermaid slop.**\n\n[![GitHub stars](https://img.shields.io/github/stars/cathrynlavery/diagram-design?style=flat-square&color=bf4520)](https://github.com/cathrynlavery/diagram-design/stargazers)\n[![skills.sh installs](https://skills.sh/b/cathrynlavery/diagram-design?style=flat-square)](https://skills.sh/cathrynlavery/diagram-design/diagram-design)\n[![CI](https://img.shields.io/github/actions/workflow/status/cathrynlavery/diagram-design/ci.yml?branch=main&style=flat-square&label=CI)](https://github.com/cathrynlavery/diagram-design/actions/workflows/ci.yml)\n[![Plugin version](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2Fcathrynlavery%2Fdiagram-design%2Fmain%2F.claude-plugin%2Fplugin.json&query=%24.version&label=version&style=flat-square&color=555555)](CHANGELOG.md)\n[![MIT license](https://img.shields.io/badge/license-MIT-555555?style=flat-square)](LICENSE)\n\n<a href=\"https://trendshift.io/repositories/26141\" target=\"_blank\" rel=\"noopener noreferrer\"><img src=\"https://trendshift.io/api/badge/repositories/26141\" alt=\"cathrynlavery/diagram-design on Trendshift\" width=\"250\" height=\"55\"/></a>\n\n**[Website](https://diagramdesign.dev) · [Gallery](https://cathrynlavery.github.io/diagram-design/) · [Changelog](CHANGELOG.md)**\n\n[Install](#install) · [What it makes](#what-it-makes) · [Quickstart](#quickstart) · [Match your brand](#onboarding-make-it-look-like-your-brand) · [Import](#import-from-drawio-mermaid-excalidraw-or-plantuml) · [Export](#export-to-png--svg) · [Contributing](#contributing)\n\n<code>npx skills add cathrynlavery/diagram-design</code>\n\n<br><br>\n\n<picture>\n  <source media=\"(prefers-color-scheme: dark)\" srcset=\"docs/hero/demo.gif\">\n  <source media=\"(prefers-color-scheme: light)\" srcset=\"docs/hero/demo-light.gif\">\n  <img src=\"docs/hero/demo.gif\" alt=\"A prompt typed into an agent session becomes a finished architecture diagram, then a plain first-pass diagram is redrawn with the skill, then the gallery of diagram types\" width=\"900\">\n</picture>\n\n</div>\n\n<br>\n\nAsk your agent in plain words:\n\n- *\"Make me an architecture diagram of my app: frontend, backend, database, Redis cache.\"*\n- *\"I need a quadrant showing Q2 projects by impact vs effort.\"*\n- *\"Give me a sequence of a bearer call with token refresh on 401.\"*\n- *\"Onboard diagram-design to https://yoursite.com\"* (pulls your palette and fonts so every diagram after this one matches your site)\n\nThe agent picks the type, states its plan, and writes one `.html` file you can open by double-clicking.\n\n---\n\n## Install\n\nWorks with any host that reads Agent Skills, including Cursor, Claude Code, Codex, Qoder, GitHub Copilot, Gemini CLI, Cline, Windsurf and Amp:\n\n```bash\nnpx skills add cathrynlavery/diagram-design\n```\n\nIn Claude Code, the plugin marketplace gets you updates and the slash commands:\n\n```text\n/plugin marketplace add cathrynlavery/diagram-design\n/plugin install diagram-design@diagram-design\n```\n\nOfficial builds come only from this repository. LittleMight, Cathryn Lavery's company, publishes the plugin directory listings; a listing under any other name is an unofficial copy. [PRIVACY.md](PRIVACY.md) lists what the skill sends over the network.\n\n<details>\n<summary><b>Claude Code</b>: turn on auto-update</summary>\n\nAfter installing, run `/plugin`, open **Marketplaces**, select **diagram-design**, and choose **Enable auto-update**. Claude Code disables auto-update by default for third-party marketplaces; after this toggle, it refreshes the marketplace and installed plugin in the background after startup. Run `/reload-plugins` when prompted, or let the next session loa",
+   "gained": 271,
+   "since": "daily",
+   "source": "trending",
+   "score": 70,
+   "detail": {
+    "lic": 25,
+    "easy": 20,
+    "zh": 0,
+    "demand": 12,
+    "deliver": 4,
+    "fresh": 1,
+    "adj": 8
+   },
+   "grade": "A",
+   "grade_word": "改一改能卖",
+   "form": "Agent技能",
+   "velocity": 271.0,
+   "_gaps": [
+    [
+     "没有中文上手文档",
+     "没有中文上手文档",
+     "把 README 翻成中文，配一张三步跑通图"
+    ],
+    [
+     "没有中文界面",
+     "没有中文界面",
+     "把界面文案和按钮全翻成中文，截一套中文版演示图"
+    ],
+    [
+     "没有一键部署",
+     "没有一键部署",
+     "补一个 Dockerfile + compose，别人一条命令跑起来"
+    ]
+   ],
+   "gaps_short": [
+    "没有中文上手文档",
+    "没有中文界面",
+    "没有一键部署"
+   ],
+   "risk": "体量太大，改源码成本高，建议只做外围服务",
+   "suspect": "",
+   "pitch": {
+    "gap_key": "只有英文指令",
+    "change": "改写成中文指令版，加 3 个真实场景的开场白",
+    "buyer": "接单的设计师和电商美工",
+    "buyer_tag": "设计",
+    "deliver": "打包成技能文件，配使用教程一起卖",
+    "deliver_alt": "做成付费专栏的一章，当引流钩子",
+    "hours": 1,
+    "gap_key_word": "缺中文上手文档"
+   },
+   "plain": "Editorial diagram design for Claude Code, Codex, GitHub Copilot, Cursor, Factory Droid, Qoder, and Pi. 45 diagram types. Self-contained HTML + SVG. No shadows. No Mermaid slop.",
+   "analy": {
+    "en": "Editorial diagram design for Claude Code, Codex, GitHub Copilot, Cursor, Factory Droid, Qoder, and Pi. 45 diagram types. Self-contained HTML + SVG. No shadows. No Mermaid slop.",
+    "zh": "适用于 Claude Code、Codex、GitHub Copilot、Cursor、Factory Droid、Qoder 和 Pi 的编辑图表设计。45 种图表类型。独立的 HTML + SVG。无阴影。无Mermaid杂乱。",
+    "plain": "说白了，这是一份写给 AI 的操作手册，装进 AI 工具后它就知道按你的规矩干活。它干的事是：适用于 Claude Code、Codex、GitHub Copilot、Cursor、Factory Droid、Qoder 和 Pi 的编辑图表设计。45 种图表类型。独立的 HTML + SVG。无阴影。无Mermaid杂乱。",
+    "usage": [
+     "接单时用它出初稿，客户改的是稿子不是空白页",
+     "装进常用的 AI 工具，让它按行规干活，不用每次重写要求",
+     "改造成中文版，卖给不会写提示词的人"
+    ],
+    "how": [
+     "把技能文件放进 AI 工具的技能目录",
+     "在对话里说一句触发词",
+     "按它给的步骤走，不满意就补一句要求"
+    ],
+    "gap": "改写成中文指令版，加 3 个真实场景的开场白",
+    "buyer": "接单的设计师和电商美工",
+    "why": "接单的设计师和电商美工不是不会做，是懒得为这一步花两三天试错。你把「改写成中文指令版，加 3 个真实场景的开场白」替他们做完，他们花的钱远少于自己折腾的时间。",
+    "self": "装进自己常用的 AI 工具里，写东西、做分析时不用每次从头描述要求，输出的东西还稳定。",
+    "pack": "整理成可直接安装的技能包 + 使用截图，配一节教程一起卖；也可以做成付费专栏的一章当引流钩子。落地上就按这条走：打包成技能文件，配使用教程一起卖。",
+    "_auto": true,
+    "_src": "mt"
+   },
+   "_bucket": "",
+   "seen_times": 0,
+   "seen_first": "",
+   "seen_last": ""
+  },
+  {
+   "full_name": "mjmirza/app-store-compliance",
+   "owner": "mjmirza",
+   "owner_type": "User",
+   "name": "app-store-compliance",
+   "desc": "Avoid common App Store and Google Play rejections. Open playbook and pre-submission guard with 117 documented rejection patterns and fixes, privacy manifest and Data safety checks, 95 tracked deadlines (EU AI Act, DSA, COPPA, age laws), and a skill for AI coding agents.",
+   "lang": "Shell",
+   "stars": 2190,
+   "forks": 145,
+   "watchers": 5,
+   "open_issues": 32,
+   "license": "NOASSERTION",
+   "license_name": "Other",
+   "topics": [
+    "accessibility",
+    "ai-agents",
+    "android",
+    "app-review-guidelines",
+    "app-store",
+    "app-store-connect",
+    "app-store-rejection",
+    "app-store-review",
+    "claude-code",
+    "coppa",
+    "data-safety",
+    "eu-ai-act",
+    "gdpr",
+    "google-play",
+    "google-play-policy",
+    "ios",
+    "mobile-compliance",
+    "play-console",
+    "pre-submission-checklist",
+    "privacy-manifest"
+   ],
+   "created_at": "2026-06-06T11:29:45Z",
+   "pushed_at": "2026-11-19T19:49:49Z",
+   "updated_at": "2026-11-20T08:08:27Z",
+   "size_kb": 2157,
+   "archived": false,
+   "has_discussions": true,
+   "has_wiki": false,
+   "homepage": "https://mjmirza.github.io/app-store-compliance/",
+   "url": "https://github.com/mjmirza/app-store-compliance",
+   "default_branch": "main",
+   "readme": "<div align=\"center\">\n\n<img src=\"assets/apple.png\" alt=\"Apple\" height=\"64\" />&nbsp;&nbsp;&nbsp;<img src=\"assets/android.png\" alt=\"Android\" height=\"64\" />\n\n# App Store Compliance Playbook\n\nStop getting your iOS and Android apps rejected. The enterprise reference and automated guard that turns App Store and Google Play rejection into a designed out failure mode.\n\nRead it as a website at [mjmirza.github.io/app-store-compliance](https://mjmirza.github.io/app-store-compliance/).\n\n[![Apple App Store](https://img.shields.io/badge/Apple_App_Store-000000?logo=apple&logoColor=white)](https://developer.apple.com/app-store/review/guidelines/)\n[![Google Play](https://img.shields.io/badge/Google_Play-414141?logo=googleplay&logoColor=white)](https://play.google/developer-content-policy/)\n[![Claude Code](https://img.shields.io/badge/Claude_Code-ready-000000?logo=anthropic&logoColor=white)](#how-you-actually-use-this)\n[![OpenRoots ORA 2.3](https://openroots.org/badge/ora.svg)](https://openroots.org/licenses/ora/2.3)\n[![CI](https://img.shields.io/github/actions/workflow/status/mjmirza/app-store-compliance/ci.yml?branch=main&label=CI)](https://github.com/mjmirza/app-store-compliance/actions)\n[![PRs welcome](https://img.shields.io/badge/PRs-welcome-2ea44f)](.github/CONTRIBUTING.md)\n\n[![Stars](https://img.shields.io/github/stars/mjmirza/app-store-compliance?style=social)](https://github.com/mjmirza/app-store-compliance/stargazers)\n[![Forks](https://img.shields.io/github/forks/mjmirza/app-store-compliance?style=social)](https://github.com/mjmirza/app-store-compliance/fork)\n[![Follow mjmirza](https://img.shields.io/github/followers/mjmirza?label=Follow&style=social)](https://github.com/mjmirza)\n\n**If this saves you even one rejection, leave a star, fork it, and follow along. That is the whole ask.**\n\n[Star this repo](https://github.com/mjmirza/app-store-compliance) &nbsp;|&nbsp; [Fork it](https://github.com/mjmirza/app-store-compliance/fork) &nbsp;|&nbsp; [Follow on GitHub](https://github.com/mjmirza) &nbsp;|&nbsp; [Follow on X](https://twitter.com/MirzaJhanzaib) &nbsp;|&nbsp; [next8n.com](https://next8n.com)\n\n</div>\n\n## Start here\n\nPick one row. The time shown is for that first step.\n\n| You are | Do this first | Time |\n|---|---|---|\n| About to submit, and you can open a terminal | Run the two commands below | 2 minutes |\n| Already rejected | Open [the appeal playbook](docs/MISTAKE-PATTERNS.md#the-appeal-playbook) | 10 minutes |\n| Not a developer | Open [the checklist](docs/PRE-SUBMISSION-CHECKLIST.md) and do its first two checks | 5 minutes |\n| Using an AI coding tool (Claude Code, Codex, Gemini CLI, GitHub Copilot, Cursor, Grok, Qwen, Kimi and more), and want this on every submit | Go to [the install](#install-it-into-your-ai-coding-tool) | 1 minute |\n\nThe two commands. Needs git and bash. The first downloads this playbook. The second scans your app. Nothing is installed and nothing in your app is changed.\n\n```\ngit clone https://github.com/mjmirza/app-store-compliance ~/repositories/app-store-compliance\nbash ~/repositories/app-store-compliance/agent-os/hooks/app-store-compliance-guard.sh \"/path/to/your/app\"\n```\n\nReplace only `/path/to/your/app`, with the folder that holds your Xcode project or your Android app. Keep the quotes, they keep a folder name with a space in it whole. To get the path without typing it, drag the folder from Finder or your file manager into the terminal window. A small project scans in about a second, a large one can take up to a minute, and the guard prints the time it took. Findings print first, critical ones on top, each with the file and line that triggered it when there is one. The last lines tell you where you stand.\n\n| Last line starts with | It means | Do next |\n|---|---|---|\n| `BLOCKED.` | A critical rejection risk was found | Fix each `[CRITICAL]` line using the `fix.` line under it, then run the same command again |\n| `CLEAR.` | No critical risk in your code | Do the account and listing checks in [the checklist](d",
+   "gained": 377,
+   "since": "daily",
+   "source": "trending",
+   "score": 69,
+   "detail": {
+    "lic": 8,
+    "easy": 20,
+    "zh": 0,
+    "demand": 20,
+    "deliver": 10,
+    "fresh": 3,
+    "adj": 8
+   },
+   "grade": "A",
+   "grade_word": "改一改能卖",
+   "form": "Agent技能",
+   "velocity": 377.0,
+   "_gaps": [
+    [
+     "没有中文上手文档",
+     "没有中文上手文档",
+     "把 README 翻成中文，配一张三步跑通图"
+    ],
+    [
+     "没有一键部署",
+     "没有一键部署",
+     "补一个 Dockerfile + compose，别人一条命令跑起来"
+    ]
+   ],
+   "gaps_short": [
+    "没有中文上手文档",
+    "没有一键部署"
+   ],
+   "risk": "许可证不明，动手前去 README 确认一遍",
+   "suspect": "",
+   "pitch": {
+    "gap_key": "没有打包成技能",
+    "change": "整理成可直接安装的技能包，附使用截图",
+    "buyer": "要整理归档资料的人",
+    "buyer_tag": "文档",
+    "deliver": "做成付费专栏的一章，当引流钩子",
+    "deliver_alt": "接企业内训，教团队把这套装上",
+    "hours": 1,
+    "gap_key_word": "缺中文上手文档"
+   },
+   "plain": "Avoid common App Store and Google Play rejections. Open playbook and pre-submission guard with 117 documented rejection patterns and fixes, privacy manifest and Data safety checks, 95 tracked deadlines (EU AI Act, DSA, COPPA, age laws), and a skill for AI coding agents.",
+   "analy": {
+    "en": "Avoid common App Store and Google Play rejections. Open playbook and pre-submission guard with 117 documented rejection patterns and fixes, privacy manifest and Data safety checks, 95 tracked deadlines (EU AI Act, DSA, COPPA, age laws), and a skill for AI coding agents.",
+    "zh": "避免常见的 App Store 和 Google Play 拒绝情况。开放式手册和提交前防护，包含 117 种有案可查的被拒模式和解决方案、隐私清单和数据安全检查、95 个受跟踪的截止日期（欧盟《人工智能法案》、DSA、COPPA、年龄法）以及一项适用于人工智能编码代理的技能。",
+    "plain": "说白了，这是一份写给 AI 的操作手册，装进 AI 工具后它就知道按你的规矩干活。它干的事是：避免常见的 App Store 和 Google Play 拒绝情况。开放式手册和提交前防护，包含 117 种有案可查的被拒模式和解决方案、隐私清单和数据安全检查、95 个受跟踪的截止日期（欧盟《人工智能法案》、DSA、COPPA、年龄法）以及一项适用于人工智能编码代理的技能。",
+    "usage": [
+     "把散落的资料整理成结构化文档",
+     "装进常用的 AI 工具，让它按行规干活，不用每次重写要求",
+     "改造成中文版，卖给不会写提示词的人"
+    ],
+    "how": [
+     "把技能文件放进 AI 工具的技能目录",
+     "在对话里说一句触发词",
+     "按它给的步骤走，不满意就补一句要求"
+    ],
+    "gap": "整理成可直接安装的技能包，附使用截图",
+    "buyer": "要整理归档资料的人",
+    "why": "要整理归档资料的人不是不会做，是懒得为这一步花两三天试错。你把「整理成可直接安装的技能包，附使用截图」替他们做完，他们花的钱远少于自己折腾的时间。",
+    "self": "装进自己常用的 AI 工具里，写东西、做分析时不用每次从头描述要求，输出的东西还稳定。",
+    "pack": "整理成可直接安装的技能包 + 使用截图，配一节教程一起卖；也可以做成付费专栏的一章当引流钩子。落地上就按这条走：做成付费专栏的一章，当引流钩子。",
+    "_auto": true,
+    "_src": "mt"
+   },
+   "_bucket": "",
+   "seen_times": 0,
+   "seen_first": "",
+   "seen_last": ""
+  },
+  {
+   "full_name": "GoogleChrome/modern-web-guidance-src",
+   "owner": "GoogleChrome",
+   "owner_type": "Organization",
+   "name": "modern-web-guidance-src",
+   "desc": "Keep your coding agent up to date with the latest web best practices",
+   "lang": "TypeScript",
+   "stars": 9312,
+   "forks": 763,
+   "watchers": 57,
+   "open_issues": 391,
+   "license": "Apache-2.0",
+   "license_name": "Apache License 2.0",
+   "topics": [],
+   "created_at": "2026-01-27T20:22:24Z",
+   "pushed_at": "2026-11-20T08:02:44Z",
+   "updated_at": "2026-11-20T08:06:27Z",
+   "size_kb": 172828,
+   "archived": false,
+   "has_discussions": false,
+   "has_wiki": false,
+   "homepage": "https://goo.gle/modern-web-guidance",
+   "url": "https://github.com/GoogleChrome/modern-web-guidance-src",
+   "default_branch": "main",
+   "readme": "# <img src=\"./.github/img/modern-web-guidance.svg\" alt=\"Modern Web Guidance\" width=\"30\" height=\"30\"> Modern Web Guidance (Source)\n\nThis repo is the source repository for [GoogleChrome/modern-web-guidance](https://github.com/GoogleChrome/modern-web-guidance) and includes the code and documentation for authoring, calibrating, and evaluating its contents.\n\n[**Modern Web Guidance**](https://developer.chrome.com/docs/modern-web-guidance) is a set of skills that embed web platform expertise, best practices, and browser compatibility data directly into your coding agents. It helps to steer your coding agents away from legacy patterns, and instead toward solutions that harness the power and capabilities of the modern web platform.\n\nSee [CONTRIBUTING.md](./CONTRIBUTING.md) and [GOVERNANCE.md](./GOVERNANCE.md) for how we work on the project and orientation of the codebase.\n\n---\n\n*Stewarded by the Google Chrome, Microsoft Edge, Mozilla Firefox, and MDN teams, alongside the web development community.*\n\n[Documentation](https://developer.chrome.com/docs/modern-web-guidance) · [Eval Dashboard](https://googlechrome.github.io/modern-web-guidance-src/) · [Source Code](https://github.com/GoogleChrome/modern-web-guidance-src) · [Report an Issue](https://github.com/GoogleChrome/modern-web-guidance-src/issues)\n\n## <img src=\"https://github.com/GoogleChrome/modern-web-guidance/raw/main/.github/img/terminal.svg\" width=\"24\" height=\"24\" style=\"vertical-align: middle; margin-right: 4px;\"> Quickstart\n\n```shell\nnpx modern-web-guidance@latest install\n```\n\nThis command runs an interactive wizard to install Modern Web Guidance. See [Alternative Installation Methods](#-alternative-installation-methods) below. Requires Node.js 22 or later.\n\n#### Try it out (without installing)\n\n```shell\n# Search for relevant guides\nnpx modern-web-guidance@latest search \"animate a dialog modal backdrop\"\n\n# Retrieve a guide by ID\nnpx modern-web-guidance@latest retrieve \"animate-to-from-top-layer\"\n\n# Scan a codebase for legacy patterns to modernize\nnpx modern-web-guidance@latest legacy-scan .\n```\n\n## <img src=\"https://github.com/GoogleChrome/modern-web-guidance/raw/main/.github/img/lightbulb.svg\" width=\"24\" height=\"24\" style=\"vertical-align: middle; margin-right: 4px;\"> Why?\n\nCoding agents often default to older patterns because LLM training data contains vast amounts of legacy code. This often leads them to generate bloated JavaScript for tasks that now have native, high-performance web platform solutions.\n\nEven if a model knows an API exists, it often lacks the density of real-world, modern implementation patterns required for production-ready code.\n\n**Modern Web Guidance bridges this gap.** Our skill's CLI returns targeted, expert-curated guidelines directly into your agent's context window, focusing on:\n* **Modern Browser APIs**: Helping models correctly structure APIs they frequently misuse.\n* **Performance & Accessibility**: Preferring platform-level APIs that can be optimized by the browser and include built-in accessibility affordances.\n* **Responsible Fallbacks**: Guiding models to use sensible, lightweight fallbacks instead of heavy polyfills or legacy libraries.\n\n## <img src=\"https://github.com/GoogleChrome/modern-web-guidance/raw/main/.github/img/package.svg\" width=\"24\" height=\"24\" style=\"vertical-align: middle; margin-right: 4px;\"> What's Included?\n\nWe cover the past several years of the web platform's new features, all the way up to the cutting edge. The guides are **designed to be token-efficient**; we run evals enabling us to prune lowest-common-denominator content that models already know.\n\n### Core Disciplines\n\n<table width=\"100%\" style=\"border-collapse: collapse; border: none;\">\n  <tr style=\"border: none;\">\n    <td width=\"33%\" valign=\"top\" style=\"border: none; padding: 6px;\">\n      <h4>🎨 User Experience</h4>\n      <p style=\"font-size: 0.9em; line-height: 1.4;\">Smooth visual states (View Transitions, entry/exit animations, parallax scroll, CSS <code>scrollbar-col",
+   "gained": 6858,
+   "since": "weekly",
+   "source": "trending",
+   "score": 68,
+   "detail": {
+    "lic": 25,
+    "easy": 20,
+    "zh": 0,
+    "demand": 20,
+    "deliver": 2,
+    "fresh": 1,
+    "adj": 0
+   },
+   "grade": "A",
+   "grade_word": "改一改能卖",
+   "form": "引擎库",
+   "velocity": 979.7142857142857,
+   "_gaps": [
+    [
+     "没有中文上手文档",
+     "没有中文上手文档",
+     "把 README 翻成中文，配一张三步跑通图"
+    ],
+    [
+     "没有中文界面",
+     "没有中文界面",
+     "把界面文案和按钮全翻成中文，截一套中文版演示图"
+    ],
+    [
+     "没有一键部署",
+     "没有一键部署",
+     "补一个 Dockerfile + compose，别人一条命令跑起来"
+    ]
+   ],
+   "gaps_short": [
+    "没有中文上手文档",
+    "没有中文界面",
+    "没有一键部署"
+   ],
+   "risk": "",
    "suspect": "",
    "pitch": {
     "gap_key": "只有代码没有界面",
@@ -721,14 +639,14 @@
     "buyer_tag": "通用",
     "deliver": "接单代跑：客户给需求，你出结果",
     "deliver_alt": "做成中文教程 + 成品包，走知识付费",
-    "hours": 3,
+    "hours": 7,
     "gap_key_word": "缺中文上手文档"
    },
-   "plain": "Cursor plugin specification and official plugins",
+   "plain": "Keep your coding agent up to date with the latest web best practices",
    "analy": {
-    "en": "Cursor plugin specification and official plugins",
-    "zh": "光标插件规范和官方插件",
-    "plain": "说白了，这是一堆已经写好的能力，但没有界面，得有人包一层壳才能给普通人用。它干的事是：光标插件规范和官方插件",
+    "en": "Keep your coding agent up to date with the latest web best practices",
+    "zh": "让您的编码代理始终掌握最新的网络最佳实践",
+    "plain": "说白了，这是一堆已经写好的能力，但没有界面，得有人包一层壳才能给普通人用。它干的事是：让您的编码代理始终掌握最新的网络最佳实践",
     "usage": [
      "接到同类需求时拿它当底子，省掉搭骨架的两三天",
      "包一层网页界面，做成给非技术人用的成品",
@@ -748,54 +666,52 @@
     "_src": "mt"
    },
    "_bucket": "",
-   "seen_times": 0,
-   "seen_first": "",
-   "seen_last": ""
+   "seen_times": 1,
+   "seen_first": "2026-11-13",
+   "seen_last": "2026-11-13"
   },
   {
-   "full_name": "jquery/jquery",
-   "owner": "jquery",
-   "owner_type": "Organization",
-   "name": "jquery",
-   "desc": "jQuery JavaScript Library",
+   "full_name": "heydamir/unslop",
+   "owner": "heydamir",
+   "owner_type": "User",
+   "name": "unslop",
+   "desc": "A Claude skill that turns vibecoded, AI-looking UI into a designed interface",
    "lang": "JavaScript",
-   "stars": 60077,
-   "forks": 20714,
-   "watchers": 3114,
-   "open_issues": 95,
-   "license": "MIT",
-   "license_name": "MIT License",
-   "topics": [
-    "jquery"
-   ],
-   "created_at": "2009-04-03T15:20:14Z",
-   "pushed_at": "2026-11-17T19:00:49Z",
-   "updated_at": "2026-11-19T08:16:39Z",
-   "size_kb": 36835,
+   "stars": 18842,
+   "forks": 1130,
+   "watchers": 23,
+   "open_issues": 6,
+   "license": "CC-BY-4.0",
+   "license_name": "Creative Commons Attribution 4.0 International",
+   "topics": [],
+   "created_at": "2026-10-29T15:41:21Z",
+   "pushed_at": "2026-11-15T00:55:20Z",
+   "updated_at": "2026-11-20T08:06:41Z",
+   "size_kb": 2340,
    "archived": false,
-   "has_discussions": true,
-   "has_wiki": true,
-   "homepage": "https://jquery.com",
-   "url": "https://github.com/jquery/jquery",
+   "has_discussions": false,
+   "has_wiki": false,
+   "homepage": "",
+   "url": "https://github.com/heydamir/unslop",
    "default_branch": "main",
-   "readme": "# [jQuery](https://jquery.com/) — New Wave JavaScript\n\nMeetings are currently held on the [matrix.org platform](https://matrix.to/#/#jquery_meeting:gitter.im).\n\nMeeting minutes can be found at [meetings.jquery.org](https://meetings.jquery.org/category/core/).\n\nThe latest version of jQuery is available at [https://jquery.com/download/](https://jquery.com/download/).\n\n## Version support\n\n| Version | Branch     | Support       |\n| ------- | ---------- | ------------- |\n| 4.x     | main       | Full          |\n| 3.x     | 3.x-stable | Critical-only |\n| 2.x     | 2.x-stable | None          |\n| 1.x     | 1.x-stable | None          |\n\n[jQuery 4.0.0 has been released!](https://blog.jquery.com/2026/01/17/jquery-4-0-0/)\n\nThe 3.x branch will now only receive critical updates. The 2.x and 1.x branches are no longer supported. We recommend that all users upgrade to the latest version of jQuery to ensure that they have the best performance, security, and features.\n\nCommercial support for previous versions is available from [HeroDevs](https://www.herodevs.com/support/jquery-nes?utm_source=jQuery&utm_medium=link&utm_campaign=eol_support_jQuery) or [TuxCare](https://tuxcare.com/lp/click-jquery-support/).\n\nLearn more about our [version support](https://jquery.com/support/).\n\n## Contribution Guides\n\nIn the spirit of open source software development, jQuery always encourages community code contribution. To help you get started and before you jump into writing code, be sure to read these important contribution guidelines thoroughly:\n\n1. [Getting Involved](https://contribute.jquery.org/)\n2. [Core Style Guide](https://contribute.jquery.org/style-guide/js/)\n3. [Writing Code for jQuery Projects](https://contribute.jquery.org/code/)\n\n### References to issues/PRs\n\nGitHub issues/PRs are usually referenced via `gh-NUMBER`, where `NUMBER` is the numerical ID of the issue/PR. You can find such an issue/PR under `https://github.com/jquery/jquery/issues/NUMBER`.\n\njQuery has used a different bug tracker - based on Trac - in the past, available under [bugs.jquery.com](https://bugs.jquery.com/). It is being kept in read only mode so that referring to past discussions is possible. When jQuery source references one of those issues, it uses the pattern `trac-NUMBER`, where `NUMBER` is the numerical ID of the issue. You can find such an issue under `https://bugs.jquery.com/ticket/NUMBER`.\n\n## Environments in which to use jQuery\n\n- [Browser support](https://jquery.com/browser-support/)\n- jQuery also supports Node, browser extensions, and other non-browser environments.\n\n## What you need to build your own jQuery\n\nTo build jQuery, you need to have the latest Node.js/npm and git 1.7 or later. Earlier versions might work, but are not supported.\n\nFor Windows, you have to download and install [git](https://git-scm.com/downloads) and [Node.js](https://nodejs.org/en/download/).\n\nmacOS users should install [Homebrew](https://brew.sh/). Once Homebrew is installed, run `brew install git` to install git,\nand `brew install node` to install Node.js.\n\nLinux/BSD users should use their appropriate package managers to install git and Node.js, or build from source\nif you swing that way. Easy-peasy.\n\n## How to build your own jQuery\n\nFirst, [clone the jQuery git repo](https://help.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository).\n\nThen, enter the jquery directory, install dependencies, and run the build script:\n\n```bash\ncd jquery\nnpm install\nnpm run build\n```\n\nThe built version of jQuery will be placed in the `dist/` directory, along with a minified copy and associated map file.\n\n## Build all jQuery release files\n\nTo build all variants of jQuery, run the following command:\n\n```bash\nnpm run build:all\n```\n\nThis will create all of the variants that jQuery includes in a release, including `jquery.js`, `jquery.slim.js`, `jquery.module.js`, and `jquery.slim.module.js` along their associated minified files and sourcemaps.\n\n`jquery.module.js` and `jquery.sli",
-   "gained": 266,
-   "since": "daily",
-   "source": "trending",
-   "score": 56,
+   "readme": "# unslop\n\nCreated by Damir Sokolovsky ([@heydamir](https://x.com/heydamir)), who started the [Unslopping series](https://x.com/heydamir/status/2115063463063998736) on X.\n\n![A vibecoded dashboard unslopping itself, frame by frame](skills/unslop/references/refs/story-dashboard-frames.webp)\n\nunslop is a skill for Claude Code, Codex and Google Antigravity that turns vibecoded, AI-looking UI into a designed interface with its own character. It finds the slop first, the purple gradients, glows, emoji labels, shouty copy and uneven spacing, then sets a direction from your product and fixes the screen pass by pass like a designer doing a redline review. It works in whatever your screen is built with, like Next.js, React, Vue, Svelte, Tailwind or plain HTML and CSS, on dashboards, apps and landing pages, and even on a live site when all you have is a link.\n\n## Install\n\nFor Claude Code, install it as a plugin. Run this in a terminal to get it in every project:\n\n```bash\nclaude plugin install unslop --marketplace heydamir/unslop\n```\n\nOn an older Claude Code without `--marketplace`, the same in two steps:\n\n```bash\nclaude plugin marketplace add heydamir/unslop\nclaude plugin install unslop@heydamir\n```\n\nTo get it in a single project only, run the install from that project's root folder, the one you start Claude Code in, and add `--scope local`. To turn it on for everyone who works in the project, add `--scope project` instead and commit `.claude/settings.json`. Each teammate then runs this once in their own copy of the project:\n\n```bash\nclaude plugin marketplace add heydamir/unslop\nclaude plugin install unslop@heydamir --scope project\n```\n\nThen start a new Claude Code session, or run `/reload-plugins` in one that is already open.\n\nTo update, run `claude plugin update unslop@heydamir`, or turn on auto-update for the heydamir marketplace under Marketplaces in `/plugin`.\n\nIf you copied unslop into `~/.claude/skills/` or a project's `.claude/skills/` before, delete that copy, or `/unslop` keeps running it instead of the plugin.\n\nFor Codex, ask it to install the skill straight from this repo.\n\n```\n$skill-installer install https://github.com/heydamir/unslop/tree/main/skills/unslop\n```\n\nOr copy it by hand into `~/.agents/skills/`, or into `.agents/skills/` inside a single project.\n\n```bash\ngit clone https://github.com/heydamir/unslop\nmkdir -p ~/.agents/skills && cp -r unslop/skills/unslop ~/.agents/skills/\n```\n\nFor Google Antigravity, copy the skill into your skills folder.\n\n```bash\ngit clone https://github.com/heydamir/unslop\nmkdir -p ~/.gemini/config/skills && cp -r unslop/skills/unslop ~/.gemini/config/skills/\n```\n\nFor a single project, copy it into `.agents/skills/` inside that project instead.\n\nTo snapshot a live site or create a story video, install Playwright and its Chromium browser from the project directory where you run the skill:\n\n```bash\nnpm install -D playwright\nnpx playwright install chromium\n```\n\nStory videos also require ffmpeg installed and available on your PATH.\n\n## Use\n\nIn Claude Code, type `/unslop` with what you want, or `/unslop:unslop` if another skill already has that name. In Codex, type `$unslop` the same way. Or just ask in your own words and the agent picks the skill up by itself.\n\n```\n/unslop this dashboard\n/unslop the hero of https://example.com\n/unslop my landing page and make the story video so I can post it\n```\n\nIt audits the screen and proposes a direction before it edits anything, so you can steer it early. If the screen is already good, it tells you so and suggests a few small refinements instead of redesigning it.\n\n## What it does\n\n- **Audit.** Lists every sign of slop with where it lives.\n- **Direction.** Character, world, the one or two moments that carry the color, and a signature detail, all taken from your product.\n- **Passes.** Spacing, color, icons, copy, type, layout, details, visuals and motion, in that order.\n- **Visuals.** Shows your product instead of a glossy blob. When a hero needs a scene or an ",
+   "gained": 0,
+   "since": "created<30d",
+   "source": "search_new",
+   "score": 68,
    "detail": {
-    "lic": 25,
+    "lic": 8,
     "easy": 20,
     "zh": 0,
-    "demand": 14,
-    "deliver": 4,
-    "fresh": 1,
-    "adj": -8
+    "demand": 12,
+    "deliver": 10,
+    "fresh": 10,
+    "adj": 8
    },
-   "grade": "B",
-   "grade_word": "值得研究",
-   "form": "web应用",
-   "velocity": 266.0,
+   "grade": "A",
+   "grade_word": "改一改能卖",
+   "form": "Agent技能",
+   "velocity": 897.2380952380952,
    "_gaps": [
     [
      "没有中文上手文档",
@@ -812,23 +728,127 @@
     "没有中文上手文档",
     "没有一键部署"
    ],
-   "risk": "大厂项目，路线不由你定，只能做外围（部署/中文化/模板）",
-   "suspect": "",
+   "risk": "",
+   "suspect": "星速可疑：21 天涨到 18,842 星（日均 897），先观察一周看有没有真实用户再动手",
    "pitch": {
-    "gap_key": "出东西了带不走",
-    "change": "加一个一键导出（图/PDF/Excel），让人能直接拿去用",
-    "buyer": "要上线个小站但没预算请开发的人",
-    "buyer_tag": "通用",
-    "deliver": "换成客户自己的数据跑一遍，按场景收定制费",
-    "deliver_alt": "换成客户自己的数据跑一遍，按场景收定制费",
-    "hours": 1,
+    "gap_key": "没有效果对比",
+    "change": "做前后对比案例，让人一眼看出差别",
+    "buyer": "接单的设计师和电商美工",
+    "buyer_tag": "设计",
+    "deliver": "接企业内训，教团队把这套装上",
+    "deliver_alt": "做成定制版：按客户业务流程改一遍，单独报价",
+    "hours": 2,
     "gap_key_word": "缺中文上手文档"
    },
-   "plain": "jQuery JavaScript Library",
+   "plain": "A Claude skill that turns vibecoded, AI-looking UI into a designed interface",
    "analy": {
-    "en": "jQuery JavaScript Library",
-    "zh": "jQuery JavaScript 库",
-    "plain": "说白了，这是一个打开网页就能用的在线小工具，不用装任何东西。它干的事是：jQuery JavaScript 库",
+    "en": "A Claude skill that turns vibecoded, AI-looking UI into a designed interface",
+    "zh": "一种 Claude 技能，可将基于氛围编码、看起来像 AI 的用户界面转换为经过设计的界面",
+    "plain": "说白了，这是一份写给 AI 的操作手册，装进 AI 工具后它就知道按你的规矩干活。它干的事是：一种 Claude 技能，可将基于氛围编码、看起来像 AI 的用户界面转换为经过设计的界面",
+    "usage": [
+     "接单时用它出初稿，客户改的是稿子不是空白页",
+     "装进常用的 AI 工具，让它按行规干活，不用每次重写要求",
+     "改造成中文版，卖给不会写提示词的人"
+    ],
+    "how": [
+     "把技能文件放进 AI 工具的技能目录",
+     "在对话里说一句触发词",
+     "按它给的步骤走，不满意就补一句要求"
+    ],
+    "gap": "做前后对比案例，让人一眼看出差别",
+    "buyer": "接单的设计师和电商美工",
+    "why": "接单的设计师和电商美工不是不会做，是懒得为这一步花两三天试错。你把「做前后对比案例，让人一眼看出差别」替他们做完，他们花的钱远少于自己折腾的时间。",
+    "self": "装进自己常用的 AI 工具里，写东西、做分析时不用每次从头描述要求，输出的东西还稳定。",
+    "pack": "整理成可直接安装的技能包 + 使用截图，配一节教程一起卖；也可以做成付费专栏的一章当引流钩子。落地上就按这条走：接企业内训，教团队把这套装上。",
+    "_auto": true,
+    "_src": "mt"
+   },
+   "_bucket": "",
+   "seen_times": 1,
+   "seen_first": "2026-11-13",
+   "seen_last": "2026-11-13"
+  },
+  {
+   "full_name": "deepseek-ai/dsh-superagent-prototype",
+   "owner": "deepseek-ai",
+   "owner_type": "Organization",
+   "name": "dsh-superagent-prototype",
+   "desc": "Towards a More Autonomous Agent System",
+   "lang": "TypeScript",
+   "stars": 24002,
+   "forks": 2979,
+   "watchers": 181,
+   "open_issues": 0,
+   "license": "MIT",
+   "license_name": "MIT License",
+   "topics": [],
+   "created_at": "2026-10-31T09:32:46Z",
+   "pushed_at": "2026-11-03T09:29:14Z",
+   "updated_at": "2026-11-20T08:07:13Z",
+   "size_kb": 37,
+   "archived": false,
+   "has_discussions": false,
+   "has_wiki": false,
+   "homepage": "",
+   "url": "https://github.com/deepseek-ai/dsh-superagent-prototype",
+   "default_branch": "main",
+   "readme": "# dsh-superagent\n\n> **Research prototype for reference only, not an official DeepSeek product.** This code grew out of our team's day-to-day development work, with much of the engineering done by coding agents. Treat it as research code, not production-ready software. It may still contain bugs, and its coding style and engineering practices may be inconsistent. Review and adapt it before using it in your own environment.\n>\n> We have adapted it for publication, so it is not identical to our internal version or the implementation described in *Exploring Super-agent Design: Towards a More Autonomous Agent System*. Some designs discussed in the article are directions for future development and are not implemented in this prototype.\n\ndsh-superagent is a proactive coding agent for one GitHub repository, packaged as a bundle for [DeepSeek Harness](https://www.deepseek.com/en/harness/). It listens to GitHub and, optionally, Feishu. When someone allowed asks the agent for work, it opens a work item, works on it in its own agent session and directory, and answers in the original conversation, for example with a pull request. A web panel shows what needs a person.\n\nIt is also a way of working with an agent: **take as little human attention as possible, and give as much value as possible.** An agent that can act for a whole team can also waste a whole team's attention, so it acts only when asked or when a rule the team wrote allows it, and speaks only when someone must act or can use a result. [docs/000-philosophy.md](docs/000-philosophy.md) explains the principle and what it asks of the operator.\n\n## Setup\n\nSetup has many steps, so an agent does it with you. Ask your coding agent:\n\n> Read SETUP.md in this repository and set up dsh-superagent with me.\n\nIt asks one short question at a time, shows the full plan once, and then installs and configures everything. [SETUP.md](SETUP.md) is what it follows.\n\n## Documentation\n\nRead the numbered documents in order; each builds only on the ones before it.\n\n- [000 Philosophy](docs/000-philosophy.md)\n- [001 Domain model](docs/001-domain.md)\n- [002 Authorization](docs/002-authorization.md)\n- [003 Execution](docs/003-execution.md)\n- [004 Prompts](docs/004-prompts.md)\n- [005 Panel](docs/005-panel.md)\n- [006 Deployment](docs/006-deployment.md): manual setup, configuration, upgrades and troubleshooting\n- [007 Architecture](docs/007-architecture.md)\n- [008 Cookbook](docs/008-cookbook.md): adding a Source\n\n## Development\n\n`pnpm check` runs the typecheck, the tests and the build.\n\n## License\n\n[MIT](LICENSE)\n",
+   "gained": 0,
+   "since": "created<30d",
+   "source": "search_new",
+   "score": 67,
+   "detail": {
+    "lic": 25,
+    "easy": 20,
+    "zh": 0,
+    "demand": 10,
+    "deliver": 10,
+    "fresh": 10,
+    "adj": -8
+   },
+   "grade": "A",
+   "grade_word": "改一改能卖",
+   "form": "web应用",
+   "velocity": 1263.2631578947369,
+   "_gaps": [
+    [
+     "没有中文上手文档",
+     "没有中文上手文档",
+     "把 README 翻成中文，配一张三步跑通图"
+    ],
+    [
+     "没有一键部署",
+     "没有一键部署",
+     "补一个 Dockerfile + compose，别人一条命令跑起来"
+    ],
+    [
+     "没有在线演示",
+     "没有在线演示",
+     "部署一个公开 demo 站，让人先玩再买单"
+    ]
+   ],
+   "gaps_short": [
+    "没有中文上手文档",
+    "没有一键部署",
+    "没有在线演示"
+   ],
+   "risk": "大厂项目，路线不由你定，只能做外围（部署/中文化/模板）",
+   "suspect": "星速可疑：19 天涨到 24,002 星（日均 1,263），先观察一周看有没有真实用户再动手",
+   "pitch": {
+    "gap_key": "没有行业预设",
+    "change": "做 10 个行业预设（餐饮/教培/门店），一键套用",
+    "buyer": "想有个自己工具但不会写代码的人",
+    "buyer_tag": "通用",
+    "deliver": "连部署带教一次，做成「一天陪跑」按次收",
+    "deliver_alt": "换成客户自己的数据跑一遍，按场景收定制费",
+    "hours": 3,
+    "gap_key_word": "缺中文上手文档"
+   },
+   "plain": "Towards a More Autonomous Agent System",
+   "analy": {
+    "en": "Towards a More Autonomous Agent System",
+    "zh": "迈向更自主的代理系统",
+    "plain": "说白了，这是一个打开网页就能用的在线小工具，不用装任何东西。它干的事是：迈向更自主的代理系统",
     "usage": [
      "直接打开当工具用，省掉装软件那一步",
      "部署到自己的域名，做成一个能对外收钱的服务",
@@ -839,309 +859,315 @@
      "按界面提示把内容填进去",
      "选样式/导出，拿到成品"
     ],
-    "gap": "加一个一键导出（图/PDF/Excel），让人能直接拿去用",
-    "buyer": "要上线个小站但没预算请开发的人",
-    "why": "要上线个小站但没预算请开发的人不是不会做，是懒得为这一步花两三天试错。你把「加一个一键导出（图/PDF/Excel），让人能直接拿去用」替他们做完，他们花的钱远少于自己折腾的时间。",
+    "gap": "做 10 个行业预设（餐饮/教培/门店），一键套用",
+    "buyer": "想有个自己工具但不会写代码的人",
+    "why": "想有个自己工具但不会写代码的人不是不会做，是懒得为这一步花两三天试错。你把「做 10 个行业预设（餐饮/教培/门店），一键套用」替他们做完，他们花的钱远少于自己折腾的时间。",
     "self": "自己干活时当外挂：重复的排版、出图、整理交给它，一次省十几分钟。用熟之后你会清楚自己哪一步最该自动化——这个认知比工具本身值钱。",
-    "pack": "汉化 + 一套中文模板 + 部署教程，打包成 zip 发网盘；主图用「改前 vs 改后」对比，标题写用户能搜的词。落地上就按这条走：换成客户自己的数据跑一遍，按场景收定制费。",
+    "pack": "汉化 + 一套中文模板 + 部署教程，打包成 zip 发网盘；主图用「改前 vs 改后」对比，标题写用户能搜的词。落地上就按这条走：连部署带教一次，做成「一天陪跑」按次收。",
     "_auto": true,
     "_src": "mt"
    },
    "_bucket": "",
-   "seen_times": 0,
-   "seen_first": "",
-   "seen_last": ""
+   "seen_times": 1,
+   "seen_first": "2026-11-13",
+   "seen_last": "2026-11-13"
   }
  ],
  "dropped": [
   {
    "full_name": "obra/superpowers",
-   "stars": 321535,
+   "stars": 322343,
    "reason": "综合 55 分（B 级），名额满了"
   },
   {
    "full_name": "obra/superpowers",
-   "stars": 321535,
+   "stars": 322343,
    "reason": "综合 55 分（B 级），名额有限，这一期没进",
    "score": 55
   },
   {
-   "full_name": "affaan-m/ECC",
-   "stars": 306807,
-   "reason": "1 天前（2026-11-18）推过，冷却 7 天内不重推"
+   "full_name": "firecrawl/firecrawl",
+   "stars": 204580,
+   "reason": "综合 36 分（C 级），名额满了"
   },
   {
-   "full_name": "affaan-m/ECC",
-   "stars": 306807,
-   "reason": "综合 64 分（B 级），名额有限，这一期没进",
-   "score": 64
+   "full_name": "firecrawl/firecrawl",
+   "stars": 204580,
+   "reason": "综合 36 分（C 级），名额有限，这一期没进",
+   "score": 36
   },
   {
-   "full_name": "n8n-io/n8n",
-   "stars": 211290,
-   "reason": "综合 35 分（C 级），名额满了"
+   "full_name": "toeverything/AFFiNE",
+   "stars": 75361,
+   "reason": "综合 51 分（B 级），名额满了"
   },
   {
-   "full_name": "n8n-io/n8n",
-   "stars": 211290,
-   "reason": "综合 35 分（C 级），名额有限，这一期没进",
-   "score": 35
-  },
-  {
-   "full_name": "anthropics/skills",
-   "stars": 197398,
-   "reason": "综合 48 分（C 级），名额满了"
-  },
-  {
-   "full_name": "anthropics/skills",
-   "stars": 197398,
-   "reason": "综合 48 分（C 级），名额有限，这一期没进",
-   "score": 48
-  },
-  {
-   "full_name": "punkpeye/awesome-mcp-servers",
-   "reason": "纯清单/合集，没有可运行的代码，不能交付",
-   "stars": 98163
-  },
-  {
-   "full_name": "astral-sh/uv",
-   "stars": 92341,
-   "reason": "综合 54 分（B 级），名额满了"
-  },
-  {
-   "full_name": "astral-sh/uv",
-   "stars": 92341,
-   "reason": "综合 54 分（B 级），名额有限，这一期没进",
-   "score": 54
-  },
-  {
-   "full_name": "sveltejs/svelte",
-   "stars": 89717,
-   "reason": "综合 54 分（B 级），名额满了"
-  },
-  {
-   "full_name": "sveltejs/svelte",
-   "stars": 89717,
-   "reason": "综合 54 分（B 级），名额有限，这一期没进",
-   "score": 54
-  },
-  {
-   "full_name": "ZhuLinsen/daily_stock_analysis",
-   "stars": 73421,
-   "reason": "5 天前（2026-11-14）推过，冷却 7 天内不重推"
-  },
-  {
-   "full_name": "ZhuLinsen/daily_stock_analysis",
-   "stars": 73421,
-   "reason": "综合 76 分（A 级），名额有限，这一期没进",
-   "score": 76
+   "full_name": "toeverything/AFFiNE",
+   "stars": 75361,
+   "reason": "综合 51 分（B 级），名额有限，这一期没进",
+   "score": 51
   },
   {
    "full_name": "mvanhorn/last30days-skill",
-   "stars": 70353,
-   "reason": "2 天前（2026-11-17）推过，冷却 7 天内不重推"
+   "stars": 71037,
+   "reason": "3 天前（2026-11-17）推过，冷却 7 天内不重推"
   },
   {
    "full_name": "mvanhorn/last30days-skill",
-   "stars": 70353,
+   "stars": 71037,
    "reason": "综合 62 分（B 级），名额有限，这一期没进",
    "score": 62
   },
   {
-   "full_name": "HKUDS/CLI-Anything",
-   "stars": 60075,
-   "reason": "综合 54 分（B 级），名额满了"
+   "full_name": "jingyaogong/minimind",
+   "stars": 67266,
+   "reason": "2 天前（2026-11-18）推过，冷却 7 天内不重推"
+  },
+  {
+   "full_name": "jingyaogong/minimind",
+   "stars": 67266,
+   "reason": "综合 67 分（A 级），名额有限，这一期没进",
+   "score": 67
   },
   {
    "full_name": "HKUDS/CLI-Anything",
-   "stars": 60075,
-   "reason": "综合 54 分（B 级），名额有限，这一期没进",
-   "score": 54
+   "stars": 60821,
+   "reason": "综合 56 分（B 级），名额满了"
+  },
+  {
+   "full_name": "HKUDS/CLI-Anything",
+   "stars": 60821,
+   "reason": "综合 56 分（B 级），名额有限，这一期没进",
+   "score": 56
   },
   {
    "full_name": "ChromeDevTools/chrome-devtools-mcp",
-   "stars": 58266,
-   "reason": "1 天前（2026-11-18）推过，冷却 7 天内不重推"
+   "stars": 58425,
+   "reason": "2 天前（2026-11-18）推过，冷却 7 天内不重推"
   },
   {
    "full_name": "ChromeDevTools/chrome-devtools-mcp",
-   "stars": 58266,
+   "stars": 58425,
    "reason": "综合 59 分（B 级），名额有限，这一期没进",
    "score": 59
   },
   {
    "full_name": "alibaba/open-code-review",
-   "stars": 54252,
-   "reason": "5 天前（2026-11-14）推过，冷却 7 天内不重推"
+   "stars": 54484,
+   "reason": "6 天前（2026-11-14）推过，冷却 7 天内不重推"
   },
   {
    "full_name": "alibaba/open-code-review",
-   "stars": 54252,
+   "stars": 54484,
    "reason": "综合 62 分（B 级），名额有限，这一期没进",
    "score": 62
   },
   {
-   "full_name": "solidjs/solid",
-   "stars": 36708,
-   "reason": "综合 56 分（B 级），名额满了"
+   "full_name": "storytold/craft-anything",
+   "stars": 38887,
+   "reason": "7 天前（2026-11-13）推过，冷却 7 天内不重推"
   },
   {
-   "full_name": "solidjs/solid",
-   "stars": 36708,
-   "reason": "综合 56 分（B 级），名额有限，这一期没进",
-   "score": 56
-  },
-  {
-   "full_name": "dream-num/univer",
-   "stars": 30166,
-   "reason": "2 天前（2026-11-17）推过，冷却 7 天内不重推"
-  },
-  {
-   "full_name": "dream-num/univer",
-   "stars": 30166,
-   "reason": "综合 62 分（B 级），名额有限，这一期没进",
-   "score": 62
-  },
-  {
-   "full_name": "ag-ui-protocol/ag-ui",
-   "stars": 20525,
-   "reason": "4 天前（2026-11-15）推过，冷却 7 天内不重推"
-  },
-  {
-   "full_name": "ag-ui-protocol/ag-ui",
-   "stars": 20525,
-   "reason": "综合 56 分（B 级），名额有限，这一期没进",
-   "score": 56
-  },
-  {
-   "full_name": "we-promise/sure",
-   "stars": 16577,
-   "reason": "综合 48 分（C 级），名额满了"
-  },
-  {
-   "full_name": "we-promise/sure",
-   "stars": 16577,
-   "reason": "综合 48 分（C 级），名额有限，这一期没进",
-   "score": 48
-  },
-  {
-   "full_name": "openai/codex-security",
-   "stars": 14149,
-   "reason": "6 天前（2026-11-13）推过，冷却 7 天内不重推"
-  },
-  {
-   "full_name": "openai/codex-security",
-   "stars": 14149,
+   "full_name": "storytold/craft-anything",
+   "stars": 38887,
    "reason": "综合 64 分（B 级），名额有限，这一期没进",
    "score": 64
   },
   {
-   "full_name": "backnotprop/plannotator",
-   "stars": 13547,
-   "reason": "5 天前（2026-11-14）推过，冷却 7 天内不重推"
+   "full_name": "nginx/nginx",
+   "stars": 32425,
+   "reason": "综合 42 分（C 级），名额满了"
+  },
+  {
+   "full_name": "nginx/nginx",
+   "stars": 32425,
+   "reason": "综合 42 分（C 级），名额有限，这一期没进",
+   "score": 42
+  },
+  {
+   "full_name": "meta/astryx",
+   "stars": 31134,
+   "reason": "1 天前（2026-11-19）推过，冷却 7 天内不重推"
+  },
+  {
+   "full_name": "meta/astryx",
+   "stars": 31134,
+   "reason": "综合 68 分（A 级），名额有限，这一期没进",
+   "score": 68
+  },
+  {
+   "full_name": "dream-num/univer",
+   "stars": 30579,
+   "reason": "3 天前（2026-11-17）推过，冷却 7 天内不重推"
+  },
+  {
+   "full_name": "dream-num/univer",
+   "stars": 30579,
+   "reason": "综合 62 分（B 级），名额有限，这一期没进",
+   "score": 62
+  },
+  {
+   "full_name": "ag-ui-protocol/ag-ui",
+   "stars": 20698,
+   "reason": "5 天前（2026-11-15）推过，冷却 7 天内不重推"
+  },
+  {
+   "full_name": "ag-ui-protocol/ag-ui",
+   "stars": 20698,
+   "reason": "综合 56 分（B 级），名额有限，这一期没进",
+   "score": 56
+  },
+  {
+   "full_name": "cursor/plugins",
+   "stars": 17652,
+   "reason": "1 天前（2026-11-19）推过，冷却 7 天内不重推"
+  },
+  {
+   "full_name": "cursor/plugins",
+   "stars": 17652,
+   "reason": "综合 56 分（B 级），名额有限，这一期没进",
+   "score": 56
+  },
+  {
+   "full_name": "we-promise/sure",
+   "stars": 16779,
+   "reason": "综合 48 分（C 级），名额满了"
+  },
+  {
+   "full_name": "we-promise/sure",
+   "stars": 16779,
+   "reason": "综合 48 分（C 级），名额有限，这一期没进",
+   "score": 48
   },
   {
    "full_name": "backnotprop/plannotator",
-   "stars": 13547,
+   "stars": 13743,
+   "reason": "6 天前（2026-11-14）推过，冷却 7 天内不重推"
+  },
+  {
+   "full_name": "backnotprop/plannotator",
+   "stars": 13743,
+   "reason": "综合 68 分（A 级），名额有限，这一期没进",
+   "score": 68
+  },
+  {
+   "full_name": "Tracer-Cloud/opensre",
+   "stars": 13275,
+   "reason": "综合 62 分（B 级），名额满了"
+  },
+  {
+   "full_name": "Tracer-Cloud/opensre",
+   "stars": 13275,
+   "reason": "综合 62 分（B 级），名额有限，这一期没进",
+   "score": 62
+  },
+  {
+   "full_name": "XiaoYouChR/Ghost-Downloader-3",
+   "stars": 13143,
+   "reason": "综合 66 分（A 级），名额满了"
+  },
+  {
+   "full_name": "XiaoYouChR/Ghost-Downloader-3",
+   "stars": 13143,
+   "reason": "综合 66 分（A 级），名额有限，这一期没进",
+   "score": 66
+  },
+  {
+   "full_name": "elementalsouls/Claude-BugHunter",
+   "stars": 13052,
+   "reason": "4 天前（2026-11-16）推过，冷却 7 天内不重推"
+  },
+  {
+   "full_name": "elementalsouls/Claude-BugHunter",
+   "stars": 13052,
+   "reason": "综合 64 分（B 级），名额有限，这一期没进",
+   "score": 64
+  },
+  {
+   "full_name": "openvinotoolkit/openvino",
+   "stars": 11631,
+   "reason": "1 天前（2026-11-19）推过，冷却 7 天内不重推"
+  },
+  {
+   "full_name": "openvinotoolkit/openvino",
+   "stars": 11631,
    "reason": "综合 68 分（A 级），名额有限，这一期没进",
    "score": 68
   },
   {
    "full_name": "google-labs-code/stitch-skills",
-   "stars": 10528,
-   "reason": "3 天前（2026-11-16）推过，冷却 7 天内不重推"
+   "stars": 10828,
+   "reason": "4 天前（2026-11-16）推过，冷却 7 天内不重推"
   },
   {
    "full_name": "google-labs-code/stitch-skills",
-   "stars": 10528,
+   "stars": 10828,
    "reason": "综合 76 分（A 级），名额有限，这一期没进",
    "score": 76
   },
   {
-   "full_name": "getarcaneapp/arcane",
-   "stars": 9980,
-   "reason": "2 天前（2026-11-17）推过，冷却 7 天内不重推"
-  },
-  {
-   "full_name": "getarcaneapp/arcane",
-   "stars": 9980,
-   "reason": "综合 72 分（A 级），名额有限，这一期没进",
-   "score": 72
-  },
-  {
    "full_name": "zortos293/Lichii",
-   "stars": 9766,
+   "stars": 9853,
    "reason": "综合 47 分（C 级），名额满了"
   },
   {
    "full_name": "zortos293/Lichii",
-   "stars": 9766,
+   "stars": 9853,
    "reason": "综合 47 分（C 级），名额有限，这一期没进",
    "score": 47
   },
   {
-   "full_name": "GoogleChrome/modern-web-guidance-src",
-   "stars": 8945,
-   "reason": "6 天前（2026-11-13）推过，冷却 7 天内不重推"
+   "full_name": "huami1314/GestaltX",
+   "stars": 8587,
+   "reason": "综合 59 分（B 级），名额满了"
   },
   {
-   "full_name": "GoogleChrome/modern-web-guidance-src",
-   "stars": 8945,
-   "reason": "综合 68 分（A 级），名额有限，这一期没进",
-   "score": 68
+   "full_name": "huami1314/GestaltX",
+   "stars": 8587,
+   "reason": "综合 59 分（B 级），名额有限，这一期没进",
+   "score": 59
   },
   {
-   "full_name": "DeanChensj/jiangshan-map",
-   "stars": 8287,
-   "reason": "综合 47 分（C 级），名额满了"
+   "full_name": "kajisho5/ffmpeg-skill",
+   "stars": 8521,
+   "reason": "3 天前（2026-11-17）推过，冷却 7 天内不重推"
   },
   {
-   "full_name": "DeanChensj/jiangshan-map",
-   "stars": 8287,
-   "reason": "综合 47 分（C 级），名额有限，这一期没进",
-   "score": 47
+   "full_name": "kajisho5/ffmpeg-skill",
+   "stars": 8521,
+   "reason": "综合 74 分（A 级），名额有限，这一期没进",
+   "score": 74
+  },
+  {
+   "full_name": "anomalyco/rune",
+   "stars": 7634,
+   "reason": "综合 51 分（B 级），名额满了"
+  },
+  {
+   "full_name": "anomalyco/rune",
+   "stars": 7634,
+   "reason": "综合 51 分（B 级），名额有限，这一期没进",
+   "score": 51
   },
   {
    "full_name": "tradermonty/claude-trading-skills",
-   "stars": 7130,
-   "reason": "5 天前（2026-11-14）推过，冷却 7 天内不重推"
+   "stars": 7311,
+   "reason": "6 天前（2026-11-14）推过，冷却 7 天内不重推"
   },
   {
    "full_name": "tradermonty/claude-trading-skills",
-   "stars": 7130,
+   "stars": 7311,
    "reason": "综合 68 分（A 级），名额有限，这一期没进",
    "score": 68
-  },
-  {
-   "full_name": "google-research/paper-orchestra",
-   "stars": 4644,
-   "reason": "2 天前（2026-11-17）推过，冷却 7 天内不重推"
-  },
-  {
-   "full_name": "google-research/paper-orchestra",
-   "stars": 4644,
-   "reason": "综合 70 分（A 级），名额有限，这一期没进",
-   "score": 70
-  },
-  {
-   "full_name": "NVIDIA/SkillEvaluator",
-   "stars": 3928,
-   "reason": "2 天前（2026-11-17）推过，冷却 7 天内不重推"
-  },
-  {
-   "full_name": "NVIDIA/SkillEvaluator",
-   "stars": 3928,
-   "reason": "综合 69 分（A 级），名额有限，这一期没进",
-   "score": 69
   }
  ],
- "scanned": 72,
+ "scanned": 67,
  "mode": "FULL",
  "degraded": false,
  "focus": null,
  "focus_tab": null,
  "pools": {
-  "daily": 72,
+  "daily": 67,
   "focus": 0
  },
  "cooldown": {

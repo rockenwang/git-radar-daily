@@ -69,14 +69,15 @@
   "pookjw/HermesEnabler": {
    "first": "2026-11-12",
    "dates": [
-    "2026-11-12"
+    "2026-11-12",
+    "2026-11-20"
    ],
-   "times": 1,
-   "last": "2026-11-12",
+   "times": 2,
+   "last": "2026-11-20",
    "tabs": [
     "daily"
    ],
-   "stars": 1375,
+   "stars": 2267,
    "focus": ""
   },
   "D4Vinci/Scrapling": {
@@ -109,40 +110,43 @@
   "GoogleChrome/modern-web-guidance-src": {
    "first": "2026-11-13",
    "dates": [
-    "2026-11-13"
+    "2026-11-13",
+    "2026-11-20"
    ],
-   "times": 1,
-   "last": "2026-11-13",
+   "times": 2,
+   "last": "2026-11-20",
    "tabs": [
     "daily"
    ],
-   "stars": 3682,
+   "stars": 9312,
    "focus": ""
   },
   "heydamir/unslop": {
    "first": "2026-11-13",
    "dates": [
-    "2026-11-13"
+    "2026-11-13",
+    "2026-11-20"
    ],
-   "times": 1,
-   "last": "2026-11-13",
+   "times": 2,
+   "last": "2026-11-20",
    "tabs": [
     "daily"
    ],
-   "stars": 15295,
+   "stars": 18842,
    "focus": ""
   },
   "deepseek-ai/dsh-superagent-prototype": {
    "first": "2026-11-13",
    "dates": [
-    "2026-11-13"
+    "2026-11-13",
+    "2026-11-20"
    ],
-   "times": 1,
-   "last": "2026-11-13",
+   "times": 2,
+   "last": "2026-11-20",
    "tabs": [
     "daily"
    ],
-   "stars": 22872,
+   "stars": 24002,
    "focus": ""
   },
   "addyosmani/agent-skills": {
@@ -807,7 +811,59 @@
    ],
    "stars": 60077,
    "focus": ""
+  },
+  "zhouxiaoka/autoclip": {
+   "first": "2026-11-20",
+   "dates": [
+    "2026-11-20"
+   ],
+   "times": 1,
+   "last": "2026-11-20",
+   "tabs": [
+    "daily"
+   ],
+   "stars": 11663,
+   "focus": ""
+  },
+  "vercel-labs/ui": {
+   "first": "2026-11-20",
+   "dates": [
+    "2026-11-20"
+   ],
+   "times": 1,
+   "last": "2026-11-20",
+   "tabs": [
+    "daily"
+   ],
+   "stars": 6188,
+   "focus": ""
+  },
+  "cathrynlavery/diagram-design": {
+   "first": "2026-11-20",
+   "dates": [
+    "2026-11-20"
+   ],
+   "times": 1,
+   "last": "2026-11-20",
+   "tabs": [
+    "daily"
+   ],
+   "stars": 68873,
+   "focus": ""
+  },
+  "mjmirza/app-store-compliance": {
+   "first": "2026-11-20",
+   "dates": [
+    "2026-11-20"
+   ],
+   "times": 1,
+   "last": "2026-11-20",
+   "tabs": [
+    "daily"
+   ],
+   "stars": 2190,
+   "focus": ""
   }
  },
- "updated_at": "2026-11-19T08:28:48"
+ "updated_at": "2026-11-20T08:09:51"
 }
