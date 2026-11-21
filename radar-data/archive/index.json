@@ -170,7 +170,26 @@
     "heydamir/unslop",
     "deepseek-ai/dsh-superagent-prototype"
    ]
+  },
+  {
+   "date": "2026-11-21",
+   "mode": "FULL",
+   "focus": "",
+   "scanned": 67,
+   "daily": 8,
+   "focus_n": 0,
+   "deep": 0,
+   "names": [
+    "wangzan101/Mika",
+    "erkamyaman/rust-anything",
+    "backnotprop/plannotator",
+    "tradermonty/claude-trading-skills",
+    "XiaoYouChR/Ghost-Downloader-3",
+    "storytold/craft-anything",
+    "alibaba/open-code-review",
+    "Tracer-Cloud/opensre"
+   ]
   }
  ],
- "updated_at": "2026-11-20T08:09:51"
+ "updated_at": "2026-11-21T08:03:29"
 }

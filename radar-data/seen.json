@@ -178,14 +178,15 @@
   "storytold/craft-anything": {
    "first": "2026-11-13",
    "dates": [
-    "2026-11-13"
+    "2026-11-13",
+    "2026-11-21"
    ],
-   "times": 1,
-   "last": "2026-11-13",
+   "times": 2,
+   "last": "2026-11-21",
    "tabs": [
     "daily"
    ],
-   "stars": 30511,
+   "stars": 39731,
    "focus": ""
   },
   "openai/codex-security": {
@@ -243,27 +244,29 @@
   "wangzan101/Mika": {
    "first": "2026-11-14",
    "dates": [
-    "2026-11-14"
+    "2026-11-14",
+    "2026-11-21"
    ],
-   "times": 1,
-   "last": "2026-11-14",
+   "times": 2,
+   "last": "2026-11-21",
    "tabs": [
     "daily"
    ],
-   "stars": 8549,
+   "stars": 9325,
    "focus": ""
   },
   "backnotprop/plannotator": {
    "first": "2026-11-14",
    "dates": [
-    "2026-11-14"
+    "2026-11-14",
+    "2026-11-21"
    ],
-   "times": 1,
-   "last": "2026-11-14",
+   "times": 2,
+   "last": "2026-11-21",
    "tabs": [
     "daily"
    ],
-   "stars": 10574,
+   "stars": 13979,
    "focus": ""
   },
   "louislam/uptime-kuma": {
@@ -282,27 +285,29 @@
   "tradermonty/claude-trading-skills": {
    "first": "2026-11-14",
    "dates": [
-    "2026-11-14"
+    "2026-11-14",
+    "2026-11-21"
    ],
-   "times": 1,
-   "last": "2026-11-14",
+   "times": 2,
+   "last": "2026-11-21",
    "tabs": [
     "daily"
    ],
-   "stars": 4314,
+   "stars": 7483,
    "focus": ""
   },
   "alibaba/open-code-review": {
    "first": "2026-11-14",
    "dates": [
-    "2026-11-14"
+    "2026-11-14",
+    "2026-11-21"
    ],
-   "times": 1,
-   "last": "2026-11-14",
+   "times": 2,
+   "last": "2026-11-21",
    "tabs": [
     "daily"
    ],
-   "stars": 50866,
+   "stars": 54885,
    "focus": ""
   },
   "ccch1mneyyy/dsh-Go": {
@@ -863,7 +868,46 @@
    ],
    "stars": 2190,
    "focus": ""
+  },
+  "erkamyaman/rust-anything": {
+   "first": "2026-11-21",
+   "dates": [
+    "2026-11-21"
+   ],
+   "times": 1,
+   "last": "2026-11-21",
+   "tabs": [
+    "daily"
+   ],
+   "stars": 6886,
+   "focus": ""
+  },
+  "XiaoYouChR/Ghost-Downloader-3": {
+   "first": "2026-11-21",
+   "dates": [
+    "2026-11-21"
+   ],
+   "times": 1,
+   "last": "2026-11-21",
+   "tabs": [
+    "daily"
+   ],
+   "stars": 13980,
+   "focus": ""
+  },
+  "Tracer-Cloud/opensre": {
+   "first": "2026-11-21",
+   "dates": [
+    "2026-11-21"
+   ],
+   "times": 1,
+   "last": "2026-11-21",
+   "tabs": [
+    "daily"
+   ],
+   "stars": 13725,
+   "focus": ""
   }
  },
- "updated_at": "2026-11-20T08:09:51"
+ "updated_at": "2026-11-21T08:03:29"
 }
