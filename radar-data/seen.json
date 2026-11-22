@@ -313,40 +313,43 @@
   "ccch1mneyyy/dsh-Go": {
    "first": "2026-11-14",
    "dates": [
-    "2026-11-14"
+    "2026-11-14",
+    "2026-11-22"
    ],
-   "times": 1,
-   "last": "2026-11-14",
+   "times": 2,
+   "last": "2026-11-22",
    "tabs": [
     "daily"
    ],
-   "stars": 22089,
+   "stars": 29818,
    "focus": ""
   },
   "rddmwmddr/android-ad-cleaner": {
    "first": "2026-11-15",
    "dates": [
-    "2026-11-15"
+    "2026-11-15",
+    "2026-11-22"
    ],
-   "times": 1,
-   "last": "2026-11-15",
+   "times": 2,
+   "last": "2026-11-22",
    "tabs": [
     "daily"
    ],
-   "stars": 8070,
+   "stars": 8704,
    "focus": ""
   },
   "JuneYaooo/rea-video": {
    "first": "2026-11-15",
    "dates": [
-    "2026-11-15"
+    "2026-11-15",
+    "2026-11-22"
    ],
-   "times": 1,
-   "last": "2026-11-15",
+   "times": 2,
+   "last": "2026-11-22",
    "tabs": [
     "daily"
    ],
-   "stars": 8751,
+   "stars": 11948,
    "focus": ""
   },
   "Jakeschincariol/day-trader-skill": {
@@ -365,14 +368,15 @@
   "janestreet/agent_skills": {
    "first": "2026-11-15",
    "dates": [
-    "2026-11-15"
+    "2026-11-15",
+    "2026-11-22"
    ],
-   "times": 1,
-   "last": "2026-11-15",
+   "times": 2,
+   "last": "2026-11-22",
    "tabs": [
     "daily"
    ],
-   "stars": 8705,
+   "stars": 10591,
    "focus": ""
   },
   "xiaoyang111222/cn-math-taxonomy": {
@@ -391,14 +395,15 @@
   "unclebob/ub-mode": {
    "first": "2026-11-15",
    "dates": [
-    "2026-11-15"
+    "2026-11-15",
+    "2026-11-22"
    ],
-   "times": 1,
-   "last": "2026-11-15",
+   "times": 2,
+   "last": "2026-11-22",
    "tabs": [
     "daily"
    ],
-   "stars": 7978,
+   "stars": 8310,
    "focus": ""
   },
   "JuliusBrussee/caveman": {
@@ -417,14 +422,15 @@
   "ag-ui-protocol/ag-ui": {
    "first": "2026-11-15",
    "dates": [
-    "2026-11-15"
+    "2026-11-15",
+    "2026-11-22"
    ],
-   "times": 1,
-   "last": "2026-11-15",
+   "times": 2,
+   "last": "2026-11-22",
    "tabs": [
     "daily"
    ],
-   "stars": 17472,
+   "stars": 21068,
    "focus": ""
   },
   "simbasjungles/free-my-tv": {
@@ -907,7 +913,33 @@
    ],
    "stars": 13725,
    "focus": ""
+  },
+  "huami1314/GestaltX": {
+   "first": "2026-11-22",
+   "dates": [
+    "2026-11-22"
+   ],
+   "times": 1,
+   "last": "2026-11-22",
+   "tabs": [
+    "daily"
+   ],
+   "stars": 8762,
+   "focus": ""
+  },
+  "HKUDS/CLI-Anything": {
+   "first": "2026-11-22",
+   "dates": [
+    "2026-11-22"
+   ],
+   "times": 1,
+   "last": "2026-11-22",
+   "tabs": [
+    "daily"
+   ],
+   "stars": 62271,
+   "focus": ""
   }
  },
- "updated_at": "2026-11-21T08:03:29"
+ "updated_at": "2026-11-22T07:50:58"
 }

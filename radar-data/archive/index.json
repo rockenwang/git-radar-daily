@@ -189,7 +189,26 @@
     "alibaba/open-code-review",
     "Tracer-Cloud/opensre"
    ]
+  },
+  {
+   "date": "2026-11-22",
+   "mode": "FULL",
+   "focus": "",
+   "scanned": 67,
+   "daily": 8,
+   "focus_n": 0,
+   "deep": 0,
+   "names": [
+    "rddmwmddr/android-ad-cleaner",
+    "JuneYaooo/rea-video",
+    "janestreet/agent_skills",
+    "unclebob/ub-mode",
+    "ccch1mneyyy/dsh-Go",
+    "huami1314/GestaltX",
+    "ag-ui-protocol/ag-ui",
+    "HKUDS/CLI-Anything"
+   ]
   }
  ],
- "updated_at": "2026-11-21T08:03:29"
+ "updated_at": "2026-11-22T07:50:58"
 }
