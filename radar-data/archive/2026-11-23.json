@@ -1,0 +1,925 @@
+{
+ "mode": "FULL",
+ "degraded": false,
+ "focus": null,
+ "scanned": 67,
+ "pools": {
+  "daily": 67,
+  "focus": 0
+ },
+ "daily": {
+  "picks": [
+   {
+    "full_name": "google-labs-code/stitch-skills",
+    "owner": "google-labs-code",
+    "owner_type": "Organization",
+    "name": "stitch-skills",
+    "desc": "A library of Agent Skills designed to work with the Stitch MCP server. Each skill follows the Agent Skills open standard, for compatibility with coding agents such as Antigravity, Gemini CLI, Claude Code, Cursor.",
+    "lang": "TypeScript",
+    "stars": 12058,
+    "forks": 1496,
+    "watchers": 91,
+    "open_issues": 29,
+    "license": "Apache-2.0",
+    "license_name": "Apache License 2.0",
+    "topics": [],
+    "created_at": "2026-01-16T17:17:17Z",
+    "pushed_at": "2026-11-20T18:08:01Z",
+    "updated_at": "2026-11-23T08:37:34Z",
+    "size_kb": 271,
+    "archived": false,
+    "has_discussions": false,
+    "has_wiki": true,
+    "homepage": "https://stitch.withgoogle.com/docs/mcp/setup",
+    "url": "https://github.com/google-labs-code/stitch-skills",
+    "default_branch": "main",
+    "gained": 494,
+    "since": "daily",
+    "source": "trending",
+    "score": 76,
+    "grade": "A",
+    "grade_word": "改一改能卖",
+    "form": "Agent技能",
+    "velocity": 494.0,
+    "_gaps": [
+     [
+      "没有中文上手文档",
+      "没有中文上手文档",
+      "把 README 翻成中文，配一张三步跑通图"
+     ],
+     [
+      "没有一键部署",
+      "没有一键部署",
+      "补一个 Dockerfile + compose，别人一条命令跑起来"
+     ]
+    ],
+    "gaps_short": [
+     "没有中文上手文档",
+     "没有一键部署"
+    ],
+    "risk": "",
+    "suspect": "",
+    "pitch": {
+     "gap_key": "只有英文指令",
+     "change": "改写成中文指令版，加 3 个真实场景的开场白",
+     "buyer": "接单的设计师和电商美工",
+     "buyer_tag": "设计",
+     "deliver": "打包成技能文件，配使用教程一起卖",
+     "deliver_alt": "做成付费专栏的一章，当引流钩子",
+     "hours": 3,
+     "gap_key_word": "缺中文上手文档"
+    },
+    "plain": "A library of Agent Skills designed to work with the Stitch MCP server. Each skill follows the Agent Skills open standard, for compatibility with coding agents such as Antigravity, Gemini CLI, Claude Code, Cursor.",
+    "_bucket": "",
+    "seen_times": 1,
+    "seen_first": "2026-11-16",
+    "seen_last": "2026-11-16",
+    "analy": {
+     "zh": "旨在与 Stitch MCP 服务器配合使用的代理技能库。每个技能都遵循 Agent Skills 开放标准，以便与 Antigravity、Gemini CLI、Claude Code、Cursor 等编码代理兼容。",
+     "plain": "说白了，这是一份写给 AI 的操作手册，装进 AI 工具后它就知道按你的规矩干活。它干的事是：旨在与 Stitch MCP 服务器配合使用的代理技能库。每个技能都遵循 Agent Skills 开放标准，以便与 Antigravity、Gemini CLI、Claude Code、Cursor 等编码代理兼容。",
+     "gap": "改写成中文指令版，加 3 个真实场景的开场白",
+     "buyer": "接单的设计师和电商美工",
+     "_auto": true,
+     "_src": "mt"
+    }
+   },
+   {
+    "full_name": "anhao/ai-pose-gallery-zh",
+    "owner": "anhao",
+    "owner_type": "User",
+    "name": "ai-pose-gallery-zh",
+    "desc": "中文版 AI 姿势参考图库 · 1439 组 / 2878 张图片 / 完整汉化 · 零依赖静态画廊",
+    "lang": "TypeScript",
+    "stars": 7896,
+    "forks": 2051,
+    "watchers": 20,
+    "open_issues": 16,
+    "license": "NOASSERTION",
+    "license_name": "Other",
+    "topics": [
+     "ai-art",
+     "chinese",
+     "cloudflare-pages",
+     "gallery",
+     "i18n",
+     "pose",
+     "reference-images",
+     "static-site"
+    ],
+    "created_at": "2026-10-27T12:24:37Z",
+    "pushed_at": "2026-11-18T10:14:40Z",
+    "updated_at": "2026-11-23T08:38:53Z",
+    "size_kb": 1163169,
+    "archived": false,
+    "has_discussions": false,
+    "has_wiki": true,
+    "homepage": "https://ai-pose-gallery.anhao.app",
+    "url": "https://github.com/anhao/ai-pose-gallery-zh",
+    "default_branch": "main",
+    "gained": 0,
+    "since": "created<30d",
+    "source": "search_new",
+    "score": 75,
+    "grade": "A",
+    "grade_word": "改一改能卖",
+    "form": "web应用",
+    "velocity": 303.6923076923077,
+    "_gaps": [
+     [
+      "没有一键部署",
+      "没有一键部署",
+      "补一个 Dockerfile + compose，别人一条命令跑起来"
+     ]
+    ],
+    "gaps_short": [
+     "没有一键部署"
+    ],
+    "risk": "许可证不明，动手前去 README 确认一遍",
+    "suspect": "",
+    "pitch": {
+     "gap_key": "没有中文界面",
+     "change": "把界面文案和按钮全翻成中文，再截一套中文版演示图当商品图",
+     "buyer": "接单的设计师和电商美工",
+     "buyer_tag": "设计",
+     "deliver": "打包部署到客户自己的服务器/域名，收一次部署费",
+     "deliver_alt": "做成在线服务，按月收使用费",
+     "hours": 7,
+     "gap_key_word": "缺一键部署"
+    },
+    "plain": "中文版 AI 姿势参考图库 · 1439 组 / 2878 张图片 / 完整汉化 · 零依赖静态画廊",
+    "_bucket": "",
+    "seen_times": 1,
+    "seen_first": "2026-11-16",
+    "seen_last": "2026-11-16",
+    "analy": {
+     "zh": "中文版 AI 姿势参考图库 · 1439 组 / 2878 张图片 / 完整汉化 · 零依赖静态画廊",
+     "plain": "说白了，这是一个打开网页就能用的在线小工具，不用装任何东西。它干的事是：中文版 AI 姿势参考图库 · 1439 组 / 2878 张图片 / 完整汉化 · 零依赖静态画廊",
+     "gap": "把界面文案和按钮全翻成中文，再截一套中文版演示图当商品图",
+     "buyer": "接单的设计师和电商美工",
+     "_auto": true,
+     "_src": "rule"
+    }
+   },
+   {
+    "full_name": "libracoder/kiri",
+    "owner": "libracoder",
+    "owner_type": "User",
+    "name": "kiri",
+    "desc": "A small, fast container runtime for macOS, Windows and Linux with free Ngrok alternative",
+    "lang": "Rust",
+    "stars": 12460,
+    "forks": 609,
+    "watchers": 39,
+    "open_issues": 207,
+    "license": "Apache-2.0",
+    "license_name": "Apache License 2.0",
+    "topics": [
+     "containers",
+     "docker",
+     "kubernetes",
+     "linux",
+     "macos",
+     "oci",
+     "windows"
+    ],
+    "created_at": "2026-11-02T16:11:30Z",
+    "pushed_at": "2026-11-22T20:00:33Z",
+    "updated_at": "2026-11-23T08:39:09Z",
+    "size_kb": 5928,
+    "archived": false,
+    "has_discussions": true,
+    "has_wiki": false,
+    "homepage": "https://runkiri.com",
+    "url": "https://github.com/libracoder/kiri",
+    "default_branch": "main",
+    "gained": 0,
+    "since": "created<30d",
+    "source": "search_new",
+    "score": 73,
+    "grade": "A",
+    "grade_word": "改一改能卖",
+    "form": "引擎库",
+    "velocity": 623.0,
+    "_gaps": [
+     [
+      "没有中文上手文档",
+      "没有中文上手文档",
+      "把 README 翻成中文，配一张三步跑通图"
+     ]
+    ],
+    "gaps_short": [
+     "没有中文上手文档"
+    ],
+    "risk": "",
+    "suspect": "",
+    "pitch": {
+     "gap_key": "没有中文上手文档",
+     "change": "把 README 翻成中文，配一张「三步跑通」流程图",
+     "buyer": "要用这套能力但搞不定环境的人",
+     "buyer_tag": "通用",
+     "deliver": "做成带界面的成品，按份卖（发网盘，附中文说明）",
+     "deliver_alt": "接单代跑：客户给需求，你出结果",
+     "hours": 7,
+     "gap_key_word": "缺中文上手文档"
+    },
+    "plain": "A small, fast container runtime for macOS, Windows and Linux with free Ngrok alternative",
+    "_bucket": "",
+    "seen_times": 1,
+    "seen_first": "2026-11-16",
+    "seen_last": "2026-11-16",
+    "analy": {
+     "zh": "适用于 macOS、Windows 和 Linux 的小型、快速容器运行时，具有免费的 Ngrok 替代方案",
+     "plain": "说白了，这是一堆已经写好的能力，但没有界面，得有人包一层壳才能给普通人用。它干的事是：适用于 macOS、Windows 和 Linux 的小型、快速容器运行时，具有免费的 Ngrok 替代方案",
+     "gap": "把 README 翻成中文，配一张「三步跑通」流程图",
+     "buyer": "要用这套能力但搞不定环境的人",
+     "_auto": true,
+     "_src": "mt"
+    }
+   },
+   {
+    "full_name": "patch-gg/pixelfx",
+    "owner": "patch-gg",
+    "owner_type": "Organization",
+    "name": "pixelfx",
+    "desc": "244 pixel art effects, every one a small piece of code. Plus a Claude Code skill to make your own.",
+    "lang": "JavaScript",
+    "stars": 8811,
+    "forks": 1156,
+    "watchers": 26,
+    "open_issues": 16,
+    "license": "MIT",
+    "license_name": "MIT License",
+    "topics": [
+     "agent-skills",
+     "animation",
+     "canvas",
+     "claude-code-plugin",
+     "gamedev",
+     "pixel-art",
+     "sprite-sheet",
+     "vfx"
+    ],
+    "created_at": "2026-10-30T06:43:25Z",
+    "pushed_at": "2026-11-13T08:43:39Z",
+    "updated_at": "2026-11-23T08:32:33Z",
+    "size_kb": 25365,
+    "archived": false,
+    "has_discussions": false,
+    "has_wiki": true,
+    "homepage": "https://patch-gg.github.io/pixelfx/",
+    "url": "https://github.com/patch-gg/pixelfx",
+    "default_branch": "main",
+    "gained": 0,
+    "since": "created<30d",
+    "source": "search_new",
+    "score": 72,
+    "grade": "A",
+    "grade_word": "改一改能卖",
+    "form": "Agent技能",
+    "velocity": 367.125,
+    "_gaps": [
+     [
+      "没有中文上手文档",
+      "没有中文上手文档",
+      "把 README 翻成中文，配一张三步跑通图"
+     ],
+     [
+      "没有一键部署",
+      "没有一键部署",
+      "补一个 Dockerfile + compose，别人一条命令跑起来"
+     ]
+    ],
+    "gaps_short": [
+     "没有中文上手文档",
+     "没有一键部署"
+    ],
+    "risk": "",
+    "suspect": "",
+    "pitch": {
+     "gap_key": "没有打包成技能",
+     "change": "整理成可直接安装的技能包，附使用截图",
+     "buyer": "天天用 AI 干活、但不知道装什么的人",
+     "buyer_tag": "通用",
+     "deliver": "做成付费专栏的一章，当引流钩子",
+     "deliver_alt": "接企业内训，教团队把这套装上",
+     "hours": 2,
+     "gap_key_word": "缺中文上手文档"
+    },
+    "plain": "244 pixel art effects, every one a small piece of code. Plus a Claude Code skill to make your own.",
+    "_bucket": "",
+    "seen_times": 1,
+    "seen_first": "2026-11-16",
+    "seen_last": "2026-11-16",
+    "analy": {
+     "zh": "244 个像素艺术效果，每一个都是一小段代码。加上克劳德代码技能来创造你自己的。",
+     "plain": "说白了，这是一份写给 AI 的操作手册，装进 AI 工具后它就知道按你的规矩干活。它干的事是：244 个像素艺术效果，每一个都是一小段代码。加上克劳德代码技能来创造你自己的。",
+     "gap": "整理成可直接安装的技能包，附使用截图",
+     "buyer": "天天用 AI 干活、但不知道装什么的人",
+     "_auto": true,
+     "_src": "mt"
+    }
+   },
+   {
+    "full_name": "valentderah/totk-pc-recomp",
+    "owner": "valentderah",
+    "owner_type": "User",
+    "name": "totk-pc-recomp",
+    "desc": "Static recompilation of The Legend of Zelda: Tears of the Kingdom to native Windows and Linux x86-64, with a Vulkan renderer. Game files not included.",
+    "lang": "C",
+    "stars": 8076,
+    "forks": 646,
+    "watchers": 85,
+    "open_issues": 415,
+    "license": "MIT",
+    "license_name": "MIT License",
+    "topics": [
+     "game",
+     "linux",
+     "port",
+     "recompilation",
+     "windows"
+    ],
+    "created_at": "2026-10-29T12:32:46Z",
+    "pushed_at": "2026-11-23T07:36:59Z",
+    "updated_at": "2026-11-23T08:20:28Z",
+    "size_kb": 6435,
+    "archived": false,
+    "has_discussions": true,
+    "has_wiki": false,
+    "homepage": "",
+    "url": "https://github.com/valentderah/totk-pc-recomp",
+    "default_branch": "main",
+    "gained": 0,
+    "since": "created<30d",
+    "source": "search_new",
+    "score": 72,
+    "grade": "A",
+    "grade_word": "改一改能卖",
+    "form": "引擎库",
+    "velocity": 336.5,
+    "_gaps": [
+     [
+      "没有中文上手文档",
+      "没有中文上手文档",
+      "把 README 翻成中文，配一张三步跑通图"
+     ],
+     [
+      "没有一键部署",
+      "没有一键部署",
+      "补一个 Dockerfile + compose，别人一条命令跑起来"
+     ],
+     [
+      "没有在线演示",
+      "没有在线演示",
+      "部署一个公开 demo 站，让人先玩再买单"
+     ]
+    ],
+    "gaps_short": [
+     "没有中文上手文档",
+     "没有一键部署",
+     "没有在线演示"
+    ],
+    "risk": "",
+    "suspect": "",
+    "pitch": {
+     "gap_key": "只有代码没有界面",
+     "change": "包一层网页界面，让不会写代码的人点两下就能用",
+     "buyer": "要用这套能力但搞不定环境的人",
+     "buyer_tag": "通用",
+     "deliver": "接单代跑：客户给需求，你出结果",
+     "deliver_alt": "做成中文教程 + 成品包，走知识付费",
+     "hours": 7,
+     "gap_key_word": "缺中文上手文档"
+    },
+    "plain": "Static recompilation of The Legend of Zelda: Tears of the Kingdom to native Windows and Linux x86-64, with a Vulkan renderer. Game files not included.",
+    "_bucket": "",
+    "seen_times": 1,
+    "seen_first": "2026-11-16",
+    "seen_last": "2026-11-16",
+    "analy": {
+     "zh": "将《塞尔达传说：王国之泪》静态重新编译为原生Windows和Linux x86-64版本，并采用Vulkan渲染器。不包含游戏文件。",
+     "plain": "说白了，这是一堆已经写好的能力，但没有界面，得有人包一层壳才能给普通人用。它干的事是：将《塞尔达传说：王国之泪》静态重新编译为原生Windows和Linux x86-64版本，并采用Vulkan渲染器。不包含游戏文件。",
+     "gap": "包一层网页界面，让不会写代码的人点两下就能用",
+     "buyer": "要用这套能力但搞不定环境的人",
+     "_auto": true,
+     "_src": "mt"
+    }
+   },
+   {
+    "full_name": "elementalsouls/Claude-BugHunter",
+    "owner": "elementalsouls",
+    "owner_type": "User",
+    "name": "Claude-BugHunter",
+    "desc": "A Claude Code skill bundle for bug hunting and external red-team work - 82 skills, 15 slash commands, 681 disclosed-report patterns curated across 24 core vulnerability classes, plus enterprise identity + infrastructure attack matrices.",
+    "lang": "Python",
+    "stars": 18527,
+    "forks": 2027,
+    "watchers": 80,
+    "open_issues": 23,
+    "license": "MIT",
+    "license_name": "MIT License",
+    "topics": [
+     "ai-security",
+     "anthropic",
+     "application-security",
+     "bug-bounty",
+     "bugbounty",
+     "bugcrowd",
+     "claude",
+     "claude-code",
+     "claude-skills",
+     "ethical-hacking",
+     "hackerone",
+     "offensive-security",
+     "pentesting",
+     "red-team",
+     "security-tools",
+     "web-security"
+    ],
+    "created_at": "2026-05-05T11:22:32Z",
+    "pushed_at": "2026-11-23T04:27:51Z",
+    "updated_at": "2026-11-23T08:39:03Z",
+    "size_kb": 3789,
+    "archived": false,
+    "has_discussions": true,
+    "has_wiki": false,
+    "homepage": "https://elementalsouls.github.io/Claude-BugHunter",
+    "url": "https://github.com/elementalsouls/Claude-BugHunter",
+    "default_branch": "main",
+    "gained": 2039,
+    "since": "since_last",
+    "source": "trending",
+    "score": 64,
+    "grade": "B",
+    "grade_word": "值得研究",
+    "form": "Agent技能",
+    "velocity": 92.17412935323384,
+    "_gaps": [
+     [
+      "没有中文上手文档",
+      "没有中文上手文档",
+      "把 README 翻成中文，配一张三步跑通图"
+     ],
+     [
+      "没有中文界面",
+      "没有中文界面",
+      "把界面文案和按钮全翻成中文，截一套中文版演示图"
+     ],
+     [
+      "没有一键部署",
+      "没有一键部署",
+      "补一个 Dockerfile + compose，别人一条命令跑起来"
+     ]
+    ],
+    "gaps_short": [
+     "没有中文上手文档",
+     "没有中文界面",
+     "没有一键部署"
+    ],
+    "risk": "",
+    "suspect": "",
+    "pitch": {
+     "gap_key": "没有效果对比",
+     "change": "做前后对比案例，让人一眼看出差别",
+     "buyer": "天天用 AI 干活、但不知道装什么的人",
+     "buyer_tag": "通用",
+     "deliver": "接企业内训，教团队把这套装上",
+     "deliver_alt": "做成定制版：按客户业务流程改一遍，单独报价",
+     "hours": 1,
+     "gap_key_word": "缺中文上手文档"
+    },
+    "plain": "A Claude Code skill bundle for bug hunting and external red-team work - 82 skills, 15 slash commands, 681 disclosed-report patterns curated across 24 core vulnerability classes, plus enterprise identity + infrastructure attack matrices.",
+    "_bucket": "",
+    "seen_times": 1,
+    "seen_first": "2026-11-16",
+    "seen_last": "2026-11-16",
+    "analy": {
+     "zh": "一个用于漏洞挖掘和外部红队工作的Claude Code技能包——82项技能、15个斜杠命令、681个披露报告模式（涵盖24个核心漏洞类别），以及企业身份+基础设施攻击矩阵。",
+     "plain": "说白了，这是一份写给 AI 的操作手册，装进 AI 工具后它就知道按你的规矩干活。它干的事是：一个用于漏洞挖掘和外部红队工作的Claude Code技能包——82项技能、15个斜杠命令、681个披露报告模式（涵盖24个核心漏洞类别），以及企业身份+基础设施攻击矩阵。",
+     "gap": "做前后对比案例，让人一眼看出差别",
+     "buyer": "天天用 AI 干活、但不知道装什么的人",
+     "_auto": true,
+     "_src": "mt"
+    }
+   },
+   {
+    "full_name": "obra/superpowers",
+    "owner": "obra",
+    "owner_type": "User",
+    "name": "superpowers",
+    "desc": "An agentic skills framework & software development methodology that works.",
+    "lang": "Shell",
+    "stars": 324467,
+    "forks": 28792,
+    "watchers": 1180,
+    "open_issues": 364,
+    "license": "MIT",
+    "license_name": "MIT License",
+    "topics": [
+     "ai",
+     "brainstorming",
+     "coding",
+     "obra",
+     "sdlc",
+     "skills",
+     "subagent-driven-development",
+     "superpowers"
+    ],
+    "created_at": "2025-10-09T19:45:18Z",
+    "pushed_at": "2026-11-03T23:24:58Z",
+    "updated_at": "2026-11-23T08:37:23Z",
+    "size_kb": 8099,
+    "archived": false,
+    "has_discussions": false,
+    "has_wiki": true,
+    "homepage": "",
+    "url": "https://github.com/obra/superpowers",
+    "default_branch": "main",
+    "gained": 788,
+    "since": "daily",
+    "source": "trending",
+    "score": 55,
+    "grade": "B",
+    "grade_word": "值得研究",
+    "form": "Agent技能",
+    "velocity": 788.0,
+    "_gaps": [
+     [
+      "没有中文上手文档",
+      "没有中文上手文档",
+      "把 README 翻成中文，配一张三步跑通图"
+     ],
+     [
+      "没有一键部署",
+      "没有一键部署",
+      "补一个 Dockerfile + compose，别人一条命令跑起来"
+     ],
+     [
+      "没有在线演示",
+      "没有在线演示",
+      "部署一个公开 demo 站，让人先玩再买单"
+     ]
+    ],
+    "gaps_short": [
+     "没有中文上手文档",
+     "没有一键部署",
+     "没有在线演示"
+    ],
+    "risk": "体量太大，改源码成本高，建议只做外围服务",
+    "suspect": "",
+    "pitch": {
+     "gap_key": "场景全是国外的",
+     "change": "把示例换成国内的活（公众号/小红书/电商），别用国外 demo",
+     "buyer": "买了 AI 会员却只用来聊天的人",
+     "buyer_tag": "通用",
+     "deliver": "做成定制版：按客户业务流程改一遍，单独报价",
+     "deliver_alt": "做成定制版：按客户业务流程改一遍，单独报价",
+     "hours": 1,
+     "gap_key_word": "缺中文上手文档"
+    },
+    "plain": "An agentic skills framework & software development methodology that works.",
+    "_bucket": "",
+    "seen_times": 0,
+    "seen_first": "",
+    "seen_last": "",
+    "analy": {
+     "zh": "有效的代理技能框架和软件开发方法。",
+     "plain": "说白了，这是一份写给 AI 的操作手册，装进 AI 工具后它就知道按你的规矩干活。它干的事是：有效的代理技能框架和软件开发方法。",
+     "gap": "把示例换成国内的活（公众号/小红书/电商），别用国外 demo",
+     "buyer": "买了 AI 会员却只用来聊天的人",
+     "_auto": true,
+     "_src": "mt"
+    }
+   },
+   {
+    "full_name": "toeverything/AFFiNE",
+    "owner": "toeverything",
+    "owner_type": "Organization",
+    "name": "AFFiNE",
+    "desc": "There can be more than Notion and Miro. AFFiNE(pronounced [ə‘fain]) is a next-gen knowledge base that brings planning, sorting and creating all together. Privacy first, open-source, customizable and ready to use. ",
+    "lang": "TypeScript",
+    "stars": 77026,
+    "forks": 5646,
+    "watchers": 293,
+    "open_issues": 739,
+    "license": "NOASSERTION",
+    "license_name": "Other",
+    "topics": [
+     "app",
+     "crdt",
+     "editor",
+     "electron",
+     "knowledge-base",
+     "markdown",
+     "miro",
+     "notes",
+     "notion",
+     "notion-alternative",
+     "rust",
+     "rust-lang",
+     "rust-language",
+     "table",
+     "tableview",
+     "whiteboard",
+     "wiki",
+     "workspace"
+    ],
+    "created_at": "2022-07-31T18:45:21Z",
+    "pushed_at": "2026-11-23T08:02:57Z",
+    "updated_at": "2026-11-23T08:37:54Z",
+    "size_kb": 460813,
+    "archived": false,
+    "has_discussions": true,
+    "has_wiki": false,
+    "homepage": "https://affine.pro",
+    "url": "https://github.com/toeverything/AFFiNE",
+    "default_branch": "canary",
+    "gained": 589,
+    "since": "since_last",
+    "source": "trending",
+    "score": 51,
+    "grade": "B",
+    "grade_word": "值得研究",
+    "form": "web应用",
+    "velocity": 0,
+    "_gaps": [
+     [
+      "没有中文上手文档",
+      "没有中文上手文档",
+      "把 README 翻成中文，配一张三步跑通图"
+     ],
+     [
+      "没有中文界面",
+      "没有中文界面",
+      "把界面文案和按钮全翻成中文，截一套中文版演示图"
+     ],
+     [
+      "没有一键部署",
+      "没有一键部署",
+      "补一个 Dockerfile + compose，别人一条命令跑起来"
+     ]
+    ],
+    "gaps_short": [
+     "没有中文上手文档",
+     "没有中文界面",
+     "没有一键部署"
+    ],
+    "risk": "许可证不明，动手前去 README 确认一遍",
+    "suspect": "",
+    "pitch": {
+     "gap_key": "没有在线演示",
+     "change": "部署一个公开 demo，让人先玩再决定买不买",
+     "buyer": "要整理归档资料的人",
+     "buyer_tag": "文档",
+     "deliver": "做成在线服务，按月收使用费",
+     "deliver_alt": "连部署带教一次，做成「一天陪跑」按次收",
+     "hours": 6,
+     "gap_key_word": "缺中文上手文档"
+    },
+    "plain": "There can be more than Notion and Miro. AFFiNE(pronounced [ə‘fain]) is a next-gen knowledge base that brings planning, sorting and creating all together. Privacy first, open-source, customizable and ready to use.",
+    "_bucket": "",
+    "seen_times": 0,
+    "seen_first": "",
+    "seen_last": "",
+    "analy": {
+     "zh": "除了 Notion 和 Miro，还有更多选择。AFFiNE（发音为 [ə‘fain]）是一款新一代知识库，将规划、整理和创作融为一体。隐私至上、开源、可定制且开箱即用。",
+     "plain": "说白了，这是一个打开网页就能用的在线小工具，不用装任何东西。它干的事是：除了 Notion 和 Miro，还有更多选择。AFFiNE（发音为 [ə‘fain]）是一款新一代知识库，将规划、整理和创作融为一体。隐私至上、开源、可定制且开箱即用。",
+     "gap": "部署一个公开 demo，让人先玩再决定买不买",
+     "buyer": "要整理归档资料的人",
+     "_auto": true,
+     "_src": "mt"
+    }
+   }
+  ],
+  "dropped": [
+   {
+    "full_name": "firecrawl/firecrawl",
+    "stars": 207332,
+    "reason": "综合 36 分（C 级），名额满了"
+   },
+   {
+    "full_name": "firecrawl/firecrawl",
+    "stars": 207332,
+    "reason": "综合 36 分（C 级），名额有限，这一期没进",
+    "score": 36
+   },
+   {
+    "full_name": "mvanhorn/last30days-skill",
+    "stars": 73006,
+    "reason": "6 天前（2026-11-17）推过，冷却 7 天内不重推"
+   },
+   {
+    "full_name": "mvanhorn/last30days-skill",
+    "stars": 73006,
+    "reason": "综合 62 分（B 级），名额有限，这一期没进",
+    "score": 62
+   },
+   {
+    "full_name": "cathrynlavery/diagram-design",
+    "stars": 70552,
+    "reason": "3 天前（2026-11-20）推过，冷却 7 天内不重推"
+   },
+   {
+    "full_name": "cathrynlavery/diagram-design",
+    "stars": 70552,
+    "reason": "综合 70 分（A 级），名额有限，这一期没进",
+    "score": 70
+   },
+   {
+    "full_name": "jingyaogong/minimind",
+    "stars": 69071,
+    "reason": "5 天前（2026-11-18）推过，冷却 7 天内不重推"
+   },
+   {
+    "full_name": "jingyaogong/minimind",
+    "stars": 69071,
+    "reason": "综合 67 分（A 级），名额有限，这一期没进",
+    "score": 67
+   },
+   {
+    "full_name": "HKUDS/CLI-Anything",
+    "stars": 63071,
+    "reason": "1 天前（2026-11-22）推过，冷却 7 天内不重推"
+   },
+   {
+    "full_name": "HKUDS/CLI-Anything",
+    "stars": 63071,
+    "reason": "综合 56 分（B 级），名额有限，这一期没进",
+    "score": 56
+   },
+   {
+    "full_name": "ChromeDevTools/chrome-devtools-mcp",
+    "stars": 58918,
+    "reason": "5 天前（2026-11-18）推过，冷却 7 天内不重推"
+   },
+   {
+    "full_name": "ChromeDevTools/chrome-devtools-mcp",
+    "stars": 58918,
+    "reason": "综合 59 分（B 级），名额有限，这一期没进",
+    "score": 59
+   },
+   {
+    "full_name": "alibaba/open-code-review",
+    "stars": 55523,
+    "reason": "2 天前（2026-11-21）推过，冷却 7 天内不重推"
+   },
+   {
+    "full_name": "alibaba/open-code-review",
+    "stars": 55523,
+    "reason": "综合 62 分（B 级），名额有限，这一期没进",
+    "score": 62
+   },
+   {
+    "full_name": "storytold/craft-anything",
+    "stars": 41598,
+    "reason": "2 天前（2026-11-21）推过，冷却 7 天内不重推"
+   },
+   {
+    "full_name": "storytold/craft-anything",
+    "stars": 41598,
+    "reason": "综合 64 分（B 级），名额有限，这一期没进",
+    "score": 64
+   },
+   {
+    "full_name": "nginx/nginx",
+    "stars": 32944,
+    "reason": "综合 42 分（C 级），名额满了"
+   },
+   {
+    "full_name": "nginx/nginx",
+    "stars": 32944,
+    "reason": "综合 42 分（C 级），名额有限，这一期没进",
+    "score": 42
+   },
+   {
+    "full_name": "meta/astryx",
+    "stars": 32349,
+    "reason": "4 天前（2026-11-19）推过，冷却 7 天内不重推"
+   },
+   {
+    "full_name": "meta/astryx",
+    "stars": 32349,
+    "reason": "综合 68 分（A 级），名额有限，这一期没进",
+    "score": 68
+   },
+   {
+    "full_name": "dream-num/univer",
+    "stars": 31354,
+    "reason": "6 天前（2026-11-17）推过，冷却 7 天内不重推"
+   },
+   {
+    "full_name": "dream-num/univer",
+    "stars": 31354,
+    "reason": "综合 62 分（B 级），名额有限，这一期没进",
+    "score": 62
+   },
+   {
+    "full_name": "ag-ui-protocol/ag-ui",
+    "stars": 21271,
+    "reason": "1 天前（2026-11-22）推过，冷却 7 天内不重推"
+   },
+   {
+    "full_name": "ag-ui-protocol/ag-ui",
+    "stars": 21271,
+    "reason": "综合 56 分（B 级），名额有限，这一期没进",
+    "score": 56
+   },
+   {
+    "full_name": "cursor/plugins",
+    "stars": 18590,
+    "reason": "4 天前（2026-11-19）推过，冷却 7 天内不重推"
+   },
+   {
+    "full_name": "cursor/plugins",
+    "stars": 18590,
+    "reason": "综合 56 分（B 级），名额有限，这一期没进",
+    "score": 56
+   },
+   {
+    "full_name": "ItsNotRexed/Leonida",
+    "stars": 17583,
+    "reason": "综合 50 分（B 级），名额满了"
+   },
+   {
+    "full_name": "ItsNotRexed/Leonida",
+    "stars": 17583,
+    "reason": "综合 50 分（B 级），名额有限，这一期没进",
+    "score": 50
+   },
+   {
+    "full_name": "we-promise/sure",
+    "stars": 17413,
+    "reason": "综合 48 分（C 级），名额满了"
+   },
+   {
+    "full_name": "we-promise/sure",
+    "stars": 17413,
+    "reason": "综合 48 分（C 级），名额有限，这一期没进",
+    "score": 48
+   },
+   {
+    "full_name": "XiaoYouChR/Ghost-Downloader-3",
+    "stars": 15692,
+    "reason": "2 天前（2026-11-21）推过，冷却 7 天内不重推"
+   },
+   {
+    "full_name": "XiaoYouChR/Ghost-Downloader-3",
+    "stars": 15692,
+    "reason": "综合 64 分（B 级），名额有限，这一期没进",
+    "score": 64
+   },
+   {
+    "full_name": "Tracer-Cloud/opensre",
+    "stars": 14557,
+    "reason": "2 天前（2026-11-21）推过，冷却 7 天内不重推"
+   },
+   {
+    "full_name": "Tracer-Cloud/opensre",
+    "stars": 14557,
+    "reason": "综合 62 分（B 级），名额有限，这一期没进",
+    "score": 62
+   },
+   {
+    "full_name": "backnotprop/plannotator",
+    "stars": 14531,
+    "reason": "2 天前（2026-11-21）推过，冷却 7 天内不重推"
+   },
+   {
+    "full_name": "backnotprop/plannotator",
+    "stars": 14531,
+    "reason": "综合 68 分（A 级），名额有限，这一期没进",
+    "score": 68
+   },
+   {
+    "full_name": "zhouxiaoka/autoclip",
+    "stars": 13893,
+    "reason": "3 天前（2026-11-20）推过，冷却 7 天内不重推"
+   },
+   {
+    "full_name": "zhouxiaoka/autoclip",
+    "stars": 13893,
+    "reason": "综合 85 分（S 级），名额有限，这一期没进",
+    "score": 85
+   },
+   {
+    "full_name": "openvinotoolkit/openvino",
+    "stars": 12167,
+    "reason": "4 天前（2026-11-19）推过，冷却 7 天内不重推"
+   },
+   {
+    "full_name": "openvinotoolkit/openvino",
+    "stars": 12167,
+    "reason": "综合 68 分（A 级），名额有限，这一期没进",
+    "score": 68
+   }
+  ]
+ },
+ "focus_tab": {
+  "key": null,
+  "pool": 0,
+  "buckets": {}
+ },
+ "deep": [],
+ "date": "2026-11-23",
+ "archived_at": "2026-11-23T08:39:50"
+}

@@ -208,7 +208,26 @@
     "ag-ui-protocol/ag-ui",
     "HKUDS/CLI-Anything"
    ]
+  },
+  {
+   "date": "2026-11-23",
+   "mode": "FULL",
+   "focus": "",
+   "scanned": 67,
+   "daily": 8,
+   "focus_n": 0,
+   "deep": 0,
+   "names": [
+    "google-labs-code/stitch-skills",
+    "anhao/ai-pose-gallery-zh",
+    "libracoder/kiri",
+    "patch-gg/pixelfx",
+    "valentderah/totk-pc-recomp",
+    "elementalsouls/Claude-BugHunter",
+    "obra/superpowers",
+    "toeverything/AFFiNE"
+   ]
   }
  ],
- "updated_at": "2026-11-22T07:50:58"
+ "updated_at": "2026-11-23T08:39:50"
 }

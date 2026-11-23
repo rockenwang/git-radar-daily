@@ -449,27 +449,29 @@
   "libracoder/kiri": {
    "first": "2026-11-16",
    "dates": [
-    "2026-11-16"
+    "2026-11-16",
+    "2026-11-23"
    ],
-   "times": 1,
-   "last": "2026-11-16",
+   "times": 2,
+   "last": "2026-11-23",
    "tabs": [
     "daily"
    ],
-   "stars": 7343,
+   "stars": 12460,
    "focus": ""
   },
   "valentderah/totk-pc-recomp": {
    "first": "2026-11-16",
    "dates": [
-    "2026-11-16"
+    "2026-11-16",
+    "2026-11-23"
    ],
-   "times": 1,
-   "last": "2026-11-16",
+   "times": 2,
+   "last": "2026-11-23",
    "tabs": [
     "daily"
    ],
-   "stars": 7430,
+   "stars": 8076,
    "focus": ""
   },
   "LNPANDY/NX2Apple": {
@@ -488,53 +490,57 @@
   "google-labs-code/stitch-skills": {
    "first": "2026-11-16",
    "dates": [
-    "2026-11-16"
+    "2026-11-16",
+    "2026-11-23"
    ],
-   "times": 1,
-   "last": "2026-11-16",
+   "times": 2,
+   "last": "2026-11-23",
    "tabs": [
     "daily"
    ],
-   "stars": 9482,
+   "stars": 12058,
    "focus": ""
   },
   "patch-gg/pixelfx": {
    "first": "2026-11-16",
    "dates": [
-    "2026-11-16"
+    "2026-11-16",
+    "2026-11-23"
    ],
-   "times": 1,
-   "last": "2026-11-16",
+   "times": 2,
+   "last": "2026-11-23",
    "tabs": [
     "daily"
    ],
-   "stars": 7640,
+   "stars": 8811,
    "focus": ""
   },
   "anhao/ai-pose-gallery-zh": {
    "first": "2026-11-16",
    "dates": [
-    "2026-11-16"
+    "2026-11-16",
+    "2026-11-23"
    ],
-   "times": 1,
-   "last": "2026-11-16",
+   "times": 2,
+   "last": "2026-11-23",
    "tabs": [
     "daily"
    ],
-   "stars": 7057,
+   "stars": 7896,
    "focus": ""
   },
   "elementalsouls/Claude-BugHunter": {
    "first": "2026-11-16",
    "dates": [
-    "2026-11-16"
+    "2026-11-16",
+    "2026-11-23"
    ],
-   "times": 1,
-   "last": "2026-11-16",
+   "times": 2,
+   "last": "2026-11-23",
    "tabs": [
     "daily"
    ],
-   "stars": 6790,
+   "stars": 18527,
    "focus": ""
   },
   "RoutineMiku/apkstart": {
@@ -939,7 +945,33 @@
    ],
    "stars": 62271,
    "focus": ""
+  },
+  "obra/superpowers": {
+   "first": "2026-11-23",
+   "dates": [
+    "2026-11-23"
+   ],
+   "times": 1,
+   "last": "2026-11-23",
+   "tabs": [
+    "daily"
+   ],
+   "stars": 324467,
+   "focus": ""
+  },
+  "toeverything/AFFiNE": {
+   "first": "2026-11-23",
+   "dates": [
+    "2026-11-23"
+   ],
+   "times": 1,
+   "last": "2026-11-23",
+   "tabs": [
+    "daily"
+   ],
+   "stars": 77026,
+   "focus": ""
   }
  },
- "updated_at": "2026-11-22T07:50:58"
+ "updated_at": "2026-11-23T08:39:50"
 }
