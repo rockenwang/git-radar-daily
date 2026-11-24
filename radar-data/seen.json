@@ -546,27 +546,29 @@
   "RoutineMiku/apkstart": {
    "first": "2026-11-17",
    "dates": [
-    "2026-11-17"
+    "2026-11-17",
+    "2026-11-24"
    ],
-   "times": 1,
-   "last": "2026-11-17",
+   "times": 2,
+   "last": "2026-11-24",
    "tabs": [
     "daily"
    ],
-   "stars": 6945,
+   "stars": 9597,
    "focus": ""
   },
   "Lee-xeo/Claude-Cage": {
    "first": "2026-11-17",
    "dates": [
-    "2026-11-17"
+    "2026-11-17",
+    "2026-11-24"
    ],
-   "times": 1,
-   "last": "2026-11-17",
+   "times": 2,
+   "last": "2026-11-24",
    "tabs": [
     "daily"
    ],
-   "stars": 6222,
+   "stars": 8213,
    "focus": ""
   },
   "getarcaneapp/arcane": {
@@ -585,14 +587,15 @@
   "kajisho5/ffmpeg-skill": {
    "first": "2026-11-17",
    "dates": [
-    "2026-11-17"
+    "2026-11-17",
+    "2026-11-24"
    ],
-   "times": 1,
-   "last": "2026-11-17",
+   "times": 2,
+   "last": "2026-11-24",
    "tabs": [
     "daily"
    ],
-   "stars": 7324,
+   "stars": 10449,
    "focus": ""
   },
   "NVIDIA/SkillEvaluator": {
@@ -624,27 +627,29 @@
   "dream-num/univer": {
    "first": "2026-11-17",
    "dates": [
-    "2026-11-17"
+    "2026-11-17",
+    "2026-11-24"
    ],
-   "times": 1,
-   "last": "2026-11-17",
+   "times": 2,
+   "last": "2026-11-24",
    "tabs": [
     "daily"
    ],
-   "stars": 28557,
+   "stars": 31605,
    "focus": ""
   },
   "mvanhorn/last30days-skill": {
    "first": "2026-11-17",
    "dates": [
-    "2026-11-17"
+    "2026-11-17",
+    "2026-11-24"
    ],
-   "times": 1,
-   "last": "2026-11-17",
+   "times": 2,
+   "last": "2026-11-24",
    "tabs": [
     "daily"
    ],
-   "stars": 68429,
+   "stars": 73759,
    "focus": ""
   },
   "KKKKhazix/agent-autoloop": {
@@ -971,7 +976,46 @@
    ],
    "stars": 77026,
    "focus": ""
+  },
+  "haydenschmitty/floorplan": {
+   "first": "2026-11-24",
+   "dates": [
+    "2026-11-24"
+   ],
+   "times": 1,
+   "last": "2026-11-24",
+   "tabs": [
+    "daily"
+   ],
+   "stars": 6535,
+   "focus": ""
+  },
+  "mdiri-ai/SoduWork": {
+   "first": "2026-11-24",
+   "dates": [
+    "2026-11-24"
+   ],
+   "times": 1,
+   "last": "2026-11-24",
+   "tabs": [
+    "daily"
+   ],
+   "stars": 7490,
+   "focus": ""
+  },
+  "we-promise/sure": {
+   "first": "2026-11-24",
+   "dates": [
+    "2026-11-24"
+   ],
+   "times": 1,
+   "last": "2026-11-24",
+   "tabs": [
+    "daily"
+   ],
+   "stars": 17674,
+   "focus": ""
   }
  },
- "updated_at": "2026-11-23T08:39:50"
+ "updated_at": "2026-11-24T10:43:31"
 }

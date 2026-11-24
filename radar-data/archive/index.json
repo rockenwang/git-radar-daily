@@ -227,7 +227,26 @@
     "obra/superpowers",
     "toeverything/AFFiNE"
    ]
+  },
+  {
+   "date": "2026-11-24",
+   "mode": "FULL",
+   "focus": "",
+   "scanned": 67,
+   "daily": 8,
+   "focus_n": 0,
+   "deep": 0,
+   "names": [
+    "RoutineMiku/apkstart",
+    "Lee-xeo/Claude-Cage",
+    "haydenschmitty/floorplan",
+    "mdiri-ai/SoduWork",
+    "kajisho5/ffmpeg-skill",
+    "dream-num/univer",
+    "mvanhorn/last30days-skill",
+    "we-promise/sure"
+   ]
   }
  ],
- "updated_at": "2026-11-23T08:39:50"
+ "updated_at": "2026-11-24T10:43:31"
 }
