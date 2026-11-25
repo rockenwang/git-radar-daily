@@ -655,14 +655,15 @@
   "KKKKhazix/agent-autoloop": {
    "first": "2026-11-18",
    "dates": [
-    "2026-11-18"
+    "2026-11-18",
+    "2026-11-25"
    ],
-   "times": 1,
-   "last": "2026-11-18",
+   "times": 2,
+   "last": "2026-11-25",
    "tabs": [
     "daily"
    ],
-   "stars": 5847,
+   "stars": 6528,
    "focus": ""
   },
   "qybaihe/bla": {
@@ -694,53 +695,57 @@
   "Minireel/HGhub": {
    "first": "2026-11-18",
    "dates": [
-    "2026-11-18"
+    "2026-11-18",
+    "2026-11-25"
    ],
-   "times": 1,
-   "last": "2026-11-18",
+   "times": 2,
+   "last": "2026-11-25",
    "tabs": [
     "daily"
    ],
-   "stars": 9952,
+   "stars": 11856,
    "focus": ""
   },
   "ChromeDevTools/chrome-devtools-mcp": {
    "first": "2026-11-18",
    "dates": [
-    "2026-11-18"
+    "2026-11-18",
+    "2026-11-25"
    ],
-   "times": 1,
-   "last": "2026-11-18",
+   "times": 2,
+   "last": "2026-11-25",
    "tabs": [
     "daily"
    ],
-   "stars": 58120,
+   "stars": 59275,
    "focus": ""
   },
   "anefzaoui/misterdownloadmanager": {
    "first": "2026-11-18",
    "dates": [
-    "2026-11-18"
+    "2026-11-18",
+    "2026-11-25"
    ],
-   "times": 1,
-   "last": "2026-11-18",
+   "times": 2,
+   "last": "2026-11-25",
    "tabs": [
     "daily"
    ],
-   "stars": 12467,
+   "stars": 17974,
    "focus": ""
   },
   "jingyaogong/minimind": {
    "first": "2026-11-18",
    "dates": [
-    "2026-11-18"
+    "2026-11-18",
+    "2026-11-25"
    ],
-   "times": 1,
-   "last": "2026-11-18",
+   "times": 2,
+   "last": "2026-11-25",
    "tabs": [
     "daily"
    ],
-   "stars": 66298,
+   "stars": 70632,
    "focus": ""
   },
   "huami-dev/GestaltX": {
@@ -1015,7 +1020,46 @@
    ],
    "stars": 17674,
    "focus": ""
+  },
+  "xcl-dev/xcl": {
+   "first": "2026-11-25",
+   "dates": [
+    "2026-11-25"
+   ],
+   "times": 1,
+   "last": "2026-11-25",
+   "tabs": [
+    "daily"
+   ],
+   "stars": 8053,
+   "focus": ""
+  },
+  "zortos293/Lichii": {
+   "first": "2026-11-25",
+   "dates": [
+    "2026-11-25"
+   ],
+   "times": 1,
+   "last": "2026-11-25",
+   "tabs": [
+    "daily"
+   ],
+   "stars": 10253,
+   "focus": ""
+  },
+  "Marvisak/VIctory": {
+   "first": "2026-11-25",
+   "dates": [
+    "2026-11-25"
+   ],
+   "times": 1,
+   "last": "2026-11-25",
+   "tabs": [
+    "daily"
+   ],
+   "stars": 11860,
+   "focus": ""
   }
  },
- "updated_at": "2026-11-24T10:43:31"
+ "updated_at": "2026-11-25T09:38:47"
 }

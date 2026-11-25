@@ -1,0 +1,899 @@
+{
+ "mode": "FULL",
+ "degraded": false,
+ "focus": null,
+ "scanned": 67,
+ "pools": {
+  "daily": 67,
+  "focus": 0
+ },
+ "daily": {
+  "picks": [
+   {
+    "full_name": "KKKKhazix/agent-autoloop",
+    "owner": "KKKKhazix",
+    "owner_type": "User",
+    "name": "agent-autoloop",
+    "desc": "让你的命令行 Agent 在后台自己接活、自己跟进到底；平时不烦你，遇到拿不准的事才发卡片找你拍板。",
+    "lang": "TypeScript",
+    "stars": 6528,
+    "forks": 1220,
+    "watchers": 12,
+    "open_issues": 0,
+    "license": "MIT",
+    "license_name": "MIT License",
+    "topics": [
+     "ai-agents",
+     "automation",
+     "claude-code",
+     "cli",
+     "codex",
+     "event-driven",
+     "mcp",
+     "nodejs",
+     "self-hosted",
+     "typescript",
+     "workflow"
+    ],
+    "created_at": "2026-11-03T08:02:11Z",
+    "pushed_at": "2026-11-25T02:00:44Z",
+    "updated_at": "2026-11-25T09:09:19Z",
+    "size_kb": 2350,
+    "archived": false,
+    "has_discussions": true,
+    "has_wiki": false,
+    "homepage": "",
+    "url": "https://github.com/KKKKhazix/agent-autoloop",
+    "default_branch": "main",
+    "gained": 0,
+    "since": "created<30d",
+    "source": "search_new",
+    "score": 94,
+    "grade": "S",
+    "grade_word": "今晚就能动手",
+    "form": "命令行",
+    "velocity": 296.72727272727275,
+    "_gaps": [
+     [
+      "没有一键部署",
+      "没有一键部署",
+      "补一个 Dockerfile + compose，别人一条命令跑起来"
+     ],
+     [
+      "没有在线演示",
+      "没有在线演示",
+      "部署一个公开 demo 站，让人先玩再买单"
+     ]
+    ],
+    "gaps_short": [
+     "没有一键部署",
+     "没有在线演示"
+    ],
+    "risk": "",
+    "suspect": "",
+    "pitch": {
+     "gap_key": "要敲一长串参数",
+     "change": "封装成双击就能跑的脚本，把参数做成填空",
+     "buyer": "需要这套能力但装不上的人",
+     "buyer_tag": "通用",
+     "deliver": "做成图文教程 + 现成脚本包，一次付费长期用",
+     "deliver_alt": "接单代跑，按次收费",
+     "hours": 2,
+     "gap_key_word": "缺一键部署"
+    },
+    "plain": "让你的命令行 Agent 在后台自己接活、自己跟进到底；平时不烦你，遇到拿不准的事才发卡片找你拍板。",
+    "_bucket": "",
+    "seen_times": 1,
+    "seen_first": "2026-11-18",
+    "seen_last": "2026-11-18",
+    "analy": {
+     "zh": "让你的命令行 Agent 在后台自己接活、自己跟进到底；平时不烦你，遇到拿不准的事才发卡片找你拍板。",
+     "plain": "说白了，这是一个要在黑框里敲命令才动起来的工具，功能硬，但上手要人带。它干的事是：让你的命令行 Agent 在后台自己接活、自己跟进到底；平时不烦你，遇到拿不准的事才发卡片找你拍板。",
+     "gap": "封装成双击就能跑的脚本，把参数做成填空",
+     "buyer": "需要这套能力但装不上的人",
+     "_auto": true,
+     "_src": "mt"
+    }
+   },
+   {
+    "full_name": "jingyaogong/minimind",
+    "owner": "jingyaogong",
+    "owner_type": "User",
+    "name": "minimind",
+    "desc": "🧠 两小时从 0 训出你的 64M 大模型。Train your own 64M LLM from scratch in 2 hours.",
+    "lang": "Python",
+    "stars": 70632,
+    "forks": 9180,
+    "watchers": 314,
+    "open_issues": 64,
+    "license": "Apache-2.0",
+    "license_name": "Apache License 2.0",
+    "topics": [
+     "artificial-intelligence",
+     "large-language-model"
+    ],
+    "created_at": "2024-07-27T04:34:12Z",
+    "pushed_at": "2026-11-23T04:01:07Z",
+    "updated_at": "2026-11-25T09:37:43Z",
+    "size_kb": 39567,
+    "archived": false,
+    "has_discussions": true,
+    "has_wiki": true,
+    "homepage": "https://jingyaogong.github.io/minimind",
+    "url": "https://github.com/jingyaogong/minimind",
+    "default_branch": "master",
+    "gained": 767,
+    "since": "since_last",
+    "source": "trending",
+    "score": 67,
+    "grade": "A",
+    "grade_word": "改一改能卖",
+    "form": "引擎库",
+    "velocity": 0,
+    "_gaps": [
+     [
+      "没有一键部署",
+      "没有一键部署",
+      "补一个 Dockerfile + compose，别人一条命令跑起来"
+     ]
+    ],
+    "gaps_short": [
+     "没有一键部署"
+    ],
+    "risk": "体量太大，改源码成本高，建议只做外围服务",
+    "suspect": "",
+    "pitch": {
+     "gap_key": "只有代码没有界面",
+     "change": "包一层网页界面，让不会写代码的人点两下就能用",
+     "buyer": "要用这套能力但搞不定环境的人",
+     "buyer_tag": "通用",
+     "deliver": "做成带界面的成品，按份卖（发网盘，附中文说明）",
+     "deliver_alt": "接单代跑：客户给需求，你出结果",
+     "hours": 1,
+     "gap_key_word": "缺一键部署"
+    },
+    "plain": "两小时从 0 训出你的 64M 大模型。Train your own 64M LLM from scratch in 2 hours.",
+    "_bucket": "",
+    "seen_times": 1,
+    "seen_first": "2026-11-18",
+    "seen_last": "2026-11-18",
+    "analy": {
+     "zh": "两小时从 0 训出你的 64M 大模型。 在 2 小时内从零开始训练您自己的 6400 万参数 LLM。",
+     "plain": "说白了，这是一堆已经写好的能力，但没有界面，得有人包一层壳才能给普通人用。它干的事是：两小时从 0 训出你的 64M 大模型。 在 2 小时内从零开始训练您自己的 6400 万参数 LLM。",
+     "gap": "包一层网页界面，让不会写代码的人点两下就能用",
+     "buyer": "要用这套能力但搞不定环境的人",
+     "_auto": true,
+     "_src": "mt"
+    }
+   },
+   {
+    "full_name": "Minireel/HGhub",
+    "owner": "Minireel",
+    "owner_type": "Organization",
+    "name": "HGhub",
+    "desc": "Plug-in media player",
+    "lang": "Rust",
+    "stars": 11856,
+    "forks": 9181,
+    "watchers": 52,
+    "open_issues": 11,
+    "license": "NOASSERTION",
+    "license_name": "Other",
+    "topics": [
+     "android",
+     "drama",
+     "free",
+     "movie-web-app",
+     "reels",
+     "windows"
+    ],
+    "created_at": "2026-11-03T14:04:27Z",
+    "pushed_at": "2026-11-24T02:54:07Z",
+    "updated_at": "2026-11-25T09:34:14Z",
+    "size_kb": 2193,
+    "archived": false,
+    "has_discussions": false,
+    "has_wiki": false,
+    "homepage": "https://minireel.github.io/HGhub/",
+    "url": "https://github.com/Minireel/HGhub",
+    "default_branch": "main",
+    "gained": 0,
+    "since": "created<30d",
+    "source": "search_new",
+    "score": 61,
+    "grade": "B",
+    "grade_word": "值得研究",
+    "form": "web应用",
+    "velocity": 564.5714285714286,
+    "_gaps": [
+     [
+      "没有中文界面",
+      "没有中文界面",
+      "把界面文案和按钮全翻成中文，截一套中文版演示图"
+     ],
+     [
+      "没有一键部署",
+      "没有一键部署",
+      "补一个 Dockerfile + compose，别人一条命令跑起来"
+     ]
+    ],
+    "gaps_short": [
+     "没有中文界面",
+     "没有一键部署"
+    ],
+    "risk": "许可证不明，动手前去 README 确认一遍",
+    "suspect": "",
+    "pitch": {
+     "gap_key": "没有中文界面",
+     "change": "把界面文案和按钮全翻成中文，再截一套中文版演示图当商品图",
+     "buyer": "想有个自己工具但不会写代码的人",
+     "buyer_tag": "通用",
+     "deliver": "打包部署到客户自己的服务器/域名，收一次部署费",
+     "deliver_alt": "做成在线服务，按月收使用费",
+     "hours": 8,
+     "gap_key_word": "缺中文界面"
+    },
+    "plain": "Plug-in media player",
+    "_bucket": "",
+    "seen_times": 1,
+    "seen_first": "2026-11-18",
+    "seen_last": "2026-11-18",
+    "analy": {
+     "zh": "插件媒体播放器",
+     "plain": "说白了，这是一个打开网页就能用的在线小工具，不用装任何东西。它干的事是：插件媒体播放器",
+     "gap": "把界面文案和按钮全翻成中文，再截一套中文版演示图当商品图",
+     "buyer": "想有个自己工具但不会写代码的人",
+     "_auto": true,
+     "_src": "mt"
+    }
+   },
+   {
+    "full_name": "ChromeDevTools/chrome-devtools-mcp",
+    "owner": "ChromeDevTools",
+    "owner_type": "Organization",
+    "name": "chrome-devtools-mcp",
+    "desc": "Chrome DevTools for coding agents",
+    "lang": "TypeScript",
+    "stars": 59275,
+    "forks": 4887,
+    "watchers": 258,
+    "open_issues": 120,
+    "license": "Apache-2.0",
+    "license_name": "Apache License 2.0",
+    "topics": [
+     "browser",
+     "chrome",
+     "chrome-devtools",
+     "debugging",
+     "devtools",
+     "mcp",
+     "mcp-server",
+     "puppeteer"
+    ],
+    "created_at": "2025-09-11T10:39:55Z",
+    "pushed_at": "2026-11-25T09:27:45Z",
+    "updated_at": "2026-11-25T09:31:26Z",
+    "size_kb": 13868,
+    "archived": false,
+    "has_discussions": true,
+    "has_wiki": false,
+    "homepage": "https://developer.chrome.com/docs/devtools/agents",
+    "url": "https://github.com/ChromeDevTools/chrome-devtools-mcp",
+    "default_branch": "main",
+    "gained": 1258,
+    "since": "weekly",
+    "source": "trending",
+    "score": 59,
+    "grade": "B",
+    "grade_word": "值得研究",
+    "form": "引擎库",
+    "velocity": 179.71428571428572,
+    "_gaps": [
+     [
+      "没有中文上手文档",
+      "没有中文上手文档",
+      "把 README 翻成中文，配一张三步跑通图"
+     ],
+     [
+      "没有一键部署",
+      "没有一键部署",
+      "补一个 Dockerfile + compose，别人一条命令跑起来"
+     ]
+    ],
+    "gaps_short": [
+     "没有中文上手文档",
+     "没有一键部署"
+    ],
+    "risk": "大厂项目，路线不由你定，只能做外围（部署/中文化/模板）",
+    "suspect": "",
+    "pitch": {
+     "gap_key": "没有中文上手文档",
+     "change": "把 README 翻成中文，配一张「三步跑通」流程图",
+     "buyer": "要用这套能力但搞不定环境的人",
+     "buyer_tag": "通用",
+     "deliver": "接单代跑：客户给需求，你出结果",
+     "deliver_alt": "做成中文教程 + 成品包，走知识付费",
+     "hours": 2,
+     "gap_key_word": "缺中文上手文档"
+    },
+    "plain": "Chrome DevTools for coding agents",
+    "_bucket": "",
+    "seen_times": 1,
+    "seen_first": "2026-11-18",
+    "seen_last": "2026-11-18",
+    "analy": {
+     "zh": "适用于编码代理的 Chrome DevTools",
+     "plain": "说白了，这是一堆已经写好的能力，但没有界面，得有人包一层壳才能给普通人用。它干的事是：适用于编码代理的 Chrome DevTools",
+     "gap": "把 README 翻成中文，配一张「三步跑通」流程图",
+     "buyer": "要用这套能力但搞不定环境的人",
+     "_auto": true,
+     "_src": "mt"
+    }
+   },
+   {
+    "full_name": "anefzaoui/misterdownloadmanager",
+    "owner": "anefzaoui",
+    "owner_type": "User",
+    "name": "misterdownloadmanager",
+    "desc": "misterdownloadmanager: The ultimate open-source, clean-room download manager written from scratch in pure Rust for Windows, Mac, and Linux",
+    "lang": "Rust",
+    "stars": 17974,
+    "forks": 1526,
+    "watchers": 75,
+    "open_issues": 111,
+    "license": "GPL-3.0",
+    "license_name": "GNU General Public License v3.0",
+    "topics": [
+     "bittorrent-client",
+     "debrid",
+     "download-accelerator",
+     "download-manager",
+     "downloadmanager",
+     "egui",
+     "file-downloader",
+     "gallery-dl",
+     "idm",
+     "idm-alternative",
+     "internet-download-manager",
+     "m3u8-downloader",
+     "magnet",
+     "playlist-downloader",
+     "real-debrid",
+     "rust",
+     "torrent-client",
+     "video-downloader",
+     "youtube-downloader",
+     "yt-dlp"
+    ],
+    "created_at": "2026-10-29T01:25:19Z",
+    "pushed_at": "2026-11-25T09:03:20Z",
+    "updated_at": "2026-11-25T09:30:35Z",
+    "size_kb": 846717,
+    "archived": false,
+    "has_discussions": true,
+    "has_wiki": false,
+    "homepage": "https://misterdownloadmanager.com",
+    "url": "https://github.com/anefzaoui/misterdownloadmanager",
+    "default_branch": "main",
+    "gained": 0,
+    "since": "created<30d",
+    "source": "search_new",
+    "score": 59,
+    "grade": "B",
+    "grade_word": "值得研究",
+    "form": "引擎库",
+    "velocity": 665.7037037037037,
+    "_gaps": [
+     [
+      "没有中文上手文档",
+      "没有中文上手文档",
+      "把 README 翻成中文，配一张三步跑通图"
+     ],
+     [
+      "没有一键部署",
+      "没有一键部署",
+      "补一个 Dockerfile + compose，别人一条命令跑起来"
+     ]
+    ],
+    "gaps_short": [
+     "没有中文上手文档",
+     "没有一键部署"
+    ],
+    "risk": "GPL：改了必须开源，卖闭源产品有法律风险",
+    "suspect": "",
+    "pitch": {
+     "gap_key": "没有现成案例",
+     "change": "补 3 个真实场景示例，每个都能直接跑出结果",
+     "buyer": "做短视频的剪辑号",
+     "buyer_tag": "视频",
+     "deliver": "做成中文教程 + 成品包，走知识付费",
+     "deliver_alt": "封装成 API 出租，按调用量收费",
+     "hours": 11,
+     "gap_key_word": "缺中文上手文档"
+    },
+    "plain": "misterdownloadmanager: The ultimate open-source, clean-room download manager written from scratch in pure Rust for Windows, Mac, and Linux",
+    "_bucket": "",
+    "seen_times": 1,
+    "seen_first": "2026-11-18",
+    "seen_last": "2026-11-18",
+    "analy": {
+     "zh": "misterdownloadmanager：终极开源、无污染的下载管理器，完全使用纯 Rust 语言从头编写，适用于 Windows、Mac 和 Linux",
+     "plain": "说白了，这是一堆已经写好的能力，但没有界面，得有人包一层壳才能给普通人用。它干的事是：misterdownloadmanager：终极开源、无污染的下载管理器，完全使用纯 Rust 语言从头编写，适用于 Windows、Mac 和 Linux",
+     "gap": "补 3 个真实场景示例，每个都能直接跑出结果",
+     "buyer": "做短视频的剪辑号",
+     "_auto": true,
+     "_src": "mt"
+    }
+   },
+   {
+    "full_name": "xcl-dev/xcl",
+    "owner": "xcl-dev",
+    "owner_type": "Organization",
+    "name": "xcl",
+    "desc": "Xbox Series compatibility layer for Windows - runs console game code natively, reimplements the console system libraries and recompiles RDNA2 shaders to DXIL",
+    "lang": "Rust",
+    "stars": 8053,
+    "forks": 1087,
+    "watchers": 119,
+    "open_issues": 1444,
+    "license": "GPL-2.0",
+    "license_name": "GNU General Public License v2.0",
+    "topics": [
+     "d3d12",
+     "gdk",
+     "rdna2",
+     "xbox"
+    ],
+    "created_at": "2026-11-20T20:03:21Z",
+    "pushed_at": "2026-11-25T06:23:22Z",
+    "updated_at": "2026-11-25T09:37:37Z",
+    "size_kb": 6291,
+    "archived": false,
+    "has_discussions": false,
+    "has_wiki": false,
+    "homepage": "https://discord.gg/xcl",
+    "url": "https://github.com/xcl-dev/xcl",
+    "default_branch": "main",
+    "gained": 0,
+    "since": "created<30d",
+    "source": "search_new",
+    "score": 56,
+    "grade": "B",
+    "grade_word": "值得研究",
+    "form": "引擎库",
+    "velocity": 2013.25,
+    "_gaps": [
+     [
+      "没有中文上手文档",
+      "没有中文上手文档",
+      "把 README 翻成中文，配一张三步跑通图"
+     ],
+     [
+      "没有一键部署",
+      "没有一键部署",
+      "补一个 Dockerfile + compose，别人一条命令跑起来"
+     ]
+    ],
+    "gaps_short": [
+     "没有中文上手文档",
+     "没有一键部署"
+    ],
+    "risk": "GPL：改了必须开源",
+    "suspect": "星速可疑：4 天涨到 8,053 星（日均 2,013），先观察一周看有没有真实用户再动手",
+    "pitch": {
+     "gap_key": "环境装不上",
+     "change": "打包成 Docker 镜像或一键脚本，把依赖全封死",
+     "buyer": "接外包时缺一个现成轮子的人",
+     "buyer_tag": "通用",
+     "deliver": "封装成 API 出租，按调用量收费",
+     "deliver_alt": "封装成 API 出租，按调用量收费",
+     "hours": 8,
+     "gap_key_word": "缺中文上手文档"
+    },
+    "plain": "Xbox Series compatibility layer for Windows - runs console game code natively, reimplements the console system libraries and recompiles RDNA2 shaders to DXIL",
+    "_bucket": "",
+    "seen_times": 0,
+    "seen_first": "",
+    "seen_last": "",
+    "analy": {
+     "zh": "适用于 Windows 的 Xbox Series 兼容层——以原生方式运行主机游戏代码，重新实现主机系统库并重新编译 RDNA2 着色器为 DXIL",
+     "plain": "说白了，这是一堆已经写好的能力，但没有界面，得有人包一层壳才能给普通人用。它干的事是：适用于 Windows 的 Xbox Series 兼容层——以原生方式运行主机游戏代码，重新实现主机系统库并重新编译 RDNA2 着色器为 DXIL",
+     "gap": "打包成 Docker 镜像或一键脚本，把依赖全封死",
+     "buyer": "接外包时缺一个现成轮子的人",
+     "_auto": true,
+     "_src": "mt"
+    }
+   },
+   {
+    "full_name": "zortos293/Lichii",
+    "owner": "zortos293",
+    "owner_type": "User",
+    "name": "Lichii",
+    "desc": "VERY experimental Nintendo Switch 2 emulator",
+    "lang": "C++",
+    "stars": 10253,
+    "forks": 1621,
+    "watchers": 112,
+    "open_issues": 691,
+    "license": "GPL-3.0",
+    "license_name": "GNU General Public License v3.0",
+    "topics": [],
+    "created_at": "2026-10-31T14:17:26Z",
+    "pushed_at": "2026-11-25T08:09:43Z",
+    "updated_at": "2026-11-25T09:38:07Z",
+    "size_kb": 297525,
+    "archived": false,
+    "has_discussions": false,
+    "has_wiki": false,
+    "homepage": "",
+    "url": "https://github.com/zortos293/Lichii",
+    "default_branch": "nx2",
+    "gained": 72,
+    "since": "since_last",
+    "source": "search_new",
+    "score": 47,
+    "grade": "C",
+    "grade_word": "只看不碰",
+    "form": "引擎库",
+    "velocity": 427.2083333333333,
+    "_gaps": [
+     [
+      "没有中文上手文档",
+      "没有中文上手文档",
+      "把 README 翻成中文，配一张三步跑通图"
+     ],
+     [
+      "没有一键部署",
+      "没有一键部署",
+      "补一个 Dockerfile + compose，别人一条命令跑起来"
+     ],
+     [
+      "没有在线演示",
+      "没有在线演示",
+      "部署一个公开 demo 站，让人先玩再买单"
+     ]
+    ],
+    "gaps_short": [
+     "没有中文上手文档",
+     "没有一键部署",
+     "没有在线演示"
+    ],
+    "risk": "GPL：改了必须开源，卖闭源产品有法律风险",
+    "suspect": "",
+    "pitch": {
+     "gap_key": "没有效果对比",
+     "change": "做一组前后对比图，让人一眼看出值不值",
+     "buyer": "接外包时缺一个现成轮子的人",
+     "buyer_tag": "通用",
+     "deliver": "做成带界面的成品，按份卖（发网盘，附中文说明）",
+     "deliver_alt": "封装成 API 出租，按调用量收费",
+     "hours": 13,
+     "gap_key_word": "缺中文上手文档"
+    },
+    "plain": "VERY experimental Nintendo Switch 2 emulator",
+    "_bucket": "",
+    "seen_times": 0,
+    "seen_first": "",
+    "seen_last": "",
+    "analy": {
+     "zh": "非常实验性的 Nintendo Switch 2 模拟器",
+     "plain": "说白了，这是一堆已经写好的能力，但没有界面，得有人包一层壳才能给普通人用。它干的事是：非常实验性的 Nintendo Switch 2 模拟器",
+     "gap": "做一组前后对比图，让人一眼看出值不值",
+     "buyer": "接外包时缺一个现成轮子的人",
+     "_auto": true,
+     "_src": "mt"
+    }
+   },
+   {
+    "full_name": "Marvisak/VIctory",
+    "owner": "Marvisak",
+    "owner_type": "User",
+    "name": "VIctory",
+    "desc": "An attempt at running GTA VI on PC",
+    "lang": "Rust",
+    "stars": 11860,
+    "forks": 1768,
+    "watchers": 276,
+    "open_issues": 1411,
+    "license": "GPL-3.0",
+    "license_name": "GNU General Public License v3.0",
+    "topics": [],
+    "created_at": "2026-11-23T21:47:25Z",
+    "pushed_at": "2026-11-25T01:39:21Z",
+    "updated_at": "2026-11-25T09:36:35Z",
+    "size_kb": 3200,
+    "archived": false,
+    "has_discussions": false,
+    "has_wiki": true,
+    "homepage": "",
+    "url": "https://github.com/Marvisak/VIctory",
+    "default_branch": "main",
+    "gained": 4317,
+    "since": "since_last",
+    "source": "search_new",
+    "score": 45,
+    "grade": "C",
+    "grade_word": "只看不碰",
+    "form": "引擎库",
+    "velocity": 11860.0,
+    "_gaps": [
+     [
+      "没有中文上手文档",
+      "没有中文上手文档",
+      "把 README 翻成中文，配一张三步跑通图"
+     ],
+     [
+      "没有一键部署",
+      "没有一键部署",
+      "补一个 Dockerfile + compose，别人一条命令跑起来"
+     ],
+     [
+      "没有在线演示",
+      "没有在线演示",
+      "部署一个公开 demo 站，让人先玩再买单"
+     ]
+    ],
+    "gaps_short": [
+     "没有中文上手文档",
+     "没有一键部署",
+     "没有在线演示"
+    ],
+    "risk": "GPL：改了必须开源，卖闭源产品有法律风险",
+    "suspect": "星速可疑：1 天涨到 11,860 星（日均 11,860），先观察一周看有没有真实用户再动手",
+    "pitch": {
+     "gap_key": "接口太难调",
+     "change": "写一层傻瓜封装，两行代码出结果",
+     "buyer": "团队里没人会配环境的项目负责人",
+     "buyer_tag": "通用",
+     "deliver": "做成带界面的成品，按份卖（发网盘，附中文说明）",
+     "deliver_alt": "封装成 API 出租，按调用量收费",
+     "hours": 8,
+     "gap_key_word": "缺中文上手文档"
+    },
+    "plain": "An attempt at running GTA VI on PC",
+    "_bucket": "",
+    "seen_times": 0,
+    "seen_first": "",
+    "seen_last": "",
+    "analy": {
+     "zh": "尝试在 PC 上运行《GTA VI》",
+     "plain": "说白了，这是一堆已经写好的能力，但没有界面，得有人包一层壳才能给普通人用。它干的事是：尝试在 PC 上运行《GTA VI》",
+     "gap": "写一层傻瓜封装，两行代码出结果",
+     "buyer": "团队里没人会配环境的项目负责人",
+     "_auto": true,
+     "_src": "mt"
+    }
+   }
+  ],
+  "dropped": [
+   {
+    "full_name": "obra/superpowers",
+    "stars": 326145,
+    "reason": "2 天前（2026-11-23）推过，冷却 7 天内不重推"
+   },
+   {
+    "full_name": "obra/superpowers",
+    "stars": 326145,
+    "reason": "综合 57 分（B 级），名额有限，这一期没进",
+    "score": 57
+   },
+   {
+    "full_name": "firecrawl/firecrawl",
+    "stars": 209367,
+    "reason": "综合 36 分（C 级），名额满了"
+   },
+   {
+    "full_name": "firecrawl/firecrawl",
+    "stars": 209367,
+    "reason": "综合 36 分（C 级），名额有限，这一期没进",
+    "score": 36
+   },
+   {
+    "full_name": "toeverything/AFFiNE",
+    "stars": 78177,
+    "reason": "2 天前（2026-11-23）推过，冷却 7 天内不重推"
+   },
+   {
+    "full_name": "toeverything/AFFiNE",
+    "stars": 78177,
+    "reason": "综合 51 分（B 级），名额有限，这一期没进",
+    "score": 51
+   },
+   {
+    "full_name": "mvanhorn/last30days-skill",
+    "stars": 74629,
+    "reason": "1 天前（2026-11-24）推过，冷却 7 天内不重推"
+   },
+   {
+    "full_name": "mvanhorn/last30days-skill",
+    "stars": 74629,
+    "reason": "综合 62 分（B 级），名额有限，这一期没进",
+    "score": 62
+   },
+   {
+    "full_name": "cathrynlavery/diagram-design",
+    "stars": 72462,
+    "reason": "5 天前（2026-11-20）推过，冷却 7 天内不重推"
+   },
+   {
+    "full_name": "cathrynlavery/diagram-design",
+    "stars": 72462,
+    "reason": "综合 70 分（A 级），名额有限，这一期没进",
+    "score": 70
+   },
+   {
+    "full_name": "HKUDS/CLI-Anything",
+    "stars": 65222,
+    "reason": "3 天前（2026-11-22）推过，冷却 7 天内不重推"
+   },
+   {
+    "full_name": "HKUDS/CLI-Anything",
+    "stars": 65222,
+    "reason": "综合 56 分（B 级），名额有限，这一期没进",
+    "score": 56
+   },
+   {
+    "full_name": "alibaba/open-code-review",
+    "stars": 56185,
+    "reason": "4 天前（2026-11-21）推过，冷却 7 天内不重推"
+   },
+   {
+    "full_name": "alibaba/open-code-review",
+    "stars": 56185,
+    "reason": "综合 62 分（B 级），名额有限，这一期没进",
+    "score": 62
+   },
+   {
+    "full_name": "storytold/craft-anything",
+    "stars": 43129,
+    "reason": "4 天前（2026-11-21）推过，冷却 7 天内不重推"
+   },
+   {
+    "full_name": "storytold/craft-anything",
+    "stars": 43129,
+    "reason": "综合 64 分（B 级），名额有限，这一期没进",
+    "score": 64
+   },
+   {
+    "full_name": "nginx/nginx",
+    "stars": 33288,
+    "reason": "综合 42 分（C 级），名额满了"
+   },
+   {
+    "full_name": "nginx/nginx",
+    "stars": 33288,
+    "reason": "综合 42 分（C 级），名额有限，这一期没进",
+    "score": 42
+   },
+   {
+    "full_name": "meta/astryx",
+    "stars": 32970,
+    "reason": "6 天前（2026-11-19）推过，冷却 7 天内不重推"
+   },
+   {
+    "full_name": "meta/astryx",
+    "stars": 32970,
+    "reason": "综合 68 分（A 级），名额有限，这一期没进",
+    "score": 68
+   },
+   {
+    "full_name": "dream-num/univer",
+    "stars": 31783,
+    "reason": "1 天前（2026-11-24）推过，冷却 7 天内不重推"
+   },
+   {
+    "full_name": "dream-num/univer",
+    "stars": 31783,
+    "reason": "综合 62 分（B 级），名额有限，这一期没进",
+    "score": 62
+   },
+   {
+    "full_name": "elementalsouls/Claude-BugHunter",
+    "stars": 22088,
+    "reason": "2 天前（2026-11-23）推过，冷却 7 天内不重推"
+   },
+   {
+    "full_name": "elementalsouls/Claude-BugHunter",
+    "stars": 22088,
+    "reason": "综合 64 分（B 级），名额有限，这一期没进",
+    "score": 64
+   },
+   {
+    "full_name": "ag-ui-protocol/ag-ui",
+    "stars": 21648,
+    "reason": "3 天前（2026-11-22）推过，冷却 7 天内不重推"
+   },
+   {
+    "full_name": "ag-ui-protocol/ag-ui",
+    "stars": 21648,
+    "reason": "综合 56 分（B 级），名额有限，这一期没进",
+    "score": 56
+   },
+   {
+    "full_name": "cursor/plugins",
+    "stars": 19376,
+    "reason": "6 天前（2026-11-19）推过，冷却 7 天内不重推"
+   },
+   {
+    "full_name": "cursor/plugins",
+    "stars": 19376,
+    "reason": "综合 56 分（B 级），名额有限，这一期没进",
+    "score": 56
+   },
+   {
+    "full_name": "we-promise/sure",
+    "stars": 17839,
+    "reason": "1 天前（2026-11-24）推过，冷却 7 天内不重推"
+   },
+   {
+    "full_name": "we-promise/sure",
+    "stars": 17839,
+    "reason": "综合 48 分（C 级），名额有限，这一期没进",
+    "score": 48
+   },
+   {
+    "full_name": "XiaoYouChR/Ghost-Downloader-3",
+    "stars": 17775,
+    "reason": "4 天前（2026-11-21）推过，冷却 7 天内不重推"
+   },
+   {
+    "full_name": "XiaoYouChR/Ghost-Downloader-3",
+    "stars": 17775,
+    "reason": "综合 66 分（A 级），名额有限，这一期没进",
+    "score": 66
+   },
+   {
+    "full_name": "zhouxiaoka/autoclip",
+    "stars": 15799,
+    "reason": "5 天前（2026-11-20）推过，冷却 7 天内不重推"
+   },
+   {
+    "full_name": "zhouxiaoka/autoclip",
+    "stars": 15799,
+    "reason": "综合 78 分（A 级），名额有限，这一期没进",
+    "score": 78
+   },
+   {
+    "full_name": "Tracer-Cloud/opensre",
+    "stars": 15322,
+    "reason": "4 天前（2026-11-21）推过，冷却 7 天内不重推"
+   },
+   {
+    "full_name": "Tracer-Cloud/opensre",
+    "stars": 15322,
+    "reason": "综合 62 分（B 级），名额有限，这一期没进",
+    "score": 62
+   },
+   {
+    "full_name": "backnotprop/plannotator",
+    "stars": 14978,
+    "reason": "4 天前（2026-11-21）推过，冷却 7 天内不重推"
+   },
+   {
+    "full_name": "backnotprop/plannotator",
+    "stars": 14978,
+    "reason": "综合 68 分（A 级），名额有限，这一期没进",
+    "score": 68
+   },
+   {
+    "full_name": "google-labs-code/stitch-skills",
+    "stars": 12804,
+    "reason": "2 天前（2026-11-23）推过，冷却 7 天内不重推"
+   },
+   {
+    "full_name": "google-labs-code/stitch-skills",
+    "stars": 12804,
+    "reason": "综合 76 分（A 级），名额有限，这一期没进",
+    "score": 76
+   }
+  ]
+ },
+ "focus_tab": {
+  "key": null,
+  "pool": 0,
+  "buckets": {}
+ },
+ "deep": [],
+ "date": "2026-11-25",
+ "archived_at": "2026-11-25T09:38:47"
+}

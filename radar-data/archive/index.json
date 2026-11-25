@@ -246,7 +246,26 @@
     "mvanhorn/last30days-skill",
     "we-promise/sure"
    ]
+  },
+  {
+   "date": "2026-11-25",
+   "mode": "FULL",
+   "focus": "",
+   "scanned": 67,
+   "daily": 8,
+   "focus_n": 0,
+   "deep": 0,
+   "names": [
+    "KKKKhazix/agent-autoloop",
+    "jingyaogong/minimind",
+    "Minireel/HGhub",
+    "ChromeDevTools/chrome-devtools-mcp",
+    "anefzaoui/misterdownloadmanager",
+    "xcl-dev/xcl",
+    "zortos293/Lichii",
+    "Marvisak/VIctory"
+   ]
   }
  ],
- "updated_at": "2026-11-24T10:43:31"
+ "updated_at": "2026-11-25T09:38:47"
 }
