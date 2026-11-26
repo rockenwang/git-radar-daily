@@ -1,0 +1,921 @@
+{
+ "mode": "FULL",
+ "degraded": false,
+ "focus": null,
+ "scanned": 68,
+ "pools": {
+  "daily": 68,
+  "focus": 0
+ },
+ "daily": {
+  "picks": [
+   {
+    "full_name": "Hut-hzf/ung220z-tool",
+    "owner": "Hut-hzf",
+    "owner_type": "User",
+    "name": "ung220z-tool",
+    "desc": "ung220z-tool 是一个针对 UNG220Z，另含中兴/烽火/华为/九联多厂商适配、固件指纹识别与分家族排障建议的一键凭据提取工具，仅限在你自己的设备上用于找回忘记的管理密码、迁移宽带配置或安全自查。",
+    "lang": "Python",
+    "stars": 5119,
+    "forks": 1114,
+    "watchers": 10,
+    "open_issues": 21,
+    "license": "MIT",
+    "license_name": "MIT License",
+    "topics": [],
+    "created_at": "2026-11-15T11:16:46Z",
+    "pushed_at": "2026-11-22T07:06:43Z",
+    "updated_at": "2026-11-26T09:13:16Z",
+    "size_kb": 91,
+    "archived": false,
+    "has_discussions": false,
+    "has_wiki": true,
+    "homepage": "",
+    "url": "https://github.com/Hut-hzf/ung220z-tool",
+    "default_branch": "main",
+    "gained": 0,
+    "since": "created<30d",
+    "source": "search_new",
+    "score": 92,
+    "grade": "S",
+    "grade_word": "今晚就能动手",
+    "form": "引擎库",
+    "velocity": 511.9,
+    "_gaps": [
+     [
+      "没有一键部署",
+      "没有一键部署",
+      "补一个 Dockerfile + compose，别人一条命令跑起来"
+     ],
+     [
+      "没有在线演示",
+      "没有在线演示",
+      "部署一个公开 demo 站，让人先玩再买单"
+     ]
+    ],
+    "gaps_short": [
+     "没有一键部署",
+     "没有在线演示"
+    ],
+    "risk": "",
+    "suspect": "",
+    "pitch": {
+     "gap_key": "只有代码没有界面",
+     "change": "包一层网页界面，让不会写代码的人点两下就能用",
+     "buyer": "要用这套能力但搞不定环境的人",
+     "buyer_tag": "通用",
+     "deliver": "做成带界面的成品，按份卖（发网盘，附中文说明）",
+     "deliver_alt": "接单代跑：客户给需求，你出结果",
+     "hours": 2,
+     "gap_key_word": "缺一键部署"
+    },
+    "plain": "ung220z-tool 是一个针对 UNG220Z，另含中兴/烽火/华为/九联多厂商适配、固件指纹识别与分家族排障建议的一键凭据提取工具，仅限在你自己的设备上用于找回忘记的管理密码、迁移宽带配置或安全自查。",
+    "_bucket": "",
+    "seen_times": 0,
+    "seen_first": "",
+    "seen_last": "",
+    "analy": {
+     "zh": "ung220z-tool 是一个针对 UNG220Z，另含中兴/烽火/华为/九联多厂商适配、固件指纹识别与分家族排障建议的一键凭据提取工具，仅限在你自己的设备上用于找回忘记的管理密码、迁移宽带配置或安全自查。",
+     "plain": "说白了，这是一堆已经写好的能力，但没有界面，得有人包一层壳才能给普通人用。它干的事是：ung220z-tool 是一个针对 UNG220Z，另含中兴/烽火/华为/九联多厂商适配、固件指纹识别与分家族排障建议的一键凭据提取工具，仅限在你自己的设备上用于找回忘记的管理密码、迁移宽带配置或安全自查。",
+     "gap": "包一层网页界面，让不会写代码的人点两下就能用",
+     "buyer": "要用这套能力但搞不定环境的人",
+     "_auto": true,
+     "_src": "mt"
+    }
+   },
+   {
+    "full_name": "n8n-io/nod",
+    "owner": "n8n-io",
+    "owner_type": "Organization",
+    "name": "nod",
+    "desc": "Open source personal agent with its own computer. It chases invoices, preps your calls and cancels trials on real websites, and asks before it acts. Runs on your machine with the model you choose. By n8n.",
+    "lang": "TypeScript",
+    "stars": 3688,
+    "forks": 585,
+    "watchers": 15,
+    "open_issues": 112,
+    "license": "Apache-2.0",
+    "license_name": "Apache License 2.0",
+    "topics": [
+     "agents",
+     "ai-agent",
+     "ai-assistant",
+     "anthropic",
+     "automation",
+     "browser-automation",
+     "computer-use",
+     "electron",
+     "llm",
+     "local-first",
+     "mcp",
+     "n8n",
+     "openai",
+     "personal-agent",
+     "personal-assistant",
+     "privacy",
+     "self-hosted",
+     "telegram-bot",
+     "typescript",
+     "whatsapp-bot"
+    ],
+    "created_at": "2026-09-25T13:46:42Z",
+    "pushed_at": "2026-11-26T09:09:30Z",
+    "updated_at": "2026-11-26T09:09:39Z",
+    "size_kb": 156377,
+    "archived": false,
+    "has_discussions": true,
+    "has_wiki": false,
+    "homepage": "https://nod.n8n.io/",
+    "url": "https://github.com/n8n-io/nod",
+    "default_branch": "main",
+    "gained": 1008,
+    "since": "weekly",
+    "source": "trending",
+    "score": 80,
+    "grade": "S",
+    "grade_word": "今晚就能动手",
+    "form": "web应用",
+    "velocity": 144.0,
+    "_gaps": [
+     [
+      "没有中文上手文档",
+      "没有中文上手文档",
+      "把 README 翻成中文，配一张三步跑通图"
+     ],
+     [
+      "没有中文界面",
+      "没有中文界面",
+      "把界面文案和按钮全翻成中文，截一套中文版演示图"
+     ],
+     [
+      "没有一键部署",
+      "没有一键部署",
+      "补一个 Dockerfile + compose，别人一条命令跑起来"
+     ]
+    ],
+    "gaps_short": [
+     "没有中文上手文档",
+     "没有中文界面",
+     "没有一键部署"
+    ],
+    "risk": "",
+    "suspect": "",
+    "pitch": {
+     "gap_key": "没有中文界面",
+     "change": "把界面文案和按钮全翻成中文，再截一套中文版演示图当商品图",
+     "buyer": "要自动回消息的商家",
+     "buyer_tag": "客服",
+     "deliver": "打包部署到客户自己的服务器/域名，收一次部署费",
+     "deliver_alt": "做成在线服务，按月收使用费",
+     "hours": 6,
+     "gap_key_word": "缺中文界面"
+    },
+    "plain": "Open source personal agent with its own computer. It chases invoices, preps your calls and cancels trials on real websites, and asks before it acts. Runs on your machine with the model you choose. By n8n.",
+    "_bucket": "",
+    "seen_times": 0,
+    "seen_first": "",
+    "seen_last": "",
+    "analy": {
+     "zh": "拥有自己计算机的开源个人代理。它可以催缴发票、为您准备通话、在真实网站上取消试用，并在采取行动前征求您的意见。在您的计算机上运行，使用您选择的模型。由 n8n 提供。",
+     "plain": "说白了，这是一个打开网页就能用的在线小工具，不用装任何东西。它干的事是：拥有自己计算机的开源个人代理。它可以催缴发票、为您准备通话、在真实网站上取消试用，并在采取行动前征求您的意见。在您的计算机上运行，使用您选择的模型。由 n8n 提供。",
+     "gap": "把界面文案和按钮全翻成中文，再截一套中文版演示图当商品图",
+     "buyer": "要自动回消息的商家",
+     "_auto": true,
+     "_src": "mt"
+    }
+   },
+   {
+    "full_name": "ersinkoc/phonebox",
+    "owner": "ersinkoc",
+    "owner_type": "User",
+    "name": "phonebox",
+    "desc": "Turn an old Android phone into a customizable desk panel and touch control deck for Windows, Linux and macOS. 124 widgets and 30 templates for system stats, AI coding, media and automation, in 13 languages. USB or paired Wi-Fi. No cloud required.",
+    "lang": "JavaScript",
+    "stars": 6676,
+    "forks": 785,
+    "watchers": 27,
+    "open_issues": 14,
+    "license": "MIT",
+    "license_name": "MIT License",
+    "topics": [
+     "android",
+     "claude-code",
+     "codex",
+     "dashboard",
+     "desk-panel",
+     "dotnet",
+     "home-assistant",
+     "linux",
+     "macos",
+     "old-phone",
+     "smart-stack",
+     "stream-deck",
+     "system-monitor",
+     "tailscale",
+     "webhooks",
+     "widgets",
+     "windows"
+    ],
+    "created_at": "2026-11-07T16:45:16Z",
+    "pushed_at": "2026-11-25T20:49:59Z",
+    "updated_at": "2026-11-26T09:12:01Z",
+    "size_kb": 31794,
+    "archived": false,
+    "has_discussions": false,
+    "has_wiki": true,
+    "homepage": "https://ersinkoc.github.io/phonebox/",
+    "url": "https://github.com/ersinkoc/phonebox",
+    "default_branch": "main",
+    "gained": 0,
+    "since": "created<30d",
+    "source": "search_new",
+    "score": 79,
+    "grade": "A",
+    "grade_word": "改一改能卖",
+    "form": "模板主题",
+    "velocity": 370.8888888888889,
+    "_gaps": [
+     [
+      "没有中文上手文档",
+      "没有中文上手文档",
+      "把 README 翻成中文，配一张三步跑通图"
+     ],
+     [
+      "没有一键部署",
+      "没有一键部署",
+      "补一个 Dockerfile + compose，别人一条命令跑起来"
+     ]
+    ],
+    "gaps_short": [
+     "没有中文上手文档",
+     "没有一键部署"
+    ],
+    "risk": "",
+    "suspect": "",
+    "pitch": {
+     "gap_key": "只是通用模板",
+     "change": "换成本地行业案例（餐饮/教培/门店），改文案和配色",
+     "buyer": "要做数据但不会写代码的人",
+     "buyer_tag": "数据",
+     "deliver": "换 logo 配色文案，出一套同名 zip 直接卖",
+     "deliver_alt": "做成「开箱即用版」发网盘，附中文说明",
+     "hours": 2,
+     "gap_key_word": "缺中文上手文档"
+    },
+    "plain": "Turn an old Android phone into a customizable desk panel and touch control deck for Windows, Linux and macOS. 124 widgets and 30 templates for system stats, AI coding, media and automation, in 13 languages. USB or paired Wi-Fi. No cloud required.",
+    "_bucket": "",
+    "seen_times": 0,
+    "seen_first": "",
+    "seen_last": "",
+    "analy": {
+     "zh": "将旧的安卓手机变成可定制的桌面面板和触摸控制面板，适用于 Windows、Linux 和 macOS。提供 124 个小部件和 30 个模板，用于系统统计、AI 编程、媒体和自动化，支持 13 种语言。USB 或配对的 Wi-Fi。无需云端。",
+     "plain": "说白了，这是一套现成的模板，把内容换掉就能发布。它干的事是：将旧的安卓手机变成可定制的桌面面板和触摸控制面板，适用于 Windows、Linux 和 macOS。提供 124 个小部件和 30 个模板，用于系统统计、AI 编程、媒体和自动化，支持 13 种语言。USB 或配对的 Wi-Fi。无需云端。",
+     "gap": "换成本地行业案例（餐饮/教培/门店），改文案和配色",
+     "buyer": "要做数据但不会写代码的人",
+     "_auto": true,
+     "_src": "mt"
+    }
+   },
+   {
+    "full_name": "deepseek-ai/chat-demo",
+    "owner": "deepseek-ai",
+    "owner_type": "Organization",
+    "name": "chat-demo",
+    "desc": "Chat Demo",
+    "lang": "TypeScript",
+    "stars": 5471,
+    "forks": 1314,
+    "watchers": 20,
+    "open_issues": 1,
+    "license": "MIT",
+    "license_name": "MIT License",
+    "topics": [],
+    "created_at": "2026-11-12T08:08:19Z",
+    "pushed_at": "2026-11-24T11:20:28Z",
+    "updated_at": "2026-11-26T09:13:16Z",
+    "size_kb": 279,
+    "archived": false,
+    "has_discussions": false,
+    "has_wiki": false,
+    "homepage": "https://deepseek-ai.github.io/chat-demo/",
+    "url": "https://github.com/deepseek-ai/chat-demo",
+    "default_branch": "main",
+    "gained": 0,
+    "since": "created<30d",
+    "source": "search_new",
+    "score": 77,
+    "grade": "A",
+    "grade_word": "改一改能卖",
+    "form": "web应用",
+    "velocity": 390.7857142857143,
+    "_gaps": [
+     [
+      "没有中文上手文档",
+      "没有中文上手文档",
+      "把 README 翻成中文，配一张三步跑通图"
+     ],
+     [
+      "没有一键部署",
+      "没有一键部署",
+      "补一个 Dockerfile + compose，别人一条命令跑起来"
+     ]
+    ],
+    "gaps_short": [
+     "没有中文上手文档",
+     "没有一键部署"
+    ],
+    "risk": "",
+    "suspect": "",
+    "pitch": {
+     "gap_key": "没有在线演示",
+     "change": "部署一个公开 demo，让人先玩再决定买不买",
+     "buyer": "想有个自己工具但不会写代码的人",
+     "buyer_tag": "通用",
+     "deliver": "做成在线服务，按月收使用费",
+     "deliver_alt": "连部署带教一次，做成「一天陪跑」按次收",
+     "hours": 3,
+     "gap_key_word": "缺中文上手文档"
+    },
+    "plain": "Chat Demo",
+    "_bucket": "",
+    "seen_times": 0,
+    "seen_first": "",
+    "seen_last": "",
+    "analy": {
+     "zh": "聊天演示",
+     "plain": "说白了，这是一个打开网页就能用的在线小工具，不用装任何东西。它干的事是：聊天演示",
+     "gap": "部署一个公开 demo，让人先玩再决定买不买",
+     "buyer": "想有个自己工具但不会写代码的人",
+     "_auto": true,
+     "_src": "mt"
+    }
+   },
+   {
+    "full_name": "meta/astryx",
+    "owner": "meta",
+    "owner_type": "Organization",
+    "name": "astryx",
+    "desc": "An open source design system that's fully customizable and agent ready",
+    "lang": "TypeScript",
+    "stars": 33224,
+    "forks": 2596,
+    "watchers": 107,
+    "open_issues": 787,
+    "license": "MIT",
+    "license_name": "MIT License",
+    "topics": [],
+    "created_at": "2026-01-09T16:20:32Z",
+    "pushed_at": "2026-11-26T09:03:03Z",
+    "updated_at": "2026-11-26T09:10:42Z",
+    "size_kb": 1392350,
+    "archived": false,
+    "has_discussions": true,
+    "has_wiki": true,
+    "homepage": "http://astryx.atmeta.com",
+    "url": "https://github.com/meta/astryx",
+    "default_branch": "main",
+    "gained": 2635,
+    "since": "weekly",
+    "source": "trending",
+    "score": 68,
+    "grade": "A",
+    "grade_word": "改一改能卖",
+    "form": "web应用",
+    "velocity": 376.42857142857144,
+    "_gaps": [
+     [
+      "没有中文上手文档",
+      "没有中文上手文档",
+      "把 README 翻成中文，配一张三步跑通图"
+     ]
+    ],
+    "gaps_short": [
+     "没有中文上手文档"
+    ],
+    "risk": "大厂项目，路线不由你定，只能做外围（部署/中文化/模板）",
+    "suspect": "",
+    "pitch": {
+     "gap_key": "没有行业预设",
+     "change": "做 10 个行业预设（餐饮/教培/门店），一键套用",
+     "buyer": "接单的设计师和电商美工",
+     "buyer_tag": "设计",
+     "deliver": "连部署带教一次，做成「一天陪跑」按次收",
+     "deliver_alt": "换成客户自己的数据跑一遍，按场景收定制费",
+     "hours": 6,
+     "gap_key_word": "缺中文上手文档"
+    },
+    "plain": "An open source design system that's fully customizable and agent ready",
+    "_bucket": "",
+    "seen_times": 2,
+    "seen_first": "2026-11-12",
+    "seen_last": "2026-11-19",
+    "analy": {
+     "zh": "一个完全可定制且支持代理的开源设计系统",
+     "plain": "说白了，这是一个打开网页就能用的在线小工具，不用装任何东西。它干的事是：一个完全可定制且支持代理的开源设计系统",
+     "gap": "做 10 个行业预设（餐饮/教培/门店），一键套用",
+     "buyer": "接单的设计师和电商美工",
+     "_auto": true,
+     "_src": "mt"
+    }
+   },
+   {
+    "full_name": "openvinotoolkit/openvino",
+    "owner": "openvinotoolkit",
+    "owner_type": "Organization",
+    "name": "openvino",
+    "desc": "OpenVINO™ is an open source toolkit for optimizing and deploying AI inference",
+    "lang": "C++",
+    "stars": 12719,
+    "forks": 3718,
+    "watchers": 193,
+    "open_issues": 1207,
+    "license": "Apache-2.0",
+    "license_name": "Apache License 2.0",
+    "topics": [
+     "ai",
+     "computer-vision",
+     "deep-learning",
+     "deploy-ai",
+     "diffusion-models",
+     "generative-ai",
+     "good-first-issue",
+     "inference",
+     "llm-inference",
+     "natural-language-processing",
+     "nlp",
+     "openvino",
+     "optimize-ai",
+     "performance-boost",
+     "recommendation-system",
+     "speech-recognition",
+     "stable-diffusion",
+     "transformers",
+     "yolo"
+    ],
+    "created_at": "2018-10-15T10:54:40Z",
+    "pushed_at": "2026-11-26T09:12:09Z",
+    "updated_at": "2026-11-26T09:11:56Z",
+    "size_kb": 1056760,
+    "archived": false,
+    "has_discussions": true,
+    "has_wiki": true,
+    "homepage": "https://docs.openvino.ai",
+    "url": "https://github.com/openvinotoolkit/openvino",
+    "default_branch": "master",
+    "gained": 191,
+    "since": "daily",
+    "source": "trending",
+    "score": 68,
+    "grade": "A",
+    "grade_word": "改一改能卖",
+    "form": "引擎库",
+    "velocity": 191.0,
+    "_gaps": [
+     [
+      "没有中文上手文档",
+      "没有中文上手文档",
+      "把 README 翻成中文，配一张三步跑通图"
+     ],
+     [
+      "没有一键部署",
+      "没有一键部署",
+      "补一个 Dockerfile + compose，别人一条命令跑起来"
+     ]
+    ],
+    "gaps_short": [
+     "没有中文上手文档",
+     "没有一键部署"
+    ],
+    "risk": "",
+    "suspect": "",
+    "pitch": {
+     "gap_key": "没有中文上手文档",
+     "change": "把 README 翻成中文，配一张「三步跑通」流程图",
+     "buyer": "做短视频的剪辑号",
+     "buyer_tag": "视频",
+     "deliver": "接单代跑：客户给需求，你出结果",
+     "deliver_alt": "做成中文教程 + 成品包，走知识付费",
+     "hours": 12,
+     "gap_key_word": "缺中文上手文档"
+    },
+    "plain": "OpenVINO™ is an open source toolkit for optimizing and deploying AI inference",
+    "_bucket": "",
+    "seen_times": 1,
+    "seen_first": "2026-11-19",
+    "seen_last": "2026-11-19",
+    "analy": {
+     "zh": "OpenVINO™ 是一款用于优化和部署 AI 推理的开源工具包",
+     "plain": "说白了，这是一堆已经写好的能力，但没有界面，得有人包一层壳才能给普通人用。它干的事是：OpenVINO™ 是一款用于优化和部署 AI 推理的开源工具包",
+     "gap": "把 README 翻成中文，配一张「三步跑通」流程图",
+     "buyer": "做短视频的剪辑号",
+     "_auto": true,
+     "_src": "mt"
+    }
+   },
+   {
+    "full_name": "expo/exact",
+    "owner": "expo",
+    "owner_type": "Organization",
+    "name": "exact",
+    "desc": "Write an app once. It runs natively on the web, macOS, iOS, and Linux, and an AI agent can build it, run it, see it, and test it on every one of them.",
+    "lang": "Rust",
+    "stars": 5133,
+    "forks": 162,
+    "watchers": 15,
+    "open_issues": 47,
+    "license": "MIT",
+    "license_name": "MIT License",
+    "topics": [
+     "ai-agents",
+     "appkit",
+     "coding-agents",
+     "cross-platform",
+     "css",
+     "ios",
+     "linux",
+     "macos",
+     "native-apps",
+     "rust",
+     "swift",
+     "uikit",
+     "web"
+    ],
+    "created_at": "2026-11-02T01:29:01Z",
+    "pushed_at": "2026-11-26T09:06:42Z",
+    "updated_at": "2026-11-26T09:08:38Z",
+    "size_kb": 222988,
+    "archived": false,
+    "has_discussions": false,
+    "has_wiki": false,
+    "homepage": "",
+    "url": "https://github.com/expo/exact",
+    "default_branch": "main",
+    "gained": 0,
+    "since": "created<30d",
+    "source": "search_new",
+    "score": 58,
+    "grade": "B",
+    "grade_word": "值得研究",
+    "form": "模板主题",
+    "velocity": 213.875,
+    "_gaps": [
+     [
+      "没有中文上手文档",
+      "没有中文上手文档",
+      "把 README 翻成中文，配一张三步跑通图"
+     ],
+     [
+      "没有中文界面",
+      "没有中文界面",
+      "把界面文案和按钮全翻成中文，截一套中文版演示图"
+     ],
+     [
+      "没有在线演示",
+      "没有在线演示",
+      "部署一个公开 demo 站，让人先玩再买单"
+     ]
+    ],
+    "gaps_short": [
+     "没有中文上手文档",
+     "没有中文界面",
+     "没有在线演示"
+    ],
+    "risk": "",
+    "suspect": "",
+    "pitch": {
+     "gap_key": "没有安装说明",
+     "change": "写一份「十分钟上线」步骤，配截图",
+     "buyer": "想快速上线一个小产品的人",
+     "buyer_tag": "通用",
+     "deliver": "做成「开箱即用版」发网盘，附中文说明",
+     "deliver_alt": "按行业拆成多套，一套一个价",
+     "hours": 12,
+     "gap_key_word": "缺中文上手文档"
+    },
+    "plain": "Write an app once. It runs natively on the web, macOS, iOS, and Linux, and an AI agent can build it, run it, see it, and test it on every one of them.",
+    "_bucket": "",
+    "seen_times": 0,
+    "seen_first": "",
+    "seen_last": "",
+    "analy": {
+     "zh": "只需编写一次应用程序。它可在 Web、macOS、iOS 和 Linux 上原生运行，AI 代理可以在每个平台上构建、运行、查看和测试它。",
+     "plain": "说白了，这是一套现成的模板，把内容换掉就能发布。它干的事是：只需编写一次应用程序。它可在 Web、macOS、iOS 和 Linux 上原生运行，AI 代理可以在每个平台上构建、运行、查看和测试它。",
+     "gap": "写一份「十分钟上线」步骤，配截图",
+     "buyer": "想快速上线一个小产品的人",
+     "_auto": true,
+     "_src": "mt"
+    }
+   },
+   {
+    "full_name": "cursor/plugins",
+    "owner": "cursor",
+    "owner_type": "Organization",
+    "name": "plugins",
+    "desc": "Cursor plugin specification and official plugins",
+    "lang": "TypeScript",
+    "stars": 19635,
+    "forks": 2121,
+    "watchers": 84,
+    "open_issues": 704,
+    "license": "",
+    "license_name": "",
+    "topics": [],
+    "created_at": "2026-01-23T01:57:42Z",
+    "pushed_at": "2026-11-26T09:04:53Z",
+    "updated_at": "2026-11-26T09:12:25Z",
+    "size_kb": 19367,
+    "archived": false,
+    "has_discussions": false,
+    "has_wiki": true,
+    "homepage": "",
+    "url": "https://github.com/cursor/plugins",
+    "default_branch": "main",
+    "gained": 416,
+    "since": "daily",
+    "source": "trending",
+    "score": 56,
+    "grade": "B",
+    "grade_word": "值得研究",
+    "form": "引擎库",
+    "velocity": 416.0,
+    "_gaps": [
+     [
+      "没有中文上手文档",
+      "没有中文上手文档",
+      "把 README 翻成中文，配一张三步跑通图"
+     ],
+     [
+      "没有一键部署",
+      "没有一键部署",
+      "补一个 Dockerfile + compose，别人一条命令跑起来"
+     ],
+     [
+      "没有在线演示",
+      "没有在线演示",
+      "部署一个公开 demo 站，让人先玩再买单"
+     ]
+    ],
+    "gaps_short": [
+     "没有中文上手文档",
+     "没有一键部署",
+     "没有在线演示"
+    ],
+    "risk": "没有 LICENSE 文件，严格说不能商用",
+    "suspect": "",
+    "pitch": {
+     "gap_key": "没有现成案例",
+     "change": "补 3 个真实场景示例，每个都能直接跑出结果",
+     "buyer": "要用这套能力但搞不定环境的人",
+     "buyer_tag": "通用",
+     "deliver": "做成中文教程 + 成品包，走知识付费",
+     "deliver_alt": "封装成 API 出租，按调用量收费",
+     "hours": 3,
+     "gap_key_word": "缺中文上手文档"
+    },
+    "plain": "Cursor plugin specification and official plugins",
+    "_bucket": "",
+    "seen_times": 1,
+    "seen_first": "2026-11-19",
+    "seen_last": "2026-11-19",
+    "analy": {
+     "zh": "Cursor 插件规范和官方插件",
+     "plain": "说白了，这是一堆已经写好的能力，但没有界面，得有人包一层壳才能给普通人用。它干的事是：Cursor 插件规范和官方插件",
+     "gap": "补 3 个真实场景示例，每个都能直接跑出结果",
+     "buyer": "要用这套能力但搞不定环境的人",
+     "_auto": true,
+     "_src": "mt"
+    }
+   }
+  ],
+  "dropped": [
+   {
+    "full_name": "obra/superpowers",
+    "stars": 326946,
+    "reason": "3 天前（2026-11-23）推过，冷却 7 天内不重推"
+   },
+   {
+    "full_name": "obra/superpowers",
+    "stars": 326946,
+    "reason": "综合 57 分（B 级），名额有限，这一期没进",
+    "score": 57
+   },
+   {
+    "full_name": "firecrawl/firecrawl",
+    "stars": 210401,
+    "reason": "综合 36 分（C 级），名额满了"
+   },
+   {
+    "full_name": "firecrawl/firecrawl",
+    "stars": 210401,
+    "reason": "综合 36 分（C 级），名额有限，这一期没进",
+    "score": 36
+   },
+   {
+    "full_name": "toeverything/AFFiNE",
+    "stars": 78680,
+    "reason": "3 天前（2026-11-23）推过，冷却 7 天内不重推"
+   },
+   {
+    "full_name": "toeverything/AFFiNE",
+    "stars": 78680,
+    "reason": "综合 51 分（B 级），名额有限，这一期没进",
+    "score": 51
+   },
+   {
+    "full_name": "mvanhorn/last30days-skill",
+    "stars": 75377,
+    "reason": "2 天前（2026-11-24）推过，冷却 7 天内不重推"
+   },
+   {
+    "full_name": "mvanhorn/last30days-skill",
+    "stars": 75377,
+    "reason": "综合 62 分（B 级），名额有限，这一期没进",
+    "score": 62
+   },
+   {
+    "full_name": "cathrynlavery/diagram-design",
+    "stars": 73401,
+    "reason": "6 天前（2026-11-20）推过，冷却 7 天内不重推"
+   },
+   {
+    "full_name": "cathrynlavery/diagram-design",
+    "stars": 73401,
+    "reason": "综合 70 分（A 级），名额有限，这一期没进",
+    "score": 70
+   },
+   {
+    "full_name": "jingyaogong/minimind",
+    "stars": 71312,
+    "reason": "1 天前（2026-11-25）推过，冷却 7 天内不重推"
+   },
+   {
+    "full_name": "jingyaogong/minimind",
+    "stars": 71312,
+    "reason": "综合 67 分（A 级），名额有限，这一期没进",
+    "score": 67
+   },
+   {
+    "full_name": "HKUDS/CLI-Anything",
+    "stars": 65964,
+    "reason": "4 天前（2026-11-22）推过，冷却 7 天内不重推"
+   },
+   {
+    "full_name": "HKUDS/CLI-Anything",
+    "stars": 65964,
+    "reason": "综合 56 分（B 级），名额有限，这一期没进",
+    "score": 56
+   },
+   {
+    "full_name": "ChromeDevTools/chrome-devtools-mcp",
+    "stars": 59412,
+    "reason": "1 天前（2026-11-25）推过，冷却 7 天内不重推"
+   },
+   {
+    "full_name": "ChromeDevTools/chrome-devtools-mcp",
+    "stars": 59412,
+    "reason": "综合 59 分（B 级），名额有限，这一期没进",
+    "score": 59
+   },
+   {
+    "full_name": "alibaba/open-code-review",
+    "stars": 56463,
+    "reason": "5 天前（2026-11-21）推过，冷却 7 天内不重推"
+   },
+   {
+    "full_name": "alibaba/open-code-review",
+    "stars": 56463,
+    "reason": "综合 62 分（B 级），名额有限，这一期没进",
+    "score": 62
+   },
+   {
+    "full_name": "storytold/craft-anything",
+    "stars": 43785,
+    "reason": "5 天前（2026-11-21）推过，冷却 7 天内不重推"
+   },
+   {
+    "full_name": "storytold/craft-anything",
+    "stars": 43785,
+    "reason": "综合 64 分（B 级），名额有限，这一期没进",
+    "score": 64
+   },
+   {
+    "full_name": "nginx/nginx",
+    "stars": 33437,
+    "reason": "综合 42 分（C 级），名额满了"
+   },
+   {
+    "full_name": "nginx/nginx",
+    "stars": 33437,
+    "reason": "综合 42 分（C 级），名额有限，这一期没进",
+    "score": 42
+   },
+   {
+    "full_name": "dream-num/univer",
+    "stars": 31904,
+    "reason": "2 天前（2026-11-24）推过，冷却 7 天内不重推"
+   },
+   {
+    "full_name": "dream-num/univer",
+    "stars": 31904,
+    "reason": "综合 62 分（B 级），名额有限，这一期没进",
+    "score": 62
+   },
+   {
+    "full_name": "elementalsouls/Claude-BugHunter",
+    "stars": 23570,
+    "reason": "3 天前（2026-11-23）推过，冷却 7 天内不重推"
+   },
+   {
+    "full_name": "elementalsouls/Claude-BugHunter",
+    "stars": 23570,
+    "reason": "综合 61 分（B 级），名额有限，这一期没进",
+    "score": 61
+   },
+   {
+    "full_name": "ag-ui-protocol/ag-ui",
+    "stars": 21781,
+    "reason": "4 天前（2026-11-22）推过，冷却 7 天内不重推"
+   },
+   {
+    "full_name": "ag-ui-protocol/ag-ui",
+    "stars": 21781,
+    "reason": "综合 56 分（B 级），名额有限，这一期没进",
+    "score": 56
+   },
+   {
+    "full_name": "XiaoYouChR/Ghost-Downloader-3",
+    "stars": 18638,
+    "reason": "5 天前（2026-11-21）推过，冷却 7 天内不重推"
+   },
+   {
+    "full_name": "XiaoYouChR/Ghost-Downloader-3",
+    "stars": 18638,
+    "reason": "综合 64 分（B 级），名额有限，这一期没进",
+    "score": 64
+   },
+   {
+    "full_name": "we-promise/sure",
+    "stars": 17990,
+    "reason": "2 天前（2026-11-24）推过，冷却 7 天内不重推"
+   },
+   {
+    "full_name": "we-promise/sure",
+    "stars": 17990,
+    "reason": "综合 48 分（C 级），名额有限，这一期没进",
+    "score": 48
+   },
+   {
+    "full_name": "zhouxiaoka/autoclip",
+    "stars": 16548,
+    "reason": "6 天前（2026-11-20）推过，冷却 7 天内不重推"
+   },
+   {
+    "full_name": "zhouxiaoka/autoclip",
+    "stars": 16548,
+    "reason": "综合 78 分（A 级），名额有限，这一期没进",
+    "score": 78
+   },
+   {
+    "full_name": "Tracer-Cloud/opensre",
+    "stars": 15635,
+    "reason": "5 天前（2026-11-21）推过，冷却 7 天内不重推"
+   },
+   {
+    "full_name": "Tracer-Cloud/opensre",
+    "stars": 15635,
+    "reason": "综合 62 分（B 级），名额有限，这一期没进",
+    "score": 62
+   },
+   {
+    "full_name": "backnotprop/plannotator",
+    "stars": 15153,
+    "reason": "5 天前（2026-11-21）推过，冷却 7 天内不重推"
+   },
+   {
+    "full_name": "backnotprop/plannotator",
+    "stars": 15153,
+    "reason": "综合 68 分（A 级），名额有限，这一期没进",
+    "score": 68
+   },
+   {
+    "full_name": "google-labs-code/stitch-skills",
+    "stars": 13107,
+    "reason": "3 天前（2026-11-23）推过，冷却 7 天内不重推"
+   },
+   {
+    "full_name": "google-labs-code/stitch-skills",
+    "stars": 13107,
+    "reason": "综合 76 分（A 级），名额有限，这一期没进",
+    "score": 76
+   }
+  ]
+ },
+ "focus_tab": {
+  "key": null,
+  "pool": 0,
+  "buckets": {}
+ },
+ "deep": [],
+ "date": "2026-11-26",
+ "archived_at": "2026-11-26T09:13:37"
+}

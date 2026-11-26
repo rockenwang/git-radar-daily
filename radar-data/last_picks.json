@@ -1,60 +1,48 @@
 {
- "date": "2026-11-25",
+ "date": "2026-11-26",
  "picks": [
   {
-   "full_name": "KKKKhazix/agent-autoloop",
-   "owner": "KKKKhazix",
+   "full_name": "Hut-hzf/ung220z-tool",
+   "owner": "Hut-hzf",
    "owner_type": "User",
-   "name": "agent-autoloop",
-   "desc": "让你的命令行 Agent 在后台自己接活、自己跟进到底；平时不烦你，遇到拿不准的事才发卡片找你拍板。",
-   "lang": "TypeScript",
-   "stars": 6528,
-   "forks": 1220,
-   "watchers": 12,
-   "open_issues": 0,
+   "name": "ung220z-tool",
+   "desc": "ung220z-tool 是一个针对 UNG220Z，另含中兴/烽火/华为/九联多厂商适配、固件指纹识别与分家族排障建议的一键凭据提取工具，仅限在你自己的设备上用于找回忘记的管理密码、迁移宽带配置或安全自查。",
+   "lang": "Python",
+   "stars": 5119,
+   "forks": 1114,
+   "watchers": 10,
+   "open_issues": 21,
    "license": "MIT",
    "license_name": "MIT License",
-   "topics": [
-    "ai-agents",
-    "automation",
-    "claude-code",
-    "cli",
-    "codex",
-    "event-driven",
-    "mcp",
-    "nodejs",
-    "self-hosted",
-    "typescript",
-    "workflow"
-   ],
-   "created_at": "2026-11-03T08:02:11Z",
-   "pushed_at": "2026-11-25T02:00:44Z",
-   "updated_at": "2026-11-25T09:09:19Z",
-   "size_kb": 2350,
+   "topics": [],
+   "created_at": "2026-11-15T11:16:46Z",
+   "pushed_at": "2026-11-22T07:06:43Z",
+   "updated_at": "2026-11-26T09:13:16Z",
+   "size_kb": 91,
    "archived": false,
-   "has_discussions": true,
-   "has_wiki": false,
+   "has_discussions": false,
+   "has_wiki": true,
    "homepage": "",
-   "url": "https://github.com/KKKKhazix/agent-autoloop",
+   "url": "https://github.com/Hut-hzf/ung220z-tool",
    "default_branch": "main",
-   "readme": "# Agent Autoloop\n\n**让你的命令行 Agent 在后台自己接活、自己跟进到底；平时不烦你，遇到拿不准的事才发卡片找你拍板。**\n\n**中文** | [English](README.en.md)\n\n[上手](#上手) · [场景模板](#拿来即用的场景模板) · [插件](#插件体系四个方向都能自由替换) · [内核](#内核的四个机制) · [文档](#更多文档)\n\n![架构图](docs/architecture.svg)\n\n## 它解决什么问题？\n\n平时我们用 Claude Code、Codex 这类命令行 Agent，大多是“人守着终端用”：你输一句话，盯着它跑，等它问你下一步；一旦关掉窗口或者人走开，事情就断了。\n\n**Agent Autoloop** 是一个极轻量的自动化中台。它把任务调度做成一个零外部依赖的**内核**，把事件来源、Agent、通知通道，甚至代码上线流水线全部拆成可随时插拔的**插件**。\n\n- **一台电脑、一条命令就能跑。** 装在你的 Windows、Mac 或 Linux 上，不用买云服务器，也不用开放公网端口。\n- **一行配置接新 Agent。** 不需要 SDK，也不需要改 Agent 源码，能接收提示词并打印最后一条回复的命令行工具都能接。\n- **没有后台界面。** 需要你拍板时把卡片推到飞书、钉钉、企微、Slack、Discord 或桌面通知；想看全局进展，敲一行命令。\n\n## 上手\n\n支持 Windows、macOS 和 Linux。需要 Node 24 或更新、Git，以及一个已经登录的命令行 Agent；macOS/Linux 还需要 curl，不需要 GitHub 账号。也可以把[安装说明](INSTALL.md)交给你的 Agent。\n\nWindows PowerShell：\n\n```powershell\nirm https://raw.githubusercontent.com/KKKKhazix/agent-autoloop/main/install.ps1 | iex\n```\n\nmacOS / Linux：\n\n```bash\ncurl -fsSL https://raw.githubusercontent.com/KKKKhazix/agent-autoloop/main/install.sh | sh\n```\n\n安装和 `agent-autoloop update` 都装最新的 [Release](https://github.com/KKKKhazix/agent-autoloop/releases)，那是通过了全部检查的版本。\n\n装好后用你本机的 Agent 真实走一遍“提问 → 退出等回复 → 拍板 → 接着干完”：\n\n```bash\nagent-autoloop try\n```\n\n下面是在终端里的真实输出：\n\n```text\n事件发出去了，Agent 开始干活……\n\nAgent 结束了这一轮，问了你一个问题。它现在不占进程、不花 Token。\n\n【等你决定】#1 试跑：选一个颜色\n这是一次试跑，选哪个都行。\n  1. 蓝色\n  2. 绿色\n回答：agent-autoloop answer 1 <序号>\n答完运行 agent-autoloop status，能看到它接着把活干完。\n```\n\n交互终端里直接输入数字回车；非交互终端运行 `agent-autoloop answer 1 2` 选择“绿色”。再跑 `agent-autoloop status`，就能看到它接上刚才的会话并显示“你选了绿色，试跑通过”，还有今天和最近 7 天的轮数、Token 和费用（[统计口径](skills/agent-autoloop/SKILL.md#看情况回答)）。\n\n## 一件事怎么转起来\n\n编号和上面的架构图一一对应：\n\n1. **新事件进来。** 早上 9 点的定时任务、GitHub 上新提的 Issue、业务系统报的错，都变成一条标准事件送进内核。\n2. **按规则派活。** 内核照你写的规则，决定交给哪个 Agent、去哪个目录干。同一件事排队时又来的消息，会合并成一轮处理。\n3. **干完一轮就退出。** Agent 把结果写在最后一条回复里，进程直接退出。\n4. **拿不准才问你。** 碰到删数据、停服、花钱、对外发消息这类事，内核通过飞书或桌面通知发一张卡片给你。等你回复期间，它不占后台进程，也不消耗 Token。\n5. **点一下，接着干。** 你选完，它接上原来的对话，把剩下的活干完。\n\n能自己搞定的事走图上方的自动闭环：直接办完，或者约个时间（比如半小时后）再醒来复查，全程不打扰你。\n\n## 日常怎么配？\n\n### 写一份规则（`rules.json`）\n\n不需要写胶水代码。打开 `~/.agent-autoloop/rules.json`，在 `rules` 里写清楚**什么事、交给谁、在哪个目录干**。`to` 填 `agents` 里已有的名字。比如每天早上 9 点写早报：\n\n```json\n{\n  \"name\": \"早报\",\n  \"when\": { \"cron\": \"0 9 * * *\" },\n  \"to\": \"codex\",\n  \"cwd\": \"~/notes\",\n  \"prompt\": \"整理昨天的笔记和提交，写今天的早报。\"\n}\n```\n\n外部事件写法一样，只是要先接好来源。比如有人提新 Issue 时交给 Codex，先按[说明](skills/agent-autoloop/SKILL.md#接一个事件插件)在 `sources` 里登记 `github`：\n\n```json\n{\n  \"name\": \"处理 issue\",\n  \"when\": { \"source\": \"github\", \"types\": [\"issues.opened\"] },\n  \"to\": \"codex\",\n  \"cwd\": \"~/code/app\",\n  \"skill\": \"handle-issue\",\n  \"parallel\": 3\n}\n```\n\n`agent-autoloop pause <规则>`、`resume <规则>` 暂停和恢复一条规则，暂停期间到点不跑、来事件不接也不排队，恢复后不自动补跑；恢复时会列出暂停期间跳过的事件，照着给出的 `agent-autoloop replay <规则> --since <时间>` 一次补跑，每条只补一次。`agent-autoloop run <规则>` 立即跑一轮。这些记在中台的日志里，不改 `rules.json`。`agent-autoloop runs [规则]` 列出做完的轮次，`--before <第几轮>` 往前翻，拿到编号再用 `agent-autoloop why <第几轮>` 看来龙去脉。\n\n保存后几秒内自动生效，可以运行 `agent-autoloop check` 检查，`agent-autoloop check <文件>` 检查一份草稿，不碰正在跑的中台；`agent-autoloop rules explain [文件]` 看生效的规则和下次定时（也可以指定一份草稿），`agent-autoloop emit <类型> --dry-run` 预演一条事件会派给谁（不连接中台、不写日志）。就算改错了，或者文件被删、读不到，系统也会继续按旧规则跑，并发卡片提醒你。\n\n### Agent 怎么跟中台配合？\n\n中台对 Agent 只有一个约定：**在最后一条回复里交代结果**。事情办完了，正常输出一句结论就行。需要向你请示时，在回复末尾附一段 `agent-autoloop` 代码块：\n\n````text\n订单已经核对完毕，库存充足。\n\n```agent-autoloop\n{\n  \"ask\": [{\n    \"title\": \"怎么发货？\",\n    \"text\": \"两种方式今天都能发出。\",\n    \"options\": [\"快递\", \"自提\"],\n    \"key\": \"shipping\"\n  }]\n}\n```\n````\n\n除了提问（`ask`），还能发通知（`notice`）、关闭已解决的卡片（`resolve`）、预约复查（`later`）和触发新事件（`events`）。通告不需要回答，但结案时可以顺手写一句处理说明，这句话会留在卡片上；只是告诉一声的通告标成 `fyi`，不带按钮。万一 JSON 写错了，中台只让它在原会话里重写最后这段回复，不会把已经干完的业务重做一遍；重写也失败时，保留原结论并通知你回执没有生效（通用命令没有会话，直接走这一步）。接着旧会话跑也一样：会话接不上才开新的；接上了、干到一半断了，就算没跑成，过几分钟回到原会话重试，不开新会话重做。同一事项的新事件默认开新会话；规则写 `\"resume\": true` 就接着上一轮的会话。Claude Code 的订阅用量到了上限，中台按它报的恢复时间停止给它派活，排着的和新来的事件都留着，到点自动接着派，并通知你一次几点恢复。\n\n## 拿来即用的场景模板\n\n每套模板都提供示例规则和启用说明。\n\n| 想做什么 | 已经封装好的流程 |\n|---|---|\n| [每日早报](examples/recipes/morning-brief/README.md) | 默认每天 8 点整理本地笔记和 Git 提交，写入 `briefs/YYYY-MM-DD.md` |\n| [跟进 GitHub Issue](examples/",
+   "readme": "# ung220z-tool\n\n光猫（ONT）凭据自查工具箱：**UNG220Z 一键提取**，另含多厂商适配包 `ontkit`\n（中兴 / 烽火 / 华为 / 九联），以及固件指纹识别与分家族排障建议。\n\n支持机型与验证状态见 [机型兼容性](#机型兼容性)，其中只有 UNG220Z 经过真机验证。\n\n> ⚠️ 仅用于**你自己的设备**，用于找回自己忘记的管理密码、迁移宽带配置或安全自查。\n> 未经授权对他人设备使用属于违法行为，作者不承担任何责任。\n\n## 背景\n\n这类光猫的 Web 管理页基于 `.gch` CGI 框架，登录口令由 TR-069 定期轮换，普通用户拿到的密码往往几天就失效。本工具走 Telnet 通道，直接读取设备配置库，拿到**当下有效**的全部凭据。\n\n## 目录结构\n\n```\nung220z.py          # 主脚本：UNG220Z 一键提权 + 提凭据\nontkit/             # 多厂商适配包\n├── cli.py          #   probe / zte / huawei 三个子命令\n├── zte_factory.py  #   中兴 webFac 工厂模式（AES-ECB 协议）\n├── zte_web.py      #   中兴 .gch 登录、配置解密、凭据提取\n├── huawei.py       #   华为 ssmp 登录、开 Telnet（实验性）\n└── core.py         #   HTTP 会话 + Telnet 客户端\nmodels/             # 按型号的入口脚本（自动补默认端口）\n├── ung853h.py  h3_2.py  g7615.py  hs8145x6.py  b866l1.py\n```\n\n## 工作流程\n\n```\n用户输入账号密码\n   ↓\n拼出 http://<ip>/usr=<user>&psw=<pass>&cmd=1&telnet.gch 并打开浏览器（同时脚本直连兜底）\n   ↓\nTelnet 登录 → root shell\n   ↓\nsidbg 1 DB decry /userconfig/cfg/db_user_cfg.xml 解密配置\n   ↓\n提取 Web 账号 / Telnet 口令 / PPPoE / WiFi 密钥 / root 口令\n   ↓\n打印凭据表 + 落盘日志\n```\n\n## 用法\n\n```bash\npython3 ung220z.py\n```\n\n会依次询问：\n\n```\n※ 用户名和密码通常印在光猫【背面贴纸】上（S/N 标签）\n  形如「用户名：user   密码：xxxxxxxx」，把光猫翻过来就能看到\n\n① 光猫地址 [192.168.1.1]:\n② 用户名 [user]:\n③ 密码（输入时不显示）\n   密码:\n```\n\n也可以全部走命令行：\n\n```bash\npython3 ung220z.py -i 192.168.1.1 -u user -p '你的密码'\npython3 ung220z.py -i 192.168.1.1 -u user -p '你的密码' --no-browser\n```\n\n### 常用参数\n\n| 参数 | 说明 |\n|---|---|\n| `-i, --ip` | 光猫地址，默认 `192.168.1.1` |\n| `-u, --user` | 登录用户名，默认 `user` |\n| `-p, --password` | 登录密码，不填则交互输入 |\n| `--telnet-user` | Telnet 用户名，默认 `CMCCAdmin` |\n| `--telnet-password` | Telnet 口令（部分机型与 Web 口令不同） |\n| `--no-browser` | 不调用浏览器，纯 HTTP 请求 |\n| `--unlock` | Web 被会话锁占住时重启 httpd 解锁 |\n| `--no-release` | 不尝试释放残留 Web 会话 |\n| `--telnet-port` | Telnet 端口，默认 23 |\n| `--timeout` | 网络超时秒数，默认 8 |\n\n## 输出示例\n\n```\n[22:15:00] INFO   会话开始  目标=192.168.1.1  账户=user\n[22:15:00] HTTP   已发送给浏览器: http://192.168.1.1/usr=user&psw=***&cmd=1&telnet.gch\n[22:15:00] HTTP   telnet.gch → TelnetSet Success!\n[22:15:00] PROBE  nc -zv 192.168.1.1 23 → succeeded\n[22:15:01] AUTH   Telnet CMCCAdmin / ****** → 登录成功（root）\n[22:15:02] SHELL  sidbg 1 DB decry /userconfig/cfg/db_user_cfg.xml → /tmp/debug-decry-cfg\n[22:15:03] DATA   DevAuthInfo  CMCCAdmin  / ******  Level=1\n[22:15:04] CRACK  MATCH: ******  (/etc/shadow)\n```\n\n最后输出凭据汇总表，并写入 `ung220z_<时间戳>.log`。\n\n## 依赖\n\n- Python 3.8+\n- 标准库即可，无需 pip 安装\n- 设备已开启 Telnet（脚本会自动通过 `telnet.gch` 尝试开启）\n\n## 原理说明\n\n| 环节 | 说明 |\n|---|---|\n| 开 Telnet | `GET /usr=<user>&psw=<pass>&cmd=1&telnet.gch`，返回 `TelnetSet Success!` 即成功 |\n| Web 登录 | 密码前端只做 base64，`Frm_Logintoken` 每次响应递增，必须回填实时值 |\n| 配置解密 | `sidbg 1 DB decry` 无口令即可解密，得到明文 XML |\n| root 口令 | `/etc/shadow` 中为 SHA-256 crypt，工具会用常见出厂口令比对 |\n\n## 多厂商支持（ontkit）\n\n主脚本只针对九联 `.gch` 体系。遇到其他固件时用 `ontkit`：\n\n```bash\n# 先识别固件家族\npython3 -m ontkit probe -H 192.168.1.1\n\n# 中兴系（G7615 / UNG853H / 吉比特等）：走 webFac 工厂模式开 Telnet\npython3 -m ontkit zte -H 192.168.1.1 -p 8080 --mode factory --enable-telnet\n\n# 华为系（HS8145X6 / B866-L1 等）\npython3 -m ontkit huawei -H 192.168.1.1\n```\n\n按型号直接跑：\n\n```bash\npython3 models/g7615.py    -H 192.168.1.1 --mode factory\npython3 models/ung853h.py  -H 192.168.1.1 -u user -P '贴纸密码' --extract\n```\n\n各型号的验证状态见 [ontkit/README.md](ontkit/README.md)：webFac 协议按公开实现移植并已自测，\n其余型号未经真机验证。\n\n## 排障\n\n### `telnet.gch` 返回 404\n\n说明该固件没有这个接口，**不是九联/吉比特的 `.gch` 体系**，本脚本的开启方式不适用。\n脚本会打印设备指纹（`Server` 头 + 页面标题）帮助判断。下一步：\n\n```bash\npython3 -m ontkit probe -H 192.168.1.1          # 识别固件家族\npython3 -m ontkit zte   -H 192.168.1.1 -p 8080  # 中兴系（webFac 工厂模式）\npython3 -m ontkit huawei -H 192.168.1.1         # 华为系（ssmp）\n```\n\n### `telnet.gch` 成功但 23 端口未监听\n\n- 设备可能在 Web 后台把 Telnet 服务关闭了，只留了开关接口\n- 也可能需要几秒才起监听，等一下重试\n\n### Telnet 能连上但登录被拒\n\nTelnet 与 Web 是**两套账号库**。脚本会依次尝试：\n\n1. 你填的 Web 账号（如 `useradmin`）\n2. `CMCCAdmin` + 同一口令\n3. `--telnet-password` 指定值\n4. Web 侧侦察：`manager_aduser_conf_t.gch&IF_INDEX=0` 读管理员行 → 用其口令登录 → `tele_sec_tserver_t.gch` 取 `TS_UPwd`\n5. 出厂默认组合\n\n也可以手动在浏览器（已登录状态）打开：\n\n```\nhttp://<光猫IP>/getpage.gch?pid=1002&nextpage=tele_sec_tserver_t.gch\n```\n\n页面源码里",
    "gained": 0,
    "since": "created<30d",
    "source": "search_new",
-   "score": 94,
+   "score": 92,
    "detail": {
     "lic": 25,
     "easy": 20,
     "zh": 15,
-    "demand": 14,
+    "demand": 12,
     "deliver": 10,
     "fresh": 10,
     "adj": 0
    },
    "grade": "S",
    "grade_word": "今晚就能动手",
-   "form": "命令行",
-   "velocity": 296.72727272727275,
+   "form": "引擎库",
+   "velocity": 511.9,
    "_gaps": [
     [
      "没有一键部署",
@@ -74,115 +62,20 @@
    "risk": "",
    "suspect": "",
    "pitch": {
-    "gap_key": "要敲一长串参数",
-    "change": "封装成双击就能跑的脚本，把参数做成填空",
-    "buyer": "需要这套能力但装不上的人",
-    "buyer_tag": "通用",
-    "deliver": "做成图文教程 + 现成脚本包，一次付费长期用",
-    "deliver_alt": "接单代跑，按次收费",
-    "hours": 2,
-    "gap_key_word": "缺一键部署"
-   },
-   "plain": "让你的命令行 Agent 在后台自己接活、自己跟进到底；平时不烦你，遇到拿不准的事才发卡片找你拍板。",
-   "analy": {
-    "en": "让你的命令行 Agent 在后台自己接活、自己跟进到底；平时不烦你，遇到拿不准的事才发卡片找你拍板。",
-    "zh": "让你的命令行 Agent 在后台自己接活、自己跟进到底；平时不烦你，遇到拿不准的事才发卡片找你拍板。",
-    "plain": "说白了，这是一个要在黑框里敲命令才动起来的工具，功能硬，但上手要人带。它干的事是：让你的命令行 Agent 在后台自己接活、自己跟进到底；平时不烦你，遇到拿不准的事才发卡片找你拍板。",
-    "usage": [
-     "把每天重复的那串命令固化成脚本，一条命令出结果",
-     "批量处理文件/图片/文档，一次跑完一整个文件夹",
-     "接单代跑：客户给素材，你出结果"
-    ],
-    "how": [
-     "装好运行环境",
-     "复制作者给的命令跑一遍",
-     "把参数换成自己的文件路径"
-    ],
-    "gap": "封装成双击就能跑的脚本，把参数做成填空",
-    "buyer": "需要这套能力但装不上的人",
-    "why": "需要这套能力但装不上的人不是不会做，是懒得为这一步花两三天试错。你把「封装成双击就能跑的脚本，把参数做成填空」替他们做完，他们花的钱远少于自己折腾的时间。",
-    "self": "把每天要重复敲的东西固化成脚本，以后一条命令出结果；攒下来的脚本就是你自己的工具库。",
-    "pack": "做成「双击就能跑」的包 + 图文教程，一次付费长期用；再开一个代跑通道接零散单。落地上就按这条走：做成图文教程 + 现成脚本包，一次付费长期用。",
-    "_auto": true,
-    "_src": "mt"
-   },
-   "_bucket": "",
-   "seen_times": 1,
-   "seen_first": "2026-11-18",
-   "seen_last": "2026-11-18"
-  },
-  {
-   "full_name": "jingyaogong/minimind",
-   "owner": "jingyaogong",
-   "owner_type": "User",
-   "name": "minimind",
-   "desc": "🧠 两小时从 0 训出你的 64M 大模型。Train your own 64M LLM from scratch in 2 hours.",
-   "lang": "Python",
-   "stars": 70632,
-   "forks": 9180,
-   "watchers": 314,
-   "open_issues": 64,
-   "license": "Apache-2.0",
-   "license_name": "Apache License 2.0",
-   "topics": [
-    "artificial-intelligence",
-    "large-language-model"
-   ],
-   "created_at": "2024-07-27T04:34:12Z",
-   "pushed_at": "2026-11-23T04:01:07Z",
-   "updated_at": "2026-11-25T09:37:43Z",
-   "size_kb": 39567,
-   "archived": false,
-   "has_discussions": true,
-   "has_wiki": true,
-   "homepage": "https://jingyaogong.github.io/minimind",
-   "url": "https://github.com/jingyaogong/minimind",
-   "default_branch": "master",
-   "readme": "<div align=\"center\">\n\n![logo](./images/logo.png)\n\n</div>\n\n<div align=\"center\">\n\n![visitors](https://visitor-badge.laobi.icu/badge?page_id=jingyaogong/minimind)\n[![GitHub Repo stars](https://img.shields.io/github/stars/jingyaogong/minimind?style=social)](https://github.com/jingyaogong/minimind/stargazers)\n[![GitHub Code License](https://img.shields.io/github/license/jingyaogong/minimind)](LICENSE)\n[![GitHub last commit](https://img.shields.io/github/last-commit/jingyaogong/minimind)](https://github.com/jingyaogong/minimind/commits/master)\n[![GitHub pull request](https://img.shields.io/badge/PRs-welcome-blue)](https://github.com/jingyaogong/minimind/pulls)\n[![Collection](https://img.shields.io/badge/🤗-MiniMind%20%20Collection-blue)](https://huggingface.co/collections/jingyaogong/minimind-66caf8d999f5c7fa64f399e5)\n\n</div>\n\n<div align=\"center\">\n\n![GitHub Trend](https://trendshift.io/api/badge/repositories/12586)\n\n</div>\n\n<div align=\"center\">\n  <h3>\"大道至简\"</h3>\n</div>\n\n<div align=\"center\">\n\n中文 | [English](./README_en.md)\n\n</div>\n\n* 此开源项目旨在完全从 0 开始，仅用 3 块钱成本与 2 小时训练时间，即可训练出规模约为 64M 的超小语言模型 MiniMind。\n* MiniMind 系列极其轻量，主线最小版本体积约为 GPT-3 的 $\\frac{1}{2700}$，力求让普通个人 GPU 也能快速完成训练与复现。\n* 项目同时开源了大模型的极简结构与完整训练链路，覆盖 MoE、数据清洗、预训练（Pretrain）、监督微调（SFT）、LoRA、RLHF（DPO）、RLAIF（PPO / GRPO / CISPO）、Tool Use、Agentic RL、自适应思考与模型蒸馏等全过程代码。\n* MiniMind 同时拓展了视觉模态模型 [MiniMind-V](https://github.com/jingyaogong/minimind-v)、多模态 Omni 模型 [MiniMind-O](https://github.com/jingyaogong/minimind-o)、扩散语言模型（MiniMind-dLM）、线性模型（MiniMind-Linear），详见 [Discussion](https://github.com/jingyaogong/minimind/discussions)。\n* 项目所有核心算法代码均从 0 使用 PyTorch 原生实现，不依赖第三方库提供的高层抽象接口。\n* 这不仅是一个大语言模型全阶段开源复现项目，也是一套面向 LLM 入门与实践的教程。\n* 希望此项目能为更多人提供一个可复现、可理解、可扩展的起点，一起感受创造的乐趣，并推动更广泛 AI 社区的进步。\n\n> 注：本项目基于 Apache 2.0 协议开源，完全免费。“2 小时” 指 SFT 阶段在单张 NVIDIA 3090 上跑完 `1 epoch` 的实测耗时，“3 块钱” 指对应时段的 GPU 租用成本。\n\n---\n\n<div align=\"center\">\n\n![minimind-3](./images/minimind-3.gif)\n\n[🔗 在线体验](https://www.modelscope.cn/studios/gongjy/MiniMind) | [🔗 视频介绍](https://www.bilibili.com/video/BV12dHPeqE72)\n\n\n<div align=\"center\">\n  <table>\n    <tr>\n      <td align=\"center\">\n        <a href=\"https://huggingface.co/collections/jingyaogong/minimind\" style=\"text-decoration: none;\">\n          <img src=\"./images/with_huggingface.png\" alt=\"Hugging Face Logo\" style=\"vertical-align: middle; width: auto; max-width: 100%;\" />\n        </a>\n      </td>\n      <td align=\"center\">\n        <a href=\"https://www.modelscope.cn/profile/gongjy\" style=\"text-decoration: none;\">\n          <img src=\"./images/with_modelscope.png\" alt=\"ModelScope Logo\" style=\"vertical-align: middle; width: auto; max-width: 100%;\" />\n        </a>\n      </td>\n    </tr>\n  </table>\n</div>\n\n\n</div>\n\n---\n\n## ❤️ 赞助\n\n<div align=\"center\">\n\n<table>\n  <tr>\n    <td align=\"center\" width=\"76\">\n      <a href=\"https://www.infistar.cc/register?aff=VCHAAHCH&ref_source=link\">\n        <img src=\"https://infistar.cc/logo.png\" width=\"48\" alt=\"无限星河AI\" />\n      </a>\n    </td>\n    <td>\n      <b>MiniMind × <a href=\"https://www.infistar.cc/register?aff=VCHAAHCH&ref_source=link\">Infistar.cc</a></b>：Claude、GPT、Gemini、DeepSeek等200+模型一个Key搞定，低至官方0.1折（省99%），100%官方纯血可验真，千条线路自动切换。通过<a href=\"https://www.infistar.cc/register?aff=VCHAAHCH&ref_source=link\"><b>专属链接</b></a>注册即送¥5。\n    </td>\n  </tr>\n</table>\n\n</div>\n\n<details>\n<summary>关于赞助与合作</summary>\n<br>\n\nMiniMind 以 Apache 2.0 协议完全开源、永久免费。赞助完全自愿，不换取任何特权，也不影响项目使用。感谢每一位支持者，让这个业余时间维护的项目得以持续。\n\n赞助方式包括按月占位，或直接赞助 GPU 服务器（算力可能用于项目相关或不相关的研究性探索）。\n\n如有意向，欢迎通过 [邮件](mailto:gongjy.cs@foxmail.com) 联系。\n\n</details>\n\n---\n\n# 📌 项目介绍\n\n大语言模型（Large Language Model, LLM）的出现，引发了全球范围内对 AI 的空前关注。无论是 ChatGPT、DeepSeek 还是 Qwen，都以惊艳的效果让人真切感受到这场技术浪潮的冲击力。然而，动辄数百亿参数的模型规模，使得它们对个人设备而言不仅难以训练，甚至连部署都显得遥不可及。打开大模型的“黑盒子”，真正去理解其内部运作机制，本应是一件令人心潮澎湃的事。遗憾的是，绝大多数探索最终都止步于使用 LoRA 等技术对现有大模型做少量微调，学习一些新指令或特定任务。这更像是在教牛顿如何使用 21 世纪的智能手机——虽然有趣，却偏离了理解物理本质的初衷。\n\n与此同时，第三方的大模型框架与工具库，如 `transformers` / `trl` / `peft` 等，往往只暴露出高度抽象的接口。只需短短十几行代码，就可以完成“加载模型 + 加载数据集 + 推理 + 强化学习”的全流程训练。这种高效封装固然便利，却也在一定程度上把开发者与底层实现隔离开来，削弱了深入理解 LLM 核心代码的机会",
-   "gained": 767,
-   "since": "since_last",
-   "source": "trending",
-   "score": 67,
-   "detail": {
-    "lic": 25,
-    "easy": 20,
-    "zh": 15,
-    "demand": 14,
-    "deliver": 4,
-    "fresh": 1,
-    "adj": -12
-   },
-   "grade": "A",
-   "grade_word": "改一改能卖",
-   "form": "引擎库",
-   "velocity": 0,
-   "_gaps": [
-    [
-     "没有一键部署",
-     "没有一键部署",
-     "补一个 Dockerfile + compose，别人一条命令跑起来"
-    ]
-   ],
-   "gaps_short": [
-    "没有一键部署"
-   ],
-   "risk": "体量太大，改源码成本高，建议只做外围服务",
-   "suspect": "",
-   "pitch": {
     "gap_key": "只有代码没有界面",
     "change": "包一层网页界面，让不会写代码的人点两下就能用",
     "buyer": "要用这套能力但搞不定环境的人",
     "buyer_tag": "通用",
     "deliver": "做成带界面的成品，按份卖（发网盘，附中文说明）",
     "deliver_alt": "接单代跑：客户给需求，你出结果",
-    "hours": 1,
+    "hours": 2,
     "gap_key_word": "缺一键部署"
    },
-   "plain": "两小时从 0 训出你的 64M 大模型。Train your own 64M LLM from scratch in 2 hours.",
+   "plain": "ung220z-tool 是一个针对 UNG220Z，另含中兴/烽火/华为/九联多厂商适配、固件指纹识别与分家族排障建议的一键凭据提取工具，仅限在你自己的设备上用于找回忘记的管理密码、迁移宽带配置或安全自查。",
    "analy": {
-    "en": "两小时从 0 训出你的 64M 大模型。Train your own 64M LLM from scratch in 2 hours.",
-    "zh": "两小时从 0 训出你的 64M 大模型。 在 2 小时内从零开始训练您自己的 6400 万参数 LLM。",
-    "plain": "说白了，这是一堆已经写好的能力，但没有界面，得有人包一层壳才能给普通人用。它干的事是：两小时从 0 训出你的 64M 大模型。 在 2 小时内从零开始训练您自己的 6400 万参数 LLM。",
+    "en": "ung220z-tool 是一个针对 UNG220Z，另含中兴/烽火/华为/九联多厂商适配、固件指纹识别与分家族排障建议的一键凭据提取工具，仅限在你自己的设备上用于找回忘记的管理密码、迁移宽带配置或安全自查。",
+    "zh": "ung220z-tool 是一个针对 UNG220Z，另含中兴/烽火/华为/九联多厂商适配、固件指纹识别与分家族排障建议的一键凭据提取工具，仅限在你自己的设备上用于找回忘记的管理密码、迁移宽带配置或安全自查。",
+    "plain": "说白了，这是一堆已经写好的能力，但没有界面，得有人包一层壳才能给普通人用。它干的事是：ung220z-tool 是一个针对 UNG220Z，另含中兴/烽火/华为/九联多厂商适配、固件指纹识别与分家族排障建议的一键凭据提取工具，仅限在你自己的设备上用于找回忘记的管理密码、迁移宽带配置或安全自查。",
     "usage": [
      "接到同类需求时拿它当底子，省掉搭骨架的两三天",
      "包一层网页界面，做成给非技术人用的成品",
@@ -202,60 +95,79 @@
     "_src": "mt"
    },
    "_bucket": "",
-   "seen_times": 1,
-   "seen_first": "2026-11-18",
-   "seen_last": "2026-11-18"
+   "seen_times": 0,
+   "seen_first": "",
+   "seen_last": ""
   },
   {
-   "full_name": "Minireel/HGhub",
-   "owner": "Minireel",
+   "full_name": "n8n-io/nod",
+   "owner": "n8n-io",
    "owner_type": "Organization",
-   "name": "HGhub",
-   "desc": "Plug-in media player",
-   "lang": "Rust",
-   "stars": 11856,
-   "forks": 9181,
-   "watchers": 52,
-   "open_issues": 11,
-   "license": "NOASSERTION",
-   "license_name": "Other",
+   "name": "nod",
+   "desc": "Open source personal agent with its own computer. It chases invoices, preps your calls and cancels trials on real websites, and asks before it acts. Runs on your machine with the model you choose. By n8n.",
+   "lang": "TypeScript",
+   "stars": 3688,
+   "forks": 585,
+   "watchers": 15,
+   "open_issues": 112,
+   "license": "Apache-2.0",
+   "license_name": "Apache License 2.0",
    "topics": [
-    "android",
-    "drama",
-    "free",
-    "movie-web-app",
-    "reels",
-    "windows"
+    "agents",
+    "ai-agent",
+    "ai-assistant",
+    "anthropic",
+    "automation",
+    "browser-automation",
+    "computer-use",
+    "electron",
+    "llm",
+    "local-first",
+    "mcp",
+    "n8n",
+    "openai",
+    "personal-agent",
+    "personal-assistant",
+    "privacy",
+    "self-hosted",
+    "telegram-bot",
+    "typescript",
+    "whatsapp-bot"
    ],
-   "created_at": "2026-11-03T14:04:27Z",
-   "pushed_at": "2026-11-24T02:54:07Z",
-   "updated_at": "2026-11-25T09:34:14Z",
-   "size_kb": 2193,
+   "created_at": "2026-09-25T13:46:42Z",
+   "pushed_at": "2026-11-26T09:09:30Z",
+   "updated_at": "2026-11-26T09:09:39Z",
+   "size_kb": 156377,
    "archived": false,
-   "has_discussions": false,
+   "has_discussions": true,
    "has_wiki": false,
-   "homepage": "https://minireel.github.io/HGhub/",
-   "url": "https://github.com/Minireel/HGhub",
+   "homepage": "https://nod.n8n.io/",
+   "url": "https://github.com/n8n-io/nod",
    "default_branch": "main",
-   "readme": "<p align=\"center\">\n  <img src=\"app-icon.svg\" width=\"88\" height=\"88\" alt=\"HGhub 图标\" />\n</p>\n\n<h1 align=\"center\">HGhub</h1>\n\n<p align=\"center\">一个通过插件连接内容的通用视频播放器。</p>\n\n<p align=\"center\">\n  <a href=\"#开始使用\">开始使用</a> ·\n  <a href=\"https://minireel.github.io/HGhub/\">在线文档</a> ·\n  <a href=\"docs/developers/index.md\">插件开发</a> ·\n  <a href=\"docs/DEVELOPMENT.md\">参与开发</a> ·\n  <a href=\"https://github.com/Minireel/HGhub/issues\">反馈问题</a>\n</p>\n\nHGhub 将浏览、搜索、播放和个人片库放在同一个应用中。通过导入 JavaScript 插件，你可以接入不同内容来源，并使用统一的界面观看与管理内容。\n\n**应用不内置内容源，不分发第三方插件，也不提供官方源列表。** 首次使用需自行导入插件，无需注册 HGhub 账号；来源要求登录时，由对应插件提供登录入口。\n\n## 核心体验\n\n- **沉浸式播放**：桌面与移动端界面，配合手势和播放控制，在面板中查看详情、选集与评论。\n- **多来源浏览与搜索**：推荐、分类筛选和聚合搜索，支持按来源查看结果，并保留本地搜索历史。\n- **灵活的播放选择**：支持 HLS 与普通视频，切换线路、清晰度和解析器，也可搜索其他来源继续观看。\n- **自己的片库**：管理本地收藏、观看历史与续播进度；支持追更，以及将插件提供的云端列表导入本地收藏。\n- **按需扩展**：通过文件、网址或插件列表导入内容源与解析器，检查更新，并在更新失败时恢复上一可用版本。\n- **更多内容形式**：除点播外，还可通过插件接入直播、信息流和图文内容。\n\n具体内容、账号、评论与互动能力取决于所安装的插件。\n\n## 开始使用\n\n插件版处于早期开发阶段，目前可[从源码运行或构建](docs/DEVELOPMENT.md)。当前重点完善 Windows 与 Android，其他平台仍在适配和验证；详见[支持状态](docs/developers/status.md)。\n\n1. 打开 **插件中心 → 导入与订阅**。移动端从“我的”进入插件中心。\n2. 选择插件文件、粘贴代码，或输入插件／列表网址；确认安装并启用。\n3. 从首页、搜索或分类找到内容，开始播放。需要切换首页来源时，可在设置中选择。\n\nHGhub 维护播放器与插件接口，第三方内容的可用性由相应来源决定。\n\n## 文档\n\n**[打开在线文档站 →](https://minireel.github.io/HGhub/)**\n\n| 我想…… | 从这里开始 |\n| --- | --- |\n| 制作一个内容源或解析器插件 | [插件开发教程](docs/developers/index.md) |\n| 了解插件文件、宿主 API 与内容模型 | [HPP 插件协议](docs/plugin-protocol/README.md) |\n| 让 Agent 协助开发插件 | [Agent 开发指南](docs/developers/agent.md) |\n| 修改客户端或自行构建 | [客户端开发指南](docs/DEVELOPMENT.md) |\n| 查看已支持与待完善的能力 | [支持状态](docs/developers/status.md) |\n\n客户端使用 **Rust · Tauri 2 · React · TypeScript** 构建。HPP 插件协议仍在演进，编写插件前请阅读当前支持状态。\n\n## 参与、交流、贡献\n\n欢迎通过 [Issues](https://github.com/Minireel/HGhub/issues) 反馈问题、提出想法，或提交 [Pull Request](https://github.com/Minireel/HGhub/pulls) 参与改进。报告问题时，请附上应用版本、操作系统和复现步骤。\n\n项目本身由我独立维护，维护者会根据时间与精力处理反馈，不承诺第三方插件或站点持续可用。维护范围与权益反馈方式见[项目声明](docs/PROJECT_POLICY.md)。\n\nHGhub 欢迎您的贡献，任何一个协议都需要大量、长久的踩坑、试错、经验总结，使它变的越来越完善。您的任何 Issues 与 PR 都对 HGhub 帮助良多！\n\n社区交流：[Linux.DO](https://linux.do/)。\n\n## 许可证与非商业立场\n\n本项目源码公开，采用 [PolyForm Noncommercial 1.0.0](LICENSE)。**禁止商业用途**，包括销售、广告变现、卡密、VIP、付费解锁，以及作为收费产品或服务的一部分使用；具体以许可证全文为准。\n\n维护者**不提供商业授权，不接受广告、推广或商务合作**，也未授权任何人以本项目名义收费。社区技术贡献与问题反馈不属于商务合作。\n\n项目不运营内容托管服务，与外部内容提供者无官方隶属或背书关系。完整责任边界、维护政策与权益反馈说明见[项目声明](docs/PROJECT_POLICY.md)。\n",
-   "gained": 0,
-   "since": "created<30d",
-   "source": "search_new",
-   "score": 61,
+   "readme": "<p align=\"center\">\n  <a href=\"https://nod.n8n.io#gh-dark-mode-only\"><img src=\"docs/src/assets/readme/hero-dark.webp\" alt=\"n8n presents Nod: open source personal agent with its own computer\" width=\"100%\" /></a>\n  <a href=\"https://nod.n8n.io#gh-light-mode-only\"><img src=\"docs/src/assets/readme/hero.webp\" alt=\"n8n presents Nod: open source personal agent with its own computer\" width=\"100%\" /></a>\n</p>\n\n<p align=\"center\">\n  <strong>It chases invoices, preps your calls and cancels trials, on real websites.</strong><br />\n  It runs on your machine with the model you choose, and asks before it acts for you.\n</p>\n\n<p align=\"center\">\n  <a href=\"https://github.com/n8n-io/nod/releases/latest/download/nod-arm64.dmg#gh-dark-mode-only\"><img src=\"docs/src/assets/readme/button-mac-dark.webp\" alt=\"Download for Mac\" width=\"219\" /></a>\n  <a href=\"https://github.com/n8n-io/nod/releases/latest/download/nod-arm64.dmg#gh-light-mode-only\"><img src=\"docs/src/assets/readme/button-mac.webp\" alt=\"Download for Mac\" width=\"219\" /></a>\n  <a href=\"https://github.com/n8n-io/nod/releases/latest/download/nod-Setup-x64.exe#gh-dark-mode-only\"><img src=\"docs/src/assets/readme/button-windows-dark.webp\" alt=\"Download for Windows\" width=\"259\" /></a>\n  <a href=\"https://github.com/n8n-io/nod/releases/latest/download/nod-Setup-x64.exe#gh-light-mode-only\"><img src=\"docs/src/assets/readme/button-windows.webp\" alt=\"Download for Windows\" width=\"259\" /></a>\n  <a href=\"https://nod.n8n.io/docs/#gh-dark-mode-only\"><img src=\"docs/src/assets/readme/button-docs-dark.webp\" alt=\"Read the docs\" width=\"190\" /></a>\n  <a href=\"https://nod.n8n.io/docs/#gh-light-mode-only\"><img src=\"docs/src/assets/readme/button-docs.webp\" alt=\"Read the docs\" width=\"190\" /></a>\n</p>\n\n<p align=\"center\">\n  <sub>macOS 14+ (Apple silicon or <a href=\"https://github.com/n8n-io/nod/releases/latest/download/nod-x64.dmg\">Intel</a>) · Windows 11 preview · <a href=\"https://nod.n8n.io/docs/get-started/install-desktop/#linux\">Linux x64 preview</a> · Free and open source · ChatGPT Plus or Pro, or an AI key</sub>\n</p>\n\n<p align=\"center\">\n  <a href=\"https://github.com/n8n-io/nod/releases/latest\"><img alt=\"Latest release\" src=\"https://img.shields.io/github/v/release/n8n-io/nod?style=flat-square&labelColor=191919&color=ff91ac&label=release\" /></a>\n  <a href=\"https://github.com/n8n-io/nod\"><img alt=\"GitHub stars\" src=\"https://img.shields.io/github/stars/n8n-io/nod?style=flat-square&labelColor=191919&color=ff91ac&logo=github\" /></a>\n  <a href=\"LICENSE\"><img alt=\"License: Apache 2.0\" src=\"https://img.shields.io/badge/license-Apache_2.0-ff91ac?style=flat-square&labelColor=191919\" /></a>\n  <a href=\"https://www.bestpractices.dev/projects/16526\"><img alt=\"OpenSSF Best Practices\" src=\"https://img.shields.io/cii/level/16526?style=flat-square&labelColor=191919&color=ff91ac&label=openssf\" /></a>\n  <a href=\"https://discord.gg/n8n\"><img alt=\"Discord\" src=\"https://img.shields.io/badge/discord-join_us-ff91ac?style=flat-square&labelColor=191919&logo=discord&logoColor=white\" /></a>\n  <img alt=\"Status: research preview\" src=\"https://img.shields.io/badge/status-research_preview-ff91ac?style=flat-square&labelColor=191919\" />\n</p>\n\n<p align=\"center\">\n  <sub><a href=\"#on-your-machine\">On your machine</a> · <a href=\"#hard-ones\">The hard ones</a> · <a href=\"#memory\">Memory</a> · <a href=\"#your-rules\">Your rules</a> · <a href=\"#benchmarks\">Measured</a> · <a href=\"#under-the-hood\">Under the hood</a> · <a href=\"#next-on-the-list\">Next</a> · <a href=\"#straight-answers\">Answers</a> · <a href=\"#get-nod\">Get Nod</a> · <a href=\"#build-with-us\">Build with us</a></sub>\n</p>\n\n<br />\n\n<a name=\"on-your-machine\"></a>\n\n<p align=\"center\">\n  <a href=\"#on-your-machine\">\n    <picture>\n      <source media=\"(prefers-color-scheme: dark)\" srcset=\"docs/src/assets/readme/heading-machine-dark.webp\" />\n      <source media=\"(prefers-color-scheme: light)\" srcset=\"docs/src/assets/readme/heading-machine.webp\" />\n      <img src=\"docs/src/assets/readme/heading-machine.webp\" alt=",
+   "gained": 1008,
+   "since": "weekly",
+   "source": "trending",
+   "score": 80,
    "detail": {
-    "lic": 8,
-    "easy": 14,
-    "zh": 7,
-    "demand": 12,
-    "deliver": 10,
-    "fresh": 10,
-    "adj": 0
+    "lic": 25,
+    "easy": 20,
+    "zh": 0,
+    "demand": 20,
+    "deliver": 2,
+    "fresh": 5,
+    "adj": 8
    },
-   "grade": "B",
-   "grade_word": "值得研究",
+   "grade": "S",
+   "grade_word": "今晚就能动手",
    "form": "web应用",
-   "velocity": 564.5714285714286,
+   "velocity": 144.0,
    "_gaps": [
+    [
+     "没有中文上手文档",
+     "没有中文上手文档",
+     "把 README 翻成中文，配一张三步跑通图"
+    ],
     [
      "没有中文界面",
      "没有中文界面",
@@ -268,26 +180,27 @@
     ]
    ],
    "gaps_short": [
+    "没有中文上手文档",
     "没有中文界面",
     "没有一键部署"
    ],
-   "risk": "许可证不明，动手前去 README 确认一遍",
+   "risk": "",
    "suspect": "",
    "pitch": {
     "gap_key": "没有中文界面",
     "change": "把界面文案和按钮全翻成中文，再截一套中文版演示图当商品图",
-    "buyer": "想有个自己工具但不会写代码的人",
-    "buyer_tag": "通用",
+    "buyer": "要自动回消息的商家",
+    "buyer_tag": "客服",
     "deliver": "打包部署到客户自己的服务器/域名，收一次部署费",
     "deliver_alt": "做成在线服务，按月收使用费",
-    "hours": 8,
+    "hours": 6,
     "gap_key_word": "缺中文界面"
    },
-   "plain": "Plug-in media player",
+   "plain": "Open source personal agent with its own computer. It chases invoices, preps your calls and cancels trials on real websites, and asks before it acts. Runs on your machine with the model you choose. By n8n.",
    "analy": {
-    "en": "Plug-in media player",
-    "zh": "插件媒体播放器",
-    "plain": "说白了，这是一个打开网页就能用的在线小工具，不用装任何东西。它干的事是：插件媒体播放器",
+    "en": "Open source personal agent with its own computer. It chases invoices, preps your calls and cancels trials on real websites, and asks before it acts. Runs on your machine with the model you choose. By n8n.",
+    "zh": "拥有自己计算机的开源个人代理。它可以催缴发票、为您准备通话、在真实网站上取消试用，并在采取行动前征求您的意见。在您的计算机上运行，使用您选择的模型。由 n8n 提供。",
+    "plain": "说白了，这是一个打开网页就能用的在线小工具，不用装任何东西。它干的事是：拥有自己计算机的开源个人代理。它可以催缴发票、为您准备通话、在真实网站上取消试用，并在采取行动前征求您的意见。在您的计算机上运行，使用您选择的模型。由 n8n 提供。",
     "usage": [
      "直接打开当工具用，省掉装软件那一步",
      "部署到自己的域名，做成一个能对外收钱的服务",
@@ -299,69 +212,78 @@
      "选样式/导出，拿到成品"
     ],
     "gap": "把界面文案和按钮全翻成中文，再截一套中文版演示图当商品图",
-    "buyer": "想有个自己工具但不会写代码的人",
-    "why": "想有个自己工具但不会写代码的人不是不会做，是懒得为这一步花两三天试错。你把「把界面文案和按钮全翻成中文，再截一套中文版演示图当商品图」替他们做完，他们花的钱远少于自己折腾的时间。",
+    "buyer": "要自动回消息的商家",
+    "why": "要自动回消息的商家不是不会做，是懒得为这一步花两三天试错。你把「把界面文案和按钮全翻成中文，再截一套中文版演示图当商品图」替他们做完，他们花的钱远少于自己折腾的时间。",
     "self": "自己干活时当外挂：重复的排版、出图、整理交给它，一次省十几分钟。用熟之后你会清楚自己哪一步最该自动化——这个认知比工具本身值钱。",
     "pack": "汉化 + 一套中文模板 + 部署教程，打包成 zip 发网盘；主图用「改前 vs 改后」对比，标题写用户能搜的词。落地上就按这条走：打包部署到客户自己的服务器/域名，收一次部署费。",
     "_auto": true,
     "_src": "mt"
    },
    "_bucket": "",
-   "seen_times": 1,
-   "seen_first": "2026-11-18",
-   "seen_last": "2026-11-18"
+   "seen_times": 0,
+   "seen_first": "",
+   "seen_last": ""
   },
   {
-   "full_name": "ChromeDevTools/chrome-devtools-mcp",
-   "owner": "ChromeDevTools",
-   "owner_type": "Organization",
-   "name": "chrome-devtools-mcp",
-   "desc": "Chrome DevTools for coding agents",
-   "lang": "TypeScript",
-   "stars": 59275,
-   "forks": 4887,
-   "watchers": 258,
-   "open_issues": 120,
-   "license": "Apache-2.0",
-   "license_name": "Apache License 2.0",
+   "full_name": "ersinkoc/phonebox",
+   "owner": "ersinkoc",
+   "owner_type": "User",
+   "name": "phonebox",
+   "desc": "Turn an old Android phone into a customizable desk panel and touch control deck for Windows, Linux and macOS. 124 widgets and 30 templates for system stats, AI coding, media and automation, in 13 languages. USB or paired Wi-Fi. No cloud required.",
+   "lang": "JavaScript",
+   "stars": 6676,
+   "forks": 785,
+   "watchers": 27,
+   "open_issues": 14,
+   "license": "MIT",
+   "license_name": "MIT License",
    "topics": [
-    "browser",
-    "chrome",
-    "chrome-devtools",
-    "debugging",
-    "devtools",
-    "mcp",
-    "mcp-server",
-    "puppeteer"
+    "android",
+    "claude-code",
+    "codex",
+    "dashboard",
+    "desk-panel",
+    "dotnet",
+    "home-assistant",
+    "linux",
+    "macos",
+    "old-phone",
+    "smart-stack",
+    "stream-deck",
+    "system-monitor",
+    "tailscale",
+    "webhooks",
+    "widgets",
+    "windows"
    ],
-   "created_at": "2025-09-11T10:39:55Z",
-   "pushed_at": "2026-11-25T09:27:45Z",
-   "updated_at": "2026-11-25T09:31:26Z",
-   "size_kb": 13868,
+   "created_at": "2026-11-07T16:45:16Z",
+   "pushed_at": "2026-11-25T20:49:59Z",
+   "updated_at": "2026-11-26T09:12:01Z",
+   "size_kb": 31794,
    "archived": false,
-   "has_discussions": true,
-   "has_wiki": false,
-   "homepage": "https://developer.chrome.com/docs/devtools/agents",
-   "url": "https://github.com/ChromeDevTools/chrome-devtools-mcp",
+   "has_discussions": false,
+   "has_wiki": true,
+   "homepage": "https://ersinkoc.github.io/phonebox/",
+   "url": "https://github.com/ersinkoc/phonebox",
    "default_branch": "main",
-   "readme": "# Chrome DevTools for agents\n\n[![npm chrome-devtools-mcp package](https://img.shields.io/npm/v/chrome-devtools-mcp.svg)](https://npmjs.org/package/chrome-devtools-mcp)\n\nChrome DevTools for agents (`chrome-devtools-mcp`) lets your coding agent (such as Antigravity, Claude, Cursor or Copilot)\ncontrol and inspect a live Chrome browser. It is available as a\nModel-Context-Protocol (MCP) server and as a [CLI][cli]. Both give your AI\ncoding assistant access to the full power of Chrome DevTools for reliable\nautomation, in-depth debugging, and performance analysis.\n\n[Tool reference][tool-reference] | [CLI][cli] | [Skills][skills] | [Changelog][changelog] | [Contributing][contributing] | [Troubleshooting][troubleshooting] | [Design Principles][design-principles]\n\n## Key features\n\n- **Get performance insights**: Uses [Chrome\n  DevTools](https://github.com/ChromeDevTools/devtools-frontend) to record\n  traces and extract actionable performance insights.\n- **Advanced browser debugging**: Analyze network requests, take screenshots and\n  check browser console messages (with source-mapped stack traces).\n- **Reliable automation**. Uses\n  [puppeteer](https://github.com/puppeteer/puppeteer) to automate actions in\n  Chrome and automatically wait for action results.\n\n## Disclaimers\n\n`chrome-devtools-mcp` exposes content of the browser instance to the MCP clients\nallowing them to inspect, debug, and modify any data in the browser or DevTools.\nAvoid sharing sensitive or personal information that you don't want to share with\nMCP clients.\n\n`chrome-devtools-mcp` officially supports Google Chrome and [Chrome for Testing](https://developer.chrome.com/blog/chrome-for-testing/) only.\nOther Chromium-based browsers may work, but this is not guaranteed, and you may encounter unexpected behavior. Use at your own discretion.\nWe are committed to providing fixes and support for the latest version of [Extended Stable Chrome](https://chromiumdash.appspot.com/schedule).\n\nPerformance tools may send trace URLs to the Google CrUX API to fetch real-user\nexperience data. This helps provide a holistic performance picture by\npresenting field data alongside lab data. This data is collected by the [Chrome\nUser Experience Report (CrUX)](https://developer.chrome.com/docs/crux). To disable\nthis, run with the `--no-performance-crux` flag.\n\n## **Usage statistics**\n\nGoogle collects usage statistics (such as tool invocation success rates, latency, and environment information) to improve the reliability and performance of Chrome DevTools MCP.\n\nData collection is **enabled by default**. You can opt-out by passing the `--no-usage-statistics` flag when starting the server:\n\n```json\n\"args\": [\"-y\", \"chrome-devtools-mcp@latest\", \"--no-usage-statistics\"]\n```\n\nGoogle handles this data in accordance with the [Google Privacy Policy](https://policies.google.com/privacy).\n\nGoogle's collection of usage statistics for Chrome DevTools MCP is independent from the Chrome browser's usage statistics. Opting out of Chrome metrics does not automatically opt you out of this tool, and vice-versa.\n\nCollection is disabled if `CHROME_DEVTOOLS_MCP_NO_USAGE_STATISTICS` or `CI` env variables are set.\n\n## Update checks\n\nBy default, the server periodically checks the npm registry for updates and logs a notification when a newer version is available.\nYou can disable these update checks by setting the `CHROME_DEVTOOLS_MCP_NO_UPDATE_CHECKS` environment variable.\n\n## Requirements\n\n- [Node.js](https://nodejs.org/) [LTS](https://github.com/nodejs/Release#release-schedule) version.\n- [Chrome](https://www.google.com/chrome/) current stable version or newer.\n- [npm](https://www.npmjs.com/)\n\n## Getting started\n\nAdd the following config to your MCP client:\n\n```json\n{\n  \"mcpServers\": {\n    \"chrome-devtools\": {\n      \"command\": \"npx\",\n      \"args\": [\"-y\", \"chrome-devtools-mcp@latest\"]\n    }\n  }\n}\n```\n\n> [!NOTE]\n> Using `chrome-devtools-mcp@latest` ensures that your MCP client will always use the latest version of the Chrome De",
-   "gained": 1258,
-   "since": "weekly",
-   "source": "trending",
-   "score": 59,
+   "readme": "<p align=\"center\"><img src=\"agent/PhoneBox.Agent/phonebox.ico\" width=\"72\" alt=\"PhoneBox icon\"></p>\n\n<h1 align=\"center\">PhoneBox</h1>\n\n<p align=\"center\">\n  <b>English</b> ·\n  <a href=\"docs/README.tr.md\">Türkçe</a> ·\n  <a href=\"docs/README.de.md\">Deutsch</a> ·\n  <a href=\"docs/README.fr.md\">Français</a> ·\n  <a href=\"docs/README.es.md\">Español</a> ·\n  <a href=\"docs/README.it.md\">Italiano</a> ·\n  <a href=\"docs/README.pt.md\">Português</a> ·\n  <a href=\"docs/README.pt-BR.md\">Português (Brasil)</a> ·\n  <a href=\"docs/README.nl.md\">Nederlands</a> ·\n  <a href=\"docs/README.pl.md\">Polski</a> ·\n  <a href=\"docs/README.ru.md\">Русский</a> ·\n  <a href=\"docs/README.el.md\">Ελληνικά</a> ·\n  <a href=\"docs/README.vi.md\">Tiếng Việt</a> ·\n  <a href=\"docs/README.zh.md\">中文 (简体)</a> ·\n  <a href=\"docs/README.ja.md\">日本語</a> ·\n  <a href=\"docs/README.ko.md\">한국어</a> ·\n  <a href=\"docs/README.id.md\">Bahasa Indonesia</a> ·\n  <a href=\"docs/README.th.md\">ไทย</a> ·\n  <a href=\"docs/README.uk.md\">Українська</a> ·\n  <a href=\"docs/README.hi.md\">हिन्दी</a> ·\n  <a href=\"docs/README.cs.md\">Čeština</a> ·\n  <a href=\"docs/README.ar.md\">العربية</a> ·\n  <a href=\"docs/README.zh-Hant.md\">中文（繁體）</a>\n</p>\n\n<p align=\"center\"><b>Turn an old Android phone into a desk panel for your computer.</b><br>\nPC stats, AI coding sessions, music and touch controls over USB or Wi-Fi.<br>\nWindows, Linux and macOS. No root, PhoneBox account or cloud service required.</p>\n\n<p align=\"center\">\n  <a href=\"https://ersinkoc.github.io/phonebox/\"><b>Try the live demo</b></a> ·\n  <a href=\"https://github.com/ersinkoc/phonebox/releases/latest\"><b>Download</b></a> ·\n  <a href=\"#quick-start\"><b>Quick start</b></a>\n</p>\n\n<p align=\"center\">\n  <a href=\"https://github.com/ersinkoc/phonebox/actions/workflows/build.yml\"><img src=\"https://github.com/ersinkoc/phonebox/actions/workflows/build.yml/badge.svg\" alt=\"Build status\"></a>\n  <a href=\"https://github.com/ersinkoc/phonebox/releases/latest\"><img src=\"https://img.shields.io/github/v/release/ersinkoc/phonebox?label=release\" alt=\"Latest release\"></a>\n  <img src=\"https://img.shields.io/badge/Windows%20%C2%B7%20Linux%20%C2%B7%20macOS-.NET%2010-512bd4\" alt=\"Windows, Linux, macOS; .NET 10\">\n  <img src=\"https://img.shields.io/badge/Android-5%2B-3ddc84\" alt=\"Android 5+\">\n  <a href=\"LICENSE\"><img src=\"https://img.shields.io/badge/license-MIT-blue\" alt=\"MIT license\"></a>\n</p>\n\n<p align=\"center\"><img src=\"docs/hero-0.6.png\" width=\"900\" alt=\"PhoneBox on three phones showing automation, home and planner pages\"><br>\n<sub>Example layouts with demo data.</sub></p>\n\nPhoneBox pairs a full-screen **Android app** with a small **desktop agent**. Build your panel in a browser-based\nvisual editor: **136 widgets**, **30 templates**, multiple pages and a live preview. Connect several phones with\ntheir own layouts, or switch one phone between paired computers.\n\n## What you can do\n\n| Use it for | What appears on the phone |\n|---|---|\n| **PC monitoring** | CPU, GPU, RAM, disks, network and ping; charts, GPU details and process controls |\n| **AI coding** | Claude, Codex and Antigravity quotas, reset times and burn-rate forecasts; local Claude Code, Codex and OpenCode sessions (native and inside WSL); GitHub reviews and CI status |\n| **Touch controls** | App and URL shortcuts, key combinations and macros; application audio, microphone, media, OBS and system controls through [Control Deck](docs/CONTROL-DECK.md) |\n| **Everyday use** | Now Playing, internet radio, clocks, weather, calendars, notes, checklists, pomodoro and timers |\n| **Automation** | Webhook values and notifications, Home Assistant controls and rules that react to activity on the computer |\n\nTap an AI session for its model, timing and token details. Opt in to Codex, Claude Code or OpenCode permission prompts\nto answer **Allow**, **Deny** (and **Always allow** for OpenCode) from the phone. Optional\n[CodexBar integration](docs/GUIDE.md#widgets) adds quota providers and a cost overview.\n\n<p align=\"center\"><a href=\"docs/tour-0.6.mp4\"><i",
+   "gained": 0,
+   "since": "created<30d",
+   "source": "search_new",
+   "score": 79,
    "detail": {
     "lic": 25,
     "easy": 20,
     "zh": 0,
-    "demand": 14,
-    "deliver": 7,
-    "fresh": 1,
-    "adj": -8
+    "demand": 12,
+    "deliver": 4,
+    "fresh": 10,
+    "adj": 8
    },
-   "grade": "B",
-   "grade_word": "值得研究",
-   "form": "引擎库",
-   "velocity": 179.71428571428572,
+   "grade": "A",
+   "grade_word": "改一改能卖",
+   "form": "模板主题",
+   "velocity": 370.8888888888889,
    "_gaps": [
     [
      "没有中文上手文档",
@@ -378,109 +300,88 @@
     "没有中文上手文档",
     "没有一键部署"
    ],
-   "risk": "大厂项目，路线不由你定，只能做外围（部署/中文化/模板）",
+   "risk": "",
    "suspect": "",
    "pitch": {
-    "gap_key": "没有中文上手文档",
-    "change": "把 README 翻成中文，配一张「三步跑通」流程图",
-    "buyer": "要用这套能力但搞不定环境的人",
-    "buyer_tag": "通用",
-    "deliver": "接单代跑：客户给需求，你出结果",
-    "deliver_alt": "做成中文教程 + 成品包，走知识付费",
+    "gap_key": "只是通用模板",
+    "change": "换成本地行业案例（餐饮/教培/门店），改文案和配色",
+    "buyer": "要做数据但不会写代码的人",
+    "buyer_tag": "数据",
+    "deliver": "换 logo 配色文案，出一套同名 zip 直接卖",
+    "deliver_alt": "做成「开箱即用版」发网盘，附中文说明",
     "hours": 2,
     "gap_key_word": "缺中文上手文档"
    },
-   "plain": "Chrome DevTools for coding agents",
+   "plain": "Turn an old Android phone into a customizable desk panel and touch control deck for Windows, Linux and macOS. 124 widgets and 30 templates for system stats, AI coding, media and automation, in 13 languages. USB or paired Wi-Fi. No cloud required.",
    "analy": {
-    "en": "Chrome DevTools for coding agents",
-    "zh": "适用于编码代理的 Chrome DevTools",
-    "plain": "说白了，这是一堆已经写好的能力，但没有界面，得有人包一层壳才能给普通人用。它干的事是：适用于编码代理的 Chrome DevTools",
+    "en": "Turn an old Android phone into a customizable desk panel and touch control deck for Windows, Linux and macOS. 124 widgets and 30 templates for system stats, AI coding, media and automation, in 13 languages. USB or paired Wi-Fi. No cloud required.",
+    "zh": "将旧的安卓手机变成可定制的桌面面板和触摸控制面板，适用于 Windows、Linux 和 macOS。提供 124 个小部件和 30 个模板，用于系统统计、AI 编程、媒体和自动化，支持 13 种语言。USB 或配对的 Wi-Fi。无需云端。",
+    "plain": "说白了，这是一套现成的模板，把内容换掉就能发布。它干的事是：将旧的安卓手机变成可定制的桌面面板和触摸控制面板，适用于 Windows、Linux 和 macOS。提供 124 个小部件和 30 个模板，用于系统统计、AI 编程、媒体和自动化，支持 13 种语言。USB 或配对的 Wi-Fi。无需云端。",
     "usage": [
-     "接到同类需求时拿它当底子，省掉搭骨架的两三天",
-     "包一层网页界面，做成给非技术人用的成品",
-     "集成进自己的项目，跳过从零写这一段"
+     "把手工统计的活换成一次配置、长期自动跑",
+     "换成自己的内容直接发布，不用等设计",
+     "按行业改造成多套，一套一个价"
     ],
     "how": [
-     "按 README 装依赖（这一步最容易卡住）",
-     "跑一个作者给的示例，确认能出结果",
-     "把自己的数据/需求换成示例里的输入"
+     "下载模板",
+     "把文字和图片换成自己的",
+     "按平台要求的尺寸导出"
     ],
-    "gap": "把 README 翻成中文，配一张「三步跑通」流程图",
-    "buyer": "要用这套能力但搞不定环境的人",
-    "why": "要用这套能力但搞不定环境的人不是不会做，是懒得为这一步花两三天试错。你把「把 README 翻成中文，配一张「三步跑通」流程图」替他们做完，他们花的钱远少于自己折腾的时间。",
-    "self": "接到类似需求直接拿它当底子，省掉搭骨架的两三天；顺手把它当成自己的技术储备，下次报价敢往上抬。",
-    "pack": "包一层网页界面，录一段 3 分钟演示，按份卖；买家买的不是代码，是「不用装环境」。落地上就按这条走：接单代跑：客户给需求，你出结果。",
+    "gap": "换成本地行业案例（餐饮/教培/门店），改文案和配色",
+    "buyer": "要做数据但不会写代码的人",
+    "why": "要做数据但不会写代码的人不是不会做，是懒得为这一步花两三天试错。你把「换成本地行业案例（餐饮/教培/门店），改文案和配色」替他们做完，他们花的钱远少于自己折腾的时间。",
+    "self": "自己发内容不用等设计，改改就发；一套模板能反复用几十次。",
+    "pack": "换 logo 配色文案，出一套同名 zip，按行业拆成多套分别定价。落地上就按这条走：换 logo 配色文案，出一套同名 zip 直接卖。",
     "_auto": true,
     "_src": "mt"
    },
    "_bucket": "",
-   "seen_times": 1,
-   "seen_first": "2026-11-18",
-   "seen_last": "2026-11-18"
+   "seen_times": 0,
+   "seen_first": "",
+   "seen_last": ""
   },
   {
-   "full_name": "anefzaoui/misterdownloadmanager",
-   "owner": "anefzaoui",
-   "owner_type": "User",
-   "name": "misterdownloadmanager",
-   "desc": "misterdownloadmanager: The ultimate open-source, clean-room download manager written from scratch in pure Rust for Windows, Mac, and Linux",
-   "lang": "Rust",
-   "stars": 17974,
-   "forks": 1526,
-   "watchers": 75,
-   "open_issues": 111,
-   "license": "GPL-3.0",
-   "license_name": "GNU General Public License v3.0",
-   "topics": [
-    "bittorrent-client",
-    "debrid",
-    "download-accelerator",
-    "download-manager",
-    "downloadmanager",
-    "egui",
-    "file-downloader",
-    "gallery-dl",
-    "idm",
-    "idm-alternative",
-    "internet-download-manager",
-    "m3u8-downloader",
-    "magnet",
-    "playlist-downloader",
-    "real-debrid",
-    "rust",
-    "torrent-client",
-    "video-downloader",
-    "youtube-downloader",
-    "yt-dlp"
-   ],
-   "created_at": "2026-10-29T01:25:19Z",
-   "pushed_at": "2026-11-25T09:03:20Z",
-   "updated_at": "2026-11-25T09:30:35Z",
-   "size_kb": 846717,
+   "full_name": "deepseek-ai/chat-demo",
+   "owner": "deepseek-ai",
+   "owner_type": "Organization",
+   "name": "chat-demo",
+   "desc": "Chat Demo",
+   "lang": "TypeScript",
+   "stars": 5471,
+   "forks": 1314,
+   "watchers": 20,
+   "open_issues": 1,
+   "license": "MIT",
+   "license_name": "MIT License",
+   "topics": [],
+   "created_at": "2026-11-12T08:08:19Z",
+   "pushed_at": "2026-11-24T11:20:28Z",
+   "updated_at": "2026-11-26T09:13:16Z",
+   "size_kb": 279,
    "archived": false,
-   "has_discussions": true,
+   "has_discussions": false,
    "has_wiki": false,
-   "homepage": "https://misterdownloadmanager.com",
-   "url": "https://github.com/anefzaoui/misterdownloadmanager",
+   "homepage": "https://deepseek-ai.github.io/chat-demo/",
+   "url": "https://github.com/deepseek-ai/chat-demo",
    "default_branch": "main",
-   "readme": "# Mister Download Manager\n\n<p align=\"center\">\n  <img src=\"docs/images/logo.png\" alt=\"Mister Download Manager's logo\" width=\"160\">\n</p>\n\n<h3 align=\"center\">Downloads faster than IDM. Free, forever.</h3>\n\n<p align=\"center\">🌐 <a href=\"https://misterdownloadmanager.com\"><b>misterdownloadmanager.com</b></a>: the official website, with the downloads, help and news. Liked MDM? <a href=\"https://misterdownloadmanager.com/#rate\">Rate it there</a>, one to five stars.</p>\n\n<p align=\"center\">\n  <a href=\"https://github.com/anefzaoui/misterdownloadmanager/releases/latest\"><img src=\"https://img.shields.io/badge/Download%20for-Windows-2a78d6?style=flat-square&logo=data%3Aimage%2Fsvg%2Bxml%3Bbase64%2CPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0id2hpdGUiPjxwYXRoIGQ9Ik0yIDMuNWw4LjUtMS4ydjguMkgyek0xMS41IDIuMkwyMiAuOHY5LjdIMTEuNXpNMiAxMS41aDguNXY4LjJMMiAxOC41ek0xMS41IDExLjVIMjJ2OS43bC0xMC41LTEuNHoiLz48L3N2Zz4%3D\" alt=\"Download for Windows\" height=\"34\"></a>\n  <a href=\"https://github.com/anefzaoui/misterdownloadmanager/releases/latest\"><img src=\"https://img.shields.io/badge/Download%20for-macOS-2a78d6?style=flat-square&logo=apple&logoColor=white\" alt=\"Download for macOS\" height=\"34\"></a>\n  <a href=\"https://github.com/anefzaoui/misterdownloadmanager/releases/latest\"><img src=\"https://img.shields.io/badge/Download%20for-Linux-2a78d6?style=flat-square&logo=linux&logoColor=white\" alt=\"Download for Linux\" height=\"34\"></a>\n</p>\n\n<p align=\"center\">\n  🧩 <b>Browser extension:</b><br>\n  <a href=\"https://addons.mozilla.org/firefox/addon/mister-download-manager/\"><img src=\"https://img.shields.io/badge/Add%20to-Firefox-2a78d6?style=flat-square&logo=firefoxbrowser&logoColor=white\" alt=\"Add to Firefox\" height=\"34\"></a>\n  <a href=\"https://chromewebstore.google.com/detail/mister-download-manager/ejoleppdfgjdndddcjoehopknmlglojp\"><img src=\"https://img.shields.io/badge/Add%20to-Chrome-2a78d6?style=flat-square&logo=googlechrome&logoColor=white\" alt=\"Add to Chrome\" height=\"34\"></a><br>\n  <sub>The Chrome Web Store's is for\n  <img src=\"docs/images/browsers/edge.png\" width=\"16\" height=\"16\" alt=\"\"> Edge,\n  <img src=\"docs/images/browsers/brave.png\" width=\"16\" height=\"16\" alt=\"\"> Brave,\n  <img src=\"docs/images/browsers/opera.png\" width=\"16\" height=\"16\" alt=\"\"> Opera, Vivaldi and Helium too (<a href=\"docs/browser-integration.md\">how</a>).</sub>\n</p>\n\n<p align=\"center\">\n  <a href=\"https://youtu.be/TATDxWuu4Q8\"><img src=\"docs/images/film-thumb.webp\" alt=\"Mister Download Manager film, 1:09, plays on YouTube\" width=\"880\"></a>\n</p>\n\n<p align=\"center\">\n  <a href=\"https://trendshift.io/repositories/337427\" target=\"_blank\"><img src=\"https://trendshift.io/api/badge/trendshift/repositories/337427/daily?language=Rust\" alt=\"Mister Download Manager on Trendshift: number 1 Rust repository of the day\" width=\"200\" height=\"44\"></a><br>\n  <a href=\"https://github.com/anefzaoui/misterdownloadmanager/stargazers\"><img src=\"https://img.shields.io/github/stars/anefzaoui/misterdownloadmanager?style=social&label=Star%20MDM\" alt=\"Star Mister Download Manager on GitHub\" height=\"28\"></a><br>\n  <sub>⭐ <b>Like it? Give it a star.</b> MDM has no ads and no marketing budget: stars are how people find it.</sub>\n</p>\n\n<p align=\"center\">\n  Windows 10 and 11 (x64, ARM64, 32-bit) · Linux (Ubuntu, Debian, Mint, Fedora, openSUSE, Arch and more; x86-64 and ARM64) · macOS (Apple Silicon and Intel, experimental)<br>\n  87 languages · no ads, no trial, no sign-up\n</p>\n\n<table align=\"center\">\n  <tr>\n    <td align=\"center\" width=\"210\"><img src=\"docs/images/icons/faster.png\" width=\"76\" alt=\"\"><h1>5×</h1><b>Faster</b><br><sub>a 1 GB file: 1 s instead of 5.5 s, on a local test server</sub></td>\n    <td align=\"center\" width=\"210\"><img src=\"docs/images/icons/languages.png\" width=\"76\" alt=\"\"><h1>+47</h1><b>More languages</b><br><sub>87 instead of IDM's 40</sub></td>\n    <td align=\"center\" width=\"210\"><img src=\"docs/images/icons/free.png\" width=\"76\" alt=\"\"><h1>100%</h1><b>Cheaper (free!)<",
+   "readme": "# chat-demo\n\nEnglish | [简体中文](README.zh-CN.md)\n\nA static chat demo powered by the DeepSeek API. No application backend is required: the browser connects directly to the configured API service.\n\nYou can [try the app online](https://deepseek-ai.github.io/chat-demo/) or download the archive from [Releases](https://github.com/deepseek-ai/deepseek-chat-demo/releases), extract it, and double-click `index.html` to use it locally without installation or a build. Enter your API key in Settings before your first chat.\n\n## Getting started\n\nInstall Node.js 22.12+ and pnpm, then run:\n\n```sh\ngit clone https://github.com/deepseek-ai/chat-demo.git\ncd chat-demo\npnpm install\npnpm dev\n```\n\nOpen http://localhost:8090.\n\nTo build the static site:\n\n```sh\npnpm build\n```\n\nThe output is written to `dist/`. Deploy it to a static web server or open `dist/index.html` directly. Opening the file directly requires browser support for storage on `file://` pages and an API service that permits their cross-origin requests.\n\n## Features\n\n- Multiple conversations with automatic titles, renaming, and deletion; edit prompts, regenerate replies, and switch between message branches.\n- Streaming replies, deep thinking, smart search, link reading, and source citations; stop generation or continue eligible replies.\n- Upload, paste, or drag and drop attachments; use voice input and read replies aloud. A live audio spectrum appears in the first row of the input area while recording on mobile.\n- Markdown, syntax highlighting, KaTeX math, and Mermaid diagrams.\n- Simplified Chinese and English, light and dark themes, mobile layouts, location settings, and chat history import and export.\n\n## Data and storage\n\nYour API key and settings are stored in the browser's localStorage. Conversations and original attachments are stored in IndexedDB. Local data is isolated by browser profile and site origin. Sending messages, uploading attachments, and using speech features sends the relevant content to the configured API service.\n\nHistory import and export in Settings use ZIP archives. After confirmation and successful validation, importing replaces all local conversations and attachments. Exports include conversations and locally available original images, but exclude API keys, settings, and original non-image attachments. See the [history import/export documentation (Chinese)](src/services/chat/history/README.md) for the archive format and preservation details.\n\nSettings → Data → Delete all chats clears all local conversations, original attachments, and unsent drafts after confirmation. It stops ongoing replies and returns to a new chat. Your API key and settings are preserved; files already uploaded to the API service are not deleted.\n\n## Development\n\n| Command       | Description                  |\n| ------------- | ---------------------------- |\n| `pnpm dev`    | Start the development server |\n| `pnpm build`  | Build into `dist/`           |\n| `pnpm type`   | Run TypeScript type checks   |\n| `pnpm lint`   | Lint with oxlint             |\n| `pnpm format` | Format with oxfmt            |\n\n[rspack.config.ts](rspack.config.ts) uses `https://api.deepseek.com` by default. Use `createConfig({ apiOrigin, devServer })` to customize the API origin and development server proxy.\n\nChat uses `deepseek-flash` by default through Anthropic-compatible Messages / Files APIs. Speech features use ASR / TTS endpoints. Requests include extensions for search, link reading, titles, and `latest_reminder`, so the configured service must support the corresponding capabilities. Supported attachment formats are determined by server-side validation.\n\n```text\nsrc/\n  app/                 Application layout, themes, and global styles\n  components/          Chat, settings, Markdown, and other UI components\n  i18n/                English and Chinese translations\n  services/\n    api/               API requests, SSE, and protocol types\n    chat/              Conversations, message branches, storage, and history import/",
    "gained": 0,
    "since": "created<30d",
    "source": "search_new",
-   "score": 59,
+   "score": 77,
    "detail": {
-    "lic": 5,
-    "easy": 14,
+    "lic": 25,
+    "easy": 20,
     "zh": 0,
-    "demand": 20,
-    "deliver": 2,
+    "demand": 12,
+    "deliver": 10,
     "fresh": 10,
-    "adj": 8
+    "adj": 0
    },
-   "grade": "B",
-   "grade_word": "值得研究",
-   "form": "引擎库",
-   "velocity": 665.7037037037037,
+   "grade": "A",
+   "grade_word": "改一改能卖",
+   "form": "web应用",
+   "velocity": 390.7857142857143,
    "_gaps": [
     [
      "没有中文上手文档",
@@ -497,23 +398,233 @@
     "没有中文上手文档",
     "没有一键部署"
    ],
-   "risk": "GPL：改了必须开源，卖闭源产品有法律风险",
+   "risk": "",
    "suspect": "",
    "pitch": {
-    "gap_key": "没有现成案例",
-    "change": "补 3 个真实场景示例，每个都能直接跑出结果",
-    "buyer": "做短视频的剪辑号",
-    "buyer_tag": "视频",
-    "deliver": "做成中文教程 + 成品包，走知识付费",
-    "deliver_alt": "封装成 API 出租，按调用量收费",
-    "hours": 11,
+    "gap_key": "没有在线演示",
+    "change": "部署一个公开 demo，让人先玩再决定买不买",
+    "buyer": "想有个自己工具但不会写代码的人",
+    "buyer_tag": "通用",
+    "deliver": "做成在线服务，按月收使用费",
+    "deliver_alt": "连部署带教一次，做成「一天陪跑」按次收",
+    "hours": 3,
     "gap_key_word": "缺中文上手文档"
    },
-   "plain": "misterdownloadmanager: The ultimate open-source, clean-room download manager written from scratch in pure Rust for Windows, Mac, and Linux",
+   "plain": "Chat Demo",
    "analy": {
-    "en": "misterdownloadmanager: The ultimate open-source, clean-room download manager written from scratch in pure Rust for Windows, Mac, and Linux",
-    "zh": "misterdownloadmanager：终极开源、无污染的下载管理器，完全使用纯 Rust 语言从头编写，适用于 Windows、Mac 和 Linux",
-    "plain": "说白了，这是一堆已经写好的能力，但没有界面，得有人包一层壳才能给普通人用。它干的事是：misterdownloadmanager：终极开源、无污染的下载管理器，完全使用纯 Rust 语言从头编写，适用于 Windows、Mac 和 Linux",
+    "en": "Chat Demo",
+    "zh": "聊天演示",
+    "plain": "说白了，这是一个打开网页就能用的在线小工具，不用装任何东西。它干的事是：聊天演示",
+    "usage": [
+     "直接打开当工具用，省掉装软件那一步",
+     "部署到自己的域名，做成一个能对外收钱的服务",
+     "挂在自己号里当「免费小工具」，用来引流"
+    ],
+    "how": [
+     "打开作者给的网址（或自己部署一份）",
+     "按界面提示把内容填进去",
+     "选样式/导出，拿到成品"
+    ],
+    "gap": "部署一个公开 demo，让人先玩再决定买不买",
+    "buyer": "想有个自己工具但不会写代码的人",
+    "why": "想有个自己工具但不会写代码的人不是不会做，是懒得为这一步花两三天试错。你把「部署一个公开 demo，让人先玩再决定买不买」替他们做完，他们花的钱远少于自己折腾的时间。",
+    "self": "自己干活时当外挂：重复的排版、出图、整理交给它，一次省十几分钟。用熟之后你会清楚自己哪一步最该自动化——这个认知比工具本身值钱。",
+    "pack": "汉化 + 一套中文模板 + 部署教程，打包成 zip 发网盘；主图用「改前 vs 改后」对比，标题写用户能搜的词。落地上就按这条走：做成在线服务，按月收使用费。",
+    "_auto": true,
+    "_src": "mt"
+   },
+   "_bucket": "",
+   "seen_times": 0,
+   "seen_first": "",
+   "seen_last": ""
+  },
+  {
+   "full_name": "meta/astryx",
+   "owner": "meta",
+   "owner_type": "Organization",
+   "name": "astryx",
+   "desc": "An open source design system that's fully customizable and agent ready",
+   "lang": "TypeScript",
+   "stars": 33224,
+   "forks": 2596,
+   "watchers": 107,
+   "open_issues": 787,
+   "license": "MIT",
+   "license_name": "MIT License",
+   "topics": [],
+   "created_at": "2026-01-09T16:20:32Z",
+   "pushed_at": "2026-11-26T09:03:03Z",
+   "updated_at": "2026-11-26T09:10:42Z",
+   "size_kb": 1392350,
+   "archived": false,
+   "has_discussions": true,
+   "has_wiki": true,
+   "homepage": "http://astryx.atmeta.com",
+   "url": "https://github.com/meta/astryx",
+   "default_branch": "main",
+   "readme": "<!-- SYNC CONTRACT: Architecture changes require documentation updates. -->\n\n<div align=\"center\">\n\n<img src=\"https://lookaside.facebook.com/assets/astryx/Astryx-Banner.png\" alt=\"Astryx\" width=\"100%\" />\n\n# Astryx\n\nAn open source design system that's fully customizable and built for how we build now: <br/> by people and the agents working alongside them.\n\n**Currently in Beta** · Built on [React 19+](https://react.dev) and [StyleX](https://stylexjs.com)\n\n[![npm version](https://img.shields.io/npm/v/@astryxdesign/core?label=npm&color=cb3837&logo=npm)](https://www.npmjs.com/package/@astryxdesign/core)\n[![license MIT](https://img.shields.io/github/license/meta/astryx?color=blue)](LICENSE)\n[![PRs welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/meta/astryx/wiki/Contributing)\n\n[![Docs](https://img.shields.io/badge/Docs-astryx.atmeta.com-6741d9?logo=readthedocs&logoColor=white)](https://astryx.atmeta.com)\n[![Storybook](https://img.shields.io/badge/Storybook-live-ff4785?logo=storybook&logoColor=white)](https://astryx.atmeta.com/storybook/)\n[![Sandbox](https://img.shields.io/badge/Sandbox-playground-A9792B)](https://astryx.atmeta.com/sandbox/)\n\n**[Docs](https://astryx.atmeta.com)** · **[Storybook](https://astryx.atmeta.com/storybook/)** · **[Sandbox](https://astryx.atmeta.com/sandbox/)** · **[Contributing](https://github.com/meta/astryx/wiki/Contributing)** · **[Discord](https://discord.com/invite/XnsUcFykEP)**\n\n</div>\n\n## Overview\n\nAstryx is an open source design system that grew inside Meta over the last eight years, where it became the most-used and largest design system in the company — powering 13,000+ apps and shaped by the engineers, designers, and product teams who depend on it every day.\n\nIt ships 150+ accessible components, brand-level theming, dark mode, ready-to-ship templates, and a CLI as one cohesive system. You import pre-built CSS and use typed React components — no build plugin, no styling library to adopt — and both people and AI assistants build with the same tooling.\n\n**What makes Astryx different:**\n\n- **Open internals.** Components are built to be composed at any level, not locked behind a closed top-level API. The building blocks you'd reach for are exported directly, and when you need to go deeper, swizzle ejects a component's full source into your project to own.\n- **No styling lock-in.** Astryx authors its styles with StyleX, but that's invisible to consumers. Override with `className` using Tailwind, CSS modules, or plain CSS — whatever your project already uses.\n- **Customize without wrapping.** A theme is a set of CSS custom property overrides, so a designer can make Astryx unmistakably theirs without forking or wrapping component source.\n- **Built for people and agents.** The API, docs, and CLI are designed together so a person and an AI assistant build the same way, from the same reference.\n\n## Getting Started\n\nAstryx requires **React 19** or later (`react` and `react-dom` are peer dependencies of `@astryxdesign/core`).\n\nInstall Astryx, a theme, and its peer dependencies:\n\n```bash\n# npm\nnpm install @astryxdesign/core @astryxdesign/theme-neutral @stylexjs/stylex\nnpm install -D @astryxdesign/cli\n\n# pnpm\npnpm add @astryxdesign/core @astryxdesign/theme-neutral @stylexjs/stylex\npnpm add -D @astryxdesign/cli\n\n# yarn\nyarn add @astryxdesign/core @astryxdesign/theme-neutral @stylexjs/stylex\nyarn add -D @astryxdesign/cli\n```\n\nThen finish setup with `init`, once, before you write UI. It asks no questions, prints the getting-started steps (styles, theme), and saves the Astryx guide to `AGENTS.md`/`CLAUDE.md` so you and your agents build with Astryx instead of guessing:\n\n```bash\nnpx @astryxdesign/cli init   # or: pnpm exec astryx init / yarn astryx init\n```\n\nYou can also install the CLI once for your computer, so `astryx` works in any folder and every coding agent knows Astryx; in a project, it still runs that project's own version:\n\n```bash\nnpm i -g @astryxdesign/cli\n```\n\nProject ",
+   "gained": 2635,
+   "since": "weekly",
+   "source": "trending",
+   "score": 68,
+   "detail": {
+    "lic": 25,
+    "easy": 20,
+    "zh": 0,
+    "demand": 20,
+    "deliver": 2,
+    "fresh": 1,
+    "adj": 0
+   },
+   "grade": "A",
+   "grade_word": "改一改能卖",
+   "form": "web应用",
+   "velocity": 376.42857142857144,
+   "_gaps": [
+    [
+     "没有中文上手文档",
+     "没有中文上手文档",
+     "把 README 翻成中文，配一张三步跑通图"
+    ]
+   ],
+   "gaps_short": [
+    "没有中文上手文档"
+   ],
+   "risk": "大厂项目，路线不由你定，只能做外围（部署/中文化/模板）",
+   "suspect": "",
+   "pitch": {
+    "gap_key": "没有行业预设",
+    "change": "做 10 个行业预设（餐饮/教培/门店），一键套用",
+    "buyer": "接单的设计师和电商美工",
+    "buyer_tag": "设计",
+    "deliver": "连部署带教一次，做成「一天陪跑」按次收",
+    "deliver_alt": "换成客户自己的数据跑一遍，按场景收定制费",
+    "hours": 6,
+    "gap_key_word": "缺中文上手文档"
+   },
+   "plain": "An open source design system that's fully customizable and agent ready",
+   "analy": {
+    "en": "An open source design system that's fully customizable and agent ready",
+    "zh": "一个完全可定制且支持代理的开源设计系统",
+    "plain": "说白了，这是一个打开网页就能用的在线小工具，不用装任何东西。它干的事是：一个完全可定制且支持代理的开源设计系统",
+    "usage": [
+     "接单时用它出初稿，客户改的是稿子不是空白页",
+     "直接打开当工具用，省掉装软件那一步",
+     "部署到自己的域名，做成一个能对外收钱的服务"
+    ],
+    "how": [
+     "打开作者给的网址（或自己部署一份）",
+     "按界面提示把内容填进去",
+     "选样式/导出，拿到成品"
+    ],
+    "gap": "做 10 个行业预设（餐饮/教培/门店），一键套用",
+    "buyer": "接单的设计师和电商美工",
+    "why": "接单的设计师和电商美工不是不会做，是懒得为这一步花两三天试错。你把「做 10 个行业预设（餐饮/教培/门店），一键套用」替他们做完，他们花的钱远少于自己折腾的时间。",
+    "self": "自己干活时当外挂：重复的排版、出图、整理交给它，一次省十几分钟。用熟之后你会清楚自己哪一步最该自动化——这个认知比工具本身值钱。",
+    "pack": "汉化 + 一套中文模板 + 部署教程，打包成 zip 发网盘；主图用「改前 vs 改后」对比，标题写用户能搜的词。落地上就按这条走：连部署带教一次，做成「一天陪跑」按次收。",
+    "_auto": true,
+    "_src": "mt"
+   },
+   "_bucket": "",
+   "seen_times": 2,
+   "seen_first": "2026-11-12",
+   "seen_last": "2026-11-19"
+  },
+  {
+   "full_name": "openvinotoolkit/openvino",
+   "owner": "openvinotoolkit",
+   "owner_type": "Organization",
+   "name": "openvino",
+   "desc": "OpenVINO™ is an open source toolkit for optimizing and deploying AI inference",
+   "lang": "C++",
+   "stars": 12719,
+   "forks": 3718,
+   "watchers": 193,
+   "open_issues": 1207,
+   "license": "Apache-2.0",
+   "license_name": "Apache License 2.0",
+   "topics": [
+    "ai",
+    "computer-vision",
+    "deep-learning",
+    "deploy-ai",
+    "diffusion-models",
+    "generative-ai",
+    "good-first-issue",
+    "inference",
+    "llm-inference",
+    "natural-language-processing",
+    "nlp",
+    "openvino",
+    "optimize-ai",
+    "performance-boost",
+    "recommendation-system",
+    "speech-recognition",
+    "stable-diffusion",
+    "transformers",
+    "yolo"
+   ],
+   "created_at": "2018-10-15T10:54:40Z",
+   "pushed_at": "2026-11-26T09:12:09Z",
+   "updated_at": "2026-11-26T09:11:56Z",
+   "size_kb": 1056760,
+   "archived": false,
+   "has_discussions": true,
+   "has_wiki": true,
+   "homepage": "https://docs.openvino.ai",
+   "url": "https://github.com/openvinotoolkit/openvino",
+   "default_branch": "master",
+   "readme": "<div align=\"center\">\n<img src=\"https://storage.openvinotoolkit.org/assets/branding/openvino-logo-transparent-white-outline.svg\" width=\"400px\" alt=\"OpenVINO\">\n\n<h3 align=\"center\">\nOpen-source software toolkit for optimizing and deploying deep learning models.\n</h3>\n\n<p align=\"center\">\n <a href=\"https://docs.openvino.ai/2026/index.html\"><b>Documentation</b></a> • <a href=\"https://blog.openvino.ai\"><b>Blog</b></a> • <a href=\"https://docs.openvino.ai/2026/about-openvino/key-features.html\"><b>Key Features</b></a> • <a href=\"https://docs.openvino.ai/2026/get-started/learn-openvino.html\"><b>Tutorials</b></a> • <a href=\"https://docs.openvino.ai/2026/about-openvino/openvino-ecosystem/openvino-integrations.html\"><b>Integrations</b></a> • <a href=\"https://www.intel.com/content/www/us/en/developer/tools/openvino-toolkit/model-hub.html\"><b>Benchmarks</b></a> • <a href=\"https://github.com/openvinotoolkit/openvino.genai\"><b>Generative AI</b></a>\n</p>\n\n[![PyPI Status](https://badge.fury.io/py/openvino.svg)](https://badge.fury.io/py/openvino)\n[![NPM](https://img.shields.io/npm/v/openvino-node)](https://www.npmjs.com/package/openvino-node)\n[![Anaconda Status](https://anaconda.org/conda-forge/openvino/badges/version.svg)](https://anaconda.org/conda-forge/openvino)\n[![brew Status](https://img.shields.io/homebrew/v/openvino)](https://formulae.brew.sh/formula/openvino)\n\n[![PyPI Downloads](https://static.pepy.tech/badge/openvino)](https://pepy.tech/project/openvino)\n[![Anaconda Downloads](https://anaconda.org/conda-forge/libopenvino/badges/downloads.svg)](https://anaconda.org/conda-forge/openvino/files)\n[![brew Downloads](https://img.shields.io/homebrew/installs/dy/openvino)](https://formulae.brew.sh/formula/openvino)\n </div>\n\n\n- **Inference Optimization**: Boost deep learning performance in computer vision, automatic speech recognition, generative AI, natural language processing with large and small language models, and many other common tasks.\n- **Flexible Model Support**: Use models trained with popular frameworks such as PyTorch, TensorFlow, ONNX, Keras, PaddlePaddle, and JAX/Flax. Directly integrate models built with transformers and diffusers from the Hugging Face Hub using Optimum Intel. Convert and deploy models without original frameworks.\n- **Broad Platform Compatibility**: Reduce resource demands and efficiently deploy on a range of platforms from edge to cloud. OpenVINO™ supports inference on CPU (x86, ARM), GPU (Intel integrated & discrete GPU) and AI accelerators (Intel NPU).\n- **Community and Ecosystem**: Join an active community contributing to the enhancement of deep learning performance across various domains.\n\nCheck out the [OpenVINO Cheat Sheet](https://docs.openvino.ai/2026/_static/download/OpenVINO_Quick_Start_Guide.pdf) and [Key Features](https://docs.openvino.ai/2026/about-openvino/key-features.html) for a quick reference.\n\n\n## Installation\n\n[Get your preferred distribution of OpenVINO](https://docs.openvino.ai/2026/get-started/install-openvino.html) or use this command for quick installation:\n\n```sh\npip install -U openvino\n```\n\n### Verify Installation\n\nAfter installation, you can verify OpenVINO is installed correctly by running:\n\n```python\nimport openvino as ov\nprint(ov.__version__)\n```\n\nCheck [system requirements](https://docs.openvino.ai/2026/about-openvino/release-notes-openvino/system-requirements.html) and [supported devices](https://docs.openvino.ai/2026/documentation/compatibility-and-support/supported-devices.html) for detailed information.\n\n## Tutorials and Examples\n\n[OpenVINO Quickstart example](https://docs.openvino.ai/2026/get-started.html) will walk you through the basics of deploying your first model.\n\nLearn how to optimize and deploy popular models with the [OpenVINO Notebooks](https://github.com/openvinotoolkit/openvino_notebooks) 📚:\n- [Create an LLM-powered Chatbot using OpenVINO](https://github.com/openvinotoolkit/openvino_notebooks/blob/latest/notebooks/llm-chatbot/llm-chatbot-generate-api.ipynb)\n- [YOLOv",
+   "gained": 191,
+   "since": "daily",
+   "source": "trending",
+   "score": 68,
+   "detail": {
+    "lic": 25,
+    "easy": 12,
+    "zh": 0,
+    "demand": 20,
+    "deliver": 2,
+    "fresh": 1,
+    "adj": 8
+   },
+   "grade": "A",
+   "grade_word": "改一改能卖",
+   "form": "引擎库",
+   "velocity": 191.0,
+   "_gaps": [
+    [
+     "没有中文上手文档",
+     "没有中文上手文档",
+     "把 README 翻成中文，配一张三步跑通图"
+    ],
+    [
+     "没有一键部署",
+     "没有一键部署",
+     "补一个 Dockerfile + compose，别人一条命令跑起来"
+    ]
+   ],
+   "gaps_short": [
+    "没有中文上手文档",
+    "没有一键部署"
+   ],
+   "risk": "",
+   "suspect": "",
+   "pitch": {
+    "gap_key": "没有中文上手文档",
+    "change": "把 README 翻成中文，配一张「三步跑通」流程图",
+    "buyer": "做短视频的剪辑号",
+    "buyer_tag": "视频",
+    "deliver": "接单代跑：客户给需求，你出结果",
+    "deliver_alt": "做成中文教程 + 成品包，走知识付费",
+    "hours": 12,
+    "gap_key_word": "缺中文上手文档"
+   },
+   "plain": "OpenVINO™ is an open source toolkit for optimizing and deploying AI inference",
+   "analy": {
+    "en": "OpenVINO™ is an open source toolkit for optimizing and deploying AI inference",
+    "zh": "OpenVINO™ 是一款用于优化和部署 AI 推理的开源工具包",
+    "plain": "说白了，这是一堆已经写好的能力，但没有界面，得有人包一层壳才能给普通人用。它干的事是：OpenVINO™ 是一款用于优化和部署 AI 推理的开源工具包",
     "usage": [
      "批量出素材/封面/字幕，一个晚上干完一周的量",
      "接到同类需求时拿它当底子，省掉搭骨架的两三天",
@@ -524,9 +635,231 @@
      "跑一个作者给的示例，确认能出结果",
      "把自己的数据/需求换成示例里的输入"
     ],
-    "gap": "补 3 个真实场景示例，每个都能直接跑出结果",
+    "gap": "把 README 翻成中文，配一张「三步跑通」流程图",
     "buyer": "做短视频的剪辑号",
-    "why": "做短视频的剪辑号不是不会做，是懒得为这一步花两三天试错。你把「补 3 个真实场景示例，每个都能直接跑出结果」替他们做完，他们花的钱远少于自己折腾的时间。",
+    "why": "做短视频的剪辑号不是不会做，是懒得为这一步花两三天试错。你把「把 README 翻成中文，配一张「三步跑通」流程图」替他们做完，他们花的钱远少于自己折腾的时间。",
+    "self": "接到类似需求直接拿它当底子，省掉搭骨架的两三天；顺手把它当成自己的技术储备，下次报价敢往上抬。",
+    "pack": "包一层网页界面，录一段 3 分钟演示，按份卖；买家买的不是代码，是「不用装环境」。落地上就按这条走：接单代跑：客户给需求，你出结果。",
+    "_auto": true,
+    "_src": "mt"
+   },
+   "_bucket": "",
+   "seen_times": 1,
+   "seen_first": "2026-11-19",
+   "seen_last": "2026-11-19"
+  },
+  {
+   "full_name": "expo/exact",
+   "owner": "expo",
+   "owner_type": "Organization",
+   "name": "exact",
+   "desc": "Write an app once. It runs natively on the web, macOS, iOS, and Linux, and an AI agent can build it, run it, see it, and test it on every one of them.",
+   "lang": "Rust",
+   "stars": 5133,
+   "forks": 162,
+   "watchers": 15,
+   "open_issues": 47,
+   "license": "MIT",
+   "license_name": "MIT License",
+   "topics": [
+    "ai-agents",
+    "appkit",
+    "coding-agents",
+    "cross-platform",
+    "css",
+    "ios",
+    "linux",
+    "macos",
+    "native-apps",
+    "rust",
+    "swift",
+    "uikit",
+    "web"
+   ],
+   "created_at": "2026-11-02T01:29:01Z",
+   "pushed_at": "2026-11-26T09:06:42Z",
+   "updated_at": "2026-11-26T09:08:38Z",
+   "size_kb": 222988,
+   "archived": false,
+   "has_discussions": false,
+   "has_wiki": false,
+   "homepage": "",
+   "url": "https://github.com/expo/exact",
+   "default_branch": "main",
+   "readme": "# Exact\n\n**The all-platform app framework. Agent native. Built for speed. No compromises.**\n\nExact is an **all-platform** framework for building real apps on the web, iOS, macOS, Android, and Linux — with Windows in active development, plus tvOS, watchOS, Android TV, and the terminal.\n\nExact is not a \"cross-platform\" framework. Cross-platform tools usually trade away each platform's strengths to maintain a lowest common denominator. Exact takes the opposite approach: build something **excellent on every platform on its own terms** — real DOM on the web, real UIKit on iOS, real AppKit on macOS, hardware-accelerated Material 3 rendering with native Android views on Android, and direct GPU/CPU rendering on Linux and Windows. Being **all-platform** is simply the side effect of getting every platform right from one source.\n\nEverything in Exact is built around three priorities:\n\n1. **[Agent Native](#1-agent-native)** — Built from the ground up so coding agents can build, run, see, operate, and verify real apps on every platform through one deterministic loop.\n2. **[Speed is King](#2-speed-is-king)** — 100 ms cold starts, 100 ms edit-to-present reloads, zero app JavaScript before first pixel, and a ~20 KB web runtime, held to hard budgets.\n3. **[No Compromises — Build Exactly What You Want](#3-no-compromises--build-exactly-what-you-want)** — Native platform controls with zero tells when you leave presentation unsaid; full creative control over layout, motion, graphics, shaders, and native platform objects whenever you want it.\n\n> [!NOTE]\n> Exact is pre-1.0 and changes daily. There is no packaged release, API stability guarantee, or backwards-compatibility layer yet — you build from a checkout of this repository.\n\n<table>\n  <tr>\n    <th>Web</th>\n    <th>iOS</th>\n    <th>macOS</th>\n  </tr>\n  <tr valign=\"top\">\n    <td><img src=\"docs/screenshots/softwear-web.webp\" width=\"360\" alt=\"Softwear's hoodies page in Chrome\"></td>\n    <td><img src=\"docs/screenshots/softwear-ios.webp\" width=\"160\" alt=\"Softwear's hoodies page as a native iOS app\"></td>\n    <td><img src=\"docs/screenshots/softwear-macos.webp\" width=\"290\" alt=\"Softwear's hoodies page as a native macOS app\"></td>\n  </tr>\n  <tr valign=\"top\">\n    <td>The browser's own DOM and CSS</td>\n    <td>UIKit views, native controls, and the system tab bar</td>\n    <td>AppKit views and native controls</td>\n  </tr>\n</table>\n\n<sub>One source, three platforms, captured by Exact's agent driver. <a href=\"https://github.com/expo/exact-templates/tree/main/softwear\">Softwear</a> is a demo store from <a href=\"https://github.com/expo/exact-templates\">exact-templates</a> (it displays Alternative Apparel's catalog, is not affiliated with that brand, and takes no orders or payments).</sub>\n\n### Platforms\n\n| Platform | Status | How it renders |\n|---|---|---|\n| **Web** | Works | Browser DOM (~20 KB runtime, zero layout engine shipped) |\n| **iOS** | Works (Simulator & device) | UIKit views, native controls, and system bars |\n| **macOS** | Works | AppKit views and native controls (no SwiftUI) |\n| **Linux** | Works | Exact's painter draws in a Wayland window, full-screen on a DRM/KMS console, or into a headless buffer. |\n| **Android** | [Works](#android) (Material 3 polish in progress) | Hardware-accelerated Android Canvas (`RenderNode`) with Material 3 styling, native `EditText`, dialogs, and Compose date pickers |\n| **Windows** | [Early](#early-windows) | DirectX 11 (`ink`) or CPU painter (neutral look + Fluent symbols) with native file dialogs, IME, and UI Automation |\n\nThe repository also ships **tvOS** and **watchOS** hosts, **Android TV** support in the Android APK, and a **terminal** host (`exact-terminal`) for command-line apps.\n\n### Contents\n\n- [Why Exact?](#why-exact)\n  - [1. Agent Native](#1-agent-native)\n  - [2. Speed is King](#2-speed-is-king)\n  - [3. No Compromises — Build Exactly What You Want](#3-no-compromises--build-exactly-what-you-want)\n  - [All-platform vs. cross-platform](#all-platform-vs-cross-p",
+   "gained": 0,
+   "since": "created<30d",
+   "source": "search_new",
+   "score": 58,
+   "detail": {
+    "lic": 25,
+    "easy": 15,
+    "zh": 0,
+    "demand": 18,
+    "deliver": 2,
+    "fresh": 10,
+    "adj": -12
+   },
+   "grade": "B",
+   "grade_word": "值得研究",
+   "form": "模板主题",
+   "velocity": 213.875,
+   "_gaps": [
+    [
+     "没有中文上手文档",
+     "没有中文上手文档",
+     "把 README 翻成中文，配一张三步跑通图"
+    ],
+    [
+     "没有中文界面",
+     "没有中文界面",
+     "把界面文案和按钮全翻成中文，截一套中文版演示图"
+    ],
+    [
+     "没有在线演示",
+     "没有在线演示",
+     "部署一个公开 demo 站，让人先玩再买单"
+    ]
+   ],
+   "gaps_short": [
+    "没有中文上手文档",
+    "没有中文界面",
+    "没有在线演示"
+   ],
+   "risk": "",
+   "suspect": "",
+   "pitch": {
+    "gap_key": "没有安装说明",
+    "change": "写一份「十分钟上线」步骤，配截图",
+    "buyer": "想快速上线一个小产品的人",
+    "buyer_tag": "通用",
+    "deliver": "做成「开箱即用版」发网盘，附中文说明",
+    "deliver_alt": "按行业拆成多套，一套一个价",
+    "hours": 12,
+    "gap_key_word": "缺中文上手文档"
+   },
+   "plain": "Write an app once. It runs natively on the web, macOS, iOS, and Linux, and an AI agent can build it, run it, see it, and test it on every one of them.",
+   "analy": {
+    "en": "Write an app once. It runs natively on the web, macOS, iOS, and Linux, and an AI agent can build it, run it, see it, and test it on every one of them.",
+    "zh": "只需编写一次应用程序。它可在 Web、macOS、iOS 和 Linux 上原生运行，AI 代理可以在每个平台上构建、运行、查看和测试它。",
+    "plain": "说白了，这是一套现成的模板，把内容换掉就能发布。它干的事是：只需编写一次应用程序。它可在 Web、macOS、iOS 和 Linux 上原生运行，AI 代理可以在每个平台上构建、运行、查看和测试它。",
+    "usage": [
+     "换成自己的内容直接发布，不用等设计",
+     "按行业改造成多套，一套一个价",
+     "当引流钩子：免费给一套，私信换全套"
+    ],
+    "how": [
+     "下载模板",
+     "把文字和图片换成自己的",
+     "按平台要求的尺寸导出"
+    ],
+    "gap": "写一份「十分钟上线」步骤，配截图",
+    "buyer": "想快速上线一个小产品的人",
+    "why": "想快速上线一个小产品的人不是不会做，是懒得为这一步花两三天试错。你把「写一份「十分钟上线」步骤，配截图」替他们做完，他们花的钱远少于自己折腾的时间。",
+    "self": "自己发内容不用等设计，改改就发；一套模板能反复用几十次。",
+    "pack": "换 logo 配色文案，出一套同名 zip，按行业拆成多套分别定价。落地上就按这条走：做成「开箱即用版」发网盘，附中文说明。",
+    "_auto": true,
+    "_src": "mt"
+   },
+   "_bucket": "",
+   "seen_times": 0,
+   "seen_first": "",
+   "seen_last": ""
+  },
+  {
+   "full_name": "cursor/plugins",
+   "owner": "cursor",
+   "owner_type": "Organization",
+   "name": "plugins",
+   "desc": "Cursor plugin specification and official plugins",
+   "lang": "TypeScript",
+   "stars": 19635,
+   "forks": 2121,
+   "watchers": 84,
+   "open_issues": 704,
+   "license": "",
+   "license_name": "",
+   "topics": [],
+   "created_at": "2026-01-23T01:57:42Z",
+   "pushed_at": "2026-11-26T09:04:53Z",
+   "updated_at": "2026-11-26T09:12:25Z",
+   "size_kb": 19367,
+   "archived": false,
+   "has_discussions": false,
+   "has_wiki": true,
+   "homepage": "",
+   "url": "https://github.com/cursor/plugins",
+   "default_branch": "main",
+   "readme": "# Cursor plugins\n\nOfficial Cursor plugins for popular developer tools, frameworks, and SaaS products. Each plugin is a standalone directory at the repository root with its own `.cursor-plugin/plugin.json` manifest.\n\n## Plugins\n\n| `name` | Plugin | Author | Category | `description` (from marketplace) |\n|:-------|:-------|:-------|:---------|:-------------------------------------|\n| `teaching` | [Teaching](teaching/) | Cursor | Utilities | Skill mapping, practice plans, and learning retrospectives. |\n| `continual-learning` | [Continual Learning](continual-learning/) | Eric Zakariasson | Developer Tools | Incremental transcript-driven memory updates for AGENTS.md using high-signal bullet points only. |\n| `cursor-team-kit` | [Cursor Team Kit](cursor-team-kit/) | Eric Zakariasson | Developer Tools | Internal team workflows for CI, code review, shipping, local automation, and verification. |\n| `thermos` | [Thermos](thermos/) | Cursor | Developer Tools | Thermo-nuclear branch review: deep security/correctness audits, harsh code-quality rubrics, parallel subagents, thermos orchestration, and optional merge-ready PR flows. |\n| `create-plugin` | [Create Plugin](create-plugin/) | Cursor | Developer Tools | Scaffold and validate new agent plugins. |\n| `ralph-loop` | [Ralph Loop](ralph-loop/) | Cursor | Developer Tools | Iterative self-referential AI loops using the Ralph Wiggum technique. |\n| `agent-compatibility` | [Agent Compatibility](agent-compatibility/) | Cursor | Developer Tools | CLI-backed repo compatibility scans plus agents that audit startup, validation, and docs against reality. |\n| `cli-for-agent` | [CLI for Agents](cli-for-agent/) | Eric Zakariasson | Developer Tools | Patterns for designing CLIs that coding agents can run reliably: flags, help with examples, pipelines, errors, idempotency, dry-run. |\n| `pr-review-canvas` | [PR Review Canvas](pr-review-canvas/) | Cursor | Developer Tools | Render PR diffs as review canvases grouped by importance. |\n| `docs-canvas` | [Docs Canvas](docs-canvas/) | Cursor | Developer Tools | Render documentation as a navigable canvas. |\n| `cursor-sdk` | [Cursor SDK](cursor-sdk/) | Cursor | Developer Tools | Build apps, scripts, and automations with the TypeScript SDK. |\n| `origin-apps` | [Origin Apps](origin-apps/) | Cursor | Developer Tools | Skills for building on the Cursor Origin API. Fetch the live spec first, then follow the Origin rules for credentials, scopes, webhooks, paging, and errors. Includes a skill that plans the port of an existing GitHub App. |\n| `orchestrate` | [Orchestrate](orchestrate/) | Cursor | Developer Tools | Fan large tasks out across parallel cloud agents with planners, workers, verifiers, and structured handoffs. |\n| `pstack` | [pstack](pstack/) | Lauren Tan | Developer Tools | if you want to go fast, go deep first. pstack helps you write less, but higher quality code. rigorous agent workflows you can parallelize with confidence. |\n| `dyl-stack` | [dyl-stack](dyl-stack/) | Dylan Gattey | Developer Tools | Dylan's agent style on top of pstack: root causes over symptom patches, The Algorithm before design, terse verified delivery, a PR review that fits in a paste, and Figma-to-UI with a visual judge. |\n| `advisor` | [Advisor](advisor/) | Cursor | Developer Tools | Consult a stronger model before major decisions, when stuck, and before declaring done. |\n| `grok-voice` | [Grok Voice](grok-voice/) | Eric Zakariasson | Developer Tools | Add Grok voice to an app: realtime speech-to-speech, speech-to-text dictation, text-to-speech read-aloud, and a log-driven fix loop for voice sessions. |\n| `gmail` | [Gmail](third_party/gmail/) | Cursor | Productivity | Search, read, draft, and manage email. |\n| `google-drive` | [Google Drive](third_party/google-drive/) | Cursor | Productivity | Search, read, create, and share files. |\n| `google-calendar` | [Google Calendar](third_party/google-calendar/) | Cursor | Productivity | Search events and schedule meetings. |\n| `google-docs` | [",
+   "gained": 416,
+   "since": "daily",
+   "source": "trending",
+   "score": 56,
+   "detail": {
+    "lic": 8,
+    "easy": 20,
+    "zh": 0,
+    "demand": 20,
+    "deliver": 7,
+    "fresh": 1,
+    "adj": 0
+   },
+   "grade": "B",
+   "grade_word": "值得研究",
+   "form": "引擎库",
+   "velocity": 416.0,
+   "_gaps": [
+    [
+     "没有中文上手文档",
+     "没有中文上手文档",
+     "把 README 翻成中文，配一张三步跑通图"
+    ],
+    [
+     "没有一键部署",
+     "没有一键部署",
+     "补一个 Dockerfile + compose，别人一条命令跑起来"
+    ],
+    [
+     "没有在线演示",
+     "没有在线演示",
+     "部署一个公开 demo 站，让人先玩再买单"
+    ]
+   ],
+   "gaps_short": [
+    "没有中文上手文档",
+    "没有一键部署",
+    "没有在线演示"
+   ],
+   "risk": "没有 LICENSE 文件，严格说不能商用",
+   "suspect": "",
+   "pitch": {
+    "gap_key": "没有现成案例",
+    "change": "补 3 个真实场景示例，每个都能直接跑出结果",
+    "buyer": "要用这套能力但搞不定环境的人",
+    "buyer_tag": "通用",
+    "deliver": "做成中文教程 + 成品包，走知识付费",
+    "deliver_alt": "封装成 API 出租，按调用量收费",
+    "hours": 3,
+    "gap_key_word": "缺中文上手文档"
+   },
+   "plain": "Cursor plugin specification and official plugins",
+   "analy": {
+    "en": "Cursor plugin specification and official plugins",
+    "zh": "Cursor 插件规范和官方插件",
+    "plain": "说白了，这是一堆已经写好的能力，但没有界面，得有人包一层壳才能给普通人用。它干的事是：Cursor 插件规范和官方插件",
+    "usage": [
+     "接到同类需求时拿它当底子，省掉搭骨架的两三天",
+     "包一层网页界面，做成给非技术人用的成品",
+     "集成进自己的项目，跳过从零写这一段"
+    ],
+    "how": [
+     "按 README 装依赖（这一步最容易卡住）",
+     "跑一个作者给的示例，确认能出结果",
+     "把自己的数据/需求换成示例里的输入"
+    ],
+    "gap": "补 3 个真实场景示例，每个都能直接跑出结果",
+    "buyer": "要用这套能力但搞不定环境的人",
+    "why": "要用这套能力但搞不定环境的人不是不会做，是懒得为这一步花两三天试错。你把「补 3 个真实场景示例，每个都能直接跑出结果」替他们做完，他们花的钱远少于自己折腾的时间。",
     "self": "接到类似需求直接拿它当底子，省掉搭骨架的两三天；顺手把它当成自己的技术储备，下次报价敢往上抬。",
     "pack": "包一层网页界面，录一段 3 分钟演示，按份卖；买家买的不是代码，是「不用装环境」。落地上就按这条走：做成中文教程 + 成品包，走知识付费。",
     "_auto": true,
@@ -534,616 +867,305 @@
    },
    "_bucket": "",
    "seen_times": 1,
-   "seen_first": "2026-11-18",
-   "seen_last": "2026-11-18"
-  },
-  {
-   "full_name": "xcl-dev/xcl",
-   "owner": "xcl-dev",
-   "owner_type": "Organization",
-   "name": "xcl",
-   "desc": "Xbox Series compatibility layer for Windows - runs console game code natively, reimplements the console system libraries and recompiles RDNA2 shaders to DXIL",
-   "lang": "Rust",
-   "stars": 8053,
-   "forks": 1087,
-   "watchers": 119,
-   "open_issues": 1444,
-   "license": "GPL-2.0",
-   "license_name": "GNU General Public License v2.0",
-   "topics": [
-    "d3d12",
-    "gdk",
-    "rdna2",
-    "xbox"
-   ],
-   "created_at": "2026-11-20T20:03:21Z",
-   "pushed_at": "2026-11-25T06:23:22Z",
-   "updated_at": "2026-11-25T09:37:37Z",
-   "size_kb": 6291,
-   "archived": false,
-   "has_discussions": false,
-   "has_wiki": false,
-   "homepage": "https://discord.gg/xcl",
-   "url": "https://github.com/xcl-dev/xcl",
-   "default_branch": "main",
-   "readme": "<p align=\"center\">\n  <img src=\"assets/readme/banner.svg\" width=\"100%\" alt=\"XCL – console games you own, running natively on Windows: no CPU emulation, RDNA2 shaders recompiled to DXIL, Direct3D 12\">\n</p>\n\n<p align=\"center\">\n  <a href=\"https://discord.gg/xcl\"><img alt=\"Discord: join the server\" src=\"https://img.shields.io/badge/Discord-join%20the%20server-7c5cff?style=for-the-badge\"></a>\n  <a href=\"https://github.com/xcl-dev/xcl/actions/workflows/ci.yml\"><img alt=\"CI\" src=\"https://img.shields.io/github/actions/workflow/status/xcl-dev/xcl/ci.yml?branch=main&style=for-the-badge&label=CI\"></a>\n  <a href=\"LICENSE\"><img alt=\"License: GPL-2.0-only\" src=\"https://img.shields.io/badge/license-GPL--2.0--only-7c5cff?style=for-the-badge\"></a>\n  <img alt=\"Windows 10 / 11 x64\" src=\"https://img.shields.io/badge/Windows-10%20%2F%2011%20x64-2f80ed?style=for-the-badge\">\n  <img alt=\"Direct3D 12, Shader Model 6.6\" src=\"https://img.shields.io/badge/D3D12-SM%206.6-1fb9d8?style=for-the-badge\">\n  <img alt=\"Rust\" src=\"https://img.shields.io/badge/Rust-stable--msvc-1fb9d8?style=for-the-badge\">\n</p>\n\n<p align=\"center\">\n  <b><a href=\"#games\">Games</a></b> ·\n  <b><a href=\"#highlights\">Highlights</a></b> ·\n  <b><a href=\"#how-it-works\">How it works</a></b> ·\n  <b><a href=\"#quick-start\">Quick start</a></b> ·\n  <b><a href=\"#what-works\">What works</a></b> ·\n  <b><a href=\"#controls\">Controls</a></b> ·\n  <b><a href=\"#building-and-usage\">Building and usage</a></b> ·\n  <b><a href=\"#tests\">Tests</a></b> ·\n  <b><a href=\"#contributing\">Contributing</a></b>\n</p>\n\n# XCL – Xbox Series X|S → Windows compatibility layer\n\nXCL is a compatibility layer that runs Xbox Series X|S (GDK) games you own on a Windows PC - in the spirit of Wine/Proton. There is no CPU emulation: the game's x64 code runs natively, and XCL provides its own, independently written implementations of the console system libraries the PC does not have (`kernelx.dll`, XGameRuntime, `d3d12_xs.dll`, …). The console's GPU code (RDNA2 machine code) is recompiled into PC shaders (HLSL → DXIL).\n\n> [!IMPORTANT]\n> XCL works only on unpacked game files you already own. It does not download, decrypt or unpack game packages (XVC / MSIXVC) and contains nothing for circumventing DRM. The repository holds no code, headers or binaries from the console SDK, no keys and no game data; the Windows components XCL relies on (XGameRuntime, XAudio2, D3D12, DXC) come from your own system or the public Windows SDK and are not distributed with XCL.\n\n<p align=\"center\"><img src=\"assets/readme/divider.svg\" width=\"100%\" alt=\"\"></p>\n\n## Games\n\n<p align=\"center\">\n  <img src=\"assets/readme/status.svg\" width=\"100%\" alt=\"A newer retail game, about 60 % of the way to playable (estimate): ~4 s to its first frame, 30 fps in its menus, ~5 fps in its 3D world, 100 % of its shaders translate\">\n</p>\n\n| Game | State | What works | Limits |\n|---|---|---|---|\n| **Minecraft Preview**<br><sub>`Microsoft.MinecraftBeta` 1.18.3064.0</sub> | ✅&nbsp;playable | fully playable | – |\n| **Unicorn Overlord**<br><sub>`SEGAofAmericaInc.Pa253b0c1Y` 1.0.0.6</sub> | ✅&nbsp;playable | fully playable | – |\n| **Fortnite**<br><sub>`436609B6.FortniteClient` 2.0.1461.7919</sub> | ✅&nbsp;works | works fully, as far as the game allows without its online services | the game itself is online-only (multiplayer servers) |\n| **XDefiant**<br><sub>`Ubisoft.XDefiant-Game` 1.0.0.186</sub> | ✅&nbsp;works | works fully, as far as the game allows without its servers | the game's own servers have been shut down |\n| **A newer retail game** | 🚧&nbsp;**≈&nbsp;60&nbsp;%**<br><sub>estimate</sub> | starts in ~4 s, runs at a steady 30 fps without a crash, shows its menus and goes on past the first one to its settings; fits a 32 GB machine (~15 GB committed in the menus). With the NVIDIA integration branch ([#2057](https://github.com/xcl-dev/xcl/pull/2057)) it goes on into its 3D world: **~5 fps there** on an RTX 5090 (14 fps on average over a whole 5-minute run, its menus and loading included) | ",
-   "gained": 0,
-   "since": "created<30d",
-   "source": "search_new",
-   "score": 56,
-   "detail": {
-    "lic": 5,
-    "easy": 14,
-    "zh": 0,
-    "demand": 20,
-    "deliver": 7,
-    "fresh": 10,
-    "adj": 0
-   },
-   "grade": "B",
-   "grade_word": "值得研究",
-   "form": "引擎库",
-   "velocity": 2013.25,
-   "_gaps": [
-    [
-     "没有中文上手文档",
-     "没有中文上手文档",
-     "把 README 翻成中文，配一张三步跑通图"
-    ],
-    [
-     "没有一键部署",
-     "没有一键部署",
-     "补一个 Dockerfile + compose，别人一条命令跑起来"
-    ]
-   ],
-   "gaps_short": [
-    "没有中文上手文档",
-    "没有一键部署"
-   ],
-   "risk": "GPL：改了必须开源",
-   "suspect": "星速可疑：4 天涨到 8,053 星（日均 2,013），先观察一周看有没有真实用户再动手",
-   "pitch": {
-    "gap_key": "环境装不上",
-    "change": "打包成 Docker 镜像或一键脚本，把依赖全封死",
-    "buyer": "接外包时缺一个现成轮子的人",
-    "buyer_tag": "通用",
-    "deliver": "封装成 API 出租，按调用量收费",
-    "deliver_alt": "封装成 API 出租，按调用量收费",
-    "hours": 8,
-    "gap_key_word": "缺中文上手文档"
-   },
-   "plain": "Xbox Series compatibility layer for Windows - runs console game code natively, reimplements the console system libraries and recompiles RDNA2 shaders to DXIL",
-   "analy": {
-    "en": "Xbox Series compatibility layer for Windows - runs console game code natively, reimplements the console system libraries and recompiles RDNA2 shaders to DXIL",
-    "zh": "适用于 Windows 的 Xbox Series 兼容层——以原生方式运行主机游戏代码，重新实现主机系统库并重新编译 RDNA2 着色器为 DXIL",
-    "plain": "说白了，这是一堆已经写好的能力，但没有界面，得有人包一层壳才能给普通人用。它干的事是：适用于 Windows 的 Xbox Series 兼容层——以原生方式运行主机游戏代码，重新实现主机系统库并重新编译 RDNA2 着色器为 DXIL",
-    "usage": [
-     "接到同类需求时拿它当底子，省掉搭骨架的两三天",
-     "包一层网页界面，做成给非技术人用的成品",
-     "集成进自己的项目，跳过从零写这一段"
-    ],
-    "how": [
-     "按 README 装依赖（这一步最容易卡住）",
-     "跑一个作者给的示例，确认能出结果",
-     "把自己的数据/需求换成示例里的输入"
-    ],
-    "gap": "打包成 Docker 镜像或一键脚本，把依赖全封死",
-    "buyer": "接外包时缺一个现成轮子的人",
-    "why": "接外包时缺一个现成轮子的人不是不会做，是懒得为这一步花两三天试错。你把「打包成 Docker 镜像或一键脚本，把依赖全封死」替他们做完，他们花的钱远少于自己折腾的时间。",
-    "self": "接到类似需求直接拿它当底子，省掉搭骨架的两三天；顺手把它当成自己的技术储备，下次报价敢往上抬。",
-    "pack": "包一层网页界面，录一段 3 分钟演示，按份卖；买家买的不是代码，是「不用装环境」。落地上就按这条走：封装成 API 出租，按调用量收费。",
-    "_auto": true,
-    "_src": "mt"
-   },
-   "_bucket": "",
-   "seen_times": 0,
-   "seen_first": "",
-   "seen_last": ""
-  },
-  {
-   "full_name": "zortos293/Lichii",
-   "owner": "zortos293",
-   "owner_type": "User",
-   "name": "Lichii",
-   "desc": "VERY experimental Nintendo Switch 2 emulator",
-   "lang": "C++",
-   "stars": 10253,
-   "forks": 1621,
-   "watchers": 112,
-   "open_issues": 691,
-   "license": "GPL-3.0",
-   "license_name": "GNU General Public License v3.0",
-   "topics": [],
-   "created_at": "2026-10-31T14:17:26Z",
-   "pushed_at": "2026-11-25T08:09:43Z",
-   "updated_at": "2026-11-25T09:38:07Z",
-   "size_kb": 297525,
-   "archived": false,
-   "has_discussions": false,
-   "has_wiki": false,
-   "homepage": "",
-   "url": "https://github.com/zortos293/Lichii",
-   "default_branch": "nx2",
-   "readme": "<!--\n# SPDX-FileCopyrightText: Copyright 2025 Eden Emulator Project\n# SPDX-License-Identifier: GPL-3.0-or-later\n\n# SPDX-License-Identifier: GPL-2.0-or-later\n-->\n\n<h2 align=\"center\">⚠️ Lichii has no official website ⚠️</h2>\n\n> [!CAUTION]\n> **Lichii has no official website.** The only site run by this project is the **game compatibility website, [lichii.zortos.me](https://lichii.zortos.me)**, for compatibility reports only. Download Lichii **only** from this repository's [releases page](https://github.com/zortos293/Lichii/releases). Any other \"Lichii\" website or download (such as lichii.org) is not ours and may contain malware ([#545](https://github.com/zortos293/Lichii/issues/545)).\n\n<p align=\"center\">\n  <img src=\"dist/branding/lichii_icon_with_logo.png\" alt=\"Lichii\" width=\"600\">\n</p>\n\n# Lichii\n\n[![Total downloads](https://img.shields.io/github/downloads/zortos293/Lichii/total)](https://github.com/zortos293/Lichii/releases) [![Latest release downloads](https://img.shields.io/github/downloads/zortos293/Lichii/latest/total)](https://github.com/zortos293/Lichii/releases) [![Latest release](https://img.shields.io/github/v/release/zortos293/Lichii)](https://github.com/zortos293/Lichii/releases)\n\nLichii is an experimental, open-source Nintendo Switch and Switch 2 emulator written in C++. It builds on Eglantine, Eden, yuzu and Sudachi, preserving their contributions while developing this fork's game compatibility and renderer fixes.\n\nThis is an independent fork, not an official release of those upstream projects. Lichii is not affiliated with Nintendo.\n\nVisit the [Lichii game compatibility website](https://lichii.zortos.me) to find games and compare community compatibility reports.\n\n## Downloads and setup\n\nDownload Lichii only from this repository's [releases page](https://github.com/zortos293/Lichii/releases). Lichii has no other download site: archives offered elsewhere, such as lichii.org, are not built by this project, and one has been reported to install malware ([#545](https://github.com/zortos293/Lichii/issues/545)).\n\nLinux ARM64 now ships only the standard AppImage and tarball. If no update appears on an older ARM64 PGO build, download the standard ARM64 package from the releases page.\n\nOn Windows, extract the entire build archive and run **lichii.exe**. Use homebrew you have permission to run, or your own games and system files dumped from a console you own, where permitted by applicable law. Games, keys and firmware are not included. The project does not provide download sources for them. Owning a console or game does not by itself establish permission to bypass access controls or redistribute its files.\n\n### Existing saves and settings\n\nLichii uses its own profile: `%APPDATA%\\lichii` on Windows, and the `lichii` directories under `$XDG_DATA_HOME`, `$XDG_CONFIG_HOME` and `$XDG_CACHE_HOME` on Linux and macOS. Without XDG overrides, these are `~/.local/share/lichii`, `~/.config/lichii` and `~/.cache/lichii`. An existing portable `user/` directory still takes priority and is not imported or changed by the wizard.\n\nOn the first non-portable GUI launch, Lichii offers to import Eden and other detected emulator profiles. Back up `%APPDATA%\\eden` first on Windows, or the old data, config and cache directories on Unix, and close the source emulator. Choose **Keep Old Data** to copy without changing the source, then check your saves and relaunch. Existing destination data is retained in backup directories rather than merged. Move also retains a source backup until you remove it yourself; Link deliberately shares settings and saves. Paths outside the imported data root remain shared and unchanged. An interrupted import offers recovery on the next launch. `eden-cli`, including `--help` and `--version`, refuses to initialize configuration until you import or explicitly choose **Start fresh** in the GUI.\n\n## Compatibility and issue reports\n\nCompatibility and performance vary by game, hardware and driver. Rendering errors, stutters and cra",
-   "gained": 72,
-   "since": "since_last",
-   "source": "search_new",
-   "score": 47,
-   "detail": {
-    "lic": 5,
-    "easy": 10,
-    "zh": 0,
-    "demand": 20,
-    "deliver": 2,
-    "fresh": 10,
-    "adj": 0
-   },
-   "grade": "C",
-   "grade_word": "只看不碰",
-   "form": "引擎库",
-   "velocity": 427.2083333333333,
-   "_gaps": [
-    [
-     "没有中文上手文档",
-     "没有中文上手文档",
-     "把 README 翻成中文，配一张三步跑通图"
-    ],
-    [
-     "没有一键部署",
-     "没有一键部署",
-     "补一个 Dockerfile + compose，别人一条命令跑起来"
-    ],
-    [
-     "没有在线演示",
-     "没有在线演示",
-     "部署一个公开 demo 站，让人先玩再买单"
-    ]
-   ],
-   "gaps_short": [
-    "没有中文上手文档",
-    "没有一键部署",
-    "没有在线演示"
-   ],
-   "risk": "GPL：改了必须开源，卖闭源产品有法律风险",
-   "suspect": "",
-   "pitch": {
-    "gap_key": "没有效果对比",
-    "change": "做一组前后对比图，让人一眼看出值不值",
-    "buyer": "接外包时缺一个现成轮子的人",
-    "buyer_tag": "通用",
-    "deliver": "做成带界面的成品，按份卖（发网盘，附中文说明）",
-    "deliver_alt": "封装成 API 出租，按调用量收费",
-    "hours": 13,
-    "gap_key_word": "缺中文上手文档"
-   },
-   "plain": "VERY experimental Nintendo Switch 2 emulator",
-   "analy": {
-    "en": "VERY experimental Nintendo Switch 2 emulator",
-    "zh": "非常实验性的 Nintendo Switch 2 模拟器",
-    "plain": "说白了，这是一堆已经写好的能力，但没有界面，得有人包一层壳才能给普通人用。它干的事是：非常实验性的 Nintendo Switch 2 模拟器",
-    "usage": [
-     "接到同类需求时拿它当底子，省掉搭骨架的两三天",
-     "包一层网页界面，做成给非技术人用的成品",
-     "集成进自己的项目，跳过从零写这一段"
-    ],
-    "how": [
-     "按 README 装依赖（这一步最容易卡住）",
-     "跑一个作者给的示例，确认能出结果",
-     "把自己的数据/需求换成示例里的输入"
-    ],
-    "gap": "做一组前后对比图，让人一眼看出值不值",
-    "buyer": "接外包时缺一个现成轮子的人",
-    "why": "接外包时缺一个现成轮子的人不是不会做，是懒得为这一步花两三天试错。你把「做一组前后对比图，让人一眼看出值不值」替他们做完，他们花的钱远少于自己折腾的时间。",
-    "self": "接到类似需求直接拿它当底子，省掉搭骨架的两三天；顺手把它当成自己的技术储备，下次报价敢往上抬。",
-    "pack": "包一层网页界面，录一段 3 分钟演示，按份卖；买家买的不是代码，是「不用装环境」。落地上就按这条走：做成带界面的成品，按份卖（发网盘，附中文说明）。",
-    "_auto": true,
-    "_src": "mt"
-   },
-   "_bucket": "",
-   "seen_times": 0,
-   "seen_first": "",
-   "seen_last": ""
-  },
-  {
-   "full_name": "Marvisak/VIctory",
-   "owner": "Marvisak",
-   "owner_type": "User",
-   "name": "VIctory",
-   "desc": "An attempt at running GTA VI on PC",
-   "lang": "Rust",
-   "stars": 11860,
-   "forks": 1768,
-   "watchers": 276,
-   "open_issues": 1411,
-   "license": "GPL-3.0",
-   "license_name": "GNU General Public License v3.0",
-   "topics": [],
-   "created_at": "2026-11-23T21:47:25Z",
-   "pushed_at": "2026-11-25T01:39:21Z",
-   "updated_at": "2026-11-25T09:36:35Z",
-   "size_kb": 3200,
-   "archived": false,
-   "has_discussions": false,
-   "has_wiki": true,
-   "homepage": "",
-   "url": "https://github.com/Marvisak/VIctory",
-   "default_branch": "main",
-   "readme": "# VIctory\n\nRuns Grand Theft Auto VI (Xbox Series X|S) natively on Windows, from files\nthe user supplies.\n\nThe title's x86-64 code runs unchanged inside our process; VIctory supplies\nthe platform underneath it and converts the title's data, ahead of time where\nit can (shaders and pipelines too, see Getting started) and on first use\notherwise. See [docs/architecture.md](docs/architecture.md).\n\n## Status (2026-11-24)\n\n**Not playable yet.** The title boots, runs its menus at its own 30 fps,\nloads the world and shows it: slowly, and with rendering defects.\n\n| Stage | State |\n|-------|-------|\n| Boot, first-boot screens (accessibility, language, settings, legal) | works, 30 fps |\n| Intro video with sound | works |\n| Start screen, profile and saves | works |\n| Loading into the world (about 50 s) | works |\n| The world (first mission's intro) | drawn and shown: streets, buildings, vehicles, characters, the title card and credits; 1-2 s per frame. Surfaces are unlit, a band of distant geometry is missing, characters come out broken in some shots |\n\nTested on one machine: Windows 11, AMD RX 6700 XT.\n\n> **Warning.** Entering the world on a real GPU has hung it in earlier\n> builds, and Windows then resets the display driver (every monitor goes\n> black for a moment). The latest runs did not, but it is not ruled out; a\n> run can also end on a GPU fault (`crashes.log`). A diagnostics build with\n> `VICTORY_D3D12_WARP=1` renders on the software adapter instead (too slow\n> to reach the world in minutes).\n\nWhat each part does today and what it still needs:\n\n| Subsystem | Today | Needs |\n|-----------|-------|-------|\n| Loader | Runs the title's executable and its DLLs in our process; crash reports name the faulting code and are kept in `crashes.log` | – |\n| Runtime services | One signed-in offline user, licences, packages, saves that survive a kill at any step, text entry dialog | Speech is silent; the dialog and relaunch are untested live |\n| Network | Offline by design: the title cannot reach the network | – |\n| Files and streaming | Archives and streamed data read, zlib and BCPack decoded in parallel | Loading is limited by writes into title memory |\n| Input | XInput pads, keyboard, keyboard stand-in pad | Trigger rumble |\n| Audio | Menu, video and loading sound; XMA voices and Opus streams decode | Reverb is silent; Opus results unverified against the title |\n| GPU: menus | Draws, compute and presentation on host D3D12; only changed title memory is copied | Frame pacing drifts on one screen in release builds |\n| GPU: world | The scene is drawn and presented: mesh pipelines, indirect execution, views the shaders pick from the heap themselves, title memory read by address (ray-tracing structures), depth written from compute, pipelines pre-built or made by worker threads and kept on disk | Lighting (surfaces are unlit) and some missing geometry; frames take 1-2 s; draws of untranslated shaders are dropped; real queries, depth bounds, HDR and scaling are missing |\n| Shaders | Console GPU code recompiled to DXIL, ahead of time (`translate --cache`) or at first use, cached on disk. Menus: all. World: mesh 8,765 of 8,765, vertex/pixel 12,550 of 12,592, compute 2,579 of 2,637 | Merged geometry stages (195 programs) and about 100 others; fused multiply-adds follow the host GPU; some compute programs need a GPU with 64-lane waves |\n| Textures | Console tiled layouts and detiling for the modes the title uses | Render-target metadata planes |\n| Series S mode | Runs through the menus to the loading screen | The world, as above |\n\n## Getting started\n\nRequirements: Windows 10/11 x64, a CPU with AVX2, a Direct3D 12 GPU with\nshader model 6.6 (and mesh shaders for the world), Rust (pinned in\n`rust-toolchain.toml`).\n\nTo install Rust, use rustup (`winget install --id Rustlang.Rustup -e`, or\nthe installer from https://rustup.rs). The first `cargo` command in this\nrepository then fetches the pinned toolchain. Building needs the MSVC C++\nbuild tools: Visual Studio o",
-   "gained": 4317,
-   "since": "since_last",
-   "source": "search_new",
-   "score": 45,
-   "detail": {
-    "lic": 5,
-    "easy": 12,
-    "zh": 0,
-    "demand": 20,
-    "deliver": 10,
-    "fresh": 10,
-    "adj": -12
-   },
-   "grade": "C",
-   "grade_word": "只看不碰",
-   "form": "引擎库",
-   "velocity": 11860.0,
-   "_gaps": [
-    [
-     "没有中文上手文档",
-     "没有中文上手文档",
-     "把 README 翻成中文，配一张三步跑通图"
-    ],
-    [
-     "没有一键部署",
-     "没有一键部署",
-     "补一个 Dockerfile + compose，别人一条命令跑起来"
-    ],
-    [
-     "没有在线演示",
-     "没有在线演示",
-     "部署一个公开 demo 站，让人先玩再买单"
-    ]
-   ],
-   "gaps_short": [
-    "没有中文上手文档",
-    "没有一键部署",
-    "没有在线演示"
-   ],
-   "risk": "GPL：改了必须开源，卖闭源产品有法律风险",
-   "suspect": "星速可疑：1 天涨到 11,860 星（日均 11,860），先观察一周看有没有真实用户再动手",
-   "pitch": {
-    "gap_key": "接口太难调",
-    "change": "写一层傻瓜封装，两行代码出结果",
-    "buyer": "团队里没人会配环境的项目负责人",
-    "buyer_tag": "通用",
-    "deliver": "做成带界面的成品，按份卖（发网盘，附中文说明）",
-    "deliver_alt": "封装成 API 出租，按调用量收费",
-    "hours": 8,
-    "gap_key_word": "缺中文上手文档"
-   },
-   "plain": "An attempt at running GTA VI on PC",
-   "analy": {
-    "en": "An attempt at running GTA VI on PC",
-    "zh": "尝试在 PC 上运行《GTA VI》",
-    "plain": "说白了，这是一堆已经写好的能力，但没有界面，得有人包一层壳才能给普通人用。它干的事是：尝试在 PC 上运行《GTA VI》",
-    "usage": [
-     "接到同类需求时拿它当底子，省掉搭骨架的两三天",
-     "包一层网页界面，做成给非技术人用的成品",
-     "集成进自己的项目，跳过从零写这一段"
-    ],
-    "how": [
-     "按 README 装依赖（这一步最容易卡住）",
-     "跑一个作者给的示例，确认能出结果",
-     "把自己的数据/需求换成示例里的输入"
-    ],
-    "gap": "写一层傻瓜封装，两行代码出结果",
-    "buyer": "团队里没人会配环境的项目负责人",
-    "why": "团队里没人会配环境的项目负责人不是不会做，是懒得为这一步花两三天试错。你把「写一层傻瓜封装，两行代码出结果」替他们做完，他们花的钱远少于自己折腾的时间。",
-    "self": "接到类似需求直接拿它当底子，省掉搭骨架的两三天；顺手把它当成自己的技术储备，下次报价敢往上抬。",
-    "pack": "包一层网页界面，录一段 3 分钟演示，按份卖；买家买的不是代码，是「不用装环境」。落地上就按这条走：做成带界面的成品，按份卖（发网盘，附中文说明）。",
-    "_auto": true,
-    "_src": "mt"
-   },
-   "_bucket": "",
-   "seen_times": 0,
-   "seen_first": "",
-   "seen_last": ""
+   "seen_first": "2026-11-19",
+   "seen_last": "2026-11-19"
   }
  ],
  "dropped": [
   {
    "full_name": "obra/superpowers",
-   "stars": 326145,
-   "reason": "2 天前（2026-11-23）推过，冷却 7 天内不重推"
+   "stars": 326946,
+   "reason": "3 天前（2026-11-23）推过，冷却 7 天内不重推"
   },
   {
    "full_name": "obra/superpowers",
-   "stars": 326145,
+   "stars": 326946,
    "reason": "综合 57 分（B 级），名额有限，这一期没进",
    "score": 57
   },
   {
    "full_name": "firecrawl/firecrawl",
-   "stars": 209367,
+   "stars": 210401,
    "reason": "综合 36 分（C 级），名额满了"
   },
   {
    "full_name": "firecrawl/firecrawl",
-   "stars": 209367,
+   "stars": 210401,
    "reason": "综合 36 分（C 级），名额有限，这一期没进",
    "score": 36
   },
   {
    "full_name": "toeverything/AFFiNE",
-   "stars": 78177,
-   "reason": "2 天前（2026-11-23）推过，冷却 7 天内不重推"
+   "stars": 78680,
+   "reason": "3 天前（2026-11-23）推过，冷却 7 天内不重推"
   },
   {
    "full_name": "toeverything/AFFiNE",
-   "stars": 78177,
+   "stars": 78680,
    "reason": "综合 51 分（B 级），名额有限，这一期没进",
    "score": 51
   },
   {
    "full_name": "mvanhorn/last30days-skill",
-   "stars": 74629,
-   "reason": "1 天前（2026-11-24）推过，冷却 7 天内不重推"
+   "stars": 75377,
+   "reason": "2 天前（2026-11-24）推过，冷却 7 天内不重推"
   },
   {
    "full_name": "mvanhorn/last30days-skill",
-   "stars": 74629,
+   "stars": 75377,
    "reason": "综合 62 分（B 级），名额有限，这一期没进",
    "score": 62
   },
   {
    "full_name": "cathrynlavery/diagram-design",
-   "stars": 72462,
-   "reason": "5 天前（2026-11-20）推过，冷却 7 天内不重推"
+   "stars": 73401,
+   "reason": "6 天前（2026-11-20）推过，冷却 7 天内不重推"
   },
   {
    "full_name": "cathrynlavery/diagram-design",
-   "stars": 72462,
+   "stars": 73401,
    "reason": "综合 70 分（A 级），名额有限，这一期没进",
    "score": 70
   },
   {
-   "full_name": "HKUDS/CLI-Anything",
-   "stars": 65222,
-   "reason": "3 天前（2026-11-22）推过，冷却 7 天内不重推"
+   "full_name": "jingyaogong/minimind",
+   "stars": 71312,
+   "reason": "1 天前（2026-11-25）推过，冷却 7 天内不重推"
+  },
+  {
+   "full_name": "jingyaogong/minimind",
+   "stars": 71312,
+   "reason": "综合 67 分（A 级），名额有限，这一期没进",
+   "score": 67
   },
   {
    "full_name": "HKUDS/CLI-Anything",
-   "stars": 65222,
+   "stars": 65964,
+   "reason": "4 天前（2026-11-22）推过，冷却 7 天内不重推"
+  },
+  {
+   "full_name": "HKUDS/CLI-Anything",
+   "stars": 65964,
    "reason": "综合 56 分（B 级），名额有限，这一期没进",
    "score": 56
   },
   {
-   "full_name": "alibaba/open-code-review",
-   "stars": 56185,
-   "reason": "4 天前（2026-11-21）推过，冷却 7 天内不重推"
+   "full_name": "ChromeDevTools/chrome-devtools-mcp",
+   "stars": 59412,
+   "reason": "1 天前（2026-11-25）推过，冷却 7 天内不重推"
+  },
+  {
+   "full_name": "ChromeDevTools/chrome-devtools-mcp",
+   "stars": 59412,
+   "reason": "综合 59 分（B 级），名额有限，这一期没进",
+   "score": 59
   },
   {
    "full_name": "alibaba/open-code-review",
-   "stars": 56185,
+   "stars": 56463,
+   "reason": "5 天前（2026-11-21）推过，冷却 7 天内不重推"
+  },
+  {
+   "full_name": "alibaba/open-code-review",
+   "stars": 56463,
    "reason": "综合 62 分（B 级），名额有限，这一期没进",
    "score": 62
   },
   {
    "full_name": "storytold/craft-anything",
-   "stars": 43129,
-   "reason": "4 天前（2026-11-21）推过，冷却 7 天内不重推"
+   "stars": 43785,
+   "reason": "5 天前（2026-11-21）推过，冷却 7 天内不重推"
   },
   {
    "full_name": "storytold/craft-anything",
-   "stars": 43129,
+   "stars": 43785,
    "reason": "综合 64 分（B 级），名额有限，这一期没进",
    "score": 64
   },
   {
    "full_name": "nginx/nginx",
-   "stars": 33288,
+   "stars": 33437,
    "reason": "综合 42 分（C 级），名额满了"
   },
   {
    "full_name": "nginx/nginx",
-   "stars": 33288,
+   "stars": 33437,
    "reason": "综合 42 分（C 级），名额有限，这一期没进",
    "score": 42
   },
   {
-   "full_name": "meta/astryx",
-   "stars": 32970,
-   "reason": "6 天前（2026-11-19）推过，冷却 7 天内不重推"
-  },
-  {
-   "full_name": "meta/astryx",
-   "stars": 32970,
-   "reason": "综合 68 分（A 级），名额有限，这一期没进",
-   "score": 68
+   "full_name": "dream-num/univer",
+   "stars": 31904,
+   "reason": "2 天前（2026-11-24）推过，冷却 7 天内不重推"
   },
   {
    "full_name": "dream-num/univer",
-   "stars": 31783,
-   "reason": "1 天前（2026-11-24）推过，冷却 7 天内不重推"
-  },
-  {
-   "full_name": "dream-num/univer",
-   "stars": 31783,
+   "stars": 31904,
    "reason": "综合 62 分（B 级），名额有限，这一期没进",
    "score": 62
   },
   {
    "full_name": "elementalsouls/Claude-BugHunter",
-   "stars": 22088,
-   "reason": "2 天前（2026-11-23）推过，冷却 7 天内不重推"
+   "stars": 23570,
+   "reason": "3 天前（2026-11-23）推过，冷却 7 天内不重推"
   },
   {
    "full_name": "elementalsouls/Claude-BugHunter",
-   "stars": 22088,
+   "stars": 23570,
+   "reason": "综合 61 分（B 级），名额有限，这一期没进",
+   "score": 61
+  },
+  {
+   "full_name": "ag-ui-protocol/ag-ui",
+   "stars": 21781,
+   "reason": "4 天前（2026-11-22）推过，冷却 7 天内不重推"
+  },
+  {
+   "full_name": "ag-ui-protocol/ag-ui",
+   "stars": 21781,
+   "reason": "综合 56 分（B 级），名额有限，这一期没进",
+   "score": 56
+  },
+  {
+   "full_name": "XiaoYouChR/Ghost-Downloader-3",
+   "stars": 18638,
+   "reason": "5 天前（2026-11-21）推过，冷却 7 天内不重推"
+  },
+  {
+   "full_name": "XiaoYouChR/Ghost-Downloader-3",
+   "stars": 18638,
    "reason": "综合 64 分（B 级），名额有限，这一期没进",
    "score": 64
   },
   {
-   "full_name": "ag-ui-protocol/ag-ui",
-   "stars": 21648,
-   "reason": "3 天前（2026-11-22）推过，冷却 7 天内不重推"
-  },
-  {
-   "full_name": "ag-ui-protocol/ag-ui",
-   "stars": 21648,
-   "reason": "综合 56 分（B 级），名额有限，这一期没进",
-   "score": 56
-  },
-  {
-   "full_name": "cursor/plugins",
-   "stars": 19376,
-   "reason": "6 天前（2026-11-19）推过，冷却 7 天内不重推"
-  },
-  {
-   "full_name": "cursor/plugins",
-   "stars": 19376,
-   "reason": "综合 56 分（B 级），名额有限，这一期没进",
-   "score": 56
+   "full_name": "we-promise/sure",
+   "stars": 17990,
+   "reason": "2 天前（2026-11-24）推过，冷却 7 天内不重推"
   },
   {
    "full_name": "we-promise/sure",
-   "stars": 17839,
-   "reason": "1 天前（2026-11-24）推过，冷却 7 天内不重推"
-  },
-  {
-   "full_name": "we-promise/sure",
-   "stars": 17839,
+   "stars": 17990,
    "reason": "综合 48 分（C 级），名额有限，这一期没进",
    "score": 48
   },
   {
-   "full_name": "XiaoYouChR/Ghost-Downloader-3",
-   "stars": 17775,
-   "reason": "4 天前（2026-11-21）推过，冷却 7 天内不重推"
-  },
-  {
-   "full_name": "XiaoYouChR/Ghost-Downloader-3",
-   "stars": 17775,
-   "reason": "综合 66 分（A 级），名额有限，这一期没进",
-   "score": 66
+   "full_name": "zhouxiaoka/autoclip",
+   "stars": 16548,
+   "reason": "6 天前（2026-11-20）推过，冷却 7 天内不重推"
   },
   {
    "full_name": "zhouxiaoka/autoclip",
-   "stars": 15799,
-   "reason": "5 天前（2026-11-20）推过，冷却 7 天内不重推"
-  },
-  {
-   "full_name": "zhouxiaoka/autoclip",
-   "stars": 15799,
+   "stars": 16548,
    "reason": "综合 78 分（A 级），名额有限，这一期没进",
    "score": 78
   },
   {
    "full_name": "Tracer-Cloud/opensre",
-   "stars": 15322,
-   "reason": "4 天前（2026-11-21）推过，冷却 7 天内不重推"
+   "stars": 15635,
+   "reason": "5 天前（2026-11-21）推过，冷却 7 天内不重推"
   },
   {
    "full_name": "Tracer-Cloud/opensre",
-   "stars": 15322,
+   "stars": 15635,
    "reason": "综合 62 分（B 级），名额有限，这一期没进",
    "score": 62
   },
   {
    "full_name": "backnotprop/plannotator",
-   "stars": 14978,
-   "reason": "4 天前（2026-11-21）推过，冷却 7 天内不重推"
+   "stars": 15153,
+   "reason": "5 天前（2026-11-21）推过，冷却 7 天内不重推"
   },
   {
    "full_name": "backnotprop/plannotator",
-   "stars": 14978,
+   "stars": 15153,
    "reason": "综合 68 分（A 级），名额有限，这一期没进",
    "score": 68
   },
   {
    "full_name": "google-labs-code/stitch-skills",
-   "stars": 12804,
-   "reason": "2 天前（2026-11-23）推过，冷却 7 天内不重推"
+   "stars": 13107,
+   "reason": "3 天前（2026-11-23）推过，冷却 7 天内不重推"
   },
   {
    "full_name": "google-labs-code/stitch-skills",
-   "stars": 12804,
+   "stars": 13107,
    "reason": "综合 76 分（A 级），名额有限，这一期没进",
    "score": 76
   },
   {
-   "full_name": "openvinotoolkit/openvino",
-   "stars": 12546,
-   "reason": "6 天前（2026-11-19）推过，冷却 7 天内不重推"
+   "full_name": "kajisho5/ffmpeg-skill",
+   "stars": 11277,
+   "reason": "2 天前（2026-11-24）推过，冷却 7 天内不重推"
   },
   {
-   "full_name": "openvinotoolkit/openvino",
-   "stars": 12546,
+   "full_name": "kajisho5/ffmpeg-skill",
+   "stars": 11277,
    "reason": "综合 68 分（A 级），名额有限，这一期没进",
    "score": 68
   },
   {
    "full_name": "GoogleChrome/modern-web-guidance-src",
-   "stars": 10921,
-   "reason": "5 天前（2026-11-20）推过，冷却 7 天内不重推"
+   "stars": 11138,
+   "reason": "6 天前（2026-11-20）推过，冷却 7 天内不重推"
   },
   {
    "full_name": "GoogleChrome/modern-web-guidance-src",
-   "stars": 10921,
-   "reason": "综合 68 分（A 级），名额有限，这一期没进",
-   "score": 68
-  },
-  {
-   "full_name": "kajisho5/ffmpeg-skill",
-   "stars": 10869,
-   "reason": "1 天前（2026-11-24）推过，冷却 7 天内不重推"
-  },
-  {
-   "full_name": "kajisho5/ffmpeg-skill",
-   "stars": 10869,
+   "stars": 11138,
    "reason": "综合 68 分（A 级），名额有限，这一期没进",
    "score": 68
   },
   {
    "full_name": "tradermonty/claude-trading-skills",
-   "stars": 8373,
-   "reason": "4 天前（2026-11-21）推过，冷却 7 天内不重推"
+   "stars": 8510,
+   "reason": "5 天前（2026-11-21）推过，冷却 7 天内不重推"
   },
   {
    "full_name": "tradermonty/claude-trading-skills",
-   "stars": 8373,
+   "stars": 8510,
    "reason": "综合 68 分（A 级），名额有限，这一期没进",
    "score": 68
   },
   {
    "full_name": "mjmirza/app-store-compliance",
-   "stars": 6147,
-   "reason": "5 天前（2026-11-20）推过，冷却 7 天内不重推"
+   "stars": 6699,
+   "reason": "6 天前（2026-11-20）推过，冷却 7 天内不重推"
   },
   {
    "full_name": "mjmirza/app-store-compliance",
-   "stars": 6147,
+   "stars": 6699,
    "reason": "综合 69 分（A 级），名额有限，这一期没进",
    "score": 69
   },
   {
-   "full_name": "pookjw/HermesEnabler",
-   "stars": 2503,
-   "reason": "5 天前（2026-11-20）推过，冷却 7 天内不重推"
+   "full_name": "Eglantine-Community/Eglantine",
+   "stars": 6248,
+   "reason": "综合 49 分（C 级），名额满了"
+  },
+  {
+   "full_name": "Eglantine-Community/Eglantine",
+   "stars": 6248,
+   "reason": "综合 49 分（C 级），名额有限，这一期没进",
+   "score": 49
   },
   {
    "full_name": "pookjw/HermesEnabler",
-   "stars": 2503,
+   "stars": 2529,
+   "reason": "6 天前（2026-11-20）推过，冷却 7 天内不重推"
+  },
+  {
+   "full_name": "pookjw/HermesEnabler",
+   "stars": 2529,
    "reason": "综合 70 分（A 级），名额有限，这一期没进",
    "score": 70
   }
  ],
- "scanned": 67,
+ "scanned": 68,
  "mode": "FULL",
  "degraded": false,
  "focus": null,
  "focus_tab": null,
  "pools": {
-  "daily": 67,
+  "daily": 68,
   "focus": 0
  },
  "cooldown": {

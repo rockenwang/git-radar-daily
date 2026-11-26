@@ -265,7 +265,26 @@
     "zortos293/Lichii",
     "Marvisak/VIctory"
    ]
+  },
+  {
+   "date": "2026-11-26",
+   "mode": "FULL",
+   "focus": "",
+   "scanned": 68,
+   "daily": 8,
+   "focus_n": 0,
+   "deep": 0,
+   "names": [
+    "Hut-hzf/ung220z-tool",
+    "n8n-io/nod",
+    "ersinkoc/phonebox",
+    "deepseek-ai/chat-demo",
+    "meta/astryx",
+    "openvinotoolkit/openvino",
+    "expo/exact",
+    "cursor/plugins"
+   ]
   }
  ],
- "updated_at": "2026-11-25T09:38:47"
+ "updated_at": "2026-11-26T09:13:37"
 }

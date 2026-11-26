@@ -97,14 +97,15 @@
    "first": "2026-11-12",
    "dates": [
     "2026-11-12",
-    "2026-11-19"
+    "2026-11-19",
+    "2026-11-26"
    ],
-   "times": 2,
-   "last": "2026-11-19",
+   "times": 3,
+   "last": "2026-11-26",
    "tabs": [
     "daily"
    ],
-   "stars": 30712,
+   "stars": 33224,
    "focus": ""
   },
   "GoogleChrome/modern-web-guidance-src": {
@@ -764,14 +765,15 @@
   "openvinotoolkit/openvino": {
    "first": "2026-11-19",
    "dates": [
-    "2026-11-19"
+    "2026-11-19",
+    "2026-11-26"
    ],
-   "times": 1,
-   "last": "2026-11-19",
+   "times": 2,
+   "last": "2026-11-26",
    "tabs": [
     "daily"
    ],
-   "stars": 11421,
+   "stars": 12719,
    "focus": ""
   },
   "appwrite/appwrite": {
@@ -816,14 +818,15 @@
   "cursor/plugins": {
    "first": "2026-11-19",
    "dates": [
-    "2026-11-19"
+    "2026-11-19",
+    "2026-11-26"
    ],
-   "times": 1,
-   "last": "2026-11-19",
+   "times": 2,
+   "last": "2026-11-26",
    "tabs": [
     "daily"
    ],
-   "stars": 17358,
+   "stars": 19635,
    "focus": ""
   },
   "jquery/jquery": {
@@ -1059,7 +1062,72 @@
    ],
    "stars": 11860,
    "focus": ""
+  },
+  "Hut-hzf/ung220z-tool": {
+   "first": "2026-11-26",
+   "dates": [
+    "2026-11-26"
+   ],
+   "times": 1,
+   "last": "2026-11-26",
+   "tabs": [
+    "daily"
+   ],
+   "stars": 5119,
+   "focus": ""
+  },
+  "n8n-io/nod": {
+   "first": "2026-11-26",
+   "dates": [
+    "2026-11-26"
+   ],
+   "times": 1,
+   "last": "2026-11-26",
+   "tabs": [
+    "daily"
+   ],
+   "stars": 3688,
+   "focus": ""
+  },
+  "ersinkoc/phonebox": {
+   "first": "2026-11-26",
+   "dates": [
+    "2026-11-26"
+   ],
+   "times": 1,
+   "last": "2026-11-26",
+   "tabs": [
+    "daily"
+   ],
+   "stars": 6676,
+   "focus": ""
+  },
+  "deepseek-ai/chat-demo": {
+   "first": "2026-11-26",
+   "dates": [
+    "2026-11-26"
+   ],
+   "times": 1,
+   "last": "2026-11-26",
+   "tabs": [
+    "daily"
+   ],
+   "stars": 5471,
+   "focus": ""
+  },
+  "expo/exact": {
+   "first": "2026-11-26",
+   "dates": [
+    "2026-11-26"
+   ],
+   "times": 1,
+   "last": "2026-11-26",
+   "tabs": [
+    "daily"
+   ],
+   "stars": 5133,
+   "focus": ""
   }
  },
- "updated_at": "2026-11-25T09:38:47"
+ "updated_at": "2026-11-26T09:13:37"
 }
