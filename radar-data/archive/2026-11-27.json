@@ -1,0 +1,944 @@
+{
+ "mode": "FULL",
+ "degraded": false,
+ "focus": null,
+ "scanned": 69,
+ "pools": {
+  "daily": 69,
+  "focus": 0
+ },
+ "daily": {
+  "picks": [
+   {
+    "full_name": "zhouxiaoka/autoclip",
+    "owner": "zhouxiaoka",
+    "owner_type": "User",
+    "name": "autoclip",
+    "desc": "AutoClip｜The open-source OpusClip alternative — local-first AI clipping & MCP server, zero subscriptions. 一个链接，一键出片。开源 AI 视频剪辑桌面工具，将播客、访谈、课程等长视频自动剪成短视频，生成字幕、封面和发布文案，适配抖音、小红书、TikTok、Reels 与 YouTube Shorts。",
+    "lang": "Python",
+    "stars": 17290,
+    "forks": 2422,
+    "watchers": 53,
+    "open_issues": 47,
+    "license": "MIT",
+    "license_name": "MIT License",
+    "topics": [
+     "ai-agent",
+     "ai-video-editor",
+     "claude-code",
+     "content-repurposing",
+     "desktop-app",
+     "douyin",
+     "instagram-reels",
+     "local-first",
+     "mcp",
+     "mcp-server",
+     "open-source",
+     "opusclip-alternative",
+     "podcast",
+     "subtitles",
+     "tiktok",
+     "video-clipping",
+     "video-editing-software",
+     "whisper",
+     "xiaohongshu",
+     "youtube-shorts"
+    ],
+    "created_at": "2025-07-08T04:51:15Z",
+    "pushed_at": "2026-11-27T09:10:05Z",
+    "updated_at": "2026-11-27T09:27:29Z",
+    "size_kb": 124050,
+    "archived": false,
+    "has_discussions": true,
+    "has_wiki": false,
+    "homepage": "https://zhouxiaoka.github.io/autoclip_intro/",
+    "url": "https://github.com/zhouxiaoka/autoclip",
+    "default_branch": "main",
+    "gained": 774,
+    "since": "daily",
+    "source": "trending",
+    "score": 78,
+    "grade": "A",
+    "grade_word": "改一改能卖",
+    "form": "web应用",
+    "velocity": 774.0,
+    "_gaps": [
+     [
+      "没有中文上手文档",
+      "没有中文上手文档",
+      "把 README 翻成中文，配一张三步跑通图"
+     ],
+     [
+      "没有中文界面",
+      "没有中文界面",
+      "把界面文案和按钮全翻成中文，截一套中文版演示图"
+     ],
+     [
+      "没有一键部署",
+      "没有一键部署",
+      "补一个 Dockerfile + compose，别人一条命令跑起来"
+     ]
+    ],
+    "gaps_short": [
+     "没有中文上手文档",
+     "没有中文界面",
+     "没有一键部署"
+    ],
+    "risk": "",
+    "suspect": "",
+    "pitch": {
+     "gap_key": "没有中文界面",
+     "change": "把界面文案和按钮全翻成中文，再截一套中文版演示图当商品图",
+     "buyer": "做短视频的剪辑号",
+     "buyer_tag": "视频",
+     "deliver": "打包部署到客户自己的服务器/域名，收一次部署费",
+     "deliver_alt": "做成在线服务，按月收使用费",
+     "hours": 3,
+     "gap_key_word": "缺中文界面"
+    },
+    "plain": "AutoClip｜The open-source OpusClip alternative — local-first AI clipping & MCP server, zero subscriptions. 一个链接，一键出片。开源 AI 视频剪辑桌面工具，将播客、访谈、课程等长视频自动剪成短视频，生成字幕、封面和发布文案，适配抖音、小红书、TikTok、Reels 与 YouTube Shorts。",
+    "_bucket": "",
+    "seen_times": 1,
+    "seen_first": "2026-11-20",
+    "seen_last": "2026-11-20",
+    "analy": {
+     "zh": "AutoClip｜开源的 OpusClip 替代品——本地优先的 AI 剪辑和 MCP 服务器，无需订阅。 一个链接，一键出片。 开源 AI 视频剪辑桌面工具，将播客、访谈、课程等长视频自动剪成短视频，生成字幕、封面和发布文案，适配抖音、小红书、TikTok、Reels 与 YouTube Shorts。",
+     "plain": "说白了，这是一个打开网页就能用的在线小工具，不用装任何东西。它干的事是：AutoClip｜开源的 OpusClip 替代品——本地优先的 AI 剪辑和 MCP 服务器，无需订阅。 一个链接，一键出片。 开源 AI 视频剪辑桌面工具，将播客、访谈、课程等长视频自动剪成短视频，生成字幕、封面和发布文案，适配抖音、小红书、TikTok、Reels 与 YouTube Shorts。",
+     "gap": "把界面文案和按钮全翻成中文，再截一套中文版演示图当商品图",
+     "buyer": "做短视频的剪辑号",
+     "_auto": true,
+     "_src": "mt"
+    }
+   },
+   {
+    "full_name": "cathrynlavery/diagram-design",
+    "owner": "cathrynlavery",
+    "owner_type": "User",
+    "name": "diagram-design",
+    "desc": "Editorial diagram design for Claude Code, Codex, GitHub Copilot, Cursor, Factory Droid, Qoder, and Pi. 52 diagram types. Self-contained HTML + SVG. No shadows. No Mermaid slop.",
+    "lang": "HTML",
+    "stars": 74152,
+    "forks": 4967,
+    "watchers": 165,
+    "open_issues": 33,
+    "license": "MIT",
+    "license_name": "MIT License",
+    "topics": [
+     "agent-skills",
+     "claude-code",
+     "codex",
+     "data-visualization",
+     "diagrams",
+     "drawio",
+     "mermaid",
+     "svg"
+    ],
+    "created_at": "2026-04-16T18:01:16Z",
+    "pushed_at": "2026-11-26T19:48:58Z",
+    "updated_at": "2026-11-27T09:29:19Z",
+    "size_kb": 40629,
+    "archived": false,
+    "has_discussions": false,
+    "has_wiki": true,
+    "homepage": "https://diagramdesign.dev",
+    "url": "https://github.com/cathrynlavery/diagram-design",
+    "default_branch": "main",
+    "gained": 955,
+    "since": "daily",
+    "source": "trending",
+    "score": 70,
+    "grade": "A",
+    "grade_word": "改一改能卖",
+    "form": "Agent技能",
+    "velocity": 955.0,
+    "_gaps": [
+     [
+      "没有中文上手文档",
+      "没有中文上手文档",
+      "把 README 翻成中文，配一张三步跑通图"
+     ],
+     [
+      "没有中文界面",
+      "没有中文界面",
+      "把界面文案和按钮全翻成中文，截一套中文版演示图"
+     ],
+     [
+      "没有一键部署",
+      "没有一键部署",
+      "补一个 Dockerfile + compose，别人一条命令跑起来"
+     ]
+    ],
+    "gaps_short": [
+     "没有中文上手文档",
+     "没有中文界面",
+     "没有一键部署"
+    ],
+    "risk": "体量太大，改源码成本高，建议只做外围服务",
+    "suspect": "",
+    "pitch": {
+     "gap_key": "只有英文指令",
+     "change": "改写成中文指令版，加 3 个真实场景的开场白",
+     "buyer": "接单的设计师和电商美工",
+     "buyer_tag": "设计",
+     "deliver": "打包成技能文件，配使用教程一起卖",
+     "deliver_alt": "做成付费专栏的一章，当引流钩子",
+     "hours": 1,
+     "gap_key_word": "缺中文上手文档"
+    },
+    "plain": "Editorial diagram design for Claude Code, Codex, GitHub Copilot, Cursor, Factory Droid, Qoder, and Pi. 52 diagram types. Self-contained HTML + SVG. No shadows. No Mermaid slop.",
+    "_bucket": "",
+    "seen_times": 1,
+    "seen_first": "2026-11-20",
+    "seen_last": "2026-11-20",
+    "analy": {
+     "zh": "适用于 Claude Code、Codex、GitHub Copilot、Cursor、Factory Droid、Qoder 和 Pi 的编辑图表设计。52 种图表类型。自包含 HTML + SVG。无阴影。无Mermaid杂乱。",
+     "plain": "说白了，这是一份写给 AI 的操作手册，装进 AI 工具后它就知道按你的规矩干活。它干的事是：适用于 Claude Code、Codex、GitHub Copilot、Cursor、Factory Droid、Qoder 和 Pi 的编辑图表设计。52 种图表类型。自包含 HTML + SVG。无阴影。无Mermaid杂乱。",
+     "gap": "改写成中文指令版，加 3 个真实场景的开场白",
+     "buyer": "接单的设计师和电商美工",
+     "_auto": true,
+     "_src": "mt"
+    }
+   },
+   {
+    "full_name": "pookjw/HermesEnabler",
+    "owner": "pookjw",
+    "owner_type": "User",
+    "name": "HermesEnabler",
+    "desc": "Enable Hermès Watch Faces on any Apple Watch devices",
+    "lang": "Objective-C",
+    "stars": 2556,
+    "forks": 206,
+    "watchers": 19,
+    "open_issues": 87,
+    "license": "MIT",
+    "license_name": "MIT License",
+    "topics": [],
+    "created_at": "2024-12-14T11:32:03Z",
+    "pushed_at": "2026-11-19T02:24:27Z",
+    "updated_at": "2026-11-27T08:31:29Z",
+    "size_kb": 4494,
+    "archived": false,
+    "has_discussions": false,
+    "has_wiki": true,
+    "homepage": "",
+    "url": "https://github.com/pookjw/HermesEnabler",
+    "default_branch": "main",
+    "gained": 325,
+    "since": "weekly",
+    "source": "trending",
+    "score": 70,
+    "grade": "A",
+    "grade_word": "改一改能卖",
+    "form": "引擎库",
+    "velocity": 46.42857142857143,
+    "_gaps": [
+     [
+      "没有中文上手文档",
+      "没有中文上手文档",
+      "把 README 翻成中文，配一张三步跑通图"
+     ],
+     [
+      "没有一键部署",
+      "没有一键部署",
+      "补一个 Dockerfile + compose，别人一条命令跑起来"
+     ],
+     [
+      "没有在线演示",
+      "没有在线演示",
+      "部署一个公开 demo 站，让人先玩再买单"
+     ]
+    ],
+    "gaps_short": [
+     "没有中文上手文档",
+     "没有一键部署",
+     "没有在线演示"
+    ],
+    "risk": "",
+    "suspect": "",
+    "pitch": {
+     "gap_key": "没有中文上手文档",
+     "change": "把 README 翻成中文，配一张「三步跑通」流程图",
+     "buyer": "要用这套能力但搞不定环境的人",
+     "buyer_tag": "通用",
+     "deliver": "做成带界面的成品，按份卖（发网盘，附中文说明）",
+     "deliver_alt": "接单代跑：客户给需求，你出结果",
+     "hours": 4,
+     "gap_key_word": "缺中文上手文档"
+    },
+    "plain": "Enable Hermès Watch Faces on any Apple Watch devices",
+    "_bucket": "",
+    "seen_times": 2,
+    "seen_first": "2026-11-12",
+    "seen_last": "2026-11-20",
+    "analy": {
+     "zh": "在任何 Apple Watch 设备上启用爱马仕表盘",
+     "plain": "说白了，这是一堆已经写好的能力，但没有界面，得有人包一层壳才能给普通人用。它干的事是：在任何 Apple Watch 设备上启用爱马仕表盘",
+     "gap": "把 README 翻成中文，配一张「三步跑通」流程图",
+     "buyer": "要用这套能力但搞不定环境的人",
+     "_auto": true,
+     "_src": "mt"
+    }
+   },
+   {
+    "full_name": "mjmirza/app-store-compliance",
+    "owner": "mjmirza",
+    "owner_type": "User",
+    "name": "app-store-compliance",
+    "desc": "Avoid common App Store and Google Play rejections. Open playbook and pre-submission guard with 125 documented rejection patterns and fixes, privacy manifest and Data safety checks, 117 tracked deadlines (EU AI Act, DSA, COPPA, age laws), and a skill for AI coding agents.",
+    "lang": "Shell",
+    "stars": 7244,
+    "forks": 504,
+    "watchers": 14,
+    "open_issues": 38,
+    "license": "NOASSERTION",
+    "license_name": "Other",
+    "topics": [
+     "accessibility",
+     "ai-agents",
+     "android",
+     "app-review-guidelines",
+     "app-store",
+     "app-store-connect",
+     "app-store-rejection",
+     "app-store-review",
+     "claude-code",
+     "coppa",
+     "data-safety",
+     "eu-ai-act",
+     "gdpr",
+     "google-play",
+     "google-play-policy",
+     "ios",
+     "mobile-compliance",
+     "play-console",
+     "pre-submission-checklist",
+     "privacy-manifest"
+    ],
+    "created_at": "2026-06-06T11:29:45Z",
+    "pushed_at": "2026-11-27T08:55:31Z",
+    "updated_at": "2026-11-27T09:27:48Z",
+    "size_kb": 2037,
+    "archived": false,
+    "has_discussions": true,
+    "has_wiki": false,
+    "homepage": "https://mjmirza.github.io/app-store-compliance/",
+    "url": "https://github.com/mjmirza/app-store-compliance",
+    "default_branch": "main",
+    "gained": 562,
+    "since": "daily",
+    "source": "trending",
+    "score": 69,
+    "grade": "A",
+    "grade_word": "改一改能卖",
+    "form": "Agent技能",
+    "velocity": 562.0,
+    "_gaps": [
+     [
+      "没有中文上手文档",
+      "没有中文上手文档",
+      "把 README 翻成中文，配一张三步跑通图"
+     ],
+     [
+      "没有一键部署",
+      "没有一键部署",
+      "补一个 Dockerfile + compose，别人一条命令跑起来"
+     ]
+    ],
+    "gaps_short": [
+     "没有中文上手文档",
+     "没有一键部署"
+    ],
+    "risk": "许可证不明，动手前去 README 确认一遍",
+    "suspect": "",
+    "pitch": {
+     "gap_key": "没有打包成技能",
+     "change": "整理成可直接安装的技能包，附使用截图",
+     "buyer": "要整理归档资料的人",
+     "buyer_tag": "文档",
+     "deliver": "做成付费专栏的一章，当引流钩子",
+     "deliver_alt": "接企业内训，教团队把这套装上",
+     "hours": 1,
+     "gap_key_word": "缺中文上手文档"
+    },
+    "plain": "Avoid common App Store and Google Play rejections. Open playbook and pre-submission guard with 125 documented rejection patterns and fixes, privacy manifest and Data safety checks, 117 tracked deadlines (EU AI Act, DSA, COPPA, age laws), and a skill for AI coding agents.",
+    "_bucket": "",
+    "seen_times": 1,
+    "seen_first": "2026-11-20",
+    "seen_last": "2026-11-20",
+    "analy": {
+     "zh": "避免常见的 App Store 和 Google Play 拒绝情况。开放式手册和提交前防护工具，包含 125 个有案可查的被拒模式和解决方案、隐私清单和数据安全检查、117 个受跟踪的截止日期（欧盟《人工智能法案》、DSA、COPPA、年龄相关法律）以及一项适用于人工智能编码代理的技能。",
+     "plain": "说白了，这是一份写给 AI 的操作手册，装进 AI 工具后它就知道按你的规矩干活。它干的事是：避免常见的 App Store 和 Google Play 拒绝情况。开放式手册和提交前防护工具，包含 125 个有案可查的被拒模式和解决方案、隐私清单和数据安全检查、117 个受跟踪的截止日期（欧盟《人工智能法案》、DSA、COPPA、年龄相关法律）以及一项适用于人工智能编码代理的技能。",
+     "gap": "整理成可直接安装的技能包，附使用截图",
+     "buyer": "要整理归档资料的人",
+     "_auto": true,
+     "_src": "mt"
+    }
+   },
+   {
+    "full_name": "GoogleChrome/modern-web-guidance-src",
+    "owner": "GoogleChrome",
+    "owner_type": "Organization",
+    "name": "modern-web-guidance-src",
+    "desc": "Keep your coding agent up to date with the latest web best practices",
+    "lang": "TypeScript",
+    "stars": 11340,
+    "forks": 844,
+    "watchers": 61,
+    "open_issues": 403,
+    "license": "Apache-2.0",
+    "license_name": "Apache License 2.0",
+    "topics": [],
+    "created_at": "2026-01-27T20:22:24Z",
+    "pushed_at": "2026-11-27T08:09:35Z",
+    "updated_at": "2026-11-27T09:26:11Z",
+    "size_kb": 177939,
+    "archived": false,
+    "has_discussions": false,
+    "has_wiki": false,
+    "homepage": "https://goo.gle/modern-web-guidance",
+    "url": "https://github.com/GoogleChrome/modern-web-guidance-src",
+    "default_branch": "main",
+    "gained": 2209,
+    "since": "weekly",
+    "source": "trending",
+    "score": 68,
+    "grade": "A",
+    "grade_word": "改一改能卖",
+    "form": "引擎库",
+    "velocity": 315.57142857142856,
+    "_gaps": [
+     [
+      "没有中文上手文档",
+      "没有中文上手文档",
+      "把 README 翻成中文，配一张三步跑通图"
+     ],
+     [
+      "没有中文界面",
+      "没有中文界面",
+      "把界面文案和按钮全翻成中文，截一套中文版演示图"
+     ],
+     [
+      "没有一键部署",
+      "没有一键部署",
+      "补一个 Dockerfile + compose，别人一条命令跑起来"
+     ]
+    ],
+    "gaps_short": [
+     "没有中文上手文档",
+     "没有中文界面",
+     "没有一键部署"
+    ],
+    "risk": "",
+    "suspect": "",
+    "pitch": {
+     "gap_key": "只有代码没有界面",
+     "change": "包一层网页界面，让不会写代码的人点两下就能用",
+     "buyer": "要用这套能力但搞不定环境的人",
+     "buyer_tag": "通用",
+     "deliver": "接单代跑：客户给需求，你出结果",
+     "deliver_alt": "做成中文教程 + 成品包，走知识付费",
+     "hours": 7,
+     "gap_key_word": "缺中文上手文档"
+    },
+    "plain": "Keep your coding agent up to date with the latest web best practices",
+    "_bucket": "",
+    "seen_times": 2,
+    "seen_first": "2026-11-13",
+    "seen_last": "2026-11-20",
+    "analy": {
+     "zh": "让您的编码代理始终掌握最新的网络最佳实践",
+     "plain": "说白了，这是一堆已经写好的能力，但没有界面，得有人包一层壳才能给普通人用。它干的事是：让您的编码代理始终掌握最新的网络最佳实践",
+     "gap": "包一层网页界面，让不会写代码的人点两下就能用",
+     "buyer": "要用这套能力但搞不定环境的人",
+     "_auto": true,
+     "_src": "mt"
+    }
+   },
+   {
+    "full_name": "deepseek-ai/dsh-superagent-prototype",
+    "owner": "deepseek-ai",
+    "owner_type": "Organization",
+    "name": "dsh-superagent-prototype",
+    "desc": "Towards a More Autonomous Agent System",
+    "lang": "TypeScript",
+    "stars": 24717,
+    "forks": 3109,
+    "watchers": 192,
+    "open_issues": 0,
+    "license": "MIT",
+    "license_name": "MIT License",
+    "topics": [],
+    "created_at": "2026-10-31T09:32:46Z",
+    "pushed_at": "2026-11-03T09:29:14Z",
+    "updated_at": "2026-11-27T09:20:49Z",
+    "size_kb": 37,
+    "archived": false,
+    "has_discussions": false,
+    "has_wiki": false,
+    "homepage": "",
+    "url": "https://github.com/deepseek-ai/dsh-superagent-prototype",
+    "default_branch": "main",
+    "gained": 0,
+    "since": "created<30d",
+    "source": "search_new",
+    "score": 67,
+    "grade": "A",
+    "grade_word": "改一改能卖",
+    "form": "web应用",
+    "velocity": 950.6538461538462,
+    "_gaps": [
+     [
+      "没有中文上手文档",
+      "没有中文上手文档",
+      "把 README 翻成中文，配一张三步跑通图"
+     ],
+     [
+      "没有一键部署",
+      "没有一键部署",
+      "补一个 Dockerfile + compose，别人一条命令跑起来"
+     ],
+     [
+      "没有在线演示",
+      "没有在线演示",
+      "部署一个公开 demo 站，让人先玩再买单"
+     ]
+    ],
+    "gaps_short": [
+     "没有中文上手文档",
+     "没有一键部署",
+     "没有在线演示"
+    ],
+    "risk": "大厂项目，路线不由你定，只能做外围（部署/中文化/模板）",
+    "suspect": "星速可疑：26 天涨到 24,717 星（日均 950），先观察一周看有没有真实用户再动手",
+    "pitch": {
+     "gap_key": "没有在线演示",
+     "change": "部署一个公开 demo，让人先玩再决定买不买",
+     "buyer": "想有个自己工具但不会写代码的人",
+     "buyer_tag": "通用",
+     "deliver": "做成在线服务，按月收使用费",
+     "deliver_alt": "连部署带教一次，做成「一天陪跑」按次收",
+     "hours": 3,
+     "gap_key_word": "缺在线演示"
+    },
+    "plain": "Towards a More Autonomous Agent System",
+    "_bucket": "",
+    "seen_times": 2,
+    "seen_first": "2026-11-13",
+    "seen_last": "2026-11-20",
+    "analy": {
+     "zh": "迈向更自主的代理系统",
+     "plain": "说白了，这是一个打开网页就能用的在线小工具，不用装任何东西。它干的事是：迈向更自主的代理系统",
+     "gap": "部署一个公开 demo，让人先玩再决定买不买",
+     "buyer": "想有个自己工具但不会写代码的人",
+     "_auto": true,
+     "_src": "mt"
+    }
+   },
+   {
+    "full_name": "obsidianmd/obsidian-skills",
+    "owner": "obsidianmd",
+    "owner_type": "Organization",
+    "name": "obsidian-skills",
+    "desc": "Teach your agent to use Obsidian and open formats including Markdown, Bases, JSON Canvas.",
+    "lang": "Shell",
+    "stars": 54147,
+    "forks": 3852,
+    "watchers": 238,
+    "open_issues": 5,
+    "license": "MIT",
+    "license_name": "MIT License",
+    "topics": [
+     "agents",
+     "agentskills",
+     "bases",
+     "chatgpt",
+     "claude",
+     "claude-code",
+     "claude-skills",
+     "cli",
+     "codex",
+     "defuddle",
+     "grok-bot",
+     "hermes",
+     "jsoncanvas",
+     "knap",
+     "markdown",
+     "md",
+     "obsidian",
+     "openclaw",
+     "opencode",
+     "skills"
+    ],
+    "created_at": "2026-01-02T21:45:11Z",
+    "pushed_at": "2026-11-26T17:50:16Z",
+    "updated_at": "2026-11-27T09:26:09Z",
+    "size_kb": 196,
+    "archived": false,
+    "has_discussions": false,
+    "has_wiki": true,
+    "homepage": "",
+    "url": "https://github.com/obsidianmd/obsidian-skills",
+    "default_branch": "main",
+    "gained": 704,
+    "since": "weekly",
+    "source": "trending",
+    "score": 66,
+    "grade": "A",
+    "grade_word": "改一改能卖",
+    "form": "Agent技能",
+    "velocity": 100.57142857142857,
+    "_gaps": [
+     [
+      "没有中文上手文档",
+      "没有中文上手文档",
+      "把 README 翻成中文，配一张三步跑通图"
+     ],
+     [
+      "没有一键部署",
+      "没有一键部署",
+      "补一个 Dockerfile + compose，别人一条命令跑起来"
+     ],
+     [
+      "没有在线演示",
+      "没有在线演示",
+      "部署一个公开 demo 站，让人先玩再买单"
+     ]
+    ],
+    "gaps_short": [
+     "没有中文上手文档",
+     "没有一键部署",
+     "没有在线演示"
+    ],
+    "risk": "大厂项目，路线不由你定，只能做外围（部署/中文化/模板）",
+    "suspect": "",
+    "pitch": {
+     "gap_key": "没有效果对比",
+     "change": "做前后对比案例，让人一眼看出差别",
+     "buyer": "要整理归档资料的人",
+     "buyer_tag": "文档",
+     "deliver": "接企业内训，教团队把这套装上",
+     "deliver_alt": "做成定制版：按客户业务流程改一遍，单独报价",
+     "hours": 1,
+     "gap_key_word": "缺中文上手文档"
+    },
+    "plain": "Teach your agent to use Obsidian and open formats including Markdown, Bases, JSON Canvas.",
+    "_bucket": "",
+    "seen_times": 0,
+    "seen_first": "",
+    "seen_last": "",
+    "analy": {
+     "zh": "教您的代理使用 Obsidian 和开放格式，包括 Markdown、Bases、JSON Canvas。",
+     "plain": "说白了，这是一份写给 AI 的操作手册，装进 AI 工具后它就知道按你的规矩干活。它干的事是：教您的代理使用 Obsidian 和开放格式，包括 Markdown、Bases、JSON Canvas。",
+     "gap": "做前后对比案例，让人一眼看出差别",
+     "buyer": "要整理归档资料的人",
+     "_auto": true,
+     "_src": "mt"
+    }
+   },
+   {
+    "full_name": "heydamir/unslop",
+    "owner": "heydamir",
+    "owner_type": "User",
+    "name": "unslop",
+    "desc": "A Claude skill that turns vibecoded, AI-looking UI into a designed interface",
+    "lang": "JavaScript",
+    "stars": 22353,
+    "forks": 1399,
+    "watchers": 36,
+    "open_issues": 22,
+    "license": "CC-BY-4.0",
+    "license_name": "Creative Commons Attribution 4.0 International",
+    "topics": [],
+    "created_at": "2026-10-29T15:41:21Z",
+    "pushed_at": "2026-11-15T00:55:20Z",
+    "updated_at": "2026-11-27T09:29:07Z",
+    "size_kb": 2340,
+    "archived": false,
+    "has_discussions": false,
+    "has_wiki": false,
+    "homepage": "",
+    "url": "https://github.com/heydamir/unslop",
+    "default_branch": "main",
+    "gained": 0,
+    "since": "created<30d",
+    "source": "search_new",
+    "score": 66,
+    "grade": "A",
+    "grade_word": "改一改能卖",
+    "form": "Agent技能",
+    "velocity": 798.3214285714286,
+    "_gaps": [
+     [
+      "没有中文上手文档",
+      "没有中文上手文档",
+      "把 README 翻成中文，配一张三步跑通图"
+     ],
+     [
+      "没有一键部署",
+      "没有一键部署",
+      "补一个 Dockerfile + compose，别人一条命令跑起来"
+     ]
+    ],
+    "gaps_short": [
+     "没有中文上手文档",
+     "没有一键部署"
+    ],
+    "risk": "",
+    "suspect": "星速可疑：28 天涨到 22,353 星（日均 798），先观察一周看有没有真实用户再动手",
+    "pitch": {
+     "gap_key": "场景全是国外的",
+     "change": "把示例换成国内的活（公众号/小红书/电商），别用国外 demo",
+     "buyer": "接单的设计师和电商美工",
+     "buyer_tag": "设计",
+     "deliver": "做成定制版：按客户业务流程改一遍，单独报价",
+     "deliver_alt": "做成定制版：按客户业务流程改一遍，单独报价",
+     "hours": 2,
+     "gap_key_word": "缺中文上手文档"
+    },
+    "plain": "A Claude skill that turns vibecoded, AI-looking UI into a designed interface",
+    "_bucket": "",
+    "seen_times": 2,
+    "seen_first": "2026-11-13",
+    "seen_last": "2026-11-20",
+    "analy": {
+     "zh": "一种 Claude 技能，可将基于氛围编码、看起来像 AI 的 UI 转换为经过设计的界面",
+     "plain": "说白了，这是一份写给 AI 的操作手册，装进 AI 工具后它就知道按你的规矩干活。它干的事是：一种 Claude 技能，可将基于氛围编码、看起来像 AI 的 UI 转换为经过设计的界面",
+     "gap": "把示例换成国内的活（公众号/小红书/电商），别用国外 demo",
+     "buyer": "接单的设计师和电商美工",
+     "_auto": true,
+     "_src": "mt"
+    }
+   }
+  ],
+  "dropped": [
+   {
+    "full_name": "obra/superpowers",
+    "stars": 327830,
+    "reason": "4 天前（2026-11-23）推过，冷却 7 天内不重推"
+   },
+   {
+    "full_name": "obra/superpowers",
+    "stars": 327830,
+    "reason": "综合 57 分（B 级），名额有限，这一期没进",
+    "score": 57
+   },
+   {
+    "full_name": "firecrawl/firecrawl",
+    "stars": 211228,
+    "reason": "综合 36 分（C 级），名额满了"
+   },
+   {
+    "full_name": "firecrawl/firecrawl",
+    "stars": 211228,
+    "reason": "综合 36 分（C 级），名额有限，这一期没进",
+    "score": 36
+   },
+   {
+    "full_name": "toeverything/AFFiNE",
+    "stars": 79146,
+    "reason": "4 天前（2026-11-23）推过，冷却 7 天内不重推"
+   },
+   {
+    "full_name": "toeverything/AFFiNE",
+    "stars": 79146,
+    "reason": "综合 51 分（B 级），名额有限，这一期没进",
+    "score": 51
+   },
+   {
+    "full_name": "mvanhorn/last30days-skill",
+    "stars": 76027,
+    "reason": "3 天前（2026-11-24）推过，冷却 7 天内不重推"
+   },
+   {
+    "full_name": "mvanhorn/last30days-skill",
+    "stars": 76027,
+    "reason": "综合 62 分（B 级），名额有限，这一期没进",
+    "score": 62
+   },
+   {
+    "full_name": "jingyaogong/minimind",
+    "stars": 71965,
+    "reason": "2 天前（2026-11-25）推过，冷却 7 天内不重推"
+   },
+   {
+    "full_name": "jingyaogong/minimind",
+    "stars": 71965,
+    "reason": "综合 67 分（A 级），名额有限，这一期没进",
+    "score": 67
+   },
+   {
+    "full_name": "HKUDS/CLI-Anything",
+    "stars": 66636,
+    "reason": "5 天前（2026-11-22）推过，冷却 7 天内不重推"
+   },
+   {
+    "full_name": "HKUDS/CLI-Anything",
+    "stars": 66636,
+    "reason": "综合 56 分（B 级），名额有限，这一期没进",
+    "score": 56
+   },
+   {
+    "full_name": "ChromeDevTools/chrome-devtools-mcp",
+    "stars": 59555,
+    "reason": "2 天前（2026-11-25）推过，冷却 7 天内不重推"
+   },
+   {
+    "full_name": "ChromeDevTools/chrome-devtools-mcp",
+    "stars": 59555,
+    "reason": "综合 59 分（B 级），名额有限，这一期没进",
+    "score": 59
+   },
+   {
+    "full_name": "alibaba/open-code-review",
+    "stars": 56762,
+    "reason": "6 天前（2026-11-21）推过，冷却 7 天内不重推"
+   },
+   {
+    "full_name": "alibaba/open-code-review",
+    "stars": 56762,
+    "reason": "综合 62 分（B 级），名额有限，这一期没进",
+    "score": 62
+   },
+   {
+    "full_name": "storytold/craft-anything",
+    "stars": 44340,
+    "reason": "6 天前（2026-11-21）推过，冷却 7 天内不重推"
+   },
+   {
+    "full_name": "storytold/craft-anything",
+    "stars": 44340,
+    "reason": "综合 64 分（B 级），名额有限，这一期没进",
+    "score": 64
+   },
+   {
+    "full_name": "nginx/nginx",
+    "stars": 33578,
+    "reason": "综合 42 分（C 级），名额满了"
+   },
+   {
+    "full_name": "nginx/nginx",
+    "stars": 33578,
+    "reason": "综合 42 分（C 级），名额有限，这一期没进",
+    "score": 42
+   },
+   {
+    "full_name": "meta/astryx",
+    "stars": 33438,
+    "reason": "1 天前（2026-11-26）推过，冷却 7 天内不重推"
+   },
+   {
+    "full_name": "meta/astryx",
+    "stars": 33438,
+    "reason": "综合 68 分（A 级），名额有限，这一期没进",
+    "score": 68
+   },
+   {
+    "full_name": "dream-num/univer",
+    "stars": 32011,
+    "reason": "3 天前（2026-11-24）推过，冷却 7 天内不重推"
+   },
+   {
+    "full_name": "dream-num/univer",
+    "stars": 32011,
+    "reason": "综合 62 分（B 级），名额有限，这一期没进",
+    "score": 62
+   },
+   {
+    "full_name": "elementalsouls/Claude-BugHunter",
+    "stars": 25190,
+    "reason": "4 天前（2026-11-23）推过，冷却 7 天内不重推"
+   },
+   {
+    "full_name": "elementalsouls/Claude-BugHunter",
+    "stars": 25190,
+    "reason": "综合 61 分（B 级），名额有限，这一期没进",
+    "score": 61
+   },
+   {
+    "full_name": "ag-ui-protocol/ag-ui",
+    "stars": 21888,
+    "reason": "5 天前（2026-11-22）推过，冷却 7 天内不重推"
+   },
+   {
+    "full_name": "ag-ui-protocol/ag-ui",
+    "stars": 21888,
+    "reason": "综合 56 分（B 级），名额有限，这一期没进",
+    "score": 56
+   },
+   {
+    "full_name": "cursor/plugins",
+    "stars": 19878,
+    "reason": "1 天前（2026-11-26）推过，冷却 7 天内不重推"
+   },
+   {
+    "full_name": "cursor/plugins",
+    "stars": 19878,
+    "reason": "综合 56 分（B 级），名额有限，这一期没进",
+    "score": 56
+   },
+   {
+    "full_name": "XiaoYouChR/Ghost-Downloader-3",
+    "stars": 19500,
+    "reason": "6 天前（2026-11-21）推过，冷却 7 天内不重推"
+   },
+   {
+    "full_name": "XiaoYouChR/Ghost-Downloader-3",
+    "stars": 19500,
+    "reason": "综合 64 分（B 级），名额有限，这一期没进",
+    "score": 64
+   },
+   {
+    "full_name": "we-promise/sure",
+    "stars": 18142,
+    "reason": "3 天前（2026-11-24）推过，冷却 7 天内不重推"
+   },
+   {
+    "full_name": "we-promise/sure",
+    "stars": 18142,
+    "reason": "综合 48 分（C 级），名额有限，这一期没进",
+    "score": 48
+   },
+   {
+    "full_name": "Tracer-Cloud/opensre",
+    "stars": 15963,
+    "reason": "6 天前（2026-11-21）推过，冷却 7 天内不重推"
+   },
+   {
+    "full_name": "Tracer-Cloud/opensre",
+    "stars": 15963,
+    "reason": "综合 62 分（B 级），名额有限，这一期没进",
+    "score": 62
+   },
+   {
+    "full_name": "backnotprop/plannotator",
+    "stars": 15326,
+    "reason": "6 天前（2026-11-21）推过，冷却 7 天内不重推"
+   },
+   {
+    "full_name": "backnotprop/plannotator",
+    "stars": 15326,
+    "reason": "综合 68 分（A 级），名额有限，这一期没进",
+    "score": 68
+   },
+   {
+    "full_name": "google-labs-code/stitch-skills",
+    "stars": 13420,
+    "reason": "4 天前（2026-11-23）推过，冷却 7 天内不重推"
+   },
+   {
+    "full_name": "google-labs-code/stitch-skills",
+    "stars": 13420,
+    "reason": "综合 76 分（A 级），名额有限，这一期没进",
+    "score": 76
+   }
+  ]
+ },
+ "focus_tab": {
+  "key": null,
+  "pool": 0,
+  "buckets": {}
+ },
+ "deep": [],
+ "date": "2026-11-27",
+ "archived_at": "2026-11-27T09:30:13"
+}

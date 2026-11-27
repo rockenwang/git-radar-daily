@@ -284,7 +284,26 @@
     "expo/exact",
     "cursor/plugins"
    ]
+  },
+  {
+   "date": "2026-11-27",
+   "mode": "FULL",
+   "focus": "",
+   "scanned": 69,
+   "daily": 8,
+   "focus_n": 0,
+   "deep": 0,
+   "names": [
+    "zhouxiaoka/autoclip",
+    "cathrynlavery/diagram-design",
+    "pookjw/HermesEnabler",
+    "mjmirza/app-store-compliance",
+    "GoogleChrome/modern-web-guidance-src",
+    "deepseek-ai/dsh-superagent-prototype",
+    "obsidianmd/obsidian-skills",
+    "heydamir/unslop"
+   ]
   }
  ],
- "updated_at": "2026-11-26T09:13:37"
+ "updated_at": "2026-11-27T09:30:13"
 }

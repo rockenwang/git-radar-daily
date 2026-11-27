@@ -70,14 +70,15 @@
    "first": "2026-11-12",
    "dates": [
     "2026-11-12",
-    "2026-11-20"
+    "2026-11-20",
+    "2026-11-27"
    ],
-   "times": 2,
-   "last": "2026-11-20",
+   "times": 3,
+   "last": "2026-11-27",
    "tabs": [
     "daily"
    ],
-   "stars": 2267,
+   "stars": 2556,
    "focus": ""
   },
   "D4Vinci/Scrapling": {
@@ -112,42 +113,45 @@
    "first": "2026-11-13",
    "dates": [
     "2026-11-13",
-    "2026-11-20"
+    "2026-11-20",
+    "2026-11-27"
    ],
-   "times": 2,
-   "last": "2026-11-20",
+   "times": 3,
+   "last": "2026-11-27",
    "tabs": [
     "daily"
    ],
-   "stars": 9312,
+   "stars": 11340,
    "focus": ""
   },
   "heydamir/unslop": {
    "first": "2026-11-13",
    "dates": [
     "2026-11-13",
-    "2026-11-20"
+    "2026-11-20",
+    "2026-11-27"
    ],
-   "times": 2,
-   "last": "2026-11-20",
+   "times": 3,
+   "last": "2026-11-27",
    "tabs": [
     "daily"
    ],
-   "stars": 18842,
+   "stars": 22353,
    "focus": ""
   },
   "deepseek-ai/dsh-superagent-prototype": {
    "first": "2026-11-13",
    "dates": [
     "2026-11-13",
-    "2026-11-20"
+    "2026-11-20",
+    "2026-11-27"
    ],
-   "times": 2,
-   "last": "2026-11-20",
+   "times": 3,
+   "last": "2026-11-27",
    "tabs": [
     "daily"
    ],
-   "stars": 24002,
+   "stars": 24717,
    "focus": ""
   },
   "addyosmani/agent-skills": {
@@ -845,14 +849,15 @@
   "zhouxiaoka/autoclip": {
    "first": "2026-11-20",
    "dates": [
-    "2026-11-20"
+    "2026-11-20",
+    "2026-11-27"
    ],
-   "times": 1,
-   "last": "2026-11-20",
+   "times": 2,
+   "last": "2026-11-27",
    "tabs": [
     "daily"
    ],
-   "stars": 11663,
+   "stars": 17290,
    "focus": ""
   },
   "vercel-labs/ui": {
@@ -871,27 +876,29 @@
   "cathrynlavery/diagram-design": {
    "first": "2026-11-20",
    "dates": [
-    "2026-11-20"
+    "2026-11-20",
+    "2026-11-27"
    ],
-   "times": 1,
-   "last": "2026-11-20",
+   "times": 2,
+   "last": "2026-11-27",
    "tabs": [
     "daily"
    ],
-   "stars": 68873,
+   "stars": 74152,
    "focus": ""
   },
   "mjmirza/app-store-compliance": {
    "first": "2026-11-20",
    "dates": [
-    "2026-11-20"
+    "2026-11-20",
+    "2026-11-27"
    ],
-   "times": 1,
-   "last": "2026-11-20",
+   "times": 2,
+   "last": "2026-11-27",
    "tabs": [
     "daily"
    ],
-   "stars": 2190,
+   "stars": 7244,
    "focus": ""
   },
   "erkamyaman/rust-anything": {
@@ -1127,7 +1134,20 @@
    ],
    "stars": 5133,
    "focus": ""
+  },
+  "obsidianmd/obsidian-skills": {
+   "first": "2026-11-27",
+   "dates": [
+    "2026-11-27"
+   ],
+   "times": 1,
+   "last": "2026-11-27",
+   "tabs": [
+    "daily"
+   ],
+   "stars": 54147,
+   "focus": ""
   }
  },
- "updated_at": "2026-11-26T09:13:37"
+ "updated_at": "2026-11-27T09:30:13"
 }
