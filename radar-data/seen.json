@@ -184,14 +184,15 @@
    "first": "2026-11-13",
    "dates": [
     "2026-11-13",
-    "2026-11-21"
+    "2026-11-21",
+    "2026-11-28"
    ],
-   "times": 2,
-   "last": "2026-11-21",
+   "times": 3,
+   "last": "2026-11-28",
    "tabs": [
     "daily"
    ],
-   "stars": 39731,
+   "stars": 44883,
    "focus": ""
   },
   "openai/codex-security": {
@@ -264,14 +265,15 @@
    "first": "2026-11-14",
    "dates": [
     "2026-11-14",
-    "2026-11-21"
+    "2026-11-21",
+    "2026-11-28"
    ],
-   "times": 2,
-   "last": "2026-11-21",
+   "times": 3,
+   "last": "2026-11-28",
    "tabs": [
     "daily"
    ],
-   "stars": 13979,
+   "stars": 15470,
    "focus": ""
   },
   "louislam/uptime-kuma": {
@@ -291,28 +293,30 @@
    "first": "2026-11-14",
    "dates": [
     "2026-11-14",
-    "2026-11-21"
+    "2026-11-21",
+    "2026-11-28"
    ],
-   "times": 2,
-   "last": "2026-11-21",
+   "times": 3,
+   "last": "2026-11-28",
    "tabs": [
     "daily"
    ],
-   "stars": 7483,
+   "stars": 8770,
    "focus": ""
   },
   "alibaba/open-code-review": {
    "first": "2026-11-14",
    "dates": [
     "2026-11-14",
-    "2026-11-21"
+    "2026-11-21",
+    "2026-11-28"
    ],
-   "times": 2,
-   "last": "2026-11-21",
+   "times": 3,
+   "last": "2026-11-28",
    "tabs": [
     "daily"
    ],
-   "stars": 54885,
+   "stars": 56979,
    "focus": ""
   },
   "ccch1mneyyy/dsh-Go": {
@@ -904,27 +908,29 @@
   "erkamyaman/rust-anything": {
    "first": "2026-11-21",
    "dates": [
-    "2026-11-21"
+    "2026-11-21",
+    "2026-11-28"
    ],
-   "times": 1,
-   "last": "2026-11-21",
+   "times": 2,
+   "last": "2026-11-28",
    "tabs": [
     "daily"
    ],
-   "stars": 6886,
+   "stars": 10918,
    "focus": ""
   },
   "XiaoYouChR/Ghost-Downloader-3": {
    "first": "2026-11-21",
    "dates": [
-    "2026-11-21"
+    "2026-11-21",
+    "2026-11-28"
    ],
-   "times": 1,
-   "last": "2026-11-21",
+   "times": 2,
+   "last": "2026-11-28",
    "tabs": [
     "daily"
    ],
-   "stars": 13980,
+   "stars": 20114,
    "focus": ""
   },
   "Tracer-Cloud/opensre": {
@@ -1147,7 +1153,33 @@
    ],
    "stars": 54147,
    "focus": ""
+  },
+  "mromidev/claude-animated-shorts": {
+   "first": "2026-11-28",
+   "dates": [
+    "2026-11-28"
+   ],
+   "times": 1,
+   "last": "2026-11-28",
+   "tabs": [
+    "daily"
+   ],
+   "stars": 5252,
+   "focus": ""
+  },
+  "4lwayz/portwatch-vi": {
+   "first": "2026-11-28",
+   "dates": [
+    "2026-11-28"
+   ],
+   "times": 1,
+   "last": "2026-11-28",
+   "tabs": [
+    "daily"
+   ],
+   "stars": 6920,
+   "focus": ""
   }
  },
- "updated_at": "2026-11-27T09:30:13"
+ "updated_at": "2026-11-28T08:43:54"
 }

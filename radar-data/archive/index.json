@@ -303,7 +303,26 @@
     "obsidianmd/obsidian-skills",
     "heydamir/unslop"
    ]
+  },
+  {
+   "date": "2026-11-28",
+   "mode": "FULL",
+   "focus": "",
+   "scanned": 69,
+   "daily": 8,
+   "focus_n": 0,
+   "deep": 0,
+   "names": [
+    "mromidev/claude-animated-shorts",
+    "erkamyaman/rust-anything",
+    "backnotprop/plannotator",
+    "4lwayz/portwatch-vi",
+    "XiaoYouChR/Ghost-Downloader-3",
+    "storytold/craft-anything",
+    "alibaba/open-code-review",
+    "tradermonty/claude-trading-skills"
+   ]
   }
  ],
- "updated_at": "2026-11-27T09:30:13"
+ "updated_at": "2026-11-28T08:43:54"
 }

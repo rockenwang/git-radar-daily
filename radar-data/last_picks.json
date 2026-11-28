@@ -1,286 +1,48 @@
 {
- "date": "2026-11-27",
+ "date": "2026-11-28",
  "picks": [
   {
-   "full_name": "zhouxiaoka/autoclip",
-   "owner": "zhouxiaoka",
+   "full_name": "mromidev/claude-animated-shorts",
+   "owner": "mromidev",
    "owner_type": "User",
-   "name": "autoclip",
-   "desc": "AutoClip｜The open-source OpusClip alternative — local-first AI clipping & MCP server, zero subscriptions. 一个链接，一键出片。开源 AI 视频剪辑桌面工具，将播客、访谈、课程等长视频自动剪成短视频，生成字幕、封面和发布文案，适配抖音、小红书、TikTok、Reels 与 YouTube Shorts。",
-   "lang": "Python",
-   "stars": 17290,
-   "forks": 2422,
-   "watchers": 53,
-   "open_issues": 47,
-   "license": "MIT",
-   "license_name": "MIT License",
-   "topics": [
-    "ai-agent",
-    "ai-video-editor",
-    "claude-code",
-    "content-repurposing",
-    "desktop-app",
-    "douyin",
-    "instagram-reels",
-    "local-first",
-    "mcp",
-    "mcp-server",
-    "open-source",
-    "opusclip-alternative",
-    "podcast",
-    "subtitles",
-    "tiktok",
-    "video-clipping",
-    "video-editing-software",
-    "whisper",
-    "xiaohongshu",
-    "youtube-shorts"
-   ],
-   "created_at": "2025-07-08T04:51:15Z",
-   "pushed_at": "2026-11-27T09:10:05Z",
-   "updated_at": "2026-11-27T09:27:29Z",
-   "size_kb": 124050,
-   "archived": false,
-   "has_discussions": true,
-   "has_wiki": false,
-   "homepage": "https://zhouxiaoka.github.io/autoclip_intro/",
-   "url": "https://github.com/zhouxiaoka/autoclip",
-   "default_branch": "main",
-   "readme": "<!-- mcp-name: io.github.zhouxiaoka/autoclip-mcp -->\n\n<div align=\"center\">\n\n<img src=\"src-tauri/icons/128x128.png\" alt=\"AutoClip\" width=\"76\" height=\"76\">\n\n# AutoClip\n\n### Turn any video, link, or live stream into ready-to-post clips.\n\n**The open-source OpusClip alternative** — local-first AI clipping for **podcasts, interviews, and gaming streams** with smart reframing, captions, covers, titles, and built-in **MCP for AI agents**. Zero subscriptions, no paywall.\n\n<br>\n\n<p>\n  <a href=\"https://github.com/zhouxiaoka/autoclip/releases/latest\"><img src=\"https://img.shields.io/github/v/release/zhouxiaoka/autoclip?style=flat-square&color=4F46E5\" alt=\"GitHub release\" height=\"20\"></a>&nbsp;\n  <a href=\"https://github.com/zhouxiaoka/autoclip/stargazers\"><img src=\"https://img.shields.io/github/stars/zhouxiaoka/autoclip?style=flat-square&color=FFD700&logo=github&logoColor=white&label=Stars\" alt=\"GitHub stars\" height=\"20\"></a>&nbsp;\n  <a href=\"https://github.com/zhouxiaoka/autoclip/releases\"><img src=\"https://img.shields.io/github/downloads/zhouxiaoka/autoclip/total?style=flat-square&color=10B981\" alt=\"Downloads\" height=\"20\"></a>&nbsp;\n  <img src=\"https://img.shields.io/badge/Languages-13-0EA5E9?style=flat-square\" alt=\"13 Languages\" height=\"20\">&nbsp;\n  <a href=\"LICENSE\"><img src=\"https://img.shields.io/badge/License-MIT-blue?style=flat-square\" alt=\"License: MIT\" height=\"20\"></a>\n</p>\n\n<br>\n\n<!-- hero-cta:start -->\n<p>\n  <a href=\"https://zhouxiaoka.github.io/autoclip_intro/\"><img src=\"docs/images/download-button.svg\" alt=\"Download AutoClip\" width=\"248\" height=\"55\"></a>&nbsp;&nbsp;\n  <a href=\"https://trendshift.io/repositories/25801\"><img src=\"https://trendshift.io/api/badge/repositories/25801\" alt=\"AutoClip — GitHub Trending\" width=\"250\" height=\"55\"></a>\n</p>\n<!-- hero-cta:end -->\n\n<br>\n\n<p>\n  <a href=\"https://zhouxiaoka.github.io/autoclip_intro/\"><strong>Website</strong></a>\n  &nbsp;&middot;&nbsp;\n  <a href=\"https://github.com/zhouxiaoka/autoclip/releases/latest\"><strong>Download</strong></a>\n  &nbsp;&middot;&nbsp;\n  <a href=\"https://zhouxiaoka.github.io/autoclip_intro/features/game-streams/\"><strong>Live Replays (v1.6)</strong></a>\n  &nbsp;&middot;&nbsp;\n  <a href=\"https://zhouxiaoka.github.io/autoclip_intro/cases/?lang=en\"><strong>Showcase</strong></a>\n  &nbsp;&middot;&nbsp;\n  <a href=\"#quick-start\"><strong>Quick Start</strong></a>\n  &nbsp;&middot;&nbsp;\n  <a href=\"#documentation\"><strong>Docs</strong></a>\n  &nbsp;&middot;&nbsp;\n  <a href=\"https://github.com/zhouxiaoka/autoclip/issues/new/choose\"><strong>Issues</strong></a>\n</p>\n\n<p>\n  <strong>English</strong> · <a href=\"docs/i18n/README-ZH.md\">简体中文</a> · <a href=\"docs/i18n/README-ZH-TW.md\">繁體中文</a> · <a href=\"docs/i18n/README-JA.md\">日本語</a> · <a href=\"docs/i18n/README-KO.md\">한국어</a> · <a href=\"docs/i18n/README-ES.md\">Español</a> · <a href=\"docs/i18n/README-PT.md\">Português</a> · <a href=\"docs/i18n/README-RU.md\">Русский</a> · <a href=\"docs/i18n/README-FR.md\">Français</a> · <a href=\"docs/i18n/README-ID.md\">Bahasa Indonesia</a> · <a href=\"docs/i18n/README-TR.md\">Türkçe</a> · <a href=\"docs/i18n/README-VI.md\">Tiếng Việt</a> · <a href=\"docs/i18n/README-DE.md\">Deutsch</a>\n</p>\n\n<br>\n\n<p>\n  ⭐ <em>Free, MIT-licensed, zero subscriptions — everything cuts and renders on your machine. Star the repo if you find it useful!</em>\n</p>\n\n<!-- top-sponsors:start -->\n<table width=\"100%\">\n  <tr>\n    <td align=\"center\" width=\"50%\">\n      <a href=\"https://go.apimart.ai/tw-autoclip\"><img src=\"docs/sponsors/apimart.png\" alt=\"APIMart\" width=\"64\"></a><br>\n      <a href=\"https://go.apimart.ai/tw-autoclip\"><strong>APIMart</strong></a><br>\n      <sub>Low-cost AI image &amp; video API · GPT-Image-2 from $0.006/img</sub>\n    </td>\n    <td align=\"center\" width=\"50%\">\n      <a href=\"mailto:christine_zhouye@163.com?subject=AutoClip%20Sponsor%20%2F%20Provider%20Partnership\"><strong>Sponsor / Partner with AutoClip</strong></a><br>\n      <sub>Put your AI API or creator tool in front of AutoClip users worldwide (cloud dynami",
-   "gained": 774,
-   "since": "daily",
-   "source": "trending",
-   "score": 78,
-   "detail": {
-    "lic": 25,
-    "easy": 20,
-    "zh": 8,
-    "demand": 14,
-    "deliver": 2,
-    "fresh": 1,
-    "adj": 8
-   },
-   "grade": "A",
-   "grade_word": "改一改能卖",
-   "form": "web应用",
-   "velocity": 774.0,
-   "_gaps": [
-    [
-     "没有中文上手文档",
-     "没有中文上手文档",
-     "把 README 翻成中文，配一张三步跑通图"
-    ],
-    [
-     "没有中文界面",
-     "没有中文界面",
-     "把界面文案和按钮全翻成中文，截一套中文版演示图"
-    ],
-    [
-     "没有一键部署",
-     "没有一键部署",
-     "补一个 Dockerfile + compose，别人一条命令跑起来"
-    ]
-   ],
-   "gaps_short": [
-    "没有中文上手文档",
-    "没有中文界面",
-    "没有一键部署"
-   ],
-   "risk": "",
-   "suspect": "",
-   "pitch": {
-    "gap_key": "没有中文界面",
-    "change": "把界面文案和按钮全翻成中文，再截一套中文版演示图当商品图",
-    "buyer": "做短视频的剪辑号",
-    "buyer_tag": "视频",
-    "deliver": "打包部署到客户自己的服务器/域名，收一次部署费",
-    "deliver_alt": "做成在线服务，按月收使用费",
-    "hours": 3,
-    "gap_key_word": "缺中文界面"
-   },
-   "plain": "AutoClip｜The open-source OpusClip alternative — local-first AI clipping & MCP server, zero subscriptions. 一个链接，一键出片。开源 AI 视频剪辑桌面工具，将播客、访谈、课程等长视频自动剪成短视频，生成字幕、封面和发布文案，适配抖音、小红书、TikTok、Reels 与 YouTube Shorts。",
-   "analy": {
-    "en": "AutoClip｜The open-source OpusClip alternative — local-first AI clipping & MCP server, zero subscriptions. 一个链接，一键出片。开源 AI 视频剪辑桌面工具，将播客、访谈、课程等长视频自动剪成短视频，生成字幕、封面和发布文案，适配抖音、小红书、TikTok、Reels 与 YouTube Shorts。",
-    "zh": "AutoClip｜开源的 OpusClip 替代品——本地优先的 AI 剪辑和 MCP 服务器，无需订阅。 一个链接，一键出片。 开源 AI 视频剪辑桌面工具，将播客、访谈、课程等长视频自动剪成短视频，生成字幕、封面和发布文案，适配抖音、小红书、TikTok、Reels 与 YouTube Shorts。",
-    "plain": "说白了，这是一个打开网页就能用的在线小工具，不用装任何东西。它干的事是：AutoClip｜开源的 OpusClip 替代品——本地优先的 AI 剪辑和 MCP 服务器，无需订阅。 一个链接，一键出片。 开源 AI 视频剪辑桌面工具，将播客、访谈、课程等长视频自动剪成短视频，生成字幕、封面和发布文案，适配抖音、小红书、TikTok、Reels 与 YouTube Shorts。",
-    "usage": [
-     "批量出素材/封面/字幕，一个晚上干完一周的量",
-     "直接打开当工具用，省掉装软件那一步",
-     "部署到自己的域名，做成一个能对外收钱的服务"
-    ],
-    "how": [
-     "打开作者给的网址（或自己部署一份）",
-     "按界面提示把内容填进去",
-     "选样式/导出，拿到成品"
-    ],
-    "gap": "把界面文案和按钮全翻成中文，再截一套中文版演示图当商品图",
-    "buyer": "做短视频的剪辑号",
-    "why": "做短视频的剪辑号不是不会做，是懒得为这一步花两三天试错。你把「把界面文案和按钮全翻成中文，再截一套中文版演示图当商品图」替他们做完，他们花的钱远少于自己折腾的时间。",
-    "self": "自己干活时当外挂：重复的排版、出图、整理交给它，一次省十几分钟。用熟之后你会清楚自己哪一步最该自动化——这个认知比工具本身值钱。",
-    "pack": "汉化 + 一套中文模板 + 部署教程，打包成 zip 发网盘；主图用「改前 vs 改后」对比，标题写用户能搜的词。落地上就按这条走：打包部署到客户自己的服务器/域名，收一次部署费。",
-    "_auto": true,
-    "_src": "mt"
-   },
-   "_bucket": "",
-   "seen_times": 1,
-   "seen_first": "2026-11-20",
-   "seen_last": "2026-11-20"
-  },
-  {
-   "full_name": "cathrynlavery/diagram-design",
-   "owner": "cathrynlavery",
-   "owner_type": "User",
-   "name": "diagram-design",
-   "desc": "Editorial diagram design for Claude Code, Codex, GitHub Copilot, Cursor, Factory Droid, Qoder, and Pi. 52 diagram types. Self-contained HTML + SVG. No shadows. No Mermaid slop.",
-   "lang": "HTML",
-   "stars": 74152,
-   "forks": 4967,
-   "watchers": 165,
-   "open_issues": 33,
-   "license": "MIT",
-   "license_name": "MIT License",
-   "topics": [
-    "agent-skills",
-    "claude-code",
-    "codex",
-    "data-visualization",
-    "diagrams",
-    "drawio",
-    "mermaid",
-    "svg"
-   ],
-   "created_at": "2026-04-16T18:01:16Z",
-   "pushed_at": "2026-11-26T19:48:58Z",
-   "updated_at": "2026-11-27T09:29:19Z",
-   "size_kb": 40629,
-   "archived": false,
-   "has_discussions": false,
-   "has_wiki": true,
-   "homepage": "https://diagramdesign.dev",
-   "url": "https://github.com/cathrynlavery/diagram-design",
-   "default_branch": "main",
-   "readme": "<div align=\"center\">\n\n<h1>\n  <picture>\n    <source media=\"(prefers-color-scheme: dark)\" srcset=\"docs/hero/hero-dark.webp\">\n    <img alt=\"Diagram Design. Editorial diagrams your designer won't hate.\" src=\"docs/hero/hero-light.webp\">\n  </picture>\n</h1>\n\n**An agent skill that draws diagrams as one self-contained HTML + SVG file, in your brand.<br>52 diagram types. No shadows. No Mermaid slop.**\n\n[![GitHub stars](https://img.shields.io/github/stars/cathrynlavery/diagram-design?style=flat-square&color=bf4520)](https://github.com/cathrynlavery/diagram-design/stargazers)\n[![skills.sh installs](https://skills.sh/b/cathrynlavery/diagram-design?style=flat-square)](https://skills.sh/cathrynlavery/diagram-design/diagram-design)\n[![CI](https://img.shields.io/github/actions/workflow/status/cathrynlavery/diagram-design/ci.yml?branch=main&style=flat-square&label=CI)](https://github.com/cathrynlavery/diagram-design/actions/workflows/ci.yml)\n[![Plugin version](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2Fcathrynlavery%2Fdiagram-design%2Fmain%2F.claude-plugin%2Fplugin.json&query=%24.version&label=version&style=flat-square&color=555555)](CHANGELOG.md)\n[![MIT license](https://img.shields.io/badge/license-MIT-555555?style=flat-square)](LICENSE)\n\n<a href=\"https://trendshift.io/repositories/26141\" target=\"_blank\" rel=\"noopener noreferrer\"><img src=\"https://trendshift.io/api/badge/repositories/26141\" alt=\"cathrynlavery/diagram-design on Trendshift\" width=\"250\" height=\"55\"/></a>\n\n**[Website](https://diagramdesign.dev) · [Gallery](https://cathrynlavery.github.io/diagram-design/) · [Changelog](CHANGELOG.md)**\n\n[Install](#install) · [What it makes](#what-it-makes) · [Quickstart](#quickstart) · [Match your brand](#onboarding-make-it-look-like-your-brand) · [Import](#import-from-drawio-mermaid-excalidraw-or-plantuml) · [Export](#export-to-png--svg) · [Contributing](#contributing)\n\n<code>npx skills add cathrynlavery/diagram-design</code>\n\n<br><br>\n\n<picture>\n  <source media=\"(prefers-color-scheme: dark)\" srcset=\"docs/hero/demo.gif\">\n  <source media=\"(prefers-color-scheme: light)\" srcset=\"docs/hero/demo-light.gif\">\n  <img src=\"docs/hero/demo.gif\" alt=\"A prompt typed into an agent session becomes a finished architecture diagram, then a plain first-pass diagram is redrawn with the skill, then the gallery of diagram types\" width=\"900\">\n</picture>\n\n</div>\n\n<br>\n\nAsk your agent in plain words:\n\n- *\"Make me an architecture diagram of my app: frontend, backend, database, Redis cache.\"*\n- *\"I need a quadrant showing Q2 projects by impact vs effort.\"*\n- *\"Give me a sequence of a bearer call with token refresh on 401.\"*\n- *\"Onboard diagram-design to https://yoursite.com\"* (pulls your palette and fonts so every diagram after this one matches your site)\n\nThe agent picks the type, states its plan, and writes one `.html` file you can open by double-clicking.\n\n---\n\n## Install\n\nWorks with any host that reads Agent Skills, including Cursor, Claude Code, Codex, Qoder, GitHub Copilot, Gemini CLI, Cline, Windsurf and Amp:\n\n```bash\nnpx skills add cathrynlavery/diagram-design\n```\n\nIn Claude Code, the plugin marketplace gets you updates and the slash commands:\n\n```text\n/plugin marketplace add cathrynlavery/diagram-design\n/plugin install diagram-design@diagram-design\n```\n\nOfficial builds come only from this repository. LittleMight, Cathryn Lavery's company, publishes the plugin directory listings; a listing under any other name is an unofficial copy. [PRIVACY.md](PRIVACY.md) lists what the skill sends over the network.\n\n<details>\n<summary><b>Claude Code</b>: turn on auto-update</summary>\n\nAfter installing, run `/plugin`, open **Marketplaces**, select **diagram-design**, and choose **Enable auto-update**. Claude Code disables auto-update by default for third-party marketplaces; after this toggle, it refreshes the marketplace and installed plugin in the background after startup. Run `/reload-plugins` when prompted, or let the next session loa",
-   "gained": 955,
-   "since": "daily",
-   "source": "trending",
-   "score": 70,
-   "detail": {
-    "lic": 25,
-    "easy": 20,
-    "zh": 0,
-    "demand": 12,
-    "deliver": 4,
-    "fresh": 1,
-    "adj": 8
-   },
-   "grade": "A",
-   "grade_word": "改一改能卖",
-   "form": "Agent技能",
-   "velocity": 955.0,
-   "_gaps": [
-    [
-     "没有中文上手文档",
-     "没有中文上手文档",
-     "把 README 翻成中文，配一张三步跑通图"
-    ],
-    [
-     "没有中文界面",
-     "没有中文界面",
-     "把界面文案和按钮全翻成中文，截一套中文版演示图"
-    ],
-    [
-     "没有一键部署",
-     "没有一键部署",
-     "补一个 Dockerfile + compose，别人一条命令跑起来"
-    ]
-   ],
-   "gaps_short": [
-    "没有中文上手文档",
-    "没有中文界面",
-    "没有一键部署"
-   ],
-   "risk": "体量太大，改源码成本高，建议只做外围服务",
-   "suspect": "",
-   "pitch": {
-    "gap_key": "只有英文指令",
-    "change": "改写成中文指令版，加 3 个真实场景的开场白",
-    "buyer": "接单的设计师和电商美工",
-    "buyer_tag": "设计",
-    "deliver": "打包成技能文件，配使用教程一起卖",
-    "deliver_alt": "做成付费专栏的一章，当引流钩子",
-    "hours": 1,
-    "gap_key_word": "缺中文上手文档"
-   },
-   "plain": "Editorial diagram design for Claude Code, Codex, GitHub Copilot, Cursor, Factory Droid, Qoder, and Pi. 52 diagram types. Self-contained HTML + SVG. No shadows. No Mermaid slop.",
-   "analy": {
-    "en": "Editorial diagram design for Claude Code, Codex, GitHub Copilot, Cursor, Factory Droid, Qoder, and Pi. 52 diagram types. Self-contained HTML + SVG. No shadows. No Mermaid slop.",
-    "zh": "适用于 Claude Code、Codex、GitHub Copilot、Cursor、Factory Droid、Qoder 和 Pi 的编辑图表设计。52 种图表类型。自包含 HTML + SVG。无阴影。无Mermaid杂乱。",
-    "plain": "说白了，这是一份写给 AI 的操作手册，装进 AI 工具后它就知道按你的规矩干活。它干的事是：适用于 Claude Code、Codex、GitHub Copilot、Cursor、Factory Droid、Qoder 和 Pi 的编辑图表设计。52 种图表类型。自包含 HTML + SVG。无阴影。无Mermaid杂乱。",
-    "usage": [
-     "接单时用它出初稿，客户改的是稿子不是空白页",
-     "装进常用的 AI 工具，让它按行规干活，不用每次重写要求",
-     "改造成中文版，卖给不会写提示词的人"
-    ],
-    "how": [
-     "把技能文件放进 AI 工具的技能目录",
-     "在对话里说一句触发词",
-     "按它给的步骤走，不满意就补一句要求"
-    ],
-    "gap": "改写成中文指令版，加 3 个真实场景的开场白",
-    "buyer": "接单的设计师和电商美工",
-    "why": "接单的设计师和电商美工不是不会做，是懒得为这一步花两三天试错。你把「改写成中文指令版，加 3 个真实场景的开场白」替他们做完，他们花的钱远少于自己折腾的时间。",
-    "self": "装进自己常用的 AI 工具里，写东西、做分析时不用每次从头描述要求，输出的东西还稳定。",
-    "pack": "整理成可直接安装的技能包 + 使用截图，配一节教程一起卖；也可以做成付费专栏的一章当引流钩子。落地上就按这条走：打包成技能文件，配使用教程一起卖。",
-    "_auto": true,
-    "_src": "mt"
-   },
-   "_bucket": "",
-   "seen_times": 1,
-   "seen_first": "2026-11-20",
-   "seen_last": "2026-11-20"
-  },
-  {
-   "full_name": "pookjw/HermesEnabler",
-   "owner": "pookjw",
-   "owner_type": "User",
-   "name": "HermesEnabler",
-   "desc": "Enable Hermès Watch Faces on any Apple Watch devices",
-   "lang": "Objective-C",
-   "stars": 2556,
-   "forks": 206,
-   "watchers": 19,
-   "open_issues": 87,
+   "name": "claude-animated-shorts",
+   "desc": "Free Claude skill: viral animated story shorts (2D characters in a 3D world) with three.js + Remotion",
+   "lang": "TypeScript",
+   "stars": 5252,
+   "forks": 1070,
+   "watchers": 70,
+   "open_issues": 25,
    "license": "MIT",
    "license_name": "MIT License",
    "topics": [],
-   "created_at": "2024-12-14T11:32:03Z",
-   "pushed_at": "2026-11-19T02:24:27Z",
-   "updated_at": "2026-11-27T08:31:29Z",
-   "size_kb": 4494,
+   "created_at": "2026-11-01T05:50:38Z",
+   "pushed_at": "2026-11-01T05:57:14Z",
+   "updated_at": "2026-11-28T08:37:52Z",
+   "size_kb": 17948,
    "archived": false,
    "has_discussions": false,
-   "has_wiki": true,
+   "has_wiki": false,
    "homepage": "",
-   "url": "https://github.com/pookjw/HermesEnabler",
+   "url": "https://github.com/mromidev/claude-animated-shorts",
    "default_branch": "main",
-   "readme": "# HermesEnabler 2\n\n[English](README.md) · [Tiếng Việt](README.vi.md) · [한국어](README.ko.md) · [简体中文](README.zh-CN.md) · [繁體中文](README.zh-TW.md) · [日本語](README.ja.md) · [Español](README.es.md) · [Français](README.fr.md) · [Deutsch](README.de.md) · [Português](README.pt.md)\n\n![](image.png)\n\n> Supported on watchOS 27.0 through 27.3 beta 1.\n> If you’re using an unsupported watchOS version, use [Clocky](https://github.com/pookjw/Clocky).\n\n## Installation\n\n### macOS\n\nOn macOS you can install the prebuilt IPA with Sideloadly or build the app directly with Xcode. Either way, the iPhone must be paired with the target Apple Watch, and the Watch must run a supported watchOS version.\n\n#### Install the IPA\n\n1. Download the IPA from [Releases](https://github.com/pookjw/HermesEnabler/releases).\n2. Install [Sideloadly](https://sideloadly.io) on your Mac, connect your iPhone with a cable, and select it in Sideloadly.\n3. Drag the IPA into Sideloadly and enter your Apple ID. Turn off **Use automatic bundle ID**, set a fixed Bundle Identifier, and start signing.\n4. On the iPhone, open **Settings → General → VPN & Device Management** and trust your developer certificate.\n5. On the iPhone, open **Settings → Privacy & Security → Developer Mode**, turn it on, restart, and confirm.\n6. On the iPhone, open the **Watch** app, go to **My Watch → Apps**, and install **HermesEnabler2** on the Watch.\n7. On the Apple Watch, open **Settings → Privacy & Security → Developer Mode**, turn it on, restart, and confirm. If the option is not shown, install the Watch app first and check again.\n8. Open **HermesEnabler2** on your Apple Watch and follow the steps in the app.\n\n#### Build with Xcode\n\n1. Open [HermesEnabler2.xcodeproj](HermesEnabler2.xcodeproj) in Xcode.\n2. Select your Apple Watch as the run destination and click **Run**.\n3. Open **HermesEnabler2** on your Apple Watch and follow the steps in the app.\n\n### Windows\n\nWindows uses [WatchBridge](https://github.com/AdminZachary/iloader-for-windows), a community tool that prepares Developer Mode and installs an IPA containing both an iPhone host app and a Watch app. It is not affiliated with Apple or with this project.\n\n1. Install **Apple Mobile Device Service** by installing [iTunes](https://www.apple.com/itunes/) or the **Apple Devices** app from the Microsoft Store. WatchBridge needs it for USB and Wi-Fi communication. WebView2 is built into Windows 11.\n2. Make sure your iPhone is paired with the target Apple Watch. WatchBridge supports only one paired Watch at a time; if more than one is paired, the preparation step stops instead of guessing.\n3. Download `watchbridge-windows.zip` from [WatchBridge Releases](https://github.com/AdminZachary/iloader-for-windows/releases/latest), extract it, and run `WatchBridge.exe`. The executable is unsigned, so Windows SmartScreen may warn on first launch.\n4. Download the IPA from [Releases](https://github.com/pookjw/HermesEnabler/releases). Use the original IPA that contains both the iPhone host and the `Watch/*.app`; Watch-only packages are not supported.\n5. Connect the paired iPhone over USB and select it in WatchBridge.\n6. Pair the Watch and confirm the trust prompt on the Watch. Request the **Developer Mode** switch, then on the Watch open **Settings → Privacy & Security → Developer Mode**, turn it on, restart, and confirm. Return to WatchBridge and click **Check again**. WatchBridge does not enable Developer Mode or restart the Watch for you.\n7. Sign in with your Apple ID, select the HermesEnabler2 IPA, and start signing and installation. WatchBridge installs the iPhone host app first, then the Watch app.\n8. Open **HermesEnabler2** on your Apple Watch and follow the steps in the app.\n\n> Developer-mode preparation requires a USB connection. After pairing over USB once, installs and renewals can use Wi-Fi.\n\n## Cautions\n\n- watchOS 26 is not supported.\n- In Sideloadly, disable **Use automatic bundle ID** and use a fixed Bundle Identifier. Keep the same Bundle Identifier and A",
-   "gained": 325,
-   "since": "weekly",
-   "source": "trending",
-   "score": 70,
+   "readme": "# Claude Animated Shorts\n\nThe free Claude skill from the video **\"How to Make Viral Animated Shorts Using Claude (Full Workflow)\"**.\n\nIt makes 55-70 s vertical animated story shorts: 2D characters in a colourful 3D world, with ink outlines, a painted town, lens blur, gliding cameras, a march score and sound effects. Everything is rendered with three.js inside Remotion on your own PC, with no AI video generator.\n\nProven on **The Bridge That Fell for a Song**, a 67 s short about the 1831 Broughton bridge.\n\n## What's inside\n| Path | What it is |\n|---|---|\n| `SKILL.md` | The skill: the full pipeline, every rule, every fix, and the final look values |\n| `templates/bridge/` | The full source of the bridge short: world, characters, ink, lens blur, grade, story/camera |\n| `templates/audio/` | The synthesized sound: SFX, march music, the mix with ducking and loudness |\n| `templates/scripts/` | Stills, side-by-side sheets, shot merge and frame-by-frame QA helpers |\n| `references/STYLE_BIBLE.md` | The script and visual formula measured from 20 reference shorts |\n| `references/reports/` | Seven measured reports: motion, depth, textures, characters, lighting, outlines, grade |\n| `references/frames/` | 38 full-size reference frames (540x960) to compare your frames against |\n| `references/sheets/` | 20 contact sheets, one per reference short, 60 frames each (1,200 frames) |\n\n## Install\n1. Copy this folder to `~/.claude/skills/cartoon-3d-short/` (clone it there, or download the ZIP).\n2. You need [Remotion](https://www.remotion.dev/) with `@remotion/three`, plus Node, Python 3 and ffmpeg.\n3. In Claude Code, say: *\"Use the cartoon short skill and make a short about …\"*.\n\nClaude then follows `SKILL.md`: topic and facts, then script, then voice, then the shot plan in `story.ts`, then stills, then renders. Agents check your frames against the reports and the frames, and you get the final 2K render and sound mix.\n\n## Notes\n- Set `REMOTION_TMP` to a folder on a big drive. Every Remotion bundle copies `public/` (~1.3 GB) into the temp folder.\n- Story, characters and voice should always be your own. Use the references for the look, not the content.\n\n## License\nThe code and docs are MIT (see `LICENSE`). The reference frames are included for style study only.\n",
+   "gained": 0,
+   "since": "created<30d",
+   "source": "search_new",
+   "score": 72,
    "detail": {
     "lic": 25,
-    "easy": 14,
+    "easy": 20,
     "zh": 0,
-    "demand": 20,
-    "deliver": 10,
-    "fresh": 1,
+    "demand": 10,
+    "deliver": 7,
+    "fresh": 10,
     "adj": 0
    },
    "grade": "A",
    "grade_word": "改一改能卖",
-   "form": "引擎库",
-   "velocity": 46.42857142857143,
+   "form": "Agent技能",
+   "velocity": 194.5185185185185,
    "_gaps": [
     [
      "没有中文上手文档",
@@ -306,20 +68,345 @@
    "risk": "",
    "suspect": "",
    "pitch": {
+    "gap_key": "只有英文指令",
+    "change": "改写成中文指令版，加 3 个真实场景的开场白",
+    "buyer": "天天用 AI 干活、但不知道装什么的人",
+    "buyer_tag": "通用",
+    "deliver": "打包成技能文件，配使用教程一起卖",
+    "deliver_alt": "做成付费专栏的一章，当引流钩子",
+    "hours": 3,
+    "gap_key_word": "缺中文上手文档"
+   },
+   "plain": "Free Claude skill: viral animated story shorts (2D characters in a 3D world) with three.js + Remotion",
+   "analy": {
+    "en": "Free Claude skill: viral animated story shorts (2D characters in a 3D world) with three.js + Remotion",
+    "zh": "免费的 Claude 技能：使用 three.js + Remotion 制作爆款动画短片（3D 世界中的 2D 角色）",
+    "plain": "说白了，这是一份写给 AI 的操作手册，装进 AI 工具后它就知道按你的规矩干活。它干的事是：免费的 Claude 技能：使用 three.js + Remotion 制作爆款动画短片（3D 世界中的 2D 角色）",
+    "usage": [
+     "装进常用的 AI 工具，让它按行规干活，不用每次重写要求",
+     "改造成中文版，卖给不会写提示词的人",
+     "当课程或付费专栏的核心案例，边讲边演示"
+    ],
+    "how": [
+     "把技能文件放进 AI 工具的技能目录",
+     "在对话里说一句触发词",
+     "按它给的步骤走，不满意就补一句要求"
+    ],
+    "gap": "改写成中文指令版，加 3 个真实场景的开场白",
+    "buyer": "天天用 AI 干活、但不知道装什么的人",
+    "why": "天天用 AI 干活、但不知道装什么的人不是不会做，是懒得为这一步花两三天试错。你把「改写成中文指令版，加 3 个真实场景的开场白」替他们做完，他们花的钱远少于自己折腾的时间。",
+    "self": "装进自己常用的 AI 工具里，写东西、做分析时不用每次从头描述要求，输出的东西还稳定。",
+    "pack": "整理成可直接安装的技能包 + 使用截图，配一节教程一起卖；也可以做成付费专栏的一章当引流钩子。落地上就按这条走：打包成技能文件，配使用教程一起卖。",
+    "_auto": true,
+    "_src": "mt"
+   },
+   "_bucket": "",
+   "seen_times": 0,
+   "seen_first": "",
+   "seen_last": ""
+  },
+  {
+   "full_name": "erkamyaman/rust-anything",
+   "owner": "erkamyaman",
+   "owner_type": "User",
+   "name": "rust-anything",
+   "desc": "Rewrite your app in Rust, piece by piece, checked against the original at every step. Works with TypeScript, JavaScript, Python, Go, Ruby, Java, C, PHP, C#, Kotlin and PowerShell.",
+   "lang": "Rust",
+   "stars": 10918,
+   "forks": 889,
+   "watchers": 31,
+   "open_issues": 38,
+   "license": "Apache-2.0",
+   "license_name": "Apache License 2.0",
+   "topics": [
+    "agent-skills",
+    "claude-code",
+    "cli",
+    "code-migration",
+    "codex",
+    "ffi",
+    "golang",
+    "java",
+    "javascript",
+    "mcp",
+    "migration",
+    "napi",
+    "performance",
+    "porting",
+    "pyo3",
+    "python",
+    "rewrite",
+    "ruby",
+    "rust",
+    "typescript"
+   ],
+   "created_at": "2026-11-16T12:10:36Z",
+   "pushed_at": "2026-11-28T08:21:38Z",
+   "updated_at": "2026-11-28T08:43:31Z",
+   "size_kb": 18394,
+   "archived": false,
+   "has_discussions": true,
+   "has_wiki": true,
+   "homepage": "https://rustanything.ai",
+   "url": "https://github.com/erkamyaman/rust-anything",
+   "default_branch": "main",
+   "readme": "<p align=\"center\">\n  <a href=\"https://rustanything.ai/\">\n    <img src=\"docs/assets/logo.png\" width=\"140\" height=\"140\" alt=\"The Rust Anything crab\">\n  </a>\n</p>\n\n<h1 align=\"center\">Rust Anything</h1>\n\n<p align=\"center\">\n<a href=\"https://crates.io/crates/rust-anything\"><img src=\"https://img.shields.io/crates/v/rust-anything?style=flat&colorA=111111&colorB=b34a1a&label=crates.io\" alt=\"crates.io version\"></a>\n<a href=\"https://www.npmjs.com/package/rust-anything\"><img src=\"https://img.shields.io/npm/v/rust-anything?style=flat&colorA=111111&colorB=b34a1a&label=npm\" alt=\"npm version\"></a>\n<a href=\"https://github.com/erkamyaman/rust-anything/stargazers\"><img src=\"https://img.shields.io/github/stars/erkamyaman/rust-anything?style=flat&colorA=111111&colorB=b34a1a&label=stars\" alt=\"GitHub stars\"></a>\n<a href=\"https://discord.gg/FXhUEA8eBR\"><img src=\"https://img.shields.io/badge/discord-join-111111?style=flat&colorA=111111&colorB=b34a1a\" alt=\"Discord\"></a>\n<a href=\"#license\"><img src=\"https://img.shields.io/badge/license-MIT%20OR%20Apache--2.0-111111?style=flat&colorA=111111&colorB=b34a1a\" alt=\"MIT or Apache-2.0 license\"></a><br>\n<a href=\"https://rustanything.ai/\"><img src=\"https://img.shields.io/endpoint?url=https%3A%2F%2Frustanything.ai%2Fbadge-downloads.json&style=flat\" alt=\"Total downloads, crates.io and npm\"></a>\n<a href=\"https://crates.io/crates/rust-anything\"><img src=\"https://img.shields.io/crates/d/rust-anything?style=flat&colorA=111111&colorB=b34a1a&label=crates.io%20downloads\" alt=\"crates.io downloads\"></a>\n<a href=\"https://www.npmjs.com/package/rust-anything\"><img src=\"https://img.shields.io/npm/d18m/rust-anything?style=flat&colorA=111111&colorB=b34a1a&label=npm%20downloads\" alt=\"npm downloads\"></a>\n</p>\n\n<p align=\"center\">\nMigrate your app to Rust, and prove it still behaves the same.\n</p>\n\n<p align=\"center\">\n<a href=\"https://trendshift.io/repositories/363468\" target=\"_blank\" rel=\"noopener noreferrer\"><img src=\"https://trendshift.io/api/badge/trendshift/repositories/363468/daily?language=Rust\" alt=\"erkamyaman/rust-anything: #1 Rust repository of the day on Trendshift\" width=\"250\" height=\"55\"/></a>\n<a href=\"https://trendshift.io/repositories/363468\" target=\"_blank\" rel=\"noopener noreferrer\"><img src=\"https://trendshift.io/api/badge/trendshift/repositories/363468/weekly?language=Rust\" alt=\"erkamyaman/rust-anything: #1 Rust repository of the week on Trendshift\" width=\"250\" height=\"55\"/></a>\n</p>\n\n<p align=\"center\">\n<b>Documentation:</b> <a href=\"https://rustanything.ai/\">https://rustanything.ai/</a>\n</p>\n\n<p align=\"center\"><a href=\"docs/translations.md\">🌐 Other languages</a></p>\n\n<p align=\"center\">Moving a codebase to Rust? I offer consulting for Rust migrations: <a href=\"mailto:hello@rustanything.ai\">hello@rustanything.ai</a></p>\n\n## Sponsors\n\n<p align=\"center\">\n  Made in Türkiye 🇹🇷 by <a href=\"https://github.com/erkamyaman\">erKam Yaman</a><br>\n  Rust Anything is free and open source. If it helps your work, sponsoring keeps it going.\n</p>\n\n<p align=\"center\"><sub>Your safety comes first: sponsors get a logo and a link here, nothing more. No paid recommendations and no setup guides for third-party AI API resellers, so nothing here steers your code, keys or data somewhere you didn't choose.</sub></p>\n\n<p align=\"center\">\n  <a href=\"https://coderabbit.link/er-kam\">\n    <picture>\n      <source media=\"(prefers-color-scheme: dark)\" srcset=\"docs/assets/sponsors/company-dark.svg\">\n      <img src=\"docs/assets/sponsors/company-light.svg\" width=\"800\" alt=\"Company sponsor: CodeRabbit\">\n    </picture>\n  </a>\n</p>\n\n<p align=\"center\">\n  <a href=\"https://www.atakdomain.com/\">\n    <picture>\n      <source media=\"(prefers-color-scheme: dark)\" srcset=\"docs/assets/sponsors/domain-dark.svg\">\n      <img src=\"docs/assets/sponsors/domain-light.svg\" width=\"800\" alt=\"Domain sponsor: Atak Domain\">\n    </picture>\n  </a>\n</p>\n\n<p align=\"center\">\n  <a href=\"https://github.com/sponsors/erkamyaman\">\n    <picture>\n      <source media=\"(prefers-color-scheme: dark)",
+   "gained": 0,
+   "since": "created<30d",
+   "source": "search_new",
+   "score": 70,
+   "detail": {
+    "lic": 25,
+    "easy": 14,
+    "zh": 0,
+    "demand": 14,
+    "deliver": 7,
+    "fresh": 10,
+    "adj": 0
+   },
+   "grade": "A",
+   "grade_word": "改一改能卖",
+   "form": "Agent技能",
+   "velocity": 992.5454545454545,
+   "_gaps": [
+    [
+     "没有中文上手文档",
+     "没有中文上手文档",
+     "把 README 翻成中文，配一张三步跑通图"
+    ],
+    [
+     "没有一键部署",
+     "没有一键部署",
+     "补一个 Dockerfile + compose，别人一条命令跑起来"
+    ]
+   ],
+   "gaps_short": [
+    "没有中文上手文档",
+    "没有一键部署"
+   ],
+   "risk": "",
+   "suspect": "星速可疑：11 天涨到 10,918 星（日均 992），先观察一周看有没有真实用户再动手",
+   "pitch": {
+    "gap_key": "没有打包成技能",
+    "change": "整理成可直接安装的技能包，附使用截图",
+    "buyer": "天天用 AI 干活、但不知道装什么的人",
+    "buyer_tag": "通用",
+    "deliver": "做成付费专栏的一章，当引流钩子",
+    "deliver_alt": "接企业内训，教团队把这套装上",
+    "hours": 7,
+    "gap_key_word": "缺中文上手文档"
+   },
+   "plain": "Rewrite your app in Rust, piece by piece, checked against the original at every step. Works with TypeScript, JavaScript, Python, Go, Ruby, Java, C, PHP, C#, Kotlin and PowerShell.",
+   "analy": {
+    "en": "Rewrite your app in Rust, piece by piece, checked against the original at every step. Works with TypeScript, JavaScript, Python, Go, Ruby, Java, C, PHP, C#, Kotlin and PowerShell.",
+    "zh": "使用 Rust 逐一重写您的应用程序，并在每一步都与原版进行对照检查。适用于 TypeScript、JavaScript、Python、Go、Ruby、Java、C、PHP、C#、Kotlin 和 PowerShell。",
+    "plain": "说白了，这是一份写给 AI 的操作手册，装进 AI 工具后它就知道按你的规矩干活。它干的事是：使用 Rust 逐一重写您的应用程序，并在每一步都与原版进行对照检查。适用于 TypeScript、JavaScript、Python、Go、Ruby、Java、C、PHP、C#、Kotlin 和 PowerShell。",
+    "usage": [
+     "装进常用的 AI 工具，让它按行规干活，不用每次重写要求",
+     "改造成中文版，卖给不会写提示词的人",
+     "当课程或付费专栏的核心案例，边讲边演示"
+    ],
+    "how": [
+     "把技能文件放进 AI 工具的技能目录",
+     "在对话里说一句触发词",
+     "按它给的步骤走，不满意就补一句要求"
+    ],
+    "gap": "整理成可直接安装的技能包，附使用截图",
+    "buyer": "天天用 AI 干活、但不知道装什么的人",
+    "why": "天天用 AI 干活、但不知道装什么的人不是不会做，是懒得为这一步花两三天试错。你把「整理成可直接安装的技能包，附使用截图」替他们做完，他们花的钱远少于自己折腾的时间。",
+    "self": "装进自己常用的 AI 工具里，写东西、做分析时不用每次从头描述要求，输出的东西还稳定。",
+    "pack": "整理成可直接安装的技能包 + 使用截图，配一节教程一起卖；也可以做成付费专栏的一章当引流钩子。落地上就按这条走：做成付费专栏的一章，当引流钩子。",
+    "_auto": true,
+    "_src": "mt"
+   },
+   "_bucket": "",
+   "seen_times": 1,
+   "seen_first": "2026-11-21",
+   "seen_last": "2026-11-21"
+  },
+  {
+   "full_name": "backnotprop/plannotator",
+   "owner": "backnotprop",
+   "owner_type": "User",
+   "name": "plannotator",
+   "desc": "The workspace to stay in the loop and on top of agents - shape, decide, plan, annotate, review code, share with team, and send all feedback to agents with one click. ",
+   "lang": "TypeScript",
+   "stars": 15470,
+   "forks": 1478,
+   "watchers": 42,
+   "open_issues": 240,
+   "license": "Apache-2.0",
+   "license_name": "Apache License 2.0",
+   "topics": [
+    "agents",
+    "claude-code",
+    "code-review",
+    "codex",
+    "obsidian",
+    "opencode",
+    "pi-mono",
+    "plan-mode",
+    "skills"
+   ],
+   "created_at": "2025-12-28T02:09:40Z",
+   "pushed_at": "2026-11-28T08:37:38Z",
+   "updated_at": "2026-11-28T08:36:31Z",
+   "size_kb": 447982,
+   "archived": false,
+   "has_discussions": true,
+   "has_wiki": true,
+   "homepage": "https://plannotator.ai",
+   "url": "https://github.com/backnotprop/plannotator",
+   "default_branch": "main",
+   "readme": "<p align=\"center\">\n  <img src=\".github/assets/banner.webp\" alt=\"Plannotator\" width=\"640\" />\n</p>\n\n\n\n<p align=\"center\">\n  <strong>Everything you need to annotate and stay in the loop with your agents</strong><br/>\n  <strong>Inbox Surface • Artifacts • Code Review</strong><br/>\n  <sub>Annotate plans, specs, markdown, HTML, and other interactive artifacts. Review diffs and PRs. Send feedback to your agent.</sub>\n</p>\n\n<p align=\"center\">\n  <img src=\".github/assets/icons/amp.svg\" alt=\"Amp\" title=\"Amp\" height=\"28\" />&nbsp;&nbsp;\n  <img src=\".github/assets/icons/claude.svg\" alt=\"Claude Code\" title=\"Claude Code\" height=\"28\" />&nbsp;&nbsp;\n  <img src=\".github/assets/icons/codex.png\" alt=\"Codex\" title=\"Codex\" height=\"28\" />&nbsp;&nbsp;\n  <picture>\n    <source media=\"(prefers-color-scheme: dark)\" srcset=\".github/assets/icons/copilot-dark.svg\" />\n    <img src=\".github/assets/icons/copilot-light.svg\" alt=\"Copilot CLI\" title=\"Copilot CLI\" height=\"28\" />\n  </picture>&nbsp;&nbsp;\n  <img src=\".github/assets/icons/droid.png\" alt=\"Droid\" title=\"Droid\" height=\"28\" />&nbsp;&nbsp;\n  <img src=\".github/assets/icons/gemini.png\" alt=\"Gemini CLI\" title=\"Gemini CLI\" height=\"28\" />&nbsp;&nbsp;\n  <img src=\".github/assets/icons/kiro.svg\" alt=\"Kiro\" title=\"Kiro\" height=\"28\" />&nbsp;&nbsp;\n  <picture>\n    <source media=\"(prefers-color-scheme: dark)\" srcset=\".github/assets/icons/opencode-dark.svg\" />\n    <img src=\".github/assets/icons/opencode-light.svg\" alt=\"OpenCode\" title=\"OpenCode\" height=\"28\" />\n  </picture>&nbsp;&nbsp;\n  <picture>\n    <source media=\"(prefers-color-scheme: dark)\" srcset=\".github/assets/icons/pi-dark.svg\" />\n    <img src=\".github/assets/icons/pi-light.svg\" alt=\"Pi\" title=\"Pi\" height=\"28\" />\n  </picture>\n</p>\n\n<p align=\"center\">\n  <a href=\"#plannotator-inbox\">Plannotator Inbox</a> · <a href=\"https://plannotator.ai/\">Official site</a> · <a href=\"https://plannotator.ai/code-review\">Code Review</a> · <a href=\"https://github.com/plannotator/effective-html\">Visual HTML Skills</a> · <a href=\"#herdr-annotate-plannotator-in-the-terminal\">Herdr Annotate</a> · <a href=\"https://www.youtube.com/watch?v=a_AT7cEN_9I\">(Legacy) Plan Mode</a>\n</p>\n\n# Plannotator\n\n**⭐️ NEW:** [Plannotator Inbox](https://plannotator.ai/inbox/) is the missing review layer between you and multi-agent work. It surfaces decisions, prototypes, variations, plans, and everything you need to stay in the loop. Works with all coding agents and personal assistants.\n\nPlannotator is a local, browser-based review surface for AI coding agents: Claude Code, Codex, Copilot CLI, Gemini CLI, OpenCode, Kiro, Droid, Amp, DeepSeek Harness, and Pi. Plannotator Inbox also works with personal assistants (Grok Bot, Muse, Hermes, OpenClaw).\n\n**It plugs directly into your agent** through plugins, hooks and commands. When the agent proposes a decision, plan, html, or finishes working, the app opens in your browser and you mark it up, comment, and send feedback directly to the agent for it to act on it.\n\n<table>\n<tr>\n<td width=\"40%\" valign=\"middle\">\n\n### Review documents, plans, and agent messages\n\nAnnotate plans, specs, messages, html, then send the feedback to your agent. \n\n</td>\n<td width=\"60%\">\n\n<img src=\".github/assets/annotate.webp\" alt=\"Annotate UI with inline annotations\" width=\"100%\" />\n\n</td>\n</tr>\n<tr>\n<td width=\"40%\" valign=\"middle\">\n\n### Code Review\n\nReview local changes or remote PRs. Comment on diffs, suggest code. Your comments go back to the agent. Works with Git, GitButler, Jujutsu (`jj`), Perforce (`p4`), GitHub, and GitLab.\n\nFor a big change, start a [guided review](https://plannotator.ai/code-review#guided-review): an agent sorts the diff into chapters, the most important first.\n\n</td>\n<td width=\"60%\">\n\n<img src=\".github/assets/review.webp\" alt=\"Code review with file tree and side-by-side diff\" width=\"100%\" />\n\n</td>\n</tr>\n</table>\n\n## Plannotator Inbox\n\n<p align=\"center\">\n  <a href=\"https://plannotator.ai/inbox/\">\n    <picture>\n      <source media=\"(prefers-color-scheme: dark)\" srcse",
+   "gained": 1596,
+   "since": "weekly",
+   "source": "trending",
+   "score": 68,
+   "detail": {
+    "lic": 25,
+    "easy": 20,
+    "zh": 0,
+    "demand": 20,
+    "deliver": 2,
+    "fresh": 1,
+    "adj": 0
+   },
+   "grade": "A",
+   "grade_word": "改一改能卖",
+   "form": "Agent技能",
+   "velocity": 228.0,
+   "_gaps": [
+    [
+     "没有中文上手文档",
+     "没有中文上手文档",
+     "把 README 翻成中文，配一张三步跑通图"
+    ],
+    [
+     "没有一键部署",
+     "没有一键部署",
+     "补一个 Dockerfile + compose，别人一条命令跑起来"
+    ]
+   ],
+   "gaps_short": [
+    "没有中文上手文档",
+    "没有一键部署"
+   ],
+   "risk": "",
+   "suspect": "",
+   "pitch": {
+    "gap_key": "没有效果对比",
+    "change": "做前后对比案例，让人一眼看出差别",
+    "buyer": "买了 AI 会员却只用来聊天的人",
+    "buyer_tag": "通用",
+    "deliver": "接企业内训，教团队把这套装上",
+    "deliver_alt": "做成定制版：按客户业务流程改一遍，单独报价",
+    "hours": 6,
+    "gap_key_word": "缺中文上手文档"
+   },
+   "plain": "The workspace to stay in the loop and on top of agents - shape, decide, plan, annotate, review code, share with team, and send all feedback to agents with one click.",
+   "analy": {
+    "en": "The workspace to stay in the loop and on top of agents - shape, decide, plan, annotate, review code, share with team, and send all feedback to agents with one click.",
+    "zh": "用于随时掌握最新动态并掌控代理的工作空间——塑造、决策、规划、注释、审核代码、与团队分享，并一键将所有反馈发送给代理。",
+    "plain": "说白了，这是一份写给 AI 的操作手册，装进 AI 工具后它就知道按你的规矩干活。它干的事是：用于随时掌握最新动态并掌控代理的工作空间——塑造、决策、规划、注释、审核代码、与团队分享，并一键将所有反馈发送给代理。",
+    "usage": [
+     "装进常用的 AI 工具，让它按行规干活，不用每次重写要求",
+     "改造成中文版，卖给不会写提示词的人",
+     "当课程或付费专栏的核心案例，边讲边演示"
+    ],
+    "how": [
+     "把技能文件放进 AI 工具的技能目录",
+     "在对话里说一句触发词",
+     "按它给的步骤走，不满意就补一句要求"
+    ],
+    "gap": "做前后对比案例，让人一眼看出差别",
+    "buyer": "买了 AI 会员却只用来聊天的人",
+    "why": "买了 AI 会员却只用来聊天的人不是不会做，是懒得为这一步花两三天试错。你把「做前后对比案例，让人一眼看出差别」替他们做完，他们花的钱远少于自己折腾的时间。",
+    "self": "装进自己常用的 AI 工具里，写东西、做分析时不用每次从头描述要求，输出的东西还稳定。",
+    "pack": "整理成可直接安装的技能包 + 使用截图，配一节教程一起卖；也可以做成付费专栏的一章当引流钩子。落地上就按这条走：接企业内训，教团队把这套装上。",
+    "_auto": true,
+    "_src": "mt"
+   },
+   "_bucket": "",
+   "seen_times": 2,
+   "seen_first": "2026-11-14",
+   "seen_last": "2026-11-21"
+  },
+  {
+   "full_name": "4lwayz/portwatch-vi",
+   "owner": "4lwayz",
+   "owner_type": "User",
+   "name": "portwatch-vi",
+   "desc": "Does GTA VI run on PC yet? A live tracker of community recompilation and emulation efforts, updated daily.",
+   "lang": "JavaScript",
+   "stars": 6920,
+   "forks": 208,
+   "watchers": 107,
+   "open_issues": 261,
+   "license": "",
+   "license_name": "",
+   "topics": [],
+   "created_at": "2026-11-21T23:16:41Z",
+   "pushed_at": "2026-11-28T07:31:34Z",
+   "updated_at": "2026-11-28T08:43:14Z",
+   "size_kb": 5621,
+   "archived": false,
+   "has_discussions": false,
+   "has_wiki": true,
+   "homepage": "portwatch-vi.xyz",
+   "url": "https://github.com/4lwayz/portwatch-vi",
+   "default_branch": "main",
+   "readme": "# PortWatch VI\n\n**Does GTA VI run on PC yet?** A static GitHub Pages site that tracks every serious community effort to recompile, emulate or port the leaked Xbox Series build of GTA VI to PC. All efforts are scored on one ladder, and a scout refreshes the data every 3 hours.\n\n- One headline progress bar shows the closest effort, with the top projects pinned to it.\n- A live countdown runs to the missing executable's expected drop.\n- A leaderboard card per effort shows its own bar, milestone ladder, groundwork breakdown, what works and what's blocking.\n- Further sections cover the watchlist of early projects, a toolkit of asset tools, the scout's inbox of new candidates, and fake-download warnings.\n\nNo game files, keys or executables are hosted or linked, ever.\n\n## Deploy on GitHub Pages\n\n1. Create a new GitHub repository and push this folder to its `main` branch.\n2. In the repo, open **Settings → Pages** and set **Source** to **GitHub Actions**.\n3. Open **Settings → Actions → General** and make sure workflows are allowed.\n4. Open **Actions → Scout → Run workflow** to run the first scout. It commits fresh data and deploys the site.\n\nEach deploy also runs `scripts/build-site.mjs`, which turns `data/tracker.json` into pages search engines can read: one page per news story (`news/<id>.html`), a news archive, an RSS feed (`news/feed.xml`) and `sitemap.xml`. It then pings [IndexNow](https://www.indexnow.org/) (Bing, Yandex and others; no account needed) with the URLs that changed since the last deploy. For Google, add the site in Search Console and submit `sitemap.xml`.\n\nFrom then on, `Scout` runs every 3 hours (00:17, 03:17, 06:17 … UTC) on GitHub's servers, so no computer of yours needs to be on. Any push to `main` redeploys the site through `Deploy site`. To change the frequency, edit the `cron` line in `.github/workflows/scout.yml`. For example, `17 6 * * *` runs it once a day. GitHub can delay scheduled runs by a few minutes when it's busy.\n\n## What the scout does (`scripts/scout.mjs`)\n\n1. **Refreshes** every tracked repo: stars, forks, issues, last push, commits in the last 7 days, and whether it's gone (404, or 451 for a DMCA block). It also hashes each README to notice changes.\n2. **Spots claims.** If a README newly says GTA VI boots, reaches the menu or runs at some FPS, the card shows an \"unverified claim\" banner and the change feed records it.\n3. **Discovers** new repos from GitHub and GitLab searches (`scout.queries` in `data/tracker.json`), Hacker News, Bluesky, Mastodon, Lemmy and 4chan, plus Reddit and X when keys are set, by pulling GitHub links out of posts. It also gathers **headlines** from the Google News and Bing News feeds, keeping only stories about the leak, ports, takedowns, scams or official news. And it **watches GitHub's public DMCA log** for new Take-Two or Rockstar notices, flagging any tracked project they name. On 4chan it uses the free read-only API, at one request per second. It opens only /v/ threads that mention GTA VI together with port terms (recomp, emulator, leak, executable, GitHub…), plus /vg/'s /gtag/ and /emugen/ generals. Change the boards with `scout.chan.boards`. Nothing from 4chan is shown on the site except, indirectly, repo names that pass every filter.\n4. **Filters out spam** such as clone networks, download lures and \"PC installer\" repos. Their names are counted under *There is no download*, never linked.\n5. **Filters out copies.** Re-uploads of tracked projects are flagged when they reuse a tracked project's name or have a README that is 60% or more identical, renamed copies included. Original fan games and repos without a real README are skipped too. Candidates already waiting are re-checked every run.\n6. **Scores substance** from code language, size, technical depth, status tables, tests and commit activity. Repos with real code go to **New candidates**, shown as plain text and not linked until reviewed. Thin or off-topic ones are remembered and skipped.\n7. **Writes news** (need",
+   "gained": 765,
+   "since": "since_last",
+   "source": "search_new",
+   "score": 65,
+   "detail": {
+    "lic": 8,
+    "easy": 20,
+    "zh": 0,
+    "demand": 20,
+    "deliver": 7,
+    "fresh": 10,
+    "adj": 0
+   },
+   "grade": "A",
+   "grade_word": "改一改能卖",
+   "form": "引擎库",
+   "velocity": 1153.3333333333333,
+   "_gaps": [
+    [
+     "没有中文上手文档",
+     "没有中文上手文档",
+     "把 README 翻成中文，配一张三步跑通图"
+    ],
+    [
+     "没有一键部署",
+     "没有一键部署",
+     "补一个 Dockerfile + compose，别人一条命令跑起来"
+    ]
+   ],
+   "gaps_short": [
+    "没有中文上手文档",
+    "没有一键部署"
+   ],
+   "risk": "没有 LICENSE 文件，严格说不能商用",
+   "suspect": "星速可疑：6 天涨到 6,920 星（日均 1,153），先观察一周看有没有真实用户再动手",
+   "pitch": {
     "gap_key": "没有中文上手文档",
     "change": "把 README 翻成中文，配一张「三步跑通」流程图",
     "buyer": "要用这套能力但搞不定环境的人",
     "buyer_tag": "通用",
     "deliver": "做成带界面的成品，按份卖（发网盘，附中文说明）",
     "deliver_alt": "接单代跑：客户给需求，你出结果",
-    "hours": 4,
+    "hours": 2,
     "gap_key_word": "缺中文上手文档"
    },
-   "plain": "Enable Hermès Watch Faces on any Apple Watch devices",
+   "plain": "Does GTA VI run on PC yet? A live tracker of community recompilation and emulation efforts, updated daily.",
    "analy": {
-    "en": "Enable Hermès Watch Faces on any Apple Watch devices",
-    "zh": "在任何 Apple Watch 设备上启用爱马仕表盘",
-    "plain": "说白了，这是一堆已经写好的能力，但没有界面，得有人包一层壳才能给普通人用。它干的事是：在任何 Apple Watch 设备上启用爱马仕表盘",
+    "en": "Does GTA VI run on PC yet? A live tracker of community recompilation and emulation efforts, updated daily.",
+    "zh": "《GTA VI》能在PC上运行了吗？社区重新编译和模拟工作的实时跟踪器，每日更新。",
+    "plain": "说白了，这是一堆已经写好的能力，但没有界面，得有人包一层壳才能给普通人用。它干的事是：《GTA VI》能在PC上运行了吗？社区重新编译和模拟工作的实时跟踪器，每日更新。",
     "usage": [
      "接到同类需求时拿它当底子，省掉搭骨架的两三天",
      "包一层网页界面，做成给非技术人用的成品",
@@ -339,73 +426,72 @@
     "_src": "mt"
    },
    "_bucket": "",
-   "seen_times": 2,
-   "seen_first": "2026-11-12",
-   "seen_last": "2026-11-20"
+   "seen_times": 0,
+   "seen_first": "",
+   "seen_last": ""
   },
   {
-   "full_name": "mjmirza/app-store-compliance",
-   "owner": "mjmirza",
+   "full_name": "XiaoYouChR/Ghost-Downloader-3",
+   "owner": "XiaoYouChR",
    "owner_type": "User",
-   "name": "app-store-compliance",
-   "desc": "Avoid common App Store and Google Play rejections. Open playbook and pre-submission guard with 125 documented rejection patterns and fixes, privacy manifest and Data safety checks, 117 tracked deadlines (EU AI Act, DSA, COPPA, age laws), and a skill for AI coding agents.",
-   "lang": "Shell",
-   "stars": 7244,
-   "forks": 504,
-   "watchers": 14,
-   "open_issues": 38,
-   "license": "NOASSERTION",
-   "license_name": "Other",
+   "name": "Ghost-Downloader-3",
+   "desc": "The only downloader you need. 下载器的集大成者。",
+   "lang": "Python",
+   "stars": 20114,
+   "forks": 1280,
+   "watchers": 56,
+   "open_issues": 121,
+   "license": "GPL-3.0",
+   "license_name": "GNU General Public License v3.0",
    "topics": [
-    "accessibility",
-    "ai-agents",
-    "android",
-    "app-review-guidelines",
-    "app-store",
-    "app-store-connect",
-    "app-store-rejection",
-    "app-store-review",
-    "claude-code",
-    "coppa",
-    "data-safety",
-    "eu-ai-act",
-    "gdpr",
-    "google-play",
-    "google-play-policy",
-    "ios",
-    "mobile-compliance",
-    "play-console",
-    "pre-submission-checklist",
-    "privacy-manifest"
+    "async",
+    "asyncio",
+    "bittorent",
+    "bt",
+    "cross-platform",
+    "download-manager",
+    "downloader",
+    "fluent-design",
+    "ftp",
+    "http3",
+    "magnet",
+    "pyqt",
+    "pyside6",
+    "python",
+    "qt",
+    "quic",
+    "react",
+    "software",
+    "streaming"
    ],
-   "created_at": "2026-06-06T11:29:45Z",
-   "pushed_at": "2026-11-27T08:55:31Z",
-   "updated_at": "2026-11-27T09:27:48Z",
-   "size_kb": 2037,
+   "created_at": "2023-08-16T04:23:44Z",
+   "pushed_at": "2026-11-26T14:05:12Z",
+   "updated_at": "2026-11-28T08:41:33Z",
+   "size_kb": 101258,
    "archived": false,
    "has_discussions": true,
-   "has_wiki": false,
-   "homepage": "https://mjmirza.github.io/app-store-compliance/",
-   "url": "https://github.com/mjmirza/app-store-compliance",
+   "has_wiki": true,
+   "homepage": "https://gd.xychr.com/",
+   "url": "https://github.com/XiaoYouChR/Ghost-Downloader-3",
    "default_branch": "main",
-   "readme": "<div align=\"center\">\n\n<img src=\"assets/apple.png\" alt=\"Apple\" height=\"64\" />&nbsp;&nbsp;&nbsp;<img src=\"assets/android.png\" alt=\"Android\" height=\"64\" />\n\n# App Store Compliance Playbook\n\nCatch App Store and Google Play rejection causes before the reviewer does. A reference and a pre-submission guard for iOS and Android apps that is plain about what a scan can prove and what still needs a person. It does not guarantee approval.\n\nRead it as a website at [mjmirza.github.io/app-store-compliance](https://mjmirza.github.io/app-store-compliance/).\n\n[![Apple App Store](https://img.shields.io/badge/Apple_App_Store-000000?logo=apple&logoColor=white)](https://developer.apple.com/app-store/review/guidelines/)\n[![Google Play](https://img.shields.io/badge/Google_Play-414141?logo=googleplay&logoColor=white)](https://play.google/developer-content-policy/)\n[![Claude Code](https://img.shields.io/badge/Claude_Code-ready-000000?logo=anthropic&logoColor=white)](#how-you-actually-use-this)\n[![OpenRoots ORA 2.3](https://openroots.org/badge/ora.svg)](https://openroots.org/licenses/ora/2.3)\n[![CI](https://img.shields.io/github/actions/workflow/status/mjmirza/app-store-compliance/ci.yml?branch=main&label=CI)](https://github.com/mjmirza/app-store-compliance/actions)\n[![PRs welcome](https://img.shields.io/badge/PRs-welcome-2ea44f)](.github/CONTRIBUTING.md)\n\n[![Stars](https://img.shields.io/github/stars/mjmirza/app-store-compliance?style=social)](https://github.com/mjmirza/app-store-compliance/stargazers)\n[![Forks](https://img.shields.io/github/forks/mjmirza/app-store-compliance?style=social)](https://github.com/mjmirza/app-store-compliance/fork)\n[![Follow mjmirza](https://img.shields.io/github/followers/mjmirza?label=Follow&style=social)](https://github.com/mjmirza)\n\n**If this saves you even one rejection, leave a star, fork it, and follow along. That is the whole ask.**\n\n[Star this repo](https://github.com/mjmirza/app-store-compliance) &nbsp;|&nbsp; [Fork it](https://github.com/mjmirza/app-store-compliance/fork) &nbsp;|&nbsp; [Follow on GitHub](https://github.com/mjmirza) &nbsp;|&nbsp; [Follow on X](https://twitter.com/MirzaJhanzaib) &nbsp;|&nbsp; [next8n.com](https://next8n.com)\n\n</div>\n\n## Start here\n\nPick one row. The time shown is for that first step.\n\n| You are | Do this first | Time |\n|---|---|---|\n| About to submit, and you can open a terminal | Run the two commands below | 2 minutes |\n| Already rejected | Open [the appeal playbook](docs/MISTAKE-PATTERNS.md#the-appeal-playbook) | 10 minutes |\n| Not a developer | Open [the checklist](docs/PRE-SUBMISSION-CHECKLIST.md) and do its first two checks | 5 minutes |\n| Using an AI coding tool (Claude Code, Codex, Gemini CLI, GitHub Copilot, Cursor, Grok, Qwen, Kimi and more), and want this on every submit | Go to [the install](#install-it-into-your-ai-coding-tool) | 1 minute |\n\nThe two commands. Needs git and bash. The first downloads this playbook. The second scans your app. Nothing is installed and nothing in your app is changed.\n\n```\ngit clone https://github.com/mjmirza/app-store-compliance ~/repositories/app-store-compliance\nbash ~/repositories/app-store-compliance/agent-os/hooks/app-store-compliance-guard.sh \"/path/to/your/app\"\n```\n\nReplace only `/path/to/your/app`, with the folder that holds your Xcode project or your Android app. Keep the quotes, they keep a folder name with a space in it whole. To get the path without typing it, drag the folder from Finder or your file manager into the terminal window. A small project scans in about a second, a large one can take up to a minute, and the guard prints the time it took. Findings print first, critical ones on top, each with the file and line that triggered it when there is one. The last lines tell you where you stand.\n\n| Verdict line starts with | It means | Do next |\n|---|---|---|\n| `BLOCKED.` | A critical rejection risk was found | Fix each `[CRITICAL]` line using the `fix.` line under it, then run the same command again |\n| `CLEAR.` | No critical ri",
-   "gained": 562,
+   "readme": "<h4 align=\"right\">\n  <a href=\"README_zh.md\">简体中文</a> | English\n</h4>\n\n<table>\n  <thead>\n    <tr>\n      <th colspan=\"2\" align=\"left\">Sponsor</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td align=\"center\" valign=\"middle\" width=\"346\">\n        <a href=\"https://www.swiftproxy.net/?ref=GhostDownloader\"><img width=\"320\" alt=\"Swiftproxy AD\" src=\".github/assets/ad/Swiftproxy.webp\" /></a>\n      </td>\n      <td valign=\"middle\">\n        <a href=\"https://www.swiftproxy.net/?ref=GhostDownloader\">Swiftproxy</a> – Premium Global Residential Proxy Network<br />\n        Swiftproxy provides 90M+ real residential IPs across 220+ locations worldwide, helping users access global content and manage location-specific network connections. With rotating and static residential proxies, flexible geo-targeting, and HTTP(S)/SOCKS5 support, Swiftproxy is ideal for cross-region downloads, network testing, and browser automation. Free testing available, with 10% off using code <code>PROXY90</code>.\n      </td>\n    </tr>\n    <tr>\n      <td align=\"center\" valign=\"middle\" width=\"346\">\n        <a href=\"https://ipstar.io/?referrer=ghost\"><img width=\"320\" alt=\"IPStar AD\" src=\".github/assets/ad/IPStar.webp\" /></a>\n      </td>\n      <td valign=\"middle\">\n        <a href=\"https://ipstar.io/?referrer=ghost\">IPStar</a> is a professional provider of global residential IP proxy solutions. We own legally sourced, clean residential IP resources across more than 190 countries and regions worldwide, with a total pool of over 90 million IPs that is continuously updated. Our proxy IPs are 100% genuine residential IPs, delivering stable and reliable service with a request success rate above 99.9%, and supporting ultra-high concurrency. We are compatible with standard SOCKS5 and HTTP(S) protocols. With affordable pricing and traffic that never expires after purchase, IPStar is the ideal choice for big data scraping, large-scale cross-region downloading, e-commerce operations, and other automation tasks. Recharge now to enjoy an extra bonus of up to 8%.\n      </td>\n    </tr>\n  </tbody>\n</table>\n\n<!-- PROJECT LOGO -->\n<div align=\"center\">\n\n![Banner](.github/assets/banner.webp)\n\n<a href=\"https://trendshift.io/repositories/13847?utm_source=trendshift-badge&amp;utm_medium=badge&amp;utm_campaign=badge-trendshift-13847\" target=\"_blank\" rel=\"noopener noreferrer\"><img src=\"https://trendshift.io/api/badge/trendshift/repositories/13847/daily?language=Python\" alt=\"XiaoYouChR%2FGhost-Downloader-3 | Trendshift\" width=\"250\" height=\"55\"/></a>\n<a href=\"https://trendshift.io/repositories/13847?utm_source=repository-badge&amp;utm_medium=badge&amp;utm_campaign=badge-repository-13847\" target=\"_blank\" rel=\"noopener noreferrer\"><img src=\"https://trendshift.io/api/badge/repositories/13847\" alt=\"XiaoYouChR%2FGhost-Downloader-3 | Trendshift\" width=\"250\" height=\"55\"/></a>\n\n## The only downloader you need\n\n[![Forks][forks-shield]][forks-url]\n[![Stargazers][stars-shield]][stars-url]\n[![Issues][issues-shield]][issues-url]\n[![Release][release-shield]][release-url]\n[![Downloads][downloads-shield]][release-url]\n[![AtomGit Downloads][atomgit-downloads-shield]][atomgit-downloads-url]\n[![QQGroup](https://img.shields.io/badge/QQ_Group-756042420-blue.svg?color=blue&style=for-the-badge)](https://qm.qq.com/q/gPk6FR1Hby)\n[![Discord](https://img.shields.io/discord/1527965717973176391?style=for-the-badge&logo=discord&logoColor=white&label=Discord&color=%235865F2)](https://discord.gg/fKfhkPumEM)\n\n##### [Documentation](https://gd.xychr.com/en/docs/) · [Watch Video](https://www.youtube.com/watch?v=QQRa8nDmNbc) · [Report Bug](https://github.com/XiaoYouChR/Ghost-Downloader-3/issues/new?template=bug_report.yml) · [Request Feature](https://github.com/XiaoYouChR/Ghost-Downloader-3/issues/new?template=feature_request.yml)\n\n</div>\n\n<!-- FEATURES -->\n## Features\n\n* **Fast where it matters.** Every downloader is fast on a good connection. The real test is a bad one. Smart chunking without file merging. Auto-detects bandwidth. R",
+   "gained": 836,
    "since": "daily",
    "source": "trending",
-   "score": 69,
+   "score": 64,
    "detail": {
-    "lic": 8,
+    "lic": 5,
     "easy": 20,
-    "zh": 0,
+    "zh": 8,
     "demand": 20,
-    "deliver": 10,
-    "fresh": 3,
+    "deliver": 2,
+    "fresh": 1,
     "adj": 8
    },
-   "grade": "A",
-   "grade_word": "改一改能卖",
-   "form": "Agent技能",
-   "velocity": 562.0,
+   "grade": "B",
+   "grade_word": "值得研究",
+   "form": "web应用",
+   "velocity": 836.0,
    "_gaps": [
     [
      "没有中文上手文档",
@@ -422,88 +508,88 @@
     "没有中文上手文档",
     "没有一键部署"
    ],
-   "risk": "许可证不明，动手前去 README 确认一遍",
+   "risk": "GPL：改了必须开源，卖闭源产品有法律风险",
    "suspect": "",
    "pitch": {
-    "gap_key": "没有打包成技能",
-    "change": "整理成可直接安装的技能包，附使用截图",
-    "buyer": "要整理归档资料的人",
-    "buyer_tag": "文档",
-    "deliver": "做成付费专栏的一章，当引流钩子",
-    "deliver_alt": "接企业内训，教团队把这套装上",
-    "hours": 1,
+    "gap_key": "没有中文界面",
+    "change": "把界面文案和按钮全翻成中文，再截一套中文版演示图当商品图",
+    "buyer": "接单的设计师和电商美工",
+    "buyer_tag": "设计",
+    "deliver": "打包部署到客户自己的服务器/域名，收一次部署费",
+    "deliver_alt": "做成在线服务，按月收使用费",
+    "hours": 3,
     "gap_key_word": "缺中文上手文档"
    },
-   "plain": "Avoid common App Store and Google Play rejections. Open playbook and pre-submission guard with 125 documented rejection patterns and fixes, privacy manifest and Data safety checks, 117 tracked deadlines (EU AI Act, DSA, COPPA, age laws), and a skill for AI coding agents.",
+   "plain": "The only downloader you need. 下载器的集大成者。",
    "analy": {
-    "en": "Avoid common App Store and Google Play rejections. Open playbook and pre-submission guard with 125 documented rejection patterns and fixes, privacy manifest and Data safety checks, 117 tracked deadlines (EU AI Act, DSA, COPPA, age laws), and a skill for AI coding agents.",
-    "zh": "避免常见的 App Store 和 Google Play 拒绝情况。开放式手册和提交前防护工具，包含 125 个有案可查的被拒模式和解决方案、隐私清单和数据安全检查、117 个受跟踪的截止日期（欧盟《人工智能法案》、DSA、COPPA、年龄相关法律）以及一项适用于人工智能编码代理的技能。",
-    "plain": "说白了，这是一份写给 AI 的操作手册，装进 AI 工具后它就知道按你的规矩干活。它干的事是：避免常见的 App Store 和 Google Play 拒绝情况。开放式手册和提交前防护工具，包含 125 个有案可查的被拒模式和解决方案、隐私清单和数据安全检查、117 个受跟踪的截止日期（欧盟《人工智能法案》、DSA、COPPA、年龄相关法律）以及一项适用于人工智能编码代理的技能。",
+    "en": "The only downloader you need. 下载器的集大成者。",
+    "zh": "您唯一需要的下载器。 下载器的集大成者。",
+    "plain": "说白了，这是一个打开网页就能用的在线小工具，不用装任何东西。它干的事是：您唯一需要的下载器。 下载器的集大成者。",
     "usage": [
-     "把散落的资料整理成结构化文档",
-     "装进常用的 AI 工具，让它按行规干活，不用每次重写要求",
-     "改造成中文版，卖给不会写提示词的人"
+     "接单时用它出初稿，客户改的是稿子不是空白页",
+     "直接打开当工具用，省掉装软件那一步",
+     "部署到自己的域名，做成一个能对外收钱的服务"
     ],
     "how": [
-     "把技能文件放进 AI 工具的技能目录",
-     "在对话里说一句触发词",
-     "按它给的步骤走，不满意就补一句要求"
+     "打开作者给的网址（或自己部署一份）",
+     "按界面提示把内容填进去",
+     "选样式/导出，拿到成品"
     ],
-    "gap": "整理成可直接安装的技能包，附使用截图",
-    "buyer": "要整理归档资料的人",
-    "why": "要整理归档资料的人不是不会做，是懒得为这一步花两三天试错。你把「整理成可直接安装的技能包，附使用截图」替他们做完，他们花的钱远少于自己折腾的时间。",
-    "self": "装进自己常用的 AI 工具里，写东西、做分析时不用每次从头描述要求，输出的东西还稳定。",
-    "pack": "整理成可直接安装的技能包 + 使用截图，配一节教程一起卖；也可以做成付费专栏的一章当引流钩子。落地上就按这条走：做成付费专栏的一章，当引流钩子。",
+    "gap": "把界面文案和按钮全翻成中文，再截一套中文版演示图当商品图",
+    "buyer": "接单的设计师和电商美工",
+    "why": "接单的设计师和电商美工不是不会做，是懒得为这一步花两三天试错。你把「把界面文案和按钮全翻成中文，再截一套中文版演示图当商品图」替他们做完，他们花的钱远少于自己折腾的时间。",
+    "self": "自己干活时当外挂：重复的排版、出图、整理交给它，一次省十几分钟。用熟之后你会清楚自己哪一步最该自动化——这个认知比工具本身值钱。",
+    "pack": "汉化 + 一套中文模板 + 部署教程，打包成 zip 发网盘；主图用「改前 vs 改后」对比，标题写用户能搜的词。落地上就按这条走：打包部署到客户自己的服务器/域名，收一次部署费。",
     "_auto": true,
     "_src": "mt"
    },
    "_bucket": "",
    "seen_times": 1,
-   "seen_first": "2026-11-20",
-   "seen_last": "2026-11-20"
+   "seen_first": "2026-11-21",
+   "seen_last": "2026-11-21"
   },
   {
-   "full_name": "GoogleChrome/modern-web-guidance-src",
-   "owner": "GoogleChrome",
+   "full_name": "storytold/craft-anything",
+   "owner": "storytold",
    "owner_type": "Organization",
-   "name": "modern-web-guidance-src",
-   "desc": "Keep your coding agent up to date with the latest web best practices",
-   "lang": "TypeScript",
-   "stars": 11340,
-   "forks": 844,
-   "watchers": 61,
-   "open_issues": 403,
+   "name": "craft-anything",
+   "desc": "Craft Anything: understand how any software works, and craft your own.",
+   "lang": "Rust",
+   "stars": 44883,
+   "forks": 8866,
+   "watchers": 197,
+   "open_issues": 476,
    "license": "Apache-2.0",
    "license_name": "Apache License 2.0",
    "topics": [],
-   "created_at": "2026-01-27T20:22:24Z",
-   "pushed_at": "2026-11-27T08:09:35Z",
-   "updated_at": "2026-11-27T09:26:11Z",
-   "size_kb": 177939,
+   "created_at": "2026-10-31T14:50:00Z",
+   "pushed_at": "2026-11-28T06:35:33Z",
+   "updated_at": "2026-11-28T08:42:24Z",
+   "size_kb": 24608,
    "archived": false,
    "has_discussions": false,
-   "has_wiki": false,
-   "homepage": "https://goo.gle/modern-web-guidance",
-   "url": "https://github.com/GoogleChrome/modern-web-guidance-src",
+   "has_wiki": true,
+   "homepage": "",
+   "url": "https://github.com/storytold/craft-anything",
    "default_branch": "main",
-   "readme": "# <img src=\"./.github/img/modern-web-guidance.svg\" alt=\"Modern Web Guidance\" width=\"30\" height=\"30\"> Modern Web Guidance (Source)\n\nThis repo is the source repository for [GoogleChrome/modern-web-guidance](https://github.com/GoogleChrome/modern-web-guidance) and includes the code and documentation for authoring, calibrating, and evaluating its contents.\n\n[**Modern Web Guidance**](https://developer.chrome.com/docs/modern-web-guidance) is a set of skills that embed web platform expertise, best practices, and browser compatibility data directly into your coding agents. It helps to steer your coding agents away from legacy patterns, and instead toward solutions that harness the power and capabilities of the modern web platform.\n\nSee [CONTRIBUTING.md](./CONTRIBUTING.md) and [GOVERNANCE.md](./GOVERNANCE.md) for how we work on the project and orientation of the codebase.\n\n---\n\n*Stewarded by the Google Chrome, Microsoft Edge, Mozilla Firefox, and MDN teams, alongside the web development community.*\n\n[Documentation](https://developer.chrome.com/docs/modern-web-guidance) · [Eval Dashboard](https://googlechrome.github.io/modern-web-guidance-src/) · [Source Code](https://github.com/GoogleChrome/modern-web-guidance-src) · [Report an Issue](https://github.com/GoogleChrome/modern-web-guidance-src/issues)\n\n## <img src=\"https://github.com/GoogleChrome/modern-web-guidance/raw/main/.github/img/terminal.svg\" width=\"24\" height=\"24\" style=\"vertical-align: middle; margin-right: 4px;\"> Quickstart\n\n```shell\nnpx modern-web-guidance@latest install\n```\n\nThis command runs an interactive wizard to install Modern Web Guidance. See [Alternative Installation Methods](#-alternative-installation-methods) below. Requires Node.js 22 or later.\n\n#### Try it out (without installing)\n\n```shell\n# Search for relevant guides\nnpx modern-web-guidance@latest search \"animate a dialog modal backdrop\"\n\n# Retrieve a guide by ID\nnpx modern-web-guidance@latest retrieve \"animate-to-from-top-layer\"\n\n# Scan a codebase for legacy patterns to modernize\nnpx modern-web-guidance@latest legacy-scan .\n```\n\n## <img src=\"https://github.com/GoogleChrome/modern-web-guidance/raw/main/.github/img/lightbulb.svg\" width=\"24\" height=\"24\" style=\"vertical-align: middle; margin-right: 4px;\"> Why?\n\nCoding agents often default to older patterns because LLM training data contains vast amounts of legacy code. This often leads them to generate bloated JavaScript for tasks that now have native, high-performance web platform solutions.\n\nEven if a model knows an API exists, it often lacks the density of real-world, modern implementation patterns required for production-ready code.\n\n**Modern Web Guidance bridges this gap.** Our skill's CLI returns targeted, expert-curated guidelines directly into your agent's context window, focusing on:\n* **Modern Browser APIs**: Helping models correctly structure APIs they frequently misuse.\n* **Performance & Accessibility**: Preferring platform-level APIs that can be optimized by the browser and include built-in accessibility affordances.\n* **Responsible Fallbacks**: Guiding models to use sensible, lightweight fallbacks instead of heavy polyfills or legacy libraries.\n\n## <img src=\"https://github.com/GoogleChrome/modern-web-guidance/raw/main/.github/img/package.svg\" width=\"24\" height=\"24\" style=\"vertical-align: middle; margin-right: 4px;\"> What's Included?\n\nWe cover the past several years of the web platform's new features, all the way up to the cutting edge. The guides are **designed to be token-efficient**; we run evals enabling us to prune lowest-common-denominator content that models already know.\n\n### Core Disciplines\n\n<table width=\"100%\" style=\"border-collapse: collapse; border: none;\">\n  <tr style=\"border: none;\">\n    <td width=\"33%\" valign=\"top\" style=\"border: none; padding: 6px;\">\n      <h4>🎨 User Experience</h4>\n      <p style=\"font-size: 0.9em; line-height: 1.4;\">Smooth visual states (View Transitions, entry/exit animations, parallax scroll, CSS <code>scrollbar-col",
-   "gained": 2209,
-   "since": "weekly",
-   "source": "trending",
-   "score": 68,
+   "readme": "<p align=\"center\">\n  <a href=\"https://getartcraft.com/\">\n    <picture>\n      <source media=\"(prefers-color-scheme: dark)\" srcset=\"docs/brand/artcraft-logo-white.svg\">\n      <img alt=\"ArtCraft\" src=\"docs/brand/artcraft-logo.svg\" width=\"200\">\n    </picture>\n  </a>\n</p>\n\n<p align=\"center\">\n  <img src=\"assets/app-icon/hicolor/256x256/apps/ai.storyteller.craft-anything.png\" width=\"128\" height=\"128\" alt=\"Craft Anything icon: an engraved raven on a blue tile\">\n</p>\n\n<h1 align=\"center\">Craft Anything</h1>\n\n<p align=\"center\">\n  <b>English</b> · <a href=\"README.ja.md\">日本語</a> · <a href=\"README.zh.md\">简体中文</a> · <a href=\"README.zh-hant.md\">繁體中文</a> · <a href=\"README.ko.md\">한국어</a> · <a href=\"README.es.md\">Español</a> · <a href=\"README.fr.md\">Français</a> · <a href=\"README.it.md\">Italiano</a> · <a href=\"README.vi.md\">Tiếng Việt</a> · <a href=\"README.pt.md\">Português</a> · <a href=\"README.th.md\">ไทย</a> · <a href=\"README.tr.md\">Türkçe</a>\n</p>\n\n<p align=\"center\">\n  <b>See how any website, app or game works, then have AI build your own version; an open-source, clean-room engine in pure Rust.</b><br>\n  Point it at a target, say what you want, and it studies the original with real inspection tools,<br>\n  has a coding agent build a new project, checks the result against the original and refines it.\n</p>\n\n<p align=\"center\">\n  <img alt=\"100% Rust\" src=\"https://img.shields.io/badge/100%25-Rust-b7410e?style=flat-square&logo=rust\">\n  <img alt=\"macOS · Windows · Linux · FreeBSD · Web\" src=\"https://img.shields.io/badge/macOS%20%C2%B7%20Windows%20%C2%B7%20Linux%20%C2%B7%20FreeBSD%20%C2%B7%20Web-native-2d81ff?style=flat-square\">\n  <img alt=\"License: MIT OR Apache-2.0\" src=\"https://img.shields.io/badge/license-MIT%20%2F%20Apache--2.0-3a3a3a?style=flat-square\">\n  <img alt=\"Status: early alpha\" src=\"https://img.shields.io/badge/status-early%20alpha-d69e2e?style=flat-square\">\n  <br>\n  <a href=\"https://sonarcloud.io/project/overview?id=storytold_craft-anything\"><img alt=\"Scanned by SonarCloud\" src=\"https://img.shields.io/badge/Scanned_by-SonarCloud-4b9fd5?style=flat-square&logo=sonarqubecloud&logoColor=white\"></a>\n  <a href=\"https://coderabbit.ai\"><img alt=\"Reviewed by CodeRabbit\" src=\"https://img.shields.io/coderabbit/prs/github/storytold/craft-anything?style=flat-square&label=Reviewed%20by%20CodeRabbit&logo=coderabbit\"></a>\n</p>\n\n<p align=\"center\">\n  <a href=\"https://discord.gg/artcraft\"><img alt=\"Join the ArtCraft community on Discord\" src=\"https://img.shields.io/badge/Join%20us%20on%20Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white\" height=\"40\"></a>\n</p>\n\n<p align=\"center\">\n  <a href=\"#downloads\"><b>Download Craft Anything</b></a> ·\n  <a href=\"https://getartcraft.com/\">ArtCraft</a> ·\n  <a href=\"https://getartcraft.com/apps\">All Crafting Apps</a>\n</p>\n\n<br>\n\n<p align=\"center\">\n  <img src=\"docs/images/project-website.png\" alt=\"A website project in Craft Anything: the check lists what doesn't match yet and how alike each page is, the builder says its version is ready, an approval card asks before running a command, and the plan shows two of four steps done\" width=\"100%\">\n  <br>\n  <sub>A website project: each check says how alike the build is, you approve anything outside the rules, and the plan shows what's left.</sub>\n</p>\n\n> [!NOTE]\n> **ArtCraft is a community of artists from all walks of life.** Painters, photographers,\n> filmmakers, illustrators, designers, animators, hobbyists, and people who picked up a pencil\n> last week. If you make things, you're one of us. **[Come say hi on Discord](https://discord.gg/artcraft).**\n\n<p align=\"center\">\n  <a href=\"#how-it-works\">How it works</a> ·\n  <a href=\"#two-ways-to-use-it\">Two ways to use it</a> ·\n  <a href=\"#ai\">AI</a> ·\n  <a href=\"#built-for-agents\">Agents</a> ·\n  <a href=\"#under-the-hood\">Under the hood</a> ·\n  <a href=\"#get-started\">Get started</a> ·\n  <a href=\"#status\">Status</a> ·\n  <a href=\"#downloads\">Downloads</a> ·\n  <a href=\"https://discord.gg/artcraft\">Discord</a>\n</p>\n\n<br>\n\n<table",
+   "gained": 543,
+   "since": "since_last",
+   "source": "search_new",
+   "score": 64,
    "detail": {
     "lic": 25,
-    "easy": 20,
+    "easy": 12,
     "zh": 0,
-    "demand": 20,
-    "deliver": 2,
-    "fresh": 1,
-    "adj": 0
+    "demand": 18,
+    "deliver": 7,
+    "fresh": 10,
+    "adj": -8
    },
-   "grade": "A",
-   "grade_word": "改一改能卖",
+   "grade": "B",
+   "grade_word": "值得研究",
    "form": "引擎库",
-   "velocity": 315.57142857142856,
+   "velocity": 1662.3333333333333,
    "_gaps": [
     [
      "没有中文上手文档",
@@ -511,23 +597,23 @@
      "把 README 翻成中文，配一张三步跑通图"
     ],
     [
-     "没有中文界面",
-     "没有中文界面",
-     "把界面文案和按钮全翻成中文，截一套中文版演示图"
-    ],
-    [
      "没有一键部署",
      "没有一键部署",
      "补一个 Dockerfile + compose，别人一条命令跑起来"
+    ],
+    [
+     "没有在线演示",
+     "没有在线演示",
+     "部署一个公开 demo 站，让人先玩再买单"
     ]
    ],
    "gaps_short": [
     "没有中文上手文档",
-    "没有中文界面",
-    "没有一键部署"
+    "没有一键部署",
+    "没有在线演示"
    ],
-   "risk": "",
-   "suspect": "",
+   "risk": "大厂项目，路线不由你定，只能做外围（部署/中文化/模板）",
+   "suspect": "星速可疑：27 天涨到 44,883 星（日均 1,662），先观察一周看有没有真实用户再动手",
    "pitch": {
     "gap_key": "只有代码没有界面",
     "change": "包一层网页界面，让不会写代码的人点两下就能用",
@@ -535,14 +621,14 @@
     "buyer_tag": "通用",
     "deliver": "接单代跑：客户给需求，你出结果",
     "deliver_alt": "做成中文教程 + 成品包，走知识付费",
-    "hours": 7,
+    "hours": 8,
     "gap_key_word": "缺中文上手文档"
    },
-   "plain": "Keep your coding agent up to date with the latest web best practices",
+   "plain": "Craft Anything: understand how any software works, and craft your own.",
    "analy": {
-    "en": "Keep your coding agent up to date with the latest web best practices",
-    "zh": "让您的编码代理始终掌握最新的网络最佳实践",
-    "plain": "说白了，这是一堆已经写好的能力，但没有界面，得有人包一层壳才能给普通人用。它干的事是：让您的编码代理始终掌握最新的网络最佳实践",
+    "en": "Craft Anything: understand how any software works, and craft your own.",
+    "zh": "打造任何东西：了解任何软件的运作方式，并打造您自己的软件。",
+    "plain": "说白了，这是一堆已经写好的能力，但没有界面，得有人包一层壳才能给普通人用。它干的事是：打造任何东西：了解任何软件的运作方式，并打造您自己的软件。",
     "usage": [
      "接到同类需求时拿它当底子，省掉搭骨架的两三天",
      "包一层网页界面，做成给非技术人用的成品",
@@ -564,175 +650,57 @@
    "_bucket": "",
    "seen_times": 2,
    "seen_first": "2026-11-13",
-   "seen_last": "2026-11-20"
+   "seen_last": "2026-11-21"
   },
   {
-   "full_name": "deepseek-ai/dsh-superagent-prototype",
-   "owner": "deepseek-ai",
+   "full_name": "alibaba/open-code-review",
+   "owner": "alibaba",
    "owner_type": "Organization",
-   "name": "dsh-superagent-prototype",
-   "desc": "Towards a More Autonomous Agent System",
-   "lang": "TypeScript",
-   "stars": 24717,
-   "forks": 3109,
-   "watchers": 192,
-   "open_issues": 0,
-   "license": "MIT",
-   "license_name": "MIT License",
-   "topics": [],
-   "created_at": "2026-10-31T09:32:46Z",
-   "pushed_at": "2026-11-03T09:29:14Z",
-   "updated_at": "2026-11-27T09:20:49Z",
-   "size_kb": 37,
+   "name": "open-code-review",
+   "desc": "Secure, fast, efficient, battle-tested at Alibaba's scale. Hybrid architecture code review tool: deterministic pipelines + LLM Agent, precise line-level comments, built-in multi-language ruleset (NPE, thread-safety, XSS, SQL injection), OpenAI & Anthropic compatible.",
+   "lang": "Go",
+   "stars": 56979,
+   "forks": 4710,
+   "watchers": 162,
+   "open_issues": 363,
+   "license": "Apache-2.0",
+   "license_name": "Apache License 2.0",
+   "topics": [
+    "agent",
+    "agent-skills",
+    "code-review",
+    "code-review-assistant",
+    "harness",
+    "repository-level-context"
+   ],
+   "created_at": "2026-05-18T02:16:36Z",
+   "pushed_at": "2026-11-26T02:19:51Z",
+   "updated_at": "2026-11-28T08:36:02Z",
+   "size_kb": 58489,
    "archived": false,
-   "has_discussions": false,
+   "has_discussions": true,
    "has_wiki": false,
-   "homepage": "",
-   "url": "https://github.com/deepseek-ai/dsh-superagent-prototype",
+   "homepage": "https://open-codereview.ai",
+   "url": "https://github.com/alibaba/open-code-review",
    "default_branch": "main",
-   "readme": "# dsh-superagent\n\n> **Research prototype for reference only, not an official DeepSeek product.** This code grew out of our team's day-to-day development work, with much of the engineering done by coding agents. Treat it as research code, not production-ready software. It may still contain bugs, and its coding style and engineering practices may be inconsistent. Review and adapt it before using it in your own environment.\n>\n> We have adapted it for publication, so it is not identical to our internal version or the implementation described in *Exploring Super-agent Design: Towards a More Autonomous Agent System*. Some designs discussed in the article are directions for future development and are not implemented in this prototype.\n\ndsh-superagent is a proactive coding agent for one GitHub repository, packaged as a bundle for [DeepSeek Harness](https://www.deepseek.com/en/harness/). It listens to GitHub and, optionally, Feishu. When someone allowed asks the agent for work, it opens a work item, works on it in its own agent session and directory, and answers in the original conversation, for example with a pull request. A web panel shows what needs a person.\n\nIt is also a way of working with an agent: **take as little human attention as possible, and give as much value as possible.** An agent that can act for a whole team can also waste a whole team's attention, so it acts only when asked or when a rule the team wrote allows it, and speaks only when someone must act or can use a result. [docs/000-philosophy.md](docs/000-philosophy.md) explains the principle and what it asks of the operator.\n\n## Setup\n\nSetup has many steps, so an agent does it with you. Ask your coding agent:\n\n> Read SETUP.md in this repository and set up dsh-superagent with me.\n\nIt asks one short question at a time, shows the full plan once, and then installs and configures everything. [SETUP.md](SETUP.md) is what it follows.\n\n## Documentation\n\nRead the numbered documents in order; each builds only on the ones before it.\n\n- [000 Philosophy](docs/000-philosophy.md)\n- [001 Domain model](docs/001-domain.md)\n- [002 Authorization](docs/002-authorization.md)\n- [003 Execution](docs/003-execution.md)\n- [004 Prompts](docs/004-prompts.md)\n- [005 Panel](docs/005-panel.md)\n- [006 Deployment](docs/006-deployment.md): manual setup, configuration, upgrades and troubleshooting\n- [007 Architecture](docs/007-architecture.md)\n- [008 Cookbook](docs/008-cookbook.md): adding a Source\n\n## Development\n\n`pnpm check` runs the typecheck, the tests and the build.\n\n## License\n\n[MIT](LICENSE)\n",
-   "gained": 0,
-   "since": "created<30d",
-   "source": "search_new",
-   "score": 67,
+   "readme": "<div align=\"center\">\n  <a href=\"https://open-codereview.ai\">\n    <img src=\"imgs/logo-core.svg\" alt=\"OpenCodeReview logo\" width=\"180\" />\n  </a>\n  <h1>OpenCodeReview</h1>\n</div>\n\n<p align=\"center\">\n  <a href=\"https://trendshift.io/repositories/41087?utm_source=repository-badge&amp;utm_medium=badge&amp;utm_campaign=badge-repository-41087\" target=\"_blank\" rel=\"noopener noreferrer\">\n    <img src=\"https://trendshift.io/api/badge/repositories/41087\" alt=\"alibaba%2Fopen-code-review | Trendshift\" style=\"width: 280px; height: 60px;\" width=\"280\" height=\"60\" />\n  </a>\n</p>\n<p align=\"center\">\n  <a href=\"https://trendshift.io/repositories/41087\" target=\"_blank\">\n    <img src=\"https://trendshift.io/api/badge/trendshift/repositories/41087/weekly\" alt=\"alibaba%2Fopen-code-review | Trendshift\" style=\"width: 280px; height: 60px;\" width=\"280\" height=\"60\" />\n  </a>\n  <a href=\"https://trendshift.io/repositories/41087\" target=\"_blank\">\n    <img src=\"https://trendshift.io/api/badge/trendshift/repositories/41087/monthly?language=Go\" alt=\"alibaba%2Fopen-code-review | Trendshift\" style=\"width: 280px; height: 60px;\" width=\"280\" height=\"60\" />\n  </a>\n</p>\n<p align=\"center\">\n  <a href=\"https://www.npmjs.com/package/@alibaba-group/open-code-review\"><img alt=\"npm\" src=\"https://img.shields.io/npm/v/@alibaba-group/open-code-review?style=flat-square\" /></a>\n  <a href=\"https://github.com/alibaba/open-code-review/actions/workflows/release.yml\"><img alt=\"Build status\" src=\"https://img.shields.io/github/actions/workflow/status/alibaba/open-code-review/release.yml?style=flat-square\" /></a>\n  <a href=\"https://github.com/alibaba/open-code-review/blob/main/LICENSE\"><img alt=\"License\" src=\"https://img.shields.io/github/license/alibaba/open-code-review?style=flat-square\" /></a>\n  <a href=\"https://deepwiki.com/alibaba/open-code-review\"><img alt=\"Ask DeepWiki\" src=\"https://img.shields.io/badge/Ask-DeepWiki-blue?style=flat-square\" /></a>\n  <a href=\"https://www.bestpractices.dev/projects/13328\"><img alt=\"OpenSSF Best Practices\" src=\"https://img.shields.io/badge/OpenSSF-Gold-D4AF37?style=flat-square\" /></a>\n</p>\n<p align=\"center\">\n  <a href=\"#supported-platforms\"><img alt=\"Windows\" src=\"https://img.shields.io/badge/Windows-supported-blue.svg\" /></a>\n  <a href=\"#supported-platforms\"><img alt=\"macOS\" src=\"https://img.shields.io/badge/macOS-supported-blue.svg\" /></a>\n  <a href=\"#supported-platforms\"><img alt=\"Linux\" src=\"https://img.shields.io/badge/Linux-supported-blue.svg\" /></a>\n  <a href=\"#supported-agents\"><img alt=\"Claude Code\" src=\"https://img.shields.io/badge/Claude_Code-supported-blueviolet.svg\" /></a>\n  <a href=\"#supported-agents\"><img alt=\"Codex\" src=\"https://img.shields.io/badge/Codex-supported-blueviolet.svg\" /></a>\n  <a href=\"#supported-agents\"><img alt=\"Cursor\" src=\"https://img.shields.io/badge/Cursor-supported-blueviolet.svg\" /></a>\n  <a href=\"#supported-agents\"><img alt=\"Kimi Code\" src=\"https://img.shields.io/badge/Kimi_Code-supported-blueviolet.svg\" /></a>\n</p>\n<p align=\"center\">\n  English | <a href=\"docs/i18n/README.zh-CN.md\">简体中文</a> | <a href=\"docs/i18n/README.ja-JP.md\">日本語</a> | <a href=\"docs/i18n/README.ko-KR.md\">한국어</a> | <a href=\"docs/i18n/README.ru-RU.md\">Русский</a> | <a href=\"docs/i18n/README.tr-TR.md\">Türkçe</a> | <a href=\"docs/i18n/README.fr-FR.md\">Français</a> | <a href=\"docs/i18n/README.vi-VN.md\">Tiếng Việt</a>\n</p>\n\n---\n\n## What is Open Code Review?\n\nOpen Code Review is an AI-powered code review CLI tool. It originated as Alibaba Group's internal official AI code review assistant — over the past two years, it has served tens of thousands of developers and identified millions of code defects. After thorough validation at massive scale, we incubated it into an open source project for the community. Simply configure a model endpoint to get started.\n\nIt reads Git diffs, sends changed files to a configurable LLM via an agent with tool-use capabilities, and generates structured review comments with line-level precision. The agent can read full file con",
+   "gained": 2335,
+   "since": "weekly",
+   "source": "trending",
+   "score": 62,
    "detail": {
     "lic": 25,
     "easy": 20,
     "zh": 0,
-    "demand": 10,
-    "deliver": 10,
-    "fresh": 10,
+    "demand": 20,
+    "deliver": 4,
+    "fresh": 1,
     "adj": -8
    },
-   "grade": "A",
-   "grade_word": "改一改能卖",
-   "form": "web应用",
-   "velocity": 950.6538461538462,
-   "_gaps": [
-    [
-     "没有中文上手文档",
-     "没有中文上手文档",
-     "把 README 翻成中文，配一张三步跑通图"
-    ],
-    [
-     "没有一键部署",
-     "没有一键部署",
-     "补一个 Dockerfile + compose，别人一条命令跑起来"
-    ],
-    [
-     "没有在线演示",
-     "没有在线演示",
-     "部署一个公开 demo 站，让人先玩再买单"
-    ]
-   ],
-   "gaps_short": [
-    "没有中文上手文档",
-    "没有一键部署",
-    "没有在线演示"
-   ],
-   "risk": "大厂项目，路线不由你定，只能做外围（部署/中文化/模板）",
-   "suspect": "星速可疑：26 天涨到 24,717 星（日均 950），先观察一周看有没有真实用户再动手",
-   "pitch": {
-    "gap_key": "没有在线演示",
-    "change": "部署一个公开 demo，让人先玩再决定买不买",
-    "buyer": "想有个自己工具但不会写代码的人",
-    "buyer_tag": "通用",
-    "deliver": "做成在线服务，按月收使用费",
-    "deliver_alt": "连部署带教一次，做成「一天陪跑」按次收",
-    "hours": 3,
-    "gap_key_word": "缺在线演示"
-   },
-   "plain": "Towards a More Autonomous Agent System",
-   "analy": {
-    "en": "Towards a More Autonomous Agent System",
-    "zh": "迈向更自主的代理系统",
-    "plain": "说白了，这是一个打开网页就能用的在线小工具，不用装任何东西。它干的事是：迈向更自主的代理系统",
-    "usage": [
-     "直接打开当工具用，省掉装软件那一步",
-     "部署到自己的域名，做成一个能对外收钱的服务",
-     "挂在自己号里当「免费小工具」，用来引流"
-    ],
-    "how": [
-     "打开作者给的网址（或自己部署一份）",
-     "按界面提示把内容填进去",
-     "选样式/导出，拿到成品"
-    ],
-    "gap": "部署一个公开 demo，让人先玩再决定买不买",
-    "buyer": "想有个自己工具但不会写代码的人",
-    "why": "想有个自己工具但不会写代码的人不是不会做，是懒得为这一步花两三天试错。你把「部署一个公开 demo，让人先玩再决定买不买」替他们做完，他们花的钱远少于自己折腾的时间。",
-    "self": "自己干活时当外挂：重复的排版、出图、整理交给它，一次省十几分钟。用熟之后你会清楚自己哪一步最该自动化——这个认知比工具本身值钱。",
-    "pack": "汉化 + 一套中文模板 + 部署教程，打包成 zip 发网盘；主图用「改前 vs 改后」对比，标题写用户能搜的词。落地上就按这条走：做成在线服务，按月收使用费。",
-    "_auto": true,
-    "_src": "mt"
-   },
-   "_bucket": "",
-   "seen_times": 2,
-   "seen_first": "2026-11-13",
-   "seen_last": "2026-11-20"
-  },
-  {
-   "full_name": "obsidianmd/obsidian-skills",
-   "owner": "obsidianmd",
-   "owner_type": "Organization",
-   "name": "obsidian-skills",
-   "desc": "Teach your agent to use Obsidian and open formats including Markdown, Bases, JSON Canvas.",
-   "lang": "Shell",
-   "stars": 54147,
-   "forks": 3852,
-   "watchers": 238,
-   "open_issues": 5,
-   "license": "MIT",
-   "license_name": "MIT License",
-   "topics": [
-    "agents",
-    "agentskills",
-    "bases",
-    "chatgpt",
-    "claude",
-    "claude-code",
-    "claude-skills",
-    "cli",
-    "codex",
-    "defuddle",
-    "grok-bot",
-    "hermes",
-    "jsoncanvas",
-    "knap",
-    "markdown",
-    "md",
-    "obsidian",
-    "openclaw",
-    "opencode",
-    "skills"
-   ],
-   "created_at": "2026-01-02T21:45:11Z",
-   "pushed_at": "2026-11-26T17:50:16Z",
-   "updated_at": "2026-11-27T09:26:09Z",
-   "size_kb": 196,
-   "archived": false,
-   "has_discussions": false,
-   "has_wiki": true,
-   "homepage": "",
-   "url": "https://github.com/obsidianmd/obsidian-skills",
-   "default_branch": "main",
-   "readme": "Agent Skills for use with Obsidian.\n\nThese skills follow the [Agent Skills specification](https://agentskills.io/specification), so they work with any agent that supports skills, including Claude Code, Claude, ChatGPT, Antigravity, Cursor, GitHub Copilot, Grok Bot, Hermes Agent, Kiro, Muse, OpenCode, and [many more](https://agentskills.io/clients).\n\n## Installation\n\nObsidian is an official plugin for Claude, ChatGPT, Dots, Cursor, Grok Bot, Hermes, and Kiro. Most other agents can install the skills from GitHub.\n\n### Claude\n\nAdd [Obsidian](https://claude.ai/customize/plugins/id/a38fa062-ebd3-48e0-9a0a-1875a6e94ad5%40anthropic-plugin-directory) from the official Claude plugin directory.\n\nFor the Claude Code CLI use:\n\n```sh\nclaude plugin marketplace add obsidianmd/obsidian-skills\nclaude plugin install obsidian@obsidian-skills\n```\n\nFrom within a Claude Code session:\n\n```sh\n/plugin marketplace add obsidianmd/obsidian-skills\n/plugin install obsidian@obsidian-skills\n```\n\nTo get new skills later, run `claude plugin update obsidian@obsidian-skills`.\n\n### ChatGPT\n\nAdd [Obsidian](https://chatgpt.com/plugins/plugins_6aee4fde227881919d61b034b1c31096) from the ChatGPT plugin directory. The plugin works in ChatGPT, Codex, and Dots.\n\nTo install from this repo instead:\n\n```sh\ncodex plugin marketplace add obsidianmd/obsidian-skills\n```\n\nThen install Obsidian from the plugin directory in Codex or the ChatGPT desktop app.\n\n### Antigravity\n\nIn the Antigravity CLI, run:\n\n```sh\nagy plugin install https://github.com/obsidianmd/obsidian-skills\n```\n\n### Grok Bot\n\nOpen [Obsidian for Grok Bot](https://x.ai/bot/plugin/88871845) and select **Add to Grok Bot**.\n\n### Muse\n\nAsk Muse to install the skills from https://github.com/obsidianmd/obsidian-skills.\n\nMuse runs in Meta's cloud, so the `obsidian-cli` skill doesn't work there. If you use Obsidian Headless in Muse, you sign in and sync your vault in Meta's cloud.\n\n### Cursor\n\nInstall [Obsidian](https://cursor.com/marketplace/obsidian) from the Cursor Marketplace.\n\n### Hermes Agent\n\nInstall [Obsidian](https://hermes-agent.nousresearch.com/marketplace/obsidian) from the Hermes Marketplace, or run:\n\n```sh\nhermes plugins install obsidian\n```\n\n### Kiro\n\n```sh\nkiro-cli powers install obsidian\n```\n\n### GitHub Copilot, OpenCode, and other agents\n\nInstall with [npx skills](https://github.com/vercel-labs/skills), which asks which agents to install into:\n\n```sh\nnpx skills add https://github.com/obsidianmd/obsidian-skills\n```\n\nTo install by hand, copy the folders in `plugins/obsidian/skills/` into your agent's skills folder, e.g. `~/.copilot/skills/` for GitHub Copilot.\n\n## Release maintenance\n\nUpdate the plugin version in every manifest with:\n\n```sh\n./scripts/bump.sh patch\n```\n\nThe script also accepts `major`, `minor`, or an explicit version like `1.1.0`.\n\nGemini CLI installs from the latest GitHub release, so publish a release for each version, tagged with the version number. The `Gemini release archive` workflow then attaches `obsidian-gemini.tar.gz`, which has real copies of the skills. Don't attach other files to a release, because Gemini CLI only picks a file when there's exactly one; otherwise it falls back to the source archive, which has no Gemini manifest. To build the archive locally, run `./scripts/package-gemini.sh`.\n\n## Skills\n\n| Skill                                                          | Description                                                                                                                                                                                |\n| -------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |\n| [obsidian-markdown](plugins/obsidian/skills/obsidian-markdown) | Create and edit [Obsidian Flavored Markdown](https://help.obsidian.md/obsidian-flavored-markdown) (`.md`) with ",
-   "gained": 704,
-   "since": "weekly",
-   "source": "trending",
-   "score": 66,
-   "detail": {
-    "lic": 25,
-    "easy": 18,
-    "zh": 0,
-    "demand": 12,
-    "deliver": 10,
-    "fresh": 1,
-    "adj": 0
-   },
-   "grade": "A",
-   "grade_word": "改一改能卖",
+   "grade": "B",
+   "grade_word": "值得研究",
    "form": "Agent技能",
-   "velocity": 100.57142857142857,
+   "velocity": 333.57142857142856,
    "_gaps": [
     [
      "没有中文上手文档",
@@ -743,100 +711,94 @@
      "没有一键部署",
      "没有一键部署",
      "补一个 Dockerfile + compose，别人一条命令跑起来"
-    ],
-    [
-     "没有在线演示",
-     "没有在线演示",
-     "部署一个公开 demo 站，让人先玩再买单"
     ]
    ],
    "gaps_short": [
     "没有中文上手文档",
-    "没有一键部署",
-    "没有在线演示"
+    "没有一键部署"
    ],
    "risk": "大厂项目，路线不由你定，只能做外围（部署/中文化/模板）",
    "suspect": "",
    "pitch": {
-    "gap_key": "没有效果对比",
-    "change": "做前后对比案例，让人一眼看出差别",
-    "buyer": "要整理归档资料的人",
-    "buyer_tag": "文档",
-    "deliver": "接企业内训，教团队把这套装上",
+    "gap_key": "场景全是国外的",
+    "change": "把示例换成国内的活（公众号/小红书/电商），别用国外 demo",
+    "buyer": "买了 AI 会员却只用来聊天的人",
+    "buyer_tag": "通用",
+    "deliver": "做成定制版：按客户业务流程改一遍，单独报价",
     "deliver_alt": "做成定制版：按客户业务流程改一遍，单独报价",
-    "hours": 1,
+    "hours": 4,
     "gap_key_word": "缺中文上手文档"
    },
-   "plain": "Teach your agent to use Obsidian and open formats including Markdown, Bases, JSON Canvas.",
+   "plain": "Secure, fast, efficient, battle-tested at Alibaba's scale. Hybrid architecture code review tool: deterministic pipelines + LLM Agent, precise line-level comments, built-in multi-language ruleset (NPE, thread-safety, XSS, SQL injection), OpenAI & Anthropic compatible.",
    "analy": {
-    "en": "Teach your agent to use Obsidian and open formats including Markdown, Bases, JSON Canvas.",
-    "zh": "教您的代理使用 Obsidian 和开放格式，包括 Markdown、Bases、JSON Canvas。",
-    "plain": "说白了，这是一份写给 AI 的操作手册，装进 AI 工具后它就知道按你的规矩干活。它干的事是：教您的代理使用 Obsidian 和开放格式，包括 Markdown、Bases、JSON Canvas。",
+    "en": "Secure, fast, efficient, battle-tested at Alibaba's scale. Hybrid architecture code review tool: deterministic pipelines + LLM Agent, precise line-level comments, built-in multi-language ruleset (NPE, thread-safety, XSS, SQL injection), OpenAI & Anthropic compatible.",
+    "zh": "安全、快速、高效，经阿里巴巴规模的实战检验。混合架构代码审查工具：确定性管道 + LLM 代理、精确的行级注释、内置多语言规则集（NPE、线程安全、XSS、SQL 注入），兼容 OpenAI 和 Anthropic。",
+    "plain": "说白了，这是一份写给 AI 的操作手册，装进 AI 工具后它就知道按你的规矩干活。它干的事是：安全、快速、高效，经阿里巴巴规模的实战检验。混合架构代码审查工具：确定性管道 + LLM 代理、精确的行级注释、内置多语言规则集（NPE、线程安全、XSS、SQL 注入），兼容 OpenAI 和 Anthropic。",
     "usage": [
-     "把散落的资料整理成结构化文档",
      "装进常用的 AI 工具，让它按行规干活，不用每次重写要求",
-     "改造成中文版，卖给不会写提示词的人"
+     "改造成中文版，卖给不会写提示词的人",
+     "当课程或付费专栏的核心案例，边讲边演示"
     ],
     "how": [
      "把技能文件放进 AI 工具的技能目录",
      "在对话里说一句触发词",
      "按它给的步骤走，不满意就补一句要求"
     ],
-    "gap": "做前后对比案例，让人一眼看出差别",
-    "buyer": "要整理归档资料的人",
-    "why": "要整理归档资料的人不是不会做，是懒得为这一步花两三天试错。你把「做前后对比案例，让人一眼看出差别」替他们做完，他们花的钱远少于自己折腾的时间。",
+    "gap": "把示例换成国内的活（公众号/小红书/电商），别用国外 demo",
+    "buyer": "买了 AI 会员却只用来聊天的人",
+    "why": "买了 AI 会员却只用来聊天的人不是不会做，是懒得为这一步花两三天试错。你把「把示例换成国内的活（公众号/小红书/电商），别用国外 demo」替他们做完，他们花的钱远少于自己折腾的时间。",
     "self": "装进自己常用的 AI 工具里，写东西、做分析时不用每次从头描述要求，输出的东西还稳定。",
-    "pack": "整理成可直接安装的技能包 + 使用截图，配一节教程一起卖；也可以做成付费专栏的一章当引流钩子。落地上就按这条走：接企业内训，教团队把这套装上。",
+    "pack": "整理成可直接安装的技能包 + 使用截图，配一节教程一起卖；也可以做成付费专栏的一章当引流钩子。落地上就按这条走：做成定制版：按客户业务流程改一遍，单独报价。",
     "_auto": true,
     "_src": "mt"
    },
    "_bucket": "",
-   "seen_times": 0,
-   "seen_first": "",
-   "seen_last": ""
+   "seen_times": 2,
+   "seen_first": "2026-11-14",
+   "seen_last": "2026-11-21"
   },
   {
-   "full_name": "heydamir/unslop",
-   "owner": "heydamir",
+   "full_name": "tradermonty/claude-trading-skills",
+   "owner": "tradermonty",
    "owner_type": "User",
-   "name": "unslop",
-   "desc": "A Claude skill that turns vibecoded, AI-looking UI into a designed interface",
-   "lang": "JavaScript",
-   "stars": 22353,
-   "forks": 1399,
-   "watchers": 36,
-   "open_issues": 22,
-   "license": "CC-BY-4.0",
-   "license_name": "Creative Commons Attribution 4.0 International",
+   "name": "claude-trading-skills",
+   "desc": "Claude Code skills for equity investors and traders — market analysis, technical charting, economic calendars, screeners, and trading strategy development.",
+   "lang": "Python",
+   "stars": 8770,
+   "forks": 1577,
+   "watchers": 54,
+   "open_issues": 43,
+   "license": "MIT",
+   "license_name": "MIT License",
    "topics": [],
-   "created_at": "2026-10-29T15:41:21Z",
-   "pushed_at": "2026-11-15T00:55:20Z",
-   "updated_at": "2026-11-27T09:29:07Z",
-   "size_kb": 2340,
+   "created_at": "2025-10-19T16:37:29Z",
+   "pushed_at": "2026-11-28T06:57:58Z",
+   "updated_at": "2026-11-28T08:33:51Z",
+   "size_kb": 77892,
    "archived": false,
    "has_discussions": false,
-   "has_wiki": false,
-   "homepage": "",
-   "url": "https://github.com/heydamir/unslop",
+   "has_wiki": true,
+   "homepage": "https://tradermonty.github.io/claude-trading-skills/",
+   "url": "https://github.com/tradermonty/claude-trading-skills",
    "default_branch": "main",
-   "readme": "# unslop\n\nCreated by Damir Sokolovsky ([@heydamir](https://x.com/heydamir)), who started the [Unslopping series](https://x.com/heydamir/status/2115063463063998736) on X.\n\n![A vibecoded dashboard unslopping itself, frame by frame](skills/unslop/references/refs/story-dashboard-frames.webp)\n\nunslop is a skill for Claude Code, Codex and Google Antigravity that turns vibecoded, AI-looking UI into a designed interface with its own character. It finds the slop first, the purple gradients, glows, emoji labels, shouty copy and uneven spacing, then sets a direction from your product and fixes the screen pass by pass like a designer doing a redline review. It works in whatever your screen is built with, like Next.js, React, Vue, Svelte, Tailwind or plain HTML and CSS, on dashboards, apps and landing pages, and even on a live site when all you have is a link.\n\n## Install\n\nFor Claude Code, install it as a plugin. Run this in a terminal to get it in every project:\n\n```bash\nclaude plugin install unslop --marketplace heydamir/unslop\n```\n\nOn an older Claude Code without `--marketplace`, the same in two steps:\n\n```bash\nclaude plugin marketplace add heydamir/unslop\nclaude plugin install unslop@heydamir\n```\n\nTo get it in a single project only, run the install from that project's root folder, the one you start Claude Code in, and add `--scope local`. To turn it on for everyone who works in the project, add `--scope project` instead and commit `.claude/settings.json`. Each teammate then runs this once in their own copy of the project:\n\n```bash\nclaude plugin marketplace add heydamir/unslop\nclaude plugin install unslop@heydamir --scope project\n```\n\nThen start a new Claude Code session, or run `/reload-plugins` in one that is already open.\n\nTo update, run `claude plugin update unslop@heydamir`, or turn on auto-update for the heydamir marketplace under Marketplaces in `/plugin`.\n\nIf you copied unslop into `~/.claude/skills/` or a project's `.claude/skills/` before, delete that copy, or `/unslop` keeps running it instead of the plugin.\n\nFor Codex, ask it to install the skill straight from this repo.\n\n```\n$skill-installer install https://github.com/heydamir/unslop/tree/main/skills/unslop\n```\n\nOr copy it by hand into `~/.agents/skills/`, or into `.agents/skills/` inside a single project.\n\n```bash\ngit clone https://github.com/heydamir/unslop\nmkdir -p ~/.agents/skills && cp -r unslop/skills/unslop ~/.agents/skills/\n```\n\nFor Google Antigravity, copy the skill into your skills folder.\n\n```bash\ngit clone https://github.com/heydamir/unslop\nmkdir -p ~/.gemini/config/skills && cp -r unslop/skills/unslop ~/.gemini/config/skills/\n```\n\nFor a single project, copy it into `.agents/skills/` inside that project instead.\n\nTo snapshot a live site or create a story video, install Playwright and its Chromium browser from the project directory where you run the skill:\n\n```bash\nnpm install -D playwright\nnpx playwright install chromium\n```\n\nStory videos also require ffmpeg installed and available on your PATH.\n\n## Use\n\nIn Claude Code, type `/unslop` with what you want, or `/unslop:unslop` if another skill already has that name. In Codex, type `$unslop` the same way. Or just ask in your own words and the agent picks the skill up by itself.\n\n```\n/unslop this dashboard\n/unslop the hero of https://example.com\n/unslop my landing page and make the story video so I can post it\n```\n\nIt audits the screen and proposes a direction before it edits anything, so you can steer it early. If the screen is already good, it tells you so and suggests a few small refinements instead of redesigning it.\n\n## What it does\n\n- **Audit.** Lists every sign of slop with where it lives.\n- **Direction.** Character, world, the one or two moments that carry the color, and a signature detail, all taken from your product.\n- **Passes.** Spacing, color, icons, copy, type, layout, details, visuals and motion, in that order.\n- **Visuals.** Shows your product instead of a glossy blob. When a hero needs a scene or an ",
-   "gained": 0,
-   "since": "created<30d",
-   "source": "search_new",
-   "score": 66,
+   "readme": "# Claude Trading Skills\n\n**Data handling:** [Privacy policy](docs/en/privacy.md) · [Security policy](SECURITY.md)\n\nClaude Trading Skills started as a personal project to use AI to improve my own trading process.\n\nClaude Trading Skills is a Claude Skills-based trading workflow toolkit for time-constrained individual investors.\n\nIt is designed for investors who use long-term investing, ETFs, and dividend stocks as their core, while using disciplined swing trading as a satellite strategy when market conditions are favorable.\n\nThe goal is not to outsource buy/sell decisions to AI. The goal is to structure market review, risk management, trade planning, journaling, and continuous improvement. It is open source because the workflows, checklists, and review habits behind better trading decisions can improve through shared practice.\n\nThis is not a signal service or a promise of profitability. It is a toolkit for traders who want to build a better decision process.\n\nThe project follows a **first for self, open for others** stance: it is built first as a practical workflow the author uses, then shared openly for others who face similar constraints.\n\n📖 **Documentation site:** <https://tradermonty.github.io/claude-trading-skills/>\n\n**Project vision:** [`PROJECT_VISION.md`](PROJECT_VISION.md)\n\n日本語版READMEは[`README.ja.md`](README.ja.md)をご覧ください。\n\n## Disclaimer\n\nThis repository is for educational, research, and process-improvement purposes only. It is not financial advice, investment advisory service, tax advice, legal advice, a signal service, or a broker execution platform. Trading and investing involve risk, including loss of principal. Past performance, backtests, screens, reports, and AI-generated analysis do not guarantee future results. All trading decisions, position sizing, tax/regulatory compliance, and broker usage are the user's responsibility.\n\nThe project is provided under the MIT License, **AS IS, WITHOUT WARRANTY**.\n\n## Who This Is For\n\nThis repository is designed for:\n\n- Time-constrained individual investors\n- Long-term investors who also want disciplined swing-trading upside\n- Dividend and ETF investors who want structured portfolio review\n- Traders who want to manage risk before finding trade candidates\n- Investors who want to journal and improve their decision process\n\nIt is not designed for fully automated trading, signal outsourcing, or short-term scalping.\n\n## Recommended Starting Path\n\nNew users should start with one of these operational workflows. Each link points to a machine-readable manifest under [`workflows/`](workflows/) that names the exact skills, decision gates, and artifacts in order.\n\n| Goal | Workflow | Anchor Skills | API Profile |\n| --- | --- | --- | --- |\n| 15-minute daily market check | [`market-regime-daily`](workflows/market-regime-daily.yaml) | market-breadth-analyzer, uptrend-analyzer, exposure-coach | No API for basic path |\n| Weekly long-term portfolio review | [`core-portfolio-weekly`](workflows/core-portfolio-weekly.yaml) ([sample](examples/workflows/core-portfolio-weekly/sample-run/)) | portfolio-manager, kanchi-dividend-review-monitor, trader-memory-core | Alpaca required; manual CSV is a degraded fallback |\n| Find swing candidates only when risk is allowed | [`swing-opportunity-daily`](workflows/swing-opportunity-daily.yaml) ([sample](examples/workflows/swing-opportunity-daily/sample-run/)) | vcp-screener, drawdown-circuit-breaker, technical-analyst, position-sizer, trader-memory-core, pre-trade-discipline-gate | FMP for screeners; local state for risk and discipline gates |\n| Record and learn from every closed trade | [`trade-memory-loop`](workflows/trade-memory-loop.yaml) | trader-memory-core, signal-postmortem | No API for manual path |\n| Review monthly performance and adjust rules | [`monthly-performance-review`](workflows/monthly-performance-review.yaml) ([sample](examples/workflows/monthly-performance-review/sample-run/)) | trader-memory-core, signal-postmortem, backtest-expert | No API",
+   "gained": 1332,
+   "since": "weekly",
+   "source": "trending",
+   "score": 62,
    "detail": {
-    "lic": 8,
+    "lic": 25,
     "easy": 20,
     "zh": 0,
-    "demand": 10,
-    "deliver": 10,
-    "fresh": 10,
-    "adj": 8
+    "demand": 12,
+    "deliver": 4,
+    "fresh": 1,
+    "adj": 0
    },
-   "grade": "A",
-   "grade_word": "改一改能卖",
+   "grade": "B",
+   "grade_word": "值得研究",
    "form": "Agent技能",
-   "velocity": 798.3214285714286,
+   "velocity": 190.28571428571428,
    "_gaps": [
     [
      "没有中文上手文档",
@@ -854,332 +816,332 @@
     "没有一键部署"
    ],
    "risk": "",
-   "suspect": "星速可疑：28 天涨到 22,353 星（日均 798），先观察一周看有没有真实用户再动手",
+   "suspect": "",
    "pitch": {
-    "gap_key": "场景全是国外的",
-    "change": "把示例换成国内的活（公众号/小红书/电商），别用国外 demo",
-    "buyer": "接单的设计师和电商美工",
-    "buyer_tag": "设计",
-    "deliver": "做成定制版：按客户业务流程改一遍，单独报价",
+    "gap_key": "不知道装到哪",
+    "change": "写一份「三步装完」图文，截一张装成功的界面",
+    "buyer": "想用 AI 但每次都从零写提示词的人",
+    "buyer_tag": "通用",
+    "deliver": "打包成技能文件，配使用教程一起卖",
     "deliver_alt": "做成定制版：按客户业务流程改一遍，单独报价",
-    "hours": 2,
+    "hours": 4,
     "gap_key_word": "缺中文上手文档"
    },
-   "plain": "A Claude skill that turns vibecoded, AI-looking UI into a designed interface",
+   "plain": "Claude Code skills for equity investors and traders — market analysis, technical charting, economic calendars, screeners, and trading strategy development.",
    "analy": {
-    "en": "A Claude skill that turns vibecoded, AI-looking UI into a designed interface",
-    "zh": "一种 Claude 技能，可将基于氛围编码、看起来像 AI 的 UI 转换为经过设计的界面",
-    "plain": "说白了，这是一份写给 AI 的操作手册，装进 AI 工具后它就知道按你的规矩干活。它干的事是：一种 Claude 技能，可将基于氛围编码、看起来像 AI 的 UI 转换为经过设计的界面",
+    "en": "Claude Code skills for equity investors and traders — market analysis, technical charting, economic calendars, screeners, and trading strategy development.",
+    "zh": "面向股票投资者和交易者的 Claude Code 技能——市场分析、技术图表、经济日历、筛选器和交易策略制定。",
+    "plain": "说白了，这是一份写给 AI 的操作手册，装进 AI 工具后它就知道按你的规矩干活。它干的事是：面向股票投资者和交易者的 Claude Code 技能——市场分析、技术图表、经济日历、筛选器和交易策略制定。",
     "usage": [
-     "接单时用它出初稿，客户改的是稿子不是空白页",
      "装进常用的 AI 工具，让它按行规干活，不用每次重写要求",
-     "改造成中文版，卖给不会写提示词的人"
+     "改造成中文版，卖给不会写提示词的人",
+     "当课程或付费专栏的核心案例，边讲边演示"
     ],
     "how": [
      "把技能文件放进 AI 工具的技能目录",
      "在对话里说一句触发词",
      "按它给的步骤走，不满意就补一句要求"
     ],
-    "gap": "把示例换成国内的活（公众号/小红书/电商），别用国外 demo",
-    "buyer": "接单的设计师和电商美工",
-    "why": "接单的设计师和电商美工不是不会做，是懒得为这一步花两三天试错。你把「把示例换成国内的活（公众号/小红书/电商），别用国外 demo」替他们做完，他们花的钱远少于自己折腾的时间。",
+    "gap": "写一份「三步装完」图文，截一张装成功的界面",
+    "buyer": "想用 AI 但每次都从零写提示词的人",
+    "why": "想用 AI 但每次都从零写提示词的人不是不会做，是懒得为这一步花两三天试错。你把「写一份「三步装完」图文，截一张装成功的界面」替他们做完，他们花的钱远少于自己折腾的时间。",
     "self": "装进自己常用的 AI 工具里，写东西、做分析时不用每次从头描述要求，输出的东西还稳定。",
-    "pack": "整理成可直接安装的技能包 + 使用截图，配一节教程一起卖；也可以做成付费专栏的一章当引流钩子。落地上就按这条走：做成定制版：按客户业务流程改一遍，单独报价。",
+    "pack": "整理成可直接安装的技能包 + 使用截图，配一节教程一起卖；也可以做成付费专栏的一章当引流钩子。落地上就按这条走：打包成技能文件，配使用教程一起卖。",
     "_auto": true,
     "_src": "mt"
    },
    "_bucket": "",
    "seen_times": 2,
-   "seen_first": "2026-11-13",
-   "seen_last": "2026-11-20"
+   "seen_first": "2026-11-14",
+   "seen_last": "2026-11-21"
   }
  ],
  "dropped": [
   {
    "full_name": "obra/superpowers",
-   "stars": 327830,
-   "reason": "4 天前（2026-11-23）推过，冷却 7 天内不重推"
+   "stars": 328573,
+   "reason": "5 天前（2026-11-23）推过，冷却 7 天内不重推"
   },
   {
    "full_name": "obra/superpowers",
-   "stars": 327830,
+   "stars": 328573,
    "reason": "综合 57 分（B 级），名额有限，这一期没进",
    "score": 57
   },
   {
    "full_name": "firecrawl/firecrawl",
-   "stars": 211228,
+   "stars": 211883,
    "reason": "综合 36 分（C 级），名额满了"
   },
   {
    "full_name": "firecrawl/firecrawl",
-   "stars": 211228,
+   "stars": 211883,
    "reason": "综合 36 分（C 级），名额有限，这一期没进",
    "score": 36
   },
   {
    "full_name": "toeverything/AFFiNE",
-   "stars": 79146,
-   "reason": "4 天前（2026-11-23）推过，冷却 7 天内不重推"
+   "stars": 79602,
+   "reason": "5 天前（2026-11-23）推过，冷却 7 天内不重推"
   },
   {
    "full_name": "toeverything/AFFiNE",
-   "stars": 79146,
+   "stars": 79602,
    "reason": "综合 51 分（B 级），名额有限，这一期没进",
    "score": 51
   },
   {
    "full_name": "mvanhorn/last30days-skill",
-   "stars": 76027,
-   "reason": "3 天前（2026-11-24）推过，冷却 7 天内不重推"
+   "stars": 76513,
+   "reason": "4 天前（2026-11-24）推过，冷却 7 天内不重推"
   },
   {
    "full_name": "mvanhorn/last30days-skill",
-   "stars": 76027,
+   "stars": 76513,
    "reason": "综合 62 分（B 级），名额有限，这一期没进",
    "score": 62
   },
   {
-   "full_name": "jingyaogong/minimind",
-   "stars": 71965,
-   "reason": "2 天前（2026-11-25）推过，冷却 7 天内不重推"
+   "full_name": "cathrynlavery/diagram-design",
+   "stars": 74607,
+   "reason": "1 天前（2026-11-27）推过，冷却 7 天内不重推"
+  },
+  {
+   "full_name": "cathrynlavery/diagram-design",
+   "stars": 74607,
+   "reason": "综合 70 分（A 级），名额有限，这一期没进",
+   "score": 70
   },
   {
    "full_name": "jingyaogong/minimind",
-   "stars": 71965,
+   "stars": 72352,
+   "reason": "3 天前（2026-11-25）推过，冷却 7 天内不重推"
+  },
+  {
+   "full_name": "jingyaogong/minimind",
+   "stars": 72352,
    "reason": "综合 67 分（A 级），名额有限，这一期没进",
    "score": 67
   },
   {
    "full_name": "HKUDS/CLI-Anything",
-   "stars": 66636,
-   "reason": "5 天前（2026-11-22）推过，冷却 7 天内不重推"
+   "stars": 67159,
+   "reason": "6 天前（2026-11-22）推过，冷却 7 天内不重推"
   },
   {
    "full_name": "HKUDS/CLI-Anything",
-   "stars": 66636,
-   "reason": "综合 56 分（B 级），名额有限，这一期没进",
-   "score": 56
-  },
-  {
-   "full_name": "ChromeDevTools/chrome-devtools-mcp",
-   "stars": 59555,
-   "reason": "2 天前（2026-11-25）推过，冷却 7 天内不重推"
-  },
-  {
-   "full_name": "ChromeDevTools/chrome-devtools-mcp",
-   "stars": 59555,
-   "reason": "综合 59 分（B 级），名额有限，这一期没进",
-   "score": 59
-  },
-  {
-   "full_name": "alibaba/open-code-review",
-   "stars": 56762,
-   "reason": "6 天前（2026-11-21）推过，冷却 7 天内不重推"
-  },
-  {
-   "full_name": "alibaba/open-code-review",
-   "stars": 56762,
+   "stars": 67159,
    "reason": "综合 62 分（B 级），名额有限，这一期没进",
    "score": 62
   },
   {
-   "full_name": "storytold/craft-anything",
-   "stars": 44340,
-   "reason": "6 天前（2026-11-21）推过，冷却 7 天内不重推"
+   "full_name": "ChromeDevTools/chrome-devtools-mcp",
+   "stars": 59660,
+   "reason": "3 天前（2026-11-25）推过，冷却 7 天内不重推"
   },
   {
-   "full_name": "storytold/craft-anything",
-   "stars": 44340,
-   "reason": "综合 64 分（B 级），名额有限，这一期没进",
-   "score": 64
+   "full_name": "ChromeDevTools/chrome-devtools-mcp",
+   "stars": 59660,
+   "reason": "综合 59 分（B 级），名额有限，这一期没进",
+   "score": 59
+  },
+  {
+   "full_name": "obsidianmd/obsidian-skills",
+   "stars": 54436,
+   "reason": "1 天前（2026-11-27）推过，冷却 7 天内不重推"
+  },
+  {
+   "full_name": "obsidianmd/obsidian-skills",
+   "stars": 54436,
+   "reason": "综合 66 分（A 级），名额有限，这一期没进",
+   "score": 66
   },
   {
    "full_name": "nginx/nginx",
-   "stars": 33578,
+   "stars": 33706,
    "reason": "综合 42 分（C 级），名额满了"
   },
   {
    "full_name": "nginx/nginx",
-   "stars": 33578,
+   "stars": 33706,
    "reason": "综合 42 分（C 级），名额有限，这一期没进",
    "score": 42
   },
   {
    "full_name": "meta/astryx",
-   "stars": 33438,
-   "reason": "1 天前（2026-11-26）推过，冷却 7 天内不重推"
+   "stars": 33573,
+   "reason": "2 天前（2026-11-26）推过，冷却 7 天内不重推"
   },
   {
    "full_name": "meta/astryx",
-   "stars": 33438,
+   "stars": 33573,
    "reason": "综合 68 分（A 级），名额有限，这一期没进",
    "score": 68
   },
   {
    "full_name": "dream-num/univer",
-   "stars": 32011,
-   "reason": "3 天前（2026-11-24）推过，冷却 7 天内不重推"
+   "stars": 32086,
+   "reason": "4 天前（2026-11-24）推过，冷却 7 天内不重推"
   },
   {
    "full_name": "dream-num/univer",
-   "stars": 32011,
+   "stars": 32086,
    "reason": "综合 62 分（B 级），名额有限，这一期没进",
    "score": 62
   },
   {
    "full_name": "elementalsouls/Claude-BugHunter",
-   "stars": 25190,
-   "reason": "4 天前（2026-11-23）推过，冷却 7 天内不重推"
+   "stars": 26513,
+   "reason": "5 天前（2026-11-23）推过，冷却 7 天内不重推"
   },
   {
    "full_name": "elementalsouls/Claude-BugHunter",
-   "stars": 25190,
+   "stars": 26513,
    "reason": "综合 61 分（B 级），名额有限，这一期没进",
    "score": 61
   },
   {
    "full_name": "ag-ui-protocol/ag-ui",
-   "stars": 21888,
-   "reason": "5 天前（2026-11-22）推过，冷却 7 天内不重推"
+   "stars": 21987,
+   "reason": "6 天前（2026-11-22）推过，冷却 7 天内不重推"
   },
   {
    "full_name": "ag-ui-protocol/ag-ui",
-   "stars": 21888,
+   "stars": 21987,
    "reason": "综合 56 分（B 级），名额有限，这一期没进",
    "score": 56
   },
   {
    "full_name": "cursor/plugins",
-   "stars": 19878,
-   "reason": "1 天前（2026-11-26）推过，冷却 7 天内不重推"
+   "stars": 20073,
+   "reason": "2 天前（2026-11-26）推过，冷却 7 天内不重推"
   },
   {
    "full_name": "cursor/plugins",
-   "stars": 19878,
-   "reason": "综合 56 分（B 级），名额有限，这一期没进",
-   "score": 56
-  },
-  {
-   "full_name": "XiaoYouChR/Ghost-Downloader-3",
-   "stars": 19500,
-   "reason": "6 天前（2026-11-21）推过，冷却 7 天内不重推"
-  },
-  {
-   "full_name": "XiaoYouChR/Ghost-Downloader-3",
-   "stars": 19500,
-   "reason": "综合 64 分（B 级），名额有限，这一期没进",
-   "score": 64
-  },
-  {
-   "full_name": "we-promise/sure",
-   "stars": 18142,
-   "reason": "3 天前（2026-11-24）推过，冷却 7 天内不重推"
-  },
-  {
-   "full_name": "we-promise/sure",
-   "stars": 18142,
+   "stars": 20073,
    "reason": "综合 48 分（C 级），名额有限，这一期没进",
    "score": 48
   },
   {
-   "full_name": "Tracer-Cloud/opensre",
-   "stars": 15963,
-   "reason": "6 天前（2026-11-21）推过，冷却 7 天内不重推"
+   "full_name": "we-promise/sure",
+   "stars": 18256,
+   "reason": "4 天前（2026-11-24）推过，冷却 7 天内不重推"
+  },
+  {
+   "full_name": "we-promise/sure",
+   "stars": 18256,
+   "reason": "综合 48 分（C 级），名额有限，这一期没进",
+   "score": 48
+  },
+  {
+   "full_name": "zhouxiaoka/autoclip",
+   "stars": 17769,
+   "reason": "1 天前（2026-11-27）推过，冷却 7 天内不重推"
+  },
+  {
+   "full_name": "zhouxiaoka/autoclip",
+   "stars": 17769,
+   "reason": "综合 78 分（A 级），名额有限，这一期没进",
+   "score": 78
   },
   {
    "full_name": "Tracer-Cloud/opensre",
-   "stars": 15963,
+   "stars": 16216,
+   "reason": "7 天前（2026-11-21）推过，冷却 7 天内不重推"
+  },
+  {
+   "full_name": "Tracer-Cloud/opensre",
+   "stars": 16216,
    "reason": "综合 62 分（B 级），名额有限，这一期没进",
    "score": 62
   },
   {
-   "full_name": "backnotprop/plannotator",
-   "stars": 15326,
-   "reason": "6 天前（2026-11-21）推过，冷却 7 天内不重推"
-  },
-  {
-   "full_name": "backnotprop/plannotator",
-   "stars": 15326,
-   "reason": "综合 68 分（A 级），名额有限，这一期没进",
-   "score": 68
+   "full_name": "google-labs-code/stitch-skills",
+   "stars": 13680,
+   "reason": "5 天前（2026-11-23）推过，冷却 7 天内不重推"
   },
   {
    "full_name": "google-labs-code/stitch-skills",
-   "stars": 13420,
-   "reason": "4 天前（2026-11-23）推过，冷却 7 天内不重推"
-  },
-  {
-   "full_name": "google-labs-code/stitch-skills",
-   "stars": 13420,
+   "stars": 13680,
    "reason": "综合 76 分（A 级），名额有限，这一期没进",
    "score": 76
   },
   {
    "full_name": "openvinotoolkit/openvino",
-   "stars": 12872,
-   "reason": "1 天前（2026-11-26）推过，冷却 7 天内不重推"
+   "stars": 12984,
+   "reason": "2 天前（2026-11-26）推过，冷却 7 天内不重推"
   },
   {
    "full_name": "openvinotoolkit/openvino",
-   "stars": 12872,
+   "stars": 12984,
    "reason": "综合 68 分（A 级），名额有限，这一期没进",
    "score": 68
   },
   {
    "full_name": "kajisho5/ffmpeg-skill",
-   "stars": 11694,
-   "reason": "3 天前（2026-11-24）推过，冷却 7 天内不重推"
+   "stars": 12067,
+   "reason": "4 天前（2026-11-24）推过，冷却 7 天内不重推"
   },
   {
    "full_name": "kajisho5/ffmpeg-skill",
-   "stars": 11694,
+   "stars": 12067,
    "reason": "综合 68 分（A 级），名额有限，这一期没进",
    "score": 68
   },
   {
-   "full_name": "tradermonty/claude-trading-skills",
-   "stars": 8655,
-   "reason": "6 天前（2026-11-21）推过，冷却 7 天内不重推"
+   "full_name": "GoogleChrome/modern-web-guidance-src",
+   "stars": 11518,
+   "reason": "1 天前（2026-11-27）推过，冷却 7 天内不重推"
   },
   {
-   "full_name": "tradermonty/claude-trading-skills",
-   "stars": 8655,
+   "full_name": "GoogleChrome/modern-web-guidance-src",
+   "stars": 11518,
    "reason": "综合 68 分（A 级），名额有限，这一期没进",
    "score": 68
   },
   {
-   "full_name": "Eglantine-Community/Eglantine",
-   "stars": 6262,
-   "reason": "综合 49 分（C 级），名额满了"
+   "full_name": "mjmirza/app-store-compliance",
+   "stars": 8107,
+   "reason": "1 天前（2026-11-27）推过，冷却 7 天内不重推"
   },
   {
-   "full_name": "Eglantine-Community/Eglantine",
-   "stars": 6262,
-   "reason": "综合 49 分（C 级），名额有限，这一期没进",
-   "score": 49
+   "full_name": "mjmirza/app-store-compliance",
+   "stars": 8107,
+   "reason": "综合 63 分（B 级），名额有限，这一期没进",
+   "score": 63
   },
   {
-   "full_name": "4lwayz/portwatch-vi",
-   "stars": 6155,
-   "reason": "综合 65 分（A 级），名额满了"
+   "full_name": "XinaTian/MROffice",
+   "stars": 5285,
+   "reason": "综合 57 分（B 级），名额满了"
   },
   {
-   "full_name": "4lwayz/portwatch-vi",
-   "stars": 6155,
-   "reason": "综合 65 分（A 级），名额有限，这一期没进",
-   "score": 65
-  },
-  {
-   "full_name": "n8n-io/nod",
-   "stars": 4122,
-   "reason": "1 天前（2026-11-26）推过，冷却 7 天内不重推"
+   "full_name": "XinaTian/MROffice",
+   "stars": 5285,
+   "reason": "综合 57 分（B 级），名额有限，这一期没进",
+   "score": 57
   },
   {
    "full_name": "n8n-io/nod",
-   "stars": 4122,
+   "stars": 4510,
+   "reason": "2 天前（2026-11-26）推过，冷却 7 天内不重推"
+  },
+  {
+   "full_name": "n8n-io/nod",
+   "stars": 4510,
    "reason": "综合 80 分（S 级），名额有限，这一期没进",
    "score": 80
+  },
+  {
+   "full_name": "pookjw/HermesEnabler",
+   "stars": 2592,
+   "reason": "1 天前（2026-11-27）推过，冷却 7 天内不重推"
+  },
+  {
+   "full_name": "pookjw/HermesEnabler",
+   "stars": 2592,
+   "reason": "综合 70 分（A 级），名额有限，这一期没进",
+   "score": 70
   }
  ],
  "scanned": 69,
